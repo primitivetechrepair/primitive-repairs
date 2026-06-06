@@ -16,6 +16,11 @@
       "source": "/faq.html",
       "destination": "/faq",
       "permanent": true
+    },
+    {
+      "source": "/iphone-repair-miami.html",
+      "destination": "/iphone-repair-miami",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -26,6 +31,10 @@
     {
       "source": "/faq",
       "destination": "/faq.html"
+    },
+    {
+      "source": "/iphone-repair-miami",
+      "destination": "/iphone-repair-miami.html"
     }
   ]
 }
