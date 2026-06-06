@@ -139,7 +139,7 @@ export default async function handler(req, res) {
               </h1>
 
               <p style="margin:0;color:#e5edf7;font-size:15px;line-height:1.6;">
-                A customer submitted a repair request from the Primitive Repairs website.
+                A customer submitted a repair request from the Primitive Tech Repairs website.
               </p>
             </div>
 
@@ -240,7 +240,7 @@ export default async function handler(req, res) {
 
             <div style="padding:18px 26px;background:#f8fafc;border-top:1px solid #d9e1ea;">
               <p style="margin:0;color:#374151;font-size:12px;line-height:1.5;">
-                Primitive Repairs • Public Repair Request Notification
+                Prim • Public Repair Request Notification
               </p>
             </div>
 
