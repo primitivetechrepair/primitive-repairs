@@ -1,0 +1,30 @@
+[
+  {
+    "id": "iphone12pro",
+    "series": "iPhone 12 Series",
+    "model": "iPhone 12 Pro",
+    "image": "/images/models/apple/iphone12pro.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "time": "45 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "time": "30 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Draining Fast",
+          "Device Shuts Off Randomly",
+          "Battery Not Holding Charge"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3053 @@
+[
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 12-inch",
+    "image": "/images/models/surface-pro-12-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 13-inch",
+    "image": "/images/models/surface-pro-13-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 11th Edition",
+    "image": "/images/models/surface-pro-11th-edition.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 10 for Business",
+    "image": "/images/models/surface-pro-10-for-business.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 9",
+    "image": "/images/models/surface-pro-9.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 8",
+    "image": "/images/models/surface-pro-8.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 7+",
+    "image": "/images/models/surface-pro-7.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 7",
+    "image": "/images/models/surface-pro-7.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 6",
+    "image": "/images/models/surface-pro-6.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro (5th Gen)",
+    "image": "/images/models/surface-pro-5th-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 4",
+    "image": "/images/models/surface-pro-4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 3",
+    "image": "/images/models/surface-pro-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 2",
+    "image": "/images/models/surface-pro-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro",
+    "image": "/images/models/surface-pro.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro X",
+    "image": "/images/models/surface-pro-x.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go 4 for Business",
+    "image": "/images/models/surface-go-4-for-business.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go 3",
+    "image": "/images/models/surface-go-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go 2",
+    "image": "/images/models/surface-go-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go",
+    "image": "/images/models/surface-go.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Book Series",
+    "model": "Surface Book 3",
+    "image": "/images/models/surface-book-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Book Series",
+    "model": "Surface Book 2",
+    "image": "/images/models/surface-book-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Book Series",
+    "model": "Surface Book",
+    "image": "/images/models/surface-book.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Original / RT Series",
+    "model": "Surface RT",
+    "image": "/images/models/surface-rt.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Original / RT Series",
+    "model": "Surface 2",
+    "image": "/images/models/surface-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Original / RT Series",
+    "model": "Surface 3",
+    "image": "/images/models/surface-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Studio Series",
+    "model": "Surface Laptop Studio 2",
+    "image": "/images/models/surface-laptop-studio-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Studio Series",
+    "model": "Surface Laptop Studio",
+    "image": "/images/models/surface-laptop-studio.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Windows Boot Issue",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

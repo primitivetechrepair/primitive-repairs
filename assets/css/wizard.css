@@ -1,0 +1,394 @@
+/* ---------- Repair Information Step ---------- */
+
+.repair-info-panel {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(37, 40, 61, 0.12);
+}
+
+.repair-info-hero {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: 260px;
+}
+
+.repair-info-image {
+  background-color: var(--slot-fill);
+  background-size: cover;
+  background-position: center;
+}
+
+.repair-info-content {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.repair-info-eyebrow {
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background: rgba(102, 252, 241, 0.16);
+  color: #25283d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.repair-info-content h3 {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+}
+
+.repair-info-description {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.repair-info-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.repair-info-meta div {
+  padding: 14px;
+  border: 1px solid rgba(37, 40, 61, 0.1);
+  border-radius: 14px;
+  background: rgba(247, 247, 251, 0.82);
+}
+
+.repair-info-meta strong,
+.repair-info-meta span {
+  display: block;
+}
+
+.repair-info-meta strong {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.repair-info-meta span {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.repair-info-section {
+  padding: 24px 28px;
+  border-top: 1px solid rgba(37, 40, 61, 0.1);
+}
+
+.repair-info-section h4 {
+  margin: 0 0 12px;
+  color: var(--accent);
+}
+
+.repair-info-section ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--accent);
+  line-height: 1.8;
+}
+
+.repair-info-section p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.repair-info-actions {
+  padding: 0 28px 28px;
+}
+
+.repair-info-continue {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repair-info-continue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(37, 40, 61, 0.22);
+}
+
+@media (max-width: 760px) {
+  .repair-info-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .repair-info-image {
+    min-height: 220px;
+  }
+
+  .repair-info-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Appointment Selection Step ---------- */
+
+.appointment-panel {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(37, 40, 61, 0.12);
+}
+
+.appointment-header {
+  margin-bottom: 24px;
+}
+
+.appointment-eyebrow {
+  width: fit-content;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background: rgba(102, 252, 241, 0.16);
+  color: #25283d;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.appointment-header h3 {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+.appointment-header p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.appointment-section {
+  margin-top: 24px;
+}
+
+.appointment-section h4 {
+  margin: 0 0 12px;
+  color: var(--accent);
+}
+
+.appointment-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.appointment-service-card {
+  min-height: 118px;
+  padding: 16px;
+  border: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 16px;
+  background: rgba(247, 247, 251, 0.88);
+  color: var(--accent);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-service-card strong,
+.appointment-service-card span {
+  display: block;
+}
+
+.appointment-service-card strong {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.appointment-service-card span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.appointment-service-card:hover,
+.appointment-service-card.is-selected {
+  transform: translateY(-2px);
+  border-color: rgba(102, 252, 241, 0.55);
+  box-shadow: 0 12px 28px rgba(37, 40, 61, 0.13);
+}
+
+.appointment-date-input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid rgba(37, 40, 61, 0.14);
+  border-radius: 14px;
+  color: var(--accent);
+  background: #ffffff;
+  font: inherit;
+}
+
+.appointment-time-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 10px;
+}
+
+.appointment-time-slot {
+  padding: 12px;
+  border: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 14px;
+  background: rgba(247, 247, 251, 0.88);
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-time-slot:hover,
+.appointment-time-slot.is-selected {
+  transform: translateY(-2px);
+  border-color: rgba(102, 252, 241, 0.55);
+  box-shadow: 0 12px 24px rgba(37, 40, 61, 0.13);
+}
+
+.appointment-actions {
+  margin-top: 26px;
+}
+
+.appointment-continue {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.appointment-continue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(37, 40, 61, 0.22);
+}
+
+@media (max-width: 760px) {
+  .appointment-panel {
+    padding: 20px;
+  }
+
+  .appointment-service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Primary Step Button Visibility ---------- */
+
+.repair-info-actions,
+.appointment-actions {
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(37, 40, 61, 0.1);
+}
+
+.repair-info-continue,
+.appointment-continue {
+  min-height: 54px;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #25283d, #077bff);
+  box-shadow: 0 14px 30px rgba(7, 123, 255, 0.22);
+}
+
+.repair-info-continue:hover,
+.appointment-continue:hover {
+  box-shadow: 0 18px 36px rgba(7, 123, 255, 0.32);
+}
+
+.repair-info-continue::after {
+  content: " →";
+}
+
+.appointment-continue::after {
+  content: " →";
+}
+
+/* ---------- Model Search Clear Button ---------- */
+
+.model-search-row {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+  margin-top: 8px;
+}
+
+.model-search-row .model-search-input {
+  flex: 1;
+  margin-top: 0;
+}
+
+.model-search-clear {
+  min-width: 88px;
+  border: none;
+  border-radius: 14px;
+  padding: 0 14px;
+  background: #f1f3f7;
+  color: var(--accent);
+  font-weight: 800;
+  cursor: pointer;
+  border: 1px solid rgba(37, 40, 61, 0.12);
+}
+
+.model-search-clear:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 760px) {
+  .model-search-row {
+    gap: 8px;
+  }
+
+  .model-search-clear {
+    min-width: 74px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+}
+
+/* ---------- Repair Info Details ---------- */
+
+.repair-info-detail {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+  font-style: normal;
+}
+
+.repair-info-detail.is-empty {
+  opacity: 0.72;
+}

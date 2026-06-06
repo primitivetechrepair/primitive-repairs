@@ -1,0 +1,5991 @@
+[
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab One",
+    "image": "/images/models/lenovo-tab-one.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab Plus",
+    "image": "/images/models/lenovo-tab-plus.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P12",
+    "image": "/images/models/lenovo-tab-p12.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P11 Pro (2nd Gen)",
+    "image": "/images/models/lenovo-tab-p11-pro-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P11 (2nd Gen)",
+    "image": "/images/models/lenovo-tab-p11-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P11 Plus",
+    "image": "/images/models/lenovo-tab-p11-plus.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P11 Pro",
+    "image": "/images/models/lenovo-tab-p11-pro.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P11",
+    "image": "/images/models/lenovo-tab-p11.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab P10",
+    "image": "/images/models/lenovo-tab-p10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M11",
+    "image": "/images/models/lenovo-tab-m11.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M10 5G",
+    "image": "/images/models/lenovo-tab-m10-5g.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M10 Plus (3rd Gen)",
+    "image": "/images/models/lenovo-tab-m10-plus-3rd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M10 HD (2nd Gen)",
+    "image": "/images/models/lenovo-tab-m10-hd-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M10",
+    "image": "/images/models/lenovo-tab-m10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M9",
+    "image": "/images/models/lenovo-tab-m9.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M8 (4th Gen)",
+    "image": "/images/models/lenovo-tab-m8-4th-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M8 HD",
+    "image": "/images/models/lenovo-tab-m8-hd.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M8",
+    "image": "/images/models/lenovo-tab-m8.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M7 (3rd Gen)",
+    "image": "/images/models/lenovo-tab-m7-3rd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Tab Series",
+    "model": "Lenovo Tab M7",
+    "image": "/images/models/lenovo-tab-m7.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Idea Tab Series",
+    "model": "Lenovo Idea Tab Pro Gen 2",
+    "image": "/images/models/lenovo-idea-tab-pro-gen-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Idea Tab Series",
+    "model": "Lenovo Idea Tab Pro",
+    "image": "/images/models/lenovo-idea-tab-pro.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Idea Tab Series",
+    "model": "Lenovo Idea Tab",
+    "image": "/images/models/lenovo-idea-tab.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tab Plus",
+    "image": "/images/models/lenovo-yoga-tab-plus.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tab 13",
+    "image": "/images/models/lenovo-yoga-tab-13.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tab 11",
+    "image": "/images/models/lenovo-yoga-tab-11.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tab 3 Pro",
+    "image": "/images/models/lenovo-yoga-tab-3-pro.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tab 3 10",
+    "image": "/images/models/lenovo-yoga-tab-3-10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tab 3 8",
+    "image": "/images/models/lenovo-yoga-tab-3-8.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tablet 2 10",
+    "image": "/images/models/lenovo-yoga-tablet-2-10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tablet 2 8",
+    "image": "/images/models/lenovo-yoga-tablet-2-8.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tablet 10",
+    "image": "/images/models/lenovo-yoga-tablet-10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Yoga Tab Series",
+    "model": "Lenovo Yoga Tablet 8",
+    "image": "/images/models/lenovo-yoga-tablet-8.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Legion Tab Series",
+    "model": "Lenovo Legion Tab Gen 5",
+    "image": "/images/models/lenovo-legion-tab-gen-5.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Legion Tab Series",
+    "model": "Lenovo Legion Tab Gen 3",
+    "image": "/images/models/lenovo-legion-tab-gen-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Legion Tab Series",
+    "model": "Lenovo Legion Y700",
+    "image": "/images/models/lenovo-legion-y700.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Smart Tab Series",
+    "model": "Lenovo Smart Tab M10 FHD Plus",
+    "image": "/images/models/lenovo-smart-tab-m10-fhd-plus.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Smart Tab Series",
+    "model": "Lenovo Smart Tab M10",
+    "image": "/images/models/lenovo-smart-tab-m10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo Smart Tab Series",
+    "model": "Lenovo Smart Tab P10",
+    "image": "/images/models/lenovo-smart-tab-p10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab A1000",
+    "image": "/images/models/lenovo-ideatab-a1000.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab A2107",
+    "image": "/images/models/lenovo-ideatab-a2107.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab A3000",
+    "image": "/images/models/lenovo-ideatab-a3000.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab A5000",
+    "image": "/images/models/lenovo-ideatab-a5000.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab S2109",
+    "image": "/images/models/lenovo-ideatab-s2109.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab S2110",
+    "image": "/images/models/lenovo-ideatab-s2110.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo IdeaTab Series",
+    "model": "Lenovo IdeaTab S6000",
+    "image": "/images/models/lenovo-ideatab-s6000.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad X1 Tablet (3rd Gen)",
+    "image": "/images/models/thinkpad-x1-tablet-3rd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad X1 Tablet (2nd Gen)",
+    "image": "/images/models/thinkpad-x1-tablet-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad X1 Tablet",
+    "image": "/images/models/thinkpad-x1-tablet.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad Tablet 10",
+    "image": "/images/models/thinkpad-tablet-10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad 10",
+    "image": "/images/models/thinkpad-10.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad Tablet 2",
+    "image": "/images/models/thinkpad-tablet-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Lenovo ThinkPad Tablet Series",
+    "model": "ThinkPad Tablet",
+    "image": "/images/models/thinkpad-tablet.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

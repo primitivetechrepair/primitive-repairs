@@ -1,0 +1,6257 @@
+[
+  {
+    "series": "Custom / Unknown Device",
+    "model": "Custom Device",
+    "image": "/images/models/custom-device.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Custom / Unknown Device",
+    "model": "Unknown Device",
+    "image": "/images/models/unknown-device.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Custom / Unknown Device",
+    "model": "Other Electronic Device",
+    "image": "/images/models/other-electronic-device.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Custom / Unknown Device",
+    "model": "Device Not Listed",
+    "image": "/images/models/device-not-listed.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Audio Devices",
+    "model": "Headphones",
+    "image": "/images/models/headphones.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Audio Devices",
+    "model": "Wireless Earbuds",
+    "image": "/images/models/wireless-earbuds.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Audio Devices",
+    "model": "Bluetooth Speaker",
+    "image": "/images/models/bluetooth-speaker.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Audio Devices",
+    "model": "Portable Speaker",
+    "image": "/images/models/portable-speaker.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Audio Devices",
+    "model": "Soundbar",
+    "image": "/images/models/soundbar.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Camera / Photo Devices",
+    "model": "Digital Camera",
+    "image": "/images/models/digital-camera.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Camera / Photo Devices",
+    "model": "Action Camera",
+    "image": "/images/models/action-camera.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Camera / Photo Devices",
+    "model": "Security Camera",
+    "image": "/images/models/security-camera.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Camera / Photo Devices",
+    "model": "Camera Accessory",
+    "image": "/images/models/camera-accessory.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Networking Devices",
+    "model": "Router",
+    "image": "/images/models/router.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Networking Devices",
+    "model": "Modem",
+    "image": "/images/models/modem.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Networking Devices",
+    "model": "Wi-Fi Extender",
+    "image": "/images/models/wi-fi-extender.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Networking Devices",
+    "model": "Mesh Wi-Fi Node",
+    "image": "/images/models/mesh-wi-fi-node.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Networking Devices",
+    "model": "Network Switch",
+    "image": "/images/models/network-switch.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Accessories",
+    "model": "Game Controller",
+    "image": "/images/models/game-controller.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Accessories",
+    "model": "Charging Dock",
+    "image": "/images/models/charging-dock.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Accessories",
+    "model": "Gaming Headset",
+    "image": "/images/models/gaming-headset.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Accessories",
+    "model": "Console Accessory",
+    "image": "/images/models/console-accessory.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Smart Home Devices",
+    "model": "Smart Display",
+    "image": "/images/models/smart-display.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Smart Home Devices",
+    "model": "Smart Speaker",
+    "image": "/images/models/smart-speaker.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Smart Home Devices",
+    "model": "Smart Doorbell",
+    "image": "/images/models/smart-doorbell.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Smart Home Devices",
+    "model": "Smart Camera",
+    "image": "/images/models/smart-camera.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Smart Home Devices",
+    "model": "Smart Plug",
+    "image": "/images/models/smart-plug.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Storage Devices",
+    "model": "External Hard Drive",
+    "image": "/images/models/external-hard-drive.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Storage Devices",
+    "model": "External SSD",
+    "image": "/images/models/external-ssd.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Storage Devices",
+    "model": "USB Flash Drive",
+    "image": "/images/models/usb-flash-drive.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Storage Devices",
+    "model": "Memory Card",
+    "image": "/images/models/memory-card.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Storage Devices",
+    "model": "NAS Device",
+    "image": "/images/models/nas-device.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Printer / Office Devices",
+    "model": "Printer",
+    "image": "/images/models/printer.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Printer / Office Devices",
+    "model": "Scanner",
+    "image": "/images/models/scanner.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Printer / Office Devices",
+    "model": "Label Printer",
+    "image": "/images/models/label-printer.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Printer / Office Devices",
+    "model": "Receipt Printer",
+    "image": "/images/models/receipt-printer.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Drone / RC Devices",
+    "model": "Drone",
+    "image": "/images/models/drone.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Drone / RC Devices",
+    "model": "Drone Controller",
+    "image": "/images/models/drone-controller.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Drone / RC Devices",
+    "model": "RC Device",
+    "image": "/images/models/rc-device.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Drone / RC Devices",
+    "model": "Action Camera Drone",
+    "image": "/images/models/action-camera-drone.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Accessory / Peripheral",
+    "model": "Keyboard",
+    "image": "/images/models/keyboard.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Accessory / Peripheral",
+    "model": "Mouse",
+    "image": "/images/models/mouse.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Accessory / Peripheral",
+    "model": "Docking Station",
+    "image": "/images/models/docking-station.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Accessory / Peripheral",
+    "model": "USB Hub",
+    "image": "/images/models/usb-hub.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Accessory / Peripheral",
+    "model": "Charger / Power Adapter",
+    "image": "/images/models/charger-power-adapter.webp",
+    "repairs": [
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Device Needs Inspection",
+          "Issue Needs Confirmation"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Power Button Issue"
+        ]
+      },
+      {
+        "repair": "Charging Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charging Port",
+          "Intermittent Charging",
+          "Charging Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Screen / Display Issue",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Lines On Screen",
+          "Touch Not Responding"
+        ]
+      },
+      {
+        "repair": "Button / Input Issue",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Button Not Working",
+          "Stuck Button",
+          "Input Not Responding",
+          "Controls Feel Loose"
+        ]
+      },
+      {
+        "repair": "Audio / Speaker Issue",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Audio Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Software / Setup Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Setup Help Needed",
+          "Update Issue",
+          "Device Running Slow",
+          "Connection Or Pairing Issue"
+        ]
+      },
+      {
+        "repair": "Data / Storage Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Files Need Recovery",
+          "Storage Not Detected",
+          "Memory Card Issue",
+          "Device Won't Read Storage"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Dirty Device",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Corrosion Suspected",
+          "Random Issues After Water Damage"
+        ]
+      },
+      {
+        "repair": "Custom Repair Request",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Special Repair Request",
+          "Part Replacement Needed",
+          "Custom Service Needed",
+          "Issue Not Listed"
+        ]
+      }
+    ]
+  }
+]

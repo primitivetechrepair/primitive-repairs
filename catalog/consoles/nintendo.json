@@ -1,0 +1,5252 @@
+[
+  {
+    "series": "Nintendo Switch Series",
+    "model": "Nintendo Switch 2",
+    "image": "/images/models/nintendo-switch-2.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Switch Series",
+    "model": "Nintendo Switch OLED Model",
+    "image": "/images/models/nintendo-switch-oled-model.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Switch Series",
+    "model": "Nintendo Switch",
+    "image": "/images/models/nintendo-switch.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Switch Series",
+    "model": "Nintendo Switch Lite",
+    "image": "/images/models/nintendo-switch-lite.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Wii / Wii U Series",
+    "model": "Wii U",
+    "image": "/images/models/wii-u.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Wii / Wii U Series",
+    "model": "Wii",
+    "image": "/images/models/wii.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Wii / Wii U Series",
+    "model": "Wii Mini",
+    "image": "/images/models/wii-mini.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "New Nintendo 3DS XL",
+    "image": "/images/models/new-nintendo-3ds-xl.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "New Nintendo 3DS",
+    "image": "/images/models/new-nintendo-3ds.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo 3DS XL",
+    "image": "/images/models/nintendo-3ds-xl.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo 3DS",
+    "image": "/images/models/nintendo-3ds.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo 2DS XL",
+    "image": "/images/models/nintendo-2ds-xl.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo 2DS",
+    "image": "/images/models/nintendo-2ds.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo DSi XL",
+    "image": "/images/models/nintendo-dsi-xl.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo DSi",
+    "image": "/images/models/nintendo-dsi.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo DS Lite",
+    "image": "/images/models/nintendo-ds-lite.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo DS / 3DS Series",
+    "model": "Nintendo DS",
+    "image": "/images/models/nintendo-ds.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Boy Series",
+    "model": "Game Boy",
+    "image": "/images/models/game-boy.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Boy Series",
+    "model": "Game Boy Pocket",
+    "image": "/images/models/game-boy-pocket.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Boy Series",
+    "model": "Game Boy Color",
+    "image": "/images/models/game-boy-color.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Boy Series",
+    "model": "Game Boy Advance",
+    "image": "/images/models/game-boy-advance.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Boy Series",
+    "model": "Game Boy Advance SP",
+    "image": "/images/models/game-boy-advance-sp.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Game Boy Series",
+    "model": "Game Boy Micro",
+    "image": "/images/models/game-boy-micro.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Home Console Classics",
+    "model": "Nintendo Entertainment System (NES)",
+    "image": "/images/models/nintendo-entertainment-system-nes.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Home Console Classics",
+    "model": "Super Nintendo Entertainment System (SNES)",
+    "image": "/images/models/super-nintendo-entertainment-system-snes.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Home Console Classics",
+    "model": "Nintendo 64",
+    "image": "/images/models/nintendo-64.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Home Console Classics",
+    "model": "Nintendo GameCube",
+    "image": "/images/models/nintendo-gamecube.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Classic Edition Series",
+    "model": "NES Classic Edition",
+    "image": "/images/models/nes-classic-edition.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Classic Edition Series",
+    "model": "Super NES Classic Edition",
+    "image": "/images/models/super-nes-classic-edition.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Accessories / Controllers",
+    "model": "Joy-Con Controller",
+    "image": "/images/models/joy-con-controller.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Accessories / Controllers",
+    "model": "Nintendo Switch Pro Controller",
+    "image": "/images/models/nintendo-switch-pro-controller.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Accessories / Controllers",
+    "model": "Nintendo Switch 2 Joy-Con 2 Controller",
+    "image": "/images/models/nintendo-switch-2-joy-con-2-controller.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Accessories / Controllers",
+    "model": "Nintendo GameCube Controller",
+    "image": "/images/models/nintendo-gamecube-controller.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Accessories / Controllers",
+    "model": "Wii Remote",
+    "image": "/images/models/wii-remote.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Nintendo Accessories / Controllers",
+    "model": "Wii U GamePad",
+    "image": "/images/models/wii-u-gamepad.webp",
+    "repairs": [
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose USB-C Port",
+          "Intermittent Charging",
+          "Dock Not Detecting Console"
+        ]
+      },
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Screen",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Console Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "HDMI / Dock Display Issue",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No TV Signal",
+          "Dock Not Displaying",
+          "Image Cuts In And Out",
+          "HDMI / Dock Issue"
+        ]
+      },
+      {
+        "repair": "Joy-Con / Controller Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Stick Drift",
+          "Buttons Not Working",
+          "Controller Not Pairing",
+          "Rail / Sync Issue"
+        ]
+      },
+      {
+        "repair": "Game Card / Cartridge Slot Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Game Card Not Reading",
+          "Cartridge Slot Damaged",
+          "Game Error",
+          "Game Card Stuck"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Random Shutdowns",
+          "Won't Wake From Sleep"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Poor Airflow"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Dirty Console",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

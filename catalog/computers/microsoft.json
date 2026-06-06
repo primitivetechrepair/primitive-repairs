@@ -1,0 +1,6304 @@
+[
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 13-inch",
+    "image": "/images/models/surface-laptop-13-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 13.8-inch",
+    "image": "/images/models/surface-laptop-138-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 15-inch",
+    "image": "/images/models/surface-laptop-15-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 7th Edition 13.8-inch",
+    "image": "/images/models/surface-laptop-7th-edition-138-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 7th Edition 15-inch",
+    "image": "/images/models/surface-laptop-7th-edition-15-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 6 for Business 13.5-inch",
+    "image": "/images/models/surface-laptop-6-for-business-135-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 6 for Business 15-inch",
+    "image": "/images/models/surface-laptop-6-for-business-15-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 5 13.5-inch",
+    "image": "/images/models/surface-laptop-5-135-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 5 15-inch",
+    "image": "/images/models/surface-laptop-5-15-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 4 13.5-inch",
+    "image": "/images/models/surface-laptop-4-135-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 4 15-inch",
+    "image": "/images/models/surface-laptop-4-15-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 3 13.5-inch",
+    "image": "/images/models/surface-laptop-3-135-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 3 15-inch",
+    "image": "/images/models/surface-laptop-3-15-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop 2",
+    "image": "/images/models/surface-laptop-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Series",
+    "model": "Surface Laptop",
+    "image": "/images/models/surface-laptop.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Go Series",
+    "model": "Surface Laptop Go 3",
+    "image": "/images/models/surface-laptop-go-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Go Series",
+    "model": "Surface Laptop Go 2",
+    "image": "/images/models/surface-laptop-go-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Go Series",
+    "model": "Surface Laptop Go",
+    "image": "/images/models/surface-laptop-go.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Studio Series",
+    "model": "Surface Laptop Studio 2",
+    "image": "/images/models/surface-laptop-studio-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Laptop Studio Series",
+    "model": "Surface Laptop Studio",
+    "image": "/images/models/surface-laptop-studio.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 12-inch",
+    "image": "/images/models/surface-pro-12-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 13-inch",
+    "image": "/images/models/surface-pro-13-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 11th Edition",
+    "image": "/images/models/surface-pro-11th-edition.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 10 for Business",
+    "image": "/images/models/surface-pro-10-for-business.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 9",
+    "image": "/images/models/surface-pro-9.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 8",
+    "image": "/images/models/surface-pro-8.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 7+",
+    "image": "/images/models/surface-pro-7.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 7",
+    "image": "/images/models/surface-pro-7.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 6",
+    "image": "/images/models/surface-pro-6.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro (5th Gen)",
+    "image": "/images/models/surface-pro-5th-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 4",
+    "image": "/images/models/surface-pro-4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro 3",
+    "image": "/images/models/surface-pro-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Pro Series",
+    "model": "Surface Pro X",
+    "image": "/images/models/surface-pro-x.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go 4 for Business",
+    "image": "/images/models/surface-go-4-for-business.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go 3",
+    "image": "/images/models/surface-go-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go 2",
+    "image": "/images/models/surface-go-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Go Series",
+    "model": "Surface Go",
+    "image": "/images/models/surface-go.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Book Series",
+    "model": "Surface Book 3",
+    "image": "/images/models/surface-book-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Book Series",
+    "model": "Surface Book 2",
+    "image": "/images/models/surface-book-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Book Series",
+    "model": "Surface Book",
+    "image": "/images/models/surface-book.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Studio Series",
+    "model": "Surface Studio 2+",
+    "image": "/images/models/surface-studio-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Studio Series",
+    "model": "Surface Studio 2",
+    "image": "/images/models/surface-studio-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Studio Series",
+    "model": "Surface Studio",
+    "image": "/images/models/surface-studio.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Original / RT Series",
+    "model": "Surface RT",
+    "image": "/images/models/surface-rt.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Original / RT Series",
+    "model": "Surface 2",
+    "image": "/images/models/surface-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Surface Original / RT Series",
+    "model": "Surface 3",
+    "image": "/images/models/surface-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Replacement",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Display",
+          "No Display",
+          "Lines On Screen",
+          "Backlight Issue"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Laptop Shuts Off",
+          "Battery Service Warning",
+          "Battery Swelling"
+        ]
+      },
+      {
+        "repair": "Keyboard / Type Cover Issue",
+        "image": "/images/repairs/keyboard-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Keyboard Not Connecting",
+          "Keys Not Responding",
+          "Trackpad Not Working",
+          "Type Cover Not Detected"
+        ]
+      },
+      {
+        "repair": "Trackpad Repair",
+        "image": "/images/repairs/trackpad-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Trackpad Not Clicking",
+          "Cursor Moving Randomly",
+          "Trackpad Not Responding"
+        ]
+      },
+      {
+        "repair": "Charging Port / Power Issue",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "No Power",
+          "Loose Charger",
+          "USB-C / Surface Connect Issue"
+        ]
+      },
+      {
+        "repair": "Fan / Overheating Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Runs Slow When Hot",
+          "Shuts Down Randomly"
+        ]
+      },
+      {
+        "repair": "Hinge / Housing Repair",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Broken Hinge",
+          "Loose Screen",
+          "Cracked Frame",
+          "Kickstand / Housing Issue"
+        ]
+      },
+      {
+        "repair": "Data Recovery",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Won't Boot",
+          "Needs Files Recovered",
+          "Drive Not Detected",
+          "Deleted Or Missing Files"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Spill",
+          "No Power After Spill",
+          "Keyboard / Trackpad Issues After Liquid",
+          "Random Restarting"
+        ]
+      },
+      {
+        "repair": "Software / Windows Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Windows Update Issue",
+          "Running Slow",
+          "Login / Startup Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Surface Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

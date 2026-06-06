@@ -1,0 +1,5132 @@
+[
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 13-inch (M5)",
+    "image": "/images/models/ipad-pro-13-inch-m5.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 11-inch (M5)",
+    "image": "/images/models/ipad-pro-11-inch-m5.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 13-inch (M4)",
+    "image": "/images/models/ipad-pro-13-inch-m4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 11-inch (M4)",
+    "image": "/images/models/ipad-pro-11-inch-m4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 12.9-inch (6th generation)",
+    "image": "/images/models/ipad-pro-129-inch-6th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 11-inch (4th generation)",
+    "image": "/images/models/ipad-pro-11-inch-4th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 12.9-inch (5th generation)",
+    "image": "/images/models/ipad-pro-129-inch-5th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 11-inch (3rd generation)",
+    "image": "/images/models/ipad-pro-11-inch-3rd-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 12.9-inch (4th generation)",
+    "image": "/images/models/ipad-pro-129-inch-4th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 11-inch (2nd generation)",
+    "image": "/images/models/ipad-pro-11-inch-2nd-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 12.9-inch (3rd generation)",
+    "image": "/images/models/ipad-pro-129-inch-3rd-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 11-inch (1st generation)",
+    "image": "/images/models/ipad-pro-11-inch-1st-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 12.9-inch (2nd generation)",
+    "image": "/images/models/ipad-pro-129-inch-2nd-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 10.5-inch",
+    "image": "/images/models/ipad-pro-105-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 9.7-inch",
+    "image": "/images/models/ipad-pro-97-inch.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Pro Series",
+    "model": "iPad Pro 12.9-inch (1st generation)",
+    "image": "/images/models/ipad-pro-129-inch-1st-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 13-inch (M4)",
+    "image": "/images/models/ipad-air-13-inch-m4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 11-inch (M4)",
+    "image": "/images/models/ipad-air-11-inch-m4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 13-inch (M3)",
+    "image": "/images/models/ipad-air-13-inch-m3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 11-inch (M3)",
+    "image": "/images/models/ipad-air-11-inch-m3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 13-inch (M2)",
+    "image": "/images/models/ipad-air-13-inch-m2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 11-inch (M2)",
+    "image": "/images/models/ipad-air-11-inch-m2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air (5th generation)",
+    "image": "/images/models/ipad-air-5th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air (4th generation)",
+    "image": "/images/models/ipad-air-4th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air (3rd generation)",
+    "image": "/images/models/ipad-air-3rd-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air 2",
+    "image": "/images/models/ipad-air-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Air Series",
+    "model": "iPad Air",
+    "image": "/images/models/ipad-air.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini (A17 Pro)",
+    "image": "/images/models/ipad-mini-a17-pro.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini (6th generation)",
+    "image": "/images/models/ipad-mini-6th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini (5th generation)",
+    "image": "/images/models/ipad-mini-5th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini 4",
+    "image": "/images/models/ipad-mini-4.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini 3",
+    "image": "/images/models/ipad-mini-3.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini 2",
+    "image": "/images/models/ipad-mini-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Mini Series",
+    "model": "iPad mini (1st generation)",
+    "image": "/images/models/ipad-mini-1st-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (A16)",
+    "image": "/images/models/ipad-a16.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (10th generation)",
+    "image": "/images/models/ipad-10th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (9th generation)",
+    "image": "/images/models/ipad-9th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (8th generation)",
+    "image": "/images/models/ipad-8th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (7th generation)",
+    "image": "/images/models/ipad-7th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (6th generation)",
+    "image": "/images/models/ipad-6th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (5th generation)",
+    "image": "/images/models/ipad-5th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (4th generation)",
+    "image": "/images/models/ipad-4th-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (3rd generation)",
+    "image": "/images/models/ipad-3rd-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad 2",
+    "image": "/images/models/ipad-2.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "iPad Series",
+    "model": "iPad (1st generation)",
+    "image": "/images/models/ipad-1st-generation.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Camera Repair",
+        "image": "/images/repairs/camera-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Blurry Camera",
+          "Camera Not Opening",
+          "Black Camera Screen",
+          "Camera Lens Damage"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose",
+          "Home Button Issue"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,4184 @@
+[
+  {
+    "series": "Fire Max Series",
+    "model": "Fire Max 11 (2023)",
+    "image": "/images/models/fire-max-11-2023.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire Max Series",
+    "model": "Fire Max 11 Kids",
+    "image": "/images/models/fire-max-11-kids.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 (13th Gen, 2023)",
+    "image": "/images/models/fire-hd-10-13th-gen-2023.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 Kids (2023)",
+    "image": "/images/models/fire-hd-10-kids-2023.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 Kids Pro (2023)",
+    "image": "/images/models/fire-hd-10-kids-pro-2023.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 (11th Gen, 2021)",
+    "image": "/images/models/fire-hd-10-11th-gen-2021.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 Plus (2021)",
+    "image": "/images/models/fire-hd-10-plus-2021.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 Kids (2021)",
+    "image": "/images/models/fire-hd-10-kids-2021.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 Kids Pro (2021)",
+    "image": "/images/models/fire-hd-10-kids-pro-2021.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 (9th Gen, 2019)",
+    "image": "/images/models/fire-hd-10-9th-gen-2019.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 (7th Gen, 2017)",
+    "image": "/images/models/fire-hd-10-7th-gen-2017.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 10 Series",
+    "model": "Fire HD 10 (5th Gen, 2015)",
+    "image": "/images/models/fire-hd-10-5th-gen-2015.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (12th Gen, 2024)",
+    "image": "/images/models/fire-hd-8-12th-gen-2024.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 Kids (2024)",
+    "image": "/images/models/fire-hd-8-kids-2024.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 Kids Pro (2024)",
+    "image": "/images/models/fire-hd-8-kids-pro-2024.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (12th Gen, 2022)",
+    "image": "/images/models/fire-hd-8-12th-gen-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 Plus (2022)",
+    "image": "/images/models/fire-hd-8-plus-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 Kids (2022)",
+    "image": "/images/models/fire-hd-8-kids-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 Kids Pro (2022)",
+    "image": "/images/models/fire-hd-8-kids-pro-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (10th Gen, 2020)",
+    "image": "/images/models/fire-hd-8-10th-gen-2020.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 Plus (2020)",
+    "image": "/images/models/fire-hd-8-plus-2020.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (8th Gen, 2018)",
+    "image": "/images/models/fire-hd-8-8th-gen-2018.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (7th Gen, 2017)",
+    "image": "/images/models/fire-hd-8-7th-gen-2017.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (6th Gen, 2016)",
+    "image": "/images/models/fire-hd-8-6th-gen-2016.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HD 8 Series",
+    "model": "Fire HD 8 (5th Gen, 2015)",
+    "image": "/images/models/fire-hd-8-5th-gen-2015.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 (12th Gen, 2022)",
+    "image": "/images/models/fire-7-12th-gen-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 Kids (2022)",
+    "image": "/images/models/fire-7-kids-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 Kids Pro (2022)",
+    "image": "/images/models/fire-7-kids-pro-2022.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 (9th Gen, 2019)",
+    "image": "/images/models/fire-7-9th-gen-2019.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 Kids (2019)",
+    "image": "/images/models/fire-7-kids-2019.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 (7th Gen, 2017)",
+    "image": "/images/models/fire-7-7th-gen-2017.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire 7 Series",
+    "model": "Fire 7 (5th Gen, 2015)",
+    "image": "/images/models/fire-7-5th-gen-2015.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HDX Series",
+    "model": "Fire HDX 8.9 (4th Gen)",
+    "image": "/images/models/fire-hdx-89-4th-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HDX Series",
+    "model": "Fire HDX 8.9 (3rd Gen)",
+    "image": "/images/models/fire-hdx-89-3rd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Fire HDX Series",
+    "model": "Fire HDX 7 (3rd Gen)",
+    "image": "/images/models/fire-hdx-7-3rd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Kindle Fire / Fire Original Series",
+    "model": "Kindle Fire (1st Gen)",
+    "image": "/images/models/kindle-fire-1st-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Kindle Fire / Fire Original Series",
+    "model": "Kindle Fire (2nd Gen)",
+    "image": "/images/models/kindle-fire-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Kindle Fire / Fire Original Series",
+    "model": "Kindle Fire HD 7 (2nd Gen)",
+    "image": "/images/models/kindle-fire-hd-7-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Kindle Fire / Fire Original Series",
+    "model": "Kindle Fire HD 8.9 (2nd Gen)",
+    "image": "/images/models/kindle-fire-hd-89-2nd-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Kindle Fire / Fire Original Series",
+    "model": "Fire HD 6 (4th Gen)",
+    "image": "/images/models/fire-hd-6-4th-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Kindle Fire / Fire Original Series",
+    "model": "Fire HD 7 (4th Gen)",
+    "image": "/images/models/fire-hd-7-4th-gen.webp",
+    "repairs": [
+      {
+        "repair": "Screen Repair",
+        "image": "/images/repairs/screen-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Cracked Glass",
+          "No Display",
+          "Touch Not Responding",
+          "Lines On Screen"
+        ]
+      },
+      {
+        "repair": "Battery Replacement",
+        "image": "/images/repairs/battery-replacement.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Battery Drains Fast",
+          "Tablet Shuts Off",
+          "Battery Swelling",
+          "Device Gets Hot"
+        ]
+      },
+      {
+        "repair": "Charging Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Not Charging",
+          "Loose Charger",
+          "Intermittent Charging",
+          "Cable Must Be Held At An Angle"
+        ]
+      },
+      {
+        "repair": "Speaker / Microphone Repair",
+        "image": "/images/repairs/speaker-microphone-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Sound",
+          "Muffled Audio",
+          "Microphone Not Working",
+          "Customer Cannot Hear You"
+        ]
+      },
+      {
+        "repair": "Button Repair",
+        "image": "/images/repairs/button-repair.webp",
+        "time": "60\u2013120 Minutes",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Power Button Not Working",
+          "Volume Button Stuck",
+          "Button Feels Loose"
+        ]
+      },
+      {
+        "repair": "Water Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power",
+          "Random Restarting",
+          "Screen Flickering After Water Exposure"
+        ]
+      },
+      {
+        "repair": "Software / Fire OS Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Boot Loop",
+          "Frozen Screen",
+          "Update Issue",
+          "Device Running Slow",
+          "Amazon Account / Fire OS Issue"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Tablet Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,3452 @@
+[
+  {
+    "series": "PlayStation 5 Series",
+    "model": "PlayStation 5",
+    "image": "/images/models/playstation-5.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 5 Series",
+    "model": "PlayStation 5 Digital Edition",
+    "image": "/images/models/playstation-5-digital-edition.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 5 Series",
+    "model": "PlayStation 5 Slim",
+    "image": "/images/models/playstation-5-slim.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 5 Series",
+    "model": "PlayStation 5 Slim Digital Edition",
+    "image": "/images/models/playstation-5-slim-digital-edition.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 5 Series",
+    "model": "PlayStation 5 Pro",
+    "image": "/images/models/playstation-5-pro.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 4 Series",
+    "model": "PlayStation 4",
+    "image": "/images/models/playstation-4.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 4 Series",
+    "model": "PlayStation 4 Slim",
+    "image": "/images/models/playstation-4-slim.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 4 Series",
+    "model": "PlayStation 4 Pro",
+    "image": "/images/models/playstation-4-pro.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 3 Series",
+    "model": "PlayStation 3 Fat",
+    "image": "/images/models/playstation-3-fat.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 3 Series",
+    "model": "PlayStation 3 Slim",
+    "image": "/images/models/playstation-3-slim.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 3 Series",
+    "model": "PlayStation 3 Super Slim",
+    "image": "/images/models/playstation-3-super-slim.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 2 Series",
+    "model": "PlayStation 2 Fat",
+    "image": "/images/models/playstation-2-fat.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 2 Series",
+    "model": "PlayStation 2 Slim",
+    "image": "/images/models/playstation-2-slim.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 1 Series",
+    "model": "PlayStation",
+    "image": "/images/models/playstation.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation 1 Series",
+    "model": "PS One",
+    "image": "/images/models/ps-one.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Portable Series",
+    "model": "PSP-1000",
+    "image": "/images/models/psp-1000.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Portable Series",
+    "model": "PSP-2000",
+    "image": "/images/models/psp-2000.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Portable Series",
+    "model": "PSP-3000",
+    "image": "/images/models/psp-3000.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Portable Series",
+    "model": "PSP Go",
+    "image": "/images/models/psp-go.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Portable Series",
+    "model": "PSP Street",
+    "image": "/images/models/psp-street.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Vita Series",
+    "model": "PS Vita OLED (PCH-1000)",
+    "image": "/images/models/ps-vita-oled-pch-1000.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Vita Series",
+    "model": "PS Vita Slim (PCH-2000)",
+    "image": "/images/models/ps-vita-slim-pch-2000.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation Vita Series",
+    "model": "PlayStation TV",
+    "image": "/images/models/playstation-tv.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation VR Series",
+    "model": "PlayStation VR",
+    "image": "/images/models/playstation-vr.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "PlayStation VR Series",
+    "model": "PlayStation VR2",
+    "image": "/images/models/playstation-vr2.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Beeping Only",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Database Corruption",
+          "Storage Error",
+          "Games Not Installing"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Safe Mode Loop",
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2348 @@
+[
+  {
+    "series": "Xbox Series X/S",
+    "model": "Xbox Series X",
+    "image": "/images/models/xbox-series-x.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox Series X/S",
+    "model": "Xbox Series X Digital Edition",
+    "image": "/images/models/xbox-series-x-digital-edition.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox Series X/S",
+    "model": "Xbox Series S",
+    "image": "/images/models/xbox-series-s.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox Series X/S",
+    "model": "Xbox Series S 1TB",
+    "image": "/images/models/xbox-series-s-1tb.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox One Series",
+    "model": "Xbox One",
+    "image": "/images/models/xbox-one.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox One Series",
+    "model": "Xbox One S",
+    "image": "/images/models/xbox-one-s.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox One Series",
+    "model": "Xbox One S All-Digital Edition",
+    "image": "/images/models/xbox-one-s-all-digital-edition.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox One Series",
+    "model": "Xbox One X",
+    "image": "/images/models/xbox-one-x.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox 360 Series",
+    "model": "Xbox 360",
+    "image": "/images/models/xbox-360.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox 360 Series",
+    "model": "Xbox 360 S",
+    "image": "/images/models/xbox-360-s.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox 360 Series",
+    "model": "Xbox 360 E",
+    "image": "/images/models/xbox-360-e.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox 360 Series",
+    "model": "Xbox 360 Elite",
+    "image": "/images/models/xbox-360-elite.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox 360 Series",
+    "model": "Xbox 360 Arcade",
+    "image": "/images/models/xbox-360-arcade.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Original Xbox Series",
+    "model": "Xbox",
+    "image": "/images/models/xbox.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox Accessories / Controller",
+    "model": "Xbox Wireless Controller",
+    "image": "/images/models/xbox-wireless-controller.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox Accessories / Controller",
+    "model": "Xbox Elite Wireless Controller Series 2",
+    "image": "/images/models/xbox-elite-wireless-controller-series-2.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Xbox Accessories / Controller",
+    "model": "Xbox Adaptive Controller",
+    "image": "/images/models/xbox-adaptive-controller.webp",
+    "repairs": [
+      {
+        "repair": "HDMI Port Repair",
+        "image": "/images/repairs/hdmi-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Signal",
+          "Loose HDMI Port",
+          "Bent HDMI Pins",
+          "Image Cuts In And Out"
+        ]
+      },
+      {
+        "repair": "Power Issue",
+        "image": "/images/repairs/power-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "No Power",
+          "Turns On Then Off",
+          "Power Supply Issue",
+          "Random Shutdowns"
+        ]
+      },
+      {
+        "repair": "Overheating / Fan Service",
+        "image": "/images/repairs/fan-replacement.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Overheating",
+          "Loud Fan",
+          "Console Shuts Down",
+          "Hot Airflow"
+        ]
+      },
+      {
+        "repair": "Disc Drive Repair",
+        "image": "/images/repairs/disc-drive-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "Disc Not Reading",
+          "Disc Stuck",
+          "Grinding Noise",
+          "Won't Accept Disc"
+        ]
+      },
+      {
+        "repair": "Storage / Hard Drive Issue",
+        "image": "/images/repairs/data-recovery.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Slow Loading",
+          "Storage Error",
+          "Games Not Installing",
+          "Drive Not Detected"
+        ]
+      },
+      {
+        "repair": "USB Port Repair",
+        "image": "/images/repairs/charging-port-repair.webp",
+        "time": "Diagnostic Required",
+        "warranty": "90 Days",
+        "symptoms": [
+          "USB Port Loose",
+          "Controller Not Charging",
+          "Accessory Not Detected",
+          "Damaged USB Port"
+        ]
+      },
+      {
+        "repair": "Controller Sync / Bluetooth Issue",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Controller Won't Pair",
+          "Controller Disconnects",
+          "Bluetooth Issue",
+          "Wireless Sync Issue"
+        ]
+      },
+      {
+        "repair": "Cleaning / Maintenance",
+        "image": "/images/repairs/cleaning-maintenance.webp",
+        "time": "Same Day",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Dust Build-Up",
+          "Loud Fan",
+          "Poor Airflow",
+          "Preventive Maintenance"
+        ]
+      },
+      {
+        "repair": "Liquid Damage Diagnostic",
+        "image": "/images/repairs/water-damage-diagnostic.webp",
+        "time": "Diagnostic Required",
+        "warranty": "No Warranty On Liquid Damage",
+        "symptoms": [
+          "Liquid Exposure",
+          "No Power After Spill",
+          "Random Shutdowns",
+          "Corrosion Suspected"
+        ]
+      },
+      {
+        "repair": "Software / System Issue",
+        "image": "/images/repairs/software-issue.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Error",
+          "System Corruption",
+          "Freezing Or Crashing",
+          "Startup Error"
+        ]
+      },
+      {
+        "repair": "Diagnostic / Not Sure",
+        "image": "/images/repairs/default.webp",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Sure What Is Wrong",
+          "Multiple Issues",
+          "Console Needs Inspection"
+        ]
+      }
+    ]
+  }
+]
