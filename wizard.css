@@ -4297,8 +4297,14 @@ text-align: center;
 
 .appointment-date-input {
   width: 100%;
+  max-width: 360px;
+  min-width: 0;
   min-height: 52px;
+  margin: 0 auto;
   padding: 12px 14px;
+
+  display: block;
+  box-sizing: border-box;
 
   border: 1px solid rgba(37, 40, 61, 0.14);
   border-radius: 16px;
@@ -4308,8 +4314,11 @@ text-align: center;
 
   font: inherit;
   font-weight: 800;
+  text-align: center;
 
   outline: none;
+  appearance: none;
+  -webkit-appearance: none;
 
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.86),
@@ -6017,23 +6026,6 @@ text-align: center;
   overflow-x: hidden;
 }
 
-.appointment-panel input,
-.appointment-panel select,
-.appointment-panel textarea {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-}
-
-.appointment-panel label,
-.appointment-panel .appointment-field,
-.appointment-panel .form-field {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
-
   .repair-info-hero {
     grid-template-columns: 1fr;
   }
@@ -6071,6 +6063,26 @@ text-align: center;
   .review-panel,
   .repair-details-panel {
     padding: 22px 18px;
+  }
+
+  .appointment-section,
+  .appointment-date-wrap,
+  .appointment-date-field {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .appointment-date-input {
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .repair-select-header {
