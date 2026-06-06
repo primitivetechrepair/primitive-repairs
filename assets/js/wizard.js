@@ -18,13 +18,6 @@ import { renderAppointmentStep } from "./appointments.js";
 import { buildLeadPayload, validateLeadPayload } from "./leadSubmission.js";
 import { mapWizardPayloadToLead } from "./leadMapper.js";
 import { submitWizardLead } from "./leadSubmitter.js";
-import {
-  saveMappedLeadLocally,
-  getLocalMappedLeads,
-  clearLocalMappedLeads
-} from "./localLeadStore.js";
-
-const DEV_MODE = true;
 
 const devices = [
   "Phone",
@@ -80,27 +73,6 @@ const repairMinimumSubmitTime = 8000;
 const repairCooldownMs = 60000;
 const repairCooldownKey = "primitiveRepairRequestLastSubmit";
 let repairSubmitLocked = false;
-
-  const devLeadQueuePanel = document.getElementById("dev-lead-queue-panel");
-  const devViewLeadsBtn = document.getElementById("dev-view-leads");
-  const devPreviewImportBtn = document.getElementById("dev-preview-import");
-  const devCopyImportBtn = document.getElementById("dev-copy-import");
-  const devClearLeadsBtn = document.getElementById("dev-clear-leads");
-  const devLeadQueueOutput = document.getElementById("dev-lead-queue-output");
-  const devLeadQueueCount = document.getElementById("dev-lead-queue-count");
-
-  if (devLeadQueuePanel && !DEV_MODE) {
-    devLeadQueuePanel.style.display = "none";
-  }
-
-  function updateDevLeadQueueCount() {
-    if (!devLeadQueueCount) return;
-
-    const leads = getLocalMappedLeads();
-    const count = leads.length;
-
-    devLeadQueueCount.textContent = `${count} saved`;
-  }
 
   function updateProgress() {
     const progressBar = document.getElementById("pr-progress-bar");
@@ -613,9 +585,6 @@ let repairSubmitLocked = false;
 
     localStorage.setItem(repairCooldownKey, String(now));
 
-    if (DEV_MODE) {
-      console.log("Wizard Submit Result:", submitResult);
-    }
   } catch (err) {
     console.error("Wizard lead submit failed:", err);
 
@@ -631,63 +600,6 @@ let repairSubmitLocked = false;
     );
 
     return;
-  }
-
-  let localLeads = [];
-
-  if (DEV_MODE) {
-    localLeads = saveMappedLeadLocally(mappedLead);
-    updateDevLeadQueueCount();
-  }
-
-  if (DEV_MODE) {
-    console.log("Lead Payload Ready:", leadPayload);
-    console.log("Primitive Tech Hub Lead Ready:", mappedLead);
-    console.log("Local Wizard Lead Test Queue:", localLeads);
-    console.log(`Saved locally. Total queued wizard leads: ${localLeads.length}`);
-
-    console.table({
-      leadID: mappedLead.leadID,
-      customerName: mappedLead.customerName,
-      contactNumber: mappedLead.contactNumber,
-      email: mappedLead.email,
-      device: mappedLead.device,
-      brand: mappedLead.brand,
-      series: mappedLead.series,
-      model: mappedLead.model,
-      repairType: mappedLead.repairType,
-      repairDetailsCount: mappedLead.repairDetails?.length || 0,
-      serviceType: mappedLead.appointment?.serviceType,
-      appointmentDate: mappedLead.appointment?.date,
-      appointmentTime: mappedLead.appointment?.time,
-      filesCount: mappedLead.files?.length || 0,
-      status: mappedLead.status,
-      source: mappedLead.source
-    });
-
-    console.table({
-      requestId: leadPayload.requestId,
-      customerName: leadPayload.customer?.name,
-      customerPhone: leadPayload.customer?.phone,
-      customerEmail: leadPayload.customer?.email,
-      device: leadPayload.device?.type,
-      brand: leadPayload.device?.brand,
-      series: leadPayload.device?.series,
-      model: leadPayload.device?.model,
-      repairsCount: leadPayload.repairs?.length || 0,
-      serviceType: leadPayload.appointment?.serviceType,
-      date: leadPayload.appointment?.date,
-      time: leadPayload.appointment?.time,
-      attachmentsCount: leadPayload.attachments?.length || 0,
-      source: leadPayload.source,
-      status: leadPayload.status
-    });
-
-    console.log("Selected Repairs:", leadPayload.repairs);
-    console.log("Repair Details:", leadPayload.repairs?.map((repair) => ({
-      repair: repair.name,
-      details: repair.details || "None provided"
-    })));
   }
 
   customerForm.reset();
@@ -735,105 +647,6 @@ if (repairPolicyToggle && repairPolicyBox) {
 
   if (fileInput) {
     fileInput.addEventListener("change", renderFilePreviews);
-  }
-
-  if (DEV_MODE) {
-    if (devViewLeadsBtn && devLeadQueueOutput) {
-      devViewLeadsBtn.addEventListener("click", () => {
-        const leads = getLocalMappedLeads();
-
-        devLeadQueueOutput.textContent = leads.length
-          ? JSON.stringify(leads, null, 2)
-          : "No saved test leads found.";
-      });
-    }
-
-    if (devPreviewImportBtn && devLeadQueueOutput) {
-      devPreviewImportBtn.addEventListener("click", () => {
-        const leads = getLocalMappedLeads();
-
-        const preview = leads.map((lead) => ({
-          leadID: lead.leadID,
-          customerName: lead.customerName,
-          contactNumber: lead.contactNumber,
-          email: lead.email,
-
-          address: lead.address,
-          apt: lead.apt,
-          zip: lead.zip,
-
-          device: lead.device,
-          brand: lead.brand,
-          series: lead.series,
-          model: lead.model,
-          modelId: lead.modelId,
-
-          repairType: lead.repairType,
-          repairTypes: lead.repairTypes,
-          repairItems: lead.repairItems,
-          repairDetails: lead.repairDetails,
-
-          issueDescription: lead.issueDescription,
-          notes: lead.notes,
-          files: lead.files,
-
-          appointment: lead.appointment,
-          appointmentDate: lead.appointmentDate,
-          appointmentTime: lead.appointmentTime,
-          serviceType: lead.serviceType,
-
-          repairCost: lead.repairCost,
-          laborAmount: lead.laborAmount,
-          paymentMethod: lead.paymentMethod,
-          paymentStatus: lead.paymentStatus,
-
-          inventoryUsed: lead.inventoryUsed,
-          inventoryUsedQty: lead.inventoryUsedQty,
-
-          status: lead.status,
-          source: lead.source,
-          dateReported: lead.dateReported,
-          createdAt: lead.createdAt,
-          lastUpdated: lead.lastUpdated
-        }));
-
-        devLeadQueueOutput.textContent = preview.length
-          ? JSON.stringify(preview, null, 2)
-          : "No saved test leads to preview.";
-      });
-    }
-
-    if (devCopyImportBtn && devLeadQueueOutput) {
-      devCopyImportBtn.addEventListener("click", async () => {
-        const leads = getLocalMappedLeads();
-
-        if (!leads.length) {
-          devLeadQueueOutput.textContent = "No saved test leads to copy.";
-          return;
-        }
-
-        const payload = JSON.stringify(leads, null, 2);
-
-        try {
-          await navigator.clipboard.writeText(payload);
-          devLeadQueueOutput.textContent =
-            `Copied ${leads.length} lead${leads.length === 1 ? "" : "s"} to clipboard.`;
-        } catch (err) {
-          console.error("Copy import payload failed:", err);
-          devLeadQueueOutput.textContent = payload;
-        }
-      });
-    }
-
-    if (devClearLeadsBtn && devLeadQueueOutput) {
-      devClearLeadsBtn.addEventListener("click", () => {
-        clearLocalMappedLeads();
-        updateDevLeadQueueCount();
-        devLeadQueueOutput.textContent = "Saved test leads cleared.";
-      });
-    }
-
-    updateDevLeadQueueCount();
   }
 
   renderWizard();
