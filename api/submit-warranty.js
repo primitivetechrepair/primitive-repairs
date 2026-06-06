@@ -39,35 +39,89 @@ export default async function handler(req, res) {
     const submittedAt = claim.submittedAt || new Date().toISOString();
 
     const emailHtml = `
-      <div style="font-family: Arial, sans-serif; line-height: 1.5; color: #111;">
-        <h2>New Warranty Claim</h2>
+      <div style="margin:0;padding:0;background:#05070b;font-family:Arial,Helvetica,sans-serif;color:#f5f7fb;">
+        <div style="max-width:680px;margin:0 auto;padding:28px 16px;">
+          
+          <div style="background:linear-gradient(135deg,#101827,#070b12);border:1px solid rgba(255,255,255,0.12);border-radius:22px;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,0.35);">
+            
+            <div style="padding:28px 28px 22px;border-bottom:1px solid rgba(255,255,255,0.1);">
+              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(102,252,241,0.12);border:1px solid rgba(102,252,241,0.35);color:#66fcf1;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
+                Warranty Claim
+              </div>
 
-        <p><strong>Submitted:</strong> ${escapeHtml(submittedAt)}</p>
+              <h1 style="margin:18px 0 8px;font-size:28px;line-height:1.15;color:#ffffff;">
+                New Warranty Review Request
+              </h1>
 
-        <hr />
+              <p style="margin:0;color:#b8c0cc;font-size:15px;line-height:1.6;">
+                A customer submitted a warranty claim from the Primitive Repairs website.
+              </p>
+            </div>
 
-        <p><strong>Full Name:</strong> ${escapeHtml(fullName)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+            <div style="padding:24px 28px;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Full Name</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(fullName)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
+                </tr>
+              </table>
 
-        <hr />
+              <div style="height:1px;background:rgba(255,255,255,0.1);margin:18px 0;"></div>
 
-        <p><strong>Original Repair Date:</strong> ${escapeHtml(originalRepairDate)}</p>
-        <p><strong>Device:</strong> ${escapeHtml(device)}</p>
-        <p><strong>Original Repair Type:</strong> ${escapeHtml(originalRepairType)}</p>
+              <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Original Repair Date</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(originalRepairDate)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Device</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Repair Type</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(originalRepairType)}</td>
+                </tr>
+              </table>
 
-        <hr />
+              <div style="margin-top:22px;padding:18px;border-radius:16px;background:rgba(255,255,255,0.055);border:1px solid rgba(255,255,255,0.1);">
+                <div style="margin-bottom:8px;color:#66fcf1;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">
+                  Customer Issue
+                </div>
+                <div style="color:#f5f7fb;font-size:15px;line-height:1.65;">
+                  ${escapeHtml(issue).replace(/\n/g, "<br />")}
+                </div>
+              </div>
 
-        <p><strong>Customer Issue:</strong></p>
-        <p>${escapeHtml(issue).replace(/\n/g, "<br />")}</p>
+              <div style="margin-top:18px;padding:16px;border-radius:16px;background:rgba(255,193,7,0.08);border:1px solid rgba(255,193,7,0.22);">
+                <div style="color:#ffd166;font-size:14px;font-weight:700;">
+                  Uploaded Files: ${escapeHtml(String(filesCount))}
+                </div>
+                <p style="margin:8px 0 0;color:#c7ced9;font-size:13px;line-height:1.55;">
+                  Files are not attached to this email yet. Current warranty uploads are stored locally and will be connected to backend storage later.
+                </p>
+              </div>
+            </div>
 
-        <hr />
+            <div style="padding:18px 28px;background:rgba(0,0,0,0.22);border-top:1px solid rgba(255,255,255,0.08);">
+              <p style="margin:0;color:#7f8a99;font-size:12px;line-height:1.5;">
+                Primitive Repairs • Warranty Support Notification
+              </p>
+            </div>
 
-        <p><strong>Uploaded Files Count:</strong> ${escapeHtml(String(filesCount))}</p>
-        <p style="font-size: 13px; color: #555;">
-          Files are not attached to this email yet. Current warranty uploads are stored locally
-          and will be connected to backend storage later.
-        </p>
+          </div>
+        </div>
       </div>
     `;
 
