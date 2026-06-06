@@ -788,102 +788,119 @@ if (claimForm) {
 
     let warrantyAttachments = [];
 
-try {
-  const selectedFiles = Array.from(warrantyFileInput?.files || []);
+    try {
+      const selectedFiles = Array.from(warrantyFileInput?.files || []);
 
-  warrantyAttachments = await Promise.all(
-    selectedFiles.map(fileToWarrantyAttachment)
-  );
-} catch (err) {
-  console.error("Warranty file processing failed:", err);
-  warrantySubmitLocked = false;
+      warrantyAttachments = await Promise.all(
+        selectedFiles.map(fileToWarrantyAttachment)
+      );
+    } catch (err) {
+      console.error("Warranty file processing failed:", err);
+      warrantySubmitLocked = false;
 
-  const submitButton = claimForm.querySelector(".warranty-submit-btn");
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Warranty Claim";
+      }
 
-  if (submitButton) {
-    submitButton.disabled = false;
-    submitButton.textContent = "Submit Warranty Claim";
-  }
+      alert("One or more files could not be processed. Please try again.");
+      return;
+    }
 
-  alert("One or more files could not be processed. Please try again.");
-  return;
-}
-
-const createdAt = new Date();
-const attachmentExpiresAt = new Date(
-  createdAt.getTime() + warrantyAttachmentRetentionMs
-);
-
-    const warrantyClaim = {
-  claimId: `W-${Date.now()}`,
-  name: String(formData.get("name") || "").trim(),
-  phone: String(formData.get("phone") || "").trim(),
-  email: String(formData.get("email") || "").trim(),
-  repairDate: String(formData.get("repairDate") || "").trim(),
-  device: String(formData.get("device") || "").trim(),
-  repairType: String(formData.get("repairType") || "").trim(),
-  issue: String(formData.get("issue") || "").trim(),
-  attachments: warrantyAttachments,
-  filesCount: warrantyAttachments.length,
-  feeAgreement: formData.get("feeAgreement") === "on",
-  source: "Warranty Page",
-  status: "Warranty Review Requested",
-  createdAt: createdAt.toISOString(),
-attachmentRetentionDays: warrantyAttachmentRetentionDays,
-attachmentExpiresAt: attachmentExpiresAt.toISOString()
-};
-
-    const savedClaims = JSON.parse(
-      localStorage.getItem(warrantyClaimsStorageKey) || "[]"
+    const createdAt = new Date();
+    const attachmentExpiresAt = new Date(
+      createdAt.getTime() + warrantyAttachmentRetentionMs
     );
 
-    savedClaims.unshift(warrantyClaim);
+    const warrantyClaim = {
+      claimId: `W-${Date.now()}`,
+      name: String(formData.get("name") || "").trim(),
+      phone: String(formData.get("phone") || "").trim(),
+      email: String(formData.get("email") || "").trim(),
+      repairDate: String(formData.get("repairDate") || "").trim(),
+      device: String(formData.get("device") || "").trim(),
+      repairType: String(formData.get("repairType") || "").trim(),
+      issue: String(formData.get("issue") || "").trim(),
+      attachments: warrantyAttachments,
+      filesCount: warrantyAttachments.length,
+      feeAgreement: formData.get("feeAgreement") === "on",
+      source: "Warranty Page",
+      status: "Warranty Review Requested",
+      createdAt: createdAt.toISOString(),
+      attachmentRetentionDays: warrantyAttachmentRetentionDays,
+      attachmentExpiresAt: attachmentExpiresAt.toISOString()
+    };
 
-    localStorage.setItem(
-  warrantyClaimsStorageKey,
-  JSON.stringify(savedClaims)
-);
-
-    localStorage.setItem(warrantyCooldownKey, String(now));
-
-    if (warrantySuccessClaimId) {
-      warrantySuccessClaimId.textContent = warrantyClaim.claimId;
-    }
-
-    if (warrantySuccessName) {
-      warrantySuccessName.textContent = warrantyClaim.name || "—";
-    }
-
-    if (warrantySuccessDevice) {
-      warrantySuccessDevice.textContent = warrantyClaim.device || "—";
-    }
-
-    if (warrantySuccessRepair) {
-      warrantySuccessRepair.textContent = warrantyClaim.repairType || "—";
-    }
-
-    claimForm.reset();
-
-    if (warrantyFilePreviews) {
-  warrantyFilePreviews.innerHTML = "";
-}
-
-    if (submitButton) {
-      submitButton.disabled = false;
-      submitButton.textContent = "Submit Warranty Claim";
-    }
-
-    warrantySubmitLocked = false;
-
-    claimFormSection.hidden = true;
-
-    if (warrantySuccessSection) {
-      warrantySuccessSection.hidden = false;
-
-      warrantySuccessSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+    try {
+      const emailResponse = await fetch("/api/submit-warranty", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(warrantyClaim)
       });
+
+      const emailResult = await emailResponse.json();
+
+      if (!emailResponse.ok || !emailResult.success) {
+        throw new Error(emailResult.error || "Warranty email failed.");
+      }
+
+      const savedClaims = JSON.parse(
+        localStorage.getItem(warrantyClaimsStorageKey) || "[]"
+      );
+
+      savedClaims.unshift(warrantyClaim);
+
+      localStorage.setItem(
+        warrantyClaimsStorageKey,
+        JSON.stringify(savedClaims)
+      );
+
+      localStorage.setItem(warrantyCooldownKey, String(now));
+
+      if (warrantySuccessClaimId) {
+        warrantySuccessClaimId.textContent = warrantyClaim.claimId;
+      }
+
+      if (warrantySuccessName) {
+        warrantySuccessName.textContent = warrantyClaim.name || "—";
+      }
+
+      if (warrantySuccessDevice) {
+        warrantySuccessDevice.textContent = warrantyClaim.device || "—";
+      }
+
+      if (warrantySuccessRepair) {
+        warrantySuccessRepair.textContent = warrantyClaim.repairType || "—";
+      }
+
+      claimForm.reset();
+
+      if (warrantyFilePreviews) {
+        warrantyFilePreviews.innerHTML = "";
+      }
+
+      claimFormSection.hidden = true;
+
+      if (warrantySuccessSection) {
+        warrantySuccessSection.hidden = false;
+
+        warrantySuccessSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    } catch (err) {
+      console.error("Warranty claim email submission failed:", err);
+      alert("Warranty claim could not be submitted right now. Please try again.");
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit Warranty Claim";
+      }
+
+      warrantySubmitLocked = false;
     }
   });
 }
