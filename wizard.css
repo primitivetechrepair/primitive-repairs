@@ -6005,17 +6005,34 @@ text-align: center;
   }
 
   .repair-info-panel,
-  .appointment-panel,
-  .review-panel,
-  .success-panel,
-  .repair-details-panel,
-  #pr-form-area,
-  #pr-customer-form {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    overflow-x: hidden;
-  }
+.appointment-panel,
+.review-panel,
+.success-panel,
+.repair-details-panel,
+#pr-form-area,
+#pr-customer-form {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+.appointment-panel input,
+.appointment-panel select,
+.appointment-panel textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.appointment-panel label,
+.appointment-panel .appointment-field,
+.appointment-panel .form-field {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
 
   .repair-info-hero {
     grid-template-columns: 1fr;
