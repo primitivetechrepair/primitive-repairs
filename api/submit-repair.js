@@ -108,14 +108,14 @@ export default async function handler(req, res) {
       lead.createdAt ||
       new Date().toISOString();
 
-    const emailHtml = `
-      <div style="margin:0;padding:0;background:#05070b;font-family:Arial,Helvetica,sans-serif;color:#f5f7fb;">
-        <div style="max-width:680px;margin:0 auto;padding:28px 16px;">
+        const emailHtml = `
+      <div style="margin:0;padding:0;background:#f4f6f8;font-family:Arial,Helvetica,sans-serif;color:#111827;">
+        <div style="max-width:680px;margin:0 auto;padding:24px 14px;">
           
-          <div style="background:linear-gradient(135deg,#101827,#070b12);border:1px solid rgba(255,255,255,0.12);border-radius:22px;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,0.35);">
+          <div style="background:#ffffff;border:1px solid #d9e1ea;border-radius:18px;overflow:hidden;">
             
-            <div style="padding:28px 28px 22px;border-bottom:1px solid rgba(255,255,255,0.1);">
-              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(102,252,241,0.12);border:1px solid rgba(102,252,241,0.35);color:#66fcf1;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
+            <div style="padding:26px 26px 20px;background:#0b1220;">
+              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:#e8fffb;color:#064e4b;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
                 Repair Request
               </div>
 
@@ -123,108 +123,108 @@ export default async function handler(req, res) {
                 New Repair Request Submitted
               </h1>
 
-              <p style="margin:0;color:#d8e0ec;font-size:15px;line-height:1.6;">
+              <p style="margin:0;color:#e5edf7;font-size:15px;line-height:1.6;">
                 A customer submitted a repair request from the Primitive Repairs website.
               </p>
             </div>
 
-            <div style="padding:24px 28px;">
+            <div style="padding:24px 26px;background:#ffffff;color:#111827;">
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Request ID</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(requestId)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Request ID</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;font-weight:700;text-align:right;">${escapeHtml(requestId)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
                 </tr>
               </table>
 
-              <div style="height:1px;background:rgba(255,255,255,0.1);margin:18px 0;"></div>
+              <div style="height:1px;background:#d9e1ea;margin:18px 0;"></div>
 
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Customer</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(customerName)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Customer</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(customerName)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Address</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Address</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">
                     ${
                       mapsUrl
-                        ? `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer" style="color:#66fcf1;text-decoration:none;font-weight:700;">${escapeHtml(address)}</a>`
+                        ? `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer" style="color:#0f766e;text-decoration:underline;font-weight:800;">${escapeHtml(address)}</a>`
                         : escapeHtml(address)
                     }
                   </td>
                 </tr>
               </table>
 
-              <div style="margin-top:22px;padding:18px;border-radius:16px;background:rgba(102,252,241,0.07);border:1px solid rgba(102,252,241,0.22);">
-                <div style="margin-bottom:12px;color:#66fcf1;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">
+              <div style="margin-top:22px;padding:18px;border-radius:14px;background:#ecfdf5;border:1px solid #a7f3d0;">
+                <div style="margin-bottom:12px;color:#0f766e;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Device + Repair
                 </div>
 
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Device</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Device</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Brand</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(brand)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Brand</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(brand)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Series</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(series)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Series</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(series)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Model</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(model)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Model</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(model)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Repair</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(repair)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Repair</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(repair)}</td>
                   </tr>
                 </table>
               </div>
 
-              <div style="margin-top:18px;padding:18px;border-radius:16px;background:rgba(255,255,255,0.055);border:1px solid rgba(255,255,255,0.1);">
-                <div style="margin-bottom:8px;color:#66fcf1;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">
+              <div style="margin-top:18px;padding:18px;border-radius:14px;background:#f8fafc;border:1px solid #d9e1ea;">
+                <div style="margin-bottom:8px;color:#0f766e;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Repair Details
                 </div>
-                <div style="color:#f5f7fb;font-size:15px;line-height:1.65;">
+                <div style="color:#111827;font-size:15px;line-height:1.65;">
                   ${escapeHtml(repairDetails).replace(/\n/g, "<br />")}
                 </div>
               </div>
 
-              <div style="margin-top:18px;padding:18px;border-radius:16px;background:rgba(255,255,255,0.055);border:1px solid rgba(255,255,255,0.1);">
-                <div style="margin-bottom:12px;color:#66fcf1;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">
+              <div style="margin-top:18px;padding:18px;border-radius:14px;background:#f8fafc;border:1px solid #d9e1ea;">
+                <div style="margin-bottom:12px;color:#0f766e;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Appointment
                 </div>
 
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Date</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(appointmentDate)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Date</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(appointmentDate)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Time</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(appointmentTime)}</td>
+                    <td style="padding:8px 0;color:#374151;font-size:13px;font-weight:700;">Time</td>
+                    <td style="padding:8px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(appointmentTime)}</td>
                   </tr>
                 </table>
               </div>
             </div>
 
-            <div style="padding:18px 28px;background:rgba(0,0,0,0.22);border-top:1px solid rgba(255,255,255,0.08);">
-              <p style="margin:0;color:#b8c4d4;font-size:12px;line-height:1.5;">
+            <div style="padding:18px 26px;background:#f8fafc;border-top:1px solid #d9e1ea;">
+              <p style="margin:0;color:#374151;font-size:12px;line-height:1.5;">
                 Primitive Repairs • Public Repair Request Notification
               </p>
             </div>

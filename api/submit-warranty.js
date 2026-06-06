@@ -52,14 +52,14 @@ export default async function handler(req, res) {
       claim.createdAt ||
       new Date().toISOString();
 
-    const emailHtml = `
-      <div style="margin:0;padding:0;background:#05070b;font-family:Arial,Helvetica,sans-serif;color:#f5f7fb;">
-        <div style="max-width:680px;margin:0 auto;padding:28px 16px;">
+        const emailHtml = `
+      <div style="margin:0;padding:0;background:#f4f6f8;font-family:Arial,Helvetica,sans-serif;color:#111827;">
+        <div style="max-width:680px;margin:0 auto;padding:24px 14px;">
           
-          <div style="background:linear-gradient(135deg,#101827,#070b12);border:1px solid rgba(255,255,255,0.12);border-radius:22px;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,0.35);">
+          <div style="background:#ffffff;border:1px solid #d9e1ea;border-radius:18px;overflow:hidden;">
             
-            <div style="padding:28px 28px 22px;border-bottom:1px solid rgba(255,255,255,0.1);">
-              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(102,252,241,0.12);border:1px solid rgba(102,252,241,0.35);color:#66fcf1;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
+            <div style="padding:26px 26px 20px;background:#0b1220;">
+              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:#e8fffb;color:#064e4b;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
                 Warranty Claim
               </div>
 
@@ -67,73 +67,73 @@ export default async function handler(req, res) {
                 New Warranty Review Request
               </h1>
 
-              <p style="margin:0;color:#d8e0ec;font-size:15px;line-height:1.6;">
+              <p style="margin:0;color:#e5edf7;font-size:15px;line-height:1.6;">
                 A customer submitted a warranty claim from the Primitive Repairs website.
               </p>
             </div>
 
-            <div style="padding:24px 28px;">
+            <div style="padding:24px 26px;background:#ffffff;color:#111827;">
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Claim ID</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(claimId)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Claim ID</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;font-weight:700;text-align:right;">${escapeHtml(claimId)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Full Name</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(fullName)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Full Name</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(fullName)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
                 </tr>
               </table>
 
-              <div style="height:1px;background:rgba(255,255,255,0.1);margin:18px 0;"></div>
+              <div style="height:1px;background:#d9e1ea;margin:18px 0;"></div>
 
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Original Repair Date</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(originalRepairDate)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Original Repair Date</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(originalRepairDate)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Device</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Device</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Repair Type</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(originalRepairType)}</td>
+                  <td style="padding:12px 0;color:#374151;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Repair Type</td>
+                  <td style="padding:12px 0;color:#111827;font-size:15px;text-align:right;">${escapeHtml(originalRepairType)}</td>
                 </tr>
               </table>
 
-              <div style="margin-top:22px;padding:18px;border-radius:16px;background:rgba(255,255,255,0.055);border:1px solid rgba(255,255,255,0.1);">
-                <div style="margin-bottom:8px;color:#66fcf1;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">
+              <div style="margin-top:22px;padding:18px;border-radius:14px;background:#f8fafc;border:1px solid #d9e1ea;">
+                <div style="margin-bottom:8px;color:#0f766e;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Customer Issue
                 </div>
-                <div style="color:#f5f7fb;font-size:15px;line-height:1.65;">
+                <div style="color:#111827;font-size:15px;line-height:1.65;">
                   ${escapeHtml(issue).replace(/\n/g, "<br />")}
                 </div>
               </div>
 
-              <div style="margin-top:18px;padding:16px;border-radius:16px;background:rgba(255,193,7,0.08);border:1px solid rgba(255,193,7,0.22);">
-                <div style="color:#ffd166;font-size:14px;font-weight:700;">
+              <div style="margin-top:18px;padding:16px;border-radius:14px;background:#fff8e1;border:1px solid #f2d27a;">
+                <div style="color:#7a4b00;font-size:14px;font-weight:800;">
                   Uploaded Files: ${escapeHtml(String(filesCount))}
                 </div>
-                <p style="margin:8px 0 0;color:#eef4ff;font-size:13px;line-height:1.55;">
+                <p style="margin:8px 0 0;color:#374151;font-size:13px;line-height:1.55;">
                   Files are not attached to this email yet. Current warranty uploads are stored locally and will be connected to backend storage later.
                 </p>
               </div>
             </div>
 
-            <div style="padding:18px 28px;background:rgba(0,0,0,0.22);border-top:1px solid rgba(255,255,255,0.08);">
-              <p style="margin:0;color:#b8c4d4;font-size:12px;line-height:1.5;">
+            <div style="padding:18px 26px;background:#f8fafc;border-top:1px solid #d9e1ea;">
+              <p style="margin:0;color:#374151;font-size:12px;line-height:1.5;">
                 Primitive Repairs • Warranty Support Notification
               </p>
             </div>
