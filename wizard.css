@@ -5638,6 +5638,7 @@ text-align: center;
 .mobile-menu-toggle {
   width: 44px;
   height: 44px;
+  padding: 0 0 2px;
 
   display: inline-flex;
   align-items: center;
@@ -5651,12 +5652,15 @@ text-align: center;
   background: rgba(255, 255, 255, 0.82);
   color: var(--accent);
 
-  font-family: var(--font-display);
-  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
 
   cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
 
   transition:
     background 0.2s ease,
