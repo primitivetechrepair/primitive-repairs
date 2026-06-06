@@ -22,12 +22,23 @@ export default async function handler(req, res) {
 
     const claim = req.body || {};
 
+    const claimId = claim.claimId || `W-${Date.now()}`;
     const fullName = claim.fullName || claim.name || "Not provided";
     const phone = claim.phone || "Not provided";
     const email = claim.email || "Not provided";
-    const originalRepairDate = claim.originalRepairDate || "Not provided";
+
+    const originalRepairDate =
+      claim.originalRepairDate ||
+      claim.repairDate ||
+      "Not provided";
+
     const device = claim.device || "Not provided";
-    const originalRepairType = claim.originalRepairType || "Not provided";
+
+    const originalRepairType =
+      claim.originalRepairType ||
+      claim.repairType ||
+      "Not provided";
+
     const issue = claim.issue || "Not provided";
 
     const filesCount = Array.isArray(claim.attachments)
@@ -36,7 +47,10 @@ export default async function handler(req, res) {
         ? claim.files.length
         : claim.filesCount || 0;
 
-    const submittedAt = claim.submittedAt || new Date().toISOString();
+    const submittedAt =
+      claim.submittedAt ||
+      claim.createdAt ||
+      new Date().toISOString();
 
     const emailHtml = `
       <div style="margin:0;padding:0;background:#05070b;font-family:Arial,Helvetica,sans-serif;color:#f5f7fb;">
@@ -53,7 +67,7 @@ export default async function handler(req, res) {
                 New Warranty Review Request
               </h1>
 
-              <p style="margin:0;color:#b8c0cc;font-size:15px;line-height:1.6;">
+              <p style="margin:0;color:#d8e0ec;font-size:15px;line-height:1.6;">
                 A customer submitted a warranty claim from the Primitive Repairs website.
               </p>
             </div>
@@ -61,19 +75,23 @@ export default async function handler(req, res) {
             <div style="padding:24px 28px;">
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Claim ID</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(claimId)}</td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Full Name</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Full Name</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(fullName)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
                 </tr>
               </table>
@@ -82,15 +100,15 @@ export default async function handler(req, res) {
 
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Original Repair Date</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Original Repair Date</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(originalRepairDate)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Device</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Device</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Repair Type</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Repair Type</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(originalRepairType)}</td>
                 </tr>
               </table>
@@ -108,14 +126,14 @@ export default async function handler(req, res) {
                 <div style="color:#ffd166;font-size:14px;font-weight:700;">
                   Uploaded Files: ${escapeHtml(String(filesCount))}
                 </div>
-                <p style="margin:8px 0 0;color:#c7ced9;font-size:13px;line-height:1.55;">
+                <p style="margin:8px 0 0;color:#eef4ff;font-size:13px;line-height:1.55;">
                   Files are not attached to this email yet. Current warranty uploads are stored locally and will be connected to backend storage later.
                 </p>
               </div>
             </div>
 
             <div style="padding:18px 28px;background:rgba(0,0,0,0.22);border-top:1px solid rgba(255,255,255,0.08);">
-              <p style="margin:0;color:#7f8a99;font-size:12px;line-height:1.5;">
+              <p style="margin:0;color:#b8c4d4;font-size:12px;line-height:1.5;">
                 Primitive Repairs • Warranty Support Notification
               </p>
             </div>
@@ -152,6 +170,7 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       success: true,
+      claimId,
     });
   } catch (error) {
     return res.status(500).json({

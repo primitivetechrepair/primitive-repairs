@@ -98,6 +98,11 @@ export default async function handler(req, res) {
       lead.serviceAddress ||
       "Not provided";
 
+    const mapsUrl =
+      address !== "Not provided"
+        ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+        : "";
+
     const submittedAt =
       lead.submittedAt ||
       lead.createdAt ||
@@ -118,7 +123,7 @@ export default async function handler(req, res) {
                 New Repair Request Submitted
               </h1>
 
-              <p style="margin:0;color:#b8c0cc;font-size:15px;line-height:1.6;">
+              <p style="margin:0;color:#d8e0ec;font-size:15px;line-height:1.6;">
                 A customer submitted a repair request from the Primitive Repairs website.
               </p>
             </div>
@@ -126,11 +131,11 @@ export default async function handler(req, res) {
             <div style="padding:24px 28px;">
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Request ID</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Request ID</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(requestId)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
                 </tr>
               </table>
@@ -139,20 +144,26 @@ export default async function handler(req, res) {
 
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Customer</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Customer</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(customerName)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
                   <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#8d98a8;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Address</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(address)}</td>
+                  <td style="padding:12px 0;color:#d8e0ec;font-size:13px;text-transform:uppercase;letter-spacing:0.06em;">Address</td>
+                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">
+                    ${
+                      mapsUrl
+                        ? `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer" style="color:#66fcf1;text-decoration:none;font-weight:700;">${escapeHtml(address)}</a>`
+                        : escapeHtml(address)
+                    }
+                  </td>
                 </tr>
               </table>
 
@@ -163,23 +174,23 @@ export default async function handler(req, res) {
 
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Device</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Device</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Brand</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Brand</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(brand)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Series</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Series</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(series)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Model</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Model</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(model)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Repair</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Repair</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(repair)}</td>
                   </tr>
                 </table>
@@ -201,11 +212,11 @@ export default async function handler(req, res) {
 
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Date</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Date</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(appointmentDate)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#8d98a8;font-size:13px;">Time</td>
+                    <td style="padding:8px 0;color:#d8e0ec;font-size:13px;">Time</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(appointmentTime)}</td>
                   </tr>
                 </table>
@@ -213,7 +224,7 @@ export default async function handler(req, res) {
             </div>
 
             <div style="padding:18px 28px;background:rgba(0,0,0,0.22);border-top:1px solid rgba(255,255,255,0.08);">
-              <p style="margin:0;color:#7f8a99;font-size:12px;line-height:1.5;">
+              <p style="margin:0;color:#b8c4d4;font-size:12px;line-height:1.5;">
                 Primitive Repairs • Public Repair Request Notification
               </p>
             </div>
