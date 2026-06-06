@@ -9,10 +9,24 @@ export async function submitWizardLead(mappedLead) {
     throw new Error("Forced submit failure test.");
   }
 
+  const response = await fetch("/api/submit-repair", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(mappedLead)
+  });
+
+  const result = await response.json();
+
+  if (!response.ok || !result.success) {
+    throw new Error(result.error || "Repair request submission failed.");
+  }
+
   return {
     success: true,
-    leadID: mappedLead.leadID,
+    leadID: result.requestId || mappedLead.leadID,
     submittedAt: new Date().toISOString(),
-    mode: "placeholder"
+    mode: "email"
   };
 }
