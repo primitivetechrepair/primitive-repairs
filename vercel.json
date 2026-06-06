@@ -1,0 +1,31 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/warranty.html",
+      "destination": "/warranty",
+      "permanent": true
+    },
+    {
+      "source": "/faq.html",
+      "destination": "/faq",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/warranty",
+      "destination": "/warranty.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    }
+  ]
+}
