@@ -1,5 +1,7 @@
 // api/submit-repair.js
 
+import { verifyRecaptchaToken } from "./verify-recaptcha.js";
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({
@@ -21,6 +23,19 @@ export default async function handler(req, res) {
     }
 
     const lead = req.body || {};
+
+    const recaptchaCheck = await verifyRecaptchaToken({
+      token: lead.recaptchaToken,
+      expectedAction: "submit_repair",
+      minimumScore: 0.5,
+    });
+
+    if (!recaptchaCheck.success) {
+      return res.status(403).json({
+        success: false,
+        error: recaptchaCheck.error,
+      });
+    }
 
     const requestId =
       lead.requestId ||

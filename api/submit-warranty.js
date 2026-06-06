@@ -1,5 +1,7 @@
 // api/submit-warranty.js
 
+import { verifyRecaptchaToken } from "./verify-recaptcha.js";
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({
@@ -21,6 +23,19 @@ export default async function handler(req, res) {
     }
 
     const claim = req.body || {};
+
+    const recaptchaCheck = await verifyRecaptchaToken({
+      token: claim.recaptchaToken,
+      expectedAction: "submit_warranty",
+      minimumScore: 0.5,
+    });
+
+    if (!recaptchaCheck.success) {
+      return res.status(403).json({
+        success: false,
+        error: recaptchaCheck.error,
+      });
+    }
 
     const claimId = claim.claimId || `W-${Date.now()}`;
     const fullName = claim.fullName || claim.name || "Not provided";

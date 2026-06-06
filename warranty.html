@@ -545,6 +545,54 @@ const warrantyAttachmentRetentionDays = 30;
 const warrantyAttachmentRetentionMs =
   warrantyAttachmentRetentionDays * 24 * 60 * 60 * 1000;
 
+const recaptchaSiteKey = "6Lcv8hAtAAAAAGIK3yYGXxQXmic7isOxGx5odnYV";
+
+function loadRecaptchaScript() {
+  return new Promise((resolve, reject) => {
+    if (window.grecaptcha) {
+      resolve();
+      return;
+    }
+
+    const existingScript = document.querySelector("script[data-recaptcha-script]");
+
+    if (existingScript) {
+      existingScript.addEventListener("load", resolve, { once: true });
+      existingScript.addEventListener("error", reject, { once: true });
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`;
+    script.async = true;
+    script.defer = true;
+    script.dataset.recaptchaScript = "true";
+
+    script.onload = resolve;
+    script.onerror = reject;
+
+    document.head.appendChild(script);
+  });
+}
+
+async function getRecaptchaToken(action) {
+  await loadRecaptchaScript();
+
+  return new Promise((resolve, reject) => {
+    window.grecaptcha.ready(async () => {
+      try {
+        const token = await window.grecaptcha.execute(recaptchaSiteKey, {
+          action
+        });
+
+        resolve(token);
+      } catch (error) {
+        reject(error);
+      }
+    });
+  });
+}
+
 let warrantySubmitLocked = false;
 
 const warrantyMaxFiles = 10;
@@ -815,6 +863,8 @@ if (claimForm) {
       createdAt.getTime() + warrantyAttachmentRetentionMs
     );
 
+    const recaptchaToken = await getRecaptchaToken("submit_warranty");
+
     const warrantyClaim = {
       claimId: `W-${Date.now()}`,
       name: String(formData.get("name") || "").trim(),
@@ -831,7 +881,8 @@ if (claimForm) {
       status: "Warranty Review Requested",
       createdAt: createdAt.toISOString(),
       attachmentRetentionDays: warrantyAttachmentRetentionDays,
-      attachmentExpiresAt: attachmentExpiresAt.toISOString()
+      attachmentExpiresAt: attachmentExpiresAt.toISOString(),
+      recaptchaToken
     };
 
     try {
