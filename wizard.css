@@ -5532,111 +5532,6 @@ text-align: center;
   }
 }
 
-/* =========================================================
-   15. DEV TEST QUEUE
-========================================================= */
-
-.dev-lead-queue-panel {
-  width: 100%;
-  max-width: 920px;
-  margin: 18px auto 0;
-  padding: 16px;
-  border: 1px dashed rgba(37, 40, 61, 0.2);
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.dev-lead-queue-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 12px;
-}
-
-.dev-lead-queue-header strong {
-  flex: 0 0 auto;
-  white-space: nowrap;
-}
-
-.dev-lead-queue-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 8px;
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: rgba(102, 252, 241, 0.16);
-  color: var(--accent);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.dev-lead-queue-actions {
-  flex: 1 1 auto;
-  min-width: 0;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-end;
-
-  white-space: nowrap;
-}
-
-.dev-lead-queue-actions button {
-  flex: 0 0 auto;
-  padding: 8px 10px;
-  border: 1px solid rgba(37, 40, 61, 0.14);
-  border-radius: 10px;
-  background: #ffffff;
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 800;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-#dev-lead-queue-output {
-  max-height: 280px;
-  overflow: auto;
-  margin: 0;
-  padding: 12px;
-  border-radius: 12px;
-  background: #111827;
-  color: #d1fae5;
-  font-size: 12px;
-  line-height: 1.45;
-  white-space: pre-wrap;
-}
-
-@media (max-width: 760px) {
-  .dev-lead-queue-header {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .dev-lead-queue-header strong {
-    white-space: normal;
-  }
-
-  .dev-lead-queue-actions {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    white-space: normal;
-  }
-
-  .dev-lead-queue-actions button {
-    width: 100%;
-    min-width: 0;
-    white-space: normal;
-  }
-}
-
 @media (max-width: 1040px) {
   .site-nav {
     padding-left: 18px;
@@ -5708,7 +5603,7 @@ text-align: center;
 }
 
 /* =========================================================
-   16. RESPONSIVE / MOBILE
+   15. RESPONSIVE / MOBILE
 ========================================================= */
 
 @media (max-width: 760px) {
@@ -5926,6 +5821,19 @@ text-align: center;
 }
 
 .warranty-check-btn,
+.warranty-submit-btn,
+.landing-primary-btn,
+.landing-secondary-btn,
+.mobile-menu-toggle,
+.mobile-nav-close,
+.review-back,
+.review-submit,
+.repair-select-continue,
+.supported-device-action {
+  touch-action: manipulation;
+}
+
+.warranty-check-btn,
 .warranty-submit-btn {
   width: 100%;
 }
@@ -5997,6 +5905,8 @@ text-align: center;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -6189,19 +6099,6 @@ text-align: center;
     width: 100%;
     min-width: 0;
     max-width: none;
-  }
-
-  .dev-lead-queue-header {
-    align-items: stretch;
-    flex-direction: column;
-  }
-
-  .dev-lead-queue-actions {
-    flex-direction: column;
-  }
-
-  .dev-lead-queue-actions button {
-    width: 100%;
   }
 
   .option-section-header {
