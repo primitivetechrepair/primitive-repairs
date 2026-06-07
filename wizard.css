@@ -4422,12 +4422,18 @@ backdrop-filter: blur(16px) saturate(170%);
 #pr-selection-cards.selection-cards {
   width: 100%;
   max-width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
 }
 
 #pr-selection-cards.selection-cards .card {
+  width: 100%;
   min-width: 0;
   max-width: none;
-  flex: 1 1 0;
+
+  flex: initial;
 }
 
 /* Remove Repair Request and Repair Flow tags */
