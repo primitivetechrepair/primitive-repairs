@@ -4646,20 +4646,26 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .device-card-results,
 .brand-card-results,
-.series-card-results {
+.series-card-results,
+.model-card-results,
+.repair-card-results {
   width: 100%;
+  max-width: 100%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, 160px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
-  justify-content: center;
-  align-items: start;
+
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .opt-card {
   position: relative;
 
-  width: 160px;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
   min-height: 215px;
 
   display: flex;
