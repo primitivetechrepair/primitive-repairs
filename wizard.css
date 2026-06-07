@@ -3634,11 +3634,12 @@ backdrop-filter: blur(16px) saturate(170%);
 
 #primitive-wizard-container {
   width: 100%;
-  max-width: 920px;
-  margin: 10px auto;
-  padding: 20px;
-  border-radius: 14px;
-  overflow: visible;
+  max-width: 100%;
+
+  margin: 0 auto 16px;
+  padding: 0;
+
+  overflow-x: hidden;
 }
 
 #pr-main {
@@ -3851,7 +3852,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .pr-progress-bar-wrap {
-  height: 8px;
+  height: 14px;
   margin: 16px auto 0;
   overflow: hidden;
   position: relative;
