@@ -56,6 +56,11 @@
   "source": "/ipad-repair-miami.html",
   "destination": "/ipad-repair-miami",
   "permanent": true
+},
+{
+  "source": "/game-console-repair-miami.html",
+  "destination": "/game-console-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -98,6 +103,10 @@
 {
   "source": "/ipad-repair-miami",
   "destination": "/ipad-repair-miami.html"
+},
+{
+  "source": "/game-console-repair-miami",
+  "destination": "/game-console-repair-miami.html"
 }
   ]
 }
