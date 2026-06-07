@@ -71,6 +71,11 @@
   "source": "/water-damage-repair-miami.html",
   "destination": "/water-damage-repair-miami",
   "permanent": true
+},
+{
+  "source": "/tablet-repair-miami.html",
+  "destination": "/tablet-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -125,6 +130,10 @@
 {
   "source": "/water-damage-repair-miami",
   "destination": "/water-damage-repair-miami.html"
+},
+{
+  "source": "/tablet-repair-miami",
+  "destination": "/tablet-repair-miami.html"
 }
   ]
 }
