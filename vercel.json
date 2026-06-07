@@ -46,6 +46,11 @@
   "source": "/back-glass-repair-miami.html",
   "destination": "/back-glass-repair-miami",
   "permanent": true
+},
+{
+  "source": "/camera-repair-miami.html",
+  "destination": "/camera-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -80,6 +85,10 @@
 {
   "source": "/back-glass-repair-miami",
   "destination": "/back-glass-repair-miami.html"
+},
+{
+  "source": "/camera-repair-miami",
+  "destination": "/camera-repair-miami.html"
 }
   ]
 }
