@@ -41,6 +41,11 @@
   "source": "/charging-port-repair-miami.html",
   "destination": "/charging-port-repair-miami",
   "permanent": true
+},
+{
+  "source": "/back-glass-repair-miami.html",
+  "destination": "/back-glass-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -71,6 +76,10 @@
 {
   "source": "/charging-port-repair-miami",
   "destination": "/charging-port-repair-miami.html"
+},
+{
+  "source": "/back-glass-repair-miami",
+  "destination": "/back-glass-repair-miami.html"
 }
   ]
 }
