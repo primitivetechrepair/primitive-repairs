@@ -1432,6 +1432,138 @@ text-align: center;
 }
 
 /* =========================================================
+   SUPPORTED DEVICE REPAIR — VISUAL DEVICE SECTION
+========================================================= */
+
+.supported-devices-section {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.16);
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.14), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 247, 251, 0.68));
+
+  box-shadow:
+    0 18px 42px rgba(37, 40, 61, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.supported-devices-section::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.32),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.supported-devices-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.supported-devices-section .supported-device-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.16);
+  border-radius: 22px;
+
+  background: rgba(102, 252, 241, 0.12);
+}
+
+.supported-devices-section .supported-device-card {
+  min-height: 250px;
+  padding: 18px 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  border: none;
+  border-radius: 0;
+
+  background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.1), transparent 44%),
+    rgba(255, 255, 255, 0.42);
+
+  text-align: center;
+
+  box-shadow: none;
+}
+
+.supported-devices-section .supported-device-card:hover {
+  transform: none;
+
+  background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.18), transparent 44%),
+    rgba(255, 255, 255, 0.58);
+
+  box-shadow: none;
+}
+
+.supported-devices-section .supported-device-icon {
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto 4px;
+
+  border-radius: 20px;
+
+  font-size: 28px;
+}
+
+.supported-devices-section .supported-device-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.supported-devices-section .supported-device-content h3 {
+  min-height: 0;
+
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.supported-devices-section .supported-device-content p {
+  min-height: 0;
+
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.supported-devices-section .supported-device-tags {
+  justify-content: center;
+}
+
+.supported-devices-section .supported-device-badge {
+  position: static;
+
+  margin-bottom: 2px;
+
+  max-width: 100%;
+}
+
+/* =========================================================
    POPULAR REPAIR SERVICES — PREMIUM CONTRAST SECTION
 ========================================================= */
 
@@ -7854,7 +7986,32 @@ backdrop-filter: blur(16px) saturate(170%);
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
+  
+  .supported-devices-section .supported-device-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+}
 
+.supported-devices-section .supported-device-card {
+  min-height: 220px;
+  padding: 14px 10px;
+}
+
+.supported-devices-section .supported-device-icon {
+  width: 52px;
+  height: 52px;
+
+  font-size: 23px;
+}
+
+.supported-devices-section .supported-device-content p {
+  font-size: 11.25px;
+}
+
+.supported-devices-section .supported-device-tags span {
+  font-size: 8px;
+}
+  
   .supported-device-card {
   min-height: 235px;
   padding: 14px;
