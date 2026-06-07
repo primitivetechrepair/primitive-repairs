@@ -1696,32 +1696,51 @@ text-align: center;
 .homepage-proof-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 1px;
 
-  padding: 16px;
+  overflow: hidden;
+
+  padding: 0;
+
+  border: 1px solid rgba(102, 252, 241, 0.18);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(247, 247, 251, 0.72)
+    );
+
+  box-shadow:
+    0 16px 34px rgba(37, 40, 61, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
 .homepage-proof-item {
   min-width: 0;
-  min-height: 92px;
-  padding: 14px;
+  min-height: 96px;
+  padding: 18px 14px;
 
   display: grid;
   align-content: center;
-  gap: 6px;
+  gap: 7px;
 
-  border: 1px solid rgba(102, 252, 241, 0.18);
-  border-radius: 18px;
+  border: none;
+  border-right: 1px solid rgba(102, 252, 241, 0.14);
+  border-radius: 0;
 
   background:
-    radial-gradient(circle at top right, rgba(102, 252, 241, 0.12), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 247, 251, 0.78));
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.1), transparent 44%),
+    rgba(255, 255, 255, 0.3);
 
   text-align: center;
 
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.86),
-    0 12px 26px rgba(37, 40, 61, 0.07);
+  box-shadow: none;
+}
+
+.homepage-proof-item:last-child {
+  border-right: none;
 }
 
 .homepage-proof-item strong {
@@ -7133,14 +7152,27 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .homepage-proof-strip {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 1px;
 
-  padding: 14px;
+  padding: 0;
 }
 
 .homepage-proof-item {
   min-height: 82px;
-  padding: 12px;
+  padding: 14px 10px;
+
+  border-right: 1px solid rgba(102, 252, 241, 0.14);
+  border-bottom: 1px solid rgba(102, 252, 241, 0.14);
+}
+
+.homepage-proof-item:nth-child(2),
+.homepage-proof-item:nth-child(4) {
+  border-right: none;
+}
+
+.homepage-proof-item:nth-child(3),
+.homepage-proof-item:nth-child(4) {
+  border-bottom: none;
 }
 
 .homepage-proof-item span {
