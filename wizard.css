@@ -4418,6 +4418,18 @@ backdrop-filter: blur(16px) saturate(170%);
     0 0 14px rgba(102, 252, 241, 0.12);
 }
 
+/* Force Repair Flow cards to fill full desktop wizard width */
+#pr-selection-cards.selection-cards {
+  width: 100%;
+  max-width: 100%;
+}
+
+#pr-selection-cards.selection-cards .card {
+  min-width: 0;
+  max-width: none;
+  flex: 1 1 0;
+}
+
 /* Remove Repair Request and Repair Flow tags */
 .pr-header::after,
 .selection-cards::before {
