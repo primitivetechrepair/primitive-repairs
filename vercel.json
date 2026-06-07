@@ -18,15 +18,20 @@
       "permanent": true
     },
     {
-  "source": "/iphone-repair-miami.html",
-  "destination": "/iphone-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/samsung-repair-miami.html",
-  "destination": "/samsung-repair-miami",
-  "permanent": true
-}
+      "source": "/iphone-repair-miami.html",
+      "destination": "/iphone-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/samsung-repair-miami.html",
+      "destination": "/samsung-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/screen-repair-miami.html",
+      "destination": "/screen-repair-miami",
+      "permanent": true
+    }
   ],
   "rewrites": [
     {
@@ -38,12 +43,16 @@
       "destination": "/faq.html"
     },
     {
-  "source": "/iphone-repair-miami",
-  "destination": "/iphone-repair-miami.html"
-},
-{
-  "source": "/samsung-repair-miami",
-  "destination": "/samsung-repair-miami.html"
-}
+      "source": "/iphone-repair-miami",
+      "destination": "/iphone-repair-miami.html"
+    },
+    {
+      "source": "/samsung-repair-miami",
+      "destination": "/samsung-repair-miami.html"
+    },
+    {
+      "source": "/screen-repair-miami",
+      "destination": "/screen-repair-miami.html"
+    }
   ]
 }
