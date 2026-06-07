@@ -61,6 +61,11 @@
   "source": "/game-console-repair-miami.html",
   "destination": "/game-console-repair-miami",
   "permanent": true
+},
+{
+  "source": "/computer-repair-miami.html",
+  "destination": "/computer-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -107,6 +112,10 @@
 {
   "source": "/game-console-repair-miami",
   "destination": "/game-console-repair-miami.html"
+},
+{
+  "source": "/computer-repair-miami",
+  "destination": "/computer-repair-miami.html"
 }
   ]
 }
