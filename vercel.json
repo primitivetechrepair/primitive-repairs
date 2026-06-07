@@ -51,6 +51,11 @@
   "source": "/camera-repair-miami.html",
   "destination": "/camera-repair-miami",
   "permanent": true
+},
+{
+  "source": "/ipad-repair-miami.html",
+  "destination": "/ipad-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -89,6 +94,10 @@
 {
   "source": "/camera-repair-miami",
   "destination": "/camera-repair-miami.html"
+},
+{
+  "source": "/ipad-repair-miami",
+  "destination": "/ipad-repair-miami.html"
 }
   ]
 }
