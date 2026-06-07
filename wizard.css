@@ -3985,7 +3985,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 /* =========================================================
-   4. TOP SELECTION CARDS
+   4. TOP SELECTION CARDS / REPAIR FLOW
 ========================================================= */
 
 .selection-cards {
@@ -3994,10 +3994,10 @@ backdrop-filter: blur(16px) saturate(170%);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
 
-  margin-bottom: 28px;
-  padding: 42px 18px 18px;
+  margin-bottom: 22px;
+  padding: 46px 16px 16px;
 
   overflow: hidden;
 
@@ -4017,8 +4017,9 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .selection-cards::before {
   content: "Repair Flow";
+
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 50%;
   z-index: 2;
 
@@ -4065,10 +4066,11 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .selection-cards .card {
   position: relative;
+
   flex: 1 1 18%;
-  min-width: 140px;
-  max-width: 180px;
-  height: 220px;
+  min-width: 130px;
+  max-width: 176px;
+  height: 200px;
 
   display: flex;
   flex-direction: column;
@@ -4159,6 +4161,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .selection-cards .card-label {
+  order: 1;
   flex: 0 0 40px;
 
   border-bottom: 1px solid rgba(102, 252, 241, 0.22);
@@ -4210,10 +4213,11 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .selection-cards .card-img {
+  order: 2;
+
   flex: 1 1 auto;
   width: 100%;
-
-  min-height: 112px;
+  min-height: 96px;
 
   background-color: var(--slot-fill);
   background-size: contain;
@@ -4221,19 +4225,8 @@ backdrop-filter: blur(16px) saturate(170%);
   background-repeat: no-repeat;
 }
 
-.selection-cards .card-label {
-  order: 1;
-}
-
-.selection-cards .card-img {
-  order: 2;
-}
-
 .selection-cards .card-back {
   order: 3;
-}
-
-.selection-cards .card-back {
   flex: 0 0 42px;
 
   border: none;
@@ -4301,13 +4294,13 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .selection-cards .card.filled:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 0 12px #25283d80, 0 0 24px #25283d40;
-}
+  transform: translateY(-3px);
 
-.selection-cards .card:not(.filled):hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(37, 40, 61, 0.15);
+  box-shadow:
+    0 0 0 1px rgba(102, 252, 241, 0.16),
+    0 16px 34px rgba(7, 123, 255, 0.14),
+    0 0 24px rgba(102, 252, 241, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
 }
 
 .selection-cards .card:not(.filled) {
@@ -4317,6 +4310,11 @@ backdrop-filter: blur(16px) saturate(170%);
 
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(247, 247, 251, 0.68));
+}
+
+.selection-cards .card:not(.filled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(37, 40, 61, 0.15);
 }
 
 .selection-cards .card:not(.filled) .card-label {
@@ -4347,6 +4345,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .selection-cards .card:not(.filled) .card-img::before {
   content: "+";
+
   position: absolute;
   top: 46%;
   left: 50%;
@@ -4367,6 +4366,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .selection-cards .card:not(.filled) .card-img::after {
   content: "Pending";
+
   position: absolute;
   left: 50%;
   bottom: 12px;
