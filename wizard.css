@@ -4457,14 +4457,24 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .pr-options,
 .animated-area {
+  width: 100%;
+  max-width: 100%;
+
   display: grid;
-  grid-template-columns: repeat(auto-fit, 160px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
-  justify-content: center;
-  align-items: start;
+
+  justify-content: stretch;
+  align-items: stretch;
 
   margin-top: 12px;
   padding-top: 6px;
+}
+
+.pr-options .opt-card,
+.animated-area .opt-card {
+  width: 100%;
+  max-width: none;
 }
 
 #pr-steps-area.animated-area:has(.model-search-panel) {
