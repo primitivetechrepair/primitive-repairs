@@ -31,7 +31,12 @@
       "source": "/screen-repair-miami.html",
       "destination": "/screen-repair-miami",
       "permanent": true
-    }
+    },
+    {
+  "source": "/battery-replacement-miami.html",
+  "destination": "/battery-replacement-miami",
+  "permanent": true
+}
   ],
   "rewrites": [
     {
@@ -53,6 +58,10 @@
     {
       "source": "/screen-repair-miami",
       "destination": "/screen-repair-miami.html"
-    }
+    },
+    {
+  "source": "/battery-replacement-miami",
+  "destination": "/battery-replacement-miami.html"
+}
   ]
 }
