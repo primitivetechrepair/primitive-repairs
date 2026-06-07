@@ -4418,6 +4418,14 @@ backdrop-filter: blur(16px) saturate(170%);
     0 0 14px rgba(102, 252, 241, 0.12);
 }
 
+/* Force full wizard internals to match container width */
+#pr-main,
+#pr-selection-cards,
+#pr-steps-area {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* Force Repair Flow cards to fill full desktop wizard width */
 #pr-selection-cards.selection-cards {
   width: 100%;
