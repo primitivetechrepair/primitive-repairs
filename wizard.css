@@ -1160,12 +1160,18 @@ text-align: center;
 
 .supported-device-tags span {
   width: fit-content;
-  padding: 5px 8px;
+  padding: 5px 9px;
 
-  border: 1px solid rgba(102, 252, 241, 0.16);
+  border: 1px solid rgba(102, 252, 241, 0.24);
   border-radius: 999px;
 
-  background: rgba(102, 252, 241, 0.09);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.64),
+      rgba(102, 252, 241, 0.16)
+    );
+
   color: var(--accent);
 
   font-family: var(--font-display);
@@ -1174,6 +1180,14 @@ text-align: center;
   letter-spacing: 0.055em;
   line-height: 1;
   text-transform: uppercase;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 6px 14px rgba(37, 40, 61, 0.06),
+    0 0 0 1px rgba(255, 255, 255, 0.24);
 }
 
 .supported-device-action {
