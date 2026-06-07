@@ -7030,8 +7030,9 @@ text-align: center;
 }
 
 .reviews-feature-intro {
-  padding: 18px;
+  padding: 18px 16px;
   text-align: center;
+  gap: 14px;
 }
 
 .reviews-feature-intro .landing-eyebrow,
@@ -7041,7 +7042,26 @@ text-align: center;
 }
 
 .reviews-feature-intro h2 {
-  font-size: clamp(2rem, 10vw, 3rem);
+  font-size: clamp(2rem, 10vw, 2.85rem);
+  line-height: 0.98;
+}
+
+.reviews-feature-intro p {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.reviews-score-card {
+  text-align: center;
+}
+
+.reviews-score-stars {
+  font-size: 16px;
+}
+
+.reviews-feature-stack {
+  grid-template-rows: auto;
+  gap: 12px;
 }
 
 .reviews-mini-grid {
@@ -7053,12 +7073,24 @@ text-align: center;
 .review-card-featured {
   min-height: 0;
   padding: 16px;
+  border-radius: 18px;
+}
+
+.review-stars {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 11px;
 }
 
 .review-card-public p,
 .review-card-featured p {
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.52;
+  text-align: center;
+}
+
+.review-author {
+  text-align: center;
 }
 
 .reviews-feature-cta {
