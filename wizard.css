@@ -4456,7 +4456,12 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 .pr-options,
-.animated-area {
+.animated-area,
+.device-card-results,
+.brand-card-results,
+.series-card-results,
+.model-card-results,
+.repair-card-results {
   width: 100%;
   max-width: 100%;
 
@@ -4469,6 +4474,17 @@ backdrop-filter: blur(16px) saturate(170%);
 
   margin-top: 12px;
   padding-top: 6px;
+}
+
+.pr-options .opt-card,
+.animated-area .opt-card,
+.device-card-results .opt-card,
+.brand-card-results .opt-card,
+.series-card-results .opt-card,
+.model-card-results .opt-card,
+.repair-card-results .opt-card {
+  width: 100%;
+  max-width: none;
 }
 
 .pr-options .opt-card,
