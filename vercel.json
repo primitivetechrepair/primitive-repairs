@@ -66,6 +66,11 @@
   "source": "/computer-repair-miami.html",
   "destination": "/computer-repair-miami",
   "permanent": true
+},
+{
+  "source": "/water-damage-repair-miami.html",
+  "destination": "/water-damage-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -116,6 +121,10 @@
 {
   "source": "/computer-repair-miami",
   "destination": "/computer-repair-miami.html"
+},
+{
+  "source": "/water-damage-repair-miami",
+  "destination": "/water-damage-repair-miami.html"
 }
   ]
 }
