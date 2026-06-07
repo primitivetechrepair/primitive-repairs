@@ -2468,6 +2468,40 @@ text-align: center;
   background: rgba(233, 255, 253, 0.9);
 }
 
+.site-footer-link-groups {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 32px;
+}
+
+.site-footer-link-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.site-footer-link-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.site-footer-link-group .site-footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .site-footer-link-groups {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
 .site-footer-bottom {
   padding-top: 12px;
 
