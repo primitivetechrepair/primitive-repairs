@@ -36,6 +36,11 @@
   "source": "/battery-replacement-miami.html",
   "destination": "/battery-replacement-miami",
   "permanent": true
+},
+{
+  "source": "/charging-port-repair-miami.html",
+  "destination": "/charging-port-repair-miami",
+  "permanent": true
 }
   ],
   "rewrites": [
@@ -62,6 +67,10 @@
     {
   "source": "/battery-replacement-miami",
   "destination": "/battery-replacement-miami.html"
+},
+{
+  "source": "/charging-port-repair-miami",
+  "destination": "/charging-port-repair-miami.html"
 }
   ]
 }
