@@ -33,50 +33,50 @@
       "permanent": true
     },
     {
-  "source": "/battery-replacement-miami.html",
-  "destination": "/battery-replacement-miami",
-  "permanent": true
-},
-{
-  "source": "/charging-port-repair-miami.html",
-  "destination": "/charging-port-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/back-glass-repair-miami.html",
-  "destination": "/back-glass-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/camera-repair-miami.html",
-  "destination": "/camera-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/ipad-repair-miami.html",
-  "destination": "/ipad-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/game-console-repair-miami.html",
-  "destination": "/game-console-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/computer-repair-miami.html",
-  "destination": "/computer-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/water-damage-repair-miami.html",
-  "destination": "/water-damage-repair-miami",
-  "permanent": true
-},
-{
-  "source": "/tablet-repair-miami.html",
-  "destination": "/tablet-repair-miami",
-  "permanent": true
-}
+      "source": "/battery-replacement-miami.html",
+      "destination": "/battery-replacement-miami",
+      "permanent": true
+    },
+    {
+      "source": "/charging-port-repair-miami.html",
+      "destination": "/charging-port-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/back-glass-repair-miami.html",
+      "destination": "/back-glass-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/camera-repair-miami.html",
+      "destination": "/camera-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/ipad-repair-miami.html",
+      "destination": "/ipad-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/game-console-repair-miami.html",
+      "destination": "/game-console-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/computer-repair-miami.html",
+      "destination": "/computer-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/water-damage-repair-miami.html",
+      "destination": "/water-damage-repair-miami",
+      "permanent": true
+    },
+    {
+      "source": "/tablet-repair-miami.html",
+      "destination": "/tablet-repair-miami",
+      "permanent": true
+    }
   ],
   "rewrites": [
     {
@@ -100,40 +100,40 @@
       "destination": "/screen-repair-miami.html"
     },
     {
-  "source": "/battery-replacement-miami",
-  "destination": "/battery-replacement-miami.html"
-},
-{
-  "source": "/charging-port-repair-miami",
-  "destination": "/charging-port-repair-miami.html"
-},
-{
-  "source": "/back-glass-repair-miami",
-  "destination": "/back-glass-repair-miami.html"
-},
-{
-  "source": "/camera-repair-miami",
-  "destination": "/camera-repair-miami.html"
-},
-{
-  "source": "/ipad-repair-miami",
-  "destination": "/ipad-repair-miami.html"
-},
-{
-  "source": "/game-console-repair-miami",
-  "destination": "/game-console-repair-miami.html"
-},
-{
-  "source": "/computer-repair-miami",
-  "destination": "/computer-repair-miami.html"
-},
-{
-  "source": "/water-damage-repair-miami",
-  "destination": "/water-damage-repair-miami.html"
-},
-{
-  "source": "/tablet-repair-miami",
-  "destination": "/tablet-repair-miami.html"
-}
+      "source": "/battery-replacement-miami",
+      "destination": "/battery-replacement-miami.html"
+    },
+    {
+      "source": "/charging-port-repair-miami",
+      "destination": "/charging-port-repair-miami.html"
+    },
+    {
+      "source": "/back-glass-repair-miami",
+      "destination": "/back-glass-repair-miami.html"
+    },
+    {
+      "source": "/camera-repair-miami",
+      "destination": "/camera-repair-miami.html"
+    },
+    {
+      "source": "/ipad-repair-miami",
+      "destination": "/ipad-repair-miami.html"
+    },
+    {
+      "source": "/game-console-repair-miami",
+      "destination": "/game-console-repair-miami.html"
+    },
+    {
+      "source": "/computer-repair-miami",
+      "destination": "/computer-repair-miami.html"
+    },
+    {
+      "source": "/water-damage-repair-miami",
+      "destination": "/water-damage-repair-miami.html"
+    },
+    {
+      "source": "/tablet-repair-miami",
+      "destination": "/tablet-repair-miami.html"
+    }
   ]
 }
