@@ -8311,4 +8311,27 @@ backdrop-filter: blur(16px) saturate(170%);
 .supported-device-trust-strip a {
   width: 100%;
 }
+
+/* Force wizard card display area transparent on mobile */
+#pr-main,
+#pr-steps-area,
+#pr-steps-area.animated-area,
+#pr-steps-area.animated-area:has(.option-section-header),
+#device-card-results,
+#brand-card-results,
+#series-card-results,
+#model-card-results,
+#repair-card-results,
+.device-card-results,
+.brand-card-results,
+.series-card-results,
+.model-card-results,
+.repair-card-results {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
 }
