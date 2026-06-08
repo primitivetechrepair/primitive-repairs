@@ -6756,50 +6756,101 @@ backdrop-filter: blur(16px) saturate(170%);
 /* ---------- Customer Form Actions ---------- */
 
 .form-actions {
+  width: 100%;
+  margin-top: 26px;
+  padding-top: 18px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 
-  margin-top: 24px;
-  padding-top: 18px;
-
-  border-top: 1px solid rgba(37, 40, 61, 0.1);
+  border-top: 1px solid rgba(37, 40, 61, 0.08);
 }
 
 #cf-back,
 #cf-submit {
   width: 220px;
-  min-height: 50px;
+  min-height: 52px;
+  padding: 0 20px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 14px;
+  border-radius: 16px;
 
-  font-weight: 900;
-  letter-spacing: 0.03em;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+  line-height: 1;
+  text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 
   cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 #cf-back {
-  border: 1px solid rgba(37, 40, 61, 0.14);
-  background: rgba(247, 247, 251, 0.92);
+  border: 1px solid rgba(37, 40, 61, 0.12);
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 247, 251, 0.82));
+
   color: var(--accent);
+
+  box-shadow:
+    0 10px 22px rgba(37, 40, 61, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
 #cf-submit {
   border: none;
-  background: linear-gradient(135deg, #25283d, #077bff);
+
+  background: var(--button-gradient);
   color: #ffffff;
-  box-shadow: 0 14px 30px rgba(7, 123, 255, 0.22);
+
+  box-shadow:
+    0 16px 34px rgba(7, 123, 255, 0.24),
+    0 0 0 4px rgba(102, 252, 241, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 #cf-submit::after {
   content: " →";
+}
+
+#cf-back:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(102, 252, 241, 0.26);
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 253, 0.82));
+
+  box-shadow:
+    0 14px 28px rgba(37, 40, 61, 0.1),
+    0 0 0 4px rgba(102, 252, 241, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+#cf-submit:hover {
+  transform: translateY(-2px);
+
+  color: #ffffff;
+
+  box-shadow:
+    0 20px 40px rgba(7, 123, 255, 0.3),
+    0 0 0 5px rgba(102, 252, 241, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
 }
 
 /* ---------- Customer Form Mobile ---------- */
