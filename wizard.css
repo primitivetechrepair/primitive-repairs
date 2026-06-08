@@ -5542,16 +5542,43 @@ backdrop-filter: blur(16px) saturate(170%);
 .appointment-eyebrow,
 .review-eyebrow,
 .success-eyebrow {
+  position: relative;
+
   width: fit-content;
-  padding: 5px 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  padding: 7px 13px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.42);
   border-radius: 999px;
-  background: rgba(102, 252, 241, 0.16);
-  color: #25283d;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.86) 0%,
+      rgba(255, 255, 255, 0.42) 38%,
+      rgba(102, 252, 241, 0.22) 72%,
+      rgba(7, 123, 255, 0.16) 100%
+    );
+
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  line-height: 1;
   text-transform: uppercase;
+
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.94),
+    inset 0 -1px 0 rgba(102, 252, 241, 0.22),
+    0 8px 18px rgba(37, 40, 61, 0.08),
+    0 0 16px rgba(102, 252, 241, 0.12);
 }
 
 .repair-details-header h3,
