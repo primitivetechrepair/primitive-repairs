@@ -5839,9 +5839,16 @@ backdrop-filter: blur(16px) saturate(170%);
   background-repeat: no-repeat;
   background-position: center;
 
-  border-right: 1px solid rgba(37, 40, 61, 0.08);
+  border-right: 1px solid rgba(102, 252, 241, 0.16);
 
-  background-color: rgba(242, 244, 247, 0.92);
+  background:
+    radial-gradient(circle at center, rgba(102, 252, 241, 0.16), transparent 44%),
+    radial-gradient(circle at bottom, rgba(7, 123, 255, 0.08), transparent 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(242, 244, 247, 0.76));
+
+  box-shadow:
+    inset -1px 0 0 rgba(255, 255, 255, 0.72),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
 .repair-info-panel.is-single-repair .repair-info-content {
@@ -5863,18 +5870,44 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .repair-info-panel.is-single-repair .repair-info-meta div {
+  position: relative;
+
   padding: 22px;
 
-  border: 1px solid rgba(102, 252, 241, 0.2);
+  overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.18);
   border-radius: 18px;
 
   background:
     radial-gradient(circle at top right, rgba(102, 252, 241, 0.12), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 247, 251, 0.88));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(247, 247, 251, 0.68));
 
   box-shadow:
-    0 12px 26px rgba(37, 40, 61, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 12px 26px rgba(37, 40, 61, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.84);
+}
+
+.repair-info-panel.is-single-repair .repair-info-meta div::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.22),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.repair-info-panel.is-single-repair .repair-info-meta div > * {
+  position: relative;
+  z-index: 1;
 }
 
 .repair-info-panel.is-single-repair .repair-info-meta strong {
@@ -5927,14 +5960,25 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .repair-info-meta div {
+  position: relative;
+
   min-width: 0;
   max-width: 100%;
+
   overflow: hidden;
 
-  padding: 14px;
-  border: 1px solid rgba(37, 40, 61, 0.1);
-  border-radius: 14px;
-  background: rgba(247, 247, 251, 0.82);
+  padding: 15px;
+
+  border: 1px solid rgba(102, 252, 241, 0.16);
+  border-radius: 16px;
+
+  background:
+    radial-gradient(circle at top right, rgba(102, 252, 241, 0.09), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(247, 247, 251, 0.66));
+
+  box-shadow:
+    0 10px 22px rgba(37, 40, 61, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
 }
 
 .repair-info-meta strong,
@@ -5943,16 +5987,24 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .repair-info-meta strong {
-  margin-bottom: 5px;
-  color: var(--muted);
-  font-size: 12px;
-  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 950;
+  letter-spacing: 0.075em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
 .repair-info-meta span {
-  color: var(--accent);
-  font-weight: 700;
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.45;
 }
 
 .repair-info-detail {
