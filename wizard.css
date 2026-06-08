@@ -7883,8 +7883,19 @@ backdrop-filter: blur(16px) saturate(170%);
 
   overflow-x: hidden;
 
-  border-top: none;
-  border-radius: 0 0 20px 20px;
+  border: none;
+  border-radius: 0;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+}
+
+#pr-selection-cards.selection-cards::after {
+  display: none !important;
+  content: none !important;
 }
 
 #pr-selection-cards .card {
