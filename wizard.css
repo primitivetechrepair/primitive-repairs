@@ -6860,19 +6860,54 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .field-help,
 .small-note {
-  margin-top: 6px;
+  margin-top: 7px;
 
   color: var(--muted);
+
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 750;
   line-height: 1.45;
 }
 
 .small-note {
-  padding: 8px 10px;
+  position: relative;
 
-  border-radius: 12px;
-  background: rgba(247, 247, 251, 0.72);
+  padding: 9px 11px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.14);
+  border-radius: 13px;
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.08), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76), rgba(247, 247, 251, 0.64));
+
+  box-shadow:
+    0 8px 18px rgba(37, 40, 61, 0.045),
+    inset 0 1px 0 rgba(255, 255, 255, 0.76);
+}
+
+.small-note::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.18),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.small-note > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ---------- Customer Form Actions ---------- */
