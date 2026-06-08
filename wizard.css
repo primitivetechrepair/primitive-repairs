@@ -3645,6 +3645,10 @@ backdrop-filter: blur(16px) saturate(170%);
 
 #pr-main {
   margin-top: 0;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 /* =========================================================
@@ -7822,6 +7826,15 @@ backdrop-filter: blur(16px) saturate(170%);
   max-width: 100%;
   min-width: 0;
   overflow-x: hidden;
+}
+
+#pr-main {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .pr-header {
