@@ -8378,4 +8378,23 @@ backdrop-filter: blur(16px) saturate(170%);
 .supported-device-trust-strip a {
   width: 100%;
 }
+
+/* Final mobile wizard background cleanup */
+#primitive-wizard-container,
+#primitive-wizard-container #pr-main,
+#primitive-wizard-container #pr-steps-area,
+#primitive-wizard-container #pr-selection-cards,
+#primitive-wizard-container .selection-cards,
+#primitive-wizard-container .device-card-results,
+#primitive-wizard-container .brand-card-results,
+#primitive-wizard-container .series-card-results,
+#primitive-wizard-container .model-card-results,
+#primitive-wizard-container .repair-card-results {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
 }
