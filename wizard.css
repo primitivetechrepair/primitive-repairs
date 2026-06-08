@@ -8379,27 +8379,36 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
 }
 
-/* Final mobile wizard background cleanup */
-#primitive-wizard-container,
-#primitive-wizard-container #pr-main,
-#primitive-wizard-container #pr-steps-area,
-#primitive-wizard-container #pr-selection-cards,
-#primitive-wizard-container .selection-cards,
-#primitive-wizard-container .device-card-results,
-#primitive-wizard-container .brand-card-results,
-#primitive-wizard-container .series-card-results,
-#primitive-wizard-container .model-card-results,
-#primitive-wizard-container .repair-card-results {
-  background: none !important;
-  background-color: transparent !important;
-  background-image: none !important;
-
-  border-color: transparent !important;
-  box-shadow: none !important;
+/* TEMP DEBUG — find the gray mobile wizard layer */
+#primitive-wizard-container {
+  background: rgba(255, 0, 0, 0.35) !important;
 }
 
-#pr-selection-cards.selection-cards::after {
-  display: none !important;
-  content: none !important;
+#pr-main {
+  background: rgba(0, 255, 0, 0.35) !important;
+}
+
+#pr-selection-cards {
+  background: rgba(0, 0, 255, 0.35) !important;
+}
+
+#pr-steps-area {
+  background: rgba(255, 255, 0, 0.35) !important;
+}
+
+.option-section-header {
+  background: rgba(255, 0, 255, 0.35) !important;
+}
+
+.device-card-results,
+.brand-card-results,
+.series-card-results,
+.model-card-results,
+.repair-card-results {
+  background: rgba(255, 128, 0, 0.35) !important;
+}
+
+.opt-card {
+  background: rgba(0, 255, 255, 0.35) !important;
 }
 }
