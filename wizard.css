@@ -4506,8 +4506,6 @@ backdrop-filter: blur(16px) saturate(170%);
 #pr-steps-area.animated-area:has(.option-section-header) {
   display: block;
   width: 100%;
-
-  padding-bottom: 18px;
 }
 
 #pr-steps-area.animated-area:has(.option-section-header) .option-section-header,
@@ -4660,6 +4658,8 @@ backdrop-filter: blur(16px) saturate(170%);
 
   justify-content: stretch;
   align-items: stretch;
+
+  padding-bottom: 18px;
 }
 
 .opt-card {
@@ -7895,14 +7895,11 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
   #pr-steps-area.animated-area {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-
-  padding-bottom: 16px;
-
-  overflow-x: hidden;
-}
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
 
   #pr-steps-area.animated-area:has(.opt-card):not(:has(.option-section-header)),
 #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results,
@@ -8084,7 +8081,7 @@ backdrop-filter: blur(16px) saturate(170%);
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 
-  padding: 0;
+  padding: 0 0 16px;
   overflow-x: hidden;
 }
 
