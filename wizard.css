@@ -5419,30 +5419,51 @@ backdrop-filter: blur(16px) saturate(170%);
 .review-panel,
 .repair-info-panel,
 .success-panel {
+  position: relative;
+
   width: 100%;
   margin: 0 auto;
-  border: 1px solid var(--soft-border);
-  background: var(--card);
-  box-shadow: var(--soft-shadow);
-}
 
-.success-panel {
-  position: relative;
   overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.18);
+  border-radius: 22px;
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.13), transparent 36%),
+    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.11), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 247, 251, 0.76));
+
+  box-shadow:
+    0 18px 40px rgba(37, 40, 61, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
+.repair-details-panel::before,
+.appointment-panel::before,
+.review-panel::before,
+.repair-info-panel::before,
 .success-panel::before {
   content: "";
+
   position: absolute;
   inset: 0;
 
   background:
-    radial-gradient(circle at top, rgba(102, 252, 241, 0.16), transparent 38%),
-    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.12), transparent 42%);
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.32),
+      transparent
+    );
 
   pointer-events: none;
 }
 
+.repair-details-panel > *,
+.appointment-panel > *,
+.review-panel > *,
+.repair-info-panel > *,
 .success-panel > * {
   position: relative;
   z-index: 1;
