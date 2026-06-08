@@ -8397,4 +8397,9 @@ backdrop-filter: blur(16px) saturate(170%);
   border-color: transparent !important;
   box-shadow: none !important;
 }
+
+#pr-selection-cards.selection-cards::after {
+  display: none !important;
+  content: none !important;
+}
 }
