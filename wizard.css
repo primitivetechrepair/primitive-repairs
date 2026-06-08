@@ -6052,17 +6052,16 @@ backdrop-filter: blur(16px) saturate(170%);
   line-height: 1.6;
 }
 
-.repair-info-actions,
-.appointment-actions {
-  margin-top: 30px;
-  padding: 18px 28px 28px;
-  border-top: 1px solid rgba(37, 40, 61, 0.1);
-}
+.repair-info-actions {
+  width: 100%;
+  margin-top: 28px;
+  padding: 18px 0 0;
 
-.appointment-actions {
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid rgba(37, 40, 61, 0.08);
 }
 
 /* =========================================================
