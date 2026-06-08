@@ -5965,34 +5965,73 @@ backdrop-filter: blur(16px) saturate(170%);
 .appointment-service-card {
   position: relative;
 
-  min-height: 124px;
+  min-height: 118px;
   padding: 18px;
+
+  display: grid;
+  align-content: center;
+  gap: 8px;
 
   overflow: hidden;
 
+  border: 1px solid rgba(102, 252, 241, 0.16);
   border-radius: 18px;
-  text-align: left;
 
   background:
     radial-gradient(circle at top right, rgba(102, 252, 241, 0.1), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(242, 244, 247, 0.88));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(247, 247, 251, 0.66));
+
+  color: var(--accent);
+
+  text-align: left;
 
   box-shadow:
-    0 10px 24px rgba(37, 40, 61, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+    0 12px 26px rgba(37, 40, 61, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.appointment-service-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.24),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.appointment-service-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .appointment-service-card.is-selected {
-  border-color: rgba(102, 252, 241, 0.56);
+  border-color: rgba(102, 252, 241, 0.52);
 
   background:
-    radial-gradient(circle at top right, rgba(102, 252, 241, 0.2), transparent 40%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 253, 0.82));
+    radial-gradient(circle at top right, rgba(102, 252, 241, 0.2), transparent 38%),
+    radial-gradient(circle at bottom left, rgba(7, 123, 255, 0.13), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(233, 255, 253, 0.76));
 
   box-shadow:
-    0 16px 34px rgba(7, 123, 255, 0.12),
-    0 0 0 1px rgba(102, 252, 241, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+    0 16px 34px rgba(7, 123, 255, 0.13),
+    0 0 0 1px rgba(102, 252, 241, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .appointment-service-card.is-selected::after {
@@ -6020,12 +6059,20 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .appointment-service-card strong {
-  margin-bottom: 8px;
-  font-size: 15px;
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 950;
+  letter-spacing: -0.01em;
+  line-height: 1;
 }
 
 .appointment-service-card span {
   color: var(--muted);
+
+  font-size: 12.5px;
+  font-weight: 700;
   line-height: 1.45;
 }
 
