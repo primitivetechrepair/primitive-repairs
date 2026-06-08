@@ -8625,11 +8625,13 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
   .appointment-panel,
-  .success-panel,
-  .review-panel,
-  .repair-details-panel {
-    padding: 22px 18px;
-  }
+.success-panel,
+.review-panel,
+.repair-details-panel,
+.repair-info-panel {
+  padding: 22px 18px;
+  border-radius: 20px;
+}
 
   .appointment-section,
   .appointment-date-wrap,
@@ -8862,12 +8864,30 @@ backdrop-filter: blur(16px) saturate(170%);
   }
 
   .repair-info-panel.is-single-repair .repair-info-content {
-    padding: 16px;
-  }
+  padding: 16px;
+  align-items: stretch;
+}
 
   .repair-info-panel.is-single-repair .repair-info-meta div {
     padding: 16px;
   }
+
+  .repair-details-list,
+.appointment-service-grid,
+.customer-field-grid,
+.review-grid,
+.success-summary {
+  gap: 12px;
+}
+
+.repair-detail-card,
+.appointment-section,
+.review-card,
+.success-summary > div,
+.selection-summary,
+.repair-policy-box {
+  border-radius: 16px;
+}
 
   .supported-device-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
