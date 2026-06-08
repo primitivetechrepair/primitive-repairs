@@ -4660,6 +4660,18 @@ backdrop-filter: blur(16px) saturate(170%);
   align-items: stretch;
 
   padding-bottom: 18px;
+
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+#pr-steps-area,
+#pr-steps-area.animated-area,
+#pr-steps-area.animated-area:has(.option-section-header) {
+  background: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .opt-card {
@@ -8083,6 +8095,10 @@ backdrop-filter: blur(16px) saturate(170%);
 
   padding: 0 0 16px;
   overflow-x: hidden;
+
+  background: transparent;
+  box-shadow: none;
+  border: none;
 }
 
 .device-card-results .opt-card,
