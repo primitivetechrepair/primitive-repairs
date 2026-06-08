@@ -6142,15 +6142,6 @@ backdrop-filter: blur(16px) saturate(170%);
   gap: 12px;
 }
 
-.appointment-service-card,
-.appointment-time-slot {
-  border: 1px solid var(--soft-border);
-  background: var(--soft-panel);
-  color: var(--accent);
-  cursor: pointer;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
 .appointment-service-card {
   position: relative;
 
