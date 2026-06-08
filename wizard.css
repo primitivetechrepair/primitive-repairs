@@ -7828,15 +7828,6 @@ backdrop-filter: blur(16px) saturate(170%);
   overflow-x: hidden;
 }
 
-#pr-main {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-
-  border: none !important;
-  box-shadow: none !important;
-}
-
 .pr-header {
   margin-bottom: 0;
   padding: 24px 16px 20px;
@@ -8119,37 +8110,6 @@ backdrop-filter: blur(16px) saturate(170%);
 
   padding: 0 0 10px;
   overflow-x: hidden;
-
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-
-  border: none !important;
-  box-shadow: none !important;
-}
-
-#device-card-results::before,
-#device-card-results::after,
-#brand-card-results::before,
-#brand-card-results::after,
-#series-card-results::before,
-#series-card-results::after,
-#model-card-results::before,
-#model-card-results::after,
-#repair-card-results::before,
-#repair-card-results::after,
-.device-card-results::before,
-.device-card-results::after,
-.brand-card-results::before,
-.brand-card-results::after,
-.series-card-results::before,
-.series-card-results::after,
-.model-card-results::before,
-.model-card-results::after,
-.repair-card-results::before,
-.repair-card-results::after {
-  display: none !important;
-  content: none !important;
 }
 
 .device-card-results .opt-card,
