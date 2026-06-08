@@ -8379,4 +8379,31 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
 }
 
+/* Final mobile wizard transparent cleanup */
+#primitive-wizard-container #pr-main {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#primitive-wizard-container #device-card-results,
+#primitive-wizard-container #brand-card-results,
+#primitive-wizard-container #series-card-results,
+#primitive-wizard-container #model-card-results,
+#primitive-wizard-container #repair-card-results,
+#primitive-wizard-container .device-card-results,
+#primitive-wizard-container .brand-card-results,
+#primitive-wizard-container .series-card-results,
+#primitive-wizard-container .model-card-results,
+#primitive-wizard-container .repair-card-results {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
 }
