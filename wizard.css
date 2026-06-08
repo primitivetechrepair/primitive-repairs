@@ -8379,36 +8379,4 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
 }
 
-/* TEMP DEBUG — find the gray mobile wizard layer */
-#primitive-wizard-container {
-  background: rgba(255, 0, 0, 0.35) !important;
-}
-
-#pr-main {
-  background: rgba(0, 255, 0, 0.35) !important;
-}
-
-#pr-selection-cards {
-  background: rgba(0, 0, 255, 0.35) !important;
-}
-
-#pr-steps-area {
-  background: rgba(255, 255, 0, 0.35) !important;
-}
-
-.option-section-header {
-  background: rgba(255, 0, 255, 0.35) !important;
-}
-
-.device-card-results,
-.brand-card-results,
-.series-card-results,
-.model-card-results,
-.repair-card-results {
-  background: rgba(255, 128, 0, 0.35) !important;
-}
-
-.opt-card {
-  background: rgba(0, 255, 255, 0.35) !important;
-}
 }
