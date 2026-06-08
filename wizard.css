@@ -6327,23 +6327,50 @@ backdrop-filter: blur(16px) saturate(170%);
 /* ---------- Selection Summary Inside Form ---------- */
 
 .selection-summary {
+  position: relative;
+
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 18px;
 
-  border: 1px solid rgba(102, 252, 241, 0.18);
-  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid rgba(102, 252, 241, 0.2);
+  border-radius: 20px;
 
   background:
-    radial-gradient(circle at top left, rgba(102, 252, 241, 0.1), transparent 34%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(247, 247, 251, 0.78));
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.14), transparent 36%),
+    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 247, 251, 0.72));
 
   box-shadow:
-    0 12px 26px rgba(37, 40, 61, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+    0 14px 30px rgba(37, 40, 61, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+}
+
+.selection-summary::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.26),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.selection-summary > * {
+  position: relative;
+  z-index: 1;
 }
 .selection-summary p {
   min-width: 0;
@@ -6354,26 +6381,27 @@ backdrop-filter: blur(16px) saturate(170%);
   gap: 5px;
 
   margin: 0;
-  padding: 12px;
+  padding: 13px;
 
   overflow: hidden;
+  overflow-wrap: anywhere;
 
-  border: 1px solid rgba(102, 252, 241, 0.14);
-  border-radius: 15px;
+  border: 1px solid rgba(102, 252, 241, 0.16);
+  border-radius: 16px;
 
   background:
-    radial-gradient(circle at top right, rgba(102, 252, 241, 0.1), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 247, 251, 0.76));
+    radial-gradient(circle at top right, rgba(102, 252, 241, 0.11), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 247, 251, 0.68));
 
   color: var(--muted);
+
   font-size: 13px;
   font-weight: 800;
   line-height: 1.4;
-  overflow-wrap: anywhere;
 
   box-shadow:
-    0 8px 18px rgba(37, 40, 61, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    0 8px 18px rgba(37, 40, 61, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
 }
 .selection-summary p:not(:last-child) {
   border-bottom: 1px solid rgba(102, 252, 241, 0.14);
