@@ -4799,14 +4799,14 @@ backdrop-filter: blur(16px) saturate(170%);
   position: relative;
 
   width: calc(100% - 18px);
-  height: 132px;
+  height: 150px;
 
   margin: 9px auto 6px;
 
   display: grid;
   place-items: center;
 
-  flex: 0 0 132px;
+  flex: 0 0 150px;
 
   overflow: hidden;
 
@@ -4862,8 +4862,8 @@ backdrop-filter: blur(16px) saturate(170%);
   width: auto;
   height: auto;
 
-  max-width: 104px;
-  max-height: 104px;
+  max-width: 118px;
+  max-height: 118px;
 
   display: block;
 
