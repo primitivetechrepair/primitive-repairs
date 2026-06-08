@@ -6819,25 +6819,42 @@ backdrop-filter: blur(16px) saturate(170%);
 .review-card {
   position: relative;
 
-  min-width: 0;
-  min-height: 100%;
-  padding: 20px;
-
-  display: grid;
-  gap: 8px;
-
   overflow: hidden;
 
-  border: 1px solid rgba(102, 252, 241, 0.15);
-  border-radius: 20px;
+  padding: 18px;
+
+  border: 1px solid rgba(102, 252, 241, 0.16);
+  border-radius: 18px;
 
   background:
     radial-gradient(circle at top right, rgba(102, 252, 241, 0.1), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 247, 251, 0.82));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(247, 247, 251, 0.66));
 
   box-shadow:
-    0 14px 30px rgba(37, 40, 61, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.84);
+    0 12px 26px rgba(37, 40, 61, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+}
+
+.review-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.24),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+.review-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .review-card-wide,
@@ -6866,19 +6883,22 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .review-card p {
   display: grid;
-  grid-template-columns: 145px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 12px;
   align-items: center;
 
   margin: 0;
   padding: 10px 0;
 
-  border-bottom: 1px solid rgba(37, 40, 61, 0.06);
+  border-bottom: 1px solid rgba(37, 40, 61, 0.08);
 
   color: var(--muted);
+
   font-size: 13px;
-  font-weight: 750;
+  font-weight: 700;
   line-height: 1.45;
+
+  overflow-wrap: anywhere;
 }
 
 .review-card strong {
@@ -6886,14 +6906,10 @@ backdrop-filter: blur(16px) saturate(170%);
 
   font-family: var(--font-display);
   font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.055em;
+  font-weight: 950;
+  letter-spacing: 0.06em;
   line-height: 1.1;
   text-transform: uppercase;
-}
-
-.review-card p {
-  overflow-wrap: anywhere;
 }
 
 .review-card p > strong + * {
