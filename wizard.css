@@ -6600,30 +6600,67 @@ backdrop-filter: blur(16px) saturate(170%);
 /* ---------- Consent Checkbox Row ---------- */
 
 #pr-customer-form label:has(#cf-consent) {
+  position: relative;
+
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
 
-  margin-top: 16px;
-  padding: 12px;
+  margin-top: 18px;
+  padding: 14px;
 
-  border: 1px solid rgba(37, 40, 61, 0.1);
-  border-radius: 14px;
+  overflow: hidden;
 
-  background: rgba(247, 247, 251, 0.72);
+  border: 1px solid rgba(102, 252, 241, 0.16);
+  border-radius: 16px;
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.1), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(247, 247, 251, 0.72));
 
   color: var(--accent);
+
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0;
-  line-height: 1.4;
+  line-height: 1.45;
   text-transform: none;
+
+  box-shadow:
+    0 10px 22px rgba(37, 40, 61, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.82);
+}
+
+#pr-customer-form label:has(#cf-consent)::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent,
+      rgba(255, 255, 255, 0.22),
+      transparent
+    );
+
+  pointer-events: none;
+}
+
+#pr-customer-form label:has(#cf-consent) > * {
+  position: relative;
+  z-index: 1;
 }
 
 #cf-consent {
-  width: auto;
-  margin: 2px 0 0;
-  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin: 1px 0 0;
+
+  flex: 0 0 18px;
+
+  accent-color: #077bff;
 }
 
 /* ---------- Repair Policy Disclosure ---------- */
