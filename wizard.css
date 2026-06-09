@@ -6560,6 +6560,34 @@ backdrop-filter: blur(16px) saturate(170%);
   grid-column: 1 / -1;
 }
 
+.previews {
+  grid-template-columns: 1fr;
+  gap: 9px;
+}
+
+.file-preview-item {
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 10px;
+
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.file-preview-thumb {
+  width: 54px;
+  height: 54px;
+
+  border-radius: 14px;
+}
+
+.file-preview-info strong {
+  font-size: 12px;
+}
+
+.file-preview-info span {
+  font-size: 10.5px;
+}
+
 /* ---------- Customer Form Labels ---------- */
 
 #pr-customer-form > label {
