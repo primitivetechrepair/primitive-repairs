@@ -569,10 +569,15 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
   if (!container) return;
 
   const customerName = leadPayload?.customer?.name || "Customer";
-  const serviceType = leadPayload?.appointment?.serviceType || "service";
-  const date = formatDisplayDate(leadPayload?.appointment?.date) || "selected date";
-  const time = leadPayload?.appointment?.time || "selected time";
-  const requestId = leadPayload?.requestId || "Pending";
+const serviceType = leadPayload?.appointment?.serviceType || "service";
+const date = formatDisplayDate(leadPayload?.appointment?.date) || "selected date";
+const time = leadPayload?.appointment?.time || "selected time";
+const requestId = leadPayload?.requestId || "Pending";
+
+const deviceType = leadPayload?.device?.type || "Not selected";
+const deviceBrand = leadPayload?.device?.brand || "Not selected";
+const deviceSeries = leadPayload?.device?.series || "Not selected";
+const deviceModel = leadPayload?.device?.model || "Not selected";
 
   const selectedRepairs =
     Array.isArray(leadPayload?.repairs) && leadPayload.repairs.length
@@ -625,31 +630,51 @@ container.innerHTML = `
       </div>
 
       <div class="success-summary success-summary-request-layout">
-        <div>
-          <strong>Request ID</strong>
-          <span>${requestId}</span>
-        </div>
+  <div>
+    <strong>Request ID</strong>
+    <span>${requestId}</span>
+  </div>
 
-        <div>
-          <strong>Service Type</strong>
-          <span>${serviceLabels[serviceType] || serviceType}</span>
-        </div>
+  <div>
+    <strong>Device</strong>
+    <span>${deviceType}</span>
+  </div>
 
-        <div>
-          <strong>Preferred Date</strong>
-          <span>${date}</span>
-        </div>
+  <div>
+    <strong>Brand</strong>
+    <span>${deviceBrand}</span>
+  </div>
 
-        <div>
-          <strong>Selected Repairs</strong>
-          <span>${repairList}</span>
-        </div>
+  <div>
+    <strong>Series</strong>
+    <span>${deviceSeries}</span>
+  </div>
 
-        <div>
-          <strong>Preferred Time</strong>
-          <span>${time}</span>
-        </div>
-      </div>
+  <div>
+    <strong>Model</strong>
+    <span>${deviceModel}</span>
+  </div>
+
+  <div>
+    <strong>Selected Repairs</strong>
+    <span>${repairList}</span>
+  </div>
+
+  <div>
+    <strong>Service Type</strong>
+    <span>${serviceLabels[serviceType] || serviceType}</span>
+  </div>
+
+  <div>
+    <strong>Preferred Date</strong>
+    <span>${date}</span>
+  </div>
+
+  <div>
+    <strong>Preferred Time</strong>
+    <span>${time}</span>
+  </div>
+</div>
 
       <button type="button" class="success-start-new">
         Start New Request
