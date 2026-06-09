@@ -7241,12 +7241,41 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
   .repair-policy-toggle {
-    width: 100%;
-  }
+  width: 100%;
+  min-height: 42px;
 
-  .repair-policy-box {
-    padding: 14px;
-  }
+  font-size: 10px;
+  text-align: center;
+}
+
+.repair-policy-box {
+  padding: 14px;
+  border-radius: 16px;
+}
+
+.repair-policy-box h4 {
+  font-size: 14px;
+}
+
+.repair-policy-box p,
+.repair-policy-box ol {
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+#pr-customer-form label:has(#cf-consent) {
+  padding: 13px;
+  border-radius: 15px;
+
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+#cf-consent {
+  width: 17px;
+  height: 17px;
+  flex-basis: 17px;
+}
 
   .form-actions {
     flex-direction: column;
