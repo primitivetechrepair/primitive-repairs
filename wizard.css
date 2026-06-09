@@ -893,7 +893,9 @@ text-align: center;
 }
 
 .microsoldering-hero .landing-hero h1,
-.microsoldering-hero h1 {
+.microsoldering-hero h1,
+.usb-c-hero .landing-hero h1,
+.usb-c-hero h1 {
   max-width: 760px;
 
   font-size: clamp(2.15rem, 6vw, 4rem);
@@ -8163,6 +8165,15 @@ backdrop-filter: blur(16px) saturate(170%);
   .landing-hero h1 {
     font-size: clamp(2.25rem, 12vw, 3.5rem);
   }
+
+  .microsoldering-hero .landing-hero h1,
+.microsoldering-hero h1,
+.usb-c-hero .landing-hero h1,
+.usb-c-hero h1 {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
 
   .hero-glass-panel {
     padding: 24px 18px;
