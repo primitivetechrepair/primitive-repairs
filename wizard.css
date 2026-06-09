@@ -892,6 +892,15 @@ text-align: center;
     0 0 28px rgba(102, 252, 241, 0.18);
 }
 
+.microsoldering-hero .landing-hero h1,
+.microsoldering-hero h1 {
+  max-width: 760px;
+
+  font-size: clamp(2.15rem, 6vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
 .landing-hero p {
   max-width: 610px;
   margin: 16px auto 0;
