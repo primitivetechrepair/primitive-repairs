@@ -641,7 +641,7 @@ text-align: center;
   position: absolute;
   inset: 0;
 
-  background-image: url("images/hero-repair-van.png");
+  background-image: url("images/hero-repair-van.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1153,27 +1153,27 @@ text-align: center;
 }
 
 .supported-device-card[data-device="phone"]::after {
-  background-image: url("/images/supported-devices/phone.png");
+  background-image: url("/images/supported-devices/phone.webp");
 }
 
 .supported-device-card[data-device="tablet"]::after {
-  background-image: url("/images/supported-devices/tablet.png");
+  background-image: url("/images/supported-devices/tablet.webp");
 }
 
 .supported-device-card[data-device="computer"]::after {
-  background-image: url("/images/supported-devices/computer.png");
+  background-image: url("/images/supported-devices/computer.webp");
 }
 
 .supported-device-card[data-device="console"]::after {
-  background-image: url("/images/supported-devices/console.png");
+  background-image: url("/images/supported-devices/console.webp");
 }
 
 .supported-device-card[data-device="smartwatch"]::after {
-  background-image: url("/images/supported-devices/smartwatch.png");
+  background-image: url("/images/supported-devices/smartwatch.webp");
 }
 
 .supported-device-card[data-device="other"]::after {
-  background-image: url("/images/supported-devices/electronics.png");
+  background-image: url("/images/supported-devices/electronics.webp");
 }
 
 .supported-device-card:hover {
