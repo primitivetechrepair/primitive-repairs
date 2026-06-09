@@ -7184,14 +7184,15 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
   .selection-summary {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  grid-template-columns: 1fr;
+  gap: 9px;
   padding: 14px;
 }
 
 .selection-summary p {
-  min-height: 64px;
-  padding: 10px;
+  min-height: 0;
+  padding: 12px;
+  border-radius: 15px;
 }
 
 .selection-summary p:nth-child(5) {
@@ -7200,9 +7201,15 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .selection-summary strong {
   display: block;
-  margin-bottom: 2px;
-  font-size: 8.5px;
-  letter-spacing: 0.05em;
+  margin-bottom: 3px;
+
+  font-size: 9px;
+  letter-spacing: 0.055em;
+}
+
+.selection-summary p {
+  font-size: 12.5px;
+  line-height: 1.4;
 }
 
   .repair-policy-toggle {
