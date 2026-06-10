@@ -6048,10 +6048,6 @@ backdrop-filter: blur(16px) saturate(170%);
 .repair-info-panel.is-single-repair .repair-info-image {
   min-height: 250px;
 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
   border-right: 1px solid rgba(102, 252, 241, 0.16);
 
   background:
@@ -6150,8 +6146,19 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .repair-info-image {
   background-color: var(--slot-fill);
-  background-size: cover;
-  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.repair-info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .repair-info-content {

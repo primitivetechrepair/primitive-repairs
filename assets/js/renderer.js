@@ -404,10 +404,14 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       </div>
 
       <div class="repair-info-hero">
-        <div
-          class="repair-info-image"
-          style="background-image: url('${primaryRepair.image || "/images/repairs/default.webp"}')"
-        ></div>
+        <div class="repair-info-image">
+          <img
+            src="${primaryRepair.image || "/images/repairs/default.webp"}"
+            alt="${primaryRepair.repair || "Repair"}"
+            loading="lazy"
+            onerror="this.onerror=null; this.src='/images/repairs/default.webp';"
+          >
+        </div>
 
         <div class="repair-info-content">
 
