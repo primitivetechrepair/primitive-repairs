@@ -63,14 +63,16 @@ export function getBrandImage(device, brand) {
 
 export function getDeviceImage(label) {
   const deviceImageMap = {
-    "Cell Phone": "phone",
-    Phone: "phone",
-    Tablet: "tablet",
-    Computer: "computer",
-    Console: "console",
-    Smartwatch: "smartwatch",
-    Other: "other"
-  };
+  "Cell Phone": "phone",
+  Phone: "phone",
+  Tablet: "tablet",
+  Computer: "computer",
+  Console: "console",
+  Smartwatch: "smartwatch",
+  "Meta Glasses": "meta-glasses",
+  Mods: "mods",
+  Other: "other"
+};
 
   const imageName = deviceImageMap[String(label || "")];
 
@@ -172,14 +174,16 @@ export function renderCardGrid(container, items = []) {
   container.innerHTML = "";
 
   const deviceOrder = [
-    "Cell Phone",
-    "Phone",
-    "Tablet",
-    "Computer",
-    "Console",
-    "Smartwatch",
-    "Other"
-  ];
+  "Cell Phone",
+  "Phone",
+  "Tablet",
+  "Computer",
+  "Console",
+  "Smartwatch",
+  "Meta Glasses",
+  "Mods",
+  "Other"
+];
 
   const isDeviceGrid =
     items.length &&
