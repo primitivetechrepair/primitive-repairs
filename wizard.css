@@ -996,6 +996,79 @@ text-align: center;
     inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
+/* Motorola Services Background */
+.motorola-services-bg {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(5, 8, 18, 0.92),
+      rgba(5, 8, 18, 0.76)
+    ),
+    url("/images/service-backgrounds/motorola-phone.webp") center center / cover no-repeat;
+}
+
+.motorola-services-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 78% 18%, rgba(102, 252, 241, 0.18), transparent 34%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.12));
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+.motorola-services-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.motorola-services-bg .landing-section-header h2 {
+  color: #ffffff;
+}
+
+.motorola-services-bg .landing-section-header p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.motorola-services-bg .supported-device-card {
+  background:
+    linear-gradient(180deg, rgba(13, 18, 34, 0.86), rgba(8, 12, 24, 0.78));
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.motorola-services-bg .supported-device-content h3 {
+  color: #ffffff;
+}
+
+.motorola-services-bg .supported-device-content p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.motorola-services-bg .supported-device-trust-strip {
+  background:
+    linear-gradient(180deg, rgba(13, 18, 34, 0.88), rgba(8, 12, 24, 0.8));
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.motorola-services-bg .supported-device-trust-strip strong {
+  color: #ffffff;
+}
+
+.motorola-services-bg .supported-device-trust-strip span {
+  color: rgba(255, 255, 255, 0.74);
+}
+
 .landing-section-header {
   max-width: 680px;
   margin: 0 auto 18px;
@@ -8255,10 +8328,12 @@ backdrop-filter: blur(16px) saturate(170%);
   .microsoldering-hero .landing-hero h1,
 .microsoldering-hero h1,
 .usb-c-hero .landing-hero h1,
-.usb-c-hero h1 {
-  font-size: clamp(2rem, 10vw, 3rem);
-  line-height: 1;
-  letter-spacing: -0.035em;
+.usb-c-hero h1,
+.warranty-hero .landing-hero h1,
+.warranty-hero h1 {
+  font-size: clamp(2rem, 9.5vw, 3rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
 }
 
   .hero-glass-panel {
@@ -8295,6 +8370,18 @@ backdrop-filter: blur(16px) saturate(170%);
   .landing-section {
     padding: 20px 16px;
     border-radius: 20px;
+  }
+
+  .motorola-services-bg {
+    border-radius: 22px;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 8, 18, 0.94),
+        rgba(5, 8, 18, 0.82)
+      ),
+      url("/images/service-backgrounds/motorola-phone.webp") center top / cover no-repeat;
   }
 
   .landing-process-grid {
