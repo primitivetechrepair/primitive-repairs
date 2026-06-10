@@ -72,17 +72,17 @@
     "image": "/images/brands/mods/meta-glasses.png",
     "repairs": [
       {
-        "repair": "Privacy Mode Setup",
-        "image": "/images/brands/mods/meta-glasses.png",
-        "time": "Diagnostic Required",
-        "warranty": "Service Dependent",
-        "symptoms": [
-          "Privacy Settings Review",
-          "Notification Settings",
-          "Camera / Audio Permission Review",
-          "Customer Setup Guidance"
-        ]
-      },
+  "repair": "Privacy Mode Setup",
+  "image": "/images/repairs/led-light-mod.png",
+  "time": "Diagnostic Required",
+  "warranty": "Service Dependent",
+  "symptoms": [
+    "Privacy Settings Review",
+    "Notification Settings",
+    "Camera / Audio Permission Review",
+    "Customer Setup Guidance"
+  ]
+},
       {
         "repair": "Pairing / App Setup",
         "image": "/images/brands/mods/meta-glasses.png",
