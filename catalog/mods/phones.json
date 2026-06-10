@@ -1,0 +1,32 @@
+[
+  {
+    "series": "Android Mods",
+    "model": "Android Phone Mod Review",
+    "image": "/images/devices/phone.png",
+    "repairs": [
+      {
+        "repair": "Custom Setup Review",
+        "image": "/images/devices/phone.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Advanced Configuration",
+          "Compatibility Review"
+        ]
+      },
+      {
+        "repair": "Software / Firmware Review",
+        "image": "/images/devices/phone.png",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Software Issue",
+          "Firmware Review",
+          "Device Running Slow",
+          "Boot / Update Issue"
+        ]
+      }
+    ]
+  }
+]

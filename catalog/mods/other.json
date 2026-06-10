@@ -1,0 +1,32 @@
+[
+  {
+    "series": "Custom Mods",
+    "model": "Custom Device Mod Review",
+    "image": "/images/devices/mods.png",
+    "repairs": [
+      {
+        "repair": "Custom Mod Request",
+        "image": "/images/devices/mods.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Unknown Device",
+          "Advanced Configuration",
+          "Needs Review"
+        ]
+      },
+      {
+        "repair": "Compatibility Review",
+        "image": "/images/devices/mods.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Compatibility Question",
+          "Device Support Review",
+          "Not Sure What Is Needed"
+        ]
+      }
+    ]
+  }
+]

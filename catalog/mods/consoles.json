@@ -1,0 +1,32 @@
+[
+  {
+    "series": "Console Mods",
+    "model": "Console Mod Review",
+    "image": "/images/devices/console.png",
+    "repairs": [
+      {
+        "repair": "Custom Setup Review",
+        "image": "/images/devices/console.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Storage / Hardware Upgrade Review",
+          "Compatibility Review"
+        ]
+      },
+      {
+        "repair": "Maintenance / Cleaning",
+        "image": "/images/devices/console.png",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Overheating",
+          "Fan Noise",
+          "Dust Buildup",
+          "Performance Issue"
+        ]
+      }
+    ]
+  }
+]

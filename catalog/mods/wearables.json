@@ -1,0 +1,32 @@
+[
+  {
+    "series": "Wearable Mods",
+    "model": "Wearable Setup Review",
+    "image": "/images/devices/smartwatch.png",
+    "repairs": [
+      {
+        "repair": "Privacy / Notification Setup",
+        "image": "/images/devices/smartwatch.png",
+        "time": "30–60 Minutes",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Notification Settings",
+          "Privacy Settings",
+          "Pairing Help",
+          "App Setup"
+        ]
+      },
+      {
+        "repair": "Custom Configuration Review",
+        "image": "/images/devices/smartwatch.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Compatibility Review",
+          "Feature Setup"
+        ]
+      }
+    ]
+  }
+]

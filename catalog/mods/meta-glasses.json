@@ -1,0 +1,143 @@
+[
+  {
+    "series": "Ray-Ban Meta",
+    "model": "Ray-Ban Meta Smart Glasses",
+    "image": "/images/brands/mods/meta-glasses.png",
+    "repairs": [
+      {
+        "repair": "Privacy Mode Setup",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Privacy Settings Review",
+          "Notification Settings",
+          "Camera / Audio Permission Review",
+          "Customer Setup Guidance"
+        ]
+      },
+      {
+        "repair": "Pairing / App Setup",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "30–60 Minutes",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Bluetooth Pairing Issue",
+          "Meta View App Setup",
+          "Account Connection Help",
+          "Device Not Syncing"
+        ]
+      },
+      {
+        "repair": "Firmware / Update Review",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Update Issue",
+          "Feature Setup",
+          "Device Configuration Review",
+          "Software Troubleshooting"
+        ]
+      },
+      {
+        "repair": "Charging / Power Diagnostic",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Diagnostic Required",
+        "warranty": "Quoted After Inspection",
+        "symptoms": [
+          "Not Charging",
+          "Case Charging Issue",
+          "Battery Drain",
+          "Power Issue"
+        ]
+      },
+      {
+        "repair": "Custom Mod Request",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Advanced Configuration",
+          "Compatibility Review",
+          "Not Sure / Needs Review"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Oakley Meta",
+    "model": "Oakley Meta Smart Glasses",
+    "image": "/images/brands/mods/meta-glasses.png",
+    "repairs": [
+      {
+        "repair": "Privacy Mode Setup",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Diagnostic Required",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Privacy Settings Review",
+          "Notification Settings",
+          "Camera / Audio Permission Review",
+          "Customer Setup Guidance"
+        ]
+      },
+      {
+        "repair": "Pairing / App Setup",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "30–60 Minutes",
+        "warranty": "Service Dependent",
+        "symptoms": [
+          "Bluetooth Pairing Issue",
+          "Meta View App Setup",
+          "Account Connection Help",
+          "Device Not Syncing"
+        ]
+      },
+      {
+        "repair": "Custom Mod Request",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Advanced Configuration",
+          "Compatibility Review",
+          "Not Sure / Needs Review"
+        ]
+      }
+    ]
+  },
+  {
+    "series": "Other Smart Glasses",
+    "model": "Other Smart Glasses / Wearable Camera",
+    "image": "/images/brands/mods/meta-glasses.png",
+    "repairs": [
+      {
+        "repair": "Compatibility Review",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Unknown Model",
+          "Custom Setup Request",
+          "App Compatibility",
+          "Feature Review"
+        ]
+      },
+      {
+        "repair": "Custom Mod Request",
+        "image": "/images/brands/mods/meta-glasses.png",
+        "time": "Review Required",
+        "warranty": "Quoted After Review",
+        "symptoms": [
+          "Custom Setup Request",
+          "Advanced Configuration",
+          "Compatibility Review",
+          "Not Sure / Needs Review"
+        ]
+      }
+    ]
+  }
+]
