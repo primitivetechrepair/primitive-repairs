@@ -6145,15 +6145,30 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .repair-info-image {
+  position: relative;
+
   min-height: 250px;
   width: 100%;
 
   background-color: var(--slot-fill);
+
+  overflow: hidden;
+}
+
+.repair-info-image::before {
+  content: "";
+
+  position: absolute;
+  inset: 18px;
+
+  z-index: 1;
+
+  background-image: var(--repair-info-image);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
-  overflow: hidden;
+  pointer-events: none;
 }
 
 .repair-info-content {
