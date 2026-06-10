@@ -6149,23 +6149,11 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
 
   background-color: var(--slot-fill);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
   overflow: hidden;
-}
-
-.repair-info-image img {
-  width: 100%;
-  height: 250px;
-  max-height: 250px;
-
-  object-fit: contain;
-  object-position: center;
-
-  display: block;
 }
 
 .repair-info-content {
