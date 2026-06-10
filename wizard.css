@@ -1105,6 +1105,10 @@ text-align: center;
   --service-bg-image: url("/images/service-backgrounds/motorola-phone.webp");
 }
 
+.nintendo-switch-services-bg {
+  --service-bg-image: url("/images/service-backgrounds/nintendo-switch-repair.webp");
+}
+
 .landing-section-header {
   max-width: 680px;
   margin: 0 auto 18px;
