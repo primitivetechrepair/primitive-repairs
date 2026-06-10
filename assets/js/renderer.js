@@ -406,7 +406,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       <div class="repair-info-hero">
         <div
           class="repair-info-image"
-          style="background-image: url('${primaryRepair.image || "/images/repairs/default.webp"}')"
+          style="--repair-info-image: url('${primaryRepair.image || "/images/repairs/default.webp"}')"
         ></div>
 
         <div class="repair-info-content">
