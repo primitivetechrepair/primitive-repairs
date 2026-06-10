@@ -996,8 +996,8 @@ text-align: center;
     inset 0 1px 0 rgba(255, 255, 255, 0.86);
 }
 
-/* Motorola Services Background */
-.motorola-services-bg {
+/* Service Page Background Sections */
+.service-bg-section {
   position: relative;
   overflow: hidden;
   border-radius: 28px;
@@ -1008,10 +1008,10 @@ text-align: center;
       rgba(5, 8, 18, 0.92),
       rgba(5, 8, 18, 0.76)
     ),
-    url("/images/service-backgrounds/motorola-phone.webp") center center / cover no-repeat;
+    var(--service-bg-image) center center / cover no-repeat;
 }
 
-.motorola-services-bg::before {
+.service-bg-section::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1024,20 +1024,32 @@ text-align: center;
   z-index: 0;
 }
 
-.motorola-services-bg > * {
+.service-bg-section > * {
   position: relative;
   z-index: 1;
 }
 
-.motorola-services-bg .landing-section-header h2 {
+.service-bg-section .landing-section-header h2 {
   color: #ffffff;
 }
 
-.motorola-services-bg .landing-section-header p {
+.service-bg-section .landing-section-header p {
   color: rgba(255, 255, 255, 0.78);
 }
 
-.motorola-services-bg .supported-device-card {
+.service-bg-section .landing-eyebrow {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.18),
+      rgba(102, 252, 241, 0.22),
+      rgba(7, 123, 255, 0.18)
+    );
+}
+
+.service-bg-section .supported-device-card {
   background:
     linear-gradient(180deg, rgba(13, 18, 34, 0.86), rgba(8, 12, 24, 0.78));
 
@@ -1045,15 +1057,27 @@ text-align: center;
   -webkit-backdrop-filter: blur(10px);
 }
 
-.motorola-services-bg .supported-device-content h3 {
+.service-bg-section .supported-device-content h3 {
   color: #ffffff;
 }
 
-.motorola-services-bg .supported-device-content p {
+.service-bg-section .supported-device-content p {
   color: rgba(255, 255, 255, 0.74);
 }
 
-.motorola-services-bg .supported-device-trust-strip {
+.service-bg-section .supported-device-tags span {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.16),
+      rgba(102, 252, 241, 0.18),
+      rgba(7, 123, 255, 0.14)
+    );
+}
+
+.service-bg-section .supported-device-trust-strip {
   background:
     linear-gradient(180deg, rgba(13, 18, 34, 0.88), rgba(8, 12, 24, 0.8));
 
@@ -1061,12 +1085,24 @@ text-align: center;
   -webkit-backdrop-filter: blur(10px);
 }
 
-.motorola-services-bg .supported-device-trust-strip strong {
+.service-bg-section .supported-device-trust-strip strong {
   color: #ffffff;
 }
 
-.motorola-services-bg .supported-device-trust-strip span {
+.service-bg-section .supported-device-trust-strip span {
   color: rgba(255, 255, 255, 0.74);
+}
+
+.phone-services-bg {
+  --service-bg-image: url("/images/service-backgrounds/phone-repair.webp");
+}
+
+.pixel-services-bg {
+  --service-bg-image: url("/images/service-backgrounds/google-pixel-phone.webp");
+}
+
+.motorola-services-bg {
+  --service-bg-image: url("/images/service-backgrounds/motorola-phone.webp");
 }
 
 .landing-section-header {
@@ -8370,6 +8406,18 @@ backdrop-filter: blur(16px) saturate(170%);
   .landing-section {
     padding: 20px 16px;
     border-radius: 20px;
+  }
+
+  .service-bg-section {
+    border-radius: 22px;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(5, 8, 18, 0.94),
+        rgba(5, 8, 18, 0.82)
+      ),
+      var(--service-bg-image) center top / cover no-repeat;
   }
 
   .motorola-services-bg {
