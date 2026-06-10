@@ -202,6 +202,12 @@ export function renderCardGrid(container, items = []) {
     items.some((item) => phonePriorityOrder.includes(String(item?.label || ""))) &&
     items.some((item) => String(item?.label || "") === "Alcatel") &&
     items.some((item) => String(item?.label || "") === "ZTE");
+    
+      const isModsBrandGrid =
+    items.length &&
+    items.some((item) => String(item?.label || "") === "Meta Glasses") &&
+    items.some((item) => String(item?.label || "") === "Consoles") &&
+    items.some((item) => String(item?.label || "") === "Wearables");
 
   const displayItems = isDeviceGrid
     ? items
@@ -225,19 +231,24 @@ export function renderCardGrid(container, items = []) {
       : [...items].sort(sortByNaturalLabel);
 
   displayItems.forEach((item) => {
-  const cardItem = isDeviceGrid
-    ? {
-        ...item,
-        image: getDeviceImage(item?.label)
-      }
-    : isPhoneBrandGrid
+    const cardItem = isDeviceGrid
       ? {
           ...item,
-          image: item?.image || getPhoneBrandImage(item?.label)
+          image: getDeviceImage(item?.label)
         }
-      : item;
+      : isPhoneBrandGrid
+        ? {
+            ...item,
+            image: item?.image || getPhoneBrandImage(item?.label)
+          }
+        : isModsBrandGrid
+          ? {
+              ...item,
+              image: item?.image || getBrandImage("Mods", item?.label)
+            }
+          : item;
 
-  const card = createOptionCard(cardItem);
-  container.appendChild(card);
-});
+    const card = createOptionCard(cardItem);
+    container.appendChild(card);
+  });
 }
