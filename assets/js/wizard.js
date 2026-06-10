@@ -25,7 +25,6 @@ const devices = [
   "Computer",
   "Console",
   "Smartwatch",
-  "Meta Glasses",
   "Mods",
   "Other"
 ];
@@ -54,8 +53,7 @@ const brandsByDevice = {
   Computer: ["Apple", "Dell", "HP", "Lenovo", "ASUS", "Acer", "Microsoft"],
   Console: ["Sony", "Microsoft", "Nintendo"],
   Smartwatch: ["Apple", "Samsung", "Garmin"],
-  "Meta Glasses": ["Meta"],
-  Mods: ["Phone", "Console", "Wearable", "Smart Glasses", "Other"],
+  Mods: ["Phones", "Consoles", "Wearables", "Meta Glasses", "Other"],
   Other: ["Generic"]
 };
 

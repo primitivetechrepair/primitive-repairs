@@ -33,7 +33,6 @@ function normalizeDeviceFolder(device) {
     computer: "computers",
     console: "consoles",
     smartwatch: "smartwatches",
-    "meta-glasses": "meta-glasses",
     mods: "mods",
     other: "other"
   };

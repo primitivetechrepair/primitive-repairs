@@ -69,7 +69,6 @@ export function getDeviceImage(label) {
   Computer: "computer",
   Console: "console",
   Smartwatch: "smartwatch",
-  "Meta Glasses": "meta-glasses",
   Mods: "mods",
   Other: "other"
 };
@@ -180,7 +179,6 @@ export function renderCardGrid(container, items = []) {
   "Computer",
   "Console",
   "Smartwatch",
-  "Meta Glasses",
   "Mods",
   "Other"
 ];
