@@ -41,12 +41,13 @@ export function getBrandImage(device, brand) {
   }
 
   const brandFolderMap = {
-    tablet: "tablets",
-    computer: "computers",
-    console: "consoles",
-    smartwatch: "smartwatches",
-    other: "other"
-  };
+  tablet: "tablets",
+  computer: "computers",
+  console: "consoles",
+  smartwatch: "smartwatches",
+  mods: "mods",
+  other: "other"
+};
 
   if (normalizedDevice === "phone" || normalizedDevice === "cell-phone") {
     return getPhoneBrandImage(brand);
