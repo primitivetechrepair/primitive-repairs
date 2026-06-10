@@ -225,15 +225,24 @@ export function renderCardGrid(container, items = []) {
       : [...items].sort(sortByNaturalLabel);
 
   displayItems.forEach((item) => {
-  const cardItem = isDeviceGrid
+  const isModsBrandGrid =
+  selected?.device === "Mods" ||
+  selected?.device === "mods";
+
+const cardItem = isDeviceGrid
+  ? {
+      ...item,
+      image: getDeviceImage(item?.label)
+    }
+  : isPhoneBrandGrid
     ? {
         ...item,
-        image: getDeviceImage(item?.label)
+        image: item?.image || getPhoneBrandImage(item?.label)
       }
-    : isPhoneBrandGrid
+    : isModsBrandGrid
       ? {
           ...item,
-          image: item?.image || getPhoneBrandImage(item?.label)
+          image: item?.image || getBrandImage(item?.label, "Mods")
         }
       : item;
 
