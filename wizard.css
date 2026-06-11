@@ -1113,6 +1113,10 @@ text-align: center;
   --service-bg-image: url("images/service-backgrounds/ps5-hdmi-repair.webp");
 }
 
+.xbox-hdmi-services-bg {
+  --service-bg-image: url("images/service-backgrounds/xbox-hdmi-repair.webp");
+}
+
 .landing-section-header {
   max-width: 680px;
   margin: 0 auto 18px;
