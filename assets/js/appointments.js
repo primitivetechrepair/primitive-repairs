@@ -116,16 +116,24 @@ export function renderAppointmentStep(container, onContinue) {
       </div>
 
       <div class="appointment-section">
-        <h4>Preferred Date</h4>
+  <h4>Preferred Date</h4>
 
-        <input
-          type="date"
-          class="appointment-date-input"
-          id="appointment-date"
-          min="${getMinDateValue()}"
-          value="${state.appointment.date || ""}"
-        >
-      </div>
+  <div class="appointment-date-field">
+    <input
+      type="date"
+      class="appointment-date-input"
+      id="appointment-date"
+      min="${getMinDateValue()}"
+      value="${state.appointment.date || ""}"
+      required
+      aria-label="Preferred date"
+    >
+
+    <span class="appointment-date-placeholder">
+      Select preferred date
+    </span>
+  </div>
+</div>
 
       <div class="appointment-section">
         <h4>Preferred Time</h4>
