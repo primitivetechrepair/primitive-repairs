@@ -6571,7 +6571,7 @@ backdrop-filter: blur(16px) saturate(170%);
   align-items: center;
   justify-content: center;
 
-  color: rgba(255, 255, 255, 0.58);
+  color: rgba(37, 40, 61, 0.62);
 
   font-family: var(--font-display);
   font-size: 12px;
@@ -6594,7 +6594,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .appointment-date-input:focus,
 .appointment-date-input:valid {
-  color: #ffffff;
+  color: #25283d;
 }
 
 .appointment-date-input:focus {
