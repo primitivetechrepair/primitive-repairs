@@ -1106,7 +1106,7 @@ text-align: center;
 }
 
 .nintendo-switch-services-bg {
-  --service-bg-image: url("/images/service-backgrounds/nintendo-switch-repair.webp");
+  --service-bg-image: url("images/service-backgrounds/nintendo-switch-repair.webp");
 }
 
 .landing-section-header {
