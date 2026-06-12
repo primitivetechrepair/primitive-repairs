@@ -8919,9 +8919,12 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 0;
 }
 
-
 .site-footer-link-groups {
-  grid-template-columns: 1fr;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   gap: 20px;
 }
 
@@ -8934,11 +8937,28 @@ backdrop-filter: blur(16px) saturate(170%);
   text-align: left;
 }
 
+/* Socials stays left */
+.site-footer-link-group:first-child {
+  width: 100%;
+  align-self: stretch;
+}
+
+/* Information + Repair Services rows are centered */
+.site-footer-link-group:nth-child(2),
+.site-footer-repair-group {
+  width: min(360px, 100%);
+  align-self: center;
+
+  text-align: left;
+}
+
 .site-footer-link-title {
   text-align: left;
 }
 
 .site-footer-link-title::after {
+  left: 0;
+  transform: none;
   margin-left: 0;
   margin-right: 0;
 }
@@ -8958,44 +8978,6 @@ backdrop-filter: blur(16px) saturate(170%);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-/* Center the Information + Repair Services section rows */
-.site-footer-link-group:nth-child(2),
-.site-footer-repair-group {
-  width: 360px;
-  max-width: calc(100vw - 64px);
-
-  justify-self: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  justify-items: stretch;
-  text-align: left;
-}
-
-.site-footer-link-group:nth-child(2) .site-footer-links,
-.site-footer-repair-group .site-footer-links {
-  justify-content: flex-start;
-}
-
-.site-footer-link-group:nth-child(2) .site-footer-links a,
-.site-footer-repair-group .site-footer-links a {
-  min-width: calc(50% - 4px);
-}
-
-.site-footer-link-group:nth-child(2) .site-footer-link-title,
-.site-footer-repair-group .site-footer-link-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  text-align: left;
-}
-
-.site-footer-link-group:nth-child(2) .site-footer-link-title::after,
-.site-footer-repair-group .site-footer-link-title::after {
-  left: 0;
-  transform: none;
 }
 
 /* Copyright stacks cleanly */
