@@ -6582,38 +6582,70 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 .appointment-time-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
-  gap: 9px;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 10px;
 }
 
 .appointment-time-slot {
-  min-height: 42px;
-  padding: 10px 8px;
+  min-height: 46px;
+  padding: 12px;
 
+  border: 1px solid rgba(102, 252, 241, 0.22);
   border-radius: 14px;
 
   background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.08), transparent 48%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(242, 244, 247, 0.88));
+
+  color: var(--accent);
 
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 900;
   letter-spacing: 0.04em;
+  text-align: center;
 
   box-shadow:
     0 8px 18px rgba(37, 40, 61, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.86);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.appointment-time-slot:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(102, 252, 241, 0.44);
+
+  background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.16), transparent 48%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 253, 0.82));
+
+  box-shadow:
+    0 12px 26px rgba(37, 40, 61, 0.1),
+    0 0 0 1px rgba(102, 252, 241, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .appointment-time-slot.is-selected {
-  border-color: rgba(102, 252, 241, 0.58);
+  border-color: rgba(102, 252, 241, 0.62);
 
   background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.24), transparent 48%),
     linear-gradient(135deg, rgba(102, 252, 241, 0.24), rgba(7, 123, 255, 0.12));
+
+  color: var(--accent);
 
   box-shadow:
     0 12px 24px rgba(7, 123, 255, 0.12),
-    0 0 0 1px rgba(102, 252, 241, 0.16);
+    0 0 0 1px rgba(102, 252, 241, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
 .appointment-after-hours-note {
