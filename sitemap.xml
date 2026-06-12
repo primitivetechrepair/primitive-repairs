@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
     <loc>https://www.primitiverepairs.com/</loc>
@@ -17,6 +17,11 @@
   </url>
 
   <url>
+    <loc>https://www.primitiverepairs.com/phone-repair-miami</loc>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
     <loc>https://www.primitiverepairs.com/iphone-repair-miami</loc>
     <priority>0.9</priority>
   </url>
@@ -24,6 +29,16 @@
   <url>
     <loc>https://www.primitiverepairs.com/samsung-repair-miami</loc>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/google-pixel-repair-miami</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/motorola-repair-miami</loc>
+    <priority>0.85</priority>
   </url>
 
   <url>
@@ -38,6 +53,11 @@
 
   <url>
     <loc>https://www.primitiverepairs.com/charging-port-repair-miami</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/usb-c-port-repair-miami</loc>
     <priority>0.9</priority>
   </url>
 
@@ -57,7 +77,32 @@
   </url>
 
   <url>
+    <loc>https://www.primitiverepairs.com/tablet-repair-miami</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
     <loc>https://www.primitiverepairs.com/game-console-repair-miami</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/nintendo-switch-repair-miami</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/hdmi-port-repair-miami</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/ps5-hdmi-repair-miami</loc>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/xbox-hdmi-repair-miami</loc>
     <priority>0.85</priority>
   </url>
 
@@ -67,12 +112,12 @@
   </url>
 
   <url>
-    <loc>https://www.primitiverepairs.com/water-damage-repair-miami</loc>
+    <loc>https://www.primitiverepairs.com/microsoldering-repair-miami</loc>
     <priority>0.85</priority>
   </url>
 
   <url>
-    <loc>https://www.primitiverepairs.com/tablet-repair-miami</loc>
+    <loc>https://www.primitiverepairs.com/water-damage-repair-miami</loc>
     <priority>0.85</priority>
   </url>
 
