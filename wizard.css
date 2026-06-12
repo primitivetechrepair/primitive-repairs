@@ -8919,6 +8919,7 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 0;
 }
 
+
 .site-footer-link-groups {
   grid-template-columns: 1fr;
   gap: 20px;
@@ -8957,6 +8958,32 @@ backdrop-filter: blur(16px) saturate(170%);
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+/* Center Information + Repair Services footer sections */
+.site-footer-link-group:nth-child(2),
+.site-footer-repair-group {
+  justify-items: center;
+  text-align: center;
+}
+
+.site-footer-link-group:nth-child(2) .site-footer-link-title,
+.site-footer-repair-group .site-footer-link-title {
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.site-footer-link-group:nth-child(2) .site-footer-link-title::after,
+.site-footer-repair-group .site-footer-link-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.site-footer-link-group:nth-child(2) .site-footer-links,
+.site-footer-repair-group .site-footer-links {
+  justify-content: center;
 }
 
 /* Copyright stacks cleanly */
