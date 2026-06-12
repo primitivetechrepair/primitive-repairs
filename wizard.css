@@ -9082,17 +9082,48 @@ backdrop-filter: blur(16px) saturate(170%);
     min-width: 0;
   }
 
-  .appointment-date-input {
-    width: 100%;
-    max-width: 320px;
-    min-width: 0;
-    margin-left: auto;
-    margin-right: auto;
+  .appointment-date-field {
+  position: relative;
+}
 
-    display: block;
-    box-sizing: border-box;
-    text-align: center;
-  }
+.appointment-date-field.is-empty::before {
+  content: "Tap to select date";
+
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  z-index: 2;
+
+  transform: translate(-50%, -50%);
+
+  color: rgba(37, 40, 61, 0.72);
+
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+
+  pointer-events: none;
+}
+
+.appointment-date-field.has-date::before {
+  display: none;
+}
+
+.appointment-date-input {
+  width: 100%;
+  max-width: 320px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+}
 
   .appointment-after-hours-note {
   font-size: 11.5px;
