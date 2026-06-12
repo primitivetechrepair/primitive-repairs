@@ -3631,10 +3631,13 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .site-footer-link-groups {
-  width: 100%;
+  width: min(980px, 100%);
+
+  margin-left: auto;
+  margin-right: auto;
 
   display: grid;
-  grid-template-columns: 0.7fr 0.9fr 2fr;
+  grid-template-columns: 0.8fr 1fr 1.4fr;
   gap: 28px;
   align-items: start;
 }
@@ -8894,27 +8897,24 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 16px;
 }
 
-/* Footer content stacks on mobile */
 .site-footer-inner {
   grid-template-columns: 1fr;
   gap: 18px;
 
-  text-align: left;
+  text-align: center;
 }
 
-/* Logo stays top-left */
 .site-footer-top {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .site-footer-logo {
   width: 128px;
   height: 78px;
 
-  margin: 0;
+  margin: 0 auto;
 }
 
-/* Footer columns become stacked sections */
 .site-footer-repair-details {
   padding: 0;
 }
@@ -8922,70 +8922,80 @@ backdrop-filter: blur(16px) saturate(170%);
 .site-footer-link-groups {
   width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 20px;
+
+  justify-items: center;
 }
 
-.site-footer-link-group {
-  gap: 12px;
+.site-footer-link-group,
+.site-footer-repair-group {
+  width: 100%;
+  max-width: 360px;
 
   padding-left: 0;
   border-left: none;
 
-  text-align: left;
-}
+  display: grid;
+  justify-items: center;
+  gap: 12px;
 
-/* Socials stays left */
-.site-footer-link-group:first-child {
-  width: 100%;
-  align-self: stretch;
-}
-
-/* Information + Repair Services rows are centered */
-.site-footer-link-group:nth-child(2),
-.site-footer-repair-group {
-  width: min(360px, 100%);
-  align-self: center;
-
-  text-align: left;
+  text-align: center;
 }
 
 .site-footer-link-title {
-  text-align: left;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
 }
 
 .site-footer-link-title::after {
-  left: 0;
-  transform: none;
+  left: 50%;
+  transform: translateX(-50%);
+
   margin-left: 0;
   margin-right: 0;
 }
 
-/* Links align left under each heading */
 .site-footer-links {
-  justify-content: flex-start;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
 }
 
 .site-footer-links a {
-  width: auto;
-  min-width: calc(50% - 4px);
+  width: fit-content;
+  min-width: 0;
 }
 
-/* Social buttons stay grouped under Socials */
 .site-footer-social-links {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-/* Copyright stacks cleanly */
+.site-footer-repair-details {
+  width: 100%;
+}
+
+.site-footer-repair-details > summary {
+  justify-content: center;
+  text-align: center;
+}
+
+.site-footer-repair-details > summary::before {
+  margin-left: 10px;
+}
+
 .site-footer-bottom {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 
-  text-align: left;
+  text-align: center;
 }
 
   html,
