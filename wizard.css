@@ -8971,13 +8971,30 @@ backdrop-filter: blur(16px) saturate(170%);
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 7px;
 }
 
 .site-footer-links a {
   width: fit-content;
   min-width: 0;
+}
+
+/* Repair Services dropdown links: 2 per row */
+.site-footer-repair-details[open] > .site-footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+
+  padding-top: 10px;
+}
+
+.site-footer-repair-details[open] > .site-footer-links a {
+  width: 100%;
+  min-width: 0;
+
+  justify-content: center;
+  text-align: center;
 }
 
 /* Repair dropdown links: 2 per row */
