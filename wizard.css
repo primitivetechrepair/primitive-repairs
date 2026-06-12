@@ -8960,16 +8960,17 @@ backdrop-filter: blur(16px) saturate(170%);
   justify-content: flex-start;
 }
 
-/* Center the Information + Repair Services section blocks */
+/* Center the Information + Repair Services section rows */
 .site-footer-link-group:nth-child(2),
 .site-footer-repair-group {
-  width: min(100%, 360px);
+  width: 360px;
+  max-width: calc(100vw - 64px);
 
   justify-self: center;
   margin-left: auto;
   margin-right: auto;
 
-  justify-items: flex-start;
+  justify-items: stretch;
   text-align: left;
 }
 
@@ -8980,7 +8981,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .site-footer-link-group:nth-child(2) .site-footer-links a,
 .site-footer-repair-group .site-footer-links a {
-  min-width: 0;
+  min-width: calc(50% - 4px);
 }
 
 .site-footer-link-group:nth-child(2) .site-footer-link-title,
