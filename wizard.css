@@ -8360,6 +8360,94 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 /* =========================================================
+   UNIVERSAL FOOTER — REPAIR SERVICES DROPDOWN
+========================================================= */
+
+.site-footer-repair-details {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.site-footer-repair-details > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.site-footer-repair-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Desktop: keep Repair Services open like a normal footer column */
+@media (min-width: 761px) {
+  .site-footer-repair-details {
+    display: grid;
+    gap: 14px;
+  }
+
+  .site-footer-repair-details > summary {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .site-footer-repair-details:not([open]) > .site-footer-links {
+    display: flex;
+  }
+}
+
+/* Mobile: make Repair Services a dropdown */
+@media (max-width: 760px) {
+  .site-footer-repair-details {
+    width: 100%;
+  }
+
+  .site-footer-repair-details > summary {
+    width: 100%;
+    min-height: 46px;
+    padding: 14px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid rgba(102, 252, 241, 0.22);
+    border-radius: 14px;
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.9),
+        rgba(247, 247, 251, 0.72)
+      );
+  }
+
+  .site-footer-repair-details > summary::before {
+    content: "+";
+
+    order: 2;
+
+    color: rgba(7, 123, 255, 0.95);
+
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .site-footer-repair-details[open] > summary::before {
+    content: "–";
+  }
+
+  .site-footer-repair-details:not([open]) > .site-footer-links {
+    display: none;
+  }
+
+  .site-footer-repair-details[open] > .site-footer-links {
+    display: flex;
+    padding-top: 10px;
+  }
+}
+
+/* =========================================================
    15. RESPONSIVE / MOBILE
 ========================================================= */
 
