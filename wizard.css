@@ -8944,6 +8944,13 @@ backdrop-filter: blur(16px) saturate(170%);
   text-align: center;
 }
 
+/* Remove desktop footer separators on mobile */
+.site-footer-link-group:not(:first-child),
+.site-footer-repair-group {
+  padding-left: 0;
+  border-left: none;
+}
+
 .site-footer-link-title {
   width: 100%;
   margin-left: 0;
