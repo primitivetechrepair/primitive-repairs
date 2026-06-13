@@ -9046,7 +9046,26 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .site-footer-social-links {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+
+  justify-content: stretch;
+}
+
+.site-footer-social-links a {
+  width: 100%;
+  min-width: 0;
+  min-height: 42px;
+
   justify-content: center;
+  text-align: center;
+}
+
+.site-footer-social-links a span {
+  white-space: nowrap;
 }
 
 .site-footer-repair-details {
