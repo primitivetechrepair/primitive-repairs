@@ -47,12 +47,6 @@ export function renderDeviceStep(container, devices, onSelect) {
   if (!container) return;
 
   container.innerHTML = `
-    <div class="option-section-header">
-      <span>Choose Your Device</span>
-      <h3>What are we repairing today?</h3>
-      <p>Select the device type to start your repair flow.</p>
-    </div>
-
     <div id="device-card-results" class="device-card-results"></div>
   `;
 
