@@ -8778,23 +8778,29 @@ backdrop-filter: blur(16px) saturate(170%);
   .hero-service-highlights {
   width: 100%;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 7px;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 5px;
 
   margin-top: 18px;
 }
 
 .hero-service-highlights span {
   width: 100%;
-  padding: 0;
+  padding: 0 2px;
 
-  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 8.5px;
+  line-height: 1.15;
+  text-align: center;
   white-space: normal;
 }
 
 .hero-service-highlights span:not(:last-child)::after {
-  display: none;
+  display: none !important;
 }
 
   .landing-primary-btn,
