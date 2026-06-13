@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -60,7 +60,7 @@
     <div class="nav-dropdown">
       <button type="button" class="nav-dropdown-btn">
         Repair
-        <span>▾</span>
+        <span aria-hidden="true">&#9662;</span>
       </button>
 
       <div class="nav-dropdown-menu">
@@ -100,7 +100,7 @@
     aria-expanded="false"
     aria-controls="mobile-nav-drawer"
   >
-    ☰
+    â˜°
   </button>
 </header>
 <div class="mobile-nav-overlay" id="mobile-nav-overlay" hidden></div>
@@ -112,7 +112,7 @@
     </div>
 
     <button type="button" class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
-      ×
+      Ã—
     </button>
   </div>
 
@@ -200,7 +200,7 @@
         </div>
 
         <div class="trust-badge">
-          <span>✓</span>
+          <span>âœ“</span>
           <strong>Inspection required</strong>
         </div>
       </div>
@@ -245,7 +245,7 @@
   <h2>Check if your issue may qualify for warranty support.</h2>
 
   <p>
-    Answer the quick checks below before submitting a warranty claim. This does not automatically approve coverage — final approval requires technician inspection.
+    Answer the quick checks below before submitting a warranty claim. This does not automatically approve coverage â€” final approval requires technician inspection.
   </p>
 </div>
 
@@ -410,7 +410,7 @@
   <input id="warranty-files" type="file" name="warrantyFiles" accept="image/*,video/*" multiple>
   <div id="warranty-file-previews" class="previews warranty-file-previews"></div>
   <div class="small-note">
-    Max 10 files. Each ≤ 8MB. Photos or videos help review the warranty issue.
+    Max 10 files. Each â‰¤ 8MB. Photos or videos help review the warranty issue.
     Uploaded media may be removed after 30 days unless needed for an active warranty review, repair, dispute, or customer communication.
   </div>
 </label>
@@ -430,7 +430,7 @@
 
     <section id="warranty-success-section" class="landing-section warranty-section" hidden>
       <div class="success-panel warranty-success-panel">
-        <div class="success-icon">✓</div>
+        <div class="success-icon">âœ“</div>
 
         <div class="landing-eyebrow success-eyebrow">Warranty Claim Submitted</div>
 
@@ -444,22 +444,22 @@
         <div class="success-summary warranty-success-summary">
           <div>
             <strong>Claim ID</strong>
-            <span id="warranty-success-claim-id">—</span>
+            <span id="warranty-success-claim-id">â€”</span>
           </div>
 
           <div>
             <strong>Name</strong>
-            <span id="warranty-success-name">—</span>
+            <span id="warranty-success-name">â€”</span>
           </div>
 
           <div>
             <strong>Device</strong>
-            <span id="warranty-success-device">—</span>
+            <span id="warranty-success-device">â€”</span>
           </div>
 
           <div>
             <strong>Repair Type</strong>
-            <span id="warranty-success-repair">—</span>
+            <span id="warranty-success-repair">â€”</span>
           </div>
 
           <div>
@@ -643,7 +643,7 @@ function renderWarrantyFilePreviews() {
       `;
     } else {
       item.innerHTML = `
-        <div class="file-preview-thumb file-preview-thumb-generic">📎</div>
+        <div class="file-preview-thumb file-preview-thumb-generic">ðŸ“Ž</div>
 
         <div class="file-preview-info">
           <strong>${file.name}</strong>
@@ -889,15 +889,15 @@ if (claimForm) {
       }
 
       if (warrantySuccessName) {
-        warrantySuccessName.textContent = warrantyClaim.name || "—";
+        warrantySuccessName.textContent = warrantyClaim.name || "â€”";
       }
 
       if (warrantySuccessDevice) {
-        warrantySuccessDevice.textContent = warrantyClaim.device || "—";
+        warrantySuccessDevice.textContent = warrantyClaim.device || "â€”";
       }
 
       if (warrantySuccessRepair) {
-        warrantySuccessRepair.textContent = warrantyClaim.repairType || "—";
+        warrantySuccessRepair.textContent = warrantyClaim.repairType || "â€”";
       }
 
       claimForm.reset();
