@@ -9802,16 +9802,25 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 /* Mobile wizard option cards */
+#pr-steps-area {
+  width: 100%;
+  max-width: 100%;
+
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .device-card-results,
 .brand-card-results,
 .series-card-results,
 .model-card-results,
 .repair-card-results {
   width: 100%;
+  max-width: 100%;
 
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px;
 
   padding: 0 0 10px;
   overflow-x: hidden;
@@ -9825,7 +9834,7 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
   min-width: 0;
   max-width: none;
-  min-height: 190px;
+  min-height: 156px;
 
   flex: initial;
 }
@@ -9835,11 +9844,11 @@ backdrop-filter: blur(16px) saturate(170%);
 .series-card-results .opt-thumb,
 .model-card-results .opt-thumb,
 .repair-card-results .opt-thumb {
-  height: 112px;
-  min-height: 112px;
-  flex: 0 0 112px;
+  height: 86px;
+  min-height: 86px;
+  flex: 0 0 86px;
 
-  margin: 8px auto 5px;
+  margin: 7px auto 4px;
 }
 
 .device-card-results .opt-thumb-img,
@@ -9850,8 +9859,8 @@ backdrop-filter: blur(16px) saturate(170%);
   width: auto;
   height: auto;
 
-  max-width: 92px;
-  max-height: 92px;
+  max-width: 76px;
+  max-height: 76px;
 
   display: block;
 
@@ -9864,8 +9873,8 @@ backdrop-filter: blur(16px) saturate(170%);
 .series-card-results .opt-card-body,
 .model-card-results .opt-card-body,
 .repair-card-results .opt-card-body {
-  min-height: 68px;
-  padding: 7px 5px 10px;
+  min-height: 54px;
+  padding: 6px 5px 8px;
 }
 
 .device-card-results .opt-label,
@@ -9873,11 +9882,11 @@ backdrop-filter: blur(16px) saturate(170%);
 .series-card-results .opt-label,
 .model-card-results .opt-label,
 .repair-card-results .opt-label {
-  min-height: 38px;
-  padding: 4px 6px;
+  min-height: 30px;
+  padding: 3px 4px;
 
-  font-size: 10.75px;
-  line-height: 1.15;
+  font-size: 10px;
+  line-height: 1.12;
 }
 
 .device-card-results .opt-subtext,
@@ -9885,7 +9894,8 @@ backdrop-filter: blur(16px) saturate(170%);
 .series-card-results .opt-subtext,
 .model-card-results .opt-subtext,
 .repair-card-results .opt-subtext {
-  font-size: 10px;
+  font-size: 9px;
+  line-height: 1.15;
 }
 
 .device-card-results .opt-badge,
@@ -9893,8 +9903,8 @@ backdrop-filter: blur(16px) saturate(170%);
 .series-card-results .opt-badge,
 .model-card-results .opt-badge,
 .repair-card-results .opt-badge {
-  font-size: 8.5px;
-  padding: 5px 8px;
+  font-size: 7.75px;
+  padding: 4px 6px;
 }
 
 /* Make mobile wizard cards lighter so the grid area feels transparent */
