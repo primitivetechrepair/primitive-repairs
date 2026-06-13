@@ -218,6 +218,202 @@
   </div>
 </section>
 
+<!-- Visual Repair Wizard -->
+<div id="primitive-wizard-container">
+  <div class="pr-header">
+    <h2>Start Your Device Repair</h2>
+
+    <p class="pr-header-subtitle">
+      Book door-to-door electronic repair service in Miami for phones, tablets,
+      computers, consoles, and more.
+    </p>
+
+    <div class="pr-progress-row" aria-hidden="true"></div>
+
+    <div class="pr-progress-bar-wrap" aria-hidden="true">
+      <div id="pr-progress-bar"></div>
+    </div>
+  </div>
+
+  <main id="pr-main">
+
+  <!-- Top Selection Cards -->
+<section id="pr-selection-cards" class="selection-cards">
+  <div class="card" id="card-device">
+    <div class="card-img"></div>
+    <div class="card-label">Device</div>
+    <button class="card-back" data-step="device" style="display:none;">Change</button>
+  </div>
+  <div class="card" id="card-brand">
+    <div class="card-img"></div>
+    <div class="card-label">Brand</div>
+    <button class="card-back" data-step="brand" style="display:none;">Change</button>
+  </div>
+  <div class="card" id="card-series">
+    <div class="card-img"></div>
+    <div class="card-label">Series</div>
+    <button class="card-back" data-step="series" style="display:none;">Change</button>
+  </div>
+  <div class="card" id="card-model">
+    <div class="card-img"></div>
+    <div class="card-label">Model</div>
+    <button class="card-back" data-step="model" style="display:none;">Change</button>
+  </div>
+  <div class="card" id="card-repair">
+    <div class="card-img"></div>
+    <div class="card-label">Repair</div>
+    <button class="card-back" data-step="repair" style="display:none;">Change</button>
+  </div>
+</section>
+
+<!-- Steps area dynamically rendered by JS -->
+<section id="pr-steps-area" class="animated-area">
+  <!-- Device &rarr; Brand &rarr; Series &rarr; Model &rarr; Repair steps will appear here -->
+</section>
+
+<!-- Customer form shown after all selections -->
+<section id="pr-form-area" style="display:none;">
+  <form id="pr-customer-form">
+  <h3>Customer Information</h3>
+
+  <!-- Summary of selections -->
+  <div id="summary-box" class="selection-summary"></div>
+
+    <div class="customer-field-grid">
+      <label class="form-honeypot" aria-hidden="true">
+        Website
+        <input
+          type="text"
+          name="website"
+          tabindex="-1"
+          autocomplete="off"
+        />
+      </label>
+        <div class="customer-field">
+          <label for="cf-name">Full name *</label>
+          <input name="name" id="cf-name" required autocomplete="name">
+        </div>
+
+        <div class="customer-field">
+          <label for="cf-phone">Phone number *</label>
+          <input name="phone" id="cf-phone" required autocomplete="tel" placeholder="Best number to reach you">
+        </div>
+
+        <div class="customer-field">
+          <label for="cf-email">Email *</label>
+          <input name="email" id="cf-email" type="email" required autocomplete="email" placeholder="you@example.com">
+        </div>
+
+        <div class="customer-field">
+          <label for="cf-zip">ZIP Code *</label>
+          <input name="zip" id="cf-zip" autocomplete="postal-code" placeholder="ZIP code for meet-up, pickup, or onsite service">
+        </div>
+
+        <div class="customer-field customer-field-full">
+          <label for="cf-address">Meet-up / service location *</label>
+          <input name="address" id="cf-address" autocomplete="street-address" placeholder="For meet-up, enter a public place or business location">
+
+          <div id="service-location-help" class="field-help">
+            Enter the location related to your selected service option.
+          </div>
+        </div>
+
+        <div class="customer-field">
+          <label for="cf-apt">Apt / Suite (optional)</label>
+          <input name="apt" id="cf-apt" autocomplete="address-line2">
+        </div>
+
+        <div class="customer-field customer-field-full">
+          <label for="cf-notes">Notes (optional)</label>
+          <textarea id="cf-notes" name="notes"></textarea>
+        </div>
+
+        <div class="customer-field customer-field-full">
+          <label for="cf-files">Upload photos / videos (optional)</label>
+          <input id="cf-files" type="file" accept="image/*,video/*" multiple>
+          <div id="cf-previews" class="previews"></div>
+          <div class="small-note">Max 10 files. Each &le; 8MB. Thumbnails appear below.</div>
+        </div>
+      </div>
+
+      <label class="policy-consent-row">
+  <input id="cf-consent" type="checkbox" required>
+  <span>
+    I agree to the repair request policy and consent to be contacted about my repair.
+  </span>
+</label>
+
+<div class="repair-policy-wrap">
+  <button type="button" id="toggle-repair-policy" class="repair-policy-toggle">
+    View Repair Policy
+  </button>
+
+  <div id="repair-policy-box" class="repair-policy-box" hidden>
+    <h4>Primitive Tech Repair &mdash; Repair Request Policy</h4>
+
+    <p>
+      By submitting a repair request, you agree to the following:
+    </p>
+
+    <ol>
+      <li>
+        <strong>Diagnosis & Inspection:</strong>
+        All repair requests are subject to inspection. The issue described may not be the only issue found.
+      </li>
+
+      <li>
+        <strong>Repair Approval:</strong>
+        No paid repair work will begin until the customer approves the repair quote, estimated cost, and service details.
+      </li>
+
+      <li>
+        <strong>Data Responsibility:</strong>
+        Customers are responsible for backing up their device before service. Primitive Tech Repair is not responsible for lost data, software issues, passwords, photos, apps, files, or account locks.
+      </li>
+
+      <li>
+        <strong>Device Condition:</strong>
+        Primitive Tech Repair is not responsible for pre-existing damage, hidden internal damage, liquid damage, board-level damage, prior repair damage, or issues discovered during inspection.
+      </li>
+
+      <li>
+        <strong>Parts & Warranty:</strong>
+        Warranty coverage depends on the repair type and part used. Warranty does not cover physical damage, liquid damage, misuse, tampering, new unrelated issues, or damage caused after repair.
+      </li>
+
+      <li>
+        <strong>Turnaround Time:</strong>
+        Estimated repair times are not guaranteed. Delays may occur due to parts, diagnostics, shipping, customer response time, or repair complexity.
+      </li>
+
+      <li>
+        <strong>Service Options:</strong>
+        Customers must provide accurate contact and service information. Meet-up locations should be public or business locations. Mail-in instructions will be provided after review.
+      </li>
+
+      <li>
+        <strong>Photos & Attachments:</strong>
+        Uploaded photos/videos are used only to help review the repair request and understand the device condition.
+      </li>
+
+      <li>
+        <strong>Customer Consent:</strong>
+        By submitting this request, you confirm the information provided is accurate and authorize Primitive Tech Repair to contact you regarding your repair request.
+      </li>
+    </ol>
+  </div>
+</div>
+
+      <div class="form-actions">
+        <button id="cf-back" type="button">Edit selections</button>
+        <button id="cf-submit" type="submit">Review Request</button>
+      </div>
+    </form>
+  </section>
+
+</main>
+</div>
+
 <section id="how-it-works" class="landing-section how-it-works-section">
   <div class="landing-section-header">
     <div class="landing-eyebrow">How It Works</div>
@@ -659,201 +855,7 @@
   </div>
 </section>
 
-<!-- Visual Repair Wizard -->
-<div id="primitive-wizard-container">
-  <div class="pr-header">
-    <h2>Start Your Device Repair</h2>
 
-    <p class="pr-header-subtitle">
-      Book door-to-door electronic repair service in Miami for phones, tablets,
-      computers, consoles, and more.
-    </p>
-
-    <div class="pr-progress-row" aria-hidden="true"></div>
-
-    <div class="pr-progress-bar-wrap" aria-hidden="true">
-      <div id="pr-progress-bar"></div>
-    </div>
-  </div>
-
-  <main id="pr-main">
-
-  <!-- Top Selection Cards -->
-<section id="pr-selection-cards" class="selection-cards">
-  <div class="card" id="card-device">
-    <div class="card-img"></div>
-    <div class="card-label">Device</div>
-    <button class="card-back" data-step="device" style="display:none;">Change</button>
-  </div>
-  <div class="card" id="card-brand">
-    <div class="card-img"></div>
-    <div class="card-label">Brand</div>
-    <button class="card-back" data-step="brand" style="display:none;">Change</button>
-  </div>
-  <div class="card" id="card-series">
-    <div class="card-img"></div>
-    <div class="card-label">Series</div>
-    <button class="card-back" data-step="series" style="display:none;">Change</button>
-  </div>
-  <div class="card" id="card-model">
-    <div class="card-img"></div>
-    <div class="card-label">Model</div>
-    <button class="card-back" data-step="model" style="display:none;">Change</button>
-  </div>
-  <div class="card" id="card-repair">
-    <div class="card-img"></div>
-    <div class="card-label">Repair</div>
-    <button class="card-back" data-step="repair" style="display:none;">Change</button>
-  </div>
-</section>
-
-<!-- Steps area dynamically rendered by JS -->
-<section id="pr-steps-area" class="animated-area">
-  <!-- Device &rarr; Brand &rarr; Series &rarr; Model &rarr; Repair steps will appear here -->
-</section>
-
-<!-- Customer form shown after all selections -->
-<section id="pr-form-area" style="display:none;">
-  <form id="pr-customer-form">
-  <h3>Customer Information</h3>
-
-  <!-- Summary of selections -->
-  <div id="summary-box" class="selection-summary"></div>
-
-    <div class="customer-field-grid">
-      <label class="form-honeypot" aria-hidden="true">
-        Website
-        <input
-          type="text"
-          name="website"
-          tabindex="-1"
-          autocomplete="off"
-        />
-      </label>
-        <div class="customer-field">
-          <label for="cf-name">Full name *</label>
-          <input name="name" id="cf-name" required autocomplete="name">
-        </div>
-
-        <div class="customer-field">
-          <label for="cf-phone">Phone number *</label>
-          <input name="phone" id="cf-phone" required autocomplete="tel" placeholder="Best number to reach you">
-        </div>
-
-        <div class="customer-field">
-          <label for="cf-email">Email *</label>
-          <input name="email" id="cf-email" type="email" required autocomplete="email" placeholder="you@example.com">
-        </div>
-
-        <div class="customer-field">
-          <label for="cf-zip">ZIP Code *</label>
-          <input name="zip" id="cf-zip" autocomplete="postal-code" placeholder="ZIP code for meet-up, pickup, or onsite service">
-        </div>
-
-        <div class="customer-field customer-field-full">
-          <label for="cf-address">Meet-up / service location *</label>
-          <input name="address" id="cf-address" autocomplete="street-address" placeholder="For meet-up, enter a public place or business location">
-
-          <div id="service-location-help" class="field-help">
-            Enter the location related to your selected service option.
-          </div>
-        </div>
-
-        <div class="customer-field">
-          <label for="cf-apt">Apt / Suite (optional)</label>
-          <input name="apt" id="cf-apt" autocomplete="address-line2">
-        </div>
-
-        <div class="customer-field customer-field-full">
-          <label for="cf-notes">Notes (optional)</label>
-          <textarea id="cf-notes" name="notes"></textarea>
-        </div>
-
-        <div class="customer-field customer-field-full">
-          <label for="cf-files">Upload photos / videos (optional)</label>
-          <input id="cf-files" type="file" accept="image/*,video/*" multiple>
-          <div id="cf-previews" class="previews"></div>
-          <div class="small-note">Max 10 files. Each &le; 8MB. Thumbnails appear below.</div>
-        </div>
-      </div>
-
-      <label class="policy-consent-row">
-  <input id="cf-consent" type="checkbox" required>
-  <span>
-    I agree to the repair request policy and consent to be contacted about my repair.
-  </span>
-</label>
-
-<div class="repair-policy-wrap">
-  <button type="button" id="toggle-repair-policy" class="repair-policy-toggle">
-    View Repair Policy
-  </button>
-
-  <div id="repair-policy-box" class="repair-policy-box" hidden>
-    <h4>Primitive Tech Repair &mdash; Repair Request Policy</h4>
-
-    <p>
-      By submitting a repair request, you agree to the following:
-    </p>
-
-    <ol>
-      <li>
-        <strong>Diagnosis & Inspection:</strong>
-        All repair requests are subject to inspection. The issue described may not be the only issue found.
-      </li>
-
-      <li>
-        <strong>Repair Approval:</strong>
-        No paid repair work will begin until the customer approves the repair quote, estimated cost, and service details.
-      </li>
-
-      <li>
-        <strong>Data Responsibility:</strong>
-        Customers are responsible for backing up their device before service. Primitive Tech Repair is not responsible for lost data, software issues, passwords, photos, apps, files, or account locks.
-      </li>
-
-      <li>
-        <strong>Device Condition:</strong>
-        Primitive Tech Repair is not responsible for pre-existing damage, hidden internal damage, liquid damage, board-level damage, prior repair damage, or issues discovered during inspection.
-      </li>
-
-      <li>
-        <strong>Parts & Warranty:</strong>
-        Warranty coverage depends on the repair type and part used. Warranty does not cover physical damage, liquid damage, misuse, tampering, new unrelated issues, or damage caused after repair.
-      </li>
-
-      <li>
-        <strong>Turnaround Time:</strong>
-        Estimated repair times are not guaranteed. Delays may occur due to parts, diagnostics, shipping, customer response time, or repair complexity.
-      </li>
-
-      <li>
-        <strong>Service Options:</strong>
-        Customers must provide accurate contact and service information. Meet-up locations should be public or business locations. Mail-in instructions will be provided after review.
-      </li>
-
-      <li>
-        <strong>Photos & Attachments:</strong>
-        Uploaded photos/videos are used only to help review the repair request and understand the device condition.
-      </li>
-
-      <li>
-        <strong>Customer Consent:</strong>
-        By submitting this request, you confirm the information provided is accurate and authorize Primitive Tech Repair to contact you regarding your repair request.
-      </li>
-    </ol>
-  </div>
-</div>
-
-      <div class="form-actions">
-        <button id="cf-back" type="button">Edit selections</button>
-        <button id="cf-submit" type="submit">Review Request</button>
-      </div>
-    </form>
-  </section>
-
-</main>
-</div>
 
 <div id="site-footer-root"></div>
 
@@ -871,6 +873,7 @@
 <script src="/assets/js/disableZoom.js" defer></script>
 </body>
 </html>
+
 
 
 
