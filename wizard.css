@@ -8394,14 +8394,16 @@ backdrop-filter: blur(16px) saturate(170%);
     align-items: center;
     justify-content: space-between;
 
+    color: rgba(4, 12, 24, 0.96);
+
     border: 1px solid rgba(102, 252, 241, 0.22);
     border-radius: 14px;
 
     background:
       linear-gradient(
         135deg,
-        rgba(255, 255, 255, 0.9),
-        rgba(247, 247, 251, 0.72)
+        rgba(255, 255, 255, 0.92),
+        rgba(230, 240, 248, 0.82)
       );
   }
 
@@ -8414,7 +8416,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
     order: 2;
 
-    color: rgba(7, 123, 255, 0.95);
+    color: rgba(4, 12, 24, 0.9);
 
     font-size: 18px;
     font-weight: 900;
