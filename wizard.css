@@ -1298,7 +1298,7 @@ text-align: center;
 }
 
 .supported-device-card[data-device="mods"]::after {
-  background-image: url("/images/supported-devices/electronics.webp");
+  background-image: url("/images/supported-devices/mods.png");
 }
 
 .supported-device-card[data-device="other"]::after {
