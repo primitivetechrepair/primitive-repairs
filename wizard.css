@@ -3580,19 +3580,21 @@ backdrop-filter: blur(16px) saturate(170%);
   width: min(1180px, calc(100% - 32px));
   max-width: 1180px;
 
-  margin: 0 auto 22px;
+  margin: clamp(48px, 8vw, 96px) auto 22px;
   padding: 24px;
 
-  border: 1px solid rgba(37, 40, 61, 0.1);
+  border: 1px solid rgba(102, 252, 241, 0.28);
   border-radius: 22px;
 
   background:
-    radial-gradient(circle at top left, rgba(102, 252, 241, 0.12), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(247, 247, 251, 0.72));
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.16), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.18), transparent 38%),
+    linear-gradient(180deg, rgba(4, 12, 24, 0.98), rgba(2, 6, 14, 1));
 
   box-shadow:
-    0 16px 34px rgba(37, 40, 61, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+    0 -24px 70px rgba(0, 0, 0, 0.42),
+    0 22px 50px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .site-footer-inner {
@@ -3680,7 +3682,7 @@ backdrop-filter: blur(16px) saturate(170%);
   background: transparent;
   border: none;
   border-radius: 0;
-  color: rgba(37, 40, 61, 0.96);
+  color: rgba(255, 255, 255, 0.94);
 
   font-family: var(--font-display);
   font-size: 13px;
@@ -3838,9 +3840,9 @@ backdrop-filter: blur(16px) saturate(170%);
   justify-content: space-between;
   gap: 8px 14px;
 
-  border-top: 1px solid rgba(37, 40, 61, 0.08);
+  border-top: 1px solid rgba(102, 252, 241, 0.18);
 
-  color: var(--muted);
+  color: rgba(220, 245, 255, 0.72);
 
   font-family: var(--font-display);
   font-size: 10.5px;
