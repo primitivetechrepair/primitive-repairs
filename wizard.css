@@ -8952,6 +8952,11 @@ backdrop-filter: blur(16px) saturate(170%);
   text-align: center;
 }
 
+.site-footer-repair-group {
+  margin-top: 14px;
+  padding-top: 10px;
+}
+
 /* Remove desktop footer separators on mobile */
 .site-footer-link-group:not(:first-child),
 .site-footer-repair-group {
