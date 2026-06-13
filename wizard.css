@@ -8348,29 +8348,32 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 @media (min-width: 761px) {
-  .site-footer-social-links {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links {
     width: 100%;
 
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    display: grid !important;
+    grid-template-columns: 1fr !important;
     gap: 8px;
 
-    justify-content: stretch;
+    align-items: stretch;
+    justify-items: stretch;
   }
 
-  .site-footer-social-links a {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links a {
     width: 100%;
     min-width: 0;
     min-height: 42px;
 
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
 
+    text-align: center;
     color: #ffffff;
   }
 
   /* Facebook */
-  .site-footer-social-links a:nth-child(1) {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links a:nth-child(1) {
     border: 1px solid #1877f2;
 
     background:
@@ -8386,7 +8389,7 @@ backdrop-filter: blur(16px) saturate(170%);
   }
 
   /* Instagram */
-  .site-footer-social-links a:nth-child(2) {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links a:nth-child(2) {
     border: 1px solid #e1306c;
 
     background:
@@ -8405,7 +8408,7 @@ backdrop-filter: blur(16px) saturate(170%);
   }
 
   /* TikTok */
-  .site-footer-social-links a:nth-child(3) {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links a:nth-child(3) {
     border: 1px solid #25f4ee;
 
     background:
@@ -8425,11 +8428,11 @@ backdrop-filter: blur(16px) saturate(170%);
       inset 0 1px 0 rgba(255, 255, 255, 0.16);
   }
 
-  .site-footer-social-links a .site-footer-social-icon {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links a .site-footer-social-icon {
     fill: currentColor;
   }
 
-  .site-footer-social-links a span {
+  .site-footer .site-footer-link-group:first-child .site-footer-social-links a span {
     white-space: nowrap;
   }
 }
