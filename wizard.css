@@ -8911,14 +8911,14 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .site-footer-top {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .site-footer-logo {
   width: 128px;
   height: 78px;
 
-  margin: 0 auto;
+  margin: 0;
 }
 
 .site-footer-repair-details {
