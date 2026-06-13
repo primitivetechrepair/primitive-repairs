@@ -8999,6 +8999,21 @@ backdrop-filter: blur(16px) saturate(170%);
   min-width: 0;
 }
 
+/* Stack Information links vertically on mobile */
+.site-footer-link-group:nth-child(2) .site-footer-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+
+  justify-items: stretch;
+}
+
+.site-footer-link-group:nth-child(2) .site-footer-links a {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+}
+
 /* Repair Services dropdown links: 2 per row */
 .site-footer-repair-details[open] > .site-footer-links {
   display: grid;
