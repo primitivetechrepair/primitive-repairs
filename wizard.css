@@ -9801,6 +9801,23 @@ backdrop-filter: blur(16px) saturate(170%);
   line-height: 1.5;
 }
 
+/* Force step area wrapper to full width on mobile */
+#pr-steps-area.animated-area {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  display: block !important;
+  grid-template-columns: none !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#pr-steps-area.animated-area > div {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 /* Mobile wizard option cards */
 #pr-steps-area {
   width: 100%;
