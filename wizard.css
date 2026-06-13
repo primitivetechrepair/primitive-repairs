@@ -8963,6 +8963,12 @@ backdrop-filter: blur(16px) saturate(170%);
   margin-right: 0;
 
   text-align: left;
+
+  text-shadow: none;
+  filter: none;
+  -webkit-text-stroke: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
 }
 
 .site-footer-link-title::after {
@@ -9030,6 +9036,12 @@ backdrop-filter: blur(16px) saturate(170%);
 
   justify-content: space-between;
   text-align: left;
+
+  text-shadow: none;
+  filter: none;
+  -webkit-text-stroke: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
 }
 
 .site-footer-repair-details > summary::before {
