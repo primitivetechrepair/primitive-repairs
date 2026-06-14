@@ -35,9 +35,16 @@ function getSelectedRepairLabel() {
 }
 
 function normalizeSeriesImageName(value) {
-  return String(value || "")
+  const normalized = String(value || "")
     .trim()
-    .toLowerCase()
+    .toLowerCase();
+
+  if (normalized === "original & early") {
+    return "iphone";
+  }
+
+  return normalized
+    .replace(/\s+series$/i, "")
     .replace(/\s+/g, "")
     .replace(/[()&]/g, "")
     .replace(/[^a-z0-9]/g, "");
@@ -113,7 +120,7 @@ export function renderSeriesStep(container, seriesList, onSelect) {
 
   const cards = seriesList.map((series) => ({
     label: series,
-    image: `/images/series/${brandFolder}/${normalizeSeriesImageName(series)}.png`,
+    image: `/images/series/${brandFolder}/${normalizeSeriesImageName(series)}.webp`,
     badge: "Series",
     onClick: () => onSelect(series)
   }));
@@ -518,8 +525,7 @@ export function renderSelectionCards(onChange) {
           .replace(/[()]/g, "")
           .replace(/[^a-z0-9-]/g, "");
 
-        image.style.backgroundImage = `url('/images/series/${brandFolder}/${normalizeSeriesImageName(state.series)}.png')`;
-      }
+        image.style.backgroundImage = `url('/images/series/${brandFolder}/${normalizeSeriesImageName(state.series)}.webp')`;
 
       if (step.key === "model") {
         image.style.backgroundImage = `url('${state.model?.image || "/images/models/default.webp"}')`;
