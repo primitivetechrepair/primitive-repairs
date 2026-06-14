@@ -39,8 +39,13 @@ function normalizeSeriesImageName(value) {
     .trim()
     .toLowerCase();
 
-  if (normalized === "original & early") {
-    return "iphone";
+  const seriesImageOverrides = {
+    "original & early": "iphone",
+    "iphone 3 series": "iphone3g"
+  };
+
+  if (seriesImageOverrides[normalized]) {
+    return seriesImageOverrides[normalized];
   }
 
   return normalized
