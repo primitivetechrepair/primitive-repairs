@@ -1940,46 +1940,18 @@ text-align: center;
 }
 
 .popular-service-link-panel {
-  position: relative;
-
-  margin-top: 24px;
-  padding: 20px;
+  margin-top: 22px;
+  padding: 0;
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 16px;
 
-  overflow: hidden;
+  border: none;
+  border-radius: 0;
 
-  border: 1px solid rgba(102, 252, 241, 0.24);
-  border-radius: 24px;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(102, 252, 241, 0.045) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      180deg,
-      rgba(102, 252, 241, 0.04) 1px,
-      transparent 1px
-    ),
-    radial-gradient(circle at top left, rgba(102, 252, 241, 0.16), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.18), transparent 40%),
-    linear-gradient(180deg, rgba(9, 14, 28, 0.92), rgba(4, 8, 18, 0.96));
-
-  background-size:
-    28px 28px,
-    28px 28px,
-    auto,
-    auto,
-    auto;
-
-  box-shadow:
-    0 22px 48px rgba(0, 0, 0, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 0 0 1px rgba(102, 252, 241, 0.045);
+  background: transparent;
+  box-shadow: none;
 }
 
 .popular-service-link-panel::before {
@@ -10251,9 +10223,13 @@ backdrop-filter: blur(16px) saturate(170%);
   gap: 14px;
 
   margin-top: 18px;
-  padding: 14px;
+  padding: 0;
 
-  border-radius: 20px;
+  border: none;
+  border-radius: 0;
+
+  background: transparent;
+  box-shadow: none;
 
   text-align: center;
 }
