@@ -5467,7 +5467,9 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .model-card-results,
 #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results {
+  grid-column: 1 / -1;
   width: 100%;
+  max-width: 100%;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -5733,19 +5735,20 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .repair-card-results {
   width: 100%;
+  max-width: 100%;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, 160px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
 
-  justify-content: center;
-  align-items: start;
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .repair-card-results .opt-card {
-  width: 160px;
-  min-width: 160px;
-  max-width: 160px;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
 }
 
 /* =========================================================
