@@ -595,8 +595,8 @@ body.mobile-nav-open {
 
 .landing-hero,
 .landing-section {
-  width: min(1180px, calc(100% - 32px));
-  margin: 0 auto 22px;
+  width: min(1180px, calc(100% - 24px));
+  margin: 0 auto 18px;
 }
 
 .landing-hero-inner {
@@ -5468,10 +5468,13 @@ backdrop-filter: blur(16px) saturate(170%);
 .model-card-results,
 #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results {
   width: 100%;
+
   display: grid;
-  grid-template-columns: repeat(auto-fill, 160px);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 14px;
-  justify-content: center;
+
+  justify-content: stretch;
+  align-items: stretch;
 }
 
 .model-empty-state {
@@ -5612,7 +5615,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
 .repair-select-panel {
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   grid-column: 1 / -1;
 }
