@@ -195,7 +195,7 @@ function normalizePhoneMasterCatalog(masterCatalog, brand) {
       return {
         series,
         model,
-        image: `/images/models/${normalizePathValue(brand)}/${normalizeImageFileName(model)}.png`,
+        image: `/images/models/${normalizePathValue(brand)}/${normalizeImageFileName(model)}.webp`,
         repairs
       };
     });
