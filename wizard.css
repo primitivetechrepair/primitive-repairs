@@ -4832,8 +4832,24 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
 }
 
+.model-card-results,
 #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results {
   grid-column: 1 / -1;
+  width: 100%;
+  max-width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.model-card-results .opt-card {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
 }
 
 .animated-area {
