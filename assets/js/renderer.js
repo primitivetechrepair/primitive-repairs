@@ -510,12 +510,12 @@ export function renderSelectionCards(onChange) {
       card.classList.add("filled");
 
       if (step.key === "device") {
-  image.style.backgroundImage = `url('${getDeviceImage(state.device)}')`;
-}
+        image.style.backgroundImage = `url('${getDeviceImage(state.device)}')`;
+      }
 
       if (step.key === "brand") {
-  image.style.backgroundImage = `url('${getBrandImage(state.device, state.brand)}')`;
-}
+        image.style.backgroundImage = `url('${getBrandImage(state.device, state.brand)}')`;
+      }
 
       if (step.key === "series") {
         const brandFolder = String(state.brand || "")
@@ -526,6 +526,7 @@ export function renderSelectionCards(onChange) {
           .replace(/[^a-z0-9-]/g, "");
 
         image.style.backgroundImage = `url('/images/series/${brandFolder}/${normalizeSeriesImageName(state.series)}.webp')`;
+      }
 
       if (step.key === "model") {
         image.style.backgroundImage = `url('${state.model?.image || "/images/models/default.webp"}')`;
@@ -539,17 +540,17 @@ export function renderSelectionCards(onChange) {
         event.stopPropagation();
 
         if (step.key === "repair") {
-  state.repair = null;
-  state.repairs = [];
-  state.repairDetails = {};
-  state.repairDetailsViewed = false;
-  state.repairInfoViewed = false;
-  state.appointmentSelected = false;
-  state.reviewViewed = false;
-} else {
-  state[step.key] = null;
-  resetStep(step.key);
-}
+          state.repair = null;
+          state.repairs = [];
+          state.repairDetails = {};
+          state.repairDetailsViewed = false;
+          state.repairInfoViewed = false;
+          state.appointmentSelected = false;
+          state.reviewViewed = false;
+        } else {
+          state[step.key] = null;
+          resetStep(step.key);
+        }
 
         if (typeof onChange === "function") {
           onChange(step.key);
