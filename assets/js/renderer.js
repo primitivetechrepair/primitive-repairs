@@ -176,11 +176,39 @@ export function renderModelStep(container, models, onSelect) {
   function renderFilteredModels(searchTerm = "") {
     const normalizedSearch = searchTerm.trim().toLowerCase();
 
-    const filteredModels = models.filter((model) => {
-      return String(model.model || "")
-        .toLowerCase()
-        .includes(normalizedSearch);
-    });
+    const filteredModels = models
+  .filter((model) => {
+    return String(model.model || "")
+      .toLowerCase()
+      .includes(normalizedSearch);
+  })
+  .sort((a, b) => {
+    const isRegularIpadSeries =
+      String(a.series || "") === "iPad Series" &&
+      String(b.series || "") === "iPad Series";
+
+    if (!isRegularIpadSeries) return 0;
+
+    const getIpadOrder = (modelName) => {
+      const name = String(modelName || "").toLowerCase();
+
+      if (name.includes("1st generation")) return 1;
+      if (name === "ipad 2") return 2;
+      if (name.includes("3rd generation")) return 3;
+      if (name.includes("4th generation")) return 4;
+      if (name.includes("5th generation")) return 5;
+      if (name.includes("6th generation")) return 6;
+      if (name.includes("7th generation")) return 7;
+      if (name.includes("8th generation")) return 8;
+      if (name.includes("9th generation")) return 9;
+      if (name.includes("10th generation")) return 10;
+      if (name.includes("a16")) return 11;
+
+      return 999;
+    };
+
+    return getIpadOrder(a.model) - getIpadOrder(b.model);
+  });
 
     if (count) {
       count.textContent = filteredModels.length
