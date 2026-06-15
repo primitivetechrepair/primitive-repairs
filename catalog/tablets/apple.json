@@ -3877,8 +3877,8 @@
   },
   {
     "series": "iPad Series",
-    "model": "iPad (A16)",
-    "image": "/images/models/ipad-a16.webp",
+    "model": "iPad 11 (A16)",
+    "image": "/images/models/ipads/ipad11.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
