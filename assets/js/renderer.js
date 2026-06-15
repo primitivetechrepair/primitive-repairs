@@ -176,38 +176,56 @@ export function renderModelStep(container, models, onSelect) {
   function renderFilteredModels(searchTerm = "") {
     const normalizedSearch = searchTerm.trim().toLowerCase();
 
-    const filteredModels = models
+    const getRegularIpadNumber = (modelName) => {
+  const name = String(modelName || "").toLowerCase();
+
+  if (name.includes("a16")) return 11;
+
+  const simpleMatch = name.match(/^ipad\s+(\d+)/);
+
+  if (simpleMatch) {
+    return Number(simpleMatch[1]);
+  }
+
+  if (name.includes("1st generation")) return 1;
+  if (name.includes("2nd generation")) return 2;
+  if (name.includes("3rd generation")) return 3;
+  if (name.includes("4th generation")) return 4;
+  if (name.includes("5th generation")) return 5;
+  if (name.includes("6th generation")) return 6;
+  if (name.includes("7th generation")) return 7;
+  if (name.includes("8th generation")) return 8;
+  if (name.includes("9th generation")) return 9;
+  if (name.includes("10th generation")) return 10;
+
+  return 999;
+};
+
+const getModelDisplayLabel = (model) => {
+  if (String(model.series || "") !== "iPad Series") {
+    return model.model;
+  }
+
+  const ipadNumber = getRegularIpadNumber(model.model);
+
+  return ipadNumber !== 999 ? `iPad ${ipadNumber}` : model.model;
+};
+
+const filteredModels = models
   .filter((model) => {
-    return String(model.model || "")
-      .toLowerCase()
-      .includes(normalizedSearch);
+    const modelName = String(model.model || "").toLowerCase();
+    const displayName = String(getModelDisplayLabel(model) || "").toLowerCase();
+
+    return modelName.includes(normalizedSearch) || displayName.includes(normalizedSearch);
   })
   .sort((a, b) => {
-    const isRegularIpadSeries =
+    const bothRegularIpads =
       String(a.series || "") === "iPad Series" &&
       String(b.series || "") === "iPad Series";
 
-    if (!isRegularIpadSeries) return 0;
+    if (!bothRegularIpads) return 0;
 
-    const getIpadOrder = (modelName) => {
-      const name = String(modelName || "").toLowerCase();
-
-      if (name.includes("1st generation")) return 1;
-      if (name === "ipad 2") return 2;
-      if (name.includes("3rd generation")) return 3;
-      if (name.includes("4th generation")) return 4;
-      if (name.includes("5th generation")) return 5;
-      if (name.includes("6th generation")) return 6;
-      if (name.includes("7th generation")) return 7;
-      if (name.includes("8th generation")) return 8;
-      if (name.includes("9th generation")) return 9;
-      if (name.includes("10th generation")) return 10;
-      if (name.includes("a16")) return 11;
-
-      return 999;
-    };
-
-    return getIpadOrder(a.model) - getIpadOrder(b.model);
+    return getRegularIpadNumber(a.model) - getRegularIpadNumber(b.model);
   });
 
     if (count) {
@@ -232,11 +250,14 @@ export function renderModelStep(container, models, onSelect) {
     }
 
     const cards = filteredModels.map((model) => ({
-      label: model.model,
-      image: model.image,
-      badge: model.series,
-      onClick: () => onSelect(model)
-    }));
+  label: getModelDisplayLabel(model),
+  image: model.image,
+  badge: model.series,
+  onClick: () => onSelect({
+    ...model,
+    model: getModelDisplayLabel(model)
+  })
+}));
 
     renderCardGrid(results, cards);
   }
