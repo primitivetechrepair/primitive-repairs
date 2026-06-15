@@ -3992,7 +3992,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (10th generation)",
-    "image": "/images/models/ipad-10th-generation.webp",
+    "image": "/images/models/apple/ipad10.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4106,7 +4106,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (9th generation)",
-    "image": "/images/models/ipad-9th-generation.webp",
+    "image": "/images/models/apple/ipad9.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4220,7 +4220,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (8th generation)",
-    "image": "/images/models/ipad-8th-generation.webp",
+    "image": "/images/models/apple/ipad8.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4334,7 +4334,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (7th generation)",
-    "image": "/images/models/ipad-7th-generation.webp",
+    "image": "/images/models/apple/ipad7.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4448,7 +4448,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (6th generation)",
-    "image": "/images/models/ipad-6th-generation.webp",
+    "image": "/images/models/apple/ipad6.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4562,7 +4562,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (5th generation)",
-    "image": "/images/models/ipad-5th-generation.webp",
+    "image": "/images/models/apple/ipad5.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4676,7 +4676,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (4th generation)",
-    "image": "/images/models/ipad-4th-generation.webp",
+    "image": "/images/models/apple/ipad4.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4790,7 +4790,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (3rd generation)",
-    "image": "/images/models/ipad-3rd-generation.webp",
+    "image": "/images/models/apple/ipad3.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -4904,7 +4904,7 @@
   {
     "series": "iPad Series",
     "model": "iPad 2",
-    "image": "/images/models/ipad-2.webp",
+    "image": "/images/models/apple/ipad2.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
@@ -5018,7 +5018,7 @@
   {
     "series": "iPad Series",
     "model": "iPad (1st generation)",
-    "image": "/images/models/ipad-1st-generation.webp",
+    "image": "/images/models/apple/ipad1.webp",
     "repairs": [
       {
         "repair": "Screen Repair",
