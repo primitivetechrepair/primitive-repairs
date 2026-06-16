@@ -71,6 +71,10 @@ if (normalizedDevice === "tablet" && normalizedBrand === "microsoft") {
   return "/images/brands/tablets/surfacepro11.webp";
 }
 
+if (normalizedDevice === "tablet" && normalizedBrand === "samsung") {
+  return "/images/brands/tablets/galaxytabs11ultra.webp";
+}
+
 return `/images/brands/${folder}/${normalizedBrand}.png`;
 }
 
