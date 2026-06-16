@@ -63,6 +63,10 @@ if (normalizedDevice === "tablet" && normalizedBrand === "amazon") {
   return "/images/brands/tablets/firemax11.webp";
 }
 
+if (normalizedDevice === "tablet" && normalizedBrand === "lenovo") {
+  return "/images/brands/tablets/ideatabpro2.webp";
+}
+
 return `/images/brands/${folder}/${normalizedBrand}.png`;
 }
 
