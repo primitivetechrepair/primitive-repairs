@@ -59,6 +59,10 @@ if (!folder) {
   return DEFAULT_CARD_IMAGE;
 }
 
+if (normalizedDevice === "tablet" && normalizedBrand === "apple") {
+  return "/images/brands/tablets/apple.webp";
+}
+
 if (normalizedDevice === "tablet" && normalizedBrand === "amazon") {
   return "/images/brands/tablets/firemax11.webp";
 }
