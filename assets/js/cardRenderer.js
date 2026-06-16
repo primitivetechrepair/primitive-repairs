@@ -49,17 +49,21 @@ export function getBrandImage(device, brand) {
   other: "other"
 };
 
-  if (normalizedDevice === "phone" || normalizedDevice === "cell-phone") {
-    return getPhoneBrandImage(brand);
-  }
+if (normalizedDevice === "phone" || normalizedDevice === "cell-phone") {
+  return getPhoneBrandImage(brand);
+}
 
-  const folder = brandFolderMap[normalizedDevice];
+const folder = brandFolderMap[normalizedDevice];
 
-  if (!folder) {
-    return DEFAULT_CARD_IMAGE;
-  }
+if (!folder) {
+  return DEFAULT_CARD_IMAGE;
+}
 
-  return `/images/brands/${folder}/${normalizedBrand}.png`;
+if (normalizedDevice === "tablet" && normalizedBrand === "amazon") {
+  return "/images/brands/tablets/firemax11.webp";
+}
+
+return `/images/brands/${folder}/${normalizedBrand}.png`;
 }
 
 export function getDeviceImage(label) {
