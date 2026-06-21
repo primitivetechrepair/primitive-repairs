@@ -128,7 +128,7 @@ export function renderSeriesStep(container, seriesList, onSelect) {
 
   const image =
     selectedBrand === "Motorola" && series === "Moto G Series"
-      ? "/images/series/motorola/motogmax5g.webp"
+      ? "/images/models/motorola/motogmax5g.webp"
       : `/images/series/${brandFolder}/${seriesImageName}.png`;
 
   return {
