@@ -2232,6 +2232,21 @@ text-align: center;
 }
 
 /* =========================================================
+   SELECTED CARD — MULTIPLE REPAIRS
+========================================================= */
+
+.selected-card-image-multiple {
+  box-shadow:
+    0 0 0 3px rgba(102, 252, 241, 0.18),
+    0 12px 26px rgba(7, 123, 255, 0.18);
+}
+
+.selected-card .card-label,
+.selected-card .selected-card-label {
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
    HOMEPAGE PROOF STRIP
 ========================================================= */
 
