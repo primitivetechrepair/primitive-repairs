@@ -1341,35 +1341,35 @@ text-align: center;
 }
 
 .supported-device-card[data-device="phone"]::after {
-  background-image: url("/images/supported-devices/phone.webp");
+  background-image: url("/images/supported-devices/thumbs/phone.webp");
 }
 
 .supported-device-card[data-device="tablet"]::after {
-  background-image: url("/images/supported-devices/tablet.webp");
+  background-image: url("/images/supported-devices/thumbs/tablet.webp");
 }
 
 .supported-device-card[data-device="computer"]::after {
-  background-image: url("/images/supported-devices/computer.webp");
+  background-image: url("/images/supported-devices/thumbs/computer.webp");
 }
 
 .supported-device-card[data-device="console"]::after {
-  background-image: url("/images/supported-devices/console.webp");
+  background-image: url("/images/supported-devices/thumbs/console.webp");
 }
 
 .supported-device-card[data-device="smartwatch"]::after {
-  background-image: url("/images/supported-devices/smartwatch.webp");
+  background-image: url("/images/supported-devices/thumbs/smartwatch.webp");
 }
 
 .supported-device-card[data-device="meta-glasses"]::after {
-  background-image: url("/images/supported-devices/meta-glasses.png");
+  background-image: url("/images/supported-devices/thumbs/meta-glasses.webp");
 }
 
 .supported-device-card[data-device="mods"]::after {
-  background-image: url("/images/supported-devices/mods.png");
+  background-image: url("/images/supported-devices/thumbs/mods.webp");
 }
 
 .supported-device-card[data-device="other"]::after {
-  background-image: url("/images/supported-devices/electronics.webp");
+  background-image: url("/images/supported-devices/thumbs/electronics.webp");
 }
 
 .supported-device-card:hover {

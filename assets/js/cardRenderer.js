@@ -84,15 +84,15 @@ return `/images/brands/${folder}/${normalizedBrand}.png`;
 
 export function getDeviceImage(label) {
   const deviceImageMap = {
-  "Cell Phone": "phone",
-  Phone: "phone",
-  Tablet: "tablet",
-  Computer: "computer",
-  Console: "console",
-  Smartwatch: "smartwatch",
-  Mods: "mods",
-  Other: "other"
-};
+    "Cell Phone": "phone",
+    Phone: "phone",
+    Tablet: "tablet",
+    Computer: "computer",
+    Console: "console",
+    Smartwatch: "smartwatch",
+    Mods: "mods",
+    Other: "other"
+  };
 
   const imageName = deviceImageMap[String(label || "")];
 
@@ -100,7 +100,7 @@ export function getDeviceImage(label) {
     return DEFAULT_CARD_IMAGE;
   }
 
-  return `/images/devices/${imageName}.png`;
+  return `/images/devices/thumbs/${imageName}.webp`;
 }
 
 function getIphoneSeriesRank(label) {
@@ -164,12 +164,15 @@ export function createOptionCard({
   card.innerHTML = `
     <div class="opt-thumb">
       <img
-        class="opt-thumb-img"
-        src="${safeImage}"
-        alt="${safeLabel}"
-        loading="lazy"
-        onerror="this.onerror=null; this.src='${DEFAULT_CARD_IMAGE}';"
-      >
+  class="opt-thumb-img"
+  src="${safeImage}"
+  alt="${safeLabel}"
+  width="76"
+  height="76"
+  loading="lazy"
+  decoding="async"
+  onerror="this.onerror=null; this.src='${DEFAULT_CARD_IMAGE}';"
+>
     </div>
 
     <div class="opt-card-body">
