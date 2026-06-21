@@ -1,0 +1,14 @@
+{
+  "brand": "Motorola",
+  "series": [
+    {
+      "name": "Moto G Series",
+      "models": [
+        {
+          "name": "Moto G Pure",
+          "image": "/images/models/motorola/motogpure.webp"
+        }
+      ]
+    }
+  ]
+}
