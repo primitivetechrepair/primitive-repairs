@@ -1,4 +1,4 @@
-const DEFAULT_CARD_IMAGE = "/images/repairs/default.webp";
+const DEFAULT_CARD_IMAGE = "/images/repairs/diagnostic-not-sure.png";
 
 function escapeHtml(value) {
   return String(value || "")
@@ -213,6 +213,12 @@ export function getRepairImage(repair) {
 }
 
 export function getResolvedRepairImage(repair) {
+  const mappedImage = getRepairImage(repair);
+
+  if (mappedImage && mappedImage !== DEFAULT_CARD_IMAGE) {
+    return mappedImage;
+  }
+
   const explicitImage =
     typeof repair === "object" && repair
       ? String(repair.image || "").trim()
@@ -220,12 +226,13 @@ export function getResolvedRepairImage(repair) {
 
   if (
     explicitImage &&
-    !explicitImage.includes("/images/repairs/default.webp")
+    !explicitImage.includes("/images/repairs/default.webp") &&
+    !explicitImage.endsWith(".webp")
   ) {
     return explicitImage;
   }
 
-  return getRepairImage(repair);
+  return mappedImage || DEFAULT_CARD_IMAGE;
 }
 
 function getIphoneSeriesRank(label) {
