@@ -581,15 +581,22 @@ export function renderSelectionCards(onChange) {
       }
 
       if (step.key === "series") {
-        const brandFolder = String(state.brand || "")
-          .trim()
-          .toLowerCase()
-          .replace(/\s+/g, "-")
-          .replace(/[()]/g, "")
-          .replace(/[^a-z0-9-]/g, "");
+  const brandFolder = String(state.brand || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[()]/g, "")
+    .replace(/[^a-z0-9-]/g, "");
 
-        image.style.backgroundImage = `url('/images/series/${brandFolder}/${normalizeSeriesImageName(state.series)}.webp')`;
-      }
+  const seriesImageName = normalizeSeriesImageName(state.series);
+
+  const seriesImage =
+    state.brand === "Motorola" && state.series === "Moto G Series"
+      ? "/images/models/motorola/motogmax5g.webp"
+      : `/images/series/${brandFolder}/${seriesImageName}.png`;
+
+  image.style.backgroundImage = `url('${seriesImage}')`;
+}
 
       if (step.key === "model") {
         image.style.backgroundImage = `url('${state.model?.image || "/images/models/default.webp"}')`;
