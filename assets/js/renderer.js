@@ -3,7 +3,8 @@ import {
   renderCardGrid,
   getDeviceImage,
   getBrandImage,
-  getRepairImage
+  getRepairImage,
+  getResolvedRepairImage
 } from "./cardRenderer.js";
 
 function formatDisplayDate(dateValue) {
@@ -337,7 +338,7 @@ export function renderRepairStep(
 
       return {
         label: repair.repair,
-        image: repair.image || getRepairImage(repair),
+        image: getResolvedRepairImage(repair),
         subtext: repair.time || "",
         badge: isSelected ? "Selected" : repair.warranty || "",
         className: isSelected ? "is-selected" : "",
@@ -471,7 +472,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       <div class="repair-info-hero">
         <div
           class="repair-info-image"
-          style="--repair-info-image: url('${primaryRepair.image || getRepairImage(primaryRepair)}')"
+          style="--repair-info-image: url('${getResolvedRepairImage(primaryRepair)}')"
         ></div>
 
         <div class="repair-info-content">
@@ -604,7 +605,7 @@ export function renderSelectionCards(onChange) {
       }
 
       if (step.key === "repair") {
-  image.style.backgroundImage = `url('${state.repair?.image || getRepairImage(state.repair)}')`;
+  image.style.backgroundImage = `url('${getResolvedRepairImage(state.repair)}')`;
 }
 
       button.onclick = (event) => {

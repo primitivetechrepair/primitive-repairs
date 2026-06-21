@@ -212,6 +212,22 @@ export function getRepairImage(repair) {
   return DEFAULT_CARD_IMAGE;
 }
 
+export function getResolvedRepairImage(repair) {
+  const explicitImage =
+    typeof repair === "object" && repair
+      ? String(repair.image || "").trim()
+      : "";
+
+  if (
+    explicitImage &&
+    !explicitImage.includes("/images/repairs/default.webp")
+  ) {
+    return explicitImage;
+  }
+
+  return getRepairImage(repair);
+}
+
 function getIphoneSeriesRank(label) {
   const value = String(label || "");
 
