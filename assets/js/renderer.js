@@ -27,13 +27,22 @@ const serviceLabels = {
 };
 
 function getSelectedRepairLabel() {
-  if (Array.isArray(state.repairs) && state.repairs.length) {
-    return state.repairs.length === 1
-      ? state.repairs[0].repair
-      : `${state.repairs.length} repairs selected`;
+  const selectedRepairs = Array.isArray(state.repairs) && state.repairs.length
+    ? state.repairs
+    : state.repair
+      ? [state.repair]
+      : [];
+
+  if (!selectedRepairs.length) {
+    return "Not selected";
   }
 
-  return state.repair?.repair || state.repair || "Not selected";
+  return selectedRepairs
+    .map((repair) => {
+      return repair?.repair || repair?.name || repair?.label || repair;
+    })
+    .filter(Boolean)
+    .join(" + ");
 }
 
 function normalizeSeriesImageName(value) {
@@ -605,7 +614,22 @@ export function renderSelectionCards(onChange) {
       }
 
       if (step.key === "repair") {
-  image.style.backgroundImage = `url('${getResolvedRepairImage(state.repair)}')`;
+  const selectedRepairs = Array.isArray(state.repairs) && state.repairs.length
+    ? state.repairs
+    : state.repair
+      ? [state.repair]
+      : [];
+
+  const primaryRepair = selectedRepairs[0];
+
+  image.style.backgroundImage = primaryRepair
+    ? `url('${getResolvedRepairImage(primaryRepair)}')`
+    : "none";
+
+  image.classList.toggle(
+    "selected-card-image-multiple",
+    selectedRepairs.length > 1
+  );
 }
 
       button.onclick = (event) => {
