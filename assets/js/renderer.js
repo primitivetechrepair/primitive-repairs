@@ -123,12 +123,21 @@ export function renderSeriesStep(container, seriesList, onSelect) {
 
   const results = container.querySelector("#series-card-results");
 
-  const cards = seriesList.map((series) => ({
+  const cards = seriesList.map((series) => {
+  const seriesImageName = normalizeSeriesImageName(series);
+
+  const image =
+    selectedBrand === "Motorola" && series === "Moto G Series"
+      ? "/images/series/motorola/motogmax5g.webp"
+      : `/images/series/${brandFolder}/${seriesImageName}.png`;
+
+  return {
     label: series,
-    image: `/images/series/${brandFolder}/${normalizeSeriesImageName(series)}.webp`,
+    image,
     badge: "Series",
     onClick: () => onSelect(series)
-  }));
+  };
+});
 
   renderCardGrid(results, cards);
 }
