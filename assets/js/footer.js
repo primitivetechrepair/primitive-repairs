@@ -49,12 +49,13 @@
             <h4 class="site-footer-link-title">Information</h4>
 
             <nav class="site-footer-links" aria-label="Footer information links">
-              <a href="/#primitive-wizard-container">Start Repair Request</a>
-              <a href="/#how-it-works">How It Works</a>
-              <a href="/#repair-services">Supported Devices</a>
-              <a href="/warranty">Warranty Support</a>
-              <a href="/faq">FAQs</a>
-            </nav>
+  <a href="/#primitive-wizard-container">Start Repair Request</a>
+  <a href="/#how-it-works">How It Works</a>
+  <a href="/#repair-services">Supported Devices</a>
+  <a href="/warranty">Warranty Support</a>
+  <a href="/faq">FAQs</a>
+  <a href="/contact-us">Contact Us</a>
+</nav>
           </div>
 
           <div class="site-footer-link-group site-footer-repair-group">
