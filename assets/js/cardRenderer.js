@@ -1,4 +1,4 @@
-const DEFAULT_CARD_IMAGE = "/images/repairs/diagnostic-not-sure.png";
+const DEFAULT_CARD_IMAGE = "/images/repairs/default.webp";
 
 function escapeHtml(value) {
   return String(value || "")
