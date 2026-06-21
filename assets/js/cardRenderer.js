@@ -103,6 +103,115 @@ export function getDeviceImage(label) {
   return `/images/devices/thumbs/${imageName}.webp`;
 }
 
+function getRepairLabelValue(repair) {
+  if (typeof repair === "string") {
+    return repair;
+  }
+
+  return repair?.repair || repair?.name || repair?.label || "";
+}
+
+function normalizeRepairLabel(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase();
+}
+
+export function getRepairImage(repair) {
+  const label = normalizeRepairLabel(getRepairLabelValue(repair));
+
+  if (!label) {
+    return DEFAULT_CARD_IMAGE;
+  }
+
+  if (
+    label.includes("back glass") ||
+    label.includes("rear glass") ||
+    label.includes("back cover") ||
+    label.includes("rear panel")
+  ) {
+    return "/images/repairs/back-glass-repair.png";
+  }
+
+  if (label.includes("battery")) {
+    return "/images/repairs/battery-replacement.png";
+  }
+
+  if (
+    label.includes("button") ||
+    label.includes("buttons") ||
+    label.includes("power button") ||
+    label.includes("volume button")
+  ) {
+    return "/images/repairs/button-repair.png";
+  }
+
+  if (
+    label.includes("camera") ||
+    label.includes("lens")
+  ) {
+    return "/images/repairs/camera-repair.png";
+  }
+
+  if (
+    label.includes("charging port") ||
+    label.includes("charge port") ||
+    label.includes("usb-c") ||
+    label.includes("lightning port") ||
+    label.includes("charging issue") ||
+    label.includes("not charging")
+  ) {
+    return "/images/repairs/charging-port-repair.png";
+  }
+
+  if (
+    label.includes("diagnostic") ||
+    label.includes("not sure") ||
+    label.includes("unknown issue") ||
+    label.includes("inspection")
+  ) {
+    return "/images/repairs/diagnostic-not-sure.png";
+  }
+
+  if (
+    label.includes("screen") ||
+    label.includes("display") ||
+    label.includes("lcd") ||
+    label.includes("oled") ||
+    label.includes("glass replacement")
+  ) {
+    return "/images/repairs/screen-repair.png";
+  }
+
+  if (
+    label.includes("software") ||
+    label.includes("boot loop") ||
+    label.includes("update issue") ||
+    label.includes("firmware")
+  ) {
+    return "/images/repairs/software-issue.png";
+  }
+
+  if (
+    label.includes("speaker") ||
+    label.includes("microphone") ||
+    label.includes("mic") ||
+    label.includes("audio")
+  ) {
+    return "/images/repairs/speaker-microphone-repair.png";
+  }
+
+  if (
+    label.includes("water damage") ||
+    label.includes("liquid damage") ||
+    label.includes("moisture")
+  ) {
+    return "/images/repairs/water-damage-diagnostic.png";
+  }
+
+  return DEFAULT_CARD_IMAGE;
+}
+
 function getIphoneSeriesRank(label) {
   const value = String(label || "");
 

@@ -2,7 +2,8 @@ import { state, resetStep } from "./state.js";
 import {
   renderCardGrid,
   getDeviceImage,
-  getBrandImage
+  getBrandImage,
+  getRepairImage
 } from "./cardRenderer.js";
 
 function formatDisplayDate(dateValue) {
@@ -336,7 +337,7 @@ export function renderRepairStep(
 
       return {
         label: repair.repair,
-        image: repair.image || "/images/repairs/default.webp",
+        image: repair.image || getRepairImage(repair),
         subtext: repair.time || "",
         badge: isSelected ? "Selected" : repair.warranty || "",
         className: isSelected ? "is-selected" : "",
@@ -470,7 +471,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       <div class="repair-info-hero">
         <div
           class="repair-info-image"
-          style="--repair-info-image: url('${primaryRepair.image || "/images/repairs/default.webp"}')"
+          style="--repair-info-image: url('${primaryRepair.image || getRepairImage(primaryRepair)}')"
         ></div>
 
         <div class="repair-info-content">
@@ -603,8 +604,8 @@ export function renderSelectionCards(onChange) {
       }
 
       if (step.key === "repair") {
-        image.style.backgroundImage = `url('${state.repair?.image || "/images/repairs/default.webp"}')`;
-      }
+  image.style.backgroundImage = `url('${state.repair?.image || getRepairImage(state.repair)}')`;
+}
 
       button.onclick = (event) => {
         event.stopPropagation();
