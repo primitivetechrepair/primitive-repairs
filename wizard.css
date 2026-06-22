@@ -10291,9 +10291,4 @@ backdrop-filter: blur(16px) saturate(170%);
   border: none !important;
   box-shadow: none !important;
 }
-
-.landing-section-header .service-intro-light {
-  font-weight: 300;
-  opacity: 0.9;
-}
 }
