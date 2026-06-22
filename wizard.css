@@ -10292,7 +10292,8 @@ backdrop-filter: blur(16px) saturate(170%);
   box-shadow: none !important;
 }
 
-.service-intro-light {
+.landing-section-header .service-intro-light {
   font-weight: 300;
+  opacity: 0.9;
 }
 }
