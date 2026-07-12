@@ -72,31 +72,27 @@ function getSeriesCardImage(brand, series) {
 
   if (selectedBrand === "Apple") {
     const appleSeriesImageMap = {
-  "Original & Early": "iphone2g",
-  "iPhone 3 Series": "iphone3gs",
-  "iPhone 4 Series": "iphone4s",
-  "iPhone 5 Series": "iphone5s",
-  "iPhone 6 Series": "iphone6splus",
-  "iPhone 7 Series": "iphone7plus",
-  "iPhone 8 Series": "iphone8plus",
-  "iPhone X Series": "iphonexsmax",
-  "iPhone 11 Series": "iphone11promax",
-  "iPhone 12 Series": "iphone12promax",
-  "iPhone 13 Series": "iphone13promax",
-  "iPhone 14 Series": "iphone14promax",
-  "iPhone 15 Series": "iphone15promax",
-  "iPhone 16 Series": "iphone16promax",
-  "iPhone 17 Series": "iphone17promax",
-  "iPhone SE Series": "iphonese"
-};
-
-const appleImageName = appleSeriesImageMap[series] || seriesImageName;
-
-return `/images/series/apple/${appleImageName}.webp`;
+      "Original & Early": "iphone2g",
+      "iPhone 3 Series": "iphone3gs",
+      "iPhone 4 Series": "iphone4s",
+      "iPhone 5 Series": "iphone5s",
+      "iPhone 6 Series": "iphone6splus",
+      "iPhone 7 Series": "iphone7plus",
+      "iPhone 8 Series": "iphone8plus",
+      "iPhone X Series": "iphonexsmax",
+      "iPhone 11 Series": "iphone11promax",
+      "iPhone 12 Series": "iphone12promax",
+      "iPhone 13 Series": "iphone13promax",
+      "iPhone 14 Series": "iphone14promax",
+      "iPhone 15 Series": "iphone15promax",
+      "iPhone 16 Series": "iphone16promax",
+      "iPhone 17 Series": "iphone17promax",
+      "iPhone SE Series": "iphonese"
+    };
 
     const appleImageName = appleSeriesImageMap[series] || seriesImageName;
 
-    return `/images/models/apple/${appleImageName}.webp`;
+    return `/images/series/apple/${appleImageName}.webp`;
   }
 
   if (selectedBrand === "Motorola" && series === "Moto G Series") {
@@ -161,12 +157,6 @@ export function renderSeriesStep(container, seriesList, onSelect) {
   if (!container) return;
 
   const selectedBrand = state.brand || "brand";
-  const brandFolder = String(selectedBrand || "")
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[()]/g, "")
-    .replace(/[^a-z0-9-]/g, "");
 
   container.innerHTML = `
     <div class="option-section-header">
@@ -180,21 +170,12 @@ export function renderSeriesStep(container, seriesList, onSelect) {
 
   const results = container.querySelector("#series-card-results");
 
-  const cards = seriesList.map((series) => {
-  const seriesImageName = normalizeSeriesImageName(series);
-
-  const image =
-    selectedBrand === "Motorola" && series === "Moto G Series"
-      ? "/images/models/motorola/motogmax5g.webp"
-      : `/images/series/${brandFolder}/${seriesImageName}.png`;
-
-  return {
+  const cards = seriesList.map((series) => ({
     label: series,
-    image,
+    image: getSeriesCardImage(selectedBrand, series),
     badge: "Series",
     onClick: () => onSelect(series)
-  };
-});
+  }));
 
   renderCardGrid(results, cards);
 }
@@ -638,21 +619,7 @@ export function renderSelectionCards(onChange) {
       }
 
       if (step.key === "series") {
-  const brandFolder = String(state.brand || "")
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[()]/g, "")
-    .replace(/[^a-z0-9-]/g, "");
-
-  const seriesImageName = normalizeSeriesImageName(state.series);
-
-  const seriesImage =
-    state.brand === "Motorola" && state.series === "Moto G Series"
-      ? "/images/models/motorola/motogmax5g.webp"
-      : `/images/series/${brandFolder}/${seriesImageName}.png`;
-
-  image.style.backgroundImage = `url('${seriesImage}')`;
+  image.style.backgroundImage = `url('${getSeriesCardImage(state.brand, state.series)}')`;
 }
 
       if (step.key === "model") {
