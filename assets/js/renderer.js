@@ -66,6 +66,52 @@ function normalizeSeriesImageName(value) {
     .replace(/[^a-z0-9]/g, "");
 }
 
+function getSeriesCardImage(brand, series) {
+  const selectedBrand = String(brand || "").trim();
+  const seriesImageName = normalizeSeriesImageName(series);
+
+  if (selectedBrand === "Apple") {
+    const appleSeriesImageMap = {
+  "Original & Early": "iphone2g",
+  "iPhone 3 Series": "iphone3gs",
+  "iPhone 4 Series": "iphone4s",
+  "iPhone 5 Series": "iphone5s",
+  "iPhone 6 Series": "iphone6splus",
+  "iPhone 7 Series": "iphone7plus",
+  "iPhone 8 Series": "iphone8plus",
+  "iPhone X Series": "iphonexsmax",
+  "iPhone 11 Series": "iphone11promax",
+  "iPhone 12 Series": "iphone12promax",
+  "iPhone 13 Series": "iphone13promax",
+  "iPhone 14 Series": "iphone14promax",
+  "iPhone 15 Series": "iphone15promax",
+  "iPhone 16 Series": "iphone16promax",
+  "iPhone 17 Series": "iphone17promax",
+  "iPhone SE Series": "iphonese"
+};
+
+const appleImageName = appleSeriesImageMap[series] || seriesImageName;
+
+return `/images/series/apple/${appleImageName}.webp`;
+
+    const appleImageName = appleSeriesImageMap[series] || seriesImageName;
+
+    return `/images/models/apple/${appleImageName}.webp`;
+  }
+
+  if (selectedBrand === "Motorola" && series === "Moto G Series") {
+    return "/images/models/motorola/motogmax5g.webp";
+  }
+
+  const brandFolder = selectedBrand
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[()]/g, "")
+    .replace(/[^a-z0-9-]/g, "");
+
+  return `/images/series/${brandFolder}/${seriesImageName}.png`;
+}
+
 export function renderDeviceStep(container, devices, onSelect) {
   if (!container) return;
 
