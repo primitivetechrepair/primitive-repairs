@@ -71,6 +71,10 @@ function getSeriesCardImage(brand, series) {
   const seriesImageName = normalizeSeriesImageName(series);
 
   if (selectedBrand === "Apple") {
+    if (series === "iPhone SE Series") {
+      return "/images/models/apple/iphonese3.webp";
+    }
+
     const appleSeriesImageMap = {
       "Original & Early": "iphone2g",
       "iPhone 3 Series": "iphone3gs",
@@ -86,8 +90,7 @@ function getSeriesCardImage(brand, series) {
       "iPhone 14 Series": "iphone14promax",
       "iPhone 15 Series": "iphone15promax",
       "iPhone 16 Series": "iphone16promax",
-      "iPhone 17 Series": "iphone17promax",
-      "iPhone SE Series": "iphonese"
+      "iPhone 17 Series": "iphone17promax"
     };
 
     const appleImageName = appleSeriesImageMap[series] || seriesImageName;
