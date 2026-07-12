@@ -763,58 +763,7 @@
   </div>
 </template>
 
-<script>
-  let repairWizardLoaded = false;
-
-  function loadRepairWizard() {
-    if (repairWizardLoaded) return;
-
-    repairWizardLoaded = true;
-
-    import("/assets/js/wizard.js?v=20260621-3").catch((error) => {
-      console.error("Repair wizard failed to load:", error);
-    });
-  }
-
-  window.addEventListener("load", () => {
-    const wizardContainer = document.getElementById("primitive-wizard-container");
-
-    if (wizardContainer && "IntersectionObserver" in window) {
-      const wizardObserver = new IntersectionObserver((entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          loadRepairWizard();
-          wizardObserver.disconnect();
-        }
-      }, {
-        rootMargin: "500px 0px"
-      });
-
-      wizardObserver.observe(wizardContainer);
-      return;
-    }
-
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(loadRepairWizard, { timeout: 2000 });
-    } else {
-      setTimeout(loadRepairWizard, 1200);
-    }
-  });
-
-  document.addEventListener("pointerdown", (event) => {
-    const target = event.target.closest("a, button");
-
-    if (!target) return;
-
-    const href = target.getAttribute("href") || "";
-
-    if (
-      href.includes("primitive-wizard-container") ||
-      target.dataset.wizardStart === "true"
-    ) {
-      loadRepairWizard();
-    }
-  }, { passive: true });
-</script>
+<script type="module" src="/assets/js/wizard.js?v=20260621-3"></script>
 <script src="/assets/js/header.js?v=20260621-1" defer></script>
 <script src="/assets/js/footer.js?v=20260614-1" defer></script>
 <script src="/assets/js/mobileNav.js?v=20260614-1" defer></script>
