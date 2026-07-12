@@ -11,17 +11,19 @@ function normalizeImageFileName(value) {
   const normalized = normalizePathValue(value);
 
   const imageNameOverrides = {
-    "iphone-se": "iphonese",
+  "iphone-original": "iphone",
 
-    "iphone-se-1st-gen": "iphonese",
-    "iphone-se-1st-generation": "iphonese",
+  "iphone-se": "iphonese",
 
-    "iphone-se-2nd-gen": "iphonese2",
-    "iphone-se-2nd-generation": "iphonese2",
+  "iphone-se-1st-gen": "iphonese",
+  "iphone-se-1st-generation": "iphonese",
 
-    "iphone-se-3rd-gen": "iphonese3",
-    "iphone-se-3rd-generation": "iphonese3"
-  };
+  "iphone-se-2nd-gen": "iphonese2",
+  "iphone-se-2nd-generation": "iphonese2",
+
+  "iphone-se-3rd-gen": "iphonese3",
+  "iphone-se-3rd-generation": "iphonese3"
+};
 
   return imageNameOverrides[normalized] || normalized.replace(/-/g, "");
 }
