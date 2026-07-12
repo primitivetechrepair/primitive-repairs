@@ -8435,21 +8435,28 @@ backdrop-filter: blur(16px) saturate(170%);
    SUCCESS SUMMARY — LABEL / VALUE ALIGNMENT
 ========================================================= */
 
+.success-summary-request-layout > div:nth-child(n + 6) {
+  grid-column: span 3;
+}
+
 .success-summary-request-layout > div {
   display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
+  grid-template-columns: minmax(96px, 38%) minmax(0, 1fr);
   align-items: start;
-  column-gap: 14px;
+  column-gap: 12px;
 }
 
 .success-summary-request-layout strong {
+  min-width: 0;
   margin-bottom: 0;
   white-space: nowrap;
 }
 
 .success-summary-request-layout span {
   min-width: 0;
-  overflow-wrap: normal;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
   word-break: normal;
 }
 
@@ -8495,13 +8502,23 @@ backdrop-filter: blur(16px) saturate(170%);
   line-height: 1.45;
 }
 
+.success-summary-request-layout > div,
+.success-summary-request-layout > div:nth-child(n + 6) {
+  grid-column: 1 / -1;
+}
+
 .success-summary-request-layout > div {
-  grid-template-columns: 120px minmax(0, 1fr);
+  grid-template-columns: minmax(106px, 36%) minmax(0, 1fr);
   column-gap: 10px;
 }
 
 .success-summary-request-layout strong {
   white-space: nowrap;
+}
+
+.success-summary-request-layout span {
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 }
 
