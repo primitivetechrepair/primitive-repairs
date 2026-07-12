@@ -8431,6 +8431,28 @@ backdrop-filter: blur(16px) saturate(170%);
   line-height: 1.4;
 }
 
+/* =========================================================
+   SUCCESS SUMMARY — LABEL / VALUE ALIGNMENT
+========================================================= */
+
+.success-summary-request-layout > div {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 14px;
+}
+
+.success-summary-request-layout strong {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.success-summary-request-layout span {
+  min-width: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .success-start-new {
   width: 100%;
   min-height: 54px;
@@ -8471,6 +8493,15 @@ backdrop-filter: blur(16px) saturate(170%);
 .success-summary span {
   font-size: 12.5px;
   line-height: 1.45;
+}
+
+.success-summary-request-layout > div {
+  grid-template-columns: 120px minmax(0, 1fr);
+  column-gap: 10px;
+}
+
+.success-summary-request-layout strong {
+  white-space: nowrap;
 }
 }
 
