@@ -29,6 +29,10 @@ function getPhoneBrandImage(label) {
     return DEFAULT_CARD_IMAGE;
   }
 
+  if (imageName === "apple") {
+    return "/images/brands/apple.webp";
+  }
+
   return `/images/brands/${imageName}.png`;
 }
 
