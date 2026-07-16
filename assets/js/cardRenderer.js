@@ -33,6 +33,10 @@ function getPhoneBrandImage(label) {
     return "/images/brands/apple.webp";
   }
 
+  if (imageName === "samsung") {
+    return "/images/brands/samsung.webp";
+  }
+
   return `/images/brands/${imageName}.png`;
 }
 
