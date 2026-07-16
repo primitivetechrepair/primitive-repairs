@@ -37,6 +37,10 @@ function getPhoneBrandImage(label) {
     return "/images/brands/samsung.webp";
   }
 
+  if (imageName === "motorola") {
+    return "/images/brands/motorola.webp";
+  }
+
   return `/images/brands/${imageName}.png`;
 }
 
