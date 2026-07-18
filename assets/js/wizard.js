@@ -66,15 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const customerForm = document.getElementById("pr-customer-form");
   const backBtn = document.getElementById("cf-back");
   const fileInput = document.getElementById("cf-files");
-const filePreviews = document.getElementById("cf-previews");
-const repairPolicyToggle = document.getElementById("toggle-repair-policy");
-const repairPolicyBox = document.getElementById("repair-policy-box");
+  const filePreviews = document.getElementById("cf-previews");
+  const repairPolicyToggle = document.getElementById("toggle-repair-policy");
+  const repairPolicyBox = document.getElementById("repair-policy-box");
 
-const repairPageLoadedAt = Date.now();
-const repairMinimumSubmitTime = 8000;
-const repairCooldownMs = 60000;
-const repairCooldownKey = "primitiveRepairRequestLastSubmit";
-let repairSubmitLocked = false;
+  const repairPageLoadedAt = Date.now();
+  const repairMinimumSubmitTime = 8000;
+  const repairCooldownMs = 60000;
+  const repairCooldownKey = "primitiveRepairRequestLastSubmit";
+  let repairSubmitLocked = false;
 
   function updateProgress() {
     const progressBar = document.getElementById("pr-progress-bar");
@@ -187,7 +187,7 @@ let repairSubmitLocked = false;
       "Enter the location related to your selected service option.";
   }
 
-    function escapeSummaryValue(value) {
+  function escapeSummaryValue(value) {
     return String(value || "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -298,7 +298,7 @@ let repairSubmitLocked = false;
       </div>
     `;
 
-    stepsArea.appendChild(summaryCard);
+    stepsArea.prepend(summaryCard);
   }
 
   function renderFilePreviews() {
@@ -392,8 +392,6 @@ let repairSubmitLocked = false;
       renderWizard(true);
     });
 
-    renderLiveRepairSummary();
-
     if (!state.device) {
       renderDeviceStep(stepsArea, devices, (device) => {
         state.device = device;
@@ -420,6 +418,8 @@ let repairSubmitLocked = false;
         renderWizard(true);
       });
 
+      renderLiveRepairSummary();
+
       if (shouldScroll) {
         scrollWizardStepIntoView();
       }
@@ -438,6 +438,8 @@ let repairSubmitLocked = false;
         renderWizard(true);
       });
 
+      renderLiveRepairSummary();
+
       if (shouldScroll) {
         scrollWizardStepIntoView();
       }
@@ -454,6 +456,8 @@ let repairSubmitLocked = false;
         resetStep("model");
         renderWizard(true);
       });
+
+      renderLiveRepairSummary();
 
       if (shouldScroll) {
         scrollWizardStepIntoView();
@@ -497,6 +501,8 @@ let repairSubmitLocked = false;
         }
       );
 
+      renderLiveRepairSummary();
+
       if (shouldScroll) {
         scrollWizardStepIntoView();
       }
@@ -517,6 +523,8 @@ let repairSubmitLocked = false;
         }
       );
 
+      renderLiveRepairSummary();
+
       if (shouldScroll) {
         scrollWizardStepIntoView();
       }
@@ -534,6 +542,8 @@ let repairSubmitLocked = false;
         }
       );
 
+      renderLiveRepairSummary();
+
       if (shouldScroll) {
         scrollWizardStepIntoView();
       }
@@ -546,6 +556,8 @@ let repairSubmitLocked = false;
         state.appointmentSelected = true;
         renderWizard(true);
       });
+
+      renderLiveRepairSummary();
 
       if (shouldScroll) {
         scrollWizardStepIntoView();
