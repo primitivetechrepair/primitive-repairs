@@ -49,7 +49,7 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Screen Repair",
       image: "/images/repairs/screen-repair.webp",
-      time: "45â€“90 Minutes",
+      time: "45-90 Minutes",
       warranty: "1 Year",
       symptoms: [
         "Cracked Glass",
@@ -61,7 +61,7 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Battery Replacement",
       image: "/images/repairs/battery-replacement.webp",
-      time: "30â€“60 Minutes",
+      time: "30-60 Minutes",
       warranty: "1 Year",
       symptoms: [
         "Battery Drains Fast",
@@ -73,7 +73,7 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Charging Port Repair",
       image: "/images/repairs/charging-port-repair.webp",
-      time: "45â€“90 Minutes",
+      time: "45-90 Minutes",
       warranty: "1 Year",
       symptoms: [
         "Not Charging",
@@ -96,7 +96,7 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Camera Repair",
       image: "/images/repairs/camera-repair.webp",
-      time: "45â€“90 Minutes",
+      time: "45-90 Minutes",
       warranty: "1 Year",
       symptoms: [
         "Blurry Camera",
@@ -108,7 +108,7 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Speaker / Microphone Repair",
       image: "/images/repairs/speaker-microphone-repair.webp",
-      time: "45â€“90 Minutes",
+      time: "45-90 Minutes",
       warranty: "1 Year",
       symptoms: [
         "No Sound",
@@ -120,7 +120,7 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Button Repair",
       image: "/images/repairs/button-repair.webp",
-      time: "45â€“90 Minutes",
+      time: "45-90 Minutes",
       warranty: "1 Year",
       symptoms: [
         "Power Button Not Working",
