@@ -9154,7 +9154,7 @@ body {
 
     flex: 0 0 14px;
 
-    display: inline-block;
+    display: none;
 
     background: currentColor;
 
@@ -9162,12 +9162,12 @@ body {
     mask: var(--sticky-icon) center / contain no-repeat;
   }
 
-  .mobile-sticky-booking-primary::before {
-    display: none;
+  .mobile-sticky-booking-secondary[href^="tel:"]::before,
+  .mobile-sticky-booking-secondary[href^="sms:"]::before {
+    display: inline-block;
   }
 
   .mobile-sticky-booking-primary {
-    --sticky-icon: none;
 
     background: var(--button-gradient);
     color: #ffffff;
