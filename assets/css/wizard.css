@@ -303,6 +303,51 @@
   }
 }
 
+/* ---------- Appointment Cutoff Banner Mobile ---------- */
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 190px;
+  }
+
+  body {
+    padding-top: 184px;
+  }
+
+  #primitive-wizard-container,
+  #repair-services,
+  #how-it-works {
+    scroll-margin-top: 190px;
+  }
+
+  .appointment-deadline-banner {
+    top: 104px;
+    min-height: 72px;
+    padding: 9px 12px;
+    gap: 8px;
+  }
+
+  .appointment-deadline-pill {
+    font-size: 9px;
+    padding: 5px 8px;
+  }
+
+  .appointment-deadline-copy {
+    width: 100%;
+    order: 3;
+
+    font-size: 12px;
+    line-height: 1.3;
+  }
+
+  .appointment-deadline-countdown {
+    min-width: 98px;
+    padding: 6px 9px;
+
+    font-size: 11px;
+  }
+}
+
 /* ---------- Primary Step Button Visibility ---------- */
 
 .repair-info-actions,

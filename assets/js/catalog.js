@@ -49,8 +49,8 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Screen Repair",
       image: "/images/repairs/screen-repair.webp",
-      time: "45–90 Minutes",
-      warranty: "90 Days",
+      time: "45â€“90 Minutes",
+      warranty: "1 Year",
       symptoms: [
         "Cracked Glass",
         "No Display",
@@ -61,8 +61,8 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Battery Replacement",
       image: "/images/repairs/battery-replacement.webp",
-      time: "30–60 Minutes",
-      warranty: "90 Days",
+      time: "30â€“60 Minutes",
+      warranty: "1 Year",
       symptoms: [
         "Battery Drains Fast",
         "Phone Shuts Off",
@@ -73,8 +73,8 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Charging Port Repair",
       image: "/images/repairs/charging-port-repair.webp",
-      time: "45–90 Minutes",
-      warranty: "90 Days",
+      time: "45â€“90 Minutes",
+      warranty: "1 Year",
       symptoms: [
         "Not Charging",
         "Loose Charger",
@@ -86,7 +86,7 @@ function getDefaultPhoneRepairs() {
       repair: "Back Glass Repair",
       image: "/images/repairs/back-glass-repair.webp",
       time: "Same Day",
-      warranty: "90 Days",
+      warranty: "1 Year",
       symptoms: [
         "Cracked Back Glass",
         "Sharp Glass",
@@ -96,8 +96,8 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Camera Repair",
       image: "/images/repairs/camera-repair.webp",
-      time: "45–90 Minutes",
-      warranty: "90 Days",
+      time: "45â€“90 Minutes",
+      warranty: "1 Year",
       symptoms: [
         "Blurry Camera",
         "Camera Not Opening",
@@ -108,8 +108,8 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Speaker / Microphone Repair",
       image: "/images/repairs/speaker-microphone-repair.webp",
-      time: "45–90 Minutes",
-      warranty: "90 Days",
+      time: "45â€“90 Minutes",
+      warranty: "1 Year",
       symptoms: [
         "No Sound",
         "Muffled Audio",
@@ -120,8 +120,8 @@ function getDefaultPhoneRepairs() {
     {
       repair: "Button Repair",
       image: "/images/repairs/button-repair.webp",
-      time: "45–90 Minutes",
-      warranty: "90 Days",
+      time: "45â€“90 Minutes",
+      warranty: "1 Year",
       symptoms: [
         "Power Button Not Working",
         "Volume Button Stuck",
