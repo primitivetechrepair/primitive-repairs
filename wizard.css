@@ -9122,12 +9122,15 @@ body {
   }
 
   .mobile-sticky-booking-bar a {
+    --sticky-icon: none;
+
     min-width: 0;
     min-height: 46px;
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 6px;
 
     border-radius: 15px;
 
@@ -9143,7 +9146,25 @@ body {
     white-space: nowrap;
   }
 
+  .mobile-sticky-booking-bar a::before {
+    content: "";
+
+    width: 14px;
+    height: 14px;
+
+    flex: 0 0 14px;
+
+    display: inline-block;
+
+    background: currentColor;
+
+    -webkit-mask: var(--sticky-icon) center / contain no-repeat;
+    mask: var(--sticky-icon) center / contain no-repeat;
+  }
+
   .mobile-sticky-booking-primary {
+    --sticky-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M13 5h6v6h-2V8.41l-7.29 7.3-1.42-1.42 7.3-7.29H13V5ZM5 7h5v2H7v8h8v-3h2v5H5V7Z'/%3E%3C/svg%3E");
+
     background: var(--button-gradient);
     color: #ffffff;
 
@@ -9160,6 +9181,34 @@ body {
 
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.86);
+  }
+
+  .mobile-sticky-booking-secondary[href^="tel:"] {
+    --sticky-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z'/%3E%3C/svg%3E");
+
+    border-color: rgba(34, 197, 94, 0.34);
+    background:
+      radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 42%),
+      linear-gradient(135deg, #138a5a, #22c55e);
+    color: #ffffff;
+
+    box-shadow:
+      0 10px 22px rgba(34, 197, 94, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .mobile-sticky-booking-secondary[href^="sms:"] {
+    --sticky-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2Zm-2 12H6v-2h12v2Zm0-3H6V9h12v2Zm0-3H6V6h12v2Z'/%3E%3C/svg%3E");
+
+    border-color: rgba(7, 123, 255, 0.34);
+    background:
+      radial-gradient(circle at top left, rgba(255, 255, 255, 0.28), transparent 42%),
+      linear-gradient(135deg, #077bff, #42a5ff);
+    color: #ffffff;
+
+    box-shadow:
+      0 10px 22px rgba(7, 123, 255, 0.22),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   body.mobile-nav-open .mobile-sticky-booking-bar {
