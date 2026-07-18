@@ -2503,6 +2503,152 @@ text-align: center;
 }
 
 /* =========================================================
+   CUSTOMER FORM REPAIR SUMMARY
+========================================================= */
+
+.customer-repair-summary {
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 18px;
+
+  border: 1px solid rgba(102, 252, 241, 0.2);
+  border-radius: 22px;
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.12), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 247, 251, 0.78));
+
+  box-shadow:
+    0 16px 34px rgba(37, 40, 61, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.customer-repair-summary-header {
+  max-width: 720px;
+  margin: 0 auto 14px;
+
+  text-align: center;
+}
+
+.customer-repair-summary-header span {
+  display: inline-flex;
+  margin-bottom: 8px;
+
+  color: var(--primary-blue);
+
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.09em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.customer-repair-summary-header h3 {
+  margin: 0;
+
+  color: var(--accent);
+
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.customer-repair-summary-header p {
+  max-width: 560px;
+  margin: 8px auto 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.customer-repair-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.customer-repair-summary-item {
+  min-width: 0;
+  padding: 12px;
+
+  display: grid;
+  gap: 6px;
+
+  border: 1px solid rgba(37, 40, 61, 0.08);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.customer-repair-summary-item span {
+  color: var(--muted);
+
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.customer-repair-summary-item strong {
+  min-width: 0;
+
+  color: var(--accent);
+
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+
+  overflow-wrap: anywhere;
+}
+
+.customer-repair-summary-wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 760px) {
+  .customer-repair-summary {
+    margin-bottom: 14px;
+    padding: 13px;
+    border-radius: 20px;
+  }
+
+  .customer-repair-summary-header {
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .customer-repair-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .customer-repair-summary-item {
+    padding: 9px 10px;
+    border-radius: 14px;
+  }
+
+  .customer-repair-summary-item span {
+    font-size: 8px;
+  }
+
+  .customer-repair-summary-item strong {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  .customer-repair-summary-wide {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================================
    SELECTED CARD — MULTIPLE REPAIRS
 ========================================================= */
 

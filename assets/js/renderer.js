@@ -403,18 +403,147 @@ export function renderRepairStep(
   }
 }
 
+function escapeSummaryHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function getSelectedRepairsForSummary() {
+  if (Array.isArray(state.repairs) && state.repairs.length) {
+    return state.repairs;
+  }
+
+  return state.repair ? [state.repair] : [];
+}
+
+function getRepairCountLabel() {
+  const count = getSelectedRepairsForSummary().length;
+
+  if (!count) return "Not selected";
+
+  return count === 1
+    ? "1 Repair Selected"
+    : `${count} Repairs Selected`;
+}
+
+function getRepairTimeLabel() {
+  const times = [
+    ...new Set(
+      getSelectedRepairsForSummary()
+        .map((repair) => {
+          return repair?.time || repair?.estimatedTime || repair?.duration || "";
+        })
+        .filter(Boolean)
+    )
+  ];
+
+  return times.length ? times.join(" + ") : "Contact for estimate";
+}
+
+function getRepairWarrantyLabel() {
+  const warranties = [
+    ...new Set(
+      getSelectedRepairsForSummary()
+        .map((repair) => {
+          return repair?.warranty || repair?.warrantyLabel || "";
+        })
+        .filter(Boolean)
+    )
+  ];
+
+  if (warranties.length) {
+    return warranties.join(", ");
+  }
+
+  return getSelectedRepairsForSummary().length
+    ? "1-Year Warranty"
+    : "Not selected";
+}
+
 export function renderSummary(container) {
   if (!container) return;
 
+  const device = state.device || "Not selected";
+  const brand = state.brand || "Not selected";
+  const series = state.series || "Not selected";
+  const model = state.model?.model || state.model || "Not selected";
+  const repair = getSelectedRepairLabel();
+  const repairCount = getRepairCountLabel();
+  const estimatedTime = getRepairTimeLabel();
+  const warranty = getRepairWarrantyLabel();
+  const serviceType = serviceLabels[state.appointment?.serviceType] || "Not selected";
+  const preferredDate = formatDisplayDate(state.appointment?.date);
+  const preferredTime = state.appointment?.time || "Not selected";
+
   container.innerHTML = `
-    <p><strong>Device:</strong> ${state.device || "Not selected"}</p>
-    <p><strong>Brand:</strong> ${state.brand || "Not selected"}</p>
-    <p><strong>Series:</strong> ${state.series || "Not selected"}</p>
-    <p><strong>Model:</strong> ${state.model?.model || state.model || "Not selected"}</p>
-    <p><strong>Repair:</strong> ${getSelectedRepairLabel()}</p>
-    <p><strong>Service Type:</strong> ${serviceLabels[state.appointment?.serviceType] || "Not selected"}</p>
-    <p><strong>Preferred Date:</strong> ${formatDisplayDate(state.appointment?.date)}</p>
-    <p><strong>Preferred Time:</strong> ${state.appointment?.time || "Not selected"}</p>
+    <section class="customer-repair-summary">
+      <div class="customer-repair-summary-header">
+        <span>Repair Summary</span>
+        <h3>Your request so far.</h3>
+        <p>Confirm the repair details below, then add your contact information.</p>
+      </div>
+
+      <div class="customer-repair-summary-grid">
+        <div class="customer-repair-summary-item">
+          <span>Device</span>
+          <strong>${escapeSummaryHtml(device)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Brand</span>
+          <strong>${escapeSummaryHtml(brand)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Series</span>
+          <strong>${escapeSummaryHtml(series)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Model</span>
+          <strong>${escapeSummaryHtml(model)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item customer-repair-summary-wide">
+          <span>Selected Repair</span>
+          <strong>${escapeSummaryHtml(repair)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Repair Count</span>
+          <strong>${escapeSummaryHtml(repairCount)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Estimated Time</span>
+          <strong>${escapeSummaryHtml(estimatedTime)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Warranty</span>
+          <strong>${escapeSummaryHtml(warranty)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Service Type</span>
+          <strong>${escapeSummaryHtml(serviceType)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Preferred Date</span>
+          <strong>${escapeSummaryHtml(preferredDate)}</strong>
+        </div>
+
+        <div class="customer-repair-summary-item">
+          <span>Preferred Time</span>
+          <strong>${escapeSummaryHtml(preferredTime)}</strong>
+        </div>
+      </div>
+    </section>
   `;
 }
 
