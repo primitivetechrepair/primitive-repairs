@@ -214,15 +214,72 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  function getRepairSummaryText() {
-    const selectedRepairs = state.repairs?.length
+  function getSelectedRepairs() {
+    return state.repairs?.length
       ? state.repairs
       : [state.repair].filter(Boolean);
+  }
 
-    return selectedRepairs
+  function getRepairSummaryText() {
+    return getSelectedRepairs()
       .map((repair) => getSummaryText(repair))
       .filter(Boolean)
       .join(", ");
+  }
+
+  function getRepairCountSummaryText() {
+    const count = getSelectedRepairs().length;
+
+    if (!count) return "";
+
+    return count === 1
+      ? "1 Repair Selected"
+      : `${count} Repairs Selected`;
+  }
+
+  function getRepairTimeSummaryText() {
+    const times = [
+      ...new Set(
+        getSelectedRepairs()
+          .map((repair) => {
+            return (
+              repair.time ||
+              repair.estimatedTime ||
+              repair.duration ||
+              ""
+            );
+          })
+          .filter(Boolean)
+      )
+    ];
+
+    if (!times.length) return "";
+
+    return times.length === 1
+      ? times[0]
+      : times.join(" + ");
+  }
+
+  function getWarrantySummaryText() {
+    const warranties = [
+      ...new Set(
+        getSelectedRepairs()
+          .map((repair) => {
+            return (
+              repair.warranty ||
+              repair.warrantyLabel ||
+              ""
+            );
+          })
+          .filter(Boolean)
+      )
+    ];
+
+    if (warranties.length) {
+      return warranties.join(", ");
+    }
+
+    return getSelectedRepairs().length ? "1-Year Warranty" : "";
   }
 
   function getAppointmentSummaryText() {
@@ -236,6 +293,26 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     return appointmentLabels[serviceType] || getSummaryText(serviceType);
+  }
+
+  function isAfterAppointmentCutoff() {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: "America/New_York",
+      hour: "2-digit",
+      hourCycle: "h23"
+    }).formatToParts(new Date());
+
+    const hour = Number(
+      parts.find((part) => part.type === "hour")?.value || 0
+    );
+
+    return hour >= 19;
+  }
+
+  function getAfterHoursSummaryText() {
+    if (!isAfterAppointmentCutoff()) return "";
+
+    return "$35 convenience fee may apply";
   }
 
   function renderLiveRepairSummary() {
@@ -263,12 +340,25 @@ document.addEventListener("DOMContentLoaded", () => {
         value: getRepairSummaryText()
       },
       {
+        label: "Repair Count",
+        value: getRepairCountSummaryText()
+      },
+      {
+        label: "Estimated Time",
+        value: getRepairTimeSummaryText()
+      },
+      {
         label: "Appointment",
         value: getAppointmentSummaryText()
       },
       {
         label: "Warranty",
-        value: state.repair ? "1-Year Warranty" : ""
+        value: getWarrantySummaryText()
+      },
+      {
+        label: "After 7 PM ET",
+        value: getAfterHoursSummaryText(),
+        tone: "warning"
       }
     ].filter((item) => item.value);
 
@@ -281,14 +371,14 @@ document.addEventListener("DOMContentLoaded", () => {
     summaryCard.innerHTML = `
       <div class="wizard-live-summary-header">
         <span>Repair Request Summary</span>
-        <strong>${summaryItems.length} step${summaryItems.length === 1 ? "" : "s"} selected</strong>
+        <strong>${summaryItems.length} detail${summaryItems.length === 1 ? "" : "s"} selected</strong>
       </div>
 
       <div class="wizard-live-summary-grid">
         ${summaryItems
           .map((item) => {
             return `
-              <div class="wizard-live-summary-item">
+              <div class="wizard-live-summary-item${item.tone ? ` is-${item.tone}` : ""}">
                 <span>${escapeSummaryValue(item.label)}</span>
                 <strong>${escapeSummaryValue(item.value)}</strong>
               </div>
