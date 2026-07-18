@@ -9162,8 +9162,12 @@ body {
     mask: var(--sticky-icon) center / contain no-repeat;
   }
 
+  .mobile-sticky-booking-primary::before {
+    display: none;
+  }
+
   .mobile-sticky-booking-primary {
-    --sticky-icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M13 5h6v6h-2V8.41l-7.29 7.3-1.42-1.42 7.3-7.29H13V5ZM5 7h5v2H7v8h8v-3h2v5H5V7Z'/%3E%3C/svg%3E");
+    --sticky-icon: none;
 
     background: var(--button-gradient);
     color: #ffffff;
