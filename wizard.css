@@ -695,7 +695,7 @@ body.mobile-nav-open {
 
 .landing-hero,
 .landing-section {
-  width: min(1535px, calc(100% - 24px));
+  width: min(1416px, calc(100% - 24px));
   margin: 0 auto 18px;
 }
 
@@ -3859,7 +3859,7 @@ backdrop-filter: blur(16px) saturate(170%);
   max-width: none;
 
   margin: clamp(48px, 8vw, 96px) calc(50% - 50vw) 0;
-  padding: 28px max(24px, calc((100vw - 1180px) / 2 + 24px));
+  padding: 28px max(24px, calc((100vw - 1416px) / 2 + 24px));
 
   border-top: 1px solid rgba(102, 252, 241, 0.28);
   border-right: none;
@@ -4143,8 +4143,8 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 #primitive-wizard-container {
-  width: min(1180px, calc(100% - 32px));
-  max-width: 1180px;
+  width: min(1416px, calc(100% - 32px));
+  max-width: 1416px;
 
   margin: 0 auto 22px;
   padding: 0;
