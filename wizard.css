@@ -2338,6 +2338,131 @@ text-align: center;
 }
 
 /* =========================================================
+   LIVE REPAIR REQUEST SUMMARY
+========================================================= */
+
+.wizard-live-summary {
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 16px;
+
+  border: 1px solid rgba(102, 252, 241, 0.2);
+  border-radius: 22px;
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.12), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 247, 251, 0.78));
+
+  box-shadow:
+    0 14px 30px rgba(37, 40, 61, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+}
+
+.wizard-live-summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+
+.wizard-live-summary-header span {
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 950;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wizard-live-summary-header strong {
+  padding: 6px 9px;
+
+  border: 1px solid rgba(102, 252, 241, 0.28);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--muted);
+
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.wizard-live-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.wizard-live-summary-item {
+  min-width: 0;
+  padding: 11px 12px;
+
+  display: grid;
+  gap: 5px;
+
+  border: 1px solid rgba(37, 40, 61, 0.08);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.wizard-live-summary-item span {
+  color: var(--muted);
+
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.wizard-live-summary-item strong {
+  min-width: 0;
+
+  color: var(--accent);
+
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.25;
+
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .wizard-live-summary {
+    margin-bottom: 14px;
+    padding: 13px;
+    border-radius: 20px;
+  }
+
+  .wizard-live-summary-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .wizard-live-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .wizard-live-summary-item {
+    padding: 10px 11px;
+    border-radius: 14px;
+  }
+}
+
+/* =========================================================
    SELECTED CARD — MULTIPLE REPAIRS
 ========================================================= */
 

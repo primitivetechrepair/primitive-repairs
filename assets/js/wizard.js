@@ -187,6 +187,120 @@ let repairSubmitLocked = false;
       "Enter the location related to your selected service option.";
   }
 
+    function escapeSummaryValue(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function getSummaryText(value) {
+    if (!value) return "";
+
+    if (typeof value === "string") {
+      return value;
+    }
+
+    return (
+      value.name ||
+      value.model ||
+      value.label ||
+      value.title ||
+      value.repair ||
+      value.serviceType ||
+      ""
+    );
+  }
+
+  function getRepairSummaryText() {
+    const selectedRepairs = state.repairs?.length
+      ? state.repairs
+      : [state.repair].filter(Boolean);
+
+    return selectedRepairs
+      .map((repair) => getSummaryText(repair))
+      .filter(Boolean)
+      .join(", ");
+  }
+
+  function getAppointmentSummaryText() {
+    const serviceType = state.appointment?.serviceType;
+
+    const appointmentLabels = {
+      "meet-up": "Meet-Up",
+      pickup: "Pickup",
+      onsite: "Onsite",
+      "mail-in": "Mail-In"
+    };
+
+    return appointmentLabels[serviceType] || getSummaryText(serviceType);
+  }
+
+  function renderLiveRepairSummary() {
+    if (!stepsArea) return;
+
+    const summaryItems = [
+      {
+        label: "Device",
+        value: state.device
+      },
+      {
+        label: "Brand",
+        value: state.brand
+      },
+      {
+        label: "Series",
+        value: state.series
+      },
+      {
+        label: "Model",
+        value: getSummaryText(state.model)
+      },
+      {
+        label: "Repair",
+        value: getRepairSummaryText()
+      },
+      {
+        label: "Appointment",
+        value: getAppointmentSummaryText()
+      },
+      {
+        label: "Warranty",
+        value: state.repair ? "1-Year Warranty" : ""
+      }
+    ].filter((item) => item.value);
+
+    if (!summaryItems.length) return;
+
+    const summaryCard = document.createElement("section");
+    summaryCard.className = "wizard-live-summary";
+    summaryCard.setAttribute("aria-label", "Repair request summary");
+
+    summaryCard.innerHTML = `
+      <div class="wizard-live-summary-header">
+        <span>Repair Request Summary</span>
+        <strong>${summaryItems.length} step${summaryItems.length === 1 ? "" : "s"} selected</strong>
+      </div>
+
+      <div class="wizard-live-summary-grid">
+        ${summaryItems
+          .map((item) => {
+            return `
+              <div class="wizard-live-summary-item">
+                <span>${escapeSummaryValue(item.label)}</span>
+                <strong>${escapeSummaryValue(item.value)}</strong>
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+
+    stepsArea.appendChild(summaryCard);
+  }
+
   function renderFilePreviews() {
     if (!fileInput || !filePreviews) return;
 
@@ -277,6 +391,8 @@ let repairSubmitLocked = false;
 
       renderWizard(true);
     });
+
+    renderLiveRepairSummary();
 
     if (!state.device) {
       renderDeviceStep(stepsArea, devices, (device) => {
