@@ -6127,7 +6127,7 @@ backdrop-filter: blur(16px) saturate(170%);
 .model-search-panel,
 #pr-steps-area.animated-area:has(.model-search-panel) .model-search-panel {
   width: 100%;
-  max-width: 860px;
+  max-width: 100%;
   margin: 0 auto 18px;
   padding: 18px;
 
@@ -6595,7 +6595,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .repair-details-panel {
-  max-width: 860px;
+  max-width: 100%;
   padding: 28px;
   border-radius: 20px;
 
@@ -6881,7 +6881,7 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 .repair-info-panel {
-  max-width: 860px;
+  max-width: 100%;
   overflow: hidden;
   border-radius: 18px;
 
@@ -7182,7 +7182,7 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 .appointment-panel {
-  max-width: 860px;
+  max-width: 100%;
   padding: 28px;
   border-radius: 18px;
 
@@ -7576,7 +7576,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
 #pr-form-area {
   width: 100%;
-  max-width: 860px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -8610,7 +8610,7 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 .review-panel {
-  max-width: 900px;
+  max-width: 100%;
   padding: 30px;
   border-radius: 20px;
 
@@ -8970,7 +8970,7 @@ backdrop-filter: blur(16px) saturate(170%);
 ========================================================= */
 
 .success-panel {
-  max-width: 760px;
+  max-width: 100%;
   padding: 34px;
 
   border-radius: 22px;
