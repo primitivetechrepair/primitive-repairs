@@ -126,6 +126,20 @@
         <a href="/#primitive-wizard-container">Start a repair request</a>
       </div>
     </aside>
+
+    <div class="mobile-sticky-booking-bar" id="mobile-sticky-booking-bar" aria-label="Quick repair actions">
+      <a href="/#primitive-wizard-container" class="mobile-sticky-booking-primary">
+        Start Repair
+      </a>
+
+      <a href="tel:+13059074308" class="mobile-sticky-booking-secondary">
+        Call
+      </a>
+
+      <a href="sms:+13059074308" class="mobile-sticky-booking-secondary">
+        Text
+      </a>
+    </div>
   `;
 
   const cutoffBanner = document.getElementById("appointment-deadline-banner");

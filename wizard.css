@@ -463,6 +463,12 @@ button {
   display: none;
 }
 
+/* ---------- Mobile Sticky Booking Bar ---------- */
+
+.mobile-sticky-booking-bar {
+  display: none;
+}
+
 /* ---------- Mobile Navigation Drawer ---------- */
 
 .mobile-nav-overlay {
@@ -8966,6 +8972,7 @@ html {
 
 body {
   padding-top: 156px;
+  padding-bottom: calc(86px + env(safe-area-inset-bottom));
 }
 
 #primitive-wizard-container,
@@ -9078,6 +9085,83 @@ body {
     min-height: 520px;
     padding: 44px 18px;
     border-radius: 22px;
+  }
+
+  /* ---------- Mobile Sticky Booking Bar ---------- */
+
+  .mobile-sticky-booking-bar {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: calc(10px + env(safe-area-inset-bottom));
+    z-index: 9997;
+
+    min-height: 62px;
+    padding: 8px;
+
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr 0.75fr;
+    gap: 8px;
+
+    border: 1px solid rgba(102, 252, 241, 0.26);
+    border-radius: 22px;
+
+    background:
+      radial-gradient(circle at top left, rgba(102, 252, 241, 0.18), transparent 38%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(247, 247, 251, 0.86));
+
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+    box-shadow:
+      0 18px 42px rgba(37, 40, 61, 0.24),
+      inset 0 1px 0 rgba(255, 255, 255, 0.92);
+  }
+
+  .mobile-sticky-booking-bar a {
+    min-width: 0;
+    min-height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+  }
+
+  .mobile-sticky-booking-primary {
+    background: var(--button-gradient);
+    color: #ffffff;
+
+    box-shadow:
+      0 12px 24px rgba(7, 123, 255, 0.22),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  }
+
+  .mobile-sticky-booking-secondary {
+    border: 1px solid rgba(37, 40, 61, 0.12);
+
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--accent);
+
+    box-shadow:
+      0 8px 18px rgba(37, 40, 61, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  }
+
+  body.mobile-nav-open .mobile-sticky-booking-bar {
+    display: none;
   }
 
   .landing-hero-inner::before {
@@ -9786,8 +9870,8 @@ body {
   }
 
   body {
-  padding: 124px 10px 10px;
-}
+    padding: 156px 10px calc(86px + env(safe-area-inset-bottom));
+  }
 
   #primitive-wizard-container {
   width: 100%;
