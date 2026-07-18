@@ -695,8 +695,12 @@ body.mobile-nav-open {
 
 .landing-hero,
 .landing-section {
-  width: min(1180px, calc(100% - 24px));
-  margin: 0 auto 18px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.landing-hero {
+  margin-top: 0;
 }
 
 .landing-hero-inner {
@@ -8961,24 +8965,24 @@ backdrop-filter: blur(16px) saturate(170%);
 /* ---------- Appointment Cutoff Banner Mobile ---------- */
 
 html {
-  scroll-padding-top: 190px;
+  scroll-padding-top: 162px;
 }
 
 body {
-  padding-top: 184px;
+  padding-top: 156px;
 }
 
 #primitive-wizard-container,
 #repair-services,
 #how-it-works {
-  scroll-margin-top: 190px;
+  scroll-margin-top: 162px;
 }
 
 .appointment-deadline-banner {
-  top: 104px;
-  min-height: 72px;
-  padding: 9px 12px;
-  gap: 8px;
+  top: 78px;
+  min-height: 68px;
+  padding: 8px 12px;
+  gap: 7px;
 }
 
 .appointment-deadline-pill {
