@@ -2496,7 +2496,6 @@ text-align: center;
     line-height: 1.2;
   }
 
-  .wizard-live-summary-item:nth-child(4),
   .wizard-live-summary-item:nth-child(5),
   .wizard-live-summary-item.is-warning {
     grid-column: 1 / -1;
