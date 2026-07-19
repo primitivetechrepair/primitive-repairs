@@ -1074,7 +1074,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
       </div>
 
       <div class="review-grid">
-        <div class="review-card review-card-wide">
+        <div class="review-card review-card-request">
           <h4>Request Overview</h4>
           ${renderReviewRow("Request ID", requestId, "Pending")}
           ${renderReviewRow("Status", status, "New")}
@@ -1083,7 +1083,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("Attachment Count", `${attachmentCount}`)}
         </div>
 
-        <div class="review-card">
+        <div class="review-card review-card-customer">
           <h4>Customer</h4>
           ${renderReviewRow("Name", customer.name)}
           ${renderReviewRow("Phone", customer.phone)}
@@ -1093,7 +1093,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("ZIP", customer.zip)}
         </div>
 
-        <div class="review-card">
+        <div class="review-card review-card-device">
           <h4>Device</h4>
           ${renderReviewRow("Device", device.type, "Not selected")}
           ${renderReviewRow("Brand", device.brand, "Not selected")}
@@ -1101,19 +1101,19 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("Model", device.model, "Not selected")}
         </div>
 
-        <div class="review-card review-card-repairs">
+        <div class="review-card review-card-repairs review-card-selected-repairs">
           <h4>Selected Repairs</h4>
           ${repairsMarkup}
         </div>
 
-        <div class="review-card">
+        <div class="review-card review-card-appointment">
           <h4>Appointment</h4>
           ${renderReviewRow("Service Type", serviceType, "Not selected")}
           ${renderReviewRow("Preferred Date", preferredDate, "Not selected")}
           ${renderReviewRow("Preferred Time", preferredTime, "Not selected")}
         </div>
 
-        <div class="review-card">
+        <div class="review-card review-card-notes">
           <h4>Notes & Files</h4>
           ${renderReviewRow("Notes", leadPayload.notes, "None")}
           ${renderReviewRow("Attachments", `${attachmentCount}`)}

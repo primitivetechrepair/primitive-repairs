@@ -10962,56 +10962,63 @@ body {
   max-width: 100% !important;
 }
 
-/* Final Review custom desktop row pairing */
+/* Final Review explicit desktop grid areas */
 @media (min-width: 701px) {
-  .review-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .review-panel .review-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-areas:
+      "request customer"
+      "device repairs"
+      "notes appointment" !important;
     align-items: stretch;
   }
 
-  .review-grid > .review-card,
-  .review-grid > .review-card-wide,
-  .review-grid > .review-card-repairs {
-    grid-column: auto;
+  .review-panel .review-card,
+  .review-panel .review-card-wide,
+  .review-panel .review-card-repairs,
+  .review-panel .review-card-selected-repairs {
+    grid-column: auto !important;
     width: 100%;
   }
 
-  .review-grid > :nth-child(1) {
-    order: 1;
+  .review-panel .review-card-request {
+    grid-area: request !important;
   }
 
-  .review-grid > :nth-child(2) {
-    order: 2;
+  .review-panel .review-card-customer {
+    grid-area: customer !important;
   }
 
-  .review-grid > :nth-child(3) {
-    order: 3;
+  .review-panel .review-card-device {
+    grid-area: device !important;
   }
 
-  .review-grid > :nth-child(4) {
-    order: 4;
+  .review-panel .review-card-selected-repairs {
+    grid-area: repairs !important;
   }
 
-  .review-grid > :nth-child(6) {
-    order: 5;
+  .review-panel .review-card-notes {
+    grid-area: notes !important;
   }
 
-  .review-grid > :nth-child(5) {
-    order: 6;
+  .review-panel .review-card-appointment {
+    grid-area: appointment !important;
   }
 }
 
 /* Final Review stacks on mobile */
 @media (max-width: 700px) {
-  .review-grid {
-    grid-template-columns: 1fr;
+  .review-panel .review-grid {
+    grid-template-columns: 1fr !important;
   }
 
-  .review-grid > .review-card,
-  .review-grid > .review-card-wide,
-  .review-grid > .review-card-repairs {
-    grid-column: 1 / -1;
+  .review-panel .review-card,
+  .review-panel .review-card-wide,
+  .review-panel .review-card-repairs,
+  .review-panel .review-card-selected-repairs {
+    grid-area: auto !important;
+    grid-column: 1 / -1 !important;
   }
 }
 /* Mobile wizard option cards */
