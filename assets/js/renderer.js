@@ -1306,3 +1306,46 @@ blueprintCardClickObserver.observe(document.documentElement, {
 });
 
 /* END REPAIR BLUEPRINT FULL CARD CLICK TARGETS */
+/* =========================================================
+   REPAIR BLUEPRINT COMPLETION COUNTER
+========================================================= */
+
+function syncBlueprintCompletionCounter() {
+  const root = document.querySelector("#pr-selection-cards.blueprint-selection-module");
+
+  if (!root) return;
+
+  const header = root.querySelector(".blueprint-profile-header");
+  const cards = Array.from(root.querySelectorAll(".pr-progress-card"));
+  const total = cards.length || 5;
+  const completed = cards.filter((card) => card.classList.contains("filled")).length;
+
+  if (!header) return;
+
+  let counter = header.querySelector(".blueprint-completion-counter");
+
+  if (!counter) {
+    counter = document.createElement("span");
+    counter.className = "blueprint-completion-counter";
+    header.appendChild(counter);
+  }
+
+  counter.textContent = `${completed}/${total} Complete`;
+  counter.classList.toggle("is-complete", completed === total);
+}
+
+document.addEventListener("DOMContentLoaded", syncBlueprintCompletionCounter);
+window.addEventListener("load", syncBlueprintCompletionCounter);
+
+const blueprintCompletionCounterObserver = new MutationObserver(() => {
+  syncBlueprintCompletionCounter();
+});
+
+blueprintCompletionCounterObserver.observe(document.documentElement, {
+  childList: true,
+  subtree: true,
+  attributes: true,
+  attributeFilter: ["class"]
+});
+
+/* END REPAIR BLUEPRINT COMPLETION COUNTER */
