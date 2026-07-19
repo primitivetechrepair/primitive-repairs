@@ -11525,7 +11525,80 @@ body {
   }
 }
 /* =========================================================
-   WIZARD ACTION BUTTON CLARITY
+   /* =========================================================
+   MOBILE STEP PROGRESS SIMPLIFICATION
+========================================================= */
+
+@media (max-width: 700px) {
+  #pr-selection-cards.selection-cards .card {
+    overflow: visible;
+  }
+
+  #pr-selection-cards.selection-cards .card::before {
+    top: 8px;
+    left: 8px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 10px;
+
+    box-shadow:
+      0 6px 12px rgba(37, 40, 61, 0.12);
+  }
+
+  #pr-selection-cards.selection-cards .card::after {
+    display: none;
+  }
+
+  #pr-selection-cards.selection-cards .card.is-current-step {
+    margin-bottom: 30px;
+  }
+
+  #pr-selection-cards.selection-cards .card.is-current-step::after {
+    content: "Current Step";
+
+    position: absolute;
+    top: auto;
+    right: 10px;
+    bottom: -24px;
+    left: 10px;
+    z-index: 5;
+
+    min-height: 22px;
+    padding: 0 10px;
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #25283d, #077bff);
+    color: #ffffff;
+
+    font-family: var(--font-display);
+    font-size: 10px;
+    font-weight: 950;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-transform: uppercase;
+
+    border: 1px solid rgba(102, 252, 241, 0.42);
+
+    box-shadow:
+      0 10px 20px rgba(7, 123, 255, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  }
+
+  #pr-selection-cards.selection-cards .card.is-complete-step::before {
+    content: "✓";
+  }
+
+  #pr-selection-cards.selection-cards .card.is-upcoming-step::before {
+    content: attr(data-step-number);
+  }
+}
+WIZARD ACTION BUTTON CLARITY
 ========================================================= */
 
 #primitive-wizard-container .form-actions,
