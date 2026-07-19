@@ -10937,48 +10937,6 @@ body {
   line-height: 1.5;
 }
 
-/* Mobile selection card safe inset */
-#pr-selection-cards .card,
-#pr-steps-area.animated-area .opt-card,
-.device-card-results .opt-card,
-.brand-card-results .opt-card,
-.series-card-results .opt-card,
-.model-card-results .opt-card,
-.repair-card-results .opt-card {
-  width: calc(100% - 8px);
-  justify-self: center;
-  transform: none;
-}
-
-#pr-selection-cards .card:hover,
-#pr-selection-cards .card.filled,
-#pr-selection-cards .card.filled:hover,
-#pr-steps-area.animated-area .opt-card:hover,
-#pr-steps-area.animated-area .opt-card.is-selected,
-.device-card-results .opt-card:hover,
-.device-card-results .opt-card.is-selected,
-.brand-card-results .opt-card:hover,
-.brand-card-results .opt-card.is-selected,
-.series-card-results .opt-card:hover,
-.series-card-results .opt-card.is-selected,
-.model-card-results .opt-card:hover,
-.model-card-results .opt-card.is-selected,
-.repair-card-results .opt-card:hover,
-.repair-card-results .opt-card.is-selected {
-  transform: none;
-}
-
-#pr-selection-cards .card.filled,
-#pr-steps-area.animated-area .opt-card.is-selected,
-.device-card-results .opt-card.is-selected,
-.brand-card-results .opt-card.is-selected,
-.series-card-results .opt-card.is-selected,
-.model-card-results .opt-card.is-selected,
-.repair-card-results .opt-card.is-selected {
-  box-shadow:
-    inset 0 0 0 2px rgba(102, 252, 241, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.22);
-}
 /* Force step area wrapper to full width on mobile */
 #pr-steps-area.animated-area {
   width: 100% !important;
@@ -11017,8 +10975,8 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 12px;
 
-  padding: 0 0 10px;
-  overflow-x: hidden;
+  padding: 18px 14px 22px;
+  overflow: visible;
 }
 
 .device-card-results .opt-card,
@@ -11026,11 +10984,12 @@ body {
 .series-card-results .opt-card,
 .model-card-results .opt-card,
 .repair-card-results .opt-card {
-  width: 100%;
+  width: calc(100% - 14px);
   min-width: 0;
   max-width: none;
   min-height: 156px;
 
+  justify-self: center;
   flex: initial;
 }
 
