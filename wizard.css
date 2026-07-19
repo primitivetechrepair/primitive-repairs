@@ -12589,4 +12589,99 @@ html.service-hours-closed .service-hours-booking-disabled {
 #primitive-wizard-container .repair-details-instruction-centered * {
   text-align: center !important;
 }
+/* =========================================================
+   REPAIR BLUEPRINT SELECTED IMAGE ICONS
+========================================================= */
+
+/* Hide the static blue blueprint artwork layer. */
+#pr-selection-cards.blueprint-selection-module .ape-cell-art,
+#pr-selection-cards.blueprint-selection-module .ape-cell-art::before,
+#pr-selection-cards.blueprint-selection-module .ape-cell-art::after {
+  display: none !important;
+  content: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Make the real selected image container the visual icon. */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
+  grid-row: 2 !important;
+  align-self: center !important;
+  justify-self: center !important;
+
+  display: block !important;
+
+  width: 92px !important;
+  height: 92px !important;
+  min-width: 92px !important;
+  min-height: 92px !important;
+  max-width: 92px !important;
+  max-height: 92px !important;
+
+  margin: 0 auto !important;
+  padding: 0 !important;
+
+  border-radius: 18px !important;
+
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 12px 26px rgba(0, 0, 0, 0.16) !important;
+
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Empty state: no blue icon, just a clean image slot. */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card:not(.filled) .card-img {
+  border: 1px dashed rgba(198, 212, 255, 0.26) !important;
+  background-image: none !important;
+  background-color: rgba(255, 255, 255, 0.045) !important;
+  box-shadow: inset 0 0 0 1px rgba(144, 255, 220, 0.06) !important;
+  opacity: 0.72 !important;
+}
+
+/* Filled state: selected image becomes the icon. */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-img,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-complete-step .card-img {
+  border: 1px solid rgba(144, 255, 220, 0.22) !important;
+  background-color: rgba(255, 255, 255, 0.10) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 14px 30px rgba(0, 0, 0, 0.20),
+    0 0 0 1px rgba(144, 255, 220, 0.08) !important;
+}
+
+/* Keep selected images responsive on smaller screens. */
+@media (max-width: 700px) {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
+    width: 74px !important;
+    height: 74px !important;
+    min-width: 74px !important;
+    min-height: 74px !important;
+    max-width: 74px !important;
+    max-height: 74px !important;
+
+    border-radius: 15px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+
+    border-radius: 12px !important;
+  }
+}
 
