@@ -10680,8 +10680,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
-  padding: 0;
-  overflow-x: hidden;
+  padding: 8px 3px 12px;
+  overflow: visible;
 }
 
   #pr-steps-area.animated-area:has(.opt-card) .opt-card,
@@ -10692,6 +10692,17 @@ body {
     min-width: 0;
     max-width: none;
     flex: initial;
+  }
+
+    #pr-steps-area.animated-area:has(.opt-card) .opt-card:hover,
+  #pr-steps-area.animated-area:has(.opt-card) .opt-card.is-selected,
+  #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results .opt-card:hover,
+  #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results .opt-card.is-selected,
+  .model-card-results .opt-card:hover,
+  .model-card-results .opt-card.is-selected,
+  .repair-card-results .opt-card:hover,
+  .repair-card-results .opt-card.is-selected {
+    transform: none;
   }
 
   .model-search-panel,
