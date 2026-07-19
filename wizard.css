@@ -11845,4 +11845,51 @@ body {
     font-size: 6.25px;
   }
 }
+/* =========================================================
+   HEADER CARD CONNECTED WIDTH PASS
+========================================================= */
+
+#pr-selection-cards.pr-header-selection-cards {
+  gap: 0 !important;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card {
+  border-radius: 0 !important;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card:not(:first-child) {
+  border-left: 0 !important;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card:first-child {
+  border-top-left-radius: 14px !important;
+  border-bottom-left-radius: 14px !important;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card:last-child {
+  border-top-right-radius: 14px !important;
+  border-bottom-right-radius: 14px !important;
+}
+
+@media (min-width: 701px) {
+  #pr-selection-cards.pr-header-selection-cards {
+    gap: 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  #pr-selection-cards.pr-header-selection-cards {
+    gap: 0 !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:first-child {
+    border-top-left-radius: 11px !important;
+    border-bottom-left-radius: 11px !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:last-child {
+    border-top-right-radius: 11px !important;
+    border-bottom-right-radius: 11px !important;
+  }
+}
 
