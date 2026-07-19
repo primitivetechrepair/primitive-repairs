@@ -938,103 +938,178 @@ container.innerHTML = `
 export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
   if (!container || !leadPayload) return;
 
-  const requestId = leadPayload.requestId || "Pending";
+  function escapeReviewHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  function reviewValue(value, fallback = "Not provided") {
+    const cleanValue = String(value || "").trim();
+
+    return cleanValue || fallback;
+  }
+
+  function renderReviewRow(label, value, fallback = "Not provided") {
+    return `
+      <p>
+        <strong>${escapeReviewHtml(label)}</strong>
+        <span>${escapeReviewHtml(reviewValue(value, fallback))}</span>
+      </p>
+    `;
+  }
+
+  function getSelectedRepairsFromPayload() {
+    if (Array.isArray(leadPayload.repairs) && leadPayload.repairs.length) {
+      return leadPayload.repairs;
+    }
+
+    if (leadPayload.repair) {
+      return [leadPayload.repair];
+    }
+
+    return [];
+  }
+
+  const requestId = reviewValue(leadPayload.requestId, "Pending");
+  const status = reviewValue(leadPayload.status, "New");
+  const source = reviewValue(leadPayload.source, "Repair Wizard");
+
+  const customer = leadPayload.customer || {};
+  const device = leadPayload.device || {};
+  const appointment = leadPayload.appointment || {};
+
+  const selectedRepairs = getSelectedRepairsFromPayload();
 
   const attachments = Array.isArray(leadPayload.attachments)
-  ? leadPayload.attachments
-  : [];
+    ? leadPayload.attachments
+    : [];
 
-const attachmentCount = attachments.length;
-
-const attachmentsMarkup = attachments.length
-  ? `
-      <div class="review-attachments-list">
-        ${attachments.map((file) => `
-          <div class="review-attachment-item">
-            <span class="review-attachment-icon">📎</span>
-            <span class="review-attachment-name">${file.name || "Attachment"}</span>
-            <span class="review-attachment-size">
-              ${file.size ? `${Math.round(file.size / 1024)} KB` : ""}
-            </span>
-          </div>
-        `).join("")}
-      </div>
-    `
-  : `<p><strong>Attachments:</strong> None</p>`;
-
-  const selectedRepairs =
-    Array.isArray(leadPayload.repairs) && leadPayload.repairs.length
-      ? leadPayload.repairs
-      : leadPayload.repair
-        ? [leadPayload.repair]
-        : [];
+  const attachmentCount = attachments.length;
 
   const repairsMarkup = selectedRepairs.length
     ? selectedRepairs
-        .map((repair) => {
+        .map((repair, index) => {
+          const repairName = reviewValue(
+            repair.name || repair.repair || repair.label,
+            `Repair ${index + 1}`
+          );
+
+          const repairDetails = reviewValue(
+            repair.details || repair.notes,
+            "No extra details provided"
+          );
+
+          const estimatedTime = reviewValue(
+            repair.time || repair.estimatedTime || repair.duration,
+            "Contact for estimate"
+          );
+
+          const warranty = reviewValue(
+            repair.warranty || repair.warrantyLabel,
+            "Warranty details after inspection"
+          );
+
           return `
             <div class="review-repair-item">
-              <p><strong>Repair:</strong> ${repair.name || "Not selected"}</p>
-              <p><strong>Estimated Time:</strong> ${repair.time || "Contact for estimate"}</p>
-              <p><strong>Warranty:</strong> ${repair.warranty || "Provided after inspection"}</p>
+              ${renderReviewRow("Repair", repairName, "Not selected")}
+              ${renderReviewRow("Estimated Time", estimatedTime, "Contact for estimate")}
+              ${renderReviewRow("Warranty", warranty, "Warranty details after inspection")}
+              ${renderReviewRow("Issue Details", repairDetails, "No extra details provided")}
             </div>
           `;
         })
         .join("")
-    : `<p><strong>Repair:</strong> Not selected</p>`;
+    : `
+        <div class="review-repair-item">
+          ${renderReviewRow("Repair", "Not selected")}
+        </div>
+      `;
+
+  const attachmentsMarkup = attachments.length
+    ? `
+        <div class="review-attachments-list">
+          ${attachments
+            .map((file) => {
+              const fileName = reviewValue(file.name, "Attachment");
+              const fileSize = file.size
+                ? `${Math.round(file.size / 1024)} KB`
+                : "";
+
+              return `
+                <div class="review-attachment-item">
+                  <span class="review-attachment-icon">File</span>
+                  <span class="review-attachment-name">${escapeReviewHtml(fileName)}</span>
+                  <span class="review-attachment-size">${escapeReviewHtml(fileSize)}</span>
+                </div>
+              `;
+            })
+            .join("")}
+        </div>
+      `
+    : `<p><strong>Attachments</strong><span>None</span></p>`;
+
+  const serviceType = serviceLabels[appointment.serviceType] || appointment.serviceType || "Not selected";
+  const preferredDate = formatDisplayDate(appointment.date);
+  const preferredTime = appointment.time || "Not selected";
 
   container.innerHTML = `
     <section class="review-panel">
       <div class="option-section-header review-option-header">
-        <span>Review Request</span>
+        <span>Final Review</span>
         <h3>Confirm your repair request.</h3>
-        <p>Please review your device, service, appointment, notes, and attachments before submitting.</p>
+        <p>Review everything below before submitting. You can go back if anything needs to be changed.</p>
       </div>
 
       <div class="review-grid">
         <div class="review-card review-card-wide">
-          <h4>Request</h4>
-          <p><strong>Request ID:</strong> ${requestId}</p>
-          <p><strong>Status:</strong> ${leadPayload.status || "New"}</p>
-          <p><strong>Source:</strong> ${leadPayload.source || "repair-wizard"}</p>
+          <h4>Request Overview</h4>
+          ${renderReviewRow("Request ID", requestId, "Pending")}
+          ${renderReviewRow("Status", status, "New")}
+          ${renderReviewRow("Source", source, "Repair Wizard")}
+          ${renderReviewRow("Repair Count", selectedRepairs.length ? `${selectedRepairs.length}` : "0")}
+          ${renderReviewRow("Attachment Count", `${attachmentCount}`)}
         </div>
 
         <div class="review-card">
           <h4>Customer</h4>
-          <p><strong>Name:</strong> ${leadPayload.customer.name || "Not provided"}</p>
-          <p><strong>Phone:</strong> ${leadPayload.customer.phone || "Not provided"}</p>
-          <p><strong>Email:</strong> ${leadPayload.customer.email || "Not provided"}</p>
-          <p><strong>Location:</strong> ${leadPayload.customer.serviceLocation || "Not provided"}</p>
-          <p><strong>Apt / Suite:</strong> ${leadPayload.customer.apt || "N/A"}</p>
-          <p><strong>ZIP:</strong> ${leadPayload.customer.zip || "Not provided"}</p>
+          ${renderReviewRow("Name", customer.name)}
+          ${renderReviewRow("Phone", customer.phone)}
+          ${renderReviewRow("Email", customer.email)}
+          ${renderReviewRow("Location", customer.serviceLocation)}
+          ${renderReviewRow("Apt / Suite", customer.apt, "N/A")}
+          ${renderReviewRow("ZIP", customer.zip)}
         </div>
 
         <div class="review-card">
           <h4>Device</h4>
-          <p><strong>Device:</strong> ${leadPayload.device.type || "Not selected"}</p>
-          <p><strong>Brand:</strong> ${leadPayload.device.brand || "Not selected"}</p>
-          <p><strong>Series:</strong> ${leadPayload.device.series || "Not selected"}</p>
-          <p><strong>Model:</strong> ${leadPayload.device.model || "Not selected"}</p>
+          ${renderReviewRow("Device", device.type, "Not selected")}
+          ${renderReviewRow("Brand", device.brand, "Not selected")}
+          ${renderReviewRow("Series", device.series, "Not selected")}
+          ${renderReviewRow("Model", device.model, "Not selected")}
         </div>
 
         <div class="review-card review-card-repairs">
-          <h4>Repairs</h4>
+          <h4>Selected Repairs</h4>
           ${repairsMarkup}
         </div>
 
         <div class="review-card">
           <h4>Appointment</h4>
-          <p><strong>Service Type:</strong> ${serviceLabels[leadPayload.appointment.serviceType] || "Not selected"}</p>
-          <p><strong>Date:</strong> ${formatDisplayDate(leadPayload.appointment.date)}</p>
-          <p><strong>Time:</strong> ${leadPayload.appointment.time || "Not selected"}</p>
+          ${renderReviewRow("Service Type", serviceType, "Not selected")}
+          ${renderReviewRow("Preferred Date", preferredDate, "Not selected")}
+          ${renderReviewRow("Preferred Time", preferredTime, "Not selected")}
         </div>
 
         <div class="review-card">
-  <h4>Notes & Attachments</h4>
-  <p><strong>Notes:</strong> ${leadPayload.notes || "None"}</p>
-  <p><strong>Attachments:</strong> ${attachmentCount}</p>
-  ${attachmentsMarkup}
-</div>
+          <h4>Notes & Files</h4>
+          ${renderReviewRow("Notes", leadPayload.notes, "None")}
+          ${renderReviewRow("Attachments", `${attachmentCount}`)}
+          ${attachmentsMarkup}
+        </div>
       </div>
 
       <div class="review-actions">
@@ -1056,21 +1131,21 @@ const attachmentsMarkup = attachments.length
   }
 
   if (submitBtn) {
-  submitBtn.addEventListener("click", async () => {
-    if (submitBtn.disabled) return;
+    submitBtn.addEventListener("click", async () => {
+      if (submitBtn.disabled) return;
 
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Submitting...";
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Submitting...";
 
-    try {
-      if (typeof onSubmit === "function") {
-        await onSubmit();
+      try {
+        if (typeof onSubmit === "function") {
+          await onSubmit();
+        }
+      } catch (err) {
+        console.error("Review submit failed:", err);
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit Request";
       }
-    } catch (err) {
-      console.error("Review submit failed:", err);
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Submit Request";
-    }
-  });
-}
+    });
+  }
 }
