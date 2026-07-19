@@ -810,113 +810,122 @@ export function renderSelectionCards(onChange) {
 export function renderSuccessStep(container, leadPayload, onStartNew) {
   if (!container) return;
 
-  const customerName = leadPayload?.customer?.name || "Customer";
-const serviceType = leadPayload?.appointment?.serviceType || "service";
-const date = formatDisplayDate(leadPayload?.appointment?.date) || "selected date";
-const time = leadPayload?.appointment?.time || "selected time";
-const requestId = leadPayload?.requestId || "Pending";
+  function escapeSuccessHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
 
-const deviceType = leadPayload?.device?.type || "Not selected";
-const deviceBrand = leadPayload?.device?.brand || "Not selected";
-const deviceSeries = leadPayload?.device?.series || "Not selected";
-const deviceModel = leadPayload?.device?.model || "Not selected";
+  function successValue(value, fallback = "Not provided") {
+    const cleanValue = String(value || "").trim();
 
-  const selectedRepairs =
-    Array.isArray(leadPayload?.repairs) && leadPayload.repairs.length
-      ? leadPayload.repairs
-      : leadPayload?.repair
-        ? [leadPayload.repair]
-        : [];
+    return cleanValue || fallback;
+  }
+
+  function renderSuccessItem(label, value, fallback = "Not provided") {
+    return `
+      <div>
+        <strong>${escapeSuccessHtml(label)}</strong>
+        <span>${escapeSuccessHtml(successValue(value, fallback))}</span>
+      </div>
+    `;
+  }
+
+  function getSelectedRepairsFromPayload() {
+    if (Array.isArray(leadPayload?.repairs) && leadPayload.repairs.length) {
+      return leadPayload.repairs;
+    }
+
+    if (leadPayload?.repair) {
+      return [leadPayload.repair];
+    }
+
+    return [];
+  }
+
+  const customer = leadPayload?.customer || {};
+  const device = leadPayload?.device || {};
+  const appointment = leadPayload?.appointment || {};
+
+  const customerName = successValue(customer.name, "Customer");
+  const requestId = successValue(leadPayload?.requestId, "Pending");
+  const status = successValue(leadPayload?.status, "New");
+
+  const serviceType =
+    serviceLabels[appointment.serviceType] ||
+    appointment.serviceType ||
+    "Not selected";
+
+  const preferredDate = formatDisplayDate(appointment.date);
+  const preferredTime = appointment.time || "Not selected";
+
+  const selectedRepairs = getSelectedRepairsFromPayload();
 
   const repairList = selectedRepairs.length
-  ? selectedRepairs
-      .map((repair) => {
-        const repairName = repair.name || "Repair";
-        const details = repair.details ? ` — ${repair.details}` : "";
+    ? selectedRepairs
+        .map((repair, index) => {
+          const repairName =
+            repair.name ||
+            repair.repair ||
+            repair.label ||
+            `Repair ${index + 1}`;
 
-        return `${repairName}${details}`;
-      })
-      .join(", ")
-  : "Repair request";
+          const repairDetails =
+            repair.details ||
+            repair.notes ||
+            "";
 
-const attachments = Array.isArray(leadPayload?.attachments)
-  ? leadPayload.attachments
-  : [];
+          return repairDetails
+            ? `${repairName} - ${repairDetails}`
+            : repairName;
+        })
+        .join(", ")
+    : "Repair request";
 
-const attachmentList = attachments.length
-  ? attachments
-      .map((file) => {
-        return `
-          <div class="success-attachment-item">
-            <span class="success-attachment-icon">📎</span>
-            <span class="success-attachment-name">${file.name || "Attachment"}</span>
-            <span class="success-attachment-size">
-              ${file.size ? `${Math.round(file.size / 1024)} KB` : ""}
-            </span>
-          </div>
-        `;
-      })
-      .join("")
-  : `<span>None</span>`;
+  const attachments = Array.isArray(leadPayload?.attachments)
+    ? leadPayload.attachments
+    : [];
 
-container.innerHTML = `
+  const contactLine = [
+    customer.phone,
+    customer.email
+  ].filter(Boolean).join(" / ");
+
+  container.innerHTML = `
     <section class="success-panel">
       <div class="success-hero">
-        <div class="success-icon">✓</div>
+        <div class="success-icon">&#10003;</div>
 
         <div class="option-section-header success-option-header">
           <span>Request Submitted</span>
-          <h3>Thank you, ${customerName}.</h3>
-          <p>Your repair request has been received. We will review your details and follow up to confirm the next steps.</p>
+          <h3>Thank you, ${escapeSuccessHtml(customerName)}.</h3>
+          <p class="success-message">
+            Your repair request has been received. We will review the details and contact you to confirm availability, timing, and next steps.
+          </p>
         </div>
       </div>
 
       <div class="success-summary success-summary-request-layout">
-  <div>
-    <strong>Request ID</strong>
-    <span>${requestId}</span>
-  </div>
-
-  <div>
-    <strong>Device</strong>
-    <span>${deviceType}</span>
-  </div>
-
-  <div>
-    <strong>Brand</strong>
-    <span>${deviceBrand}</span>
-  </div>
-
-  <div>
-    <strong>Series</strong>
-    <span>${deviceSeries}</span>
-  </div>
-
-  <div>
-    <strong>Model</strong>
-    <span>${deviceModel}</span>
-  </div>
-
-  <div>
-    <strong>Selected Repairs</strong>
-    <span>${repairList}</span>
-  </div>
-
-  <div>
-    <strong>Service Type</strong>
-    <span>${serviceLabels[serviceType] || serviceType}</span>
-  </div>
-
-  <div>
-    <strong>Preferred Date</strong>
-    <span>${date}</span>
-  </div>
-
-  <div>
-    <strong>Preferred Time</strong>
-    <span>${time}</span>
-  </div>
-</div>
+        ${renderSuccessItem("Request ID", requestId, "Pending")}
+        ${renderSuccessItem("Status", status, "New")}
+        ${renderSuccessItem("Next Step", "We will contact you to confirm the repair details.")}
+        ${renderSuccessItem("Device", device.type, "Not selected")}
+        ${renderSuccessItem("Brand", device.brand, "Not selected")}
+        ${renderSuccessItem("Series", device.series, "Not selected")}
+        ${renderSuccessItem("Model", device.model, "Not selected")}
+        ${renderSuccessItem("Selected Repairs", repairList, "Repair request")}
+        ${renderSuccessItem("Repair Count", selectedRepairs.length ? `${selectedRepairs.length}` : "0")}
+        ${renderSuccessItem("Service Type", serviceType, "Not selected")}
+        ${renderSuccessItem("Preferred Date", preferredDate, "Not selected")}
+        ${renderSuccessItem("Preferred Time", preferredTime, "Not selected")}
+        ${renderSuccessItem("Customer", customerName, "Customer")}
+        ${renderSuccessItem("Contact", contactLine, "Not provided")}
+        ${renderSuccessItem("Location", customer.serviceLocation, "Not provided")}
+        ${renderSuccessItem("Attachments", `${attachments.length}`)}
+      </div>
 
       <button type="button" class="success-start-new">
         Start New Request
