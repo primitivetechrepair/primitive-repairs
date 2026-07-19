@@ -12451,4 +12451,34 @@ body {
     opacity: 0 !important;
   }
 }
+/* =========================================================
+   UNIVERSAL SERVICE HOURS DISABLED STATE
+========================================================= */
+
+.service-hours-disabled,
+.service-hours-disabled:hover,
+.service-hours-disabled:active {
+  cursor: not-allowed !important;
+  opacity: 0.52 !important;
+  filter: grayscale(0.85) saturate(0.65) !important;
+  transform: none !important;
+}
+
+.service-hours-disabled[aria-disabled="true"] {
+  pointer-events: auto;
+}
+
+button.service-hours-disabled,
+input.service-hours-disabled {
+  pointer-events: auto;
+}
+
+.service-hours-booking-disabled,
+.service-hours-call-disabled {
+  box-shadow: none !important;
+}
+
+html.service-hours-closed .service-hours-booking-disabled {
+  text-decoration: none !important;
+}
 
