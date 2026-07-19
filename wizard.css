@@ -11605,47 +11605,39 @@ body {
 }
 }
 /* =========================================================
-   CONNECTED TOP SELECTION ROW
+   HEADER SELECTION CARDS PLACEMENT
 ========================================================= */
 
+.pr-header .pr-header-selection-cards {
+  width: 100%;
+  margin: 18px auto 0;
+}
+
+.pr-header #pr-selection-cards.selection-cards {
+  max-width: 100%;
+}
+
 @media (min-width: 701px) {
-  #pr-selection-cards.selection-cards {
-    width: 100%;
-    gap: 0 !important;
-    column-gap: 0 !important;
-    row-gap: 0 !important;
-    align-items: stretch;
+  .pr-header #pr-selection-cards.selection-cards {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .pr-header .pr-header-selection-cards {
+    margin-top: 16px;
   }
 
-  #pr-selection-cards.selection-cards .card {
-    flex: 1 1 0;
-    min-width: 0;
-    width: auto;
+  .pr-header #pr-selection-cards.selection-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .pr-header #pr-selection-cards.selection-cards .card {
     margin: 0 !important;
-
-    border-radius: 0;
-  }
-
-  #pr-selection-cards.selection-cards .card + .card {
-    border-left-width: 0;
-  }
-
-  #pr-selection-cards.selection-cards .card:first-child {
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-  }
-
-  #pr-selection-cards.selection-cards .card:last-child {
-    border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
-  }
-
-  #pr-selection-cards.selection-cards .card:hover {
-    z-index: 3;
-  }
-
-  #pr-selection-cards.selection-cards .card.is-current-step {
-    z-index: 4;
   }
 }
 /* =========================================================
@@ -11659,57 +11651,6 @@ body {
     content: none !important;
   }
 }
-/* =========================================================
-   MOBILE CONNECTED SELECTION STACK
-========================================================= */
-
-@media (max-width: 700px) {
-  #pr-selection-cards.selection-cards {
-    width: 100%;
-    gap: 0 !important;
-    row-gap: 0 !important;
-    column-gap: 0 !important;
-    align-items: stretch;
-  }
-
-  #pr-selection-cards.selection-cards .card {
-    width: 100%;
-    margin: 0 !important;
-    margin-bottom: 0 !important;
-
-    border-radius: 0;
-  }
-
-  #pr-selection-cards.selection-cards .card + .card {
-    border-top-width: 0;
-  }
-
-  #pr-selection-cards.selection-cards .card:first-child {
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-  }
-
-  #pr-selection-cards.selection-cards .card:last-child {
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
-  }
-
-  #pr-selection-cards.selection-cards .card::before,
-  #pr-selection-cards.selection-cards .card::after,
-  #pr-selection-cards.selection-cards .card.is-current-step::after {
-    display: none !important;
-    content: none !important;
-  }
-
-  #pr-selection-cards.selection-cards .card.is-current-step {
-    margin-bottom: 0 !important;
-    z-index: 4;
-  }
-
-  #pr-selection-cards.selection-cards .card:hover,
-  #pr-selection-cards.selection-cards .card:active {
-    z-index: 3;
-  }
 }
 WIZARD ACTION BUTTON CLARITY
 ========================================================= */
