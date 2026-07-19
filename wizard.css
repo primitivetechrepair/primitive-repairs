@@ -10705,7 +10705,7 @@ body {
     transform: none;
   }
 
-  #pr-steps-area.animated-area:has(.opt-card),
+    #pr-steps-area.animated-area:has(.opt-card),
   #pr-steps-area.animated-area:has(.model-search-panel),
   .device-card-results,
   .brand-card-results,
@@ -10713,6 +10713,20 @@ body {
   .model-card-results,
   .repair-card-results {
     overflow: visible;
+  }
+
+  .device-card-results .opt-card.is-selected,
+  .brand-card-results .opt-card.is-selected,
+  .series-card-results .opt-card.is-selected,
+  .model-card-results .opt-card.is-selected,
+  .repair-card-results .opt-card.is-selected {
+    transform: none;
+    border-color: rgba(102, 252, 241, 0.92);
+
+    box-shadow:
+      inset 0 0 0 2px rgba(102, 252, 241, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      0 10px 22px rgba(7, 123, 255, 0.18);
   }
 
   .model-search-panel,
