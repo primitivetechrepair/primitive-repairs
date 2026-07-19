@@ -11627,17 +11627,42 @@ body {
 
 @media (max-width: 700px) {
   .pr-header .pr-header-selection-cards {
-    margin-top: 16px;
+    margin-top: 14px;
   }
 
   .pr-header #pr-selection-cards.selection-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 6px;
   }
 
   .pr-header #pr-selection-cards.selection-cards .card {
+    width: auto !important;
+    min-width: 0;
+    min-height: 72px;
     margin: 0 !important;
+    padding: 10px 6px 9px;
+    border-radius: 12px;
+  }
+
+  .pr-header #pr-selection-cards.selection-cards .card-img,
+  .pr-header #pr-selection-cards.selection-cards .card-image {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 6px;
+  }
+
+  .pr-header #pr-selection-cards.selection-cards .card-label {
+    font-size: 9.5px;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    overflow-wrap: anywhere;
+  }
+
+  .pr-header #pr-selection-cards.selection-cards .card-back {
+    margin-top: 5px;
+    font-size: 8px;
+    line-height: 1;
   }
 }
 /* =========================================================
