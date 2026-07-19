@@ -11985,4 +11985,24 @@ body {
     letter-spacing: 0.035em;
   }
 }
+/* =========================================================
+   CENTER BLUEPRINT SECTION HEADING
+========================================================= */
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header div {
+  width: 100% !important;
+  justify-items: center !important;
+  text-align: center !important;
+}
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker,
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong {
+  width: 100% !important;
+  text-align: center !important;
+}
 
