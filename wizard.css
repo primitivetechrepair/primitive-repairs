@@ -10705,6 +10705,16 @@ body {
     transform: none;
   }
 
+  #pr-steps-area.animated-area:has(.opt-card),
+  #pr-steps-area.animated-area:has(.model-search-panel),
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results {
+    overflow: visible;
+  }
+
   .model-search-panel,
   #pr-steps-area.animated-area:has(.model-search-panel) .model-search-panel {
     width: 100%;
