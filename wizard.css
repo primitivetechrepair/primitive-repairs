@@ -12368,4 +12368,87 @@ body {
     opacity: 0 !important;
   }
 }
+/* =========================================================
+   CONTINUOUS BLUEPRINT BORDER BEAM
+========================================================= */
+
+/* Slower continuous border circuit after all 5 fields are filled */
+#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam {
+  opacity: 0;
+}
+
+#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-top {
+  animation: blueprintBeamXContinuous 8s linear 0s infinite both !important;
+}
+
+#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-right {
+  animation: blueprintBeamYContinuous 8s linear 2s infinite both !important;
+}
+
+#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-bottom {
+  animation: blueprintBeamXContinuous 8s linear 4s infinite both !important;
+}
+
+#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-left {
+  animation: blueprintBeamYContinuous 8s linear 6s infinite both !important;
+}
+
+@keyframes blueprintBeamXContinuous {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  4% {
+    opacity: 1;
+  }
+
+  18% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  24% {
+    opacity: 0;
+    transform: scaleX(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes blueprintBeamYContinuous {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  4% {
+    opacity: 1;
+  }
+
+  18% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  24% {
+    opacity: 0;
+    transform: scaleY(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam {
+    animation: none !important;
+    opacity: 0 !important;
+  }
+}
 
