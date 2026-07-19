@@ -11950,4 +11950,92 @@ body {
     filter: brightness(0.96);
   }
 }
+/* =========================================================
+   HEADER CARD MISSING CHOICE STATE
+========================================================= */
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice {
+  border-color: rgba(37, 40, 61, 0.1);
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 247, 251, 0.72));
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-heading {
+  color: rgba(37, 40, 61, 0.52);
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-img {
+  opacity: 0.36;
+  filter: grayscale(1) saturate(0.65);
+
+  border-radius: 16px;
+
+  background-color: rgba(37, 40, 61, 0.035);
+
+  outline: 1px dashed rgba(37, 40, 61, 0.18);
+  outline-offset: 5px;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
+  width: calc(100% - 10px);
+  padding: 5px 6px;
+
+  border: 1px dashed rgba(7, 123, 255, 0.28);
+  border-radius: 999px;
+
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(233, 255, 253, 0.38));
+
+  color: rgba(7, 123, 255, 0.78);
+
+  font-size: 7.75px;
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 0.055em;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice.is-current-step {
+  border-color: rgba(7, 123, 255, 0.38);
+
+  box-shadow:
+    0 10px 24px rgba(7, 123, 255, 0.1),
+    inset 0 0 0 1px rgba(102, 252, 241, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice.is-current-step .card-label {
+  border-color: rgba(102, 252, 241, 0.58);
+
+  background:
+    linear-gradient(135deg, rgba(233, 255, 253, 0.88), rgba(102, 252, 241, 0.18));
+
+  color: rgba(7, 123, 255, 0.96);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice:hover .card-label {
+    border-color: rgba(102, 252, 241, 0.72);
+
+    background:
+      linear-gradient(135deg, rgba(233, 255, 253, 0.96), rgba(102, 252, 241, 0.24));
+
+    color: #000000;
+  }
+}
+
+@media (min-width: 701px) {
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
+    font-size: 8.75px;
+  }
+}
+
+@media (max-width: 380px) {
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
+    width: calc(100% - 6px);
+    padding: 4px 3px;
+    font-size: 6.75px;
+    letter-spacing: 0.035em;
+  }
+}
 

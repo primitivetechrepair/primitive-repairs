@@ -787,6 +787,7 @@ const label = card.querySelector(".card-label");
       label.textContent = step.value;
       button.style.display = "flex";
       card.classList.add("filled");
+      card.classList.remove("is-missing-choice");
 
       if (step.key === "device") {
         image.style.backgroundImage = `url('${getDeviceImage(state.device)}')`;
@@ -844,7 +845,8 @@ const label = card.querySelector(".card-label");
         }
       };
     } else {
-      label.textContent = "Not selected";
+      label.textContent = `Choose ${step.label}`;
+      card.classList.add("is-missing-choice");
       button.style.display = "none";
       image.style.backgroundImage = "none";
       card.classList.remove("filled");
