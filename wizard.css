@@ -12952,3 +12952,62 @@ html.service-hours-closed .service-hours-booking-disabled {
     font-size: 6px !important;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT MOBILE HEADER EDIT ROW FILL
+========================================================= */
+
+@media (max-width: 700px) {
+  /*
+    Mobile cards have side padding, which makes the heading overlay
+    and EDIT row look inset. Pull only those two rows outward so they
+    fill the same way desktop does.
+  */
+
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
+    overflow: hidden !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-heading,
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    justify-self: stretch !important;
+    align-self: stretch !important;
+
+    width: calc(100% + 12px) !important;
+    max-width: calc(100% + 12px) !important;
+
+    margin-left: -6px !important;
+    margin-right: -6px !important;
+
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-heading {
+    margin-top: -6px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    margin-bottom: -6px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  #pr-selection-cards.blueprint-selection-module .card-heading,
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    width: calc(100% + 8px) !important;
+    max-width: calc(100% + 8px) !important;
+
+    margin-left: -4px !important;
+    margin-right: -4px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-heading {
+    margin-top: -4px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    margin-bottom: -4px !important;
+  }
+}
+
