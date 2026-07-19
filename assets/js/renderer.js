@@ -758,6 +758,7 @@ steps.forEach((step) => {
 
     card.classList.remove("is-current-step", "is-complete-step", "is-upcoming-step");
     card.dataset.stepNumber = `${stepIndex + 1}`;
+    card.dataset.mobileStepLabel = `Step ${stepIndex + 1}`;
     card.dataset.stepStatus = isComplete ? "complete" : isCurrent ? "current" : "upcoming";
 
     card.setAttribute(

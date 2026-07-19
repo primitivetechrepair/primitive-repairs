@@ -565,7 +565,7 @@ body.mobile-nav-open {
   justify-content: center;
 
   border: 1px solid rgba(37, 40, 61, 0.14);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.88);
   color: var(--accent);
@@ -1098,13 +1098,13 @@ text-align: center;
 .landing-primary-btn,
 .landing-secondary-btn {
   min-height: 50px;
-  padding: 0 18px;
+  padding: 0 12px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 14px;
+  border-radius: 12px;
 
   font-size: 12px;
   font-weight: 950;
@@ -1703,7 +1703,7 @@ text-align: center;
   align-items: center;
   justify-content: center;
 
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: var(--button-gradient);
   color: #ffffff;
@@ -2209,14 +2209,14 @@ text-align: center;
 
 .supported-device-trust-strip a {
   min-height: 46px;
-  padding: 0 18px;
+  padding: 0 12px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   border: 1px solid rgba(102, 252, 241, 0.28);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background:
     linear-gradient(135deg, #25283d 0%, #077bff 72%, #2fbff4 100%);
@@ -2484,7 +2484,7 @@ text-align: center;
 
   .wizard-live-summary-item {
     padding: 9px 10px;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   .wizard-live-summary-item span {
@@ -2631,7 +2631,7 @@ text-align: center;
 
   .customer-repair-summary-item {
     padding: 9px 10px;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   .customer-repair-summary-item span {
@@ -2773,7 +2773,7 @@ text-align: center;
   gap: 8px;
 
   border: 1px solid rgba(37, 40, 61, 0.08);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.62);
 }
@@ -2810,9 +2810,9 @@ text-align: center;
 .review-back,
 .review-submit {
   min-height: 48px;
-  padding: 0 18px;
+  padding: 0 12px;
 
-  border-radius: 14px;
+  border-radius: 12px;
 
   font-family: var(--font-display);
   font-size: 11px;
@@ -3217,14 +3217,14 @@ text-align: center;
 
 .process-trust-strip a {
   min-height: 46px;
-  padding: 0 18px;
+  padding: 0 12px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   border: 1px solid rgba(102, 252, 241, 0.28);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background:
     linear-gradient(135deg, #25283d 0%, #077bff 72%, #2fbff4 100%);
@@ -3833,7 +3833,7 @@ text-align: center;
   padding: 11px 12px;
 
   border: 1px solid rgba(37, 40, 61, 0.12);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.92);
   color: var(--accent);
@@ -6215,7 +6215,7 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 0 14px;
 
   border: 1px solid rgba(37, 40, 61, 0.14);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: #ffffff;
   color: var(--accent);
@@ -6246,7 +6246,7 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 0 16px;
 
   border: 1px solid rgba(37, 40, 61, 0.12);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: rgba(247, 247, 251, 0.95);
   color: var(--accent);
@@ -7495,7 +7495,7 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 12px;
 
   border: 1px solid rgba(102, 252, 241, 0.22);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background:
     radial-gradient(circle at top, rgba(102, 252, 241, 0.08), transparent 48%),
@@ -7559,7 +7559,7 @@ backdrop-filter: blur(16px) saturate(170%);
   padding: 10px 12px;
 
   border: 1px solid rgba(102, 252, 241, 0.18);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.58);
   color: var(--muted);
@@ -7790,7 +7790,7 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 54px;
   height: 54px;
 
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .file-preview-info strong {
@@ -8531,7 +8531,7 @@ backdrop-filter: blur(16px) saturate(170%);
   overflow: hidden;
 
   border: 1px solid rgba(102, 252, 241, 0.16);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background:
     radial-gradient(circle at center, rgba(102, 252, 241, 0.12), transparent 42%),
@@ -9313,7 +9313,7 @@ backdrop-filter: blur(16px) saturate(170%);
     flex: 0 0 44px;
 
     border: 1px solid rgba(37, 40, 61, 0.12);
-    border-radius: 14px;
+    border-radius: 12px;
 
     background: rgba(255, 255, 255, 0.82);
     color: var(--accent);
@@ -9539,7 +9539,7 @@ backdrop-filter: blur(16px) saturate(170%);
     color: rgba(4, 12, 24, 0.96);
 
     border: 1px solid rgba(102, 252, 241, 0.22);
-    border-radius: 14px;
+    border-radius: 12px;
 
     background:
       linear-gradient(
@@ -9659,7 +9659,7 @@ body {
   flex: 0 0 44px;
 
   border: 1px solid rgba(37, 40, 61, 0.12);
-  border-radius: 14px;
+  border-radius: 12px;
 
   background: rgba(255, 255, 255, 0.82);
   color: var(--accent);
@@ -10648,7 +10648,7 @@ body {
 
   flex: initial;
 
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 #pr-selection-cards .card-label,
@@ -11268,7 +11268,7 @@ body {
     width: 46px;
     height: 46px;
 
-    border-radius: 14px;
+    border-radius: 12px;
 
     font-size: 21px;
   }
@@ -11283,7 +11283,7 @@ body {
 }
 
 .supported-device-content p {
-  min-height: 34px;
+  min-height: 28px;
   font-size: 11.5px;
   line-height: 1.45;
 }
@@ -11549,7 +11549,7 @@ body {
   }
 
   #pr-selection-cards.selection-cards .card.is-current-step {
-    margin-bottom: 52px;
+    margin-bottom: 42px;
 
     border-color: rgba(102, 252, 241, 0.86);
     box-shadow:
@@ -11560,19 +11560,20 @@ body {
   }
 
   #pr-selection-cards.selection-cards .card.is-current-step::after {
-    content: "Current Step" !important;
+    content: attr(data-mobile-step-label) !important;
 
     position: absolute;
     top: auto;
     right: 0;
-    bottom: -42px;
+    bottom: -34px;
     left: 0;
     z-index: 6;
 
     width: 100%;
-    min-height: 34px;
-    padding: 0 18px;
-    border-radius: 14px;
+    box-sizing: border-box;
+    min-height: 28px;
+    padding: 0 12px;
+    border-radius: 12px;
 
     display: flex !important;
     align-items: center;
