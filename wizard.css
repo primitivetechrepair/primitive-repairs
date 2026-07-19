@@ -12039,262 +12039,257 @@ body {
   }
 }
 /* =========================================================
-   HEADER CARD ULTRA PREMIUM FINISH
+   HEADER CARD EXECUTIVE FINISH
 ========================================================= */
 
+/* Outer connected frame */
 #pr-selection-cards.pr-header-selection-cards {
-  position: relative;
-  isolation: isolate;
-
-  margin-top: 20px !important;
+  margin-top: 18px !important;
+  gap: 0 !important;
 
   overflow: hidden !important;
 
-  border: 1px solid rgba(102, 252, 241, 0.18);
-  border-radius: 18px;
+  border: 1px solid rgba(37, 40, 61, 0.14) !important;
+  border-radius: 18px !important;
 
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(233, 255, 253, 0.34)),
-    radial-gradient(circle at top left, rgba(102, 252, 241, 0.22), transparent 36%),
-    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.16), transparent 42%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(241, 244, 249, 0.92)) !important;
 
   box-shadow:
-    0 18px 42px rgba(37, 40, 61, 0.12),
-    0 0 0 1px rgba(255, 255, 255, 0.62),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    0 18px 38px rgba(37, 40, 61, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
 }
 
+/* Individual card surface */
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-  position: relative;
-
+  border-radius: 0 !important;
   border-top: 0 !important;
   border-bottom: 0 !important;
-  border-radius: 0 !important;
+  border-left: 1px solid rgba(37, 40, 61, 0.10) !important;
+  border-right: 0 !important;
 
   background:
-    radial-gradient(circle at 50% 38%, rgba(102, 252, 241, 0.15), transparent 35%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(247, 247, 251, 0.62)) !important;
+    linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%) !important;
 
   box-shadow:
-    inset 1px 0 0 rgba(255, 255, 255, 0.62),
-    inset -1px 0 0 rgba(37, 40, 61, 0.065) !important;
+    inset 1px 0 0 rgba(255, 255, 255, 0.72) !important;
 
-  backdrop-filter: blur(14px) saturate(165%);
-  -webkit-backdrop-filter: blur(14px) saturate(165%);
+  transform: none !important;
+  transition: none !important;
 }
 
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card:first-child {
   border-left: 0 !important;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card:last-child {
-  border-right: 0 !important;
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card::before,
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card::after {
+  display: none !important;
+  content: none !important;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card::before {
-  content: "" !important;
-  display: block !important;
-
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.72) 0%,
-      transparent 32%,
-      rgba(102, 252, 241, 0.08) 58%,
-      transparent 100%
-    );
-
-  opacity: 0.72;
-  pointer-events: none;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card > * {
-  position: relative;
-  z-index: 1;
-}
-
+/* Built-in top title strip */
 #pr-selection-cards.pr-header-selection-cards .card-heading {
-  border-bottom: 1px solid rgba(102, 252, 241, 0.16) !important;
+  min-height: 30px !important;
+
+  border-bottom: 1px solid rgba(37, 40, 61, 0.12) !important;
 
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(233, 255, 253, 0.38)) !important;
+    linear-gradient(180deg, #25283d 0%, #1d2033 100%) !important;
 
-  color: rgba(37, 40, 61, 0.68) !important;
+  color: rgba(255, 255, 255, 0.88) !important;
 
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.78);
+  font-size: 8px !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.115em !important;
 
+  text-shadow: none !important;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.32);
+    inset 0 1px 0 rgba(255, 255, 255, 0.10),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
 }
 
+/* Center image: larger, clean, not gimmicky */
 #pr-selection-cards.pr-header-selection-cards .card-img {
-  position: relative;
+  width: 68px !important;
+  height: 68px !important;
+  min-width: 68px !important;
+  min-height: 68px !important;
+  max-width: 68px !important;
+  max-height: 68px !important;
 
-  width: 66px !important;
-  height: 66px !important;
-  min-width: 66px !important;
-  min-height: 66px !important;
-  max-width: 66px !important;
-  max-height: 66px !important;
-
-  border-radius: 20px;
+  border-radius: 16px !important;
 
   filter:
-    drop-shadow(0 10px 14px rgba(37, 40, 61, 0.13))
-    saturate(1.05);
+    drop-shadow(0 8px 12px rgba(37, 40, 61, 0.12))
+    saturate(1.02) !important;
+
+  transform: none !important;
+  transition: none !important;
 }
 
+/* Selected / waiting value */
 #pr-selection-cards.pr-header-selection-cards .card-label {
-  color: rgba(37, 40, 61, 0.9) !important;
+  color: rgba(37, 40, 61, 0.92) !important;
 
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.72);
+  font-weight: 950 !important;
+  letter-spacing: 0.035em !important;
+
+  text-shadow: none !important;
 }
 
+/* Bottom Change strip */
 #pr-selection-cards.pr-header-selection-cards .card-back {
-  border-top: 1px solid rgba(102, 252, 241, 0.32) !important;
+  min-height: 30px !important;
+
+  border: 0 !important;
+  border-top: 1px solid rgba(37, 40, 61, 0.14) !important;
+  border-radius: 0 !important;
 
   background:
-    linear-gradient(135deg, #25283d 0%, #077bff 66%, #2fbff4 100%) !important;
+    linear-gradient(180deg, #077bff 0%, #0566d4 100%) !important;
 
   color: #ffffff !important;
 
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.12),
-    0 -6px 18px rgba(7, 123, 255, 0.06) !important;
+  font-size: 7.5px !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.095em !important;
 
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.26);
+  text-shadow: none !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.16) !important;
+
+  transform: none !important;
+  transition: none !important;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled {
+/* Remove all hover movement/effects from these cards */
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:hover,
+  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:hover .card-img,
+  #pr-selection-cards.pr-header-selection-cards .card-back:hover,
+  #pr-selection-cards.pr-header-selection-cards .card-back:active {
+    transform: none !important;
+    filter: none !important;
+    letter-spacing: inherit !important;
+    transition: none !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .card-back:hover {
+    background:
+      linear-gradient(180deg, #077bff 0%, #0566d4 100%) !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.16) !important;
+  }
+}
+
+/* Filled/current state: premium accent, not glow-heavy */
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled,
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step {
   background:
-    radial-gradient(circle at 50% 36%, rgba(102, 252, 241, 0.24), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(233, 255, 253, 0.72)) !important;
+    linear-gradient(180deg, #ffffff 0%, #eefcff 100%) !important;
 }
 
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-heading,
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-heading {
   background:
-    linear-gradient(135deg, rgba(233, 255, 253, 0.92), rgba(102, 252, 241, 0.2)) !important;
+    linear-gradient(180deg, #25283d 0%, #18233f 100%) !important;
 
-  color: rgba(7, 123, 255, 0.86) !important;
+  color: #66fcf1 !important;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step {
-  z-index: 2;
-
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-back,
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-back {
   background:
-    radial-gradient(circle at 50% 36%, rgba(102, 252, 241, 0.32), transparent 40%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 253, 0.78)) !important;
+    linear-gradient(180deg, #066fe6 0%, #055ec4 100%) !important;
 
-  box-shadow:
-    inset 1px 0 0 rgba(255, 255, 255, 0.72),
-    inset -1px 0 0 rgba(37, 40, 61, 0.06),
-    0 0 0 1px rgba(102, 252, 241, 0.46),
-    0 18px 34px rgba(7, 123, 255, 0.16),
-    0 0 28px rgba(102, 252, 241, 0.16) !important;
+  color: #ffffff !important;
 }
 
+/* Missing choice: intentional placeholder, not empty */
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice {
   background:
-    radial-gradient(circle at 50% 36%, rgba(37, 40, 61, 0.045), transparent 40%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(247, 247, 251, 0.58)) !important;
+    linear-gradient(180deg, #ffffff 0%, #f4f6fa 100%) !important;
 }
 
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-img {
-  opacity: 0.48 !important;
+  opacity: 0.42 !important;
 
-  outline-color: rgba(7, 123, 255, 0.22) !important;
+  outline: none !important;
 
   filter:
-    grayscale(0.9)
-    saturate(0.72)
-    drop-shadow(0 8px 12px rgba(37, 40, 61, 0.08)) !important;
+    grayscale(1)
+    saturate(0.6)
+    drop-shadow(0 6px 10px rgba(37, 40, 61, 0.08)) !important;
 }
 
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
-  border-color: rgba(102, 252, 241, 0.44) !important;
+  width: calc(100% - 12px) !important;
+  padding: 5px 6px !important;
 
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(233, 255, 253, 0.48)) !important;
+  border: 1px solid rgba(37, 40, 61, 0.12) !important;
+  border-radius: 999px !important;
 
-  color: rgba(7, 123, 255, 0.82) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+
+  color: rgba(37, 40, 61, 0.58) !important;
+
+  font-size: 7.25px !important;
+  letter-spacing: 0.06em !important;
 
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.78),
-    0 8px 16px rgba(37, 40, 61, 0.055);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    transition:
-      transform 0.22s ease,
-      background 0.22s ease,
-      box-shadow 0.22s ease,
-      filter 0.22s ease;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:hover {
-    z-index: 3;
-
-    transform: translateY(-3px);
-
-    background:
-      radial-gradient(circle at 50% 36%, rgba(102, 252, 241, 0.3), transparent 40%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 253, 0.76)) !important;
-
-    box-shadow:
-      inset 1px 0 0 rgba(255, 255, 255, 0.74),
-      inset -1px 0 0 rgba(37, 40, 61, 0.06),
-      0 18px 34px rgba(7, 123, 255, 0.14),
-      0 0 26px rgba(102, 252, 241, 0.16) !important;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:hover .card-img {
-    filter:
-      drop-shadow(0 14px 18px rgba(7, 123, 255, 0.18))
-      saturate(1.12);
-  }
+    inset 0 1px 0 rgba(255, 255, 255, 0.86) !important;
 }
 
 @media (min-width: 701px) {
   #pr-selection-cards.pr-header-selection-cards {
-    border-radius: 20px;
+    border-radius: 20px !important;
   }
 
   #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    min-height: 198px !important;
+    min-height: 196px !important;
     grid-template-rows: 34px minmax(88px, 1fr) minmax(34px, auto) 34px !important;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-heading {
     min-height: 34px !important;
-    font-size: 9.5px !important;
+    font-size: 9px !important;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 90px !important;
-    height: 90px !important;
-    min-width: 90px !important;
-    min-height: 90px !important;
-    max-width: 90px !important;
-    max-height: 90px !important;
+    width: 88px !important;
+    height: 88px !important;
+    min-width: 88px !important;
+    min-height: 88px !important;
+    max-width: 88px !important;
+    max-height: 88px !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .card-label {
+    font-size: 9.75px !important;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-back {
     min-height: 34px !important;
-    font-size: 8.5px !important;
+    font-size: 8.25px !important;
   }
 }
 
 @media (max-width: 380px) {
   #pr-selection-cards.pr-header-selection-cards {
-    border-radius: 14px;
+    border-radius: 14px !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .card-heading {
+    min-height: 26px !important;
+    font-size: 6.75px !important;
+    letter-spacing: 0.08em !important;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-img {
@@ -12304,6 +12299,11 @@ body {
     min-height: 56px !important;
     max-width: 56px !important;
     max-height: 56px !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .card-back {
+    min-height: 26px !important;
+    font-size: 6.25px !important;
   }
 }
 
