@@ -5497,15 +5497,20 @@ backdrop-filter: blur(16px) saturate(170%);
     0 0 14px rgba(102, 252, 241, 0.12);
 }
 
-/* Force full wizard internals to match container width */
+/* =========================================================
+   WIZARD LAYOUT FOUNDATION
+========================================================= */
+
 #pr-main,
 #pr-selection-cards,
-#pr-steps-area {
+#pr-steps-area,
+#pr-form-area,
+#pr-customer-form {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 }
 
-/* Force Repair Flow cards to fill full desktop wizard width */
 #pr-selection-cards.selection-cards {
   width: 100%;
   max-width: 100%;
@@ -5523,7 +5528,6 @@ backdrop-filter: blur(16px) saturate(170%);
   flex: initial;
 }
 
-/* Remove Repair Request and Repair Flow tags */
 .pr-header::after,
 .selection-cards::before {
   display: none;
@@ -5539,6 +5543,7 @@ backdrop-filter: blur(16px) saturate(170%);
 .device-card-results,
 .brand-card-results,
 .series-card-results,
+.model-card-results,
 .repair-card-results {
   width: 100%;
   max-width: 100%;
