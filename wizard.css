@@ -10990,20 +10990,29 @@ body {
     grid-area: customer !important;
   }
 
-  .review-panel .review-card-device {
+  .review-panel .review-grid > .review-card-device {
     grid-area: device !important;
+    grid-column: 1 / 2 !important;
+    grid-row: 2 / 3 !important;
   }
 
-  .review-panel .review-card-selected-repairs {
+  .review-panel .review-grid > .review-card-selected-repairs {
     grid-area: repairs !important;
+    grid-column: 2 / 3 !important;
+    grid-row: 2 / 3 !important;
+    min-width: 0;
   }
 
-  .review-panel .review-card-notes {
+  .review-panel .review-grid > .review-card-notes {
     grid-area: notes !important;
+    grid-column: 1 / 2 !important;
+    grid-row: 3 / 4 !important;
   }
 
-  .review-panel .review-card-appointment {
+  .review-panel .review-grid > .review-card-appointment {
     grid-area: appointment !important;
+    grid-column: 2 / 3 !important;
+    grid-row: 3 / 4 !important;
   }
 }
 
