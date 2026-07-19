@@ -10937,31 +10937,47 @@ body {
   line-height: 1.5;
 }
 
-/* Mobile top selection card containment */
+/* Mobile selection card safe inset */
 #pr-selection-cards .card,
+#pr-steps-area.animated-area .opt-card,
+.device-card-results .opt-card,
+.brand-card-results .opt-card,
+.series-card-results .opt-card,
+.model-card-results .opt-card,
+.repair-card-results .opt-card {
+  width: calc(100% - 8px);
+  justify-self: center;
+  transform: none;
+}
+
 #pr-selection-cards .card:hover,
 #pr-selection-cards .card.filled,
-#pr-selection-cards .card.filled:hover {
+#pr-selection-cards .card.filled:hover,
+#pr-steps-area.animated-area .opt-card:hover,
+#pr-steps-area.animated-area .opt-card.is-selected,
+.device-card-results .opt-card:hover,
+.device-card-results .opt-card.is-selected,
+.brand-card-results .opt-card:hover,
+.brand-card-results .opt-card.is-selected,
+.series-card-results .opt-card:hover,
+.series-card-results .opt-card.is-selected,
+.model-card-results .opt-card:hover,
+.model-card-results .opt-card.is-selected,
+.repair-card-results .opt-card:hover,
+.repair-card-results .opt-card.is-selected {
   transform: none;
-  overflow: hidden;
 }
 
-#pr-selection-cards .card.filled {
-  border-color: rgba(102, 252, 241, 0.78);
-  outline: 2px solid rgba(102, 252, 241, 0.5);
-  outline-offset: -4px;
-
+#pr-selection-cards .card.filled,
+#pr-steps-area.animated-area .opt-card.is-selected,
+.device-card-results .opt-card.is-selected,
+.brand-card-results .opt-card.is-selected,
+.series-card-results .opt-card.is-selected,
+.model-card-results .opt-card.is-selected,
+.repair-card-results .opt-card.is-selected {
   box-shadow:
-    inset 0 0 0 2px rgba(102, 252, 241, 0.38),
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 4px 10px rgba(7, 123, 255, 0.1);
-}
-
-#pr-selection-cards .card.filled:hover {
-  box-shadow:
-    inset 0 0 0 2px rgba(102, 252, 241, 0.38),
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 4px 10px rgba(7, 123, 255, 0.1);
+    inset 0 0 0 2px rgba(102, 252, 241, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 /* Force step area wrapper to full width on mobile */
 #pr-steps-area.animated-area {
