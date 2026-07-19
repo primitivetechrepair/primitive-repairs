@@ -875,6 +875,7 @@ if (repairPolicyToggle && repairPolicyBox) {
 // CALL CUTOFF AFTER 7 PM EASTERN
 // ===============================
 
+const CALL_OPEN_HOUR_ET = 7;
 const CALL_CUTOFF_HOUR_ET = 19;
 
 function getEasternTimeParts() {
@@ -895,7 +896,7 @@ function getEasternTimeParts() {
 
 function isAfterCallCutoff() {
   const { hour } = getEasternTimeParts();
-  return hour >= CALL_CUTOFF_HOUR_ET;
+  return hour < CALL_OPEN_HOUR_ET || hour >= CALL_CUTOFF_HOUR_ET;
 }
 
 function updateCallAvailability() {
@@ -911,7 +912,7 @@ function updateCallAvailability() {
       link.classList.add("is-call-disabled-after-hours");
       link.setAttribute("aria-disabled", "true");
       link.setAttribute("tabindex", "-1");
-      link.setAttribute("title", "Calling is unavailable after 7:00 PM. Please text or submit a repair request.");
+      link.setAttribute("title", "Calling is available from 7:00 AM to 7:00 PM Eastern. Please text or submit a repair request.");
 
       if (link.dataset.callHref) {
         link.removeAttribute("href");
@@ -944,9 +945,9 @@ document.addEventListener(
     event.stopPropagation();
 
     if (typeof window.notify === "function") {
-      window.notify("Calling is unavailable after 7:00 PM. Please text or submit a repair request.");
+      window.notify("Calling is available from 7:00 AM to 7:00 PM Eastern. Please text or submit a repair request.");
     } else {
-      alert("Calling is unavailable after 7:00 PM. Please text or submit a repair request.");
+      alert("Calling is available from 7:00 AM to 7:00 PM Eastern. Please text or submit a repair request.");
     }
   },
   true
