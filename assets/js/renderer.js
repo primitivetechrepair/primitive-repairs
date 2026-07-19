@@ -1101,7 +1101,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("Model", device.model, "Not selected")}
         </div>
 
-        <div class="review-card review-card-repairs review-card-selected-repairs">
+        <div class="review-card review-card-selected-repairs">
           <h4>Selected Repairs</h4>
           ${repairsMarkup}
         </div>

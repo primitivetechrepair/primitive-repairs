@@ -11037,7 +11037,7 @@ body {
     grid-row: 2 / 3 !important;
   }
 
-  .review-panel .review-grid > div.review-card.review-card-repairs.review-card-selected-repairs {
+  .review-panel .review-grid > div.review-card.review-card-selected-repairs {
     grid-column: 2 / 3 !important;
     grid-row: 2 / 3 !important;
     grid-area: auto !important;
