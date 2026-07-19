@@ -15,7 +15,11 @@ import {
 } from "./renderer.js";
 
 import { renderAppointmentStep } from "./appointments.js";
-import { buildLeadPayload, validateLeadPayload } from "./leadSubmission.js";
+import {
+  applyAfterHoursBookingDetails,
+  buildLeadPayload,
+  validateLeadPayload
+} from "./leadSubmission.js";
 import { mapWizardPayloadToLead } from "./leadMapper.js";
 import { submitWizardLead } from "./leadSubmitter.js";
 
@@ -296,23 +300,36 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function isAfterAppointmentCutoff() {
-    const parts = new Intl.DateTimeFormat("en-US", {
-      timeZone: "America/New_York",
-      hour: "2-digit",
-      hourCycle: "h23"
-    }).formatToParts(new Date());
+    const selectedTime = String(
+      state.appointment?.time || ""
+    ).trim();
 
-    const hour = Number(
-      parts.find((part) => part.type === "hour")?.value || 0
+    const match = selectedTime.match(
+      /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i
     );
 
-    return hour >= 19;
+    if (!match) {
+      return false;
+    }
+
+    let hour = Number(match[1]);
+    const period = match[3].toUpperCase();
+
+    if (hour === 12) {
+      hour = 0;
+    }
+
+    if (period === "PM") {
+      hour += 12;
+    }
+
+    return hour < 7 || hour >= 19;
   }
 
   function getAfterHoursSummaryText() {
     if (!isAfterAppointmentCutoff()) return "";
 
-    return "$35 convenience fee may apply";
+    return "$35 after-hours convenience fee";
   }
 
   function renderLiveRepairSummary() {
@@ -356,7 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
         value: getWarrantySummaryText()
       },
       {
-        label: "After 7 PM ET",
+        label: "After-Hours Fee",
         value: getAfterHoursSummaryText(),
         tone: "warning"
       }
@@ -794,6 +811,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let submitResult;
 
   try {
+    applyAfterHoursBookingDetails(leadPayload);
     mappedLead = mapWizardPayloadToLead(leadPayload);
     submitResult = await submitWizardLead(mappedLead);
 

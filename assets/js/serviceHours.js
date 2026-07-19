@@ -1,6 +1,7 @@
 /* =========================================================
-   UNIVERSAL SERVICE HOURS LOCKOUT
-   Closed: 7:00 PM - 7:00 AM Eastern
+   UNIVERSAL CALL HOURS LOCKOUT
+   Calls closed: 7:00 PM - 7:00 AM Eastern
+   Online appointments remain available 24/7.
 ========================================================= */
 
 (() => {
@@ -8,20 +9,15 @@
   const CUTOFF_HOUR_ET = 19;
 
   const CALL_CLOSED_MESSAGE =
-    "Calling is available from 7:00 AM to 7:00 PM Eastern. Please text us or check back during business hours.";
-
-  const BOOKING_CLOSED_MESSAGE =
-    "Booking is available from 7:00 AM to 7:00 PM Eastern. Please check back during business hours.";
+    "Calling is available from 7:00 AM to 7:00 PM Eastern. Please text us or book an appointment online.";
 
   const AFTER_HOURS_BANNER_TEXT =
-    "Online booking and calls reopen at 7:00 AM ET. You can still text us or browse repair options.";
+    "Online appointments remain available. A $35 after-hours convenience fee applies from 7:00 PM to 7:00 AM ET. Calls reopen at 7:00 AM ET.";
 
-  const BOOKING_CLOSED_LABEL = "Booking Opens at 7 AM";
   const CALL_CLOSED_LABEL = "Call Opens at 7 AM";
 
   const LOCKED_CLASS = "service-hours-disabled";
   const CALL_LOCKED_CLASS = "service-hours-call-disabled";
-  const BOOKING_LOCKED_CLASS = "service-hours-booking-disabled";
   const BANNER_CLASS = "service-hours-banner";
 
   function getEasternHour() {
@@ -32,13 +28,16 @@
     });
 
     const parts = formatter.formatToParts(new Date());
-    const hourValue = Number(parts.find((part) => part.type === "hour")?.value || 0);
+    const hourValue = Number(
+      parts.find((part) => part.type === "hour")?.value || 0
+    );
 
     return hourValue === 24 ? 0 : hourValue;
   }
 
-  function isServiceClosed() {
+  function isCallClosed() {
     const hour = getEasternHour();
+
     return hour < OPEN_HOUR_ET || hour >= CUTOFF_HOUR_ET;
   }
 
@@ -52,7 +51,11 @@
   }
 
   function getStoredHref(element) {
-    return element.dataset.serviceHoursHref || element.getAttribute("href") || "";
+    return (
+      element.dataset.serviceHoursHref ||
+      element.getAttribute("href") ||
+      ""
+    );
   }
 
   function isCallLink(element) {
@@ -63,40 +66,7 @@
     return href.startsWith("tel:");
   }
 
-  function isBookingLink(element) {
-    if (!element || element.tagName !== "A") return false;
-
-    const href = getStoredHref(element).trim().toLowerCase();
-
-    return (
-      element.dataset.bookingLink === "true" ||
-      href.includes("primitive-wizard-container") ||
-      href.includes("repair-request") ||
-      href.includes("book-repair")
-    );
-  }
-
-  function isBookingButton(element) {
-    if (!element || !("matches" in element)) return false;
-
-    return (
-      element.matches("#cf-submit") ||
-      element.matches(".review-submit") ||
-      element.matches("[data-booking-submit='true']") ||
-      element.matches("#pr-customer-form button[type='submit']") ||
-      element.matches("#pr-customer-form input[type='submit']")
-    );
-  }
-
   function storeOriginalLabel(element) {
-    if (element.tagName === "INPUT") {
-      if (!element.dataset.serviceHoursText) {
-        element.dataset.serviceHoursText = element.value || "";
-      }
-
-      return;
-    }
-
     if (!element.dataset.serviceHoursText) {
       element.dataset.serviceHoursText = element.textContent || "";
     }
@@ -104,14 +74,6 @@
 
   function setElementLabel(element, label) {
     storeOriginalLabel(element);
-
-    if (element.tagName === "INPUT") {
-      if (element.value !== label) {
-        element.value = label;
-      }
-
-      return;
-    }
 
     if ((element.textContent || "").trim() !== label) {
       element.textContent = label;
@@ -121,16 +83,11 @@
   function restoreElementLabel(element) {
     if (!element.dataset.serviceHoursText) return;
 
-    if (element.tagName === "INPUT") {
-      element.value = element.dataset.serviceHoursText;
-    } else {
-      element.textContent = element.dataset.serviceHoursText;
-    }
-
+    element.textContent = element.dataset.serviceHoursText;
     delete element.dataset.serviceHoursText;
   }
 
-  function disableAnchor(anchor, type, message) {
+  function disableCallAnchor(anchor) {
     if (!anchor.dataset.serviceHoursHref && anchor.getAttribute("href")) {
       anchor.dataset.serviceHoursHref = anchor.getAttribute("href");
     }
@@ -138,22 +95,14 @@
     anchor.removeAttribute("href");
     anchor.setAttribute("aria-disabled", "true");
     anchor.setAttribute("tabindex", "-1");
-    anchor.setAttribute("title", message);
+    anchor.setAttribute("title", CALL_CLOSED_MESSAGE);
 
-    anchor.classList.add(LOCKED_CLASS);
+    anchor.classList.add(LOCKED_CLASS, CALL_LOCKED_CLASS);
 
-    if (type === "call") {
-      anchor.classList.add(CALL_LOCKED_CLASS);
-      setElementLabel(anchor, CALL_CLOSED_LABEL);
-    }
-
-    if (type === "booking") {
-      anchor.classList.add(BOOKING_LOCKED_CLASS);
-      setElementLabel(anchor, BOOKING_CLOSED_LABEL);
-    }
+    setElementLabel(anchor, CALL_CLOSED_LABEL);
   }
 
-  function enableAnchor(anchor) {
+  function enableCallAnchor(anchor) {
     if (anchor.dataset.serviceHoursHref) {
       anchor.setAttribute("href", anchor.dataset.serviceHoursHref);
       delete anchor.dataset.serviceHoursHref;
@@ -163,40 +112,9 @@
     anchor.removeAttribute("tabindex");
     anchor.removeAttribute("title");
 
-    anchor.classList.remove(LOCKED_CLASS, CALL_LOCKED_CLASS, BOOKING_LOCKED_CLASS);
+    anchor.classList.remove(LOCKED_CLASS, CALL_LOCKED_CLASS);
 
     restoreElementLabel(anchor);
-  }
-
-  function disableButton(button, type, message) {
-    if (!button.disabled) {
-      button.dataset.serviceHoursDisabled = "true";
-      button.disabled = true;
-    }
-
-    button.setAttribute("aria-disabled", "true");
-    button.setAttribute("title", message);
-
-    button.classList.add(LOCKED_CLASS);
-
-    if (type === "booking") {
-      button.classList.add(BOOKING_LOCKED_CLASS);
-      setElementLabel(button, BOOKING_CLOSED_LABEL);
-    }
-  }
-
-  function enableButton(button) {
-    if (button.dataset.serviceHoursDisabled === "true") {
-      button.disabled = false;
-      delete button.dataset.serviceHoursDisabled;
-    }
-
-    button.removeAttribute("aria-disabled");
-    button.removeAttribute("title");
-
-    button.classList.remove(LOCKED_CLASS, BOOKING_LOCKED_CLASS);
-
-    restoreElementLabel(button);
   }
 
   function removeAfterHoursBanner() {
@@ -206,7 +124,9 @@
   }
 
   function getBannerTarget() {
-    const wizardHeader = document.querySelector("#primitive-wizard-container .pr-header");
+    const wizardHeader = document.querySelector(
+      "#primitive-wizard-container .pr-header"
+    );
 
     if (wizardHeader) {
       return {
@@ -260,7 +180,7 @@
 
     const target = getBannerTarget();
 
-    if (!target || !target.element) {
+    if (!target?.element) {
       return;
     }
 
@@ -288,84 +208,42 @@
   }
 
   function applyServiceHours() {
-    const closed = isServiceClosed();
+    const closed = isCallClosed();
 
-    document.querySelectorAll("a, button, input[type='submit']").forEach((element) => {
-      if (element.closest(`.${BANNER_CLASS}`)) return;
+    document.querySelectorAll("a").forEach((anchor) => {
+      if (anchor.closest(`.${BANNER_CLASS}`)) return;
+      if (!isCallLink(anchor)) return;
 
-      if (isCallLink(element)) {
-        if (closed) {
-          disableAnchor(element, "call", CALL_CLOSED_MESSAGE);
-        } else {
-          enableAnchor(element);
-        }
-
-        return;
-      }
-
-      if (isBookingLink(element)) {
-        if (closed) {
-          disableAnchor(element, "booking", BOOKING_CLOSED_MESSAGE);
-        } else {
-          enableAnchor(element);
-        }
-
-        return;
-      }
-
-      if (isBookingButton(element)) {
-        if (closed) {
-          disableButton(element, "booking", BOOKING_CLOSED_MESSAGE);
-        } else {
-          enableButton(element);
-        }
+      if (closed) {
+        disableCallAnchor(anchor);
+      } else {
+        enableCallAnchor(anchor);
       }
     });
 
     renderAfterHoursBanner(closed);
-    document.documentElement.classList.toggle("service-hours-closed", closed);
+
+    document.documentElement.classList.toggle(
+      "service-hours-closed",
+      closed
+    );
   }
 
   document.addEventListener(
     "click",
     (event) => {
-      if (!isServiceClosed()) return;
+      if (!isCallClosed()) return;
 
-      const callTarget = event.target.closest("a[href^='tel:'], a[data-service-hours-href^='tel:']");
-
-      if (callTarget) {
-        event.preventDefault();
-        event.stopPropagation();
-        notifyUser(CALL_CLOSED_MESSAGE);
-        return;
-      }
-
-      const bookingTarget = event.target.closest(
-        "a[data-service-hours-href*='primitive-wizard-container'], a[href*='primitive-wizard-container'], a[data-booking-link='true'], button, input[type='submit']"
+      const callTarget = event.target.closest(
+        "a[href^='tel:'], a[data-service-hours-href^='tel:']"
       );
 
-      if (
-        bookingTarget &&
-        (isBookingLink(bookingTarget) || isBookingButton(bookingTarget))
-      ) {
-        event.preventDefault();
-        event.stopPropagation();
-        notifyUser(BOOKING_CLOSED_MESSAGE);
-      }
-    },
-    true
-  );
+      if (!callTarget) return;
 
-  document.addEventListener(
-    "submit",
-    (event) => {
-      if (!isServiceClosed()) return;
+      event.preventDefault();
+      event.stopPropagation();
 
-      if (event.target && event.target.matches("#pr-customer-form")) {
-        event.preventDefault();
-        event.stopPropagation();
-        notifyUser(BOOKING_CLOSED_MESSAGE);
-      }
+      notifyUser(CALL_CLOSED_MESSAGE);
     },
     true
   );

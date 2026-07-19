@@ -1116,6 +1116,12 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
   const serviceType = serviceLabels[appointment.serviceType] || appointment.serviceType || "Not selected";
   const preferredDate = formatDisplayDate(appointment.date);
   const preferredTime = appointment.time || "Not selected";
+  const convenienceFee = Number(appointment.convenienceFee || 0);
+  const convenienceFeeLabel =
+    appointment.convenienceFeeLabel ||
+    (convenienceFee > 0
+      ? `$${convenienceFee.toFixed(2)} after-hours convenience fee`
+      : "None");
 
   container.innerHTML = `
     <section class="review-panel">
@@ -1163,6 +1169,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("Service Type", serviceType, "Not selected")}
           ${renderReviewRow("Preferred Date", preferredDate, "Not selected")}
           ${renderReviewRow("Preferred Time", preferredTime, "Not selected")}
+          ${renderReviewRow("Convenience Fee", convenienceFeeLabel, "None")}
         </div>
 
         <div class="review-card review-card-notes">

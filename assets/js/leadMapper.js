@@ -84,8 +84,14 @@ export function mapWizardPayloadToLead(payload) {
       technician: payload.appointment?.technician || null,
       pickupRequired: Boolean(payload.appointment?.pickupRequired),
       mailIn: Boolean(payload.appointment?.mailIn),
-      onsite: Boolean(payload.appointment?.onsite)
+      onsite: Boolean(payload.appointment?.onsite),
+      afterHours: Boolean(payload.appointment?.afterHours),
+      convenienceFee: Number(payload.appointment?.convenienceFee || 0),
+      convenienceFeeLabel: payload.appointment?.convenienceFeeLabel || null
     },
+
+    convenienceFee: Number(payload.appointment?.convenienceFee || 0),
+    afterHoursConvenienceFee: Boolean(payload.appointment?.afterHours),
 
     serviceType: payload.appointment?.serviceType || "",
     appointmentDate: payload.appointment?.date || "",

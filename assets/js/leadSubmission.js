@@ -42,6 +42,51 @@ function getSelectedRepairs() {
   return [];
 }
 
+function getAppointmentHour24(timeValue) {
+  const match = String(timeValue || "")
+    .trim()
+    .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+
+  if (!match) {
+    return null;
+  }
+
+  let hour = Number(match[1]);
+  const period = match[3].toUpperCase();
+
+  if (hour === 12) {
+    hour = 0;
+  }
+
+  if (period === "PM") {
+    hour += 12;
+  }
+
+  return hour;
+}
+
+export function applyAfterHoursBookingDetails(payload) {
+  if (!payload.appointment) {
+    payload.appointment = {};
+  }
+
+  const appointmentHour = getAppointmentHour24(
+    payload.appointment.time
+  );
+
+  const isAfterHours =
+    appointmentHour !== null &&
+    (appointmentHour < 7 || appointmentHour >= 19);
+
+  payload.appointment.afterHours = isAfterHours;
+  payload.appointment.convenienceFee = isAfterHours ? 35 : 0;
+  payload.appointment.convenienceFeeLabel = isAfterHours
+    ? "$35 after-hours convenience fee"
+    : null;
+
+  return payload;
+}
+
 export function buildLeadPayload(form) {
   const formData = new FormData(form);
 
@@ -56,8 +101,7 @@ export function buildLeadPayload(form) {
     warranty: null,
     symptoms: []
   };
-
-  return {
+  const payload = {
     requestId: generateRequestId(),
 
     customer: {
@@ -109,6 +153,8 @@ export function buildLeadPayload(form) {
 
     createdAt: new Date().toISOString()
   };
+
+  return applyAfterHoursBookingDetails(payload);
 }
 
 export function validateLeadPayload(payload) {
