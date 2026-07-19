@@ -5676,21 +5676,33 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .review-option-header {
-  width: 100%;
+  width: min(760px, 100%);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
+
+  display: grid;
+  justify-items: center;
 
   text-align: center;
   justify-self: center;
 }
 
+.review-option-header span,
 .review-option-header h3,
-.review-option-header p,
-.review-option-header span {
-  text-align: center;
+.review-option-header p {
+  width: 100%;
+  max-width: 620px;
   margin-left: auto;
   margin-right: auto;
+
+  display: block;
+
+  text-align: center;
+}
+
+.review-option-header span {
+  width: fit-content;
 }
 
 .success-option-header {
