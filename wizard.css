@@ -11604,6 +11604,50 @@ body {
   }
 }
 }
+/* =========================================================
+   CONNECTED TOP SELECTION ROW
+========================================================= */
+
+@media (min-width: 701px) {
+  #pr-selection-cards.selection-cards {
+    width: 100%;
+    gap: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    align-items: stretch;
+  }
+
+  #pr-selection-cards.selection-cards .card {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    margin: 0 !important;
+
+    border-radius: 0;
+  }
+
+  #pr-selection-cards.selection-cards .card + .card {
+    border-left-width: 0;
+  }
+
+  #pr-selection-cards.selection-cards .card:first-child {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+
+  #pr-selection-cards.selection-cards .card:last-child {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+  }
+
+  #pr-selection-cards.selection-cards .card:hover {
+    z-index: 3;
+  }
+
+  #pr-selection-cards.selection-cards .card.is-current-step {
+    z-index: 4;
+  }
+}
 WIZARD ACTION BUTTON CLARITY
 ========================================================= */
 
