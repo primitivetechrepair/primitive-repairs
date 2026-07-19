@@ -9033,13 +9033,24 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .success-panel h3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
   font-size: clamp(1.6rem, 4vw, 2.4rem);
+  text-align: center;
+  justify-self: center;
+}
+
+.success-hero {
+  text-align: center;
 }
 
 .success-message {
   max-width: 560px;
   margin: 0 auto;
   line-height: 1.65;
+  text-align: center;
 }
 
 .success-summary {
