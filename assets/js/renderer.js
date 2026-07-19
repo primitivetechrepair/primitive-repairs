@@ -1210,3 +1210,43 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
     });
   }
 }
+/* =========================================================
+   CENTER REPAIR DETAILS INSTRUCTION TEXT WATCHER
+========================================================= */
+
+function centerRepairDetailsInstructionText() {
+  const targetText = "Confirm the repair details below, then add your contact information.";
+
+  document
+    .querySelectorAll("#primitive-wizard-container p, #primitive-wizard-container div, #primitive-wizard-container span")
+    .forEach((element) => {
+      const directText = Array.from(element.childNodes)
+        .filter((node) => node.nodeType === Node.TEXT_NODE)
+        .map((node) => node.textContent)
+        .join(" ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      const fullText = (element.textContent || "")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      if (directText === targetText || fullText === targetText) {
+        element.classList.add("repair-details-instruction-centered");
+      }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", centerRepairDetailsInstructionText);
+window.addEventListener("load", centerRepairDetailsInstructionText);
+
+const repairDetailsInstructionObserver = new MutationObserver(() => {
+  centerRepairDetailsInstructionText();
+});
+
+repairDetailsInstructionObserver.observe(document.documentElement, {
+  childList: true,
+  subtree: true,
+});
+
+/* END CENTER REPAIR DETAILS INSTRUCTION TEXT WATCHER */

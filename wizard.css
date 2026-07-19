@@ -12567,14 +12567,26 @@ html.service-hours-closed .service-hours-booking-disabled {
   }
 }
 /* =========================================================
-   CENTER REPAIR DETAILS INSTRUCTION TEXT
+   CENTER REPAIR DETAILS INSTRUCTION TEXT WATCHER
 ========================================================= */
 
-.repair-details-instruction-centered {
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto 18px;
+#primitive-wizard-container .repair-details-instruction-centered {
+  display: block !important;
 
-  text-align: center;
+  width: 100% !important;
+  max-width: 760px !important;
+
+  margin: 0 auto 18px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+  text-align: center !important;
+  justify-self: center !important;
+  align-self: center !important;
+}
+
+#primitive-wizard-container .repair-details-instruction-centered,
+#primitive-wizard-container .repair-details-instruction-centered * {
+  text-align: center !important;
 }
 
