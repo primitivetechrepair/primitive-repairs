@@ -871,3 +871,87 @@ if (repairPolicyToggle && repairPolicyBox) {
 
   renderWizard();
 });
+// ===============================
+// CALL CUTOFF AFTER 7 PM EASTERN
+// ===============================
+
+const CALL_CUTOFF_HOUR_ET = 19;
+
+function getEasternTimeParts() {
+  const formatter = new Intl.DateTimeFormat("en-US", {
+    timeZone: "America/New_York",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
+
+  const parts = formatter.formatToParts(new Date());
+
+  return {
+    hour: Number(parts.find((part) => part.type === "hour")?.value || 0),
+    minute: Number(parts.find((part) => part.type === "minute")?.value || 0),
+  };
+}
+
+function isAfterCallCutoff() {
+  const { hour } = getEasternTimeParts();
+  return hour >= CALL_CUTOFF_HOUR_ET;
+}
+
+function updateCallAvailability() {
+  const afterCutoff = isAfterCallCutoff();
+  const callLinks = document.querySelectorAll('a[href^="tel:"], a[data-call-href^="tel:"]');
+
+  callLinks.forEach((link) => {
+    if (!link.dataset.callHref && link.getAttribute("href")?.startsWith("tel:")) {
+      link.dataset.callHref = link.getAttribute("href");
+    }
+
+    if (afterCutoff) {
+      link.classList.add("is-call-disabled-after-hours");
+      link.setAttribute("aria-disabled", "true");
+      link.setAttribute("tabindex", "-1");
+      link.setAttribute("title", "Calling is unavailable after 7:00 PM. Please text or submit a repair request.");
+
+      if (link.dataset.callHref) {
+        link.removeAttribute("href");
+      }
+
+      return;
+    }
+
+    link.classList.remove("is-call-disabled-after-hours");
+    link.removeAttribute("aria-disabled");
+    link.removeAttribute("tabindex");
+    link.removeAttribute("title");
+
+    if (link.dataset.callHref) {
+      link.setAttribute("href", link.dataset.callHref);
+    }
+  });
+}
+
+document.addEventListener(
+  "click",
+  (event) => {
+    const callLink = event.target.closest('a[href^="tel:"], a[data-call-href^="tel:"]');
+
+    if (!callLink || !isAfterCallCutoff()) {
+      return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    if (typeof window.notify === "function") {
+      window.notify("Calling is unavailable after 7:00 PM. Please text or submit a repair request.");
+    } else {
+      alert("Calling is unavailable after 7:00 PM. Please text or submit a repair request.");
+    }
+  },
+  true
+);
+
+document.addEventListener("DOMContentLoaded", updateCallAvailability);
+window.addEventListener("load", updateCallAvailability);
+setInterval(updateCallAvailability, 60000);

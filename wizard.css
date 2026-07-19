@@ -11286,3 +11286,22 @@ body {
   box-shadow: none !important;
 }
 }
+/* Call disabled after 7 PM Eastern */
+.is-call-disabled-after-hours,
+.is-call-disabled-after-hours:hover,
+.is-call-disabled-after-hours:active {
+  pointer-events: auto;
+  cursor: not-allowed;
+  opacity: 0.56;
+  filter: grayscale(0.85);
+  transform: none !important;
+}
+
+.mobile-sticky-booking-secondary.is-call-disabled-after-hours {
+  border-color: rgba(37, 40, 61, 0.14);
+  background:
+    linear-gradient(180deg, rgba(230, 232, 238, 0.94), rgba(210, 214, 224, 0.9));
+  color: rgba(37, 40, 61, 0.64);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
