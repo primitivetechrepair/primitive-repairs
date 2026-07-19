@@ -1250,3 +1250,59 @@ repairDetailsInstructionObserver.observe(document.documentElement, {
 });
 
 /* END CENTER REPAIR DETAILS INSTRUCTION TEXT WATCHER */
+/* =========================================================
+   REPAIR BLUEPRINT FULL CARD CLICK TARGETS
+========================================================= */
+
+function syncBlueprintCardClickTargets() {
+  const root = document.querySelector("#pr-selection-cards.blueprint-selection-module");
+
+  if (!root) return;
+
+  root.querySelectorAll(".pr-progress-card").forEach((card) => {
+    const editButton = card.querySelector(".card-back");
+    const canEdit =
+      editButton &&
+      !editButton.disabled &&
+      (editButton.textContent || "").trim().length > 0;
+
+    card.classList.toggle("is-clickable-blueprint-card", Boolean(canEdit));
+  });
+}
+
+document.addEventListener(
+  "click",
+  (event) => {
+    const card = event.target.closest(
+      "#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card"
+    );
+
+    if (!card) return;
+
+    if (event.target.closest(".card-back")) return;
+
+    const editButton = card.querySelector(".card-back:not(:disabled)");
+
+    if (!editButton) return;
+
+    event.preventDefault();
+    editButton.click();
+  },
+  true
+);
+
+document.addEventListener("DOMContentLoaded", syncBlueprintCardClickTargets);
+window.addEventListener("load", syncBlueprintCardClickTargets);
+
+const blueprintCardClickObserver = new MutationObserver(() => {
+  syncBlueprintCardClickTargets();
+});
+
+blueprintCardClickObserver.observe(document.documentElement, {
+  childList: true,
+  subtree: true,
+  attributes: true,
+  attributeFilter: ["class", "disabled"]
+});
+
+/* END REPAIR BLUEPRINT FULL CARD CLICK TARGETS */

@@ -12855,4 +12855,29 @@ html.service-hours-closed .service-hours-booking-disabled {
     min-height: 38px !important;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT FULL CARD CLICK TARGETS
+========================================================= */
+
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card {
+  cursor: pointer !important;
+}
+
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card .card-heading,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card .card-img,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card .card-label {
+  cursor: pointer !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover {
+    background:
+      radial-gradient(circle at center, rgba(102, 252, 241, 0.12), transparent 55%),
+      linear-gradient(180deg, rgba(102, 252, 241, 0.07), rgba(7, 123, 255, 0.032)) !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover .card-label {
+    color: rgba(255, 255, 255, 0.98) !important;
+  }
+}
 
