@@ -8834,7 +8834,15 @@ backdrop-filter: blur(16px) saturate(170%);
   border-color: rgba(7, 123, 255, 0.18);
 }
 
-.review-grid > .review-card,
+.review-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.review-grid > .review-card {
+  grid-column: auto;
+  width: 100%;
+}
+
 .review-grid > .review-card-wide,
 .review-grid > .review-card-repairs {
   grid-column: 1 / -1;
@@ -10954,6 +10962,16 @@ body {
   max-width: 100% !important;
 }
 
+/* Final Review stacks on mobile */
+.review-grid {
+  grid-template-columns: 1fr;
+}
+
+.review-grid > .review-card,
+.review-grid > .review-card-wide,
+.review-grid > .review-card-repairs {
+  grid-column: 1 / -1;
+}
 /* Mobile wizard option cards */
 #pr-steps-area {
   width: 100%;
