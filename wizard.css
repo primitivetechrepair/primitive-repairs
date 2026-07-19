@@ -11846,464 +11846,427 @@ body {
   }
 }
 /* =========================================================
-   HEADER CARD CONNECTED WIDTH PASS
+   REPAIR PROFILE DIAGNOSTIC MODULE
 ========================================================= */
 
-#pr-selection-cards.pr-header-selection-cards {
-  gap: 0 !important;
+#pr-selection-cards.repair-profile-module,
+#pr-selection-cards.repair-profile-module * {
+  box-sizing: border-box;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-  border-radius: 0 !important;
-}
+#pr-selection-cards.repair-profile-module {
+  width: 100%;
+  max-width: 100%;
+  margin: 18px 0 0;
+  padding: 0;
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card:not(:first-child) {
-  border-left: 0 !important;
-}
+  display: block;
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card:first-child {
-  border-top-left-radius: 14px !important;
-  border-bottom-left-radius: 14px !important;
-}
+  overflow: hidden;
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card:last-child {
-  border-top-right-radius: 14px !important;
-  border-bottom-right-radius: 14px !important;
-}
-
-@media (min-width: 701px) {
-  #pr-selection-cards.pr-header-selection-cards {
-    gap: 0 !important;
-  }
-}
-
-@media (max-width: 380px) {
-  #pr-selection-cards.pr-header-selection-cards {
-    gap: 0 !important;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:first-child {
-    border-top-left-radius: 11px !important;
-    border-bottom-left-radius: 11px !important;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:last-child {
-    border-top-right-radius: 11px !important;
-    border-bottom-right-radius: 11px !important;
-  }
-}
-/* =========================================================
-   HEADER CARD CHANGE BUTTON EMPHASIS
-========================================================= */
-
-#pr-selection-cards.pr-header-selection-cards .card-back {
-  background:
-    linear-gradient(135deg, #25283d 0%, #077bff 78%, #2fbff4 100%) !important;
-
-  color: #ffffff !important;
-
-  border-top: 1px solid rgba(102, 252, 241, 0.42) !important;
-
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    0 -1px 0 rgba(102, 252, 241, 0.12) !important;
-
-  transition:
-    background 0.18s ease,
-    color 0.18s ease,
-    filter 0.18s ease,
-    letter-spacing 0.18s ease;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-back,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-back {
-  background:
-    linear-gradient(135deg, #077bff 0%, #2fbff4 62%, #66fcf1 100%) !important;
-
-  color: #ffffff !important;
-
-  border-top-color: rgba(102, 252, 241, 0.62) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.pr-header-selection-cards .card-back:hover {
-    background:
-      linear-gradient(135deg, #66fcf1 0%, #2fbff4 45%, #077bff 100%) !important;
-
-    color: #000000 !important;
-
-    letter-spacing: 0.09em;
-
-    filter:
-      saturate(1.12)
-      brightness(1.05);
-
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.36),
-      0 -1px 0 rgba(102, 252, 241, 0.2),
-      0 0 18px rgba(102, 252, 241, 0.26) !important;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-back:active {
-    filter: brightness(0.96);
-  }
-}
-/* =========================================================
-   HEADER CARD MISSING CHOICE STATE
-========================================================= */
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice {
-  border-color: rgba(37, 40, 61, 0.1);
+  border: 1px solid rgba(37, 40, 61, 0.14);
+  border-radius: 20px;
 
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 247, 251, 0.72));
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-heading {
-  color: rgba(37, 40, 61, 0.52);
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-img {
-  opacity: 0.36;
-  filter: grayscale(1) saturate(0.65);
-
-  border-radius: 16px;
-
-  background-color: rgba(37, 40, 61, 0.035);
-
-  outline: 1px dashed rgba(37, 40, 61, 0.18);
-  outline-offset: 5px;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
-  width: calc(100% - 10px);
-  padding: 5px 6px;
-
-  border: 1px dashed rgba(7, 123, 255, 0.28);
-  border-radius: 999px;
-
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.66), rgba(233, 255, 253, 0.38));
-
-  color: rgba(7, 123, 255, 0.78);
-
-  font-size: 7.75px;
-  font-style: normal;
-  font-weight: 950;
-  letter-spacing: 0.055em;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice.is-current-step {
-  border-color: rgba(7, 123, 255, 0.38);
-
-  box-shadow:
-    0 10px 24px rgba(7, 123, 255, 0.1),
-    inset 0 0 0 1px rgba(102, 252, 241, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice.is-current-step .card-label {
-  border-color: rgba(102, 252, 241, 0.58);
-
-  background:
-    linear-gradient(135deg, rgba(233, 255, 253, 0.88), rgba(102, 252, 241, 0.18));
-
-  color: rgba(7, 123, 255, 0.96);
-}
-
-@media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice:hover .card-label {
-    border-color: rgba(102, 252, 241, 0.72);
-
-    background:
-      linear-gradient(135deg, rgba(233, 255, 253, 0.96), rgba(102, 252, 241, 0.24));
-
-    color: #000000;
-  }
-}
-
-@media (min-width: 701px) {
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
-    font-size: 8.75px;
-  }
-}
-
-@media (max-width: 380px) {
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
-    width: calc(100% - 6px);
-    padding: 4px 3px;
-    font-size: 6.75px;
-    letter-spacing: 0.035em;
-  }
-}
-/* =========================================================
-   HEADER CARD EXECUTIVE FINISH
-========================================================= */
-
-/* Outer connected frame */
-#pr-selection-cards.pr-header-selection-cards {
-  margin-top: 18px !important;
-  gap: 0 !important;
-
-  overflow: hidden !important;
-
-  border: 1px solid rgba(37, 40, 61, 0.14) !important;
-  border-radius: 18px !important;
-
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(241, 244, 249, 0.92)) !important;
+    linear-gradient(180deg, #ffffff 0%, #f4f6fa 100%);
 
   box-shadow:
     0 18px 38px rgba(37, 40, 61, 0.10),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+    inset 0 1px 0 rgba(255, 255, 255, 0.94);
 }
 
-/* Individual card surface */
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-  border-radius: 0 !important;
-  border-top: 0 !important;
-  border-bottom: 0 !important;
-  border-left: 1px solid rgba(37, 40, 61, 0.10) !important;
-  border-right: 0 !important;
+#pr-selection-cards.repair-profile-module .repair-profile-header {
+  min-height: 54px;
+  padding: 12px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  border-bottom: 1px solid rgba(102, 252, 241, 0.22);
 
   background:
-    linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%) !important;
+    linear-gradient(135deg, #25283d 0%, #1d2136 62%, #17203a 100%);
+
+  color: #ffffff;
+}
+
+#pr-selection-cards.repair-profile-module .repair-profile-header div {
+  min-width: 0;
+
+  display: grid;
+  gap: 4px;
+}
+
+#pr-selection-cards.repair-profile-module .repair-profile-kicker {
+  color: #66fcf1;
+
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 950;
+  letter-spacing: 0.09em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#pr-selection-cards.repair-profile-module .repair-profile-header strong {
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+#pr-selection-cards.repair-profile-module .repair-profile-segments {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+
+  width: 100%;
+}
+
+#pr-selection-cards.repair-profile-module .pr-progress-card {
+  position: relative;
+
+  min-width: 0;
+  min-height: 154px;
+  width: auto;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-rows: 30px minmax(64px, 1fr) minmax(32px, auto) 28px;
+  align-items: stretch;
+  justify-items: stretch;
+
+  overflow: hidden;
+
+  border: 0;
+  border-left: 1px solid rgba(37, 40, 61, 0.10);
+  border-radius: 0;
+
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
+
+  color: var(--accent);
 
   box-shadow:
-    inset 1px 0 0 rgba(255, 255, 255, 0.72) !important;
+    inset 1px 0 0 rgba(255, 255, 255, 0.68);
 
-  transform: none !important;
-  transition: none !important;
+  transform: none;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card:first-child {
-  border-left: 0 !important;
+#pr-selection-cards.repair-profile-module .pr-progress-card:first-child {
+  border-left: 0;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card::before,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card::after {
+#pr-selection-cards.repair-profile-module .pr-progress-card::before,
+#pr-selection-cards.repair-profile-module .pr-progress-card::after,
+#pr-selection-cards.repair-profile-module .card-heading::before,
+#pr-selection-cards.repair-profile-module .card-heading::after,
+#pr-selection-cards.repair-profile-module .card-img::before,
+#pr-selection-cards.repair-profile-module .card-img::after,
+#pr-selection-cards.repair-profile-module .card-label::before,
+#pr-selection-cards.repair-profile-module .card-label::after,
+#pr-selection-cards.repair-profile-module .card-back::before,
+#pr-selection-cards.repair-profile-module .card-back::after {
   display: none !important;
   content: none !important;
 }
 
-/* Built-in top title strip */
-#pr-selection-cards.pr-header-selection-cards .card-heading {
-  min-height: 30px !important;
+#pr-selection-cards.repair-profile-module .card-heading {
+  grid-row: 1;
 
-  border-bottom: 1px solid rgba(37, 40, 61, 0.12) !important;
+  min-height: 30px;
+  width: 100%;
+  padding: 0 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid rgba(37, 40, 61, 0.10);
 
   background:
-    linear-gradient(180deg, #25283d 0%, #1d2033 100%) !important;
+    linear-gradient(180deg, #f4f6fa 0%, #ffffff 100%);
 
-  color: rgba(255, 255, 255, 0.88) !important;
+  color: rgba(37, 40, 61, 0.58);
 
-  font-size: 8px !important;
-  font-weight: 950 !important;
-  letter-spacing: 0.115em !important;
-
-  text-shadow: none !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.10),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+  font-family: var(--font-display);
+  font-size: 8px;
+  font-weight: 950;
+  letter-spacing: 0.105em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* Center image: larger, clean, not gimmicky */
-#pr-selection-cards.pr-header-selection-cards .card-img {
-  width: 68px !important;
-  height: 68px !important;
-  min-width: 68px !important;
-  min-height: 68px !important;
-  max-width: 68px !important;
-  max-height: 68px !important;
+#pr-selection-cards.repair-profile-module .card-img {
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
 
-  border-radius: 16px !important;
+  width: 66px;
+  height: 66px;
+  min-width: 66px;
+  min-height: 66px;
+  max-width: 66px;
+  max-height: 66px;
+
+  margin: 0;
+  padding: 0;
+
+  display: block;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
   filter:
     drop-shadow(0 8px 12px rgba(37, 40, 61, 0.12))
-    saturate(1.02) !important;
+    saturate(1.02);
 
-  transform: none !important;
-  transition: none !important;
+  transform: none;
 }
 
-/* Selected / waiting value */
-#pr-selection-cards.pr-header-selection-cards .card-label {
-  color: rgba(37, 40, 61, 0.92) !important;
+#pr-selection-cards.repair-profile-module .card-label {
+  grid-row: 3;
+  align-self: center;
+  justify-self: center;
 
-  font-weight: 950 !important;
-  letter-spacing: 0.035em !important;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
 
-  text-shadow: none !important;
+  margin: 0;
+  padding: 0 8px;
+
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+
+  color: rgba(37, 40, 61, 0.9);
+
+  font-family: var(--font-display);
+  font-size: 8.75px;
+  font-weight: 950;
+  letter-spacing: 0.035em;
+  line-height: 1.12;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
-/* Bottom Change strip */
-#pr-selection-cards.pr-header-selection-cards .card-back {
-  min-height: 30px !important;
+#pr-selection-cards.repair-profile-module .card-back {
+  grid-row: 4;
 
-  border: 0 !important;
-  border-top: 1px solid rgba(37, 40, 61, 0.14) !important;
-  border-radius: 0 !important;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  min-height: 28px;
+
+  margin: 0;
+  padding: 0 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-top: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 0;
 
   background:
-    linear-gradient(180deg, #077bff 0%, #0566d4 100%) !important;
+    linear-gradient(180deg, #077bff 0%, #0566d4 100%);
 
-  color: #ffffff !important;
+  color: #ffffff;
 
-  font-size: 7.5px !important;
-  font-weight: 950 !important;
-  letter-spacing: 0.095em !important;
-
-  text-shadow: none !important;
+  font-family: var(--font-display);
+  font-size: 7.5px;
+  font-weight: 950;
+  letter-spacing: 0.095em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
 
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.16) !important;
+    inset 0 -1px 0 rgba(0, 0, 0, 0.16);
 
-  transform: none !important;
-  transition: none !important;
+  cursor: pointer;
+
+  transform: none;
+  transition: none;
 }
 
-/* Remove all hover movement/effects from these cards */
-@media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:hover,
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card:hover .card-img,
-  #pr-selection-cards.pr-header-selection-cards .card-back:hover,
-  #pr-selection-cards.pr-header-selection-cards .card-back:active {
-    transform: none !important;
-    filter: none !important;
-    letter-spacing: inherit !important;
-    transition: none !important;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-back:hover {
-    background:
-      linear-gradient(180deg, #077bff 0%, #0566d4 100%) !important;
-
-    color: #ffffff !important;
-
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.22),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.16) !important;
-  }
-}
-
-/* Filled/current state: premium accent, not glow-heavy */
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step {
+#pr-selection-cards.repair-profile-module .card-back:disabled {
   background:
-    linear-gradient(180deg, #ffffff 0%, #eefcff 100%) !important;
+    linear-gradient(180deg, rgba(247, 248, 251, 0.86), rgba(237, 240, 246, 0.92));
+
+  color: transparent;
+
+  cursor: default;
+
+  box-shadow: none;
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-heading,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-heading {
-  background:
-    linear-gradient(180deg, #25283d 0%, #18233f 100%) !important;
-
-  color: #66fcf1 !important;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-back,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-back {
-  background:
-    linear-gradient(180deg, #066fe6 0%, #055ec4 100%) !important;
-
-  color: #ffffff !important;
-}
-
-/* Missing choice: intentional placeholder, not empty */
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice {
-  background:
-    linear-gradient(180deg, #ffffff 0%, #f4f6fa 100%) !important;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-img {
-  opacity: 0.42 !important;
-
-  outline: none !important;
+#pr-selection-cards.repair-profile-module .pr-progress-card.is-missing-choice .card-img {
+  opacity: 0.42;
 
   filter:
     grayscale(1)
-    saturate(0.6)
-    drop-shadow(0 6px 10px rgba(37, 40, 61, 0.08)) !important;
+    saturate(0.58)
+    drop-shadow(0 6px 10px rgba(37, 40, 61, 0.08));
 }
 
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-missing-choice .card-label {
-  width: calc(100% - 12px) !important;
-  padding: 5px 6px !important;
+#pr-selection-cards.repair-profile-module .pr-progress-card.is-missing-choice .card-label {
+  width: calc(100% - 14px);
+  padding: 5px 6px;
 
-  border: 1px solid rgba(37, 40, 61, 0.12) !important;
-  border-radius: 999px !important;
+  border: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.72) !important;
+  background: rgba(255, 255, 255, 0.78);
 
-  color: rgba(37, 40, 61, 0.58) !important;
+  color: rgba(37, 40, 61, 0.58);
 
-  font-size: 7.25px !important;
-  letter-spacing: 0.06em !important;
+  font-size: 7.25px;
+  letter-spacing: 0.06em;
 
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.86) !important;
+    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+}
+
+#pr-selection-cards.repair-profile-module .pr-progress-card.filled,
+#pr-selection-cards.repair-profile-module .pr-progress-card.is-current-step {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #eefcff 100%);
+}
+
+#pr-selection-cards.repair-profile-module .pr-progress-card.filled .card-heading,
+#pr-selection-cards.repair-profile-module .pr-progress-card.is-current-step .card-heading {
+  background:
+    linear-gradient(180deg, #f2fffd 0%, #ffffff 100%);
+
+  color: rgba(7, 123, 255, 0.86);
+}
+
+#pr-selection-cards.repair-profile-module .pr-progress-card.filled .card-back,
+#pr-selection-cards.repair-profile-module .pr-progress-card.is-current-step .card-back {
+  background:
+    linear-gradient(180deg, #077bff 0%, #055ec4 100%);
+
+  color: #ffffff;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.repair-profile-module .pr-progress-card:hover,
+  #pr-selection-cards.repair-profile-module .pr-progress-card:hover .card-img,
+  #pr-selection-cards.repair-profile-module .card-back:hover,
+  #pr-selection-cards.repair-profile-module .card-back:active {
+    transform: none !important;
+    filter: inherit;
+    transition: none !important;
+  }
+
+  #pr-selection-cards.repair-profile-module .card-back:not(:disabled):hover {
+    background:
+      linear-gradient(180deg, #056fe8 0%, #044fba 100%);
+
+    color: #ffffff;
+  }
 }
 
 @media (min-width: 701px) {
-  #pr-selection-cards.pr-header-selection-cards {
-    border-radius: 20px !important;
+  #pr-selection-cards.repair-profile-module .repair-profile-header {
+    min-height: 60px;
+    padding: 14px 18px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    min-height: 196px !important;
-    grid-template-rows: 34px minmax(88px, 1fr) minmax(34px, auto) 34px !important;
+  #pr-selection-cards.repair-profile-module .repair-profile-kicker {
+    font-size: 20px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-heading {
-    min-height: 34px !important;
-    font-size: 9px !important;
+  #pr-selection-cards.repair-profile-module .repair-profile-header strong {
+    font-size: 13px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 88px !important;
-    height: 88px !important;
-    min-width: 88px !important;
-    min-height: 88px !important;
-    max-width: 88px !important;
-    max-height: 88px !important;
+  #pr-selection-cards.repair-profile-module .pr-progress-card {
+    min-height: 196px;
+    grid-template-rows: 34px minmax(88px, 1fr) minmax(34px, auto) 34px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-label {
-    font-size: 9.75px !important;
+  #pr-selection-cards.repair-profile-module .card-heading {
+    min-height: 34px;
+    font-size: 9px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-back {
-    min-height: 34px !important;
-    font-size: 8.25px !important;
+  #pr-selection-cards.repair-profile-module .card-img {
+    width: 88px;
+    height: 88px;
+    min-width: 88px;
+    min-height: 88px;
+    max-width: 88px;
+    max-height: 88px;
+  }
+
+  #pr-selection-cards.repair-profile-module .card-label {
+    font-size: 9.75px;
+  }
+
+  #pr-selection-cards.repair-profile-module .card-back {
+    min-height: 34px;
+    font-size: 8.25px;
   }
 }
 
-@media (max-width: 380px) {
-  #pr-selection-cards.pr-header-selection-cards {
-    border-radius: 14px !important;
+@media (max-width: 520px) {
+  #pr-selection-cards.repair-profile-module .repair-profile-header {
+    min-height: 58px;
+    padding: 12px 14px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-heading {
-    min-height: 26px !important;
-    font-size: 6.75px !important;
-    letter-spacing: 0.08em !important;
+  #pr-selection-cards.repair-profile-module .repair-profile-kicker {
+    font-size: 16px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-    max-width: 56px !important;
-    max-height: 56px !important;
+  #pr-selection-cards.repair-profile-module .repair-profile-header strong {
+    font-size: 11px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-back {
-    min-height: 26px !important;
-    font-size: 6.25px !important;
+  #pr-selection-cards.repair-profile-module .card-heading {
+    font-size: 6.75px;
+    letter-spacing: 0.08em;
+  }
+
+  #pr-selection-cards.repair-profile-module .card-img {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    max-width: 56px;
+    max-height: 56px;
+  }
+
+  #pr-selection-cards.repair-profile-module .card-back {
+    font-size: 6.25px;
+  }
+
+  #pr-selection-cards.repair-profile-module .pr-progress-card.is-missing-choice .card-label {
+    width: calc(100% - 8px);
+    padding: 4px 3px;
+    font-size: 6.25px;
+    letter-spacing: 0.035em;
   }
 }
 
