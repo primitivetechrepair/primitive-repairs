@@ -13010,4 +13010,25 @@ html.service-hours-closed .service-hours-booking-disabled {
     margin-bottom: -4px !important;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT MOBILE IMAGE SLOT RADIUS FIX
+========================================================= */
+
+@media (max-width: 700px) {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-img,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-img,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-img {
+    border-radius: 0 !important;
+  }
+}
+
+@media (max-width: 520px) {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-img,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-img,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-img {
+    border-radius: 0 !important;
+  }
+}
 
