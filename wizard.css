@@ -10965,6 +10965,7 @@ body {
 /* Final Review custom desktop row pairing */
 @media (min-width: 701px) {
   .review-grid {
+    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
   }
@@ -11000,15 +11001,18 @@ body {
     order: 6;
   }
 }
-/* Final Review stacks on mobile */
-.review-grid {
-  grid-template-columns: 1fr;
-}
 
-.review-grid > .review-card,
-.review-grid > .review-card-wide,
-.review-grid > .review-card-repairs {
-  grid-column: 1 / -1;
+/* Final Review stacks on mobile */
+@media (max-width: 700px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid > .review-card,
+  .review-grid > .review-card-wide,
+  .review-grid > .review-card-repairs {
+    grid-column: 1 / -1;
+  }
 }
 /* Mobile wizard option cards */
 #pr-steps-area {
