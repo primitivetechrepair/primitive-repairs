@@ -11526,7 +11526,7 @@ body {
 }
 /* =========================================================
 /* =========================================================
-   ISOLATED HEADER SELECTION CARD SYSTEM
+   HEADER CARD LAYOUT FINAL
 ========================================================= */
 
 #pr-selection-cards.pr-header-selection-cards,
@@ -11537,7 +11537,7 @@ body {
 #pr-selection-cards.pr-header-selection-cards {
   width: 100%;
   max-width: 100%;
-  margin: 16px 0 0;
+  margin: 18px 0 0;
   padding: 0;
 
   display: grid;
@@ -11554,17 +11554,17 @@ body {
   position: relative;
 
   min-width: 0;
-  min-height: 86px;
   width: auto;
-  max-width: none;
+  min-height: 148px;
 
   margin: 0;
-  padding: 10px 7px 9px;
+  padding: 9px 6px 8px;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 18px minmax(56px, 1fr) minmax(26px, auto) 24px;
+  gap: 6px;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 
   overflow: hidden;
 
@@ -11572,19 +11572,19 @@ body {
   border-radius: 14px;
 
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 247, 251, 0.82));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(247, 247, 251, 0.82));
 
   box-shadow:
     0 8px 18px rgba(37, 40, 61, 0.07),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 
   color: var(--accent);
-
-  transform: none;
 }
 
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card::before,
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card::after,
+#pr-selection-cards.pr-header-selection-cards .card-heading::before,
+#pr-selection-cards.pr-header-selection-cards .card-heading::after,
 #pr-selection-cards.pr-header-selection-cards .card-img::before,
 #pr-selection-cards.pr-header-selection-cards .card-img::after,
 #pr-selection-cards.pr-header-selection-cards .card-label::before,
@@ -11595,21 +11595,42 @@ body {
   content: none !important;
 }
 
+#pr-selection-cards.pr-header-selection-cards .card-heading {
+  grid-row: 1;
+  align-self: start;
+
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+
+  color: rgba(37, 40, 61, 0.58);
+
+  font-family: var(--font-display);
+  font-size: 8px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 #pr-selection-cards.pr-header-selection-cards .card-img {
-  order: 1;
+  grid-row: 2;
+  align-self: center;
 
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
-  min-height: 28px;
-  max-width: 28px;
-  max-height: 28px;
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  min-height: 54px;
+  max-width: 54px;
+  max-height: 54px;
 
-  margin: 0 0 6px;
+  margin: 0;
   padding: 0;
 
   display: block;
-  flex: 0 0 auto;
 
   background-size: contain;
   background-position: center;
@@ -11619,7 +11640,8 @@ body {
 }
 
 #pr-selection-cards.pr-header-selection-cards .card-label {
-  order: 2;
+  grid-row: 3;
+  align-self: center;
 
   width: 100%;
   min-width: 0;
@@ -11629,42 +11651,44 @@ body {
   margin: 0;
   padding: 0;
 
-  display: block;
-  flex: 0 1 auto;
-
   border: 0;
   background: transparent;
   box-shadow: none;
 
-  color: inherit;
+  color: var(--accent);
 
   font-family: var(--font-display);
-  font-size: 9px;
-  font-weight: 850;
-  line-height: 1.05;
+  font-size: 8.5px;
+  font-weight: 900;
   letter-spacing: 0.01em;
+  line-height: 1.1;
   text-align: center;
   text-transform: uppercase;
-  white-space: normal;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
   overflow: hidden;
   overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 #pr-selection-cards.pr-header-selection-cards .card-back {
-  order: 3;
+  grid-row: 4;
+  align-self: end;
 
-  width: auto;
+  width: calc(100% - 8px);
   min-width: 0;
+  min-height: 22px;
   max-width: 100%;
-  min-height: 0;
 
-  margin: 5px 0 0;
-  padding: 4px 6px;
+  margin: 0;
+  padding: 0 5px;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
 
   border-radius: 999px;
 
@@ -11689,6 +11713,11 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.92);
 }
 
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-heading,
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-heading {
+  color: rgba(7, 123, 255, 0.72);
+}
+
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-label,
 #pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-label {
   font-weight: 950;
@@ -11696,32 +11725,37 @@ body {
 
 @media (min-width: 701px) {
   #pr-selection-cards.pr-header-selection-cards {
-    margin-top: 18px;
     gap: 10px;
   }
 
   #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    min-height: 96px;
-    padding: 12px 10px 10px;
+    min-height: 178px;
+    padding: 11px 10px 10px;
+
+    grid-template-rows: 20px minmax(74px, 1fr) minmax(28px, auto) 26px;
+    gap: 7px;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .card-heading {
+    font-size: 9px;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 34px;
-    height: 34px;
-    min-width: 34px;
-    min-height: 34px;
-    max-width: 34px;
-    max-height: 34px;
-
-    margin-bottom: 7px;
+    width: 74px;
+    height: 74px;
+    min-width: 74px;
+    min-height: 74px;
+    max-width: 74px;
+    max-height: 74px;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-label {
     font-size: 10px;
-    line-height: 1.1;
+    line-height: 1.12;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-back {
+    min-height: 24px;
     font-size: 8px;
   }
 }
@@ -11732,29 +11766,35 @@ body {
   }
 
   #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    min-height: 78px;
+    min-height: 132px;
     padding: 8px 4px 7px;
+
+    grid-template-rows: 16px minmax(48px, 1fr) minmax(24px, auto) 22px;
+    gap: 5px;
+
     border-radius: 11px;
   }
 
-  #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 24px;
-    height: 24px;
-    min-width: 24px;
-    min-height: 24px;
-    max-width: 24px;
-    max-height: 24px;
+  #pr-selection-cards.pr-header-selection-cards .card-heading {
+    font-size: 7px;
+    letter-spacing: 0.06em;
+  }
 
-    margin-bottom: 5px;
+  #pr-selection-cards.pr-header-selection-cards .card-img {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 48px;
+    max-height: 48px;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-label {
-    font-size: 8px;
+    font-size: 7.5px;
   }
 
   #pr-selection-cards.pr-header-selection-cards .card-back {
-    margin-top: 4px;
-    padding: 3px 5px;
+    min-height: 20px;
     font-size: 6.5px;
   }
 }

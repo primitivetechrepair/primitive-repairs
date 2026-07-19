@@ -844,7 +844,7 @@ const label = card.querySelector(".card-label");
         }
       };
     } else {
-      label.textContent = step.label;
+      label.textContent = "Not selected";
       button.style.display = "none";
       image.style.backgroundImage = "none";
       card.classList.remove("filled");
