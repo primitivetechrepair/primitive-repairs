@@ -12005,4 +12005,286 @@ body {
   width: 100% !important;
   text-align: center !important;
 }
+/* =========================================================
+   APE BLUEPRINT THEME LAYER
+========================================================= */
+
+/*
+  Add matching transparent ape art files here:
+
+  assets/img/ape-theme/ape-device.webp
+  assets/img/ape-theme/ape-brand.webp
+  assets/img/ape-theme/ape-series.webp
+  assets/img/ape-theme/ape-model.webp
+  assets/img/ape-theme/ape-repair.webp
+
+  Recommended art direction:
+  - same cartoon ape illustration style
+  - transparent background
+  - same canvas size
+  - front-facing or 3/4 pose
+  - minimal detail
+  - cyan/blue outline or easily readable silhouette
+*/
+
+#pr-selection-cards.blueprint-selection-module {
+  border-color: rgba(102, 252, 241, 0.5);
+
+  background:
+    linear-gradient(rgba(102, 252, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 252, 241, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 12% 8%, rgba(102, 252, 241, 0.15), transparent 30%),
+    radial-gradient(circle at 86% 16%, rgba(7, 123, 255, 0.18), transparent 34%),
+    linear-gradient(180deg, #0d1528 0%, #070c18 100%);
+
+  background-size:
+    18px 18px,
+    18px 18px,
+    auto,
+    auto,
+    auto;
+}
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker {
+  color: #66fcf1;
+}
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong {
+  color: rgba(218, 252, 255, 0.66);
+}
+
+/* Ape image variables */
+#pr-selection-cards.blueprint-selection-module #card-device {
+  --ape-art-url: url("assets/img/ape-theme/ape-device.webp");
+}
+
+#pr-selection-cards.blueprint-selection-module #card-brand {
+  --ape-art-url: url("assets/img/ape-theme/ape-brand.webp");
+}
+
+#pr-selection-cards.blueprint-selection-module #card-series {
+  --ape-art-url: url("assets/img/ape-theme/ape-series.webp");
+}
+
+#pr-selection-cards.blueprint-selection-module #card-model {
+  --ape-art-url: url("assets/img/ape-theme/ape-model.webp");
+}
+
+#pr-selection-cards.blueprint-selection-module #card-repair {
+  --ape-art-url: url("assets/img/ape-theme/ape-repair.webp");
+}
+
+/* Decorative ape layer */
+#pr-selection-cards.blueprint-selection-module .ape-cell-art {
+  position: absolute;
+  inset: 31px 8px 34px;
+  z-index: 0;
+
+  background-image: var(--ape-art-url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  opacity: 0.18;
+
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(83%)
+    sepia(55%)
+    saturate(540%)
+    hue-rotate(124deg)
+    brightness(105%)
+    contrast(103%)
+    drop-shadow(0 0 12px rgba(102, 252, 241, 0.18));
+
+  pointer-events: none;
+}
+
+#pr-selection-cards.blueprint-selection-module .card-heading,
+#pr-selection-cards.blueprint-selection-module .card-img,
+#pr-selection-cards.blueprint-selection-module .card-label,
+#pr-selection-cards.blueprint-selection-module .card-back {
+  position: relative;
+  z-index: 2;
+}
+
+/* Keep the original device/repair icon as the technical icon layer */
+#pr-selection-cards.blueprint-selection-module .card-img {
+  opacity: 0.76;
+
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(84%)
+    sepia(46%)
+    saturate(624%)
+    hue-rotate(124deg)
+    brightness(105%)
+    contrast(104%)
+    drop-shadow(0 0 8px rgba(102, 252, 241, 0.12));
+}
+
+/* Missing cells: ape becomes a faint blueprint ghost */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .ape-cell-art {
+  opacity: 0.105;
+
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(83%)
+    sepia(55%)
+    saturate(540%)
+    hue-rotate(124deg)
+    brightness(105%)
+    contrast(103%);
+}
+
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-label {
+  border: 1px dashed rgba(102, 252, 241, 0.46);
+
+  background:
+    linear-gradient(180deg, rgba(102, 252, 241, 0.055), rgba(102, 252, 241, 0.018));
+
+  color: rgba(180, 255, 250, 0.68);
+}
+
+/* Filled/current cells: ape art becomes more visible but still background */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .ape-cell-art,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .ape-cell-art {
+  opacity: 0.24;
+
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(83%)
+    sepia(55%)
+    saturate(740%)
+    hue-rotate(124deg)
+    brightness(110%)
+    contrast(106%)
+    drop-shadow(0 0 14px rgba(102, 252, 241, 0.24));
+}
+
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-label,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-label {
+  color: rgba(255, 255, 255, 0.94);
+}
+
+/* No movement hover */
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover .ape-cell-art,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover .card-img {
+    transform: none !important;
+  }
+}
+
+@media (min-width: 701px) {
+  #pr-selection-cards.blueprint-selection-module .ape-cell-art {
+    inset: 35px 10px 38px;
+    opacity: 0.2;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .ape-cell-art {
+    opacity: 0.12;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .ape-cell-art,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .ape-cell-art {
+    opacity: 0.26;
+  }
+}
+
+@media (max-width: 520px) {
+  #pr-selection-cards.blueprint-selection-module .ape-cell-art {
+    inset: 30px 4px 30px;
+    opacity: 0.13;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .ape-cell-art {
+    opacity: 0.08;
+  }
+}
+/* =========================================================
+   BLUEPRINT COMPLETE BORDER LIGHT BEAM
+========================================================= */
+
+#pr-selection-cards.blueprint-selection-module {
+  isolation: isolate;
+}
+
+/* Animated border-only beam */
+#pr-selection-cards.blueprint-selection-module.is-blueprint-complete::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+
+  padding: 2px;
+
+  border-radius: inherit;
+
+  background:
+    conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      transparent 272deg,
+      rgba(102, 252, 241, 0.08) 292deg,
+      rgba(102, 252, 241, 0.82) 318deg,
+      rgba(255, 255, 255, 0.96) 332deg,
+      rgba(102, 252, 241, 0.72) 346deg,
+      transparent 360deg
+    );
+
+  pointer-events: none;
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+
+  animation: blueprintBorderBeamSweep 1.75s cubic-bezier(0.2, 0.9, 0.2, 1) 1 both;
+}
+
+@keyframes blueprintBorderBeamSweep {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  78% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+/* Small completed-state pulse inside the module */
+#pr-selection-cards.blueprint-selection-module.is-blueprint-complete {
+  box-shadow:
+    0 18px 42px rgba(8, 15, 32, 0.26),
+    0 0 0 1px rgba(102, 252, 241, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #pr-selection-cards.blueprint-selection-module.is-blueprint-complete::after {
+    animation: none;
+    opacity: 0;
+  }
+}
 
