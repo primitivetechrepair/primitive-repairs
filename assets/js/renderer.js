@@ -484,7 +484,7 @@ export function renderSummary(container) {
       <div class="customer-repair-summary-header">
         <span>Repair Summary</span>
         <h3>Your request so far.</h3>
-        <p>Confirm the repair details below, then add your contact information.</p>
+        <p class="repair-details-instruction-centered">Confirm the repair details below, then add your contact information.</p>
       </div>
 
       <div class="customer-repair-summary-grid">

@@ -12566,4 +12566,15 @@ html.service-hours-closed .service-hours-booking-disabled {
     font-size: 11px;
   }
 }
+/* =========================================================
+   CENTER REPAIR DETAILS INSTRUCTION TEXT
+========================================================= */
+
+.repair-details-instruction-centered {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 18px;
+
+  text-align: center;
+}
 
