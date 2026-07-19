@@ -5676,7 +5676,21 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .review-option-header {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 24px;
+
+  text-align: center;
+  justify-self: center;
+}
+
+.review-option-header h3,
+.review-option-header p,
+.review-option-header span {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .success-option-header {
