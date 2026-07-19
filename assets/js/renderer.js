@@ -726,12 +726,57 @@ export function renderSelectionCards(onChange) {
     }
   ];
 
-  steps.forEach((step) => {
+  const currentStepIndex = (() => {
+    const firstIncompleteIndex = steps.findIndex((step) => !step.value);
+    return firstIncompleteIndex === -1 ? steps.length - 1 : firstIncompleteIndex;
+  })();
+
+  const completeStepCount = steps.filter((step) => Boolean(step.value)).length;
+  const progressPercent = Math.round((completeStepCount / steps.length) * 100);
+  const progressBar = document.getElementById("pr-progress-bar");
+  const selectionCards = document.getElementById("pr-selection-cards");
+
+  if (selectionCards) {
+    selectionCards.dataset.completedSteps = `${completeStepCount}`;
+    selectionCards.dataset.totalSteps = `${steps.length}`;
+  }
+
+  if (progressBar) {
+    progressBar.style.width = `${progressPercent}%`;
+    progressBar.setAttribute("aria-valuenow", `${progressPercent}`);
+    progressBar.classList.toggle("full", completeStepCount === steps.length);
+  }
+steps.forEach((step) => {
     const card = document.getElementById(`card-${step.key}`);
 
     if (!card) return;
 
-    const label = card.querySelector(".card-label");
+
+    const stepIndex = steps.findIndex((item) => item.key === step.key);
+    const isComplete = Boolean(step.value);
+    const isCurrent = !isComplete && stepIndex === currentStepIndex;
+
+    card.classList.remove("is-current-step", "is-complete-step", "is-upcoming-step");
+    card.dataset.stepNumber = `${stepIndex + 1}`;
+    card.dataset.stepStatus = isComplete ? "complete" : isCurrent ? "current" : "upcoming";
+
+    card.setAttribute(
+      "aria-label",
+      isComplete
+        ? `${step.label} complete: ${step.value}`
+        : isCurrent
+          ? `${step.label} current step`
+          : `${step.label} upcoming step`
+    );
+
+    if (isComplete) {
+      card.classList.add("is-complete-step");
+    } else if (isCurrent) {
+      card.classList.add("is-current-step");
+    } else {
+      card.classList.add("is-upcoming-step");
+    }
+const label = card.querySelector(".card-label");
     const button = card.querySelector(".card-back");
     const image = card.querySelector(".card-img");
 
