@@ -1,5 +1,5 @@
 /* =========================================================
-   VISUAL REPAIR WIZARD — CLEAN ORGANIZED STYLES
+   VISUAL REPAIR WIZARD - CLEAN ORGANIZED STYLES
    Replace current wizard.css with this file after testing.
 ========================================================= */
 
@@ -1745,7 +1745,7 @@ text-align: center;
 }
 
 /* =========================================================
-   SUPPORTED DEVICE REPAIR — VISUAL DEVICE SECTION
+   SUPPORTED DEVICE REPAIR - VISUAL DEVICE SECTION
 ========================================================= */
 
 .supported-devices-section {
@@ -1877,7 +1877,7 @@ text-align: center;
 }
 
 /* =========================================================
-   POPULAR REPAIR SERVICES — PREMIUM CONTRAST SECTION
+   POPULAR REPAIR SERVICES - PREMIUM CONTRAST SECTION
 ========================================================= */
 
 #popular-repair-services {
@@ -2256,7 +2256,7 @@ text-align: center;
 }
 
 /* =========================================================
-   CONTACT PAGE — HELP CHECKLIST
+   CONTACT PAGE - HELP CHECKLIST
 ========================================================= */
 
 .contact-help-list {
@@ -2649,7 +2649,7 @@ text-align: center;
 }
 
 /* =========================================================
-   REVIEW REQUEST — PREMIUM CONFIRMATION
+   REVIEW REQUEST - PREMIUM CONFIRMATION
 ========================================================= */
 
 .review-panel {
@@ -2897,7 +2897,7 @@ text-align: center;
 }
 
 /* =========================================================
-   SELECTED CARD — MULTIPLE REPAIRS
+   SELECTED CARD - MULTIPLE REPAIRS
 ========================================================= */
 
 .selected-card-image-multiple {
@@ -2987,7 +2987,7 @@ text-align: center;
 }
 
 /* =========================================================
-   HOW IT WORKS — PREMIUM TIMELINE
+   HOW IT WORKS - PREMIUM TIMELINE
 ========================================================= */
 
 .landing-process-grid {
@@ -3694,7 +3694,7 @@ text-align: center;
 }
 
 .warranty-options label:has(input:checked)::after {
-  content: "✓";
+  content: "\2713";
 
   width: 18px;
   height: 18px;
@@ -4399,7 +4399,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .faq-item[open] summary::after {
-  content: "–";
+  content: "-";
   transform: translateY(-50%) rotate(180deg);
 }
 
@@ -4727,7 +4727,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 /* =========================================================
-   REPAIR WIZARD HEADER — CONNECTED PREMIUM ENTRY PANEL
+   REPAIR WIZARD HEADER - CONNECTED PREMIUM ENTRY PANEL
 ========================================================= */
 
 .pr-header {
@@ -5505,7 +5505,15 @@ backdrop-filter: blur(16px) saturate(170%);
 #pr-selection-cards,
 #pr-steps-area,
 #pr-form-area,
-#pr-customer-form {
+#pr-customer-form,
+.model-search-panel,
+.model-card-results,
+.repair-details-panel,
+.repair-info-panel,
+.appointment-panel,
+.customer-repair-summary,
+.review-panel,
+.success-panel {
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -6878,7 +6886,7 @@ backdrop-filter: blur(16px) saturate(170%);
 .repair-details-continue::after,
 .repair-info-continue::after,
 .success-start-new::after {
-  content: " →";
+  content: " \2192";
 }
 
 /* =========================================================
@@ -8307,7 +8315,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 #cf-submit::after {
-  content: " →";
+  content: " \2192";
 }
 
 #cf-back:hover {
@@ -8891,7 +8899,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 .review-submit::after {
-  content: " →";
+  content: " \2192";
 }
 
 .review-submit:disabled {
@@ -9102,7 +9110,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 /* =========================================================
-   SUCCESS SUMMARY — LABEL / VALUE ALIGNMENT
+   SUCCESS SUMMARY - LABEL / VALUE ALIGNMENT
 ========================================================= */
 
 .success-summary-request-layout > div:nth-child(n + 6) {
@@ -9415,7 +9423,7 @@ backdrop-filter: blur(16px) saturate(170%);
 }
 
 /* =========================================================
-   UNIVERSAL FOOTER — REPAIR SERVICES DROPDOWN
+   UNIVERSAL FOOTER - REPAIR SERVICES DROPDOWN
 ========================================================= */
 
 .site-footer-repair-details {
@@ -9495,7 +9503,7 @@ backdrop-filter: blur(16px) saturate(170%);
   }
 
   .site-footer-repair-details[open] > summary::before {
-    content: "–";
+    content: "-";
   }
 
   .site-footer-repair-details:not([open]) > .site-footer-links {
