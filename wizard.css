@@ -11892,4 +11892,62 @@ body {
     border-bottom-right-radius: 11px !important;
   }
 }
+/* =========================================================
+   HEADER CARD CHANGE BUTTON EMPHASIS
+========================================================= */
+
+#pr-selection-cards.pr-header-selection-cards .card-back {
+  background:
+    linear-gradient(135deg, #25283d 0%, #077bff 78%, #2fbff4 100%) !important;
+
+  color: #ffffff !important;
+
+  border-top: 1px solid rgba(102, 252, 241, 0.42) !important;
+
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 -1px 0 rgba(102, 252, 241, 0.12) !important;
+
+  transition:
+    background 0.18s ease,
+    color 0.18s ease,
+    filter 0.18s ease,
+    letter-spacing 0.18s ease;
+}
+
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-back,
+#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-back {
+  background:
+    linear-gradient(135deg, #077bff 0%, #2fbff4 62%, #66fcf1 100%) !important;
+
+  color: #ffffff !important;
+
+  border-top-color: rgba(102, 252, 241, 0.62) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.pr-header-selection-cards .card-back:hover {
+    background:
+      linear-gradient(135deg, #66fcf1 0%, #2fbff4 45%, #077bff 100%) !important;
+
+    color: #000000 !important;
+
+    letter-spacing: 0.09em;
+
+    filter:
+      saturate(1.12)
+      brightness(1.05);
+
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.36),
+      0 -1px 0 rgba(102, 252, 241, 0.2),
+      0 0 18px rgba(102, 252, 241, 0.26) !important;
+  }
+
+  #pr-selection-cards.pr-header-selection-cards .card-back:active {
+    filter: brightness(0.96);
+  }
+}
 
