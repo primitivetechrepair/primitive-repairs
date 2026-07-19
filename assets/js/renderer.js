@@ -785,6 +785,8 @@ const label = card.querySelector(".card-label");
 
     if (step.value) {
       label.textContent = step.value;
+      button.textContent = "EDIT";
+      button.disabled = false;
       button.style.display = "flex";
       card.classList.add("filled");
       card.classList.remove("is-missing-choice");
@@ -845,9 +847,11 @@ const label = card.querySelector(".card-label");
         }
       };
     } else {
-      label.textContent = `Choose ${step.label}`;
+      label.textContent = "Waiting for choice";
+      button.textContent = "";
+      button.disabled = true;
+      button.style.display = "flex";
       card.classList.add("is-missing-choice");
-      button.style.display = "none";
       image.style.backgroundImage = "none";
       card.classList.remove("filled");
       button.onclick = null;

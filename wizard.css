@@ -11526,335 +11526,17 @@ body {
 }
 /* =========================================================
 /* =========================================================
-   HEADER CARD INTEGRATED FINAL
+   BLUEPRINT THEMED TOP SELECTION CELLS
 ========================================================= */
 
-#pr-selection-cards.pr-header-selection-cards,
-#pr-selection-cards.pr-header-selection-cards * {
+#pr-selection-cards.blueprint-selection-module,
+#pr-selection-cards.blueprint-selection-module * {
   box-sizing: border-box;
 }
 
-#pr-selection-cards.pr-header-selection-cards {
-  width: 100%;
-  max-width: 100%;
-  margin: 18px 0 0;
-  padding: 0;
-
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 8px;
-
-  align-items: stretch;
-  justify-items: stretch;
-
-  overflow: visible;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card {
+#pr-selection-cards.blueprint-selection-module {
   position: relative;
 
-  min-width: 0;
-  width: auto;
-  min-height: 150px;
-
-  margin: 0;
-  padding: 0;
-
-  display: grid;
-  grid-template-rows: 28px minmax(62px, 1fr) minmax(30px, auto) 28px;
-  align-items: stretch;
-  justify-items: stretch;
-
-  overflow: hidden;
-
-  border: 1px solid rgba(37, 40, 61, 0.13);
-  border-radius: 14px;
-
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 247, 251, 0.84));
-
-  box-shadow:
-    0 8px 18px rgba(37, 40, 61, 0.075),
-    inset 0 1px 0 rgba(255, 255, 255, 0.95);
-
-  color: var(--accent);
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card::before,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card::after,
-#pr-selection-cards.pr-header-selection-cards .card-heading::before,
-#pr-selection-cards.pr-header-selection-cards .card-heading::after,
-#pr-selection-cards.pr-header-selection-cards .card-img::before,
-#pr-selection-cards.pr-header-selection-cards .card-img::after,
-#pr-selection-cards.pr-header-selection-cards .card-label::before,
-#pr-selection-cards.pr-header-selection-cards .card-label::after,
-#pr-selection-cards.pr-header-selection-cards .card-back::before,
-#pr-selection-cards.pr-header-selection-cards .card-back::after {
-  display: none !important;
-  content: none !important;
-}
-
-#pr-selection-cards.pr-header-selection-cards .card-heading {
-  grid-row: 1;
-
-  width: 100%;
-  min-width: 0;
-  min-height: 28px;
-
-  margin: 0;
-  padding: 0 5px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 0;
-  border-bottom: 1px solid rgba(37, 40, 61, 0.09);
-
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(233, 255, 253, 0.5));
-
-  color: rgba(37, 40, 61, 0.68);
-
-  font-family: var(--font-display);
-  font-size: 8px;
-  font-weight: 950;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-#pr-selection-cards.pr-header-selection-cards .card-img {
-  grid-row: 2;
-  align-self: center;
-  justify-self: center;
-
-  width: 60px;
-  height: 60px;
-  min-width: 60px;
-  min-height: 60px;
-  max-width: 60px;
-  max-height: 60px;
-
-  margin: 0;
-  padding: 0;
-
-  display: block;
-
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  transform: none;
-}
-
-#pr-selection-cards.pr-header-selection-cards .card-label {
-  grid-row: 3;
-  align-self: center;
-  justify-self: center;
-
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  min-height: 0;
-
-  margin: 0;
-  padding: 0 6px;
-
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-
-  color: var(--accent);
-
-  font-family: var(--font-display);
-  font-size: 8.5px;
-  font-weight: 900;
-  letter-spacing: 0.01em;
-  line-height: 1.1;
-  text-align: center;
-  text-transform: uppercase;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-
-  overflow: hidden;
-  overflow-wrap: anywhere;
-  white-space: normal;
-}
-
-#pr-selection-cards.pr-header-selection-cards .card-back {
-  grid-row: 4;
-  align-self: stretch;
-  justify-self: stretch;
-
-  width: 100%;
-  min-width: 0;
-  min-height: 28px;
-  max-width: none;
-
-  margin: 0;
-  padding: 0 5px;
-
-  align-items: center;
-  justify-content: center;
-
-  border: 0;
-  border-top: 1px solid rgba(37, 40, 61, 0.09);
-  border-radius: 0;
-
-  background:
-    linear-gradient(180deg, rgba(247, 247, 251, 0.72), rgba(233, 255, 253, 0.72));
-
-  color: rgba(37, 40, 61, 0.76);
-
-  font-family: var(--font-display);
-  font-size: 7px;
-  font-weight: 950;
-  letter-spacing: 0.06em;
-  line-height: 1;
-  text-transform: uppercase;
-  white-space: nowrap;
-
-  box-shadow: none;
-}
-
-#pr-selection-cards.pr-header-selection-cards .card-back:hover {
-  background:
-    linear-gradient(180deg, rgba(233, 255, 253, 0.92), rgba(102, 252, 241, 0.22));
-
-  color: #000000;
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled {
-  border-color: rgba(7, 123, 255, 0.3);
-
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(233, 255, 253, 0.76));
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-heading,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-heading {
-  border-bottom-color: rgba(7, 123, 255, 0.14);
-
-  background:
-    linear-gradient(180deg, rgba(233, 255, 253, 0.95), rgba(102, 252, 241, 0.16));
-
-  color: rgba(7, 123, 255, 0.82);
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-back,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-back {
-  border-top-color: rgba(7, 123, 255, 0.14);
-
-  background:
-    linear-gradient(180deg, rgba(233, 255, 253, 0.82), rgba(7, 123, 255, 0.08));
-
-  color: rgba(7, 123, 255, 0.9);
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step {
-  border-color: rgba(102, 252, 241, 0.72);
-
-  box-shadow:
-    0 10px 22px rgba(7, 123, 255, 0.12),
-    inset 0 0 0 1px rgba(102, 252, 241, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.92);
-}
-
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.is-current-step .card-label,
-#pr-selection-cards.pr-header-selection-cards .pr-progress-card.filled .card-label {
-  font-weight: 950;
-}
-
-@media (min-width: 701px) {
-  #pr-selection-cards.pr-header-selection-cards {
-    gap: 10px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    min-height: 188px;
-    grid-template-rows: 32px minmax(82px, 1fr) minmax(34px, auto) 32px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-heading {
-    min-height: 32px;
-    font-size: 9px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 82px;
-    height: 82px;
-    min-width: 82px;
-    min-height: 82px;
-    max-width: 82px;
-    max-height: 82px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-label {
-    padding: 0 8px;
-    font-size: 10px;
-    line-height: 1.12;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-back {
-    min-height: 32px;
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 380px) {
-  #pr-selection-cards.pr-header-selection-cards {
-    gap: 5px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .pr-progress-card {
-    min-height: 136px;
-    grid-template-rows: 24px minmax(52px, 1fr) minmax(28px, auto) 24px;
-
-    border-radius: 11px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-heading {
-    min-height: 24px;
-    padding: 0 3px;
-    font-size: 7px;
-    letter-spacing: 0.06em;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-img {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    min-height: 52px;
-    max-width: 52px;
-    max-height: 52px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-label {
-    padding: 0 4px;
-    font-size: 7.25px;
-  }
-
-  #pr-selection-cards.pr-header-selection-cards .card-back {
-    min-height: 24px;
-    padding: 0 3px;
-    font-size: 6.25px;
-  }
-}
-/* =========================================================
-   REPAIR PROFILE DIAGNOSTIC MODULE
-========================================================= */
-
-#pr-selection-cards.repair-profile-module,
-#pr-selection-cards.repair-profile-module * {
-  box-sizing: border-box;
-}
-
-#pr-selection-cards.repair-profile-module {
   width: 100%;
   max-width: 100%;
   margin: 18px 0 0;
@@ -11864,119 +11546,148 @@ body {
 
   overflow: hidden;
 
-  border: 1px solid rgba(37, 40, 61, 0.14);
-  border-radius: 20px;
+  border: 1px solid rgba(102, 252, 241, 0.42);
+  border-radius: 18px;
 
   background:
-    linear-gradient(180deg, #ffffff 0%, #f4f6fa 100%);
+    linear-gradient(rgba(102, 252, 241, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 252, 241, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at 20% 0%, rgba(102, 252, 241, 0.14), transparent 32%),
+    radial-gradient(circle at 84% 18%, rgba(7, 123, 255, 0.18), transparent 34%),
+    linear-gradient(180deg, #10172a 0%, #0b1020 100%);
+
+  background-size:
+    18px 18px,
+    18px 18px,
+    auto,
+    auto,
+    auto;
 
   box-shadow:
-    0 18px 38px rgba(37, 40, 61, 0.10),
-    inset 0 1px 0 rgba(255, 255, 255, 0.94);
+    0 18px 42px rgba(8, 15, 32, 0.26),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
 }
 
-#pr-selection-cards.repair-profile-module .repair-profile-header {
+#pr-selection-cards.blueprint-selection-module::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 26%, rgba(102, 252, 241, 0.04), transparent 72%);
+
+  pointer-events: none;
+}
+
+#pr-selection-cards.blueprint-selection-module > * {
+  position: relative;
+  z-index: 1;
+}
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header {
   min-height: 54px;
-  padding: 12px 16px;
+  padding: 13px 16px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
 
-  border-bottom: 1px solid rgba(102, 252, 241, 0.22);
+  border-bottom: 1px solid rgba(102, 252, 241, 0.34);
 
   background:
-    linear-gradient(135deg, #25283d 0%, #1d2136 62%, #17203a 100%);
-
-  color: #ffffff;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
 }
 
-#pr-selection-cards.repair-profile-module .repair-profile-header div {
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header div {
   min-width: 0;
 
   display: grid;
-  gap: 4px;
+  gap: 5px;
 }
 
-#pr-selection-cards.repair-profile-module .repair-profile-kicker {
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker {
   color: #66fcf1;
 
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 950;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
   line-height: 1;
   text-transform: uppercase;
 }
 
-#pr-selection-cards.repair-profile-module .repair-profile-header strong {
-  color: rgba(255, 255, 255, 0.72);
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong {
+  color: rgba(255, 255, 255, 0.62);
 
   font-size: 12px;
   font-weight: 700;
   line-height: 1.25;
 }
 
-#pr-selection-cards.repair-profile-module .repair-profile-segments {
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-grid {
+  width: 100%;
+
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0;
-
-  width: 100%;
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card {
   position: relative;
 
   min-width: 0;
-  min-height: 154px;
   width: auto;
+  min-height: 158px;
 
   margin: 0;
   padding: 0;
 
   display: grid;
-  grid-template-rows: 30px minmax(64px, 1fr) minmax(32px, auto) 28px;
+  grid-template-rows: 30px minmax(68px, 1fr) minmax(34px, auto) 28px;
   align-items: stretch;
   justify-items: stretch;
 
   overflow: hidden;
 
   border: 0;
-  border-left: 1px solid rgba(37, 40, 61, 0.10);
+  border-left: 1px solid rgba(102, 252, 241, 0.22);
   border-radius: 0;
 
   background:
-    linear-gradient(180deg, #ffffff 0%, #f7f8fb 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012));
 
-  color: var(--accent);
+  color: #ffffff;
 
   box-shadow:
-    inset 1px 0 0 rgba(255, 255, 255, 0.68);
+    inset 1px 0 0 rgba(255, 255, 255, 0.035);
 
   transform: none;
+  transition: none;
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card:first-child {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card:first-child {
   border-left: 0;
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card::before,
-#pr-selection-cards.repair-profile-module .pr-progress-card::after,
-#pr-selection-cards.repair-profile-module .card-heading::before,
-#pr-selection-cards.repair-profile-module .card-heading::after,
-#pr-selection-cards.repair-profile-module .card-img::before,
-#pr-selection-cards.repair-profile-module .card-img::after,
-#pr-selection-cards.repair-profile-module .card-label::before,
-#pr-selection-cards.repair-profile-module .card-label::after,
-#pr-selection-cards.repair-profile-module .card-back::before,
-#pr-selection-cards.repair-profile-module .card-back::after {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card::before,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card::after,
+#pr-selection-cards.blueprint-selection-module .card-heading::before,
+#pr-selection-cards.blueprint-selection-module .card-heading::after,
+#pr-selection-cards.blueprint-selection-module .card-img::before,
+#pr-selection-cards.blueprint-selection-module .card-img::after,
+#pr-selection-cards.blueprint-selection-module .card-label::before,
+#pr-selection-cards.blueprint-selection-module .card-label::after,
+#pr-selection-cards.blueprint-selection-module .card-back::before,
+#pr-selection-cards.blueprint-selection-module .card-back::after {
   display: none !important;
   content: none !important;
 }
 
-#pr-selection-cards.repair-profile-module .card-heading {
+#pr-selection-cards.blueprint-selection-module .card-heading {
   grid-row: 1;
 
   min-height: 30px;
@@ -11987,33 +11698,33 @@ body {
   align-items: center;
   justify-content: center;
 
-  border-bottom: 1px solid rgba(37, 40, 61, 0.10);
+  border-bottom: 1px solid rgba(102, 252, 241, 0.16);
 
   background:
-    linear-gradient(180deg, #f4f6fa 0%, #ffffff 100%);
+    linear-gradient(180deg, rgba(102, 252, 241, 0.08), rgba(102, 252, 241, 0.025));
 
-  color: rgba(37, 40, 61, 0.58);
+  color: rgba(102, 252, 241, 0.82);
 
   font-family: var(--font-display);
   font-size: 8px;
   font-weight: 950;
-  letter-spacing: 0.105em;
+  letter-spacing: 0.12em;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
 }
 
-#pr-selection-cards.repair-profile-module .card-img {
+#pr-selection-cards.blueprint-selection-module .card-img {
   grid-row: 2;
   align-self: center;
   justify-self: center;
 
-  width: 66px;
-  height: 66px;
-  min-width: 66px;
-  min-height: 66px;
-  max-width: 66px;
-  max-height: 66px;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
 
   margin: 0;
   padding: 0;
@@ -12024,14 +11735,23 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
+  opacity: 0.92;
+
   filter:
-    drop-shadow(0 8px 12px rgba(37, 40, 61, 0.12))
-    saturate(1.02);
+    brightness(0)
+    saturate(100%)
+    invert(84%)
+    sepia(46%)
+    saturate(624%)
+    hue-rotate(124deg)
+    brightness(105%)
+    contrast(104%)
+    drop-shadow(0 0 10px rgba(102, 252, 241, 0.14));
 
   transform: none;
 }
 
-#pr-selection-cards.repair-profile-module .card-label {
+#pr-selection-cards.blueprint-selection-module .card-label {
   grid-row: 3;
   align-self: center;
   justify-self: center;
@@ -12039,7 +11759,6 @@ body {
   width: 100%;
   min-width: 0;
   max-width: 100%;
-  min-height: 0;
 
   margin: 0;
   padding: 0 8px;
@@ -12048,12 +11767,12 @@ body {
   background: transparent;
   box-shadow: none;
 
-  color: rgba(37, 40, 61, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 
   font-family: var(--font-display);
   font-size: 8.75px;
   font-weight: 950;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.04em;
   line-height: 1.12;
   text-align: center;
   text-transform: uppercase;
@@ -12067,7 +11786,7 @@ body {
   white-space: normal;
 }
 
-#pr-selection-cards.repair-profile-module .card-back {
+#pr-selection-cards.blueprint-selection-module .card-back {
   grid-row: 4;
 
   width: 100%;
@@ -12083,25 +11802,23 @@ body {
   justify-content: center;
 
   border: 0;
-  border-top: 1px solid rgba(37, 40, 61, 0.12);
+  border-top: 1px solid rgba(102, 252, 241, 0.20);
   border-radius: 0;
 
   background:
-    linear-gradient(180deg, #077bff 0%, #0566d4 100%);
+    linear-gradient(180deg, rgba(102, 252, 241, 0.16), rgba(7, 123, 255, 0.16));
 
-  color: #ffffff;
+  color: #66fcf1;
 
   font-family: var(--font-display);
   font-size: 7.5px;
   font-weight: 950;
-  letter-spacing: 0.095em;
+  letter-spacing: 0.12em;
   line-height: 1;
   text-transform: uppercase;
   white-space: nowrap;
 
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.22),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: none;
 
   cursor: pointer;
 
@@ -12109,147 +11826,146 @@ body {
   transition: none;
 }
 
-#pr-selection-cards.repair-profile-module .card-back:disabled {
+#pr-selection-cards.blueprint-selection-module .card-back:disabled {
   background:
-    linear-gradient(180deg, rgba(247, 248, 251, 0.86), rgba(237, 240, 246, 0.92));
+    linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01));
 
   color: transparent;
 
   cursor: default;
-
-  box-shadow: none;
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card.is-missing-choice .card-img {
-  opacity: 0.42;
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-img {
+  opacity: 0.26;
 
   filter:
-    grayscale(1)
-    saturate(0.58)
-    drop-shadow(0 6px 10px rgba(37, 40, 61, 0.08));
+    brightness(0)
+    saturate(100%)
+    invert(84%)
+    sepia(46%)
+    saturate(624%)
+    hue-rotate(124deg)
+    brightness(105%)
+    contrast(104%);
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card.is-missing-choice .card-label {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-label {
   width: calc(100% - 14px);
-  padding: 5px 6px;
+  padding: 6px 6px;
 
-  border: 1px solid rgba(37, 40, 61, 0.12);
+  border: 1px dashed rgba(102, 252, 241, 0.38);
   border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(102, 252, 241, 0.035);
 
-  color: rgba(37, 40, 61, 0.58);
+  color: rgba(102, 252, 241, 0.62);
 
-  font-size: 7.25px;
-  letter-spacing: 0.06em;
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.86);
+  font-size: 7.1px;
+  letter-spacing: 0.075em;
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card.filled,
-#pr-selection-cards.repair-profile-module .pr-progress-card.is-current-step {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step {
   background:
-    linear-gradient(180deg, #ffffff 0%, #eefcff 100%);
+    radial-gradient(circle at center, rgba(102, 252, 241, 0.095), transparent 54%),
+    linear-gradient(180deg, rgba(102, 252, 241, 0.055), rgba(7, 123, 255, 0.025));
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card.filled .card-heading,
-#pr-selection-cards.repair-profile-module .pr-progress-card.is-current-step .card-heading {
-  background:
-    linear-gradient(180deg, #f2fffd 0%, #ffffff 100%);
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-heading,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-heading {
+  color: #66fcf1;
 
-  color: rgba(7, 123, 255, 0.86);
+  background:
+    linear-gradient(180deg, rgba(102, 252, 241, 0.12), rgba(102, 252, 241, 0.035));
 }
 
-#pr-selection-cards.repair-profile-module .pr-progress-card.filled .card-back,
-#pr-selection-cards.repair-profile-module .pr-progress-card.is-current-step .card-back {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-back,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-back {
   background:
-    linear-gradient(180deg, #077bff 0%, #055ec4 100%);
+    linear-gradient(180deg, rgba(102, 252, 241, 0.22), rgba(7, 123, 255, 0.22));
 
   color: #ffffff;
 }
 
 @media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.repair-profile-module .pr-progress-card:hover,
-  #pr-selection-cards.repair-profile-module .pr-progress-card:hover .card-img,
-  #pr-selection-cards.repair-profile-module .card-back:hover,
-  #pr-selection-cards.repair-profile-module .card-back:active {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover,
+  #pr-selection-cards.blueprint-selection-module .card-back:hover,
+  #pr-selection-cards.blueprint-selection-module .card-back:active {
     transform: none !important;
-    filter: inherit;
     transition: none !important;
   }
 
-  #pr-selection-cards.repair-profile-module .card-back:not(:disabled):hover {
+  #pr-selection-cards.blueprint-selection-module .card-back:not(:disabled):hover {
     background:
-      linear-gradient(180deg, #056fe8 0%, #044fba 100%);
+      linear-gradient(180deg, rgba(102, 252, 241, 0.28), rgba(7, 123, 255, 0.24));
 
     color: #ffffff;
   }
 }
 
 @media (min-width: 701px) {
-  #pr-selection-cards.repair-profile-module .repair-profile-header {
+  #pr-selection-cards.blueprint-selection-module .blueprint-profile-header {
     min-height: 60px;
     padding: 14px 18px;
   }
 
-  #pr-selection-cards.repair-profile-module .repair-profile-kicker {
+  #pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker {
     font-size: 20px;
   }
 
-  #pr-selection-cards.repair-profile-module .repair-profile-header strong {
+  #pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong {
     font-size: 13px;
   }
 
-  #pr-selection-cards.repair-profile-module .pr-progress-card {
-    min-height: 196px;
-    grid-template-rows: 34px minmax(88px, 1fr) minmax(34px, auto) 34px;
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
+    min-height: 198px;
+    grid-template-rows: 34px minmax(92px, 1fr) minmax(34px, auto) 34px;
   }
 
-  #pr-selection-cards.repair-profile-module .card-heading {
+  #pr-selection-cards.blueprint-selection-module .card-heading {
     min-height: 34px;
     font-size: 9px;
   }
 
-  #pr-selection-cards.repair-profile-module .card-img {
-    width: 88px;
-    height: 88px;
-    min-width: 88px;
-    min-height: 88px;
-    max-width: 88px;
-    max-height: 88px;
+  #pr-selection-cards.blueprint-selection-module .card-img {
+    width: 92px;
+    height: 92px;
+    min-width: 92px;
+    min-height: 92px;
+    max-width: 92px;
+    max-height: 92px;
   }
 
-  #pr-selection-cards.repair-profile-module .card-label {
+  #pr-selection-cards.blueprint-selection-module .card-label {
     font-size: 9.75px;
   }
 
-  #pr-selection-cards.repair-profile-module .card-back {
+  #pr-selection-cards.blueprint-selection-module .card-back {
     min-height: 34px;
     font-size: 8.25px;
   }
 }
 
 @media (max-width: 520px) {
-  #pr-selection-cards.repair-profile-module .repair-profile-header {
+  #pr-selection-cards.blueprint-selection-module .blueprint-profile-header {
     min-height: 58px;
     padding: 12px 14px;
   }
 
-  #pr-selection-cards.repair-profile-module .repair-profile-kicker {
+  #pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker {
     font-size: 16px;
   }
 
-  #pr-selection-cards.repair-profile-module .repair-profile-header strong {
+  #pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong {
     font-size: 11px;
   }
 
-  #pr-selection-cards.repair-profile-module .card-heading {
-    font-size: 6.75px;
-    letter-spacing: 0.08em;
+  #pr-selection-cards.blueprint-selection-module .card-heading {
+    font-size: 6.7px;
+    letter-spacing: 0.085em;
   }
 
-  #pr-selection-cards.repair-profile-module .card-img {
+  #pr-selection-cards.blueprint-selection-module .card-img {
     width: 56px;
     height: 56px;
     min-width: 56px;
@@ -12258,14 +11974,14 @@ body {
     max-height: 56px;
   }
 
-  #pr-selection-cards.repair-profile-module .card-back {
+  #pr-selection-cards.blueprint-selection-module .card-back {
     font-size: 6.25px;
   }
 
-  #pr-selection-cards.repair-profile-module .pr-progress-card.is-missing-choice .card-label {
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-label {
     width: calc(100% - 8px);
-    padding: 4px 3px;
-    font-size: 6.25px;
+    padding: 5px 3px;
+    font-size: 6.1px;
     letter-spacing: 0.035em;
   }
 }
