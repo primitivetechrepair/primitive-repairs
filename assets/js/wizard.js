@@ -783,86 +783,147 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
         onSubmit: async () => {
-  if (repairSubmitLocked) {
-    return;
-  }
+          const reviewSubmitButton =
+            stepsArea?.querySelector(".review-submit");
 
-  const lastSubmit = Number(
-    localStorage.getItem(repairCooldownKey) || 0
-  );
+          const submissionStatus =
+            stepsArea?.querySelector(".review-submission-status");
 
-  const now = Date.now();
+          function clearSubmissionStatus() {
+            if (!submissionStatus) return;
 
-  if (lastSubmit && now - lastSubmit < repairCooldownMs) {
-    console.warn("Repair request blocked by local cooldown.");
-    return;
-  }
+            submissionStatus.hidden = true;
+            submissionStatus.className = "review-submission-status";
+            submissionStatus.removeAttribute("role");
+            submissionStatus.setAttribute("role", "status");
+            submissionStatus.textContent = "";
+          }
 
-  repairSubmitLocked = true;
+          function showSubmissionStatus(type, title, message) {
+            if (!submissionStatus) return;
 
-  const reviewSubmitButton = stepsArea?.querySelector(".review-submit");
+            submissionStatus.hidden = false;
+            submissionStatus.className =
+              `review-submission-status is-${type}`;
 
-  if (reviewSubmitButton) {
-    reviewSubmitButton.disabled = true;
-    reviewSubmitButton.textContent = "Submitting...";
-  }
+            submissionStatus.setAttribute(
+              "role",
+              type === "error" ? "alert" : "status"
+            );
 
-  let mappedLead;
-  let submitResult;
+            submissionStatus.innerHTML = `
+              <strong>${title}</strong>
+              <span>${message}</span>
+            `;
 
-  try {
-    applyAfterHoursBookingDetails(leadPayload);
-    mappedLead = mapWizardPayloadToLead(leadPayload);
-    submitResult = await submitWizardLead(mappedLead);
+            submissionStatus.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest"
+            });
+          }
 
-    if (!submitResult?.success) {
-      throw new Error(
-        submitResult?.error || "Wizard lead submit returned unsuccessful."
-      );
-    }
+          function resetReviewSubmitButton() {
+            if (!reviewSubmitButton) return;
 
-    localStorage.setItem(repairCooldownKey, String(now));
+            reviewSubmitButton.disabled = false;
+            reviewSubmitButton.textContent = "Submit Repair Request";
+          }
 
-  } catch (err) {
-    console.error("Wizard lead submit failed:", err);
+          clearSubmissionStatus();
 
-    repairSubmitLocked = false;
+          if (repairSubmitLocked) {
+            resetReviewSubmitButton();
 
-    if (reviewSubmitButton) {
-      reviewSubmitButton.disabled = false;
-      reviewSubmitButton.textContent = "Submit Repair Request";
-    }
+            showSubmissionStatus(
+              "warning",
+              "Submission already in progress",
+              "Please wait while your repair request is being submitted."
+            );
 
-    alert(
-      "Your request could not be submitted. Please try again or contact us directly."
-    );
+            return;
+          }
 
-    return;
-  }
+          const lastSubmit = Number(
+            localStorage.getItem(repairCooldownKey) || 0
+          );
 
-  customerForm.reset();
+          const now = Date.now();
+          const cooldownRemaining = Math.max(
+            0,
+            repairCooldownMs - (now - lastSubmit)
+          );
 
-  if (filePreviews) {
-    filePreviews.innerHTML = "";
-  }
+          if (lastSubmit && cooldownRemaining > 0) {
+            console.warn("Repair request blocked by local cooldown.");
 
-  repairSubmitLocked = false;
+            resetReviewSubmitButton();
 
-  if (reviewSubmitButton) {
-    reviewSubmitButton.disabled = false;
-    reviewSubmitButton.textContent = "Submit Repair Request";
-  }
+            showSubmissionStatus(
+              "warning",
+              "Request already submitted",
+              "A repair request was recently submitted from this device. Please wait about one minute before trying again."
+            );
 
-  renderSuccessStep(stepsArea, leadPayload, () => {
-    resetAllState();
-    renderWizard(true);
-  });
+            return;
+          }
 
-  stepsArea.scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-}
+          repairSubmitLocked = true;
+
+          if (reviewSubmitButton) {
+            reviewSubmitButton.disabled = true;
+            reviewSubmitButton.textContent = "Submitting...";
+          }
+
+          let mappedLead;
+          let submitResult;
+
+          try {
+            applyAfterHoursBookingDetails(leadPayload);
+            mappedLead = mapWizardPayloadToLead(leadPayload);
+            submitResult = await submitWizardLead(mappedLead);
+
+            if (!submitResult?.success) {
+              throw new Error(
+                submitResult?.error ||
+                  "Wizard lead submit returned unsuccessful."
+              );
+            }
+
+            localStorage.setItem(repairCooldownKey, String(now));
+          } catch (err) {
+            console.error("Wizard lead submit failed:", err);
+
+            repairSubmitLocked = false;
+            resetReviewSubmitButton();
+
+            showSubmissionStatus(
+              "error",
+              "Request not submitted",
+              "Your request could not be submitted. Please check your connection and try again. You may also contact us directly if the problem continues."
+            );
+
+            return;
+          }
+
+          customerForm.reset();
+
+          if (filePreviews) {
+            filePreviews.innerHTML = "";
+          }
+
+          repairSubmitLocked = false;
+          resetReviewSubmitButton();
+
+          renderSuccessStep(stepsArea, leadPayload, () => {
+            resetAllState();
+            renderWizard(true);
+          });
+
+          stepsArea.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
       });
 
       stepsArea.scrollIntoView({

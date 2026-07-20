@@ -13698,3 +13698,98 @@ html.service-hours-closed .service-hours-booking-disabled {
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   REVIEW SUBMISSION STATUS UPGRADE
+========================================================= */
+
+.review-submission-status {
+  width: min(100%, 620px);
+  margin: 18px auto 0;
+  padding: 14px 16px;
+
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+
+  border: 1px solid rgba(37, 40, 61, 0.12);
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.78);
+
+  text-align: center;
+
+  box-shadow:
+    0 12px 26px rgba(37, 40, 61, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.review-submission-status[hidden] {
+  display: none;
+}
+
+.review-submission-status strong,
+.review-submission-status span {
+  display: block;
+}
+
+.review-submission-status strong {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.065em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.review-submission-status span {
+  max-width: 540px;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.review-submission-status.is-error {
+  border-color: rgba(190, 48, 48, 0.32);
+
+  background:
+    radial-gradient(circle at top, rgba(190, 48, 48, 0.1), transparent 62%),
+    rgba(255, 248, 248, 0.94);
+
+  box-shadow:
+    0 12px 28px rgba(130, 35, 35, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.review-submission-status.is-error strong {
+  color: #a42323;
+}
+
+.review-submission-status.is-warning {
+  border-color: rgba(220, 137, 29, 0.34);
+
+  background:
+    radial-gradient(circle at top, rgba(255, 174, 62, 0.13), transparent 62%),
+    rgba(255, 252, 244, 0.94);
+
+  box-shadow:
+    0 12px 28px rgba(133, 73, 8, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.review-submission-status.is-warning strong {
+  color: #8a4a00;
+}
+
+@media (max-width: 520px) {
+  .review-submission-status {
+    margin-top: 15px;
+    padding: 13px;
+  }
+
+  .review-submission-status span {
+    font-size: 11.5px;
+  }
+}

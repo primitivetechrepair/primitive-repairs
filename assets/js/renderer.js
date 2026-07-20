@@ -1237,6 +1237,14 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
         <span>We will review your request and contact you by text.</span>
       </div>
 
+      <div
+        class="review-submission-status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        hidden
+      ></div>
+
       <div class="review-actions">
         <button type="button" class="review-back">Back to Contact Details</button>
         <button type="button" class="review-submit">Submit Repair Request</button>
