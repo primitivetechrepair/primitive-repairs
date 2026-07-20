@@ -13074,3 +13074,50 @@ html.service-hours-closed .service-hours-booking-disabled {
     color: #ffffff !important;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT MOBILE SOLID ROW EDGE CORRECTION
+========================================================= */
+
+/*
+  Match the header and EDIT row offsets to the card's actual
+  mobile padding so each solid background reaches every edge.
+*/
+
+@media (max-width: 700px) {
+  #pr-selection-cards.blueprint-selection-module .card-heading {
+    margin-top: -8px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    margin-bottom: -8px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  #pr-selection-cards.blueprint-selection-module .card-heading {
+    margin-top: -7px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    margin-bottom: -7px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  #pr-selection-cards.blueprint-selection-module .card-heading,
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    width: calc(100% + 6px) !important;
+    max-width: calc(100% + 6px) !important;
+
+    margin-left: -3px !important;
+    margin-right: -3px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-heading {
+    margin-top: -6px !important;
+  }
+
+  #pr-selection-cards.blueprint-selection-module .card-back {
+    margin-bottom: -6px !important;
+  }
+}
