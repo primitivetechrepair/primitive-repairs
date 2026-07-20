@@ -13794,32 +13794,47 @@ html.service-hours-closed .service-hours-booking-disabled {
   }
 }
 /* =========================================================
-   BUTTON HOVER BOUNDARY FLICKER FIX
+   INTERACTIVE HOVER HITBOX STABILITY FIX
 ========================================================= */
 
 /*
-  Keep every interactive control's hitbox stationary.
-  Moving the hovered element causes rapid hover/unhover
-  cycling when the pointer rests on its bottom border.
+  Interactive controls and clickable parent cards must remain
+  stationary while hovered. Moving either the control or its
+  hovered ancestor causes rapid hover/unhover cycling when the
+  pointer rests on the lower border.
 */
 
 @media (hover: hover) and (pointer: fine) {
   button:hover,
-  button:focus-visible,
   button:active,
   input[type="button"]:hover,
   input[type="submit"]:hover,
   input[type="reset"]:hover,
+  a.supported-device-action:hover,
   a[class*="btn"]:hover,
   a[class*="button"]:hover,
   a[class*="cta"]:hover,
   [role="button"]:hover,
-  [class*="-btn"]:hover,
-  [class*="-button"]:hover,
   [class*="-continue"]:hover,
   [class*="-submit"]:hover,
   [class*="-back"]:hover,
-  [class*="-action"]:hover {
+  [class*="-action"]:hover,
+  .supported-device-card:hover,
+  .popular-service-link-grid a:hover,
+  .supported-device-trust-strip a:hover,
+  .process-trust-strip a:hover,
+  .trust-badge:hover,
+  .warranty-options label:hover,
+  .faq-item:hover,
+  .site-footer-links a:hover,
+  .selection-cards .card:hover,
+  .selection-cards .card.filled:hover,
+  .selection-cards .card:not(.filled):hover,
+  .opt-card:hover,
+  .appointment-service-card:hover,
+  .appointment-time-slot:hover,
+  .repair-policy-toggle:hover,
+  .model-search-clear:hover:not(:disabled) {
     transform: none !important;
     translate: none !important;
   }
