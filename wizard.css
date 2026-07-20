@@ -13031,4 +13031,46 @@ html.service-hours-closed .service-hours-booking-disabled {
     border-radius: 0 !important;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT SOLID HEADER AND EDIT ROWS
+========================================================= */
 
+/* Solid technical-blue header across every blueprint card. */
+#pr-selection-cards.blueprint-selection-module .card-heading {
+  background: #102f4f !important;
+  color: #c6d4ff !important;
+}
+
+/* Filled/current headers use a stronger solid blueprint tone. */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-heading,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-heading {
+  background: #16486f !important;
+  color: #90ffdc !important;
+}
+
+/* Solid EDIT row. */
+#pr-selection-cards.blueprint-selection-module .card-back {
+  background: #087bc1 !important;
+  color: #ffffff !important;
+}
+
+/* Filled/current EDIT rows use the stronger cyan-blue state. */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-back,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-back {
+  background: #0b91d1 !important;
+  color: #ffffff !important;
+}
+
+/* Empty/disabled rows remain solid instead of transparent or gradient-filled. */
+#pr-selection-cards.blueprint-selection-module .card-back:disabled {
+  background: #152d43 !important;
+  color: transparent !important;
+}
+
+/* Desktop hover remains solid with no gradient transition. */
+@media (hover: hover) and (pointer: fine) {
+  #pr-selection-cards.blueprint-selection-module .card-back:not(:disabled):hover {
+    background: #12a0dc !important;
+    color: #ffffff !important;
+  }
+}
