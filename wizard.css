@@ -13298,3 +13298,141 @@ html.service-hours-closed .service-hours-booking-disabled {
     letter-spacing: 0.06em;
   }
 }
+/* =========================================================
+   CUSTOMER FORM CONVERSION UPGRADE
+========================================================= */
+
+.customer-form-intro {
+  width: min(100%, 720px);
+  margin: 0 auto 22px;
+
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+
+  text-align: center;
+}
+
+.customer-form-intro > span {
+  color: #077bff;
+
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.11em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+#pr-customer-form .customer-form-intro h3 {
+  margin: 0;
+
+  color: var(--accent);
+
+  font-size: clamp(1.55rem, 3vw, 2.1rem);
+  line-height: 1.05;
+}
+
+.customer-form-intro p {
+  max-width: 620px;
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.customer-field-optional > label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.optional-field-badge {
+  padding: 3px 7px;
+
+  border: 1px solid rgba(7, 123, 255, 0.2);
+  border-radius: 999px;
+
+  background: rgba(7, 123, 255, 0.07);
+  color: rgba(37, 40, 61, 0.68);
+
+  font-size: 7px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.customer-form-reassurance {
+  width: min(100%, 560px);
+  margin: 24px auto 0;
+  padding: 13px 15px;
+
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+
+  border: 1px solid rgba(102, 252, 241, 0.22);
+  border-radius: 15px;
+
+  background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.1), transparent 58%),
+    rgba(255, 255, 255, 0.68);
+
+  text-align: center;
+}
+
+.customer-form-reassurance strong {
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.customer-form-reassurance span {
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+@media (max-width: 520px) {
+  .customer-form-intro {
+    margin-bottom: 18px;
+    gap: 7px;
+  }
+
+  .customer-form-intro > span {
+    font-size: 8px;
+  }
+
+  #pr-customer-form .customer-form-intro h3 {
+    font-size: 22px;
+  }
+
+  .customer-form-intro p {
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+
+  .optional-field-badge {
+    font-size: 6.5px;
+  }
+
+  .customer-form-reassurance {
+    margin-top: 20px;
+    padding: 12px;
+  }
+
+  .customer-form-reassurance span {
+    font-size: 11px;
+  }
+}

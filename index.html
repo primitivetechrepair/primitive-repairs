@@ -218,7 +218,13 @@
 <!-- Customer form shown after all selections -->
 <section id="pr-form-area" style="display:none;">
   <form id="pr-customer-form">
-  <h3>Customer Information</h3>
+  <div class="customer-form-intro">
+    <span>You're almost finished</span>
+    <h3>Complete Your Repair Request</h3>
+    <p>
+      Add your contact details so we can review your request and confirm your appointment by text.
+    </p>
+  </div>
 
   <!-- Summary of selections -->
   <div id="summary-box" class="selection-summary"></div>
@@ -267,16 +273,28 @@
           <input name="apt" id="cf-apt" autocomplete="address-line2">
         </div>
 
-        <div class="customer-field customer-field-full">
-          <label for="cf-notes">Notes (optional)</label>
-          <textarea id="cf-notes" name="notes"></textarea>
+        <div class="customer-field customer-field-full customer-field-optional">
+          <label for="cf-notes">
+            Notes
+            <span class="optional-field-badge">Optional</span>
+          </label>
+          <textarea
+            id="cf-notes"
+            name="notes"
+            placeholder="Add anything else that may help us review the repair request"
+          ></textarea>
         </div>
 
-        <div class="customer-field customer-field-full">
-          <label for="cf-files">Upload photos / videos (optional)</label>
+        <div class="customer-field customer-field-full customer-field-optional">
+          <label for="cf-files">
+            Upload photos / videos
+            <span class="optional-field-badge">Optional</span>
+          </label>
           <input id="cf-files" type="file" accept="image/*,video/*" multiple>
           <div id="cf-previews" class="previews"></div>
-          <div class="small-note">Max 10 files. Each &le; 8MB. Thumbnails appear below.</div>
+          <div class="small-note">
+            Photos can help us understand the device condition before confirmation. Max 10 files, each 8MB or less.
+          </div>
         </div>
       </div>
 
@@ -348,8 +366,13 @@
   </div>
 </div>
 
+      <div class="customer-form-reassurance">
+        <strong>Review before submitting</strong>
+        <span>Submitting this form does not authorize repair work.</span>
+      </div>
+
       <div class="form-actions">
-        <button id="cf-back" type="button">Edit selections</button>
+        <button id="cf-back" type="button">Back to Appointment</button>
         <button id="cf-submit" type="submit">Review Request</button>
       </div>
     </form>
