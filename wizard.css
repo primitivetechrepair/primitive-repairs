@@ -13798,23 +13798,29 @@ html.service-hours-closed .service-hours-booking-disabled {
 ========================================================= */
 
 /*
-  Keep interactive button hitboxes stationary on hover.
-  Moving the actual element upward causes rapid hover/unhover
-  looping when the pointer rests on the bottom border.
+  Keep every interactive control's hitbox stationary.
+  Moving the hovered element causes rapid hover/unhover
+  cycling when the pointer rests on its bottom border.
 */
 
 @media (hover: hover) and (pointer: fine) {
-  .repair-details-continue:hover,
-  .repair-info-continue:hover,
-  .success-start-new:hover,
-  .appointment-continue:hover,
-  .repair-select-continue:hover:not(:disabled),
-  #cf-back:hover,
-  #cf-submit:hover:not(:disabled),
-  .review-back:hover,
-  .review-submit:hover:not(:disabled),
-  .selection-cards .card-back:hover,
-  .supported-device-action:hover {
+  button:hover,
+  button:focus-visible,
+  button:active,
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  a[class*="btn"]:hover,
+  a[class*="button"]:hover,
+  a[class*="cta"]:hover,
+  [role="button"]:hover,
+  [class*="-btn"]:hover,
+  [class*="-button"]:hover,
+  [class*="-continue"]:hover,
+  [class*="-submit"]:hover,
+  [class*="-back"]:hover,
+  [class*="-action"]:hover {
     transform: none !important;
+    translate: none !important;
   }
 }
