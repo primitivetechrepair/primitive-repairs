@@ -925,6 +925,13 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
 
   const preferredDate = formatDisplayDate(appointment.date);
   const preferredTime = appointment.time || "Not selected";
+  const convenienceFee = Number(appointment.convenienceFee || 0);
+  const hasAfterHoursFee = convenienceFee > 0;
+  const convenienceFeeLabel =
+    appointment.convenienceFeeLabel ||
+    (hasAfterHoursFee
+      ? `$${convenienceFee.toFixed(2)} after-hours convenience fee`
+      : "");
 
   const selectedRepairs = getSelectedRepairsFromPayload();
 
@@ -965,17 +972,23 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
 
         <div class="option-section-header success-option-header">
           <span>Request Submitted</span>
-          <h3>Thank you, ${escapeSuccessHtml(customerName)}.</h3>
+          <h3>Repair Request Received</h3>
           <p class="success-message">
-            Your repair request has been received. We will review the details and contact you to confirm availability, timing, and next steps.
+            Thank you, ${escapeSuccessHtml(customerName)}. Your request was submitted successfully and is now pending review. We will contact you by text to confirm availability and final service details.
           </p>
         </div>
+      </div>
+
+      <div class="success-request-confirmation">
+        <span>Request ID</span>
+        <strong>${escapeSuccessHtml(requestId)}</strong>
+        <small>Save this number for reference.</small>
       </div>
 
       <div class="success-summary success-summary-request-layout">
         ${renderSuccessItem("Request ID", requestId, "Pending")}
         ${renderSuccessItem("Status", status, "New")}
-        ${renderSuccessItem("Next Step", "We will contact you to confirm the repair details.")}
+        ${renderSuccessItem("Appointment Status", "Pending confirmation")}
         ${renderSuccessItem("Device", device.type, "Not selected")}
         ${renderSuccessItem("Brand", device.brand, "Not selected")}
         ${renderSuccessItem("Series", device.series, "Not selected")}
@@ -985,10 +998,37 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
         ${renderSuccessItem("Service Type", serviceType, "Not selected")}
         ${renderSuccessItem("Preferred Date", preferredDate, "Not selected")}
         ${renderSuccessItem("Preferred Time", preferredTime, "Not selected")}
+        ${hasAfterHoursFee
+          ? renderSuccessItem("Convenience Fee", convenienceFeeLabel)
+          : ""}
         ${renderSuccessItem("Customer", customerName, "Customer")}
         ${renderSuccessItem("Contact", contactLine, "Not provided")}
         ${renderSuccessItem("Location", customer.serviceLocation, "Not provided")}
         ${renderSuccessItem("Attachments", `${attachments.length}`)}
+      </div>
+
+      <div class="success-next-steps">
+        <div class="success-next-steps-header">
+          <span>What Happens Next</span>
+          <h4>Your request is pending confirmation.</h4>
+        </div>
+
+        <div class="success-next-steps-grid">
+          <div>
+            <strong>1</strong>
+            <span>We review your device, repair details, and preferred appointment.</span>
+          </div>
+
+          <div>
+            <strong>2</strong>
+            <span>We contact you by text to confirm availability and service details.</span>
+          </div>
+
+          <div>
+            <strong>3</strong>
+            <span>No repair work begins until the final details are confirmed with you.</span>
+          </div>
+        </div>
       </div>
 
       <button type="button" class="success-start-new">

@@ -13535,3 +13535,166 @@ html.service-hours-closed .service-hours-booking-disabled {
     white-space: normal;
   }
 }
+/* =========================================================
+   SUCCESS CONFIRMATION CONVERSION UPGRADE
+========================================================= */
+
+.success-request-confirmation {
+  width: min(100%, 520px);
+  margin: 0 auto 24px;
+  padding: 18px;
+
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+
+  border: 1px solid rgba(102, 252, 241, 0.34);
+  border-radius: 18px;
+
+  background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.16), transparent 56%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 253, 252, 0.82));
+
+  text-align: center;
+
+  box-shadow:
+    0 16px 34px rgba(7, 123, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.success-request-confirmation > span {
+  color: #077bff;
+
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.success-request-confirmation > strong {
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 3vw, 1.55rem);
+  font-weight: 950;
+  letter-spacing: 0.025em;
+  line-height: 1.1;
+
+  overflow-wrap: anywhere;
+}
+
+.success-request-confirmation > small {
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.success-next-steps {
+  width: 100%;
+  margin-top: 26px;
+  padding: 22px;
+
+  border: 1px solid rgba(7, 123, 255, 0.16);
+  border-radius: 18px;
+
+  background:
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.1), transparent 40%),
+    rgba(255, 255, 255, 0.7);
+
+  text-align: left;
+}
+
+.success-next-steps-header {
+  margin-bottom: 16px;
+
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+
+  text-align: center;
+}
+
+.success-next-steps-header > span {
+  color: #077bff;
+
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 950;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.success-next-steps-header > h4 {
+  margin: 0;
+
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 950;
+  line-height: 1.15;
+}
+
+.success-next-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.success-next-steps-grid > div {
+  min-width: 0;
+  padding: 15px;
+
+  display: grid;
+  align-content: start;
+  gap: 9px;
+
+  border: 1px solid rgba(102, 252, 241, 0.16);
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.success-next-steps-grid strong {
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 999px;
+
+  background: var(--button-gradient);
+  color: #ffffff;
+
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.success-next-steps-grid span {
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .success-request-confirmation {
+    padding: 16px 14px;
+  }
+
+  .success-next-steps {
+    padding: 18px 14px;
+  }
+
+  .success-next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
