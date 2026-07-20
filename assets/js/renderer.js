@@ -677,9 +677,21 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       </div>
 
       <div class="repair-info-actions">
-        <button type="button" class="repair-info-continue">
-          Continue to Appointment
-        </button>
+        <div class="repair-booking-bridge">
+          <div class="repair-booking-bridge-copy">
+            <span>Your repair plan is ready</span>
+            <h4>Select a preferred appointment time to continue.</h4>
+            <p>No repair begins until availability and repair details are confirmed.</p>
+          </div>
+
+          <button type="button" class="repair-info-continue">
+            Choose Appointment Time
+          </button>
+
+          <p class="repair-booking-bridge-note">
+            We will confirm your request and appointment availability by text.
+          </p>
+        </div>
       </div>
     </section>
   `;
