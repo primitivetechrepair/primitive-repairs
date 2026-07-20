@@ -13219,3 +13219,82 @@ html.service-hours-closed .service-hours-booking-disabled {
     white-space: normal;
   }
 }
+/* =========================================================
+   APPOINTMENT AFTER-HOURS SLOT CONVERSION
+========================================================= */
+
+.appointment-time-slot {
+  display: grid;
+  place-items: center;
+  gap: 4px;
+}
+
+.appointment-time-slot > span {
+  display: block;
+}
+
+.appointment-time-slot > small {
+  display: block;
+
+  color: #a94f00;
+
+  font-family: var(--font-display);
+  font-size: 8px;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.appointment-time-slot.is-after-hours:not(.is-selected) {
+  border-color: rgba(255, 153, 51, 0.48);
+
+  background:
+    radial-gradient(circle at top, rgba(255, 178, 71, 0.16), transparent 50%),
+    linear-gradient(180deg, rgba(255, 251, 244, 0.98), rgba(255, 242, 221, 0.9));
+
+  box-shadow:
+    0 8px 18px rgba(128, 72, 10, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.appointment-time-slot.is-after-hours:not(.is-selected):hover {
+  border-color: rgba(255, 140, 26, 0.78);
+
+  background:
+    radial-gradient(circle at top, rgba(255, 166, 51, 0.22), transparent 50%),
+    linear-gradient(180deg, #ffffff, rgba(255, 236, 204, 0.96));
+
+  box-shadow:
+    0 14px 28px rgba(145, 76, 5, 0.16),
+    0 0 0 2px rgba(255, 153, 51, 0.14);
+}
+
+.appointment-time-slot.is-after-hours.is-selected > small {
+  color: #ffffff;
+}
+
+.appointment-after-hours-note {
+  border-color: rgba(255, 153, 51, 0.32);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 250, 240, 0.92),
+      rgba(255, 241, 216, 0.76)
+    );
+
+  color: rgba(92, 52, 10, 0.82);
+}
+
+@media (max-width: 520px) {
+  .appointment-time-slot {
+    min-height: 48px;
+    gap: 3px;
+  }
+
+  .appointment-time-slot > small {
+    font-size: 7px;
+    letter-spacing: 0.06em;
+  }
+}

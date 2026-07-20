@@ -96,17 +96,44 @@ function renderServiceButtons(selectedServiceType) {
   }).join("");
 }
 
+function isAfterHoursTimeSlot(timeSlot) {
+  const match = String(timeSlot || "")
+    .trim()
+    .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+
+  if (!match) return false;
+
+  let hour = Number(match[1]);
+  const minutes = Number(match[2]);
+  const period = match[3].toUpperCase();
+
+  if (hour === 12) {
+    hour = 0;
+  }
+
+  if (period === "PM") {
+    hour += 12;
+  }
+
+  const totalMinutes = (hour * 60) + minutes;
+
+  return totalMinutes >= (19 * 60) || totalMinutes < (7 * 60);
+}
+
 function renderTimeSlots(selectedTime) {
   return TIME_SLOTS.map((slot) => {
     const isSelected = selectedTime === slot;
+    const isAfterHours = isAfterHoursTimeSlot(slot);
 
     return `
       <button
         type="button"
-        class="appointment-time-slot ${isSelected ? "is-selected" : ""}"
+        class="appointment-time-slot ${isSelected ? "is-selected" : ""} ${isAfterHours ? "is-after-hours" : ""}"
         data-time-slot="${slot}"
+        aria-label="${slot}${isAfterHours ? ", includes a $35 after-hours convenience fee" : ""}"
       >
-        ${slot}
+        <span>${slot}</span>
+        ${isAfterHours ? `<small>+$35</small>` : ""}
       </button>
     `;
   }).join("");
@@ -125,8 +152,8 @@ export function renderAppointmentStep(container, onContinue) {
   <section class="appointment-panel">
     <div class="option-section-header appointment-option-header">
       <span>Appointment</span>
-      <h3>Choose your service option.</h3>
-      <p>Select how you would like to complete your repair request. Availability and final details will be confirmed after submission.</p>
+      <h3>Choose your preferred appointment.</h3>
+      <p>Select your service type, preferred date, and time. We will confirm appointment availability by text after submission.</p>
     </div>
 
     <div class="appointment-section">
@@ -169,13 +196,13 @@ export function renderAppointmentStep(container, onContinue) {
         </div>
 
         <p class="appointment-after-hours-note">
-          Appointments scheduled from 7:00 PM through 6:30 AM include a $35 after-hours convenience fee.
+          Times marked +$35 are after-hours appointments scheduled from 7:00 PM through 6:30 AM Eastern.
         </p>
       </div>
 
       <div class="appointment-actions">
         <button type="button" class="appointment-continue">
-          Continue to Customer Info
+          Continue to Contact Details
         </button>
       </div>
     </section>
