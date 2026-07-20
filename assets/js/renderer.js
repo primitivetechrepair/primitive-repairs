@@ -1139,8 +1139,8 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
     <section class="review-panel">
       <div class="option-section-header review-option-header">
         <span>Final Review</span>
-        <h3>Confirm your repair request.</h3>
-        <p>Review everything below before submitting. You can go back if anything needs to be changed.</p>
+        <h3>Review and submit your repair request.</h3>
+        <p>Confirm the details below before submitting. Nothing is charged or authorized by submitting this request.</p>
       </div>
 
       <div class="review-grid">
@@ -1176,7 +1176,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${repairsMarkup}
         </div>
 
-        <div class="review-card review-card-appointment">
+        <div class="review-card review-card-appointment ${convenienceFee > 0 ? "has-after-hours-fee" : ""}">
           <h4>Appointment</h4>
           ${renderReviewRow("Service Type", serviceType, "Not selected")}
           ${renderReviewRow("Preferred Date", preferredDate, "Not selected")}
@@ -1192,9 +1192,14 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
         </div>
       </div>
 
+      <div class="review-submit-reassurance">
+        <strong>Ready when you are</strong>
+        <span>We will review your request and contact you by text.</span>
+      </div>
+
       <div class="review-actions">
-        <button type="button" class="review-back">Back to Customer Info</button>
-        <button type="button" class="review-submit">Submit Request</button>
+        <button type="button" class="review-back">Back to Contact Details</button>
+        <button type="button" class="review-submit">Submit Repair Request</button>
       </div>
     </section>
   `;
@@ -1224,7 +1229,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
       } catch (err) {
         console.error("Review submit failed:", err);
         submitBtn.disabled = false;
-        submitBtn.textContent = "Submit Request";
+        submitBtn.textContent = "Submit Repair Request";
       }
     });
   }

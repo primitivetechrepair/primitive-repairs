@@ -830,7 +830,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (reviewSubmitButton) {
       reviewSubmitButton.disabled = false;
-      reviewSubmitButton.textContent = "Submit Request";
+      reviewSubmitButton.textContent = "Submit Repair Request";
     }
 
     alert(
@@ -850,7 +850,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (reviewSubmitButton) {
     reviewSubmitButton.disabled = false;
-    reviewSubmitButton.textContent = "Submit Request";
+    reviewSubmitButton.textContent = "Submit Repair Request";
   }
 
   renderSuccessStep(stepsArea, leadPayload, () => {

@@ -13436,3 +13436,102 @@ html.service-hours-closed .service-hours-booking-disabled {
     font-size: 11px;
   }
 }
+/* =========================================================
+   FINAL REVIEW CONVERSION UPGRADE
+========================================================= */
+
+.review-card-appointment {
+  border-color: rgba(7, 123, 255, 0.28);
+
+  background:
+    radial-gradient(circle at top right, rgba(7, 123, 255, 0.14), transparent 42%),
+    radial-gradient(circle at bottom left, rgba(102, 252, 241, 0.12), transparent 44%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(237, 248, 255, 0.82));
+
+  box-shadow:
+    0 16px 34px rgba(7, 123, 255, 0.11),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.review-card-appointment.has-after-hours-fee {
+  border-color: rgba(255, 153, 51, 0.5);
+
+  background:
+    radial-gradient(circle at top right, rgba(255, 174, 62, 0.18), transparent 42%),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(255, 242, 219, 0.88));
+
+  box-shadow:
+    0 16px 34px rgba(133, 73, 8, 0.12),
+    0 0 0 2px rgba(255, 153, 51, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.92);
+}
+
+.review-card-appointment.has-after-hours-fee h4 {
+  border-color: rgba(255, 153, 51, 0.42);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 240, 212, 0.84)
+    );
+
+  color: #8a4500;
+}
+
+.review-submit-reassurance {
+  width: min(100%, 560px);
+  margin: 28px auto 0;
+  padding: 13px 15px;
+
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+
+  border: 1px solid rgba(102, 252, 241, 0.24);
+  border-radius: 15px;
+
+  background:
+    radial-gradient(circle at top, rgba(102, 252, 241, 0.11), transparent 60%),
+    rgba(255, 255, 255, 0.7);
+
+  text-align: center;
+}
+
+.review-submit-reassurance strong {
+  color: var(--accent);
+
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.review-submit-reassurance span {
+  color: var(--muted);
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.review-submit {
+  min-width: 220px;
+}
+
+@media (max-width: 520px) {
+  .review-submit-reassurance {
+    margin-top: 22px;
+    padding: 12px;
+  }
+
+  .review-submit-reassurance span {
+    font-size: 11px;
+  }
+
+  .review-actions .review-submit {
+    white-space: normal;
+  }
+}
