@@ -13839,3 +13839,204 @@ html.service-hours-closed .service-hours-booking-disabled {
     translate: none !important;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT LIVE SUMMARY THEME
+========================================================= */
+
+/*
+  Integrate the live Repair Request Summary into the existing
+  Repair Blueprint visual system without changing summaries
+  rendered elsewhere in the repair flow.
+*/
+
+#pr-selection-cards.blueprint-selection-module > .wizard-live-summary {
+  position: relative;
+  z-index: 2;
+
+  width: calc(100% - 28px);
+  margin: 0 14px 14px;
+  padding: 14px;
+
+  border: 1px solid rgba(102, 252, 241, 0.28);
+  border-radius: 16px;
+
+  background:
+    linear-gradient(rgba(102, 252, 241, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 252, 241, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at top left, rgba(102, 252, 241, 0.11), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(7, 123, 255, 0.14), transparent 40%),
+    linear-gradient(180deg, rgba(16, 47, 79, 0.82), rgba(7, 12, 24, 0.92));
+
+  background-size:
+    18px 18px,
+    18px 18px,
+    auto,
+    auto,
+    auto;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.018);
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-header {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(102, 252, 241, 0.18);
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-header span {
+  color: #90ffdc;
+
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-header strong {
+  border-color: rgba(102, 252, 241, 0.28);
+
+  background: rgba(102, 252, 241, 0.08);
+  color: rgba(198, 212, 255, 0.78);
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-item {
+  min-height: 64px;
+  padding: 10px;
+
+  align-content: center;
+
+  border-color: rgba(198, 212, 255, 0.13);
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.012)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-item span {
+  color: rgba(198, 212, 255, 0.56);
+
+  font-size: 8px;
+  letter-spacing: 0.08em;
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-item strong {
+  color: rgba(255, 255, 255, 0.94);
+
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-item.is-warning {
+  border-color: rgba(255, 174, 86, 0.32);
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 174, 86, 0.12),
+      transparent 48%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 174, 86, 0.055),
+      rgba(255, 174, 86, 0.018)
+    );
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-item.is-warning span {
+  color: rgba(255, 194, 128, 0.72);
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary
+  .wizard-live-summary-item.is-warning strong {
+  color: #ffd0a0;
+}
+
+@media (max-width: 900px) {
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  #pr-selection-cards.blueprint-selection-module > .wizard-live-summary {
+    width: calc(100% - 16px);
+    margin: 0 8px 10px;
+    padding: 10px;
+
+    border-radius: 12px;
+  }
+
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-header {
+    gap: 7px;
+    margin-bottom: 9px;
+    padding-bottom: 9px;
+  }
+
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-item {
+    min-height: 58px;
+    padding: 8px;
+  }
+
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-item:nth-child(5),
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-item.is-warning {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary
+    .wizard-live-summary-item strong {
+    font-size: 11px;
+  }
+}
