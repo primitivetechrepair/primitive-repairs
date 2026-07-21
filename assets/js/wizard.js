@@ -335,6 +335,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderLiveRepairSummary() {
     if (!stepsArea) return;
 
+    const blueprint = document.getElementById("pr-selection-cards");
+    const blueprintGrid = blueprint?.querySelector(".blueprint-profile-grid");
+
+    document
+      .querySelectorAll(".wizard-live-summary")
+      .forEach((summary) => summary.remove());
+
     const summaryItems = [
       {
         label: "Device",
@@ -404,6 +411,15 @@ document.addEventListener("DOMContentLoaded", () => {
           .join("")}
       </div>
     `;
+
+    if (blueprintGrid) {
+
+      blueprintGrid.before(summaryCard);
+
+      return;
+
+    }
+
 
     stepsArea.prepend(summaryCard);
   }
