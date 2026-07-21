@@ -8,7 +8,8 @@
 ========================================================= */
 
 :root {
-  --font-display: "Space Grotesk", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "Space Grotesk", "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
   --bg: #f7f7fb;
   --card: #ffffff;
@@ -23,7 +24,7 @@
   --soft-border: rgba(37, 40, 61, 0.12);
   --soft-shadow: 0 18px 40px rgba(37, 40, 61, 0.12);
   --button-gradient: linear-gradient(135deg, #25283d, #077bff);
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: var(--font-body);
 }
 
 * {
@@ -40,6 +41,7 @@ html {
 }
 
 body {
+  font-family: var(--font-body);
   max-width: 100%;
   margin: 0;
   padding: 206px 0 0;
@@ -3162,7 +3164,7 @@ text-align: center;
 
   color: var(--muted);
 
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
@@ -3209,7 +3211,7 @@ text-align: center;
 .process-trust-strip span {
   color: var(--muted);
 
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 700;
   line-height: 1.45;
@@ -3839,7 +3841,7 @@ text-align: center;
   color: var(--accent);
 
   font: inherit;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 700;
   text-transform: none;
@@ -3875,7 +3877,7 @@ text-align: center;
 
   color: var(--accent);
 
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 750;
   letter-spacing: 0;
@@ -4409,7 +4411,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
   color: var(--muted);
 
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 13.5px;
   font-weight: 700;
   line-height: 1.58;
@@ -5793,7 +5795,7 @@ backdrop-filter: blur(16px) saturate(170%);
 
   color: var(--muted);
 
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.55;
@@ -11261,7 +11263,7 @@ body {
 
 .supported-device-content p,
 .supported-device-trust-strip span {
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
 }
 
   .supported-device-icon {
