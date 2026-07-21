@@ -8,7 +8,7 @@
 ========================================================= */
 
 :root {
-  --font-display: "Oswald", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "Space Grotesk", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
   --bg: #f7f7fb;
   --card: #ffffff;
@@ -14039,82 +14039,4 @@ html.service-hours-closed .service-hours-booking-disabled {
     .wizard-live-summary-item strong {
     font-size: 11px;
   }
-}
-/* =========================================================
-   REPAIR BLUEPRINT SPACE GROTESK TYPEFACE TEST
-========================================================= */
-
-/*
-  Typeface test is scoped to Repair Blueprint only.
-  The rest of the website continues using the global Oswald
-  display-font system.
-*/
-
-#pr-selection-cards.blueprint-selection-module {
-  --font-display:
-    "Space Grotesk",
-    Inter,
-    system-ui,
-    -apple-system,
-    "Segoe UI",
-    Roboto,
-    Arial,
-    sans-serif;
-
-  font-family: var(--font-display);
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .blueprint-profile-kicker {
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .blueprint-profile-header strong {
-  font-family: var(--font-display);
-  font-weight: 500;
-  letter-spacing: 0.015em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .card-heading {
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .card-label {
-  font-weight: 600;
-  letter-spacing: 0.025em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .card-back {
-  font-weight: 700;
-  letter-spacing: 0.1em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .wizard-live-summary-header span {
-  font-weight: 700;
-  letter-spacing: 0.075em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .wizard-live-summary-header strong {
-  font-weight: 600;
-  letter-spacing: 0.055em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .wizard-live-summary-item span {
-  font-weight: 600;
-  letter-spacing: 0.075em;
-}
-
-#pr-selection-cards.blueprint-selection-module
-  .wizard-live-summary-item strong {
-  font-weight: 600;
-  letter-spacing: 0;
 }
