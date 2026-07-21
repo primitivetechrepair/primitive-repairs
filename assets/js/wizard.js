@@ -337,6 +337,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const blueprint = document.getElementById("pr-selection-cards");
     const blueprintGrid = blueprint?.querySelector(".blueprint-profile-grid");
+    const progressRow = document.querySelector(".pr-progress-row");
+    const progressBarWrap = document.querySelector(".pr-progress-bar-wrap");
 
     document
       .querySelectorAll(".wizard-live-summary")
@@ -415,6 +417,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (blueprintGrid) {
 
       blueprintGrid.before(summaryCard);
+
+      const progressElements = [
+        progressRow,
+        progressBarWrap
+      ].filter(Boolean);
+
+      if (progressElements.length) {
+        summaryCard.after(...progressElements);
+      }
 
       return;
 
