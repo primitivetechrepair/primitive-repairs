@@ -14042,3 +14042,47 @@ html.service-hours-closed .service-hours-booking-disabled {
     font-size: 11px;
   }
 }
+/* =========================================================
+   REPAIR BLUEPRINT SUMMARY PROGRESS SPACING
+========================================================= */
+
+/*
+  Keep the summary, progress indicators, and selection grid
+  evenly spaced within the same Blueprint content width.
+*/
+
+#pr-selection-cards.blueprint-selection-module
+  > .wizard-live-summary {
+  margin-bottom: 14px;
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .pr-progress-row {
+  width: calc(100% - 28px);
+  margin: 0 14px 8px;
+}
+
+#pr-selection-cards.blueprint-selection-module
+  > .pr-progress-bar-wrap {
+  width: calc(100% - 28px);
+  margin: 0 14px 14px;
+}
+
+@media (max-width: 700px) {
+  #pr-selection-cards.blueprint-selection-module
+    > .wizard-live-summary {
+    margin-bottom: 10px;
+  }
+
+  #pr-selection-cards.blueprint-selection-module
+    > .pr-progress-row {
+    width: calc(100% - 16px);
+    margin: 0 8px 6px;
+  }
+
+  #pr-selection-cards.blueprint-selection-module
+    > .pr-progress-bar-wrap {
+    width: calc(100% - 16px);
+    margin: 0 8px 10px;
+  }
+}
