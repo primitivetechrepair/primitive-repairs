@@ -1116,9 +1116,9 @@ text-align: center;
 }
 
 .landing-primary-btn {
-  background: var(--button-gradient);
+  background: #a33b20;
   color: #ffffff;
-  box-shadow: 0 14px 28px rgba(7, 123, 255, 0.24);
+  box-shadow: 0 14px 28px rgba(163, 59, 32, 0.24);
 }
 
 .landing-secondary-btn {
