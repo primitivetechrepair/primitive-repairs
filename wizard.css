@@ -1116,9 +1116,9 @@ text-align: center;
 }
 
 .landing-primary-btn {
-  background: #a33b20;
+  background: var(--button-gradient);
   color: #ffffff;
-  box-shadow: 0 14px 28px rgba(163, 59, 32, 0.24);
+  box-shadow: 0 14px 28px rgba(7, 123, 255, 0.24);
 }
 
 .landing-secondary-btn {
@@ -9803,14 +9803,12 @@ body {
   .mobile-sticky-booking-secondary[href^="sms:"]::before {
     display: inline-block;
   }
-
   .mobile-sticky-booking-primary {
-
-    background: var(--button-gradient);
+    background: #d72638;
     color: #ffffff;
 
     box-shadow:
-      0 10px 22px rgba(7, 123, 255, 0.2),
+      0 10px 22px rgba(215, 38, 56, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.18);
   }
 
