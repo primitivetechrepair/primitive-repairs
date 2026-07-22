@@ -14,7 +14,7 @@
   const AFTER_HOURS_BANNER_TEXT =
     "Online appointments remain available. A $35 after-hours convenience fee applies from 7:00 PM to 7:00 AM ET. Calls reopen at 7:00 AM ET.";
 
-  const CALL_CLOSED_LABEL = "Call Opens at 7 AM";
+  const CALL_CLOSED_LABEL = "Calls Resume at 7 AM";
 
   const LOCKED_CLASS = "service-hours-disabled";
   const CALL_LOCKED_CLASS = "service-hours-call-disabled";
