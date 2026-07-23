@@ -91,9 +91,9 @@ export default async function handler(req, res) {
       ).trim();
 
     const deviceImageUrl =
-      deviceImage.startsWith("/images/")
+      /^\/images\/.+\.(webp|png)$/i.test(deviceImage)
         ? `https://www.primitiverepairs.com${deviceImage}`
-        : /^https:\/\/(www\.)?primitiverepairs\.com\/images\//i.test(deviceImage)
+        : /^https:\/\/(www\.)?primitiverepairs\.com\/images\/.+\.(webp|png)$/i.test(deviceImage)
           ? deviceImage
           : "";
 
@@ -169,10 +169,10 @@ export default async function handler(req, res) {
                 <img
                   src="${escapeHtml(deviceImageUrl)}"
                   alt="${escapeHtml(makeModel)}"
-                  width="180"
+                  width="90"
                   style="
                     display:block;
-                    width:180px;
+                    width:90px;
                     max-width:100%;
                     height:auto;
                     margin:0 auto;
