@@ -430,3 +430,24 @@ span[aria-hidden="true"]::after {
     grid-column: auto;
   }
 }
+/* =========================================================
+   COOKIE CONSENT INTERACTION FIX
+========================================================= */
+
+.primitive-cookie-banner {
+  pointer-events: none;
+}
+
+.primitive-cookie-banner.is-visible {
+  pointer-events: auto;
+}
+
+.primitive-cookie-modal-backdrop[hidden] {
+  display: none !important;
+  pointer-events: none;
+}
+
+.primitive-cookie-modal-backdrop:not([hidden]) {
+  display: grid;
+  pointer-events: auto;
+}

@@ -123,7 +123,7 @@
 
     consentStylesheet.href =
 
-      "/assets/css/cookie-consent.css?v=20260723-1";
+      "/assets/css/cookie-consent.css?v=20260723-2";
 
     consentStylesheet.dataset.cookieConsentStyles = "true";
 
