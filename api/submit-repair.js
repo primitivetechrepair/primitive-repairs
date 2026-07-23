@@ -82,6 +82,29 @@ export default async function handler(req, res) {
       lead.selectedModel ||
       "Not provided";
 
+    const deviceImage =
+      String(
+        lead.deviceImage ||
+        lead.modelImage ||
+        lead.selectedModelImage ||
+        ""
+      ).trim();
+
+    const deviceImageUrl =
+      deviceImage.startsWith("/images/")
+        ? `https://www.primitiverepairs.com${deviceImage}`
+        : /^https:\/\/(www\.)?primitiverepairs\.com\/images\//i.test(deviceImage)
+          ? deviceImage
+          : "";
+
+    const makeModel =
+      [brand, model]
+        .filter((value) => value && value !== "Not provided")
+        .join(" ") ||
+      "Not provided";
+
+
+
     const repair =
       lead.repair ||
       lead.repairType ||
@@ -123,7 +146,88 @@ export default async function handler(req, res) {
       lead.createdAt ||
       new Date().toISOString();
 
-        const emailHtml = `
+    const deviceImageHtml =
+      deviceImageUrl
+        ? `
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            role="presentation"
+            style="border-collapse:collapse;margin:0 0 18px;"
+          >
+            <tr>
+              <td
+                align="center"
+                style="
+                  padding:18px 14px;
+                  background:#ffffff;
+                  border:1px solid #d9e1ea;
+                  border-radius:12px 12px 0 0;
+                "
+              >
+                <img
+                  src="${escapeHtml(deviceImageUrl)}"
+                  alt="${escapeHtml(makeModel)}"
+                  width="180"
+                  style="
+                    display:block;
+                    width:180px;
+                    max-width:100%;
+                    height:auto;
+                    margin:0 auto;
+                    border:0;
+                    outline:none;
+                    text-decoration:none;
+                  "
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                align="center"
+                style="
+                  padding:14px 16px 16px;
+                  background:#f8fafc;
+                  border-right:1px solid #d9e1ea;
+                  border-bottom:1px solid #d9e1ea;
+                  border-left:1px solid #d9e1ea;
+                  border-radius:0 0 12px 12px;
+                "
+              >
+                <div
+                  style="
+                    margin:0 0 6px;
+                    color:#0f766e;
+                    font-size:11px;
+                    font-weight:800;
+                    line-height:1.2;
+                    letter-spacing:0.1em;
+                    text-transform:uppercase;
+                  "
+                >
+                  Make / Model
+                </div>
+
+                <div
+                  style="
+                    margin:0;
+                    color:#111827;
+                    font-size:18px;
+                    font-weight:800;
+                    line-height:1.35;
+                  "
+                >
+                  ${escapeHtml(makeModel)}
+                </div>
+              </td>
+            </tr>
+          </table>
+        `
+        : "";
+
+    const emailHtml = `
       <div style="margin:0;padding:0;background:#f4f6f8;font-family:Arial,Helvetica,sans-serif;color:#111827;">
         <div style="max-width:680px;margin:0 auto;padding:24px 14px;">
           
@@ -186,6 +290,8 @@ export default async function handler(req, res) {
                 <div style="margin-bottom:12px;color:#0f766e;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Device + Repair
                 </div>
+
+                ${deviceImageHtml}
 
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                   <tr>
