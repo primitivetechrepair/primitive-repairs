@@ -76,6 +76,16 @@
       "source": "/tablet-repair-miami.html",
       "destination": "/tablet-repair-miami",
       "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/cookie-policy.html",
+      "destination": "/cookie-policy",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -134,6 +144,14 @@
     {
       "source": "/tablet-repair-miami",
       "destination": "/tablet-repair-miami.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/cookie-policy",
+      "destination": "/cookie-policy.html"
     }
   ]
 }

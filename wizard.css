@@ -14616,3 +14616,38 @@ body.email-offer-open {
 
   opacity: 0.38;
 }
+
+/* =========================================================
+   COOKIE SETTINGS FOOTER CONTROL
+========================================================= */
+
+.site-footer-cookie-settings {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background: transparent;
+  color: inherit;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+
+  cursor: pointer;
+
+  transition:
+    color 150ms ease,
+    text-decoration-color 150ms ease;
+}
+
+.site-footer-cookie-settings:hover,
+.site-footer-cookie-settings:focus-visible {
+  color: #66fcf1;
+  text-decoration-color: currentColor;
+}

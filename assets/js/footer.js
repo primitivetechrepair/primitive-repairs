@@ -55,6 +55,15 @@
   <a href="/warranty">Warranty Support</a>
   <a href="/faq">FAQs</a>
   <a href="/contact-us">Contact Us</a>
+  <a href="/privacy-policy">Privacy Policy</a>
+  <a href="/cookie-policy">Cookie Policy</a>
+  <button
+    type="button"
+    class="site-footer-cookie-settings"
+    data-open-cookie-settings
+  >
+    Cookie Settings
+  </button>
 </nav>
           </div>
 
@@ -92,12 +101,60 @@
         </div>
 
         <div class="site-footer-bottom">
-          <span>© 2026 Primitive Tech Repairs. All rights reserved.</span>
+          <span>&copy; 2026 Primitive Tech Repairs. All rights reserved.</span>
           <span>Miami mobile device repair service.</span>
         </div>
       </div>
     </footer>
   `;
+
+  const existingConsentStyles = document.querySelector(
+
+    "link[data-cookie-consent-styles]"
+
+  );
+
+
+  if (!existingConsentStyles) {
+
+    const consentStylesheet = document.createElement("link");
+
+    consentStylesheet.rel = "stylesheet";
+
+    consentStylesheet.href =
+
+      "/assets/css/cookie-consent.css?v=20260723-1";
+
+    consentStylesheet.dataset.cookieConsentStyles = "true";
+
+    document.head.appendChild(consentStylesheet);
+
+  }
+
+
+  const existingConsentScript = document.querySelector(
+
+    "script[data-cookie-consent-script]"
+
+  );
+
+
+  if (!existingConsentScript) {
+
+    const consentScript = document.createElement("script");
+
+    consentScript.src =
+
+      "/assets/js/cookieConsent.js?v=20260723-1";
+
+    consentScript.defer = true;
+
+    consentScript.dataset.cookieConsentScript = "true";
+
+    document.body.appendChild(consentScript);
+
+  }
+
 
   const repairDetails = footerRoot.querySelector(".site-footer-repair-details");
 
