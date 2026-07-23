@@ -114,12 +114,70 @@ export default async function handler(req, res) {
       lead.selectedRepair ||
       "Not provided";
 
+    const formatRepairDetailsForEmail = (value) => {
+      const humanizeKey = (key) =>
+        String(key)
+          .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+          .replace(/[_-]+/g, " ")
+          .replace(/\b\w/g, (character) => character.toUpperCase())
+          .trim();
+
+      const formatValue = (item) => {
+        if (item === null || item === undefined || item === "") {
+          return "";
+        }
+
+        if (Array.isArray(item)) {
+          return item
+            .map((entry) => formatValue(entry))
+            .filter(Boolean)
+            .join(", ");
+        }
+
+        if (typeof item === "object") {
+          return Object.entries(item)
+            .map(([key, nestedValue]) => {
+              const formattedValue = formatValue(nestedValue);
+
+              return formattedValue
+                ? `${humanizeKey(key)}: ${formattedValue}`
+                : "";
+            })
+            .filter(Boolean)
+            .join("; ");
+        }
+
+        return String(item).trim();
+      };
+
+      if (value === null || value === undefined || value === "") {
+        return "Not provided";
+      }
+
+      if (typeof value !== "object" || Array.isArray(value)) {
+        return formatValue(value) || "Not provided";
+      }
+
+      const lines = Object.entries(value)
+        .map(([key, item]) => {
+          const formattedValue = formatValue(item);
+
+          return formattedValue
+            ? `${humanizeKey(key)}: ${formattedValue}`
+            : "";
+        })
+        .filter(Boolean);
+
+      return lines.length
+        ? lines.join("\n")
+        : "Not provided";
+    };
     const repairDetails =
-      lead.repairDetails ||
+      formatRepairDetailsForEmail(lead.repairDetails ||
       lead.issue ||
       lead.notes ||
       lead.description ||
-      "Not provided";
+      "Not provided");
 
     const appointmentDate =
       lead.appointmentDate ||
@@ -157,13 +215,13 @@ export default async function handler(req, res) {
             cellpadding="0"
             cellspacing="0"
             role="presentation"
-            style="border-collapse:collapse;margin:0 0 18px;"
+            style="border-collapse:collapse;margin:0 0 12px;"
           >
             <tr>
               <td
                 align="center"
                 style="
-                  padding:18px 14px;
+                  padding:12px 12px;
                   background:#081a2a;
                   border:1px solid #16486f;
                   border-radius:12px 12px 0 0;
@@ -191,7 +249,7 @@ export default async function handler(req, res) {
               <td
                 align="center"
                 style="
-                  padding:14px 16px 16px;
+                  padding:10px 12px 12px;
                   background:#102f4f;
                   border-right:1px solid #16486f;
                   border-bottom:1px solid #16486f;
@@ -232,16 +290,16 @@ export default async function handler(req, res) {
 
     const emailHtml = `
       <div style="margin:0;padding:0;background:#071a2b;font-family:'Manrope','Segoe UI',Arial,Helvetica,sans-serif;color:#ffffff;">
-        <div style="max-width:680px;margin:0 auto;padding:24px 14px;">
+        <div style="max-width:620px;margin:0 auto;padding:14px 10px;">
           
           <div style="background:#0b1f32;border:1px solid #16486f;border-radius:18px;overflow:hidden;">
             
-            <div style="padding:26px 26px 22px;background:#102f4f;border-bottom:1px solid #16486f;">
+            <div style="padding:20px 20px 16px;background:#102f4f;border-bottom:1px solid #16486f;">
               <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:#16486f;color:#90ffdc;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
                 Repair Request
               </div>
 
-              <h1 style="margin:18px 0 8px;font-family:'Space Grotesk','Segoe UI',Arial,sans-serif;font-size:28px;font-weight:700;line-height:1.15;color:#ffffff;">
+              <h1 style="margin:12px 0 6px;font-family:'Space Grotesk','Segoe UI',Arial,sans-serif;font-size:24px;font-weight:700;line-height:1.15;color:#ffffff;">
                 New Repair Request Submitted
               </h1>
 
@@ -250,36 +308,36 @@ export default async function handler(req, res) {
               </p>
             </div>
 
-            <div style="padding:24px 26px;background:#0b1f32;color:#ffffff;">
+            <div style="padding:18px 20px;background:#0b1f32;color:#ffffff;">
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Request ID</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;font-weight:700;text-align:right;">${escapeHtml(requestId)}</td>
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Request ID</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;font-weight:700;text-align:right;">${escapeHtml(requestId)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
                 </tr>
               </table>
 
-              <div style="height:1px;background:#16486f;margin:18px 0;"></div>
+              <div style="height:1px;background:#16486f;margin:12px 0;"></div>
 
               <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                 <tr>
-                  <td style="padding:12px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Customer</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(customerName)}</td>
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Customer</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(customerName)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Phone</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(phone)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Email</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(email)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:12px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Address</td>
-                  <td style="padding:12px 0;color:#ffffff;font-size:15px;text-align:right;">
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Address</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">
                     ${
                       mapsUrl
                         ? `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer" style="color:#66fcf1;text-decoration:underline;font-weight:800;">${escapeHtml(address)}</a>`
@@ -289,7 +347,7 @@ export default async function handler(req, res) {
                 </tr>
               </table>
 
-              <div style="margin-top:22px;padding:18px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
+              <div style="margin-top:14px;padding:14px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
                 <div style="margin-bottom:12px;color:#90ffdc;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Device + Repair
                 </div>
@@ -320,7 +378,7 @@ export default async function handler(req, res) {
                 </table>
               </div>
 
-              <div style="margin-top:18px;padding:18px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
+              <div style="margin-top:12px;padding:14px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
                 <div style="margin-bottom:8px;color:#90ffdc;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Repair Details
                 </div>
@@ -329,7 +387,7 @@ export default async function handler(req, res) {
                 </div>
               </div>
 
-              <div style="margin-top:18px;padding:18px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
+              <div style="margin-top:12px;padding:14px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
                 <div style="margin-bottom:12px;color:#90ffdc;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
                   Appointment
                 </div>
@@ -347,7 +405,7 @@ export default async function handler(req, res) {
               </div>
             </div>
 
-            <div style="padding:18px 26px;background:#102f4f;border-top:1px solid #16486f;">
+            <div style="padding:12px 20px;background:#102f4f;border-top:1px solid #16486f;">
               <p style="margin:0;color:#c6d4ff;font-size:12px;line-height:1.5;">
                 Primitive Tech Repairs &bull; Internal Repair Request Notification
               </p>
@@ -367,7 +425,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         from: fromEmail,
         to: [notifyEmail],
-        subject: `New Repair Request - ${customerName}`,
+        subject: `Repair Request ${requestId} - ${customerName}`,
         html: emailHtml,
         reply_to: email !== "Not provided" ? email : undefined,
       }),
