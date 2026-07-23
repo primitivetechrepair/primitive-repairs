@@ -90,11 +90,14 @@ export default async function handler(req, res) {
         ""
       ).trim();
 
+    const emailDeviceImage =
+      deviceImage.replace(/\.webp$/i, ".png");
+
     const deviceImageUrl =
-      /^\/images\/.+\.(webp|png)$/i.test(deviceImage)
-        ? `https://www.primitiverepairs.com${deviceImage}`
-        : /^https:\/\/(www\.)?primitiverepairs\.com\/images\/.+\.(webp|png)$/i.test(deviceImage)
-          ? deviceImage
+      /^\/images\/.+\.png$/i.test(emailDeviceImage)
+        ? `https://www.primitiverepairs.com${emailDeviceImage}`
+        : /^https:\/\/(www\.)?primitiverepairs\.com\/images\/.+\.png$/i.test(emailDeviceImage)
+          ? emailDeviceImage
           : "";
 
     const makeModel =
