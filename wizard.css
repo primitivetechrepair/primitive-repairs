@@ -15099,3 +15099,21 @@ button.supported-device-action.service-area-trigger:focus-visible {
     text-overflow: ellipsis;
   }
 }
+/* =========================================================
+   MOBILE START REPAIR INLINE ICON
+========================================================= */
+
+.mobile-sticky-booking-primary::before {
+  display: none;
+}
+
+.mobile-sticky-booking-icon {
+  width: 15px;
+  height: 15px;
+
+  flex: 0 0 15px;
+
+  display: block;
+
+  fill: currentColor;
+}

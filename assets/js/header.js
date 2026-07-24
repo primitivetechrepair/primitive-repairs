@@ -129,7 +129,17 @@
 
     <div class="mobile-sticky-booking-bar" id="mobile-sticky-booking-bar" aria-label="Quick repair actions">
       <a href="/#primitive-wizard-container" class="mobile-sticky-booking-primary">
-        Start Repair
+        <svg
+          class="mobile-sticky-booking-icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M22.7 19.3 16.3 12.9a5.1 5.1 0 0 0-6.7-6.5l3.1 3.1-3.2 3.2-3.1-3.1a5.1 5.1 0 0 0 6.5 6.7l6.4 6.4a1 1 0 0 0 1.4 0l2-2a1 1 0 0 0 0-1.4Z"
+          ></path>
+        </svg>
+        <span>Start Repair</span>
       </a>
 
       <a href="tel:+13059074308" class="mobile-sticky-booking-secondary">
