@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 /* =========================================================
    VISUAL REPAIR WIZARD - CLEAN ORGANIZED STYLES
    Replace current wizard.css with this file after testing.
@@ -8,8 +9,8 @@
 ========================================================= */
 
 :root {
-  --font-display: "Space Grotesk", "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Manrope", sans-serif;
 
   --bg: #f7f7fb;
   --card: #ffffff;
@@ -9666,7 +9667,7 @@ body {
   background: rgba(255, 255, 255, 0.82);
   color: var(--accent);
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-display);
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -14224,7 +14225,7 @@ body.email-offer-open {
   background: rgba(255, 255, 255, 0.92);
   color: #10263b;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-display);
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
@@ -14612,7 +14613,7 @@ body.email-offer-open {
   content: "\260E";
   flex: 0 0 auto;
 
-  font-family: Arial, sans-serif;
+  font-family: var(--font-display);
   font-size: 15px;
   font-weight: 400;
   line-height: 1;
@@ -15264,4 +15265,20 @@ button.supported-device-action.service-area-trigger:focus-visible {
       0 0 20px rgba(102, 252, 241, 0.22),
       inset 0 1px 0 rgba(255, 255, 255, 0.9);
   }
+}
+/* =========================================================
+   GLOBAL TWO-FONT TYPOGRAPHY SYSTEM
+========================================================= */
+
+html,
+body {
+  font-family: var(--font-display);
+}
+
+button,
+input,
+select,
+textarea,
+option {
+  font-family: inherit;
 }
