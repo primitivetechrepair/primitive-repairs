@@ -15322,3 +15322,23 @@ textarea,
 option {
   font-family: inherit;
 }
+
+/* =========================================================
+   DESKTOP HEADER AND FEE BANNER SPACING
+========================================================= */
+
+@media (min-width: 761px) {
+  html {
+    scroll-padding-top: 178px;
+  }
+
+  body {
+    padding-top: 172px;
+  }
+
+  #primitive-wizard-container,
+  #repair-services,
+  #how-it-works {
+    scroll-margin-top: 178px;
+  }
+}
