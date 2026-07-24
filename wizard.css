@@ -15117,3 +15117,70 @@ button.supported-device-action.service-area-trigger:focus-visible {
 
   fill: currentColor;
 }
+/* =========================================================
+   ACTIVE AFTER-HOURS FEE BANNER THEME
+========================================================= */
+
+.appointment-deadline-banner.is-after-cutoff {
+  border-top-color: rgba(102, 252, 241, 0.58);
+  border-bottom-color: rgba(7, 123, 255, 0.48);
+
+  background:
+    radial-gradient(
+      circle at 16% 0%,
+      rgba(102, 252, 241, 0.24),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 88% 100%,
+      rgba(7, 123, 255, 0.28),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #171a2d 0%,
+      #25283d 48%,
+      #075fae 100%
+    );
+
+  box-shadow:
+    0 12px 30px rgba(7, 123, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(102, 252, 241, 0.16);
+}
+
+.appointment-deadline-banner.is-after-cutoff
+  .appointment-deadline-pill {
+  border-color: rgba(102, 252, 241, 0.48);
+
+  background: rgba(102, 252, 241, 0.14);
+  color: #bffffa;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 0 18px rgba(102, 252, 241, 0.12);
+}
+
+.appointment-deadline-banner.is-after-cutoff
+  .appointment-deadline-copy {
+  color: #ffffff;
+}
+
+.appointment-deadline-banner.is-after-cutoff
+  .appointment-deadline-countdown {
+  border-color: rgba(255, 190, 92, 0.7);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 190, 92, 0.24),
+      rgba(255, 143, 43, 0.18)
+    );
+
+  color: #fff3cf;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 190, 92, 0.08),
+    0 0 20px rgba(255, 163, 54, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
