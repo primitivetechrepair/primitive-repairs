@@ -14651,3 +14651,382 @@ body.email-offer-open {
   color: #66fcf1;
   text-decoration-color: currentColor;
 }
+/* =========================================================
+   CONTACT SERVICE AREA MAP MODAL
+========================================================= */
+
+.service-area-trigger {
+  font-family: var(--font-display);
+  cursor: pointer;
+}
+
+.service-area-modal-open {
+  overflow: hidden;
+}
+
+.service-area-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 12200;
+
+  display: grid;
+  place-items: center;
+
+  padding: 20px;
+
+  background: rgba(3, 15, 25, 0.76);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+
+  opacity: 0;
+
+  transition: opacity 180ms ease;
+}
+
+.service-area-modal-backdrop[hidden] {
+  display: none !important;
+}
+
+.service-area-modal-backdrop.is-visible {
+  opacity: 1;
+}
+
+.service-area-modal {
+  width: min(100%, 920px);
+  max-height: min(92vh, 860px);
+  overflow-y: auto;
+
+  border: 1px solid rgba(22, 72, 111, 0.95);
+  border-radius: 22px;
+
+  background: #f7f9fc;
+
+  box-shadow:
+    0 32px 100px rgba(3, 15, 25, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  outline: none;
+
+  transform: translateY(18px) scale(0.985);
+
+  transition: transform 180ms ease;
+}
+
+.service-area-modal-backdrop.is-visible
+.service-area-modal {
+  transform: translateY(0) scale(1);
+}
+
+.service-area-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+
+  padding: 24px 26px;
+
+  border-bottom: 1px solid rgba(22, 72, 111, 0.5);
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b1f32,
+      #102f4f
+    );
+
+  color: #ffffff;
+}
+
+.service-area-modal-eyebrow {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #90ffdc;
+
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.service-area-modal-header h2 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1.08;
+}
+
+.service-area-modal-header p {
+  max-width: 680px;
+  margin: 0;
+
+  color: #c6d4ff;
+
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.service-area-modal-close {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+
+  border: 1px solid rgba(198, 212, 255, 0.32);
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+
+  font-size: 26px;
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+.service-area-map-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(220px, 0.55fr);
+  align-items: center;
+  gap: 30px;
+
+  padding: 26px;
+}
+
+.service-area-florida-map {
+  display: block;
+
+  width: 100%;
+  max-width: 460px;
+  max-height: 560px;
+
+  margin: 0 auto;
+}
+
+.service-area-florida-shadow {
+  fill: rgba(7, 26, 43, 0.12);
+  transform: translate(8px, 11px);
+}
+
+.service-area-florida-outline {
+  fill: url(#service-area-florida-fill);
+  stroke: #16486f;
+  stroke-width: 5;
+  stroke-linejoin: round;
+}
+
+.service-area-gulf-detail {
+  fill: none;
+  stroke: rgba(22, 72, 111, 0.38);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.service-area-region-glow {
+  fill: rgba(102, 252, 241, 0.17);
+  stroke: rgba(102, 252, 241, 0.55);
+  stroke-width: 18;
+  filter: url(#service-area-region-glow);
+}
+
+.service-area-region-perimeter {
+  fill: rgba(7, 123, 255, 0.09);
+  stroke: #087bc1;
+  stroke-width: 7;
+  stroke-dasharray: 14 10;
+}
+
+.service-area-city-marker {
+  fill: #90ffdc;
+  stroke: #0b1f32;
+  stroke-width: 4;
+}
+
+.service-area-city-label {
+  fill: #102f4f;
+
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.service-area-map-state-label {
+  fill: rgba(16, 47, 79, 0.18);
+
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.service-area-map-legend {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+
+  padding: 18px;
+
+  border: 1px solid rgba(22, 72, 111, 0.2);
+  border-radius: 15px;
+
+  background: #ffffff;
+  box-shadow: 0 14px 34px rgba(37, 40, 61, 0.09);
+}
+
+.service-area-map-legend-ring {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+
+  border: 4px dashed #087bc1;
+  border-radius: 50%;
+
+  background: rgba(7, 123, 255, 0.08);
+}
+
+.service-area-map-legend strong,
+.service-area-map-legend span {
+  display: block;
+}
+
+.service-area-map-legend strong {
+  margin-bottom: 5px;
+
+  color: #102f4f;
+
+  font-family: var(--font-display);
+  font-size: 14px;
+}
+
+.service-area-map-legend span {
+  color: #5c6473;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.service-area-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px 26px;
+
+  border-top: 1px solid rgba(22, 72, 111, 0.18);
+
+  background: #ffffff;
+}
+
+.service-area-modal-footer p {
+  max-width: 540px;
+  margin: 0;
+
+  color: #5c6473;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.service-area-modal-actions {
+  display: flex;
+  gap: 9px;
+  flex: 0 0 auto;
+}
+
+.service-area-modal-secondary,
+.service-area-modal-primary {
+  min-height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.service-area-modal-secondary {
+  border: 1px solid rgba(37, 40, 61, 0.2);
+
+  background: #ffffff;
+  color: #25283d;
+}
+
+.service-area-modal-primary {
+  border: 1px solid #077bff;
+
+  background: linear-gradient(135deg, #25283d, #077bff);
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .service-area-modal-backdrop {
+    align-items: end;
+    padding: 10px;
+  }
+
+  .service-area-modal {
+    width: 100%;
+    max-height: 91vh;
+
+    border-radius: 20px 20px 12px 12px;
+  }
+
+  .service-area-modal-header {
+    padding: 20px;
+  }
+
+  .service-area-map-panel {
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    padding: 18px 20px;
+  }
+
+  .service-area-florida-map {
+    max-height: 430px;
+  }
+
+  .service-area-modal-footer {
+    align-items: stretch;
+    flex-direction: column;
+
+    padding: 18px 20px;
+  }
+
+  .service-area-modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  .service-area-modal-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .service-area-city-label {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-area-modal-backdrop,
+  .service-area-modal {
+    transition: none;
+  }
+}
