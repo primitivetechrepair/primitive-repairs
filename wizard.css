@@ -14655,13 +14655,6 @@ body.email-offer-open {
    CONTACT MIAMI-DADE SERVICE AREA MAP MODAL
 ========================================================= */
 
-.service-area-trigger {
-  width: fit-content;
-  margin: 0;
-  font-family: inherit;
-  cursor: pointer;
-}
-
 .service-area-modal-open {
   overflow: hidden;
 }
@@ -15062,47 +15055,19 @@ body.email-offer-open {
 }
 
 /* =========================================================
-   SERVICE AREA TRIGGER BUTTON NORMALIZATION
+   SERVICE AREA THEMED BUTTON
 ========================================================= */
 
 button.supported-device-action.service-area-trigger {
   appearance: none;
   -webkit-appearance: none;
 
-  width: fit-content;
-  min-width: 0;
-  min-height: 0;
-
-  margin: 0;
-  padding: 0;
-
   border: 0;
-  border-radius: 0;
-
-  background: transparent;
-  box-shadow: none;
-
-  color: inherit;
-
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-align: left;
-  text-transform: none;
-  text-decoration: none;
 
   cursor: pointer;
 }
 
-button.supported-device-action.service-area-trigger:hover,
 button.supported-device-action.service-area-trigger:focus-visible {
-  background: transparent;
-  box-shadow: none;
-}
-
-button.supported-device-action.service-area-trigger:focus-visible {
-  outline: 2px solid #077bff;
-  outline-offset: 4px;
+  outline: 3px solid rgba(102, 252, 241, 0.65);
+  outline-offset: 3px;
 }
