@@ -15186,57 +15186,37 @@ button.supported-device-action.service-area-trigger:focus-visible {
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 /* =========================================================
-   REPAIR BLUEPRINT ELECTRIC HOVER
+   REPAIR BLUEPRINT PREMIUM HOVER
 ========================================================= */
 
-@keyframes repair-blueprint-electric-hover {
+@keyframes repair-blueprint-premium-hover {
   0%,
   100% {
     box-shadow:
-      0 14px 30px rgba(37, 40, 61, 0.1),
-      0 0 0 1px rgba(102, 252, 241, 0.18),
-      0 0 10px rgba(7, 123, 255, 0.18),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      0 12px 28px rgba(37, 40, 61, 0.08),
+      0 0 0 1px rgba(102, 252, 241, 0.22),
+      0 -5px 16px rgba(102, 252, 241, 0.12),
+      5px 0 18px rgba(7, 123, 255, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.86),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.18);
 
     filter:
-      drop-shadow(0 -2px 3px rgba(102, 252, 241, 0.24))
-      drop-shadow(2px 0 3px rgba(7, 123, 255, 0.18));
-  }
-
-  25% {
-    box-shadow:
-      0 16px 34px rgba(37, 40, 61, 0.12),
-      0 0 0 2px rgba(102, 252, 241, 0.68),
-      8px 0 22px rgba(7, 123, 255, 0.62),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
-
-    filter:
-      drop-shadow(4px 0 7px rgba(7, 123, 255, 0.5))
-      drop-shadow(0 2px 4px rgba(102, 252, 241, 0.22));
+      brightness(1)
+      saturate(1);
   }
 
   50% {
     box-shadow:
-      0 16px 34px rgba(37, 40, 61, 0.12),
-      0 0 0 2px rgba(7, 123, 255, 0.58),
-      0 9px 24px rgba(102, 252, 241, 0.58),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      0 15px 34px rgba(37, 40, 61, 0.1),
+      0 0 0 1px rgba(102, 252, 241, 0.5),
+      -5px 0 20px rgba(102, 252, 241, 0.18),
+      5px 6px 24px rgba(7, 123, 255, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.94),
+      inset 0 0 18px rgba(102, 252, 241, 0.045);
 
     filter:
-      drop-shadow(0 5px 7px rgba(102, 252, 241, 0.5))
-      drop-shadow(-2px 0 4px rgba(7, 123, 255, 0.2));
-  }
-
-  75% {
-    box-shadow:
-      0 16px 34px rgba(37, 40, 61, 0.12),
-      0 0 0 2px rgba(102, 252, 241, 0.66),
-      -8px 0 22px rgba(7, 123, 255, 0.62),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
-
-    filter:
-      drop-shadow(-4px 0 7px rgba(7, 123, 255, 0.5))
-      drop-shadow(0 -2px 4px rgba(102, 252, 241, 0.22));
+      brightness(1.025)
+      saturate(1.04);
   }
 }
 
@@ -15249,8 +15229,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
     .pr-progress-card.is-clickable-blueprint-card:hover,
 
   /*
-    Actual selectable wizard cards:
-    Device type, phone brand, series, model, and repair.
+    Actual selectable wizard cards.
   */
   #primitive-wizard-container
     .device-card-results
@@ -15275,12 +15254,16 @@ button.supported-device-action.service-area-trigger:focus-visible {
   #primitive-wizard-container
     .repair-type-card-results
     > .opt-card:hover {
-    border-color: transparent !important;
+    border-color: rgba(102, 252, 241, 0.38) !important;
 
     animation:
-      repair-blueprint-electric-hover 1.1s
-      linear
+      repair-blueprint-premium-hover 3.2s
+      ease-in-out
       infinite !important;
+
+    filter:
+      brightness(1.015)
+      saturate(1.025);
   }
 }
 
@@ -15314,11 +15297,12 @@ button.supported-device-action.service-area-trigger:focus-visible {
     animation: none !important;
     filter: none !important;
 
-    border-color: rgba(102, 252, 241, 0.32) !important;
+    border-color: rgba(102, 252, 241, 0.38) !important;
 
     box-shadow:
-      0 14px 30px rgba(37, 40, 61, 0.1),
-      0 0 20px rgba(102, 252, 241, 0.22),
+      0 14px 30px rgba(37, 40, 61, 0.09),
+      0 0 0 1px rgba(102, 252, 241, 0.32),
+      0 0 20px rgba(7, 123, 255, 0.1),
       inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
   }
 }
