@@ -1,5 +1,5 @@
 /* =========================================================
-   CONTACT PAGE SERVICE AREA MAP
+   CONTACT PAGE MIAMI-DADE SERVICE AREA MAP
 ========================================================= */
 
 (function () {
@@ -8,6 +8,19 @@
   const trigger = document.getElementById("view-service-area");
 
   if (!trigger) return;
+
+  const URBAN_AREA_GEOJSON_URL =
+    "https://gisweb.miamidade.gov/arcgis/rest/services/MD_TreeCanopy/MapServer/0/query" +
+    "?where=1%3D1" +
+    "&outFields=*" +
+    "&returnGeometry=true" +
+    "&outSR=4326" +
+    "&f=geojson";
+
+  const MIAMI_DADE_FALLBACK_BOUNDS = [
+    [25.12, -80.90],
+    [25.98, -80.03],
+  ];
 
   const modalRoot = document.createElement("div");
 
@@ -35,11 +48,11 @@
             </span>
 
             <h2 id="service-area-modal-title">
-              South Florida Service Area
+              Miami-Dade Urban Service Area
             </h2>
 
             <p id="service-area-modal-description">
-              Mobile repair availability is focused throughout South Florida.
+              Mobile repair service is focused throughout Miami-Dade's populated and developed areas.
               Exact appointment availability depends on your address, repair
               type, travel distance, and scheduling.
             </p>
@@ -55,239 +68,34 @@
           </button>
         </div>
 
-        <div class="service-area-map-panel">
-          <svg
-            class="service-area-florida-map"
-            viewBox="0 0 520 760"
-            role="img"
-            aria-labelledby="service-area-map-title service-area-map-description"
+        <div class="service-area-map-shell">
+          <div
+            id="miami-dade-service-map"
+            class="service-area-leaflet-map"
+            role="application"
+            aria-label="Interactive map of the Miami-Dade County mobile repair service area"
+          ></div>
+
+          <div
+            class="service-area-map-loading"
+            id="service-area-map-loading"
           >
-            <title id="service-area-map-title">
-              Florida map with South Florida highlighted
-            </title>
+            Loading Miami-Dade urban service boundary...
+          </div>
 
-            <desc id="service-area-map-description">
-              A simplified outline of Florida with a highlighted perimeter
-              around Miami-Dade, Broward, and southern Palm Beach County.
-            </desc>
-
-            <defs>
-              <linearGradient
-                id="service-area-florida-fill"
-                x1="0"
-                y1="0"
-                x2="1"
-                y2="1"
-              >
-                <stop offset="0%" stop-color="#edf6ff"></stop>
-                <stop offset="100%" stop-color="#dbeaff"></stop>
-              </linearGradient>
-
-              <filter
-                id="service-area-region-glow"
-                x="-40%"
-                y="-40%"
-                width="180%"
-                height="180%"
-              >
-                <feGaussianBlur
-                  stdDeviation="8"
-                  result="blur"
-                ></feGaussianBlur>
-
-                <feMerge>
-                  <feMergeNode in="blur"></feMergeNode>
-                  <feMergeNode in="SourceGraphic"></feMergeNode>
-                </feMerge>
-              </filter>
-            </defs>
-
-            <path
-              class="service-area-florida-shadow"
-              d="
-                M92 66
-                L207 55
-                L260 65
-                L310 99
-                L355 109
-                L387 130
-                L400 164
-                L411 191
-                L432 221
-                L444 260
-                L450 304
-                L446 346
-                L454 387
-                L450 430
-                L436 474
-                L424 519
-                L413 563
-                L397 606
-                L379 650
-                L358 694
-                L335 719
-                L315 699
-                L300 666
-                L287 630
-                L276 589
-                L265 547
-                L249 510
-                L233 478
-                L217 447
-                L207 412
-                L202 379
-                L187 348
-                L169 320
-                L153 290
-                L141 259
-                L128 229
-                L117 197
-                L105 165
-                L95 130
-                L76 109
-                L48 108
-                L33 91
-                L45 73
-                Z
-              "
-            ></path>
-
-            <path
-              class="service-area-florida-outline"
-              d="
-                M92 66
-                L207 55
-                L260 65
-                L310 99
-                L355 109
-                L387 130
-                L400 164
-                L411 191
-                L432 221
-                L444 260
-                L450 304
-                L446 346
-                L454 387
-                L450 430
-                L436 474
-                L424 519
-                L413 563
-                L397 606
-                L379 650
-                L358 694
-                L335 719
-                L315 699
-                L300 666
-                L287 630
-                L276 589
-                L265 547
-                L249 510
-                L233 478
-                L217 447
-                L207 412
-                L202 379
-                L187 348
-                L169 320
-                L153 290
-                L141 259
-                L128 229
-                L117 197
-                L105 165
-                L95 130
-                L76 109
-                L48 108
-                L33 91
-                L45 73
-                Z
-              "
-            ></path>
-
-            <path
-              class="service-area-gulf-detail"
-              d="
-                M92 66
-                C130 87 162 99 196 102
-                C229 104 252 94 273 76
-              "
-            ></path>
-
-            <ellipse
-              class="service-area-region-glow"
-              cx="345"
-              cy="615"
-              rx="92"
-              ry="112"
-            ></ellipse>
-
-            <ellipse
-              class="service-area-region-perimeter"
-              cx="345"
-              cy="615"
-              rx="82"
-              ry="102"
-            ></ellipse>
-
-            <circle
-              class="service-area-city-marker"
-              cx="352"
-              cy="663"
-              r="7"
-            ></circle>
-
-            <circle
-              class="service-area-city-marker"
-              cx="343"
-              cy="615"
-              r="7"
-            ></circle>
-
-            <circle
-              class="service-area-city-marker"
-              cx="336"
-              cy="561"
-              r="7"
-            ></circle>
-
-            <text
-              class="service-area-city-label"
-              x="368"
-              y="668"
-            >
-              Miami-Dade
-            </text>
-
-            <text
-              class="service-area-city-label"
-              x="359"
-              y="620"
-            >
-              Broward
-            </text>
-
-            <text
-              class="service-area-city-label"
-              x="352"
-              y="566"
-            >
-              Palm Beach
-            </text>
-
-            <text
-              class="service-area-map-state-label"
-              x="225"
-              y="310"
-            >
-              FLORIDA
-            </text>
-          </svg>
+          <div
+            class="service-area-map-status"
+            id="service-area-map-status"
+            hidden
+          ></div>
 
           <div class="service-area-map-legend">
-            <span class="service-area-map-legend-ring"></span>
+            <span class="service-area-map-legend-swatch"></span>
 
             <div>
-              <strong>Primary Mobile Service Region</strong>
+              <strong>Miami-Dade Urban Service Area</strong>
               <span>
-                Miami-Dade, Broward, and southern Palm Beach County
+                Populated and developed Miami-Dade service region
               </span>
             </div>
           </div>
@@ -296,7 +104,7 @@
         <div class="service-area-modal-footer">
           <p>
             Submit your address through the repair request wizard so we can
-            confirm service availability and appointment options.
+            confirm availability and appointment options for your location.
           </p>
 
           <div class="service-area-modal-actions">
@@ -330,9 +138,187 @@
     "service-area-modal"
   );
 
+  const loadingElement = document.getElementById(
+    "service-area-map-loading"
+  );
+
+  const statusElement = document.getElementById(
+    "service-area-map-status"
+  );
+
+  let map = null;
+  let mapInitializationPromise = null;
   let lastFocusedElement = null;
+  let closeTimer = null;
+
+  function setMapStatus(message) {
+    if (!statusElement) return;
+
+    statusElement.textContent = message;
+    statusElement.hidden = !message;
+  }
+
+  function hideLoading() {
+    if (loadingElement) {
+      loadingElement.hidden = true;
+    }
+  }
+
+  async function loadUrbanAreaBoundary() {
+    const response = await fetch(URBAN_AREA_GEOJSON_URL, {
+      headers: {
+        Accept: "application/geo+json, application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(
+        `Miami-Dade boundary request failed: ${response.status}`
+      );
+    }
+
+    const geoJson = await response.json();
+
+    if (
+      !geoJson ||
+      geoJson.type !== "FeatureCollection" ||
+      !Array.isArray(geoJson.features) ||
+      geoJson.features.length === 0
+    ) {
+      throw new Error(
+        "Miami-Dade boundary response contained no features."
+      );
+    }
+
+    return geoJson;
+  }
+
+  async function initializeMap() {
+    if (map) return map;
+
+    if (!window.L) {
+      throw new Error("Leaflet did not load.");
+    }
+
+    map = window.L.map("miami-dade-service-map", {
+      zoomControl: true,
+      scrollWheelZoom: true,
+      touchZoom: true,
+      doubleClickZoom: true,
+      boxZoom: true,
+      keyboard: true,
+      dragging: true,
+      minZoom: 8,
+      maxZoom: 18,
+      maxBoundsViscosity: 0.75,
+    });
+
+    window.L.tileLayer(
+      "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }
+    ).addTo(map);
+
+    window.L.control.scale({
+      imperial: true,
+      metric: false,
+      position: "bottomleft",
+    }).addTo(map);
+
+    map.fitBounds(MIAMI_DADE_FALLBACK_BOUNDS, {
+      padding: [18, 18],
+    });
+
+    map.setMaxBounds(
+      window.L.latLngBounds(MIAMI_DADE_FALLBACK_BOUNDS).pad(0.35)
+    );
+
+    try {
+      const urbanAreaGeoJson = await loadUrbanAreaBoundary();
+
+      const urbanAreaLayer = window.L.geoJSON(
+        urbanAreaGeoJson,
+        {
+          style: {
+            color: "#087bc1",
+            weight: 4,
+            opacity: 1,
+            fillColor: "#66fcf1",
+            fillOpacity: 0.14,
+
+          },
+        }
+      ).addTo(map);
+
+      const urbanAreaBounds = urbanAreaLayer.getBounds();
+
+      if (urbanAreaBounds.isValid()) {
+        map.fitBounds(urbanAreaBounds, {
+          padding: [20, 20],
+          maxZoom: 10,
+        });
+
+        map.setMaxBounds(
+          urbanAreaBounds.pad(0.25)
+        );
+      }
+
+      urbanAreaLayer.bindTooltip(
+        "Miami-Dade Urban Mobile Service Area",
+        {
+          sticky: true,
+          direction: "top",
+          className: "service-area-map-tooltip",
+        }
+      );
+    } catch (error) {
+      console.error(
+        "[Service Area Map] Boundary loading failed:",
+        error
+      );
+
+      setMapStatus(
+        "The detailed map is available, but the official urban service boundary could not be loaded."
+      );
+    } finally {
+      hideLoading();
+    }
+
+    return map;
+  }
+
+  function ensureMapInitialized() {
+    if (!mapInitializationPromise) {
+      mapInitializationPromise = initializeMap().catch(
+        (error) => {
+          console.error(
+            "[Service Area Map] Initialization failed:",
+            error
+          );
+
+          hideLoading();
+
+          setMapStatus(
+            "The service-area map could not be loaded. Please submit your address so availability can be confirmed."
+          );
+
+          throw error;
+        }
+      );
+    }
+
+    return mapInitializationPromise;
+  }
 
   function openModal() {
+    if (closeTimer) {
+      window.clearTimeout(closeTimer);
+      closeTimer = null;
+    }
+
     lastFocusedElement = document.activeElement;
 
     backdrop.hidden = false;
@@ -346,6 +332,28 @@
     );
 
     modal.focus();
+
+    ensureMapInitialized()
+      .then((initializedMap) => {
+        window.setTimeout(() => {
+          initializedMap.invalidateSize();
+
+          if (
+            initializedMap.getZoom() < 8 ||
+            initializedMap.getZoom() > 11
+          ) {
+            initializedMap.fitBounds(
+              MIAMI_DADE_FALLBACK_BOUNDS,
+              {
+                padding: [18, 18],
+              }
+            );
+          }
+        }, 220);
+      })
+      .catch(() => {
+        // Visible status messaging is handled above.
+      });
   }
 
   function closeModal() {
@@ -355,8 +363,9 @@
       "service-area-modal-open"
     );
 
-    window.setTimeout(() => {
+    closeTimer = window.setTimeout(() => {
       backdrop.hidden = true;
+      closeTimer = null;
 
       if (
         lastFocusedElement &&
