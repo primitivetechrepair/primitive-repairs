@@ -15071,3 +15071,28 @@ button.supported-device-action.service-area-trigger:focus-visible {
   outline: 3px solid rgba(102, 252, 241, 0.65);
   outline-offset: 3px;
 }
+/* =========================================================
+   CONTACT CALL BUTTON MOBILE SIZE FIX
+========================================================= */
+
+.contact-call-action {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 760px) {
+  .contact-call-action {
+    height: 40px;
+    min-height: 40px;
+    max-height: 40px;
+
+    padding: 0 12px;
+
+    font-size: 10px;
+    line-height: 1;
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
