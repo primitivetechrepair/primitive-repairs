@@ -289,19 +289,91 @@ function normalizePhoneMasterCatalog(
   });
 }
 
+const SCREEN_PROTECTOR_ENDPOINT =
+  "https://gorjynnsbmdifnkzxame.supabase.co/functions/v1/primitive-repairs-screen-protectors";
+
+const SCREEN_PROTECTOR_FALLBACK_PATH =
+  "/catalog/accessories/screen-protectors.json";
+
+async function loadScreenProtectorCatalog() {
+  const controller = new AbortController();
+
+  const timeoutId = window.setTimeout(() => {
+    controller.abort();
+  }, 3500);
+
+  try {
+    const response = await fetch(
+      SCREEN_PROTECTOR_ENDPOINT,
+      {
+        method: "GET",
+        headers: {
+          Accept: "application/json"
+        },
+        cache: "no-store",
+        signal: controller.signal
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(
+        `Remote protector inventory failed: ${response.status}`
+      );
+    }
+
+    const result = await response.json();
+
+    if (
+      result?.success !== true ||
+      !result.inventory ||
+      typeof result.inventory !== "object"
+    ) {
+      throw new Error(
+        "Remote protector inventory returned an invalid response."
+      );
+    }
+
+    return result.inventory;
+  } catch (error) {
+    console.warn(
+      "Using local screen-protector inventory fallback:",
+      error
+    );
+
+    const fallbackResponse = await fetch(
+      SCREEN_PROTECTOR_FALLBACK_PATH,
+      {
+        cache: "no-store"
+      }
+    );
+
+    if (!fallbackResponse.ok) {
+      throw new Error(
+        `Protector fallback failed: ${SCREEN_PROTECTOR_FALLBACK_PATH}`
+      );
+    }
+
+    return await fallbackResponse.json();
+  } finally {
+    window.clearTimeout(timeoutId);
+  }
+}
+
 async function loadPhoneCatalog(brand) {
   const phoneCatalogPath =
     "/catalog/phones/phones.json";
 
-  const protectorCatalogPath =
-    "/catalog/accessories/screen-protectors.json";
-
   const [
     phoneCatalogResponse,
-    protectorCatalogResponse
+    protectorCatalog
   ] = await Promise.all([
-    fetch(phoneCatalogPath),
-    fetch(protectorCatalogPath)
+    fetch(
+      phoneCatalogPath,
+      {
+        cache: "no-store"
+      }
+    ),
+    loadScreenProtectorCatalog()
   ]);
 
   if (!phoneCatalogResponse.ok) {
@@ -312,18 +384,6 @@ async function loadPhoneCatalog(brand) {
 
   const masterCatalog =
     await phoneCatalogResponse.json();
-
-  let protectorCatalog = {};
-
-  if (protectorCatalogResponse.ok) {
-    protectorCatalog =
-      await protectorCatalogResponse.json();
-  } else {
-    console.warn(
-      "Screen-protector inventory could not be loaded:",
-      protectorCatalogPath
-    );
-  }
 
   return normalizePhoneMasterCatalog(
     masterCatalog,

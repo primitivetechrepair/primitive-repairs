@@ -1,5 +1,5 @@
 import { state, resetStep, resetAllState } from "./state.js?v=20260724-2";
-import { loadCatalog } from "./catalog.js?v=20260724-1";
+import { loadCatalog } from "./catalog.js?v=20260724-2";
 import {
   renderDeviceStep,
   renderBrandStep,
