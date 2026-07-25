@@ -334,22 +334,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function isScreenProtectionEligible() {
-    if (state.device !== "Phone") {
-      return false;
-    }
-
-    return getSelectedRepairs().some((repair) => {
-      const repairName = String(
-        repair?.repair ||
-        repair?.name ||
-        repair?.label ||
-        ""
-      );
-
-      return /screen|display|lcd|oled|digitizer|front\s+glass/i.test(
-        repairName
-      );
-    });
+    return state.device === "Phone";
   }
 
   function getProtectionAddOnSummaryText() {
