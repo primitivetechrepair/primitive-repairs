@@ -7,7 +7,10 @@ param(
     "SetStock",
     "SetPrice",
     "Enable",
-    "Disable"
+    "Disable",
+    "ConfirmAddOn",
+    "RestoreAddOn",
+    "Restock"
   )]
   [string]$Action = "List",
 
@@ -24,6 +27,12 @@ param(
   [decimal]$Price = 19,
 
   [int]$Quantity = 0,
+
+  [int]$Units = 1,
+
+  [string]$RequestId,
+
+  [string]$Note,
 
   [int]$Limit = 25
 )
@@ -174,6 +183,111 @@ try {
         -Body $body
 
       $result.record |
+      Format-List
+
+      break
+    }
+
+    "ConfirmAddOn" {
+      Require-Text $Sku "SKU"
+      Require-Text $RequestId "Request ID"
+
+      $body = @{
+        action = "confirm-addon"
+        sku = $Sku
+        requestId = $RequestId
+        units = $Units
+        note = $Note
+      } |
+      ConvertTo-Json
+
+      $result = Invoke-RestMethod `
+        -Uri $endpoint `
+        -Method Post `
+        -Headers $headers `
+        -ContentType "application/json" `
+        -Body $body
+
+      Write-Host "`nInventory:"
+      $result.result.inventory |
+      Format-List
+
+      Write-Host "`nMovement:"
+      $result.result.movement |
+      Format-List
+
+      Write-Host (
+        "`nIdempotent: " +
+        $result.result.idempotent
+      )
+
+      break
+    }
+
+    "RestoreAddOn" {
+      Require-Text $Sku "SKU"
+      Require-Text $RequestId "Request ID"
+
+      $body = @{
+        action = "restore-addon"
+        sku = $Sku
+        requestId = $RequestId
+        note = $Note
+      } |
+      ConvertTo-Json
+
+      $result = Invoke-RestMethod `
+        -Uri $endpoint `
+        -Method Post `
+        -Headers $headers `
+        -ContentType "application/json" `
+        -Body $body
+
+      Write-Host "`nInventory:"
+      $result.result.inventory |
+      Format-List
+
+      Write-Host "`nMovement:"
+      $result.result.movement |
+      Format-List
+
+      Write-Host (
+        "`nIdempotent: " +
+        $result.result.idempotent
+      )
+
+      break
+    }
+
+    "Restock" {
+      Require-Text $Sku "SKU"
+
+      $operationId =
+        "restock:" +
+        [guid]::NewGuid().ToString("N")
+
+      $body = @{
+        action = "restock"
+        sku = $Sku
+        units = $Units
+        operationId = $operationId
+        note = $Note
+      } |
+      ConvertTo-Json
+
+      $result = Invoke-RestMethod `
+        -Uri $endpoint `
+        -Method Post `
+        -Headers $headers `
+        -ContentType "application/json" `
+        -Body $body
+
+      Write-Host "`nInventory:"
+      $result.result.inventory |
+      Format-List
+
+      Write-Host "`nMovement:"
+      $result.result.movement |
       Format-List
 
       break

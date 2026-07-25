@@ -442,6 +442,137 @@ Deno.serve(async (request: Request) => {
       120
     );
 
+    if (action === "confirm-addon") {
+      const requestId = readRequiredText(
+        body.requestId,
+        "Request ID",
+        160
+      );
+
+      const units = readQuantity(
+        body.units ?? 1
+      );
+
+      if (units < 1) {
+        throw new Error(
+          "Units must be at least 1."
+        );
+      }
+
+      const note = String(
+        body.note || ""
+      )
+        .trim()
+        .slice(0, 500);
+
+      const {
+        data,
+        error
+      } = await supabase.rpc(
+        "primitive_repairs_confirm_screen_protector_addon",
+        {
+          p_sku: sku,
+          p_request_id: requestId,
+          p_units: units,
+          p_note: note || null
+        }
+      );
+
+      if (error) {
+        throw error;
+      }
+
+      return jsonResponse({
+        success: true,
+        action,
+        result: data
+      });
+    }
+
+    if (action === "restore-addon") {
+      const requestId = readRequiredText(
+        body.requestId,
+        "Request ID",
+        160
+      );
+
+      const note = String(
+        body.note || ""
+      )
+        .trim()
+        .slice(0, 500);
+
+      const {
+        data,
+        error
+      } = await supabase.rpc(
+        "primitive_repairs_restore_screen_protector_addon",
+        {
+          p_sku: sku,
+          p_request_id: requestId,
+          p_note: note || null
+        }
+      );
+
+      if (error) {
+        throw error;
+      }
+
+      return jsonResponse({
+        success: true,
+        action,
+        result: data
+      });
+    }
+
+    if (action === "restock") {
+      const units = readQuantity(
+        body.units
+      );
+
+      if (units < 1) {
+        throw new Error(
+          "Units must be at least 1."
+        );
+      }
+
+      const operationId = String(
+        body.operationId ||
+        `restock:${crypto.randomUUID()}`
+      )
+        .trim()
+        .slice(0, 200);
+
+      const note = String(
+        body.note || ""
+      )
+        .trim()
+        .slice(0, 500);
+
+      const {
+        data,
+        error
+      } = await supabase.rpc(
+        "primitive_repairs_restock_screen_protector",
+        {
+          p_sku: sku,
+          p_units: units,
+          p_operation_id: operationId,
+          p_note: note || null
+        }
+      );
+
+      if (error) {
+        throw error;
+      }
+
+      return jsonResponse({
+        success: true,
+        action,
+        result: data
+      });
+    }
+
     if (action === "set-stock") {
       const quantity = readQuantity(
         body.quantity
