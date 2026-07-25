@@ -806,7 +806,9 @@ export function renderProtectionUpsellStep(
           <div class="protection-upsell-title-row">
             <div>
               <span class="protection-upsell-kicker">
-                Installed During Service
+                ${protector.compatibleModel
+                  ? `For ${protector.compatibleModel}`
+                  : "Installed During Service"}
               </span>
 
               <h4>${protector.name}</h4>
