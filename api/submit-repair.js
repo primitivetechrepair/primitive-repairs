@@ -356,7 +356,7 @@ export default async function handler(req, res) {
             cellpadding="0"
             cellspacing="0"
             role="presentation"
-            style="border-collapse:collapse;margin:0 0 12px;"
+            style="border-collapse:separate;border-spacing:0;margin:0 0 12px;border:1px solid #16486f;border-radius:12px;overflow:hidden;background-clip:padding-box;"
           >
             <tr>
               <td
@@ -364,8 +364,7 @@ export default async function handler(req, res) {
                 style="
                   padding:12px 12px;
                   background:#081a2a;
-                  border:1px solid #16486f;
-                  border-radius:12px 12px 0 0;
+
                 "
               >
                 <img
@@ -392,10 +391,7 @@ export default async function handler(req, res) {
                 style="
                   padding:10px 12px 12px;
                   background:#102f4f;
-                  border-right:1px solid #16486f;
-                  border-bottom:1px solid #16486f;
-                  border-left:1px solid #16486f;
-                  border-radius:0 0 12px 12px;
+                  border-top:1px solid #16486f;
                 "
               >
                 <div
