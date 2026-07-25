@@ -452,7 +452,7 @@ export default async function handler(req, res) {
           width:100%;
           margin:0;
           padding:0;
-          border-collapse:collapse;
+          border-collapse:separate;border-spacing:0;
           background:#04111d;
         "
       >
@@ -511,7 +511,7 @@ export default async function handler(req, res) {
                     role="presentation"
                     style="
                       width:100%;
-                      border-collapse:collapse;
+                      border-collapse:separate;border-spacing:0;
                     "
                   >
                     <tr>
@@ -719,7 +719,7 @@ export default async function handler(req, res) {
                     role="presentation"
                     style="
                       width:100%;
-                      border-collapse:collapse;
+                      border-collapse:separate;border-spacing:0;
                     "
                   >
                     <tr>
@@ -744,7 +744,7 @@ export default async function handler(req, res) {
                           padding:4px 18px;
                           background:#0d2940;
                           border:1px solid #174665;
-                          border-radius:16px;
+                          border-radius:16px;overflow:hidden;background-clip:padding-box;
                         "
                       >
                         <table
@@ -755,7 +755,7 @@ export default async function handler(req, res) {
                           role="presentation"
                           style="
                             width:100%;
-                            border-collapse:collapse;
+                            border-collapse:separate;border-spacing:0;
                           "
                         >
                           <tr>
@@ -893,7 +893,7 @@ export default async function handler(req, res) {
                     style="
                       width:100%;
                       margin-top:26px;
-                      border-collapse:collapse;
+                      border-collapse:separate;border-spacing:0;
                     "
                   >
                     <tr>
@@ -918,7 +918,7 @@ export default async function handler(req, res) {
                           padding:18px;
                           background:#0d2940;
                           border:1px solid #174665;
-                          border-radius:16px;
+                          border-radius:16px;overflow:hidden;background-clip:padding-box;
                         "
                       >
                         ${deviceImageHtml}
@@ -931,7 +931,7 @@ export default async function handler(req, res) {
                           role="presentation"
                           style="
                             width:100%;
-                            border-collapse:collapse;
+                            border-collapse:separate;border-spacing:0;
                           "
                         >
                           <tr>
@@ -1006,7 +1006,7 @@ export default async function handler(req, res) {
                           style="
                             width:100%;
                             margin-top:14px;
-                            border-collapse:collapse;
+                            border-collapse:separate;border-spacing:0;
                           "
                         >
                           <tr>
@@ -1015,7 +1015,7 @@ export default async function handler(req, res) {
                                 padding:17px 18px;
                                 background:#103b37;
                                 border:1px solid #2f8c77;
-                                border-radius:16px;
+                                border-radius:16px;overflow:hidden;background-clip:padding-box;
                               "
                             >
                               <table
@@ -1026,7 +1026,7 @@ export default async function handler(req, res) {
                                 role="presentation"
                                 style="
                                   width:100%;
-                                  border-collapse:collapse;
+                                  border-collapse:separate;border-spacing:0;
                                 "
                               >
                                 <tr>
@@ -1098,7 +1098,7 @@ export default async function handler(req, res) {
                     style="
                       width:100%;
                       margin-top:26px;
-                      border-collapse:collapse;
+                      border-collapse:separate;border-spacing:0;
                     "
                   >
                     <tr>
@@ -1123,7 +1123,7 @@ export default async function handler(req, res) {
                           padding:4px 18px;
                           background:#0d2940;
                           border:1px solid #174665;
-                          border-radius:16px;
+                          border-radius:16px;overflow:hidden;background-clip:padding-box;
                         "
                       >
                         <table
@@ -1134,7 +1134,7 @@ export default async function handler(req, res) {
                           role="presentation"
                           style="
                             width:100%;
-                            border-collapse:collapse;
+                            border-collapse:separate;border-spacing:0;
                           "
                         >
                           <tr>
@@ -1268,7 +1268,7 @@ export default async function handler(req, res) {
                           style="
                             width:100%;
                             margin-top:26px;
-                            border-collapse:collapse;
+                            border-collapse:separate;border-spacing:0;
                           "
                         >
                           <tr>
@@ -1298,7 +1298,7 @@ export default async function handler(req, res) {
                                 line-height:1.7;
                                 background:#0d2940;
                                 border:1px solid #174665;
-                                border-radius:16px;
+                                border-radius:16px;overflow:hidden;background-clip:padding-box;
                               "
                             >
                               ${escapeHtml(repairDetails).replace(/\n/g, "<br />")}
