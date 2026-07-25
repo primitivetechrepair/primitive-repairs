@@ -334,25 +334,50 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getSelectedScreenProtector() {
-    const protector =
-      state.model?.screenProtector;
+    const brand =
+      String(state.brand || "").trim();
 
-    if (
-      state.device !== "Phone" ||
-      !protector ||
-      protector.available !== true ||
-      Number(protector.quantity || 0) < 1
-    ) {
-      return null;
-    }
+    const model =
+      String(
+        state.model?.model ||
+        state.model?.name ||
+        ""
+      ).trim();
 
-    return protector;
+    const skuPart =
+      [brand, model]
+        .filter(Boolean)
+        .join("-")
+        .toUpperCase()
+        .replace(/[^A-Z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "");
+
+    return {
+      id:
+        `premium-screen-protector-${skuPart.toLowerCase() || "universal"}`,
+
+      sku:
+        `SP-${skuPart || "UNIVERSAL"}-PREMIUM`,
+
+      brand,
+      model,
+
+      name: "Premium Tempered Glass",
+      label: "Premium Screen Protector",
+
+      price: 19,
+      quantity: 1,
+      available: true,
+      installed: true
+    };
   }
 
   function isScreenProtectionEligible() {
-    return Boolean(getSelectedScreenProtector());
+    return (
+      state.device === "Phone" &&
+      Boolean(state.model)
+    );
   }
-
   function getProtectionAddOnSummaryText() {
     const selectedAddOn = Array.isArray(state.addOns)
       ? state.addOns[0]

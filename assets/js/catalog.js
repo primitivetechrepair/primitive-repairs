@@ -243,11 +243,7 @@ function getPhoneScreenProtector(
   };
 }
 
-function normalizePhoneMasterCatalog(
-  masterCatalog,
-  brand,
-  protectorCatalog = {}
-) {
+function normalizePhoneMasterCatalog(masterCatalog, brand) {
   if (!masterCatalog || typeof masterCatalog !== "object") {
     return [];
   }
@@ -278,120 +274,28 @@ function normalizePhoneMasterCatalog(
         series,
         model,
         image: `/images/models/${normalizePathValue(brand)}/${normalizeImageFileName(model)}.webp`,
-        repairs,
-        screenProtector: getPhoneScreenProtector(
-          protectorCatalog,
-          brand,
-          model
-        )
+        repairs
       };
     });
   });
 }
 
-const SCREEN_PROTECTOR_ENDPOINT =
-  "https://gorjynnsbmdifnkzxame.supabase.co/functions/v1/primitive-repairs-screen-protectors";
-
-const SCREEN_PROTECTOR_FALLBACK_PATH =
-  "/catalog/accessories/screen-protectors.json";
-
-async function loadScreenProtectorCatalog() {
-  const controller = new AbortController();
-
-  const timeoutId = window.setTimeout(() => {
-    controller.abort();
-  }, 3500);
-
-  try {
-    const response = await fetch(
-      SCREEN_PROTECTOR_ENDPOINT,
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json"
-        },
-        cache: "no-store",
-        signal: controller.signal
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error(
-        `Remote protector inventory failed: ${response.status}`
-      );
-    }
-
-    const result = await response.json();
-
-    if (
-      result?.success !== true ||
-      !result.inventory ||
-      typeof result.inventory !== "object"
-    ) {
-      throw new Error(
-        "Remote protector inventory returned an invalid response."
-      );
-    }
-
-    return result.inventory;
-  } catch (error) {
-    console.warn(
-      "Using local screen-protector inventory fallback:",
-      error
-    );
-
-    const fallbackResponse = await fetch(
-      SCREEN_PROTECTOR_FALLBACK_PATH,
-      {
-        cache: "no-store"
-      }
-    );
-
-    if (!fallbackResponse.ok) {
-      throw new Error(
-        `Protector fallback failed: ${SCREEN_PROTECTOR_FALLBACK_PATH}`
-      );
-    }
-
-    return await fallbackResponse.json();
-  } finally {
-    window.clearTimeout(timeoutId);
-  }
-}
-
 async function loadPhoneCatalog(brand) {
-  const phoneCatalogPath =
-    "/catalog/phones/phones.json";
+  const path = "/catalog/phones/phones.json";
 
-  const [
-    phoneCatalogResponse,
-    protectorCatalog
-  ] = await Promise.all([
-    fetch(
-      phoneCatalogPath,
-      {
-        cache: "no-store"
-      }
-    ),
-    loadScreenProtectorCatalog()
-  ]);
+  const response = await fetch(path);
 
-  if (!phoneCatalogResponse.ok) {
-    throw new Error(
-      `Phone catalog load failed: ${phoneCatalogPath}`
-    );
+  if (!response.ok) {
+    throw new Error(`Phone catalog load failed: ${path}`);
   }
 
-  const masterCatalog =
-    await phoneCatalogResponse.json();
+  const masterCatalog = await response.json();
 
   return normalizePhoneMasterCatalog(
     masterCatalog,
-    brand,
-    protectorCatalog
+    brand
   );
 }
-
 export async function loadCatalog(device, brand) {
   try {
     const deviceFolder = normalizeDeviceFolder(device);

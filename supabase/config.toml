@@ -415,9 +415,3 @@ enabled = true
 
 [functions.primitive-repairs-claim-email-discount]
 verify_jwt = false
-
-[functions.primitive-repairs-screen-protectors]
-verify_jwt = false
-
-[functions.primitive-repairs-screen-protectors-admin]
-verify_jwt = false
