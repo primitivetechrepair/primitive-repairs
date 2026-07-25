@@ -131,4 +131,16 @@
   <priority>0.85</priority>
 </url>
 
+
+  <url>
+    <loc>https://www.primitiverepairs.com/contact-us</loc>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/cookie-policy</loc>
+  </url>
+
+  <url>
+    <loc>https://www.primitiverepairs.com/privacy-policy</loc>
+  </url>
 </urlset>
