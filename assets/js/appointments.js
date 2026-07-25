@@ -1,4 +1,4 @@
-import { state } from "./state.js";
+import { state } from "./state.js?v=20260724-2";
 
 const SERVICE_TYPES = [
   {

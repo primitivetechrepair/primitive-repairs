@@ -1,5 +1,5 @@
-import { state, resetStep, resetAllState } from "./state.js";
-import { loadCatalog } from "./catalog.js";
+import { state, resetStep, resetAllState } from "./state.js?v=20260724-2";
+import { loadCatalog } from "./catalog.js?v=20260724-1";
 import {
   renderDeviceStep,
   renderBrandStep,
@@ -13,15 +13,15 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js";
+} from "./renderer.js?v=20260724-3";
 
-import { renderAppointmentStep } from "./appointments.js";
+import { renderAppointmentStep } from "./appointments.js?v=20260724-1";
 import {
   applyAfterHoursBookingDetails,
   buildLeadPayload,
   validateLeadPayload
-} from "./leadSubmission.js";
-import { mapWizardPayloadToLead } from "./leadMapper.js";
+} from "./leadSubmission.js?v=20260724-2";
+import { mapWizardPayloadToLead } from "./leadMapper.js?v=20260724-1";
 import { submitWizardLead } from "./leadSubmitter.js";
 
 const devices = [
@@ -333,8 +333,24 @@ document.addEventListener("DOMContentLoaded", () => {
     return "$35 after-hours convenience fee";
   }
 
+  function getSelectedScreenProtector() {
+    const protector =
+      state.model?.screenProtector;
+
+    if (
+      state.device !== "Phone" ||
+      !protector ||
+      protector.available !== true ||
+      Number(protector.quantity || 0) < 1
+    ) {
+      return null;
+    }
+
+    return protector;
+  }
+
   function isScreenProtectionEligible() {
-    return state.device === "Phone";
+    return Boolean(getSelectedScreenProtector());
   }
 
   function getProtectionAddOnSummaryText() {
@@ -727,6 +743,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ) {
       renderProtectionUpsellStep(
         stepsArea,
+        getSelectedScreenProtector(),
         Array.isArray(state.addOns) ? state.addOns : [],
         (selectedAddOns) => {
           state.addOns = selectedAddOns;

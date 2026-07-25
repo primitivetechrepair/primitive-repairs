@@ -167,7 +167,87 @@ function getDefaultPhoneRepairs() {
   ];
 }
 
-function normalizePhoneMasterCatalog(masterCatalog, brand) {
+function getPhoneScreenProtector(
+  protectorCatalog,
+  brand,
+  model
+) {
+  if (!protectorCatalog || typeof protectorCatalog !== "object") {
+    return null;
+  }
+
+  const brandKey = Object.keys(protectorCatalog).find((key) => {
+    return normalizePathValue(key) === normalizePathValue(brand);
+  });
+
+  if (!brandKey) {
+    return null;
+  }
+
+  const brandInventory = protectorCatalog[brandKey];
+
+  if (!brandInventory || typeof brandInventory !== "object") {
+    return null;
+  }
+
+  const modelKey = Object.keys(brandInventory).find((key) => {
+    return normalizePathValue(key) === normalizePathValue(model);
+  });
+
+  if (!modelKey) {
+    return null;
+  }
+
+  const record = brandInventory[modelKey];
+
+  if (!record || typeof record !== "object") {
+    return null;
+  }
+
+  const quantity = Math.max(
+    0,
+    Number(record.quantity || 0)
+  );
+
+  const available =
+    record.available === true &&
+    quantity > 0;
+
+  const sku = String(record.sku || "").trim();
+
+  if (!available || !sku) {
+    return null;
+  }
+
+  return {
+    id: sku.toLowerCase(),
+    sku,
+    name: String(
+      record.name ||
+      "Premium Tempered Glass"
+    ).trim(),
+    label: String(
+      record.label ||
+      record.name ||
+      "Premium Screen Protector"
+    ).trim(),
+    price: Math.max(
+      0,
+      Number(record.price || 0)
+    ),
+    quantity,
+    installed: record.installed !== false,
+    available,
+    compatibleBrand: brand,
+    compatibleModel: model
+  };
+}
+
+function normalizePhoneMasterCatalog(
+  masterCatalog,
+  brand,
+  protectorCatalog = {}
+) {
   if (!masterCatalog || typeof masterCatalog !== "object") {
     return [];
   }
@@ -198,24 +278,58 @@ function normalizePhoneMasterCatalog(masterCatalog, brand) {
         series,
         model,
         image: `/images/models/${normalizePathValue(brand)}/${normalizeImageFileName(model)}.webp`,
-        repairs
+        repairs,
+        screenProtector: getPhoneScreenProtector(
+          protectorCatalog,
+          brand,
+          model
+        )
       };
     });
   });
 }
 
 async function loadPhoneCatalog(brand) {
-  const path = "/catalog/phones/phones.json";
+  const phoneCatalogPath =
+    "/catalog/phones/phones.json";
 
-  const response = await fetch(path);
+  const protectorCatalogPath =
+    "/catalog/accessories/screen-protectors.json";
 
-  if (!response.ok) {
-    throw new Error(`Phone catalog load failed: ${path}`);
+  const [
+    phoneCatalogResponse,
+    protectorCatalogResponse
+  ] = await Promise.all([
+    fetch(phoneCatalogPath),
+    fetch(protectorCatalogPath)
+  ]);
+
+  if (!phoneCatalogResponse.ok) {
+    throw new Error(
+      `Phone catalog load failed: ${phoneCatalogPath}`
+    );
   }
 
-  const masterCatalog = await response.json();
+  const masterCatalog =
+    await phoneCatalogResponse.json();
 
-return normalizePhoneMasterCatalog(masterCatalog, brand);
+  let protectorCatalog = {};
+
+  if (protectorCatalogResponse.ok) {
+    protectorCatalog =
+      await protectorCatalogResponse.json();
+  } else {
+    console.warn(
+      "Screen-protector inventory could not be loaded:",
+      protectorCatalogPath
+    );
+  }
+
+  return normalizePhoneMasterCatalog(
+    masterCatalog,
+    brand,
+    protectorCatalog
+  );
 }
 
 export async function loadCatalog(device, brand) {

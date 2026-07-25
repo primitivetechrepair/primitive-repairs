@@ -14,7 +14,12 @@ export function mapWizardPayloadToLead(payload) {
   const addOns = Array.isArray(payload.addOns)
     ? payload.addOns
         .map((addOn) => ({
-          id: String(addOn?.id || "").trim(),
+          id: String(
+            addOn?.id ||
+            addOn?.sku ||
+            ""
+          ).trim(),
+          sku: String(addOn?.sku || "").trim(),
           name: String(
             addOn?.name ||
             addOn?.label ||
@@ -25,7 +30,22 @@ export function mapWizardPayloadToLead(payload) {
             1,
             Number(addOn?.quantity || 1)
           ),
-          installed: Boolean(addOn?.installed)
+          installed: Boolean(addOn?.installed),
+          compatibleBrand: String(
+            addOn?.compatibleBrand ||
+            ""
+          ).trim(),
+          compatibleModel: String(
+            addOn?.compatibleModel ||
+            ""
+          ).trim(),
+          stockQuantityAtSelection: Math.max(
+            0,
+            Number(
+              addOn?.stockQuantityAtSelection ||
+              0
+            )
+          )
         }))
         .filter((addOn) => addOn.name)
     : [];
@@ -55,7 +75,17 @@ export function mapWizardPayloadToLead(payload) {
         ? " installed"
         : "";
 
-    return `Protection Add-On: ${addOn.name}${priceText}${installText}`;
+    const compatibilityText =
+      addOn.compatibleModel
+        ? ` for ${addOn.compatibleModel}`
+        : "";
+
+    const skuText =
+      addOn.sku
+        ? ` | SKU: ${addOn.sku}`
+        : "";
+
+    return `Protection Add-On: ${addOn.name}${compatibilityText}${priceText}${installText}${skuText}`;
   });
 
   const combinedNotes = [
@@ -98,7 +128,12 @@ export function mapWizardPayloadToLead(payload) {
         amount: Number(
           addOn.price * addOn.quantity
         ),
-        category: "add-on"
+        category: "add-on",
+        sku: addOn.sku,
+        compatibleBrand:
+          addOn.compatibleBrand,
+        compatibleModel:
+          addOn.compatibleModel
       }))
     ],
 

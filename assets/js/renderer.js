@@ -1,4 +1,4 @@
-import { state, resetStep } from "./state.js";
+import { state, resetStep } from "./state.js?v=20260724-2";
 import {
   renderCardGrid,
   getDeviceImage,
@@ -715,18 +715,52 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
 
 export function renderProtectionUpsellStep(
   container,
+  protectorProduct,
   selectedAddOns = [],
   onContinue
 ) {
-  if (!container) return;
+  if (!container || !protectorProduct) return;
 
   const protector = {
-    id: "premium-screen-protector-installed",
-    name: "Premium Tempered Glass",
-    label: "Premium Screen Protector",
-    price: 19,
+    id: String(
+      protectorProduct.id ||
+      protectorProduct.sku ||
+      ""
+    ).trim(),
+    sku: String(
+      protectorProduct.sku ||
+      ""
+    ).trim(),
+    name: String(
+      protectorProduct.name ||
+      "Premium Tempered Glass"
+    ).trim(),
+    label: String(
+      protectorProduct.label ||
+      protectorProduct.name ||
+      "Premium Screen Protector"
+    ).trim(),
+    price: Math.max(
+      0,
+      Number(protectorProduct.price || 0)
+    ),
     quantity: 1,
-    installed: true
+    installed:
+      protectorProduct.installed !== false,
+    available:
+      protectorProduct.available === true,
+    compatibleBrand: String(
+      protectorProduct.compatibleBrand ||
+      ""
+    ).trim(),
+    compatibleModel: String(
+      protectorProduct.compatibleModel ||
+      ""
+    ).trim(),
+    stockQuantity: Math.max(
+      0,
+      Number(protectorProduct.quantity || 0)
+    )
   };
 
   const isSelected = Array.isArray(selectedAddOns) &&
@@ -775,7 +809,7 @@ export function renderProtectionUpsellStep(
                 Installed During Service
               </span>
 
-              <h4>Premium Tempered Glass</h4>
+              <h4>${protector.name}</h4>
             </div>
 
             <strong class="protection-upsell-price">

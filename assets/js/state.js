@@ -5,62 +5,120 @@ export const state = {
   model: null,
 
   repair: null,
-repairs: [],
-repairDetails: {},
-repairDetailsViewed: false,
+  repairs: [],
+  repairDetails: {},
+  repairDetailsViewed: false,
+  repairInfoViewed: false,
 
-repairInfoViewed: false,
+  protectionViewed: false,
+  addOns: [],
+
   appointmentSelected: false,
   reviewViewed: false,
 
-appointment: {
-  date: null,
-  time: null,
-  serviceType: null,
-  technician: null,
-  pickupRequired: false,
-  mailIn: false,
-  onsite: false
-},
+  appointment: {
+    date: null,
+    time: null,
+    serviceType: null,
+    technician: null,
+    pickupRequired: false,
+    mailIn: false,
+    onsite: false
+  },
 
   catalogCache: {},
-
   searchTerm: ""
 };
 
-export function resetStep(step) {
-  const resetMap = {
-  device: ["brand", "series", "model", "repair", "repairs", "repairDetails", "repairDetailsViewed", "repairInfoViewed", "appointmentSelected", "reviewViewed"],
-  brand: ["series", "model", "repair", "repairs", "repairDetails", "repairDetailsViewed", "repairInfoViewed", "appointmentSelected", "reviewViewed"],
-  series: ["model", "repair", "repairs", "repairDetails", "repairDetailsViewed", "repairInfoViewed", "appointmentSelected", "reviewViewed"],
-  model: ["repair", "repairs", "repairDetails", "repairDetailsViewed", "repairInfoViewed", "appointmentSelected", "reviewViewed"]
+const RESET_MAP = {
+  device: [
+    "brand",
+    "series",
+    "model",
+    "repair",
+    "repairs",
+    "repairDetails",
+    "repairDetailsViewed",
+    "repairInfoViewed",
+    "protectionViewed",
+    "addOns",
+    "appointmentSelected",
+    "reviewViewed"
+  ],
+
+  brand: [
+    "series",
+    "model",
+    "repair",
+    "repairs",
+    "repairDetails",
+    "repairDetailsViewed",
+    "repairInfoViewed",
+    "protectionViewed",
+    "addOns",
+    "appointmentSelected",
+    "reviewViewed"
+  ],
+
+  series: [
+    "model",
+    "repair",
+    "repairs",
+    "repairDetails",
+    "repairDetailsViewed",
+    "repairInfoViewed",
+    "protectionViewed",
+    "addOns",
+    "appointmentSelected",
+    "reviewViewed"
+  ],
+
+  model: [
+    "repair",
+    "repairs",
+    "repairDetails",
+    "repairDetailsViewed",
+    "repairInfoViewed",
+    "protectionViewed",
+    "addOns",
+    "appointmentSelected",
+    "reviewViewed"
+  ]
 };
 
-  if (!resetMap[step]) return;
+function resetStateKey(key) {
+  if (key === "repairs" || key === "addOns") {
+    state[key] = [];
+    return;
+  }
 
-  resetMap[step].forEach((key) => {
-  if (key === "repairs") {
-  state.repairs = [];
-  return;
-}
-
-if (key === "repairDetails") {
-  state.repairDetails = {};
-  return;
-}
+  if (key === "repairDetails") {
+    state.repairDetails = {};
+    return;
+  }
 
   if (
-  key === "repairDetailsViewed" ||
-  key === "repairInfoViewed" ||
-  key === "appointmentSelected" ||
-  key === "reviewViewed"
-) {
-  state[key] = false;
-  return;
-}
+    key === "repairDetailsViewed" ||
+    key === "repairInfoViewed" ||
+    key === "protectionViewed" ||
+    key === "appointmentSelected" ||
+    key === "reviewViewed"
+  ) {
+    state[key] = false;
+    return;
+  }
 
   state[key] = null;
-});
+}
+
+export function resetStep(step) {
+  const keys = RESET_MAP[step];
+
+  if (!Array.isArray(keys)) {
+    return;
+  }
+
+  keys.forEach(resetStateKey);
 }
 
 export function resetAllState() {
@@ -68,15 +126,20 @@ export function resetAllState() {
   state.brand = null;
   state.series = null;
   state.model = null;
-state.repair = null;
-state.repairs = [];
-state.repairDetails = {};
-state.repairDetailsViewed = false;
-state.repairInfoViewed = false;
-state.appointmentSelected = false;
-state.reviewViewed = false;
 
-state.appointment = {
+  state.repair = null;
+  state.repairs = [];
+  state.repairDetails = {};
+  state.repairDetailsViewed = false;
+  state.repairInfoViewed = false;
+
+  state.protectionViewed = false;
+  state.addOns = [];
+
+  state.appointmentSelected = false;
+  state.reviewViewed = false;
+
+  state.appointment = {
     date: null,
     time: null,
     serviceType: null,

@@ -1,4 +1,4 @@
-import { state } from "./state.js";
+import { state } from "./state.js?v=20260724-2";
 
 function generateRequestId() {
   const now = new Date();
@@ -129,7 +129,12 @@ export function buildLeadPayload(form) {
 
     addOns: Array.isArray(state.addOns)
       ? state.addOns.map((addOn) => ({
-          id: String(addOn?.id || "").trim(),
+          id: String(
+            addOn?.id ||
+            addOn?.sku ||
+            ""
+          ).trim(),
+          sku: String(addOn?.sku || "").trim(),
           name: String(
             addOn?.name ||
             addOn?.label ||
@@ -145,7 +150,22 @@ export function buildLeadPayload(form) {
             1,
             Number(addOn?.quantity || 1)
           ),
-          installed: Boolean(addOn?.installed)
+          installed: Boolean(addOn?.installed),
+          available: Boolean(addOn?.available),
+          compatibleBrand: String(
+            addOn?.compatibleBrand ||
+            state.brand ||
+            ""
+          ).trim(),
+          compatibleModel: String(
+            addOn?.compatibleModel ||
+            state.model?.model ||
+            ""
+          ).trim(),
+          stockQuantityAtSelection: Math.max(
+            0,
+            Number(addOn?.stockQuantity || 0)
+          )
         }))
       : [],
     repair: primaryRepair,
