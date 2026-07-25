@@ -179,6 +179,95 @@ export default async function handler(req, res) {
       lead.description ||
       "Not provided");
 
+    const rawAddOns =
+      Array.isArray(lead.addOns) &&
+      lead.addOns.length
+        ? lead.addOns
+        : Array.isArray(lead.repairItems)
+          ? lead.repairItems.filter((item) => {
+              const category =
+                String(
+                  item?.category || ""
+                ).toLowerCase();
+
+              const type =
+                String(
+                  item?.type || ""
+                ).toLowerCase();
+
+              return (
+                category === "add-on" ||
+                type.includes("screen protector") ||
+                type.includes("tempered glass")
+              );
+            })
+          : [];
+
+    const selectedAddOns = rawAddOns
+      .map((addOn) => {
+        const name = String(
+          addOn?.label ||
+          addOn?.name ||
+          addOn?.type ||
+          "Premium Screen Protector"
+        ).trim();
+
+        const numericPrice = Number(
+          addOn?.price ??
+          addOn?.amount ??
+          0
+        );
+
+        const numericQuantity = Number(
+          addOn?.quantity || 1
+        );
+
+        return {
+          name,
+
+          price:
+            Number.isFinite(numericPrice) &&
+            numericPrice >= 0
+              ? numericPrice
+              : 0,
+
+          quantity:
+            Number.isFinite(numericQuantity) &&
+            numericQuantity > 0
+              ? numericQuantity
+              : 1,
+
+          installed:
+            addOn?.installed !== false
+        };
+      })
+      .filter((addOn) => addOn.name);
+
+    const screenProtectorSummary =
+      selectedAddOns
+        .map((addOn) => {
+          const priceText =
+            addOn.price > 0
+              ? `$${addOn.price.toFixed(2)}`
+              : "$19.00";
+
+          const quantityText =
+            addOn.quantity > 1
+              ? ` × ${addOn.quantity}`
+              : "";
+
+          const installationText =
+            addOn.installed
+              ? " installed"
+              : "";
+
+          return (
+            `${addOn.name}${quantityText}` +
+            ` — ${priceText}${installationText}`
+          );
+        })
+        .join(", ");
+
     const appointmentDate =
       lead.appointmentDate ||
       lead.date ||
@@ -375,6 +464,22 @@ export default async function handler(req, res) {
                     <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Repair</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(repair)}</td>
                   </tr>
+
+                  ${
+                    selectedAddOns.length
+                      ? `
+                        <tr>
+                          <td style="padding:10px 0;color:#0f766e;font-size:13px;font-weight:800;">
+                            Screen Protector
+                          </td>
+
+                          <td style="padding:10px 0;color:#0f766e;font-size:15px;font-weight:800;text-align:right;">
+                            Selected — ${escapeHtml(screenProtectorSummary)}
+                          </td>
+                        </tr>
+                      `
+                      : ""
+                  }
                 </table>
               </div>
 

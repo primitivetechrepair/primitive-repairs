@@ -118,6 +118,8 @@ export function mapWizardPayloadToLead(payload) {
     repairTypes: repairNames,
     repairDetails,
 
+    addOns,
+
     repairItems: [
       ...repairNames.map((name) => ({
         type: name,
