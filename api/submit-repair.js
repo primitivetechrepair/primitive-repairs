@@ -296,6 +296,58 @@ export default async function handler(req, res) {
       lead.createdAt ||
       new Date().toISOString();
 
+    const formatEmailDate = (value) => {
+      const normalizedValue =
+        String(value || "").trim();
+
+      if (
+        !normalizedValue ||
+        normalizedValue === "Not provided"
+      ) {
+        return "Not provided";
+      }
+
+      const dateOnlyMatch =
+        normalizedValue.match(
+          /^(\d{4})-(\d{2})-(\d{2})$/
+        );
+
+      if (dateOnlyMatch) {
+        return (
+          `${dateOnlyMatch[2]}/` +
+          `${dateOnlyMatch[3]}/` +
+          `${dateOnlyMatch[1]}`
+        );
+      }
+
+      const parsedDate =
+        new Date(normalizedValue);
+
+      if (
+        Number.isNaN(
+          parsedDate.getTime()
+        )
+      ) {
+        return normalizedValue;
+      }
+
+      return new Intl.DateTimeFormat(
+        "en-US",
+        {
+          month: "2-digit",
+          day: "2-digit",
+          year: "numeric",
+          timeZone: "America/New_York"
+        }
+      ).format(parsedDate);
+    };
+
+    const receivedDate =
+      formatEmailDate(submittedAt);
+
+    const scheduledDate =
+      formatEmailDate(appointmentDate);
+
     const deviceImageHtml =
       deviceImageUrl
         ? `
@@ -384,16 +436,16 @@ export default async function handler(req, res) {
           <div style="background:#0b1f32;border:1px solid #16486f;border-radius:18px;overflow:hidden;">
             
             <div style="padding:20px 20px 16px;background:#102f4f;border-bottom:1px solid #16486f;">
-              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:#16486f;color:#90ffdc;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;">
-                Repair Request
+              <div style="display:inline-block;padding:7px 12px;border-radius:999px;background:#16486f;color:#90ffdc;font-family:'Space Grotesk','Segoe UI',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;">
+                Primitive Tech Repairs
               </div>
 
-              <h1 style="margin:12px 0 6px;font-family:'Space Grotesk','Segoe UI',Arial,sans-serif;font-size:24px;font-weight:700;line-height:1.15;color:#ffffff;">
-                New Repair Request Submitted
+              <h1 style="margin:12px 0 6px;font-family:'Space Grotesk','Segoe UI',Arial,sans-serif;font-size:26px;font-weight:700;line-height:1.15;color:#ffffff;">
+                Repair Request
               </h1>
 
-              <p style="margin:0;color:#c6d4ff;font-size:15px;line-height:1.6;">
-                A customer submitted a repair request from the Primitive Tech Repairs website.
+              <p style="margin:0;color:#c6d4ff;font-size:15px;font-weight:600;line-height:1.5;">
+                ${escapeHtml(customerName)} · ${escapeHtml(makeModel)}
               </p>
             </div>
 
@@ -404,8 +456,8 @@ export default async function handler(req, res) {
                   <td style="padding:8px 0;color:#ffffff;font-size:15px;font-weight:700;text-align:right;">${escapeHtml(requestId)}</td>
                 </tr>
                 <tr>
-                  <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Submitted</td>
-                  <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(submittedAt)}</td>
+                  <td style="padding:8px 0;color:#9bbbd4;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">Received</td>
+                  <td style="padding:8px 0;color:#ffffff;font-size:15px;font-weight:700;text-align:right;">${escapeHtml(receivedDate)}</td>
                 </tr>
               </table>
 
@@ -438,7 +490,7 @@ export default async function handler(req, res) {
 
               <div style="margin-top:14px;padding:14px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
                 <div style="margin-bottom:12px;color:#90ffdc;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
-                  Device + Repair
+                  Repair
                 </div>
 
                 ${deviceImageHtml}
@@ -448,21 +500,15 @@ export default async function handler(req, res) {
                     <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Device</td>
                     <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(device)}</td>
                   </tr>
-                  <tr>
-                    <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Brand</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(brand)}</td>
-                  </tr>
-                  <tr>
-                    <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Series</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(series)}</td>
-                  </tr>
+
+
                   <tr>
                     <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Model</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(model)}</td>
+                    <td style="padding:8px 0;color:#ffffff;font-size:15px;font-weight:800;text-align:right;">${escapeHtml(makeModel)}</td>
                   </tr>
                   <tr>
-                    <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Repair</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(repair)}</td>
+                    <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Service</td>
+                    <td style="padding:8px 0;color:#ffffff;font-size:15px;font-weight:800;text-align:right;">${escapeHtml(repair)}</td>
                   </tr>
 
                   ${
@@ -485,7 +531,7 @@ export default async function handler(req, res) {
 
               <div style="margin-top:12px;padding:14px;border-radius:14px;background:#0d2940;border:1px solid #16486f;">
                 <div style="margin-bottom:8px;color:#90ffdc;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;">
-                  Repair Details
+                  Notes
                 </div>
                 <div style="color:#ffffff;font-size:15px;line-height:1.65;">
                   ${escapeHtml(repairDetails).replace(/\n/g, "<br />")}
@@ -500,7 +546,7 @@ export default async function handler(req, res) {
                 <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
                   <tr>
                     <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Date</td>
-                    <td style="padding:8px 0;color:#ffffff;font-size:15px;text-align:right;">${escapeHtml(appointmentDate)}</td>
+                    <td style="padding:8px 0;color:#ffffff;font-size:15px;font-weight:800;text-align:right;">${escapeHtml(scheduledDate)}</td>
                   </tr>
                   <tr>
                     <td style="padding:8px 0;color:#9bbbd4;font-size:13px;font-weight:700;">Time</td>
@@ -512,7 +558,7 @@ export default async function handler(req, res) {
 
             <div style="padding:12px 20px;background:#102f4f;border-top:1px solid #16486f;">
               <p style="margin:0;color:#c6d4ff;font-size:12px;line-height:1.5;">
-                Primitive Tech Repairs &bull; Internal Repair Request Notification
+                Primitive Tech Repairs &bull; Internal
               </p>
             </div>
 
