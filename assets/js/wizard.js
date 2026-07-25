@@ -8,6 +8,7 @@ import {
   renderRepairStep,
   renderRepairDetailsStep,
   renderRepairInfoStep,
+  renderProtectionUpsellStep,
   renderSelectionCards,
   renderSuccessStep,
   renderReviewStep,
@@ -332,6 +333,46 @@ document.addEventListener("DOMContentLoaded", () => {
     return "$35 after-hours convenience fee";
   }
 
+  function isScreenProtectionEligible() {
+    if (state.device !== "Phone") {
+      return false;
+    }
+
+    return getSelectedRepairs().some((repair) => {
+      const repairName = String(
+        repair?.repair ||
+        repair?.name ||
+        repair?.label ||
+        ""
+      );
+
+      return /screen|display|lcd|oled|digitizer|front\s+glass/i.test(
+        repairName
+      );
+    });
+  }
+
+  function getProtectionAddOnSummaryText() {
+    const selectedAddOn = Array.isArray(state.addOns)
+      ? state.addOns[0]
+      : null;
+
+    if (!selectedAddOn) {
+      return "";
+    }
+
+    const name =
+      selectedAddOn.label ||
+      selectedAddOn.name ||
+      "Screen Protector";
+
+    const price = Number(selectedAddOn.price || 0);
+
+    return price > 0
+      ? `${name} — $${price.toFixed(0)} installed`
+      : name;
+  }
+
   function renderLiveRepairSummary() {
     if (!stepsArea) return;
 
@@ -380,6 +421,10 @@ document.addEventListener("DOMContentLoaded", () => {
       {
         label: "Warranty",
         value: getWarrantySummaryText()
+      },
+      {
+        label: "Protection",
+        value: getProtectionAddOnSummaryText()
       },
       {
         label: "After-Hours Fee",
@@ -622,6 +667,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
           state.repairDetailsViewed = false;
           state.repairInfoViewed = false;
+          state.protectionViewed = false;
+          state.addOns = [];
           state.appointmentSelected = false;
           state.reviewViewed = false;
 
@@ -631,6 +678,8 @@ document.addEventListener("DOMContentLoaded", () => {
           state.repair = state.repairs[0] || null;
           state.repairDetailsViewed = false;
           state.repairInfoViewed = false;
+          state.protectionViewed = false;
+          state.addOns = [];
           renderWizard(true);
         }
       );
@@ -653,6 +702,8 @@ document.addEventListener("DOMContentLoaded", () => {
           state.repairDetails = details;
           state.repairDetailsViewed = true;
           state.repairInfoViewed = false;
+          state.protectionViewed = false;
+          state.addOns = [];
           renderWizard(true);
         }
       );
@@ -672,6 +723,30 @@ document.addEventListener("DOMContentLoaded", () => {
         state.repairs.length ? state.repairs : state.repair,
         () => {
           state.repairInfoViewed = true;
+          renderWizard(true);
+        }
+      );
+
+      renderLiveRepairSummary();
+
+      if (shouldScroll) {
+        scrollWizardStepIntoView();
+      }
+
+      return;
+    }
+
+    if (
+      !state.protectionViewed &&
+      isScreenProtectionEligible()
+    ) {
+      renderProtectionUpsellStep(
+        stepsArea,
+        Array.isArray(state.addOns) ? state.addOns : [],
+        (selectedAddOns) => {
+          state.addOns = selectedAddOns;
+          state.protectionViewed = true;
+
           renderWizard(true);
         }
       );
@@ -730,6 +805,8 @@ document.addEventListener("DOMContentLoaded", () => {
       state.repairDetails = {};
       state.repairDetailsViewed = false;
       state.repairInfoViewed = false;
+      state.protectionViewed = false;
+      state.addOns = [];
       state.appointmentSelected = false;
       state.reviewViewed = false;
 
@@ -943,6 +1020,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
           renderSuccessStep(stepsArea, leadPayload, () => {
             resetAllState();
+            state.protectionViewed = false;
+            state.addOns = [];
             renderWizard(true);
           });
 

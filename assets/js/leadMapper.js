@@ -11,6 +11,25 @@ export function mapWizardPayloadToLead(payload) {
     .map((repair) => repair.name)
     .filter(Boolean);
 
+  const addOns = Array.isArray(payload.addOns)
+    ? payload.addOns
+        .map((addOn) => ({
+          id: String(addOn?.id || "").trim(),
+          name: String(
+            addOn?.name ||
+            addOn?.label ||
+            ""
+          ).trim(),
+          price: Number(addOn?.price || 0),
+          quantity: Math.max(
+            1,
+            Number(addOn?.quantity || 1)
+          ),
+          installed: Boolean(addOn?.installed)
+        }))
+        .filter((addOn) => addOn.name)
+    : [];
+
   const repairDetails = repairs.map((repair) => ({
     repair: repair.name || "Repair",
     time: repair.time || null,
@@ -25,8 +44,23 @@ export function mapWizardPayloadToLead(payload) {
     .filter((item) => item.details)
     .map((item) => `${item.repair}: ${item.details}`);
 
+  const addOnNotes = addOns.map((addOn) => {
+    const priceText =
+      addOn.price > 0
+        ? ` — $${addOn.price.toFixed(2)}`
+        : "";
+
+    const installText =
+      addOn.installed
+        ? " installed"
+        : "";
+
+    return `Protection Add-On: ${addOn.name}${priceText}${installText}`;
+  });
+
   const combinedNotes = [
     ...repairNotes,
+    ...addOnNotes,
     generalNotes ? `General Notes: ${generalNotes}` : ""
   ]
     .filter(Boolean)
@@ -54,10 +88,19 @@ export function mapWizardPayloadToLead(payload) {
     repairTypes: repairNames,
     repairDetails,
 
-    repairItems: repairNames.map((name) => ({
-      type: name,
-      amount: 0
-    })),
+    repairItems: [
+      ...repairNames.map((name) => ({
+        type: name,
+        amount: 0
+      })),
+      ...addOns.map((addOn) => ({
+        type: addOn.name,
+        amount: Number(
+          addOn.price * addOn.quantity
+        ),
+        category: "add-on"
+      }))
+    ],
 
     issueDescription: combinedNotes,
 

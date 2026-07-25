@@ -713,6 +713,142 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
   }
 }
 
+export function renderProtectionUpsellStep(
+  container,
+  selectedAddOns = [],
+  onContinue
+) {
+  if (!container) return;
+
+  const protector = {
+    id: "premium-screen-protector-installed",
+    name: "Premium Tempered Glass",
+    label: "Premium Screen Protector",
+    price: 19,
+    quantity: 1,
+    installed: true
+  };
+
+  const isSelected = Array.isArray(selectedAddOns) &&
+    selectedAddOns.some((item) => item?.id === protector.id);
+
+  container.innerHTML = `
+    <section class="protection-upsell-panel">
+      <div class="option-section-header protection-upsell-header">
+        <span>Protect Your Repair</span>
+        <h3>Protect your new screen.</h3>
+        <p>
+          Add professional screen protection while your device is already
+          being serviced.
+        </p>
+      </div>
+
+      <div class="protection-upsell-card">
+        <div class="protection-upsell-icon" aria-hidden="true">
+          <svg
+            viewBox="0 0 48 48"
+            role="img"
+            focusable="false"
+          >
+            <path
+              d="M24 5 39 11v11c0 10.2-6.1 17.1-15 21-8.9-3.9-15-10.8-15-21V11L24 5Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linejoin="round"
+            />
+            <path
+              d="m17 24 4.6 4.6L31.5 18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+
+        <div class="protection-upsell-copy">
+          <div class="protection-upsell-title-row">
+            <div>
+              <span class="protection-upsell-kicker">
+                Installed During Service
+              </span>
+
+              <h4>Premium Tempered Glass</h4>
+            </div>
+
+            <strong class="protection-upsell-price">
+              +$19
+              <small>installed</small>
+            </strong>
+          </div>
+
+          <p>
+            Professionally cleaned, precisely aligned, and installed before
+            your device is returned.
+          </p>
+
+          <div class="protection-upsell-benefits">
+            <span>Professional alignment</span>
+            <span>Bubble-free installation</span>
+            <span>Ready when your repair is complete</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="protection-upsell-actions">
+        <button
+          type="button"
+          class="protection-upsell-add"
+        >
+          ${isSelected
+            ? "Keep Screen Protector"
+            : "Add Screen Protector"}
+        </button>
+
+        <button
+          type="button"
+          class="protection-upsell-skip"
+        >
+          ${isSelected
+            ? "Remove and Continue"
+            : "No Thanks, Continue"}
+        </button>
+      </div>
+
+      <p class="protection-upsell-note">
+        The add-on is noted on your request. Nothing is charged when you
+        submit the appointment request.
+      </p>
+    </section>
+  `;
+
+  const addButton = container.querySelector(
+    ".protection-upsell-add"
+  );
+
+  const skipButton = container.querySelector(
+    ".protection-upsell-skip"
+  );
+
+  if (addButton) {
+    addButton.addEventListener("click", () => {
+      if (typeof onContinue === "function") {
+        onContinue([protector]);
+      }
+    });
+  }
+
+  if (skipButton) {
+    skipButton.addEventListener("click", () => {
+      if (typeof onContinue === "function") {
+        onContinue([]);
+      }
+    });
+  }
+}
+
 export function renderSelectionCards(onChange) {
   const steps = [
     {
@@ -764,6 +900,49 @@ export function renderSelectionCards(onChange) {
     progressBar.setAttribute("aria-valuenow", `${progressPercent}`);
     progressBar.classList.toggle("full", completeStepCount === steps.length);
   }
+  if (selectionCards) {
+    const existingProtectionStatus =
+      selectionCards.querySelector(
+        ".blueprint-protection-status"
+      );
+
+    if (existingProtectionStatus) {
+      existingProtectionStatus.remove();
+    }
+
+    const selectedProtection = Array.isArray(state.addOns)
+      ? state.addOns[0]
+      : null;
+
+    if (selectedProtection) {
+      const protectionStatus =
+        document.createElement("div");
+
+      protectionStatus.className =
+        "blueprint-protection-status";
+
+      const protectionLabel =
+        selectedProtection.label ||
+        selectedProtection.name ||
+        "Screen Protector";
+
+      const protectionPrice =
+        Number(selectedProtection.price || 0);
+
+      protectionStatus.innerHTML = `
+        <span>Protection Add-On</span>
+        <strong></strong>
+      `;
+
+      protectionStatus.querySelector("strong").textContent =
+        protectionPrice > 0
+          ? `${protectionLabel} — $${protectionPrice.toFixed(0)} installed`
+          : protectionLabel;
+
+      selectionCards.appendChild(protectionStatus);
+    }
+  }
+
 steps.forEach((step) => {
     const card = document.getElementById(`card-${step.key}`);
 
@@ -853,6 +1032,8 @@ const label = card.querySelector(".card-label");
           state.repairDetails = {};
           state.repairDetailsViewed = false;
           state.repairInfoViewed = false;
+          state.protectionViewed = false;
+          state.addOns = [];
           state.appointmentSelected = false;
           state.reviewViewed = false;
         } else {
@@ -966,6 +1147,26 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
     ? leadPayload.attachments
     : [];
 
+  const selectedAddOns = Array.isArray(leadPayload?.addOns)
+    ? leadPayload.addOns
+    : [];
+
+  const protectionAddOnSummary = selectedAddOns
+    .map((addOn) => {
+      const addOnName =
+        addOn?.label ||
+        addOn?.name ||
+        "Screen Protector";
+
+      const addOnPrice =
+        Number(addOn?.price || 0);
+
+      return addOnPrice > 0
+        ? `${addOnName} — $${addOnPrice.toFixed(2)} installed`
+        : addOnName;
+    })
+    .join(", ");
+
   const contactLine = [
     customer.phone,
     customer.email
@@ -999,7 +1200,12 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
         ${renderSuccessItem("Brand", device.brand, "Not selected")}
         ${renderSuccessItem("Series", device.series, "Not selected")}
         ${renderSuccessItem("Model", device.model, "Not selected")}
-        ${renderSuccessItem("Selected Repairs", repairList, "Repair request")}
+        ${renderSuccessItem("Selected Repairs", repairList, "Repair request")}        ${selectedAddOns.length
+          ? renderSuccessItem(
+              "Protection Add-On",
+              protectionAddOnSummary
+            )
+          : ""}
         ${renderSuccessItem("Repair Count", selectedRepairs.length ? `${selectedRepairs.length}` : "0")}
         ${renderSuccessItem("Service Type", serviceType, "Not selected")}
         ${renderSuccessItem("Preferred Date", preferredDate, "Not selected")}
@@ -1181,6 +1387,40 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
       ? `$${convenienceFee.toFixed(2)} after-hours convenience fee`
       : "None");
 
+
+  const selectedAddOns = Array.isArray(leadPayload.addOns)
+    ? leadPayload.addOns
+    : [];
+
+  const addOnsMarkup = selectedAddOns.length
+    ? `
+        <div class="review-card review-card-addons">
+          <h4>Protection Add-On</h4>
+
+          ${selectedAddOns
+            .map((addOn) => {
+              const addOnName =
+                addOn?.label ||
+                addOn?.name ||
+                "Screen Protector";
+
+              const addOnPrice =
+                Number(addOn?.price || 0);
+
+              const addOnValue =
+                addOnPrice > 0
+                  ? `${addOnName} — $${addOnPrice.toFixed(2)} installed`
+                  : addOnName;
+
+              return renderReviewRow(
+                "Selected",
+                addOnValue
+              );
+            })
+            .join("")}
+        </div>
+      `
+    : "";
   container.innerHTML = `
     <section class="review-panel">
       <div class="option-section-header review-option-header">
@@ -1222,6 +1462,7 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${repairsMarkup}
         </div>
 
+        ${addOnsMarkup}
         <div class="review-card review-card-appointment ${convenienceFee > 0 ? "has-after-hours-fee" : ""}">
           <h4>Appointment</h4>
           ${renderReviewRow("Service Type", serviceType, "Not selected")}

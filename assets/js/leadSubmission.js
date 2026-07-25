@@ -127,6 +127,27 @@ export function buildLeadPayload(form) {
 
     repairs: normalizedRepairs,
 
+    addOns: Array.isArray(state.addOns)
+      ? state.addOns.map((addOn) => ({
+          id: String(addOn?.id || "").trim(),
+          name: String(
+            addOn?.name ||
+            addOn?.label ||
+            ""
+          ).trim(),
+          label: String(
+            addOn?.label ||
+            addOn?.name ||
+            ""
+          ).trim(),
+          price: Number(addOn?.price || 0),
+          quantity: Math.max(
+            1,
+            Number(addOn?.quantity || 1)
+          ),
+          installed: Boolean(addOn?.installed)
+        }))
+      : [],
     repair: primaryRepair,
 
     appointment: {
