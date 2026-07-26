@@ -18465,3 +18465,202 @@ h1,
     font-size: 11px;
   }
 }
+
+/* =========================================================
+   PRIMITIVE REPAIRS BLUEPRINT ZERO-GAP CARD STRIP V13
+   Restore the original edge-to-edge Blueprint card geometry.
+========================================================= */
+
+/*
+ * The five Blueprint cards are one continuous horizontal strip.
+ * No margins, padding, gaps, rounded space, or movement may
+ * separate neighboring cards on desktop, tablet, or mobile.
+ */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-profile-grid {
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 0 !important;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(220, 237, 255, 0.16);
+  border-radius: 20px;
+
+  background: rgba(29, 30, 34, 0.54);
+
+  box-shadow:
+    0 16px 34px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(220, 237, 255, 0.06);
+}
+
+/* Every card touches the card immediately beside it. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.filled,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-current-step,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-missing-choice,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-clickable-blueprint-card,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-clickable-blueprint-card:hover {
+  min-width: 0;
+  width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-left: 1px solid rgba(220, 237, 255, 0.16) !important;
+  border-radius: 0 !important;
+
+  transform: none !important;
+
+  box-shadow:
+    inset 1px 0 0 rgba(220, 237, 255, 0.025) !important;
+
+  transition:
+    background-color 0.18s ease,
+    background-image 0.18s ease,
+    box-shadow 0.18s ease !important;
+}
+
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card:first-child,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.filled:first-child,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-current-step:first-child,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-missing-choice:first-child {
+  border-left: 0 !important;
+}
+
+/*
+ * Filled/current/hover cards retain the same dimensions.
+ * State styling must never create visible space between cards.
+ */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.filled,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-current-step,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-clickable-blueprint-card:hover {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  transform: none !important;
+}
+
+/* Keep all internal card rows flush to the card edges. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.card-heading,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.card-img,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.card-label,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.card-back {
+  max-width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Mobile keeps the same uninterrupted five-card strip. */
+@media (max-width: 700px) {
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .blueprint-profile-grid {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+
+    border-radius: 18px;
+  }
+
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.filled,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-current-step,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-missing-choice,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-clickable-blueprint-card:hover {
+    width: 100%;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 0 !important;
+
+    transform: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .blueprint-profile-grid {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    gap: 0 !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+  }
+
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.filled,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-current-step,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-missing-choice {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+}
