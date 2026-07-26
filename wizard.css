@@ -18873,3 +18873,611 @@ h1,
     height: 28px !important;
   }
 }
+
+/* =========================================================
+   PRIMITIVE REPAIRS SELECTION CARD POLISH + ROUNDED BEAM V15
+   Device / Brand / Series / Model / Repair
+========================================================= */
+
+@property --blueprint-beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --selection-beam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* Remove square backing layers from every selection-card grid. */
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+}
+
+/* Premium stage shared by all five selection steps. */
+#primitive-wizard-container
+#pr-steps-area.animated-area:has(.option-section-header) {
+  position: relative;
+  isolation: isolate;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.16) !important;
+  border-radius: 30px !important;
+
+  background-color: rgba(29, 30, 34, 0.92) !important;
+  background-image:
+    radial-gradient(
+      circle at 8% 0%,
+      rgba(102, 252, 241, 0.09),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 94% 14%,
+      rgba(220, 237, 255, 0.07),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.82),
+      rgba(29, 30, 34, 0.97)
+    ) !important;
+
+  box-shadow:
+    0 26px 64px rgba(29, 30, 34, 0.38),
+    inset 0 1px 0 rgba(220, 237, 255, 0.11) !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area.animated-area:has(.option-section-header)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  border-radius: inherit !important;
+
+  background:
+    linear-gradient(
+      118deg,
+      rgba(220, 237, 255, 0.07),
+      transparent 30%,
+      transparent 72%,
+      rgba(102, 252, 241, 0.035)
+    ) !important;
+
+  clip-path: inset(0 round 30px);
+
+  pointer-events: none;
+}
+
+/* Section heading uses the same integrated premium language. */
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header {
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.15) !important;
+  border-radius: 22px !important;
+
+  background-color: rgba(29, 30, 34, 0.7) !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.74),
+      rgba(29, 30, 34, 0.82)
+    ) !important;
+
+  box-shadow:
+    0 16px 36px rgba(29, 30, 34, 0.25),
+    inset 0 1px 0 rgba(220, 237, 255, 0.09) !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header::before {
+  border-radius: inherit !important;
+
+  clip-path: inset(0 round 22px);
+}
+
+/* DEVICE / BRAND / SERIES / MODEL / REPAIR pill. */
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header span {
+  min-height: 28px;
+
+  margin: 0 auto 13px !important;
+  padding: 0 14px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 1px solid rgba(102, 252, 241, 0.5) !important;
+  border-radius: 999px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.94),
+      rgba(29, 30, 34, 0.96)
+    ) !important;
+
+  color: #66FCF1 !important;
+
+  font-size: 9px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.14em !important;
+  line-height: 1 !important;
+  text-align: center !important;
+
+  box-shadow:
+    0 10px 22px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(220, 237, 255, 0.1) !important;
+}
+
+/* Permanent light-glass card palette. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card:hover,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card:hover:not(.is-selected),
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"],
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] {
+  position: relative;
+  isolation: isolate;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.52) !important;
+  border-radius: 24px !important;
+
+  background-color: rgba(212, 212, 220, 0.78) !important;
+  background-image:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(220, 237, 255, 0.74),
+      transparent 36%
+    ),
+    linear-gradient(
+      150deg,
+      rgba(220, 237, 255, 0.84),
+      rgba(212, 212, 220, 0.62)
+    ) !important;
+
+  color: #1D1E22 !important;
+
+  transform: none !important;
+
+  box-shadow:
+    0 18px 40px rgba(29, 30, 34, 0.22),
+    inset 0 1px 0 rgba(220, 237, 255, 0.9),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.07) !important;
+}
+
+/* Clip every card reflection to its actual rounded corners. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card::before {
+  inset: 0 !important;
+
+  border-radius: inherit !important;
+
+  background:
+    linear-gradient(
+      130deg,
+      rgba(220, 237, 255, 0.38),
+      transparent 32%,
+      transparent 72%,
+      rgba(102, 252, 241, 0.07)
+    ) !important;
+
+  clip-path: inset(0 round 24px);
+
+  opacity: 0.76 !important;
+
+  pointer-events: none;
+}
+
+/* Selected card gets a smooth rounded perimeter beam. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected::after,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected::after,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"]::after,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+
+  padding: 2px;
+
+  border-radius: inherit !important;
+
+  background:
+    conic-gradient(
+      from var(--selection-beam-angle),
+      transparent 0deg,
+      transparent 250deg,
+      rgba(102, 252, 241, 0.16) 275deg,
+      rgba(102, 252, 241, 0.72) 302deg,
+      #66FCF1 318deg,
+      rgba(220, 237, 255, 0.78) 330deg,
+      transparent 360deg
+    ) !important;
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+
+  animation:
+    primitiveSelectionRoundedBeam 4.8s linear infinite !important;
+
+  opacity: 1 !important;
+
+  pointer-events: none;
+}
+
+/* Selection changes border emphasis, never card colors. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"],
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] {
+  border-color: rgba(102, 252, 241, 0.76) !important;
+
+  box-shadow:
+    0 0 0 2px rgba(102, 252, 241, 0.12),
+    0 22px 46px rgba(29, 30, 34, 0.28),
+    inset 0 1px 0 rgba(220, 237, 255, 0.92),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.07) !important;
+}
+
+/* Image wells use the same rounded clipping. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-thumb,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected .opt-thumb,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected .opt-thumb {
+  overflow: hidden !important;
+
+  border: 1px solid rgba(29, 30, 34, 0.11) !important;
+  border-radius: 18px !important;
+
+  background-color: rgba(220, 237, 255, 0.52) !important;
+  background-image:
+    radial-gradient(
+      circle at 50% 4%,
+      rgba(220, 237, 255, 0.82),
+      transparent 48%
+    ),
+    linear-gradient(
+      150deg,
+      rgba(220, 237, 255, 0.7),
+      rgba(212, 212, 220, 0.44)
+    ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.9),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.06),
+    0 10px 22px rgba(29, 30, 34, 0.1) !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.opt-thumb::before {
+  border-radius: inherit !important;
+
+  clip-path: inset(0 round 18px);
+}
+
+/* Labels remain centered and readable in every state. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected .opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected .opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"] .opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] .opt-label {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #1D1E22 !important;
+
+  font-weight: 800 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.opt-subtext,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected .opt-subtext,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected .opt-subtext {
+  color: rgba(29, 30, 34, 0.72) !important;
+
+  text-align: center !important;
+}
+
+/* Rebuild the Repair Blueprint beam as one rounded perimeter ring. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-complete-beam,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-complete-beam .beam,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-complete-beam .beam-top,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-complete-beam .beam-right,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-complete-beam .beam-bottom,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.blueprint-complete-beam .beam-left {
+  display: none !important;
+  animation: none !important;
+}
+
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module {
+  position: relative;
+  isolation: isolate;
+
+  overflow: hidden !important;
+
+  border-radius: 30px !important;
+}
+
+/* Continuous beam follows the true rounded perimeter. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+
+  display: block !important;
+
+  padding: 2px;
+
+  border-radius: inherit !important;
+
+  background:
+    conic-gradient(
+      from var(--blueprint-beam-angle),
+      transparent 0deg,
+      transparent 244deg,
+      rgba(102, 252, 241, 0.12) 270deg,
+      rgba(102, 252, 241, 0.68) 300deg,
+      #66FCF1 316deg,
+      rgba(220, 237, 255, 0.82) 330deg,
+      transparent 360deg
+    ) !important;
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+
+  clip-path: inset(0 round 30px);
+
+  animation:
+    primitiveBlueprintRoundedBeam 5.8s linear infinite !important;
+
+  opacity: 1 !important;
+
+  pointer-events: none !important;
+}
+
+@keyframes primitiveSelectionRoundedBeam {
+  from {
+    --selection-beam-angle: 0deg;
+  }
+
+  to {
+    --selection-beam-angle: 360deg;
+  }
+}
+
+@keyframes primitiveBlueprintRoundedBeam {
+  from {
+    --blueprint-beam-angle: 0deg;
+  }
+
+  to {
+    --blueprint-beam-angle: 360deg;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card:hover:not(.is-selected) {
+    transform: translateY(-2px) !important;
+
+    border-color: rgba(220, 237, 255, 0.72) !important;
+
+    box-shadow:
+      0 22px 44px rgba(29, 30, 34, 0.27),
+      inset 0 1px 0 rgba(220, 237, 255, 0.92),
+      inset 0 -1px 0 rgba(29, 30, 34, 0.07) !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.is-selected:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.selected:hover {
+    transform: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #primitive-wizard-container
+  #pr-steps-area.animated-area:has(.option-section-header) {
+    border-radius: 24px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area.animated-area:has(.option-section-header)::before {
+    clip-path: inset(0 round 24px);
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header {
+    border-radius: 20px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header::before {
+    clip-path: inset(0 round 20px);
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.is-selected,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.selected {
+    border-radius: 20px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card::before {
+    clip-path: inset(0 round 20px);
+  }
+
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module {
+    border-radius: 24px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module::after {
+    border-radius: 24px !important;
+    clip-path: inset(0 round 24px);
+
+    animation-duration: 5.8s !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.is-selected::after,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.selected::after,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card[aria-pressed="true"]::after,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card[aria-selected="true"]::after,
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module::after {
+    animation: none !important;
+  }
+}
