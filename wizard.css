@@ -19766,3 +19766,494 @@ div.opt-label::after,
     padding: 2px !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS PREMIUM COUPON + PINK BOTTOM CTA V19
+   Bottom booking CTA and promotional savings experience
+========================================================= */
+
+/* Bottom-bar START REPAIR is the only pink primary action. */
+.mobile-sticky-booking-primary,
+.mobile-sticky-booking-primary:link,
+.mobile-sticky-booking-primary:visited {
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 16px !important;
+
+  background: #FF0054 !important;
+  background-color: #FF0054 !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.16),
+      transparent 38%
+    ) !important;
+
+  color: #FFFFFF !important;
+
+  box-shadow:
+    0 14px 30px rgba(255, 0, 84, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.18) !important;
+
+  text-shadow: 0 1px 8px rgba(29, 30, 34, 0.25) !important;
+}
+
+.mobile-sticky-booking-primary:hover,
+.mobile-sticky-booking-primary:focus-visible {
+  border-color: rgba(255, 255, 255, 0.32) !important;
+
+  background: #E6004C !important;
+  background-color: #E6004C !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.2),
+      transparent 40%
+    ) !important;
+
+  color: #FFFFFF !important;
+
+  box-shadow:
+    0 17px 34px rgba(255, 0, 84, 0.42),
+    0 0 0 4px rgba(255, 0, 84, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+
+  transform: translateY(-1px) !important;
+}
+
+.mobile-sticky-booking-primary:active {
+  background: #CC0043 !important;
+  background-color: #CC0043 !important;
+
+  box-shadow:
+    0 8px 18px rgba(255, 0, 84, 0.28),
+    inset 0 2px 4px rgba(29, 30, 34, 0.2) !important;
+
+  transform: translateY(0) !important;
+}
+
+.mobile-sticky-booking-primary:disabled,
+.mobile-sticky-booking-primary[aria-disabled="true"] {
+  opacity: 0.48 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+
+/* Premium coupon overlay. */
+.email-offer-overlay {
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(102, 252, 241, 0.08),
+      transparent 38%
+    ),
+    rgba(29, 30, 34, 0.82) !important;
+
+  backdrop-filter: blur(18px) saturate(125%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(125%) !important;
+}
+
+/* Main coupon dialog. */
+.email-offer-dialog {
+  isolation: isolate;
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.18) !important;
+  border-radius: 30px !important;
+
+  background-color: rgba(29, 30, 34, 0.97) !important;
+  background-image:
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(102, 252, 241, 0.12),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 94% 16%,
+      rgba(220, 237, 255, 0.08),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.96),
+      rgba(29, 30, 34, 0.99)
+    ) !important;
+
+  box-shadow:
+    0 34px 90px rgba(0, 0, 0, 0.48),
+    0 0 0 1px rgba(102, 252, 241, 0.05),
+    inset 0 1px 0 rgba(220, 237, 255, 0.12) !important;
+}
+
+.email-offer-dialog::before {
+  border: 1px dashed rgba(102, 252, 241, 0.24) !important;
+  border-radius: 22px !important;
+
+  background: transparent !important;
+
+  box-shadow: none !important;
+
+  pointer-events: none !important;
+}
+
+/* Technical coupon header strip. */
+.email-offer-topbar {
+  border-bottom: 1px solid rgba(220, 237, 255, 0.12) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(57, 63, 77, 0.92),
+      rgba(29, 30, 34, 0.94)
+    ) !important;
+
+  color: #66FCF1 !important;
+
+  box-shadow:
+    inset 0 -1px 0 rgba(29, 30, 34, 0.42),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08) !important;
+}
+
+.email-offer-topbar *,
+.email-offer-eyebrow {
+  color: #66FCF1 !important;
+}
+
+/* Close control. */
+.email-offer-close {
+  border: 1px solid rgba(220, 237, 255, 0.18) !important;
+  border-radius: 999px !important;
+
+  background: rgba(29, 30, 34, 0.72) !important;
+  color: #DCEDFF !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.1),
+    0 8px 18px rgba(29, 30, 34, 0.28) !important;
+}
+
+.email-offer-close:hover,
+.email-offer-close:focus-visible {
+  border-color: rgba(102, 252, 241, 0.62) !important;
+  background: rgba(57, 63, 77, 0.96) !important;
+  color: #66FCF1 !important;
+
+  box-shadow:
+    0 0 0 4px rgba(102, 252, 241, 0.1),
+    inset 0 1px 0 rgba(220, 237, 255, 0.12) !important;
+}
+
+/* Coupon typography. */
+.email-offer-content,
+.email-offer-content p,
+.email-offer-content label,
+.email-offer-terms {
+  color: rgba(220, 237, 255, 0.78) !important;
+}
+
+.email-offer-content h2,
+.email-offer-content h3 {
+  color: #DCEDFF !important;
+  text-shadow: 0 10px 28px rgba(29, 30, 34, 0.42) !important;
+}
+
+/* Ticket-style offer value card. */
+.email-offer-value-card {
+  position: relative;
+  isolation: isolate;
+  overflow: visible !important;
+
+  border: 1px dashed rgba(102, 252, 241, 0.58) !important;
+  border-radius: 22px !important;
+
+  background-color: rgba(57, 63, 77, 0.74) !important;
+  background-image:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(220, 237, 255, 0.12),
+      transparent 46%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.88),
+      rgba(29, 30, 34, 0.92)
+    ) !important;
+
+  box-shadow:
+    0 20px 46px rgba(29, 30, 34, 0.34),
+    inset 0 1px 0 rgba(220, 237, 255, 0.12) !important;
+}
+
+/* Circular ticket notches match the dialog behind them. */
+.email-offer-value-card::before,
+.email-offer-value-card::after {
+  border: 1px solid rgba(102, 252, 241, 0.22) !important;
+  border-radius: 50% !important;
+
+  background: #1D1E22 !important;
+
+  box-shadow:
+    inset 0 0 0 4px rgba(57, 63, 77, 0.48) !important;
+}
+
+.email-offer-value,
+.email-offer-value strong {
+  color: #66FCF1 !important;
+
+  text-shadow:
+    0 0 22px rgba(102, 252, 241, 0.18),
+    0 8px 24px rgba(29, 30, 34, 0.34) !important;
+}
+
+.email-offer-value-card span,
+.email-offer-value-card small {
+  color: rgba(220, 237, 255, 0.78) !important;
+}
+
+/* Premium form controls. */
+.email-offer-dialog input,
+.email-offer-dialog textarea,
+.email-offer-dialog select {
+  border: 1px solid rgba(220, 237, 255, 0.18) !important;
+  border-radius: 14px !important;
+
+  background-color: rgba(29, 30, 34, 0.76) !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.46),
+      rgba(29, 30, 34, 0.72)
+    ) !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    0 10px 22px rgba(29, 30, 34, 0.16) !important;
+}
+
+.email-offer-dialog input::placeholder,
+.email-offer-dialog textarea::placeholder {
+  color: rgba(220, 237, 255, 0.48) !important;
+}
+
+.email-offer-dialog input:focus,
+.email-offer-dialog textarea:focus,
+.email-offer-dialog select:focus {
+  border-color: rgba(102, 252, 241, 0.74) !important;
+  outline: 0 !important;
+
+  box-shadow:
+    0 0 0 4px rgba(102, 252, 241, 0.11),
+    inset 0 1px 0 rgba(220, 237, 255, 0.1) !important;
+}
+
+/* Coupon submit and success controls. */
+#primitive-wizard-container .email-offer-submit,
+#primitive-wizard-container .email-offer-success-close,
+.email-offer-submit,
+.email-offer-success-close {
+  border: 1px solid rgba(102, 252, 241, 0.62) !important;
+  border-radius: 15px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #66FCF1,
+      rgba(102, 252, 241, 0.78)
+    ) !important;
+
+  color: #1D1E22 !important;
+
+  box-shadow:
+    0 15px 30px rgba(102, 252, 241, 0.16),
+    inset 0 1px 0 rgba(220, 237, 255, 0.5) !important;
+}
+
+#primitive-wizard-container .email-offer-submit:hover,
+#primitive-wizard-container .email-offer-submit:focus-visible,
+#primitive-wizard-container .email-offer-success-close:hover,
+#primitive-wizard-container .email-offer-success-close:focus-visible,
+.email-offer-submit:hover,
+.email-offer-submit:focus-visible,
+.email-offer-success-close:hover,
+.email-offer-success-close:focus-visible {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(102, 252, 241, 0.9),
+      rgba(102, 252, 241, 0.7)
+    ) !important;
+
+  color: #1D1E22 !important;
+
+  box-shadow:
+    0 18px 34px rgba(102, 252, 241, 0.22),
+    0 0 0 4px rgba(102, 252, 241, 0.1),
+    inset 0 1px 0 rgba(220, 237, 255, 0.54) !important;
+}
+
+/* Coupon terms use a perforation divider. */
+.email-offer-terms {
+  border-top: 1px dashed rgba(102, 252, 241, 0.34) !important;
+}
+
+/* Success stamp. */
+.email-offer-success-mark {
+  border: 2px dashed rgba(102, 252, 241, 0.74) !important;
+  border-radius: 18px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.92),
+      rgba(29, 30, 34, 0.96)
+    ) !important;
+
+  color: #66FCF1 !important;
+
+  box-shadow:
+    0 14px 30px rgba(29, 30, 34, 0.28),
+    inset 0 1px 0 rgba(220, 237, 255, 0.1) !important;
+}
+
+/* Promotion-code field matches the popup ticket system. */
+.savings-code-field {
+  border: 1px dashed rgba(102, 252, 241, 0.4) !important;
+  border-radius: 20px !important;
+
+  background-color: rgba(29, 30, 34, 0.72) !important;
+  background-image:
+    radial-gradient(
+      circle at 92% 10%,
+      rgba(102, 252, 241, 0.08),
+      transparent 36%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.76),
+      rgba(29, 30, 34, 0.9)
+    ) !important;
+
+  box-shadow:
+    0 18px 38px rgba(29, 30, 34, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.1) !important;
+}
+
+.savings-code-field > label {
+  color: #DCEDFF !important;
+}
+
+.savings-code-input-wrap {
+  border: 1px solid rgba(220, 237, 255, 0.16) !important;
+  border-radius: 14px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.78),
+      rgba(29, 30, 34, 0.88)
+    ) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    0 10px 24px rgba(29, 30, 34, 0.2) !important;
+}
+
+.savings-code-ticket {
+  border-right: 1px dashed rgba(102, 252, 241, 0.42) !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(102, 252, 241, 0.16),
+      rgba(57, 63, 77, 0.86)
+    ) !important;
+
+  color: #66FCF1 !important;
+}
+
+.savings-code-input-wrap input {
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  color: #DCEDFF !important;
+
+  box-shadow: none !important;
+}
+
+.savings-code-input-wrap input::placeholder {
+  color: rgba(220, 237, 255, 0.46) !important;
+}
+
+.savings-code-input-wrap:focus-within {
+  border-color: rgba(102, 252, 241, 0.72) !important;
+
+  box-shadow:
+    0 0 0 4px rgba(102, 252, 241, 0.1),
+    0 14px 28px rgba(29, 30, 34, 0.22) !important;
+}
+
+.savings-code-help {
+  color: rgba(220, 237, 255, 0.68) !important;
+}
+
+/* Promotion redemption summary. */
+.review-card-savings {
+  border: 1px dashed rgba(102, 252, 241, 0.4) !important;
+  border-radius: 20px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.84),
+      rgba(29, 30, 34, 0.92)
+    ) !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    0 18px 38px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(220, 237, 255, 0.09) !important;
+}
+
+.review-card-savings h4 {
+  color: #66FCF1 !important;
+}
+
+.review-card-savings .review-card-row,
+.review-card-savings .review-card-row * {
+  color: #1D1E22 !important;
+}
+
+@media (max-width: 620px) {
+  .email-offer-dialog {
+    border-radius: 24px 24px 0 0 !important;
+  }
+
+  .email-offer-dialog::before {
+    border-radius: 17px 17px 0 0 !important;
+  }
+
+  .email-offer-topbar {
+    border-radius: 23px 23px 0 0 !important;
+  }
+
+  .email-offer-value-card {
+    border-radius: 18px !important;
+  }
+
+  .savings-code-field {
+    border-radius: 18px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-sticky-booking-primary,
+  .email-offer-close,
+  .email-offer-submit,
+  .email-offer-success-close {
+    transition: none !important;
+    transform: none !important;
+  }
+}
