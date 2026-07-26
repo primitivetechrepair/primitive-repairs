@@ -19651,3 +19651,118 @@ h1,
 .option-section-header span {
   border-radius: 999px !important;
 }
+/* =========================================================
+   PRIMITIVE REPAIRS HARD RESET CARD LABEL PANELS V18
+   Remove every visible square layer from generated opt labels
+========================================================= */
+
+#primitive-wizard-container
+#pr-steps-area
+div.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card div.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card:hover div.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected div.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected div.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"] div.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] div.opt-label {
+  position: relative !important;
+  isolation: auto !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  min-height: 38px !important;
+
+  margin: 0 !important;
+  padding: 3px 4px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 0 !important;
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: transparent !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+  text-shadow: none !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+
+  opacity: 1 !important;
+  transform: none !important;
+
+  color: #1D1E22 !important;
+
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+
+  overflow: visible !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+div.opt-label::before,
+#primitive-wizard-container
+#pr-steps-area
+div.opt-label::after,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card div.opt-label::before,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card div.opt-label::after {
+  content: none !important;
+  display: none !important;
+
+  position: static !important;
+  inset: auto !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 700px) {
+  #primitive-wizard-container
+  #pr-steps-area
+  div.opt-label {
+    min-height: 36px !important;
+    padding: 2px !important;
+  }
+}
