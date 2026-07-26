@@ -15949,7 +15949,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
 }
 
 /* =========================================================
-   PRIMITIVE REPAIRS CONTROLLED FOUR-COLOR PREMIUM SYSTEM
+   PRIMITIVE REPAIRS CYAN FOUR-COLOR PREMIUM SYSTEM
 ========================================================= */
 
 :root {
@@ -15958,7 +15958,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
   --selection-background: #D4D4DC;
   --text-dark: #1D1E22;
   --text-light: #D4D4DC;
-  --action-color: #FF0054;
+  --action-color: #66FCF1;
 
   --bg: #1D1E22;
   --card: #393F4D;
@@ -15976,8 +15976,8 @@ button.supported-device-action.service-area-trigger:focus-visible {
   --action-gradient:
     linear-gradient(
       135deg,
-      #FF0054,
-      rgba(255, 0, 84, 0.82)
+      #66FCF1,
+      rgba(102, 252, 241, 0.82)
     );
 }
 
@@ -15998,6 +15998,8 @@ h1,
   font-size: 40px;
   font-weight: 700;
   line-height: 1.05;
+  color: #1D1E22 !important;
+  text-transform: uppercase;
 }
 
 h2,
@@ -16006,6 +16008,8 @@ h2,
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
+  color: #1D1E22 !important;
+  text-transform: uppercase;
 }
 
 p {
@@ -16099,7 +16103,7 @@ body {
   color: #1D1E22;
 }
 
-/* Pink is reserved for primary actions */
+/* Cyan is reserved for primary actions */
 .nav-cta,
 .mobile-nav-links a:first-child,
 .landing-primary-btn,
@@ -16121,9 +16125,9 @@ body {
 .email-offer-submit,
 .email-offer-success-close,
 .contact-call-action {
-  border-color: rgba(255, 0, 84, 0.58);
+  border-color: rgba(102, 252, 241, 0.58);
   background: var(--action-gradient);
-  color: #D4D4DC;
+  color: #1D1E22;
   box-shadow:
     0 14px 28px rgba(29, 30, 34, 0.22),
     inset 0 1px 0 rgba(212, 212, 220, 0.16);
@@ -16131,7 +16135,7 @@ body {
 
 .mobile-nav-links a:first-child,
 .nav-cta {
-  color: #D4D4DC !important;
+  color: #1D1E22 !important;
 }
 
 .landing-primary-btn:hover,
@@ -16153,8 +16157,8 @@ body {
 .email-offer-submit:hover,
 .email-offer-success-close:hover,
 .contact-call-action:hover {
-  background: rgba(255, 0, 84, 0.72);
-  color: #D4D4DC;
+  background: rgba(102, 252, 241, 0.72);
+  color: #1D1E22;
 }
 
 .nav-cta:hover,
@@ -16179,10 +16183,10 @@ button.secondary {
     inset 0 1px 0 rgba(212, 212, 220, 0.92);
 }
 
-/* Booking cutoff remains the only pink banner */
+/* Booking cutoff uses the cyan action treatment */
 .appointment-deadline-banner,
 .appointment-deadline-banner.is-after-cutoff {
-  border-top-color: rgba(255, 0, 84, 0.62);
+  border-top-color: rgba(102, 252, 241, 0.62);
   border-bottom-color: rgba(29, 30, 34, 0.28);
   background:
     radial-gradient(
@@ -16192,28 +16196,69 @@ button.secondary {
     ),
     linear-gradient(
       135deg,
-      rgba(255, 0, 84, 0.98),
-      rgba(255, 0, 84, 0.76)
+      rgba(102, 252, 241, 0.98),
+      rgba(102, 252, 241, 0.76)
     );
-  color: #D4D4DC;
+  color: #1D1E22;
   box-shadow:
     0 16px 36px rgba(29, 30, 34, 0.24),
     inset 0 1px 0 rgba(212, 212, 220, 0.18);
 }
 
-.appointment-deadline-pill,
-.appointment-deadline-countdown,
 .appointment-deadline-copy,
-.appointment-deadline-banner.is-after-cutoff .appointment-deadline-pill,
-.appointment-deadline-banner.is-after-cutoff .appointment-deadline-countdown,
 .appointment-deadline-banner.is-after-cutoff .appointment-deadline-copy {
-  color: #D4D4DC;
+  color: #1D1E22;
 }
 
+/* Cyan glass pills */
+.hero-status-pill,
+.warranty-step-pill,
 .appointment-deadline-pill,
-.appointment-deadline-countdown {
-  border-color: rgba(212, 212, 220, 0.34);
-  background: rgba(29, 30, 34, 0.16);
+.appointment-deadline-countdown,
+.nav-disabled span,
+.mobile-nav-disabled small,
+.appointment-deadline-banner.is-after-cutoff .appointment-deadline-pill,
+.appointment-deadline-banner.is-after-cutoff .appointment-deadline-countdown {
+  border-color: rgba(102, 252, 241, 0.72);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(102, 252, 241, 0.42),
+      rgba(102, 252, 241, 0.18)
+    );
+  color: #1D1E22 !important;
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  box-shadow:
+    inset 0 1px 0 rgba(212, 212, 220, 0.5),
+    inset 0 -1px 0 rgba(102, 252, 241, 0.22),
+    0 10px 24px rgba(29, 30, 34, 0.18),
+    0 0 20px rgba(102, 252, 241, 0.18);
+}
+
+.hero-status-pill::before {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(212, 212, 220, 0.48),
+      rgba(102, 252, 241, 0.08)
+    );
+}
+
+.hero-status-pill::after {
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(102, 252, 241, 0.46),
+      transparent
+    );
+}
+
+/* Header coming-soon labels */
+.nav-disabled span,
+.mobile-nav-disabled small {
+  color: #1D1E22 !important;
 }
 
 /* Section surfaces */
