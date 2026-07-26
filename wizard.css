@@ -18,12 +18,8 @@
   --accent: #2b2d42;
   --slot-fill: #f2f4f7;
   --dash: #cfcfd6;
-  --progress-track: #dfe9f2;
-  --highlight: #66fcf1;
   --primary-blue: #077bff;
   --soft-panel: rgba(247, 247, 251, 0.88);
-  --soft-border: rgba(37, 40, 61, 0.12);
-  --soft-shadow: 0 18px 40px rgba(37, 40, 61, 0.12);
   --button-gradient: linear-gradient(135deg, #25283d, #077bff);
   font-family: var(--font-body);
 }
@@ -234,16 +230,6 @@ button {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.12),
     0 0 18px rgba(102, 252, 241, 0.16);
-}
-
-.appointment-deadline-banner.is-after-cutoff {
-  background:
-    radial-gradient(circle at top left, rgba(255, 120, 80, 0.22), transparent 34%),
-    linear-gradient(135deg, rgba(37, 40, 61, 0.98), rgba(180, 70, 40, 0.94));
-}
-
-.appointment-deadline-banner.is-after-cutoff .appointment-deadline-countdown {
-  color: #ffffff;
 }
 
 .site-brand {
@@ -1342,10 +1328,6 @@ text-align: center;
   font-weight: 950;
   text-align: center;
   white-space: nowrap;
-}
-
-.supported-devices-section {
-  overflow: hidden;
 }
 
 .landing-section-header p {
@@ -2674,12 +2656,6 @@ text-align: center;
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
 .review-card {
   min-width: 0;
   padding: 16px;
@@ -2694,24 +2670,6 @@ text-align: center;
   box-shadow:
     0 12px 26px rgba(37, 40, 61, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.86);
-}
-
-.review-card-wide,
-.review-card-repairs {
-  grid-column: 1 / -1;
-}
-
-.review-card h4 {
-  margin: 0 0 12px;
-
-  color: var(--primary-blue);
-
-  font-family: var(--font-display);
-  font-size: 10px;
-  font-weight: 950;
-  letter-spacing: 0.09em;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 .review-card p {
@@ -2733,30 +2691,6 @@ text-align: center;
 
 .review-card p:first-of-type {
   border-top: none;
-}
-
-.review-card strong {
-  color: var(--muted);
-
-  font-family: var(--font-display);
-  font-size: 10px;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
-.review-repair-item {
-  padding: 12px;
-
-  border: 1px solid rgba(102, 252, 241, 0.16);
-  border-radius: 16px;
-
-  background: rgba(255, 255, 255, 0.58);
-}
-
-.review-repair-item + .review-repair-item {
-  margin-top: 10px;
 }
 
 .review-attachments-list {
@@ -2802,14 +2736,6 @@ text-align: center;
   white-space: nowrap;
 }
 
-.review-actions {
-  margin-top: 18px;
-
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
 .review-back,
 .review-submit {
   min-height: 48px;
@@ -2827,29 +2753,6 @@ text-align: center;
   cursor: pointer;
 }
 
-.review-back {
-  border: 1px solid rgba(37, 40, 61, 0.12);
-
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--accent);
-}
-
-.review-submit {
-  border: 1px solid rgba(102, 252, 241, 0.28);
-
-  background: var(--button-gradient);
-  color: #ffffff;
-
-  box-shadow:
-    0 14px 28px rgba(7, 123, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18);
-}
-
-.review-submit:disabled {
-  opacity: 0.62;
-  cursor: not-allowed;
-}
-
 @media (max-width: 760px) {
   .review-panel {
     padding: 18px 13px;
@@ -2861,36 +2764,12 @@ text-align: center;
     gap: 10px;
   }
 
-  .review-card {
-    padding: 14px;
-    border-radius: 16px;
-  }
-
-  .review-card p {
-    grid-template-columns: 1fr;
-    gap: 4px;
-
-    padding: 9px 0;
-
-    font-size: 12.5px;
-    line-height: 1.45;
-  }
-
-  .review-card strong {
-    font-size: 9.75px;
-  }
-
   .review-attachment-item {
     grid-template-columns: auto minmax(0, 1fr);
   }
 
   .review-attachment-size {
     grid-column: 2;
-  }
-
-  .review-actions {
-    flex-direction: column;
-    align-items: stretch;
   }
 
   .review-back,
@@ -4507,11 +4386,6 @@ backdrop-filter: blur(16px) saturate(170%);
   border-left: 1px solid rgba(102, 252, 241, 0.18);
 }
 
-.site-footer-repair-details {
-  display: grid;
-  gap: 12px;
-}
-
 .site-footer-repair-details summary {
   cursor: default;
   list-style: none;
@@ -5609,20 +5483,6 @@ backdrop-filter: blur(16px) saturate(170%);
   width: 100%;
 }
 
-.model-card-results,
-#pr-steps-area.animated-area:has(.model-search-panel) .model-card-results {
-  grid-column: 1 / -1;
-  width: 100%;
-  max-width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 14px;
-
-  justify-content: stretch;
-  align-items: stretch;
-}
-
 .model-card-results .opt-card {
   width: 100%;
   min-width: 0;
@@ -6634,14 +6494,6 @@ backdrop-filter: blur(16px) saturate(170%);
 .success-panel > * {
   position: relative;
   z-index: 1;
-}
-
-.success-hero {
-  display: grid;
-  justify-items: center;
-  gap: 14px;
-
-  margin-bottom: 24px;
 }
 
 .repair-details-panel {
@@ -7772,38 +7624,6 @@ backdrop-filter: blur(16px) saturate(170%);
   text-transform: uppercase;
 }
 
-.selection-summary p:nth-child(5) {
-  grid-column: 1 / -1;
-}
-
-.previews {
-  grid-template-columns: 1fr;
-  gap: 9px;
-}
-
-.file-preview-item {
-  grid-template-columns: 54px minmax(0, 1fr);
-  gap: 10px;
-
-  padding: 10px;
-  border-radius: 15px;
-}
-
-.file-preview-thumb {
-  width: 54px;
-  height: 54px;
-
-  border-radius: 12px;
-}
-
-.file-preview-info strong {
-  font-size: 12px;
-}
-
-.file-preview-info span {
-  font-size: 10.5px;
-}
-
 /* ---------- Customer Form Labels ---------- */
 
 #pr-customer-form > label {
@@ -7909,10 +7729,6 @@ backdrop-filter: blur(16px) saturate(170%);
 
   display: grid;
   align-content: start;
-}
-
-.customer-field-full {
-  grid-column: 1 / -1;
 }
 
 .customer-field > label {
@@ -8131,18 +7947,6 @@ backdrop-filter: blur(16px) saturate(170%);
     box-shadow 0.2s ease,
     border-color 0.2s ease,
     background 0.2s ease;
-}
-
-.repair-policy-toggle:hover {
-  transform: translateY(-1px);
-
-  border-color: rgba(102, 252, 241, 0.58);
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.96),
-    inset 0 -1px 0 rgba(102, 252, 241, 0.26),
-    0 14px 28px rgba(7, 123, 255, 0.14),
-    0 0 0 4px rgba(102, 252, 241, 0.1);
 }
 
 .repair-policy-toggle:hover {
@@ -9526,10 +9330,6 @@ backdrop-filter: blur(16px) saturate(170%);
 
 /* Mobile: make Repair Services a dropdown */
 @media (max-width: 760px) {
-  .site-footer-repair-details {
-    width: 100%;
-  }
-
   .site-footer-repair-details > summary {
     width: 100%;
     min-height: 46px;
@@ -9576,10 +9376,6 @@ backdrop-filter: blur(16px) saturate(170%);
     display: none;
   }
 
-  .site-footer-repair-details[open] > .site-footer-links {
-    display: flex;
-    padding-top: 10px;
-  }
 }
 
 /* =========================================================
@@ -11839,20 +11635,6 @@ body {
   cursor: default;
 }
 
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-img {
-  opacity: 0.26;
-
-  filter:
-    brightness(0)
-    saturate(100%)
-    invert(84%)
-    sepia(46%)
-    saturate(624%)
-    hue-rotate(124deg)
-    brightness(105%)
-    contrast(104%);
-}
-
 #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-missing-choice .card-label {
   width: calc(100% - 14px);
   padding: 6px 6px;
@@ -11875,22 +11657,6 @@ body {
     linear-gradient(180deg, rgba(102, 252, 241, 0.055), rgba(7, 123, 255, 0.025));
 }
 
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-heading,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-heading {
-  color: #66fcf1;
-
-  background:
-    linear-gradient(180deg, rgba(102, 252, 241, 0.12), rgba(102, 252, 241, 0.035));
-}
-
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-back,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-back {
-  background:
-    linear-gradient(180deg, rgba(102, 252, 241, 0.22), rgba(7, 123, 255, 0.22));
-
-  color: #ffffff;
-}
-
 @media (hover: hover) and (pointer: fine) {
   #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover,
   #pr-selection-cards.blueprint-selection-module .card-back:hover,
@@ -11899,12 +11665,6 @@ body {
     transition: none !important;
   }
 
-  #pr-selection-cards.blueprint-selection-module .card-back:not(:disabled):hover {
-    background:
-      linear-gradient(180deg, rgba(102, 252, 241, 0.28), rgba(7, 123, 255, 0.24));
-
-    color: #ffffff;
-  }
 }
 
 @media (min-width: 701px) {
@@ -12170,11 +11930,6 @@ body {
     drop-shadow(0 0 14px rgba(102, 252, 241, 0.24));
 }
 
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-label,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-label {
-  color: rgba(255, 255, 255, 0.94);
-}
-
 /* No movement hover */
 @media (hover: hover) and (pointer: fine) {
   #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover .ape-cell-art,
@@ -12300,22 +12055,6 @@ body {
 }
 
 /* Trigger when all 5 cards are complete */
-#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-top {
-  animation: blueprintBeamX 0.38s ease-out 0s 1 both;
-}
-
-#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-right {
-  animation: blueprintBeamY 0.38s ease-out 0.34s 1 both;
-}
-
-#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-bottom {
-  animation: blueprintBeamX 0.38s ease-out 0.68s 1 both;
-}
-
-#pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam-left {
-  animation: blueprintBeamY 0.38s ease-out 1.02s 1 both;
-}
-
 @keyframes blueprintBeamX {
   0% {
     opacity: 0;
@@ -12367,10 +12106,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #pr-selection-cards.blueprint-selection-module[data-completed-steps="5"] .blueprint-complete-beam .beam {
-    animation: none !important;
-    opacity: 0 !important;
-  }
 }
 /* =========================================================
    CONTINUOUS BLUEPRINT BORDER BEAM
@@ -12458,15 +12193,6 @@ body {
 /* =========================================================
    UNIVERSAL SERVICE HOURS DISABLED STATE
 ========================================================= */
-
-.service-hours-disabled,
-.service-hours-disabled:hover,
-.service-hours-disabled:active {
-  cursor: not-allowed !important;
-  opacity: 0.52 !important;
-  filter: grayscale(0.85) saturate(0.65) !important;
-  transform: none !important;
-}
 
 .service-hours-disabled[aria-disabled="true"] {
   pointer-events: auto;
@@ -12664,17 +12390,7 @@ html.service-hours-closed .service-hours-booking-disabled {
 }
 
 /* Repair multi-select image should stay clean too. */
-#pr-selection-cards.blueprint-selection-module .selected-card-image-multiple {
-  filter: none !important;
-}
-
 @media (max-width: 520px) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-  }
 }
 /* =========================================================
    REPAIR BLUEPRINT PREMIUM IMAGE TREATMENT
@@ -12752,10 +12468,6 @@ html.service-hours-closed .service-hours-booking-disabled {
 }
 
 /* Tighten card balance around the image area. */
-#pr-selection-cards.blueprint-selection-module .pr-progress-card {
-  row-gap: 8px !important;
-}
-
 #pr-selection-cards.blueprint-selection-module .card-label {
   margin-top: 0 !important;
 }
@@ -12987,13 +12699,6 @@ html.service-hours-closed .service-hours-booking-disabled {
     border-radius: 0 !important;
   }
 
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    margin-top: -6px !important;
-  }
-
-  #pr-selection-cards.blueprint-selection-module .card-back {
-    margin-bottom: -6px !important;
-  }
 }
 
 @media (max-width: 520px) {
@@ -13006,13 +12711,6 @@ html.service-hours-closed .service-hours-booking-disabled {
     margin-right: -4px !important;
   }
 
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    margin-top: -4px !important;
-  }
-
-  #pr-selection-cards.blueprint-selection-module .card-back {
-    margin-bottom: -4px !important;
-  }
 }
 /* =========================================================
    REPAIR BLUEPRINT MOBILE IMAGE SLOT RADIUS FIX
@@ -14196,10 +13894,6 @@ body.email-offer-open {
   text-transform: uppercase;
 }
 
-.email-offer-kicker {
-  color: #8fe1d7;
-}
-
 .email-offer-reference {
   color: #c7d3df;
   text-align: right;
@@ -14238,17 +13932,6 @@ body.email-offer-open {
     border-color 0.2s ease;
 }
 
-.email-offer-close:hover,
-.email-offer-close:focus-visible {
-  border-color: #1c8f86;
-  background: #10263b;
-  color: #ffffff;
-}
-
-.email-offer-content {
-  padding: 28px;
-}
-
 .email-offer-eyebrow {
   margin: 0 52px 8px 0;
 
@@ -14274,16 +13957,6 @@ body.email-offer-open {
   letter-spacing: -0.035em;
 }
 
-.email-offer-description {
-  max-width: 470px;
-  margin: 14px 0 20px;
-
-  color: #536477;
-
-  font-size: 14px;
-  line-height: 1.65;
-}
-
 .email-offer-value-card {
   margin-bottom: 22px;
   padding: 18px;
@@ -14306,16 +13979,6 @@ body.email-offer-open {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-}
-
-.email-offer-value {
-  color: #ffffff;
-
-  font-family: var(--font-display);
-  font-size: clamp(38px, 8vw, 54px);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.045em;
 }
 
 .email-offer-value-note {
@@ -14369,13 +14032,6 @@ body.email-offer-open {
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
-}
-
-.email-offer-field input:focus {
-  border-color: #1c8f86;
-
-  box-shadow:
-    0 0 0 3px rgba(28, 143, 134, 0.14);
 }
 
 .email-offer-consent {
@@ -14457,14 +14113,6 @@ body.email-offer-open {
     transform 0.2s ease,
     background 0.2s ease,
     opacity 0.2s ease;
-}
-
-.email-offer-submit:hover,
-.email-offer-submit:focus-visible,
-.email-offer-success-close:hover,
-.email-offer-success-close:focus-visible {
-  background: #16756e;
-  transform: translateY(-1px);
 }
 
 .email-offer-submit:disabled {
@@ -14552,23 +14200,8 @@ body.email-offer-open {
     transform: translateY(28px);
   }
 
-  .email-offer-topbar {
-    padding: 12px 16px;
-
-    border-radius: 19px 19px 0 0;
-  }
-
   .email-offer-reference {
     display: none;
-  }
-
-  .email-offer-close {
-    top: 48px;
-    right: 14px;
-  }
-
-  .email-offer-content {
-    padding: 24px 18px calc(22px + env(safe-area-inset-bottom));
   }
 
   .email-offer-description {
