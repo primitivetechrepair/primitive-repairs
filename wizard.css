@@ -15787,15 +15787,23 @@ option {
 }
 
 .email-offer-topbar,
-.email-offer-close,
 .email-offer-content {
   position: relative;
   z-index: 1;
 }
 
+.email-offer-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  bottom: auto;
+  left: auto;
+  z-index: 4;
+}
+
 .email-offer-topbar {
   min-height: 54px;
-  padding: 14px 22px;
+  padding: 14px 68px 14px 22px;
 
   border-bottom: 1px dashed rgba(143, 225, 215, 0.46);
   border-radius: 23px 23px 0 0;
@@ -16147,7 +16155,7 @@ option {
 
   .email-offer-topbar {
     min-height: 50px;
-    padding: 13px 18px;
+    padding: 13px 62px 13px 18px;
 
     border-radius: 23px 23px 0 0;
   }
@@ -16185,6 +16193,12 @@ option {
 
   .email-offer-value {
     font-size: clamp(48px, 16vw, 62px);
+  }
+
+  .email-offer-close {
+    top: 11px;
+    right: 12px;
+    left: auto;
   }
 }
 
