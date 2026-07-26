@@ -1136,6 +1136,21 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
   const customer = leadPayload?.customer || {};
   const device = leadPayload?.device || {};
   const appointment = leadPayload?.appointment || {};
+  const savings = leadPayload?.savings || {};
+
+  const savingsCode =
+    String(savings.code || "").trim();
+
+  const savingsAmount =
+    Number(savings.amount || 0);
+
+  const savingsStatus =
+    String(
+      savings.status ||
+      (savingsCode
+        ? "Pending verification"
+        : "")
+    ).trim();
 
   const customerName = successValue(customer.name, "Customer");
   const requestId = successValue(leadPayload?.requestId, "Pending");
@@ -1249,6 +1264,24 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
         ${hasAfterHoursFee
           ? renderSuccessItem("Convenience Fee", convenienceFeeLabel)
           : ""}
+        ${savingsCode
+          ? renderSuccessItem(
+              "Savings Code",
+              savingsCode
+            )
+          : ""}
+        ${savingsCode
+          ? renderSuccessItem(
+              "Claimed Savings",
+              `$${savingsAmount.toFixed(2)}`
+            )
+          : ""}
+        ${savingsCode
+          ? renderSuccessItem(
+              "Savings Status",
+              savingsStatus
+            )
+          : ""}
         ${renderSuccessItem("Customer", customerName, "Customer")}
         ${renderSuccessItem("Contact", contactLine, "Not provided")}
         ${renderSuccessItem("Location", customer.serviceLocation, "Not provided")}
@@ -1342,6 +1375,21 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
   const customer = leadPayload.customer || {};
   const device = leadPayload.device || {};
   const appointment = leadPayload.appointment || {};
+  const savings = leadPayload.savings || {};
+
+  const savingsCode =
+    String(savings.code || "").trim();
+
+  const savingsAmount =
+    Number(savings.amount || 0);
+
+  const savingsStatus =
+    String(
+      savings.status ||
+      (savingsCode
+        ? "Pending verification"
+        : "")
+    ).trim();
 
   const selectedRepairs = getSelectedRepairsFromPayload();
 
@@ -1507,6 +1555,33 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("Convenience Fee", convenienceFeeLabel, "None")}
         </div>
 
+        ${savingsCode
+          ? `
+              <div class="review-card review-card-savings">
+                <h4>Savings Redemption</h4>
+
+                ${renderReviewRow(
+                  "Savings Code",
+                  savingsCode
+                )}
+
+                ${renderReviewRow(
+                  "Claimed Savings",
+                  `$${savingsAmount.toFixed(2)}`
+                )}
+
+                ${renderReviewRow(
+                  "Status",
+                  savingsStatus
+                )}
+
+                ${renderReviewRow(
+                  "Application",
+                  "Verified before final pricing"
+                )}
+              </div>
+            `
+          : ""}
         <div class="review-card review-card-notes">
           <h4>Notes & Files</h4>
           ${renderReviewRow("Notes", leadPayload.notes, "None")}

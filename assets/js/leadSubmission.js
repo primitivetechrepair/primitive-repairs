@@ -14,6 +14,13 @@ function generateRequestId() {
   return `PTR-${datePart}-${randomPart}`;
 }
 
+function normalizeSavingsCode(value) {
+  return String(value || "")
+    .trim()
+    .toUpperCase()
+    .replace(/\s+/g, "")
+    .slice(0, 40);
+}
 function normalizeRepair(repair) {
   if (!repair) {
     return null;
@@ -90,6 +97,10 @@ export function applyAfterHoursBookingDetails(payload) {
 export function buildLeadPayload(form) {
   const formData = new FormData(form);
 
+  const savingsCode = normalizeSavingsCode(
+    formData.get("savingsCode")
+  );
+
   const selectedRepairs = getSelectedRepairs();
   const normalizedRepairs = selectedRepairs
     .map(normalizeRepair)
@@ -116,6 +127,19 @@ export function buildLeadPayload(form) {
       zip: String(formData.get("zip") || "").trim()
     },
 
+    savings: {
+      code: savingsCode,
+      amount: savingsCode ? 10 : 0,
+      status: savingsCode
+        ? "Pending verification"
+        : null,
+      source: savingsCode
+        ? "Email repair coupon"
+        : null,
+      eligibility: savingsCode
+        ? "Minimum $75 repair subtotal; exclusions apply."
+        : null
+    },
     device: {
       type: state.device,
       brand: state.brand,

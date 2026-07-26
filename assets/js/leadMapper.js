@@ -60,6 +60,43 @@ export function mapWizardPayloadToLead(payload) {
 
   const generalNotes = String(payload.notes || "").trim();
 
+  const savings =
+    payload.savings &&
+    typeof payload.savings === "object"
+      ? payload.savings
+      : {};
+
+  const savingsCode =
+    String(savings.code || "")
+      .trim()
+      .toUpperCase();
+
+  const savingsAmount =
+    savingsCode
+      ? Math.max(
+          0,
+          Number(savings.amount || 10)
+        )
+      : 0;
+
+  const savingsStatus =
+    savingsCode
+      ? String(
+          savings.status ||
+          "Pending verification"
+        ).trim()
+      : "";
+
+  const savingsNote =
+    savingsCode
+      ? [
+          "Savings Redemption",
+          `Code: ${savingsCode}`,
+          `Claimed Savings: $${savingsAmount.toFixed(2)}`,
+          `Status: ${savingsStatus}`,
+          "Eligibility must be verified before the savings is applied."
+        ].join(" | ")
+      : "";
   const repairNotes = repairDetails
     .filter((item) => item.details)
     .map((item) => `${item.repair}: ${item.details}`);
@@ -91,6 +128,7 @@ export function mapWizardPayloadToLead(payload) {
   const combinedNotes = [
     ...repairNotes,
     ...addOnNotes,
+    savingsNote,
     generalNotes ? `General Notes: ${generalNotes}` : ""
   ]
     .filter(Boolean)
@@ -120,6 +158,27 @@ export function mapWizardPayloadToLead(payload) {
 
     addOns,
 
+    savings: {
+      code: savingsCode,
+      amount: savingsAmount,
+      status: savingsStatus,
+      source: savingsCode
+        ? String(
+            savings.source ||
+            "Email repair coupon"
+          ).trim()
+        : "",
+      eligibility: savingsCode
+        ? String(
+            savings.eligibility ||
+            "Minimum $75 repair subtotal; exclusions apply."
+          ).trim()
+        : ""
+    },
+
+    savingsCode,
+    savingsAmount,
+    savingsStatus,
     repairItems: [
       ...repairNames.map((name) => ({
         type: name,

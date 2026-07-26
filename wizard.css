@@ -16207,3 +16207,159 @@ option {
     transition: none;
   }
 }
+
+/* =========================================================
+   REPAIR REQUEST SAVINGS CODE FIELD
+========================================================= */
+
+.savings-code-field {
+  position: relative;
+
+  padding: 18px;
+
+  border: 1px dashed rgba(28, 143, 134, 0.55);
+  border-radius: 16px;
+
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(144, 255, 220, 0.16),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(241, 250, 251, 0.96),
+      rgba(232, 246, 247, 0.96)
+    );
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.72),
+    0 12px 28px rgba(16, 38, 59, 0.08);
+}
+
+.savings-code-field > label {
+  color: #10263b;
+
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.savings-code-input-wrap {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  align-items: stretch;
+
+  overflow: hidden;
+
+  margin-top: 9px;
+
+  border: 1px solid rgba(28, 143, 134, 0.44);
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 9px 22px rgba(16, 38, 59, 0.08);
+}
+
+.savings-code-ticket {
+  display: grid;
+  place-items: center;
+
+  border-right: 1px dashed rgba(144, 255, 220, 0.65);
+
+  background:
+    linear-gradient(
+      135deg,
+      #102f4f,
+      #164b55
+    );
+
+  color: #90ffdc;
+
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.savings-code-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  margin: 0;
+  padding: 13px 15px;
+
+  border: 0;
+  border-radius: 0;
+
+  background: transparent;
+  color: #10263b;
+
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  box-shadow: none;
+}
+
+.savings-code-input-wrap input:focus {
+  outline: 0;
+
+  box-shadow:
+    inset 0 0 0 3px rgba(28, 143, 134, 0.14);
+}
+
+.savings-code-input-wrap:focus-within {
+  border-color: #1c8f86;
+
+  box-shadow:
+    0 0 0 4px rgba(28, 143, 134, 0.11),
+    0 12px 26px rgba(16, 38, 59, 0.1);
+}
+
+.savings-code-help {
+  margin-top: 10px;
+
+  color: #526579;
+
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.review-card-savings {
+  border-color: rgba(28, 143, 134, 0.58);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(233, 255, 251, 0.94),
+      rgba(244, 250, 252, 0.98)
+    );
+}
+
+.review-card-savings h4 {
+  color: #16756e;
+}
+
+@media (max-width: 620px) {
+  .savings-code-field {
+    padding: 15px;
+  }
+
+  .savings-code-input-wrap {
+    grid-template-columns: 62px minmax(0, 1fr);
+  }
+
+  .savings-code-ticket {
+    font-size: 18px;
+  }
+
+  .savings-code-input-wrap input {
+    min-height: 50px;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

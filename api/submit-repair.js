@@ -61,6 +61,38 @@ export default async function handler(req, res) {
       lead.customerEmail ||
       "Not provided";
 
+    const savingsCode =
+      String(
+        lead.savingsCode ||
+        lead.savings?.code ||
+        ""
+      )
+        .trim()
+        .toUpperCase();
+
+    const rawSavingsAmount =
+      Number(
+        lead.savingsAmount ??
+        lead.savings?.amount ??
+        (savingsCode ? 10 : 0)
+      );
+
+    const savingsAmount =
+      Number.isFinite(rawSavingsAmount) &&
+      rawSavingsAmount > 0
+        ? rawSavingsAmount
+        : savingsCode
+          ? 10
+          : 0;
+
+    const savingsStatus =
+      String(
+        lead.savingsStatus ||
+        lead.savings?.status ||
+        (savingsCode
+          ? "Pending verification"
+          : "")
+      ).trim();
     const device =
       lead.device ||
       lead.deviceType ||
@@ -172,12 +204,32 @@ export default async function handler(req, res) {
         ? lines.join("\n")
         : "Not provided";
     };
-    const repairDetails =
-      formatRepairDetailsForEmail(lead.repairDetails ||
-      lead.issue ||
-      lead.notes ||
-      lead.description ||
-      "Not provided");
+    const baseRepairDetails =
+      formatRepairDetailsForEmail(
+        lead.repairDetails ||
+        lead.issue ||
+        lead.notes ||
+        lead.description ||
+        "Not provided"
+      );
+
+    const savingsSummary =
+      savingsCode
+        ? [
+            "Savings Redemption",
+            `Code: ${savingsCode}`,
+            `Claimed Savings: $${savingsAmount.toFixed(2)}`,
+            `Status: ${savingsStatus}`,
+            "Verify eligibility before applying the savings."
+          ].join("\n")
+        : "";
+
+    const repairDetails = [
+      baseRepairDetails,
+      savingsSummary
+    ]
+      .filter(Boolean)
+      .join("\n\n");
 
     const rawAddOns =
       Array.isArray(lead.addOns) &&
