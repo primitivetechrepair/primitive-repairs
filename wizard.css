@@ -15949,7 +15949,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
 }
 
 /* =========================================================
-   PRIMITIVE REPAIRS CYAN GLASS TYPOGRAPHY SYSTEM
+   PRIMITIVE REPAIRS FULL GLASS CONTRAST SYSTEM
 ========================================================= */
 
 :root {
@@ -16687,31 +16687,6 @@ section p,
   color: #DCEDFF;
 }
 
-/* Previously specified dark components remain dark. */
-h1,
-h2,
-.landing-hero h1,
-.landing-section-header h2,
-.selection-cards .card,
-.selection-cards .card *,
-.pr-options .opt-card,
-.pr-options .opt-card *,
-.animated-area .opt-card,
-.animated-area .opt-card *,
-.device-card-results .opt-card,
-.device-card-results .opt-card *,
-.brand-card-results .opt-card,
-.brand-card-results .opt-card *,
-.series-card-results .opt-card,
-.series-card-results .opt-card *,
-.model-card-results .opt-card,
-.model-card-results .opt-card *,
-.repair-card-results .opt-card,
-.repair-card-results .opt-card *,
-#pr-selection-cards.blueprint-selection-module,
-#pr-selection-cards.blueprint-selection-module * {
-  color: #1D1E22;
-}
 
 @media (max-width: 700px) {
   .landing-section,
@@ -16740,5 +16715,527 @@ h2,
   .pr-options .opt-card,
   .animated-area .opt-card {
     border-radius: 22px;
+  }
+}
+
+/* =========================================================
+   FULL-SITE GLASSMORPH CONTRAST AND BLUEPRINT CORRECTION
+========================================================= */
+
+:root {
+  --glass-canvas: #1D1E22;
+  --glass-surface: #393F4D;
+  --glass-light: #D4D4DC;
+  --glass-copy: #DCEDFF;
+  --glass-action: #66FCF1;
+  --site-header-height: 116px;
+}
+
+/* Primary-color-only canvas treatment. */
+html,
+body {
+  background-color: #1D1E22;
+  background-image:
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(102, 252, 241, 0.08),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 88% 22%,
+      rgba(220, 237, 255, 0.07),
+      transparent 34%
+    ),
+    linear-gradient(
+      155deg,
+      #1D1E22,
+      rgba(57, 63, 77, 0.72),
+      #1D1E22
+    );
+  background-attachment: fixed;
+}
+
+/* Header and cutoff banner form one continuous fixed shell. */
+.site-nav {
+  margin: 0;
+}
+
+.appointment-deadline-banner,
+.appointment-deadline-banner.is-after-cutoff {
+  top: var(--site-header-height);
+  margin: 0;
+  border-top-width: 0;
+  transform: none;
+}
+
+/* The two named headings and all dark-section headings use light copy. */
+.landing-hero h1,
+.pr-header h2,
+.landing-section h1,
+.landing-section h2,
+.landing-section-header h2,
+.supported-devices-section h1,
+.supported-devices-section h2,
+.reviews-section h1,
+.reviews-section h2,
+.trust-section h1,
+.trust-section h2,
+.warranty-section h1,
+.warranty-section h2,
+.faq-section h1,
+.faq-section h2,
+.contact-section h1,
+.contact-section h2,
+#primitive-wizard-container > h1,
+#primitive-wizard-container > h2,
+#primitive-wizard-container .pr-header h1,
+#primitive-wizard-container .pr-header h2 {
+  color: #DCEDFF !important;
+}
+
+/* Standard section copy is light unless a light component overrides it. */
+.landing-section,
+.supported-devices-section,
+.reviews-section,
+.trust-section,
+.warranty-section,
+.faq-section,
+.contact-section,
+#primitive-wizard-container,
+.pr-header,
+.model-search-panel,
+.repair-details-panel,
+.repair-info-panel,
+.appointment-panel,
+.customer-repair-summary,
+.review-panel,
+.success-panel,
+.wizard-live-summary,
+.site-footer {
+  color: #DCEDFF;
+}
+
+section p,
+.landing-section p,
+.supported-devices-section p,
+.reviews-section p,
+.trust-section p,
+.warranty-section p,
+.faq-section p,
+.contact-section p,
+#primitive-wizard-container p,
+.pr-header p,
+.model-search-panel p,
+.repair-details-panel p,
+.repair-info-panel p,
+.appointment-panel p,
+.customer-repair-summary p,
+.review-panel p,
+.success-panel p,
+.wizard-live-summary p,
+.site-footer p {
+  color: #DCEDFF;
+  font-weight: 300 !important;
+}
+
+/* Shared glass surfaces use only the approved primary palette. */
+.landing-hero,
+.landing-section,
+.supported-devices-section,
+.reviews-section,
+.trust-section,
+.warranty-section,
+.faq-section,
+.contact-section,
+#primitive-wizard-container,
+.pr-header,
+.selection-cards,
+.model-search-panel,
+.repair-details-panel,
+.repair-info-panel,
+.appointment-panel,
+.customer-repair-summary,
+.review-panel,
+.success-panel,
+.wizard-live-summary,
+.supported-device-card,
+.process-step,
+.review-card,
+.faq-item,
+.contact-card,
+.site-footer {
+  border-color: rgba(220, 237, 255, 0.2);
+  background-color: rgba(57, 63, 77, 0.68);
+  background-image:
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(220, 237, 255, 0.12),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.82),
+      rgba(29, 30, 34, 0.68)
+    );
+  backdrop-filter: blur(24px) saturate(155%);
+  -webkit-backdrop-filter: blur(24px) saturate(155%);
+  box-shadow:
+    0 24px 60px rgba(29, 30, 34, 0.34),
+    inset 0 1px 0 rgba(220, 237, 255, 0.12),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.2);
+}
+
+/* Stronger rounding across major and supporting surfaces. */
+.landing-hero,
+.landing-section,
+.supported-devices-section,
+.reviews-section,
+.trust-section,
+.warranty-section,
+.faq-section,
+.contact-section,
+#primitive-wizard-container,
+.site-footer {
+  border-radius: 40px;
+}
+
+.pr-header,
+.selection-cards,
+.model-search-panel,
+.repair-details-panel,
+.repair-info-panel,
+.appointment-panel,
+.customer-repair-summary,
+.review-panel,
+.success-panel,
+.wizard-live-summary,
+.supported-device-card,
+.process-step,
+.review-card,
+.faq-item,
+.contact-card {
+  border-radius: 28px;
+}
+
+/* Light controls and cards retain dark readable content. */
+input,
+textarea,
+select,
+.form-control,
+.savings-code-input-wrap,
+.wizard-live-summary-item,
+.review-card-row,
+.success-summary-row,
+.selection-cards .card,
+.selection-cards .card *,
+.pr-options .opt-card,
+.pr-options .opt-card *,
+.animated-area .opt-card,
+.animated-area .opt-card *,
+.device-card-results .opt-card,
+.device-card-results .opt-card *,
+.brand-card-results .opt-card,
+.brand-card-results .opt-card *,
+.series-card-results .opt-card,
+.series-card-results .opt-card *,
+.model-card-results .opt-card,
+.model-card-results .opt-card *,
+.repair-card-results .opt-card,
+.repair-card-results .opt-card * {
+  color: #1D1E22;
+}
+
+/* Selection cards use one permanent glass palette in every state. */
+.selection-cards .card,
+.pr-options .opt-card,
+.animated-area .opt-card,
+.device-card-results .opt-card,
+.brand-card-results .opt-card,
+.series-card-results .opt-card,
+.model-card-results .opt-card,
+.repair-card-results .opt-card,
+.selection-cards .card.filled,
+.selection-cards .card.filled:hover,
+.selection-cards .card.is-current-step,
+.pr-options .opt-card.selected,
+.pr-options .opt-card.is-selected,
+.animated-area .opt-card.selected,
+.animated-area .opt-card.is-selected,
+.device-card-results .opt-card.selected,
+.device-card-results .opt-card.is-selected,
+.brand-card-results .opt-card.selected,
+.brand-card-results .opt-card.is-selected,
+.series-card-results .opt-card.selected,
+.series-card-results .opt-card.is-selected,
+.model-card-results .opt-card.selected,
+.model-card-results .opt-card.is-selected,
+.repair-card-results .opt-card.selected,
+.repair-card-results .opt-card.is-selected,
+.opt-card[aria-pressed="true"] {
+  border-color: rgba(220, 237, 255, 0.5);
+  border-radius: 26px;
+  background-color: rgba(212, 212, 220, 0.72);
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.8),
+      rgba(212, 212, 220, 0.56)
+    );
+  color: #1D1E22;
+  backdrop-filter: blur(22px) saturate(165%);
+  -webkit-backdrop-filter: blur(22px) saturate(165%);
+  box-shadow:
+    0 18px 38px rgba(29, 30, 34, 0.22),
+    inset 0 1px 0 rgba(220, 237, 255, 0.88),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.08);
+}
+
+/* Labels inside selected cards also keep their original glass colors. */
+.selection-cards .card-label,
+.selection-cards .card-back,
+.pr-options .opt-card .opt-label,
+.animated-area .opt-card .opt-label,
+.device-card-results .opt-card .opt-label,
+.brand-card-results .opt-card .opt-label,
+.series-card-results .opt-card .opt-label,
+.model-card-results .opt-card .opt-label,
+.repair-card-results .opt-card .opt-label,
+.selection-cards .card.filled .card-label,
+.selection-cards .card.is-current-step .card-label,
+.opt-card.selected .opt-label,
+.opt-card.is-selected .opt-label,
+.opt-card[aria-pressed="true"] .opt-label {
+  border-color: rgba(220, 237, 255, 0.44);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.68),
+      rgba(212, 212, 220, 0.5)
+    );
+  color: #1D1E22;
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.72);
+}
+
+/* Repair Blueprint: dark glass background, light graph and light copy. */
+#pr-selection-cards.blueprint-selection-module {
+  border-color: rgba(220, 237, 255, 0.28);
+  border-radius: 40px;
+  background-color: #1D1E22;
+  background-image:
+    linear-gradient(
+      rgba(220, 237, 255, 0.12) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(220, 237, 255, 0.12) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(220, 237, 255, 0.11),
+      transparent 48%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(29, 30, 34, 0.98),
+      rgba(57, 63, 77, 0.72)
+    );
+  color: #DCEDFF;
+  backdrop-filter: blur(26px) saturate(150%);
+  -webkit-backdrop-filter: blur(26px) saturate(150%);
+  box-shadow:
+    0 28px 72px rgba(29, 30, 34, 0.42),
+    inset 0 1px 0 rgba(220, 237, 255, 0.14);
+  background-size:
+    24px 24px,
+    24px 24px,
+    auto,
+    auto;
+}
+
+#pr-selection-cards.blueprint-selection-module::before {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(220, 237, 255, 0.1),
+      transparent 28%,
+      rgba(220, 237, 255, 0.04),
+      transparent 72%
+    );
+}
+
+#pr-selection-cards.blueprint-selection-module,
+#pr-selection-cards.blueprint-selection-module > *,
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker,
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong,
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header p,
+#pr-selection-cards.blueprint-selection-module .blueprint-progress-copy,
+#pr-selection-cards.blueprint-selection-module .blueprint-status {
+  color: #DCEDFF;
+}
+
+#pr-selection-cards.blueprint-selection-module .blueprint-profile-header {
+  border-color: rgba(220, 237, 255, 0.22);
+  border-radius: 26px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.72),
+      rgba(29, 30, 34, 0.62)
+    );
+  color: #DCEDFF;
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+}
+
+/* Blueprint display cards stay light and never recolor after selection. */
+#pr-selection-cards.blueprint-selection-module .pr-progress-card,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover {
+  border-color: rgba(220, 237, 255, 0.5);
+  border-radius: 24px;
+  background-color: rgba(212, 212, 220, 0.72);
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.8),
+      rgba(212, 212, 220, 0.56)
+    );
+  color: #1D1E22;
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow:
+    0 16px 34px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(220, 237, 255, 0.86);
+}
+
+#pr-selection-cards.blueprint-selection-module .pr-progress-card *,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled *,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step * {
+  color: #1D1E22;
+}
+
+#pr-selection-cards.blueprint-selection-module .card-heading,
+#pr-selection-cards.blueprint-selection-module .card-label,
+#pr-selection-cards.blueprint-selection-module .card-back,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-heading,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-label,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-back,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-heading,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-label,
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-back {
+  border-color: rgba(220, 237, 255, 0.42);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.68),
+      rgba(212, 212, 220, 0.5)
+    );
+  color: #1D1E22;
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.7);
+}
+
+/* Blueprint line art follows the requested light graph color. */
+#pr-selection-cards.blueprint-selection-module .card-img,
+#pr-selection-cards.blueprint-selection-module .ape-cell-art {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(93%)
+    sepia(10%)
+    saturate(508%)
+    hue-rotate(177deg)
+    brightness(104%)
+    contrast(103%);
+}
+
+/* Footer is glass without altering social-brand buttons. */
+.site-footer {
+  border-top-color: rgba(220, 237, 255, 0.18);
+  background-color: rgba(57, 63, 77, 0.72);
+  background-image:
+    radial-gradient(
+      circle at 12% 0%,
+      rgba(220, 237, 255, 0.1),
+      transparent 36%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.84),
+      rgba(29, 30, 34, 0.72)
+    );
+  color: #DCEDFF;
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+}
+
+.site-footer-link-title,
+.site-footer-bottom,
+.site-footer-bottom span {
+  color: #DCEDFF;
+}
+
+/* Exact header heights keep the cutoff banner flush at every breakpoint. */
+@media (max-width: 1040px) {
+  :root {
+    --site-header-height: 84px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --site-header-height: 74px;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --site-header-height: 78px;
+  }
+
+  .site-nav {
+    margin: 0;
+  }
+
+  .landing-hero,
+  .landing-section,
+  .supported-devices-section,
+  .reviews-section,
+  .trust-section,
+  .warranty-section,
+  .faq-section,
+  .contact-section,
+  #primitive-wizard-container,
+  #pr-selection-cards.blueprint-selection-module,
+  .site-footer {
+    border-radius: 30px;
+  }
+
+  .pr-header,
+  .selection-cards,
+  .model-search-panel,
+  .repair-details-panel,
+  .repair-info-panel,
+  .appointment-panel,
+  .customer-repair-summary,
+  .review-panel,
+  .success-panel,
+  .wizard-live-summary,
+  .supported-device-card,
+  .process-step,
+  .review-card,
+  .faq-item,
+  .contact-card,
+  .selection-cards .card,
+  .pr-options .opt-card,
+  .animated-area .opt-card,
+  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
+    border-radius: 24px;
   }
 }
