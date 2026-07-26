@@ -88,18 +88,18 @@
       >
         <div class="email-offer-topbar">
           <span class="email-offer-kicker">
-            Repair Blueprint
+            Repair Coupon
           </span>
 
           <span class="email-offer-reference">
-            Savings Authorization
+            Email-Only Offer
           </span>
         </div>
 
         <button
           class="email-offer-close"
           type="button"
-          aria-label="Close savings offer"
+          aria-label="Close coupon offer"
         >
           ×
         </button>
@@ -110,20 +110,19 @@
           </div>
 
           <h2 id="email-offer-title">
-            Save $10 on your repair.
+            Claim $10 off your repair.
           </h2>
 
           <p
             class="email-offer-description"
             id="email-offer-description"
           >
-            Register your email and receive a one-time savings
-            authorization code for a qualifying completed repair.
+            Enter your email to receive a one-time coupon code for a qualifying completed repair.
           </p>
 
           <div class="email-offer-value-card">
             <div class="email-offer-value-label">
-              Customer Savings Authorization
+              Email Repair Coupon
             </div>
 
             <div class="email-offer-value">
@@ -131,7 +130,7 @@
             </div>
 
             <div class="email-offer-value-note">
-              Qualifying completed repair
+              Minimum $75 repair subtotal
             </div>
           </div>
 
@@ -199,7 +198,7 @@
               class="email-offer-submit"
               type="submit"
             >
-              Send My $10 Code
+              Email My $10 Coupon
             </button>
           </form>
 
@@ -346,7 +345,7 @@
     }
 
     submitButton.disabled = true;
-    submitButton.textContent = "Sending Code...";
+    submitButton.textContent = "Sending Coupon...";
 
     try {
       const response = await fetch(
@@ -399,7 +398,7 @@
           <h3>Check your email.</h3>
 
           <p>
-            Your $10 Repair Blueprint savings code is on the way.
+            Your $10 repair coupon code is on the way.
           </p>
 
           <button
@@ -431,7 +430,7 @@
       );
 
       submitButton.disabled = false;
-      submitButton.textContent = "Send My $10 Code";
+      submitButton.textContent = "Email My $10 Coupon";
     }
   }
 

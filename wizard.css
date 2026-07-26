@@ -15741,3 +15741,455 @@ option {
     text-align: left;
   }
 }
+
+/* =========================================================
+   PRIMITIVE REPAIRS EMAIL COUPON THEME OVERRIDE
+========================================================= */
+
+.email-offer-dialog {
+  isolation: isolate;
+
+  width: min(100%, 580px);
+
+  border: 1px solid rgba(143, 225, 215, 0.72);
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      rgba(248, 251, 253, 0.985),
+      rgba(248, 251, 253, 0.985)
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(16, 38, 59, 0.035) 0,
+      rgba(16, 38, 59, 0.035) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+
+  box-shadow:
+    0 34px 90px rgba(5, 18, 31, 0.42),
+    0 12px 28px rgba(5, 18, 31, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.72);
+}
+
+.email-offer-dialog::before {
+  content: "";
+
+  position: absolute;
+  inset: 10px;
+  z-index: 0;
+
+  border: 1px dashed rgba(77, 105, 128, 0.34);
+  border-radius: 17px;
+
+  pointer-events: none;
+}
+
+.email-offer-topbar,
+.email-offer-close,
+.email-offer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.email-offer-topbar {
+  min-height: 54px;
+  padding: 14px 22px;
+
+  border-bottom: 1px dashed rgba(143, 225, 215, 0.46);
+  border-radius: 23px 23px 0 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0e2438 0%,
+      #12324a 56%,
+      #164b55 100%
+    );
+
+  color: #ffffff;
+}
+
+.email-offer-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+}
+
+.email-offer-kicker::before {
+  content: "✂";
+
+  color: #8fe1d7;
+
+  font-size: 13px;
+  line-height: 1;
+}
+
+.email-offer-reference {
+  padding: 5px 9px;
+
+  border: 1px solid rgba(143, 225, 215, 0.4);
+  border-radius: 999px;
+
+  background: rgba(143, 225, 215, 0.08);
+  color: #baf3ec;
+}
+
+.email-offer-close {
+  display: grid;
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid rgba(16, 38, 59, 0.14);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.94);
+  color: #10263b;
+
+  box-shadow: 0 8px 22px rgba(16, 38, 59, 0.16);
+}
+
+.email-offer-close:hover,
+.email-offer-close:focus-visible {
+  border-color: rgba(28, 143, 134, 0.56);
+
+  background: #e9fffb;
+  color: #16756e;
+}
+
+.email-offer-content {
+  padding: 34px 34px 30px;
+}
+
+.email-offer-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 11px;
+
+  color: #16756e;
+}
+
+.email-offer-eyebrow::before {
+  content: "";
+
+  width: 22px;
+  height: 2px;
+
+  border-radius: 999px;
+
+  background: #1c8f86;
+}
+
+.email-offer-content h2 {
+  max-width: 470px;
+
+  color: #10263b;
+
+  font-family: var(--font-display);
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.email-offer-description {
+  max-width: 500px;
+  margin: 14px 0 22px;
+
+  color: #526579;
+
+  font-size: 14px;
+  line-height: 1.68;
+}
+
+.email-offer-value-card {
+  position: relative;
+
+  overflow: visible;
+
+  margin: 0 3px 24px;
+  padding: 22px 28px 20px;
+
+  border: 2px dashed rgba(143, 225, 215, 0.78);
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      circle at 18% 20%,
+      rgba(143, 225, 215, 0.13),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #0d2134 0%,
+      #12324a 58%,
+      #174d56 100%
+    );
+
+  box-shadow:
+    0 16px 34px rgba(16, 38, 59, 0.23),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  text-align: center;
+}
+
+.email-offer-value-card::before,
+.email-offer-value-card::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(126, 145, 163, 0.42);
+  border-radius: 50%;
+
+  background: #f8fbfd;
+
+  transform: translateY(-50%);
+}
+
+.email-offer-value-card::before {
+  left: -18px;
+}
+
+.email-offer-value-card::after {
+  right: -18px;
+}
+
+.email-offer-value-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-bottom: 12px;
+
+  color: #9ce9df;
+}
+
+.email-offer-value-label::before {
+  content: "COUPON";
+
+  padding: 4px 7px;
+
+  border: 1px solid rgba(156, 233, 223, 0.36);
+  border-radius: 999px;
+
+  background: rgba(156, 233, 223, 0.08);
+
+  font-size: 8px;
+  letter-spacing: 0.16em;
+}
+
+.email-offer-value {
+  color: #ffffff;
+
+  font-family: var(--font-display);
+  font-size: clamp(46px, 9vw, 66px);
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: -0.055em;
+
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.24);
+}
+
+.email-offer-value-note {
+  margin-top: 15px;
+  padding-top: 14px;
+
+  border-top: 1px dashed rgba(169, 186, 201, 0.48);
+
+  color: #c6d4df;
+}
+
+.email-offer-value-note::after {
+  content: "";
+
+  display: block;
+
+  width: 138px;
+  height: 22px;
+  margin: 14px auto 0;
+
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.88) 0,
+      rgba(255, 255, 255, 0.88) 2px,
+      transparent 2px,
+      transparent 5px,
+      rgba(255, 255, 255, 0.62) 5px,
+      rgba(255, 255, 255, 0.62) 6px,
+      transparent 6px,
+      transparent 9px
+    );
+
+  opacity: 0.82;
+}
+
+.email-offer-form {
+  gap: 14px;
+
+  padding-top: 22px;
+
+  border-top: 1px dashed rgba(104, 126, 145, 0.42);
+}
+
+.email-offer-field label {
+  color: #2c4358;
+}
+
+.email-offer-field input {
+  border: 1px solid #aabac7;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  box-shadow:
+    inset 0 1px 2px rgba(16, 38, 59, 0.05),
+    0 8px 22px rgba(16, 38, 59, 0.05);
+}
+
+.email-offer-field input:focus {
+  border-color: #1c8f86;
+
+  box-shadow:
+    0 0 0 4px rgba(28, 143, 134, 0.13),
+    0 10px 24px rgba(16, 38, 59, 0.08);
+}
+
+.email-offer-consent {
+  padding: 12px 13px;
+
+  border: 1px solid rgba(109, 132, 151, 0.24);
+  border-radius: 11px;
+
+  background: rgba(236, 243, 247, 0.68);
+}
+
+.email-offer-submit,
+.email-offer-success-close {
+  min-height: 52px;
+
+  border: 1px solid #126e67;
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #209c91 0%,
+      #16756e 100%
+    );
+
+  box-shadow:
+    0 12px 24px rgba(28, 143, 134, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.email-offer-submit:hover,
+.email-offer-submit:focus-visible,
+.email-offer-success-close:hover,
+.email-offer-success-close:focus-visible {
+  background:
+    linear-gradient(
+      135deg,
+      #167f77 0%,
+      #105f5a 100%
+    );
+
+  box-shadow:
+    0 15px 30px rgba(28, 143, 134, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  transform: translateY(-1px);
+}
+
+.email-offer-terms {
+  border-top: 1px dashed rgba(104, 126, 145, 0.38);
+
+  color: #687b8d;
+}
+
+.email-offer-success-mark {
+  border: 2px dashed #70c9bf;
+  border-radius: 14px;
+
+  background: #e9fffb;
+
+  transform: rotate(-3deg);
+}
+
+@media (max-width: 620px) {
+  .email-offer-dialog {
+    border-top: 1px solid rgba(143, 225, 215, 0.72);
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .email-offer-dialog::before {
+    inset: 8px 8px 0;
+
+    border-bottom: 0;
+    border-radius: 17px 17px 0 0;
+  }
+
+  .email-offer-topbar {
+    min-height: 50px;
+    padding: 13px 18px;
+
+    border-radius: 23px 23px 0 0;
+  }
+
+  .email-offer-content {
+    padding:
+      27px
+      20px
+      calc(24px + env(safe-area-inset-bottom));
+  }
+
+  .email-offer-content h2 {
+    font-size: clamp(29px, 9vw, 38px);
+  }
+
+  .email-offer-value-card {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 20px 22px 18px;
+  }
+
+  .email-offer-value-card::before,
+  .email-offer-value-card::after {
+    width: 26px;
+    height: 26px;
+  }
+
+  .email-offer-value-card::before {
+    left: -16px;
+  }
+
+  .email-offer-value-card::after {
+    right: -16px;
+  }
+
+  .email-offer-value {
+    font-size: clamp(48px, 16vw, 62px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .email-offer-close {
+    transition: none;
+  }
+}
