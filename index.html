@@ -136,7 +136,7 @@
   >
 </noscript>
 
-<link rel="modulepreload" href="/assets/js/wizard.js?v=20260726-1">
+<link rel="modulepreload" href="/assets/js/wizard.js?v=20260726-2">
 
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="wizard.css?v=20260726-3">
@@ -347,7 +347,7 @@
           class="customer-field customer-field-full customer-field-optional savings-code-field"
         >
           <label for="cf-savings-code">
-            Savings code
+            Promotion code
             <span class="optional-field-badge">Optional</span>
           </label>
 
@@ -356,25 +356,26 @@
               class="savings-code-ticket"
               aria-hidden="true"
             >
-              $10
+              CODE
             </span>
 
             <input
               id="cf-savings-code"
-              name="savingsCode"
+              name="promotionCode"
               type="text"
-              maxlength="40"
+              maxlength="80"
               autocomplete="off"
               autocapitalize="characters"
               spellcheck="false"
-              placeholder="Enter the coupon code from your email"
+              placeholder="Enter coupon, offer, referral, or bundle code"
             >
           </div>
 
           <div class="field-help savings-code-help">
-            Enter the code exactly as shown in your email. Savings are
-            verified before final pricing and are not automatically
-            applied when this request is submitted.
+            Enter any promotional code you received. The offer type,
+            value, terms, and eligibility are verified before final
+            pricing and are not automatically applied when this request
+            is submitted.
           </div>
         </div>
 
@@ -1039,7 +1040,7 @@
   </div>
 </template>
 
-<script type="module" src="/assets/js/wizard.js?v=20260726-1"></script>
+<script type="module" src="/assets/js/wizard.js?v=20260726-2"></script>
 <script src="/assets/js/header.js?v=20260723-2" defer></script>
 <script src="/assets/js/footer.js?v=20260614-1" defer></script>
 <script src="/assets/js/mobileNav.js?v=20260614-1" defer></script>

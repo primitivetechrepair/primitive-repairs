@@ -61,38 +61,52 @@ export default async function handler(req, res) {
       lead.customerEmail ||
       "Not provided";
 
-    const savingsCode =
+    const promotion =
+      lead.promotion &&
+      typeof lead.promotion === "object"
+        ? lead.promotion
+        : lead.savings &&
+            typeof lead.savings === "object"
+          ? lead.savings
+          : {};
+
+    const promotionCode =
       String(
+        lead.promotionCode ||
+        promotion.code ||
         lead.savingsCode ||
-        lead.savings?.code ||
         ""
       )
         .trim()
         .toUpperCase();
 
-    const rawSavingsAmount =
-      Number(
-        lead.savingsAmount ??
-        lead.savings?.amount ??
-        (savingsCode ? 10 : 0)
-      );
-
-    const savingsAmount =
-      Number.isFinite(rawSavingsAmount) &&
-      rawSavingsAmount > 0
-        ? rawSavingsAmount
-        : savingsCode
-          ? 10
-          : 0;
-
-    const savingsStatus =
+    const promotionStatus =
       String(
+        lead.promotionStatus ||
+        promotion.status ||
         lead.savingsStatus ||
-        lead.savings?.status ||
-        (savingsCode
+        (promotionCode
           ? "Pending verification"
           : "")
       ).trim();
+
+    const promotionOfferType =
+      String(
+        lead.promotionOfferType ||
+        promotion.offerType ||
+        (promotionCode
+          ? "Coupon, promotion, referral, or bundle"
+          : "")
+      ).trim();
+
+    const promotionVerification =
+      String(
+        promotion.verification ||
+        (promotionCode
+          ? "Verify the offer details, value, terms, and eligibility before applying it."
+          : "")
+      ).trim();
+
     const device =
       lead.device ||
       lead.deviceType ||
@@ -213,20 +227,20 @@ export default async function handler(req, res) {
         "Not provided"
       );
 
-    const savingsSummary =
-      savingsCode
+    const promotionSummary =
+      promotionCode
         ? [
-            "Savings Redemption",
-            `Code: ${savingsCode}`,
-            `Claimed Savings: $${savingsAmount.toFixed(2)}`,
-            `Status: ${savingsStatus}`,
-            "Verify eligibility before applying the savings."
+            "Promotion Redemption",
+            `Code: ${promotionCode}`,
+            `Offer Type: ${promotionOfferType}`,
+            `Status: ${promotionStatus}`,
+            promotionVerification
           ].join("\n")
         : "";
 
     const repairDetails = [
       baseRepairDetails,
-      savingsSummary
+      promotionSummary
     ]
       .filter(Boolean)
       .join("\n\n");

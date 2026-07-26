@@ -13,15 +13,15 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260726-1";
+} from "./renderer.js?v=20260726-2";
 
 import { renderAppointmentStep } from "./appointments.js?v=20260724-1";
 import {
   applyAfterHoursBookingDetails,
   buildLeadPayload,
   validateLeadPayload
-} from "./leadSubmission.js?v=20260726-1";
-import { mapWizardPayloadToLead } from "./leadMapper.js?v=20260726-1";
+} from "./leadSubmission.js?v=20260726-2";
+import { mapWizardPayloadToLead } from "./leadMapper.js?v=20260726-2";
 import { submitWizardLead } from "./leadSubmitter.js";
 
 const devices = [

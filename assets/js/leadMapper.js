@@ -60,43 +60,63 @@ export function mapWizardPayloadToLead(payload) {
 
   const generalNotes = String(payload.notes || "").trim();
 
-  const savings =
-    payload.savings &&
-    typeof payload.savings === "object"
-      ? payload.savings
-      : {};
+  const promotion =
+    payload.promotion &&
+    typeof payload.promotion === "object"
+      ? payload.promotion
+      : payload.savings &&
+          typeof payload.savings === "object"
+        ? payload.savings
+        : {};
 
-  const savingsCode =
-    String(savings.code || "")
+  const promotionCode =
+    String(promotion.code || "")
       .trim()
       .toUpperCase();
 
-  const savingsAmount =
-    savingsCode
-      ? Math.max(
-          0,
-          Number(savings.amount || 10)
-        )
-      : 0;
-
-  const savingsStatus =
-    savingsCode
+  const promotionStatus =
+    promotionCode
       ? String(
-          savings.status ||
+          promotion.status ||
           "Pending verification"
         ).trim()
       : "";
 
-  const savingsNote =
-    savingsCode
+  const promotionSource =
+    promotionCode
+      ? String(
+          promotion.source ||
+          "Customer-entered promotion code"
+        ).trim()
+      : "";
+
+  const promotionOfferType =
+    promotionCode
+      ? String(
+          promotion.offerType ||
+          "Coupon, promotion, referral, or bundle"
+        ).trim()
+      : "";
+
+  const promotionVerification =
+    promotionCode
+      ? String(
+          promotion.verification ||
+          "Offer details, value, terms, and eligibility require verification before final pricing."
+        ).trim()
+      : "";
+
+  const promotionNote =
+    promotionCode
       ? [
-          "Savings Redemption",
-          `Code: ${savingsCode}`,
-          `Claimed Savings: $${savingsAmount.toFixed(2)}`,
-          `Status: ${savingsStatus}`,
-          "Eligibility must be verified before the savings is applied."
+          "Promotion Redemption",
+          `Code: ${promotionCode}`,
+          `Offer Type: ${promotionOfferType}`,
+          `Status: ${promotionStatus}`,
+          promotionVerification
         ].join(" | ")
       : "";
+
   const repairNotes = repairDetails
     .filter((item) => item.details)
     .map((item) => `${item.repair}: ${item.details}`);
@@ -128,7 +148,7 @@ export function mapWizardPayloadToLead(payload) {
   const combinedNotes = [
     ...repairNotes,
     ...addOnNotes,
-    savingsNote,
+    promotionNote,
     generalNotes ? `General Notes: ${generalNotes}` : ""
   ]
     .filter(Boolean)
@@ -158,27 +178,18 @@ export function mapWizardPayloadToLead(payload) {
 
     addOns,
 
-    savings: {
-      code: savingsCode,
-      amount: savingsAmount,
-      status: savingsStatus,
-      source: savingsCode
-        ? String(
-            savings.source ||
-            "Email repair coupon"
-          ).trim()
-        : "",
-      eligibility: savingsCode
-        ? String(
-            savings.eligibility ||
-            "Minimum $75 repair subtotal; exclusions apply."
-          ).trim()
-        : ""
+    promotion: {
+      code: promotionCode,
+      status: promotionStatus,
+      source: promotionSource,
+      offerType: promotionOfferType,
+      verification: promotionVerification
     },
 
-    savingsCode,
-    savingsAmount,
-    savingsStatus,
+    promotionCode,
+    promotionStatus,
+    promotionOfferType,
+
     repairItems: [
       ...repairNames.map((name) => ({
         type: name,

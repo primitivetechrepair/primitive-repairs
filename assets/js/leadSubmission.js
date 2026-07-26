@@ -14,12 +14,12 @@ function generateRequestId() {
   return `PTR-${datePart}-${randomPart}`;
 }
 
-function normalizeSavingsCode(value) {
+function normalizePromotionCode(value) {
   return String(value || "")
     .trim()
     .toUpperCase()
-    .replace(/\s+/g, "")
-    .slice(0, 40);
+    .replace(/\s+/g, " ")
+    .slice(0, 80);
 }
 function normalizeRepair(repair) {
   if (!repair) {
@@ -97,8 +97,8 @@ export function applyAfterHoursBookingDetails(payload) {
 export function buildLeadPayload(form) {
   const formData = new FormData(form);
 
-  const savingsCode = normalizeSavingsCode(
-    formData.get("savingsCode")
+  const promotionCode = normalizePromotionCode(
+    formData.get("promotionCode")
   );
 
   const selectedRepairs = getSelectedRepairs();
@@ -127,19 +127,22 @@ export function buildLeadPayload(form) {
       zip: String(formData.get("zip") || "").trim()
     },
 
-    savings: {
-      code: savingsCode,
-      amount: savingsCode ? 10 : 0,
-      status: savingsCode
+    promotion: {
+      code: promotionCode,
+      status: promotionCode
         ? "Pending verification"
         : null,
-      source: savingsCode
-        ? "Email repair coupon"
+      source: promotionCode
+        ? "Customer-entered promotion code"
         : null,
-      eligibility: savingsCode
-        ? "Minimum $75 repair subtotal; exclusions apply."
+      offerType: promotionCode
+        ? "Coupon, promotion, referral, or bundle"
+        : null,
+      verification: promotionCode
+        ? "Offer details, value, terms, and eligibility require verification before final pricing."
         : null
     },
+
     device: {
       type: state.device,
       brand: state.brand,

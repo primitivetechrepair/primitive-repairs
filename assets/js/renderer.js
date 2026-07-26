@@ -1136,19 +1136,27 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
   const customer = leadPayload?.customer || {};
   const device = leadPayload?.device || {};
   const appointment = leadPayload?.appointment || {};
-  const savings = leadPayload?.savings || {};
+  const promotion =
+    leadPayload?.promotion ||
+    leadPayload?.savings ||
+    {};
 
-  const savingsCode =
-    String(savings.code || "").trim();
+  const promotionCode =
+    String(promotion.code || "").trim();
 
-  const savingsAmount =
-    Number(savings.amount || 0);
-
-  const savingsStatus =
+  const promotionStatus =
     String(
-      savings.status ||
-      (savingsCode
+      promotion.status ||
+      (promotionCode
         ? "Pending verification"
+        : "")
+    ).trim();
+
+  const promotionOfferType =
+    String(
+      promotion.offerType ||
+      (promotionCode
+        ? "Promotion or bundle"
         : "")
     ).trim();
 
@@ -1264,22 +1272,22 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
         ${hasAfterHoursFee
           ? renderSuccessItem("Convenience Fee", convenienceFeeLabel)
           : ""}
-        ${savingsCode
+        ${promotionCode
           ? renderSuccessItem(
-              "Savings Code",
-              savingsCode
+              "Promotion Code",
+              promotionCode
             )
           : ""}
-        ${savingsCode
+        ${promotionCode
           ? renderSuccessItem(
-              "Claimed Savings",
-              `$${savingsAmount.toFixed(2)}`
+              "Offer Type",
+              promotionOfferType
             )
           : ""}
-        ${savingsCode
+        ${promotionCode
           ? renderSuccessItem(
-              "Savings Status",
-              savingsStatus
+              "Promotion Status",
+              promotionStatus
             )
           : ""}
         ${renderSuccessItem("Customer", customerName, "Customer")}
@@ -1375,19 +1383,27 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
   const customer = leadPayload.customer || {};
   const device = leadPayload.device || {};
   const appointment = leadPayload.appointment || {};
-  const savings = leadPayload.savings || {};
+  const promotion =
+    leadPayload.promotion ||
+    leadPayload.savings ||
+    {};
 
-  const savingsCode =
-    String(savings.code || "").trim();
+  const promotionCode =
+    String(promotion.code || "").trim();
 
-  const savingsAmount =
-    Number(savings.amount || 0);
-
-  const savingsStatus =
+  const promotionStatus =
     String(
-      savings.status ||
-      (savingsCode
+      promotion.status ||
+      (promotionCode
         ? "Pending verification"
+        : "")
+    ).trim();
+
+  const promotionOfferType =
+    String(
+      promotion.offerType ||
+      (promotionCode
+        ? "Promotion or bundle"
         : "")
     ).trim();
 
@@ -1555,33 +1571,34 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
           ${renderReviewRow("Convenience Fee", convenienceFeeLabel, "None")}
         </div>
 
-        ${savingsCode
+        ${promotionCode
           ? `
               <div class="review-card review-card-savings">
-                <h4>Savings Redemption</h4>
+                <h4>Promotion Redemption</h4>
 
                 ${renderReviewRow(
-                  "Savings Code",
-                  savingsCode
+                  "Promotion Code",
+                  promotionCode
                 )}
 
                 ${renderReviewRow(
-                  "Claimed Savings",
-                  `$${savingsAmount.toFixed(2)}`
+                  "Offer Type",
+                  promotionOfferType
                 )}
 
                 ${renderReviewRow(
                   "Status",
-                  savingsStatus
+                  promotionStatus
                 )}
 
                 ${renderReviewRow(
                   "Application",
-                  "Verified before final pricing"
+                  "Offer details verified before final pricing"
                 )}
               </div>
             `
           : ""}
+
         <div class="review-card review-card-notes">
           <h4>Notes & Files</h4>
           ${renderReviewRow("Notes", leadPayload.notes, "None")}
