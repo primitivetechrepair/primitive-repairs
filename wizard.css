@@ -19481,3 +19481,173 @@ h1,
     animation: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS UNIFORM RESPONSIVE GLASS CARDS V16
+   Uniform Device / Brand / Series / Model / Repair geometry
+========================================================= */
+
+/* Keep every responsive grid row and card aligned uniformly. */
+#primitive-wizard-container #pr-steps-area .device-card-results,
+#primitive-wizard-container #pr-steps-area .brand-card-results,
+#primitive-wizard-container #pr-steps-area .series-card-results,
+#primitive-wizard-container #pr-steps-area .model-card-results,
+#primitive-wizard-container #pr-steps-area .repair-card-results {
+  align-items: stretch !important;
+  grid-auto-rows: 1fr !important;
+}
+
+/* One predictable internal structure for every selection card. */
+#primitive-wizard-container #pr-steps-area .opt-card,
+#primitive-wizard-container #pr-steps-area .opt-card:hover,
+#primitive-wizard-container #pr-steps-area .opt-card.is-selected,
+#primitive-wizard-container #pr-steps-area .opt-card.selected,
+#primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
+#primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  min-height: 228px !important;
+
+  display: grid !important;
+  grid-template-rows: 154px minmax(38px, auto) minmax(0, auto) !important;
+  align-content: start !important;
+  align-items: stretch !important;
+
+  padding: 10px !important;
+  gap: 6px !important;
+}
+
+/* Thumbnail wells remain identical regardless of card text length. */
+#primitive-wizard-container #pr-steps-area .opt-thumb,
+#primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
+#primitive-wizard-container #pr-steps-area .opt-card.selected .opt-thumb {
+  width: 100% !important;
+  height: 154px !important;
+  min-height: 154px !important;
+  max-height: 154px !important;
+  flex: none !important;
+
+  margin: 0 !important;
+  align-self: stretch !important;
+}
+
+/* Remove square internal backing layers and reserve two text lines. */
+#primitive-wizard-container #pr-steps-area .opt-label,
+#primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-label,
+#primitive-wizard-container #pr-steps-area .opt-card.selected .opt-label,
+#primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"] .opt-label,
+#primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] .opt-label {
+  min-width: 0 !important;
+  min-height: 38px !important;
+
+  margin: 0 !important;
+  padding: 3px 4px !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  hyphens: auto;
+}
+
+/* Supporting text cannot change card width or create square panels. */
+#primitive-wizard-container #pr-steps-area .opt-subtext,
+#primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-subtext,
+#primitive-wizard-container #pr-steps-area .opt-card.selected .opt-subtext {
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 4px 3px !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+
+  overflow-wrap: anywhere !important;
+}
+
+/* Remove unrounded generated backing layers inside card content. */
+#primitive-wizard-container #pr-steps-area .opt-label::before,
+#primitive-wizard-container #pr-steps-area .opt-label::after,
+#primitive-wizard-container #pr-steps-area .opt-subtext::before,
+#primitive-wizard-container #pr-steps-area .opt-subtext::after {
+  content: none !important;
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  #primitive-wizard-container #pr-steps-area .opt-card,
+  #primitive-wizard-container #pr-steps-area .opt-card:hover,
+  #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
+  #primitive-wizard-container #pr-steps-area .opt-card.selected,
+  #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
+  #primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
+    min-height: 204px !important;
+
+    grid-template-rows: 132px minmax(36px, auto) minmax(0, auto) !important;
+
+    padding: 7px !important;
+    gap: 5px !important;
+  }
+
+  #primitive-wizard-container #pr-steps-area .opt-thumb,
+  #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
+  #primitive-wizard-container #pr-steps-area .opt-card.selected .opt-thumb {
+    height: 132px !important;
+    min-height: 132px !important;
+    max-height: 132px !important;
+  }
+
+  #primitive-wizard-container #pr-steps-area .opt-label {
+    min-height: 36px !important;
+    padding-inline: 2px !important;
+  }
+}
+/* =========================================================
+   PRIMITIVE REPAIRS CLEAN SELECTION HEADERS V17
+   Remove square panels around step-label pills
+========================================================= */
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header {
+  overflow: visible !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header::before,
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header::after {
+  content: none !important;
+  display: none !important;
+
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Preserve the rounded DEVICE / BRAND / SERIES / MODEL / REPAIR pill. */
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header span {
+  border-radius: 999px !important;
+}
