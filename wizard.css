@@ -17831,3 +17831,637 @@ select,
     gap: 7px !important;
   }
 }
+
+/* =========================================================
+   PRIMITIVE REPAIRS PREMIUM CARD STAGE + H1 SCALE V12
+   Scope: site H1 scale + interactive device/brand/model/repair cards.
+========================================================= */
+
+/* H1 scale: 72px desktop while retaining the approved heavy weight. */
+h1,
+.landing-hero h1 {
+  font-size: 72px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.05em;
+  line-height: 0.94;
+}
+
+/* The active card-selection step becomes a premium dark-glass stage. */
+#primitive-wizard-container
+#pr-steps-area.animated-area:has(.option-section-header) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  width: 100%;
+  margin-top: 24px;
+  padding: clamp(18px, 3vw, 30px);
+
+  border: 1px solid rgba(220, 237, 255, 0.18);
+  border-radius: 32px;
+
+  background-color: rgba(29, 30, 34, 0.88);
+  background-image:
+    radial-gradient(
+      circle at 8% 0%,
+      rgba(102, 252, 241, 0.09),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 96% 20%,
+      rgba(220, 237, 255, 0.07),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.84),
+      rgba(29, 30, 34, 0.96)
+    );
+
+  backdrop-filter: blur(28px) saturate(150%);
+  -webkit-backdrop-filter: blur(28px) saturate(150%);
+
+  box-shadow:
+    0 26px 66px rgba(29, 30, 34, 0.4),
+    inset 0 1px 0 rgba(220, 237, 255, 0.12);
+}
+
+#primitive-wizard-container
+#pr-steps-area.animated-area:has(.option-section-header)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(220, 237, 255, 0.07),
+      transparent 28%,
+      transparent 74%,
+      rgba(102, 252, 241, 0.035)
+    );
+
+  pointer-events: none;
+}
+
+/* Premium heading panel for each card-selection step. */
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header {
+  width: min(820px, 100%);
+  margin: 0 auto 24px;
+  padding: 22px 20px;
+
+  border: 1px solid rgba(220, 237, 255, 0.16);
+  border-radius: 24px;
+
+  background-color: rgba(29, 30, 34, 0.64);
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.72),
+      rgba(29, 30, 34, 0.74)
+    );
+
+  color: #DCEDFF;
+
+  backdrop-filter: blur(20px) saturate(145%);
+  -webkit-backdrop-filter: blur(20px) saturate(145%);
+
+  box-shadow:
+    0 16px 38px rgba(29, 30, 34, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.09);
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header::before {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(220, 237, 255, 0.08),
+      transparent 34%,
+      transparent 72%,
+      rgba(102, 252, 241, 0.045)
+    );
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header span {
+  margin-bottom: 12px;
+
+  border-color: rgba(102, 252, 241, 0.58);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(102, 252, 241, 0.86),
+      rgba(102, 252, 241, 0.62)
+    );
+
+  color: #1D1E22 !important;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+
+  box-shadow:
+    0 10px 24px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(220, 237, 255, 0.72);
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header h3 {
+  color: #DCEDFF !important;
+
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header p {
+  max-width: 600px;
+  margin-top: 12px;
+
+  color: rgba(220, 237, 255, 0.76) !important;
+
+  font-size: 15px;
+  font-weight: 300 !important;
+  line-height: 1.6;
+}
+
+/* Preserve the existing responsive card grids. */
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results,
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results {
+  gap: 16px;
+  padding-bottom: 2px;
+}
+
+/*
+ * Permanent premium glass palette.
+ * Selected and hover states keep the exact same surface colors.
+ */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card:hover,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card:hover:not(.is-selected),
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"],
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] {
+  min-height: 228px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(220, 237, 255, 0.5);
+  border-radius: 26px;
+
+  background-color: rgba(212, 212, 220, 0.76);
+  background-image:
+    radial-gradient(
+      circle at 92% 0%,
+      rgba(220, 237, 255, 0.64),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 4% 100%,
+      rgba(102, 252, 241, 0.08),
+      transparent 38%
+    ),
+    linear-gradient(
+      150deg,
+      rgba(220, 237, 255, 0.82),
+      rgba(212, 212, 220, 0.6)
+    );
+
+  color: #1D1E22;
+
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+
+  box-shadow:
+    0 18px 40px rgba(29, 30, 34, 0.22),
+    inset 0 1px 0 rgba(220, 237, 255, 0.86),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.07);
+
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+/* Selection adds only a cyan focus ring and depth—not a color change. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"],
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] {
+  transform: translateY(-2px);
+
+  border-color: rgba(102, 252, 241, 0.94);
+
+  box-shadow:
+    0 0 0 3px rgba(102, 252, 241, 0.18),
+    0 22px 46px rgba(29, 30, 34, 0.28),
+    inset 0 1px 0 rgba(220, 237, 255, 0.9),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.07);
+}
+
+/* Glass reflection remains subtle and consistent in every state. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-card::before,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected::before,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected::before {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(220, 237, 255, 0.34),
+      transparent 34%,
+      rgba(220, 237, 255, 0.08),
+      transparent 74%
+    );
+
+  opacity: 0.78;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.opt-card::after,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected::after,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected::after {
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(220, 237, 255, 0.36),
+      transparent
+    );
+
+  opacity: 0.32;
+}
+
+/* Premium image well with strong separation from the card body. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-thumb,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected .opt-thumb,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected .opt-thumb {
+  width: calc(100% - 20px);
+  height: 154px;
+  flex-basis: 154px;
+  margin: 10px auto 6px;
+
+  border: 1px solid rgba(29, 30, 34, 0.12);
+  border-radius: 20px;
+
+  background-color: rgba(220, 237, 255, 0.5);
+  background-image:
+    radial-gradient(
+      circle at 50% 8%,
+      rgba(220, 237, 255, 0.78),
+      transparent 46%
+    ),
+    linear-gradient(
+      150deg,
+      rgba(220, 237, 255, 0.68),
+      rgba(212, 212, 220, 0.42)
+    );
+
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.88),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.06),
+    0 10px 24px rgba(29, 30, 34, 0.1);
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.opt-thumb::before {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(220, 237, 255, 0.7),
+      rgba(220, 237, 255, 0.06)
+    );
+}
+
+/* Text stays dark and readable before and after selection. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected .opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected .opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"] .opt-label,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] .opt-label {
+  color: #1D1E22 !important;
+
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+
+  text-shadow: none;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.opt-subtext,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.is-selected .opt-subtext,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card.selected .opt-subtext,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-pressed="true"] .opt-subtext,
+#primitive-wizard-container
+#pr-steps-area
+.opt-card[aria-selected="true"] .opt-subtext {
+  color: rgba(29, 30, 34, 0.72) !important;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  text-shadow: none;
+}
+
+/* Cyan badge provides the action hierarchy without reducing contrast. */
+#primitive-wizard-container
+#pr-steps-area
+.opt-badge {
+  border-color: rgba(102, 252, 241, 0.74);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(102, 252, 241, 0.9),
+      rgba(102, 252, 241, 0.66)
+    );
+
+  color: #1D1E22 !important;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 8px 18px rgba(29, 30, 34, 0.14),
+    inset 0 1px 0 rgba(220, 237, 255, 0.74);
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.opt-badge::before {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(220, 237, 255, 0.62),
+      rgba(220, 237, 255, 0.06)
+    );
+}
+
+/* Model search follows the same light premium-card language. */
+#primitive-wizard-container
+#pr-steps-area
+.model-search-panel {
+  margin-bottom: 20px;
+  padding: 18px;
+
+  border: 1px solid rgba(220, 237, 255, 0.46);
+  border-radius: 24px;
+
+  background-color: rgba(212, 212, 220, 0.72);
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.78),
+      rgba(212, 212, 220, 0.56)
+    );
+
+  color: #1D1E22;
+
+  backdrop-filter: blur(20px) saturate(155%);
+  -webkit-backdrop-filter: blur(20px) saturate(155%);
+
+  box-shadow:
+    0 18px 38px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(220, 237, 255, 0.82);
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.model-search-panel label,
+#primitive-wizard-container
+#pr-steps-area
+.model-search-count {
+  color: #1D1E22 !important;
+  font-weight: 800;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.model-search-input {
+  border-color: rgba(29, 30, 34, 0.14);
+
+  background: rgba(220, 237, 255, 0.78);
+  color: #1D1E22;
+
+  font-weight: 600;
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.9);
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.model-search-clear {
+  border-color: rgba(29, 30, 34, 0.14);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.94),
+      rgba(29, 30, 34, 0.96)
+    );
+
+  color: #DCEDFF;
+
+  box-shadow:
+    0 10px 24px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(220, 237, 255, 0.1);
+}
+
+/* Fine-pointer interaction changes depth only. */
+@media (hover: hover) and (pointer: fine) {
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card:hover:not(.is-selected) {
+    transform: translateY(-4px);
+
+    border-color: rgba(220, 237, 255, 0.72);
+
+    box-shadow:
+      0 24px 48px rgba(29, 30, 34, 0.28),
+      inset 0 1px 0 rgba(220, 237, 255, 0.9),
+      inset 0 -1px 0 rgba(29, 30, 34, 0.07);
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.is-selected:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.selected:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card[aria-pressed="true"]:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card[aria-selected="true"]:hover {
+    border-color: rgba(102, 252, 241, 0.94);
+
+    box-shadow:
+      0 0 0 3px rgba(102, 252, 241, 0.18),
+      0 26px 50px rgba(29, 30, 34, 0.3),
+      inset 0 1px 0 rgba(220, 237, 255, 0.9),
+      inset 0 -1px 0 rgba(29, 30, 34, 0.07);
+  }
+}
+
+@media (max-width: 760px) {
+  h1,
+  .landing-hero h1 {
+    font-size: clamp(48px, 13vw, 72px) !important;
+    line-height: 0.96;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area.animated-area:has(.option-section-header) {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 26px;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header {
+    margin-bottom: 16px;
+    padding: 18px 14px;
+    border-radius: 20px;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .device-card-results,
+  #primitive-wizard-container
+  #pr-steps-area
+  .brand-card-results,
+  #primitive-wizard-container
+  #pr-steps-area
+  .series-card-results,
+  #primitive-wizard-container
+  #pr-steps-area
+  .model-card-results,
+  #primitive-wizard-container
+  #pr-steps-area
+  .repair-card-results {
+    gap: 10px;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card:hover,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.is-selected,
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-card.selected {
+    min-height: 204px;
+    border-radius: 20px;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-thumb {
+    width: calc(100% - 14px);
+    height: 132px;
+    flex-basis: 132px;
+    margin-top: 7px;
+    border-radius: 16px;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .opt-label {
+    font-size: 11px;
+  }
+}
