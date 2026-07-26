@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap");
 /* =========================================================
    VISUAL REPAIR WIZARD - CLEAN ORGANIZED STYLES
    Replace current wizard.css with this file after testing.
@@ -15949,7 +15949,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
 }
 
 /* =========================================================
-   PRIMITIVE REPAIRS CYAN FOUR-COLOR PREMIUM SYSTEM
+   PRIMITIVE REPAIRS CYAN GLASS TYPOGRAPHY SYSTEM
 ========================================================= */
 
 :root {
@@ -15958,6 +15958,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
   --selection-background: #D4D4DC;
   --text-dark: #1D1E22;
   --text-light: #D4D4DC;
+  --section-text: #DCEDFF;
   --action-color: #66FCF1;
 
   --bg: #1D1E22;
@@ -15996,7 +15997,7 @@ h1,
 .landing-hero h1 {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.05;
   color: #1D1E22 !important;
   text-transform: uppercase;
@@ -16006,7 +16007,7 @@ h2,
 .landing-section-header h2 {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   color: #1D1E22 !important;
   text-transform: uppercase;
@@ -16015,7 +16016,7 @@ h2,
 p {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 300 !important;
   line-height: 1.65;
 }
 
@@ -16280,12 +16281,12 @@ button.secondary {
 .review-panel,
 .success-panel,
 .wizard-live-summary {
-  border-color: rgba(212, 212, 220, 0.14);
+  border-color: rgba(220, 237, 255, 0.2);
   background-color: #393F4D;
   background-image:
     radial-gradient(
       circle at 8% 0%,
-      rgba(212, 212, 220, 0.07),
+      rgba(220, 237, 255, 0.1),
       transparent 34%
     ),
     linear-gradient(
@@ -16293,32 +16294,67 @@ button.secondary {
       rgba(57, 63, 77, 0.99),
       rgba(57, 63, 77, 0.91)
     );
-  color: #D4D4DC;
+  color: #DCEDFF;
   box-shadow:
     0 24px 62px rgba(29, 30, 34, 0.3),
-    inset 0 1px 0 rgba(212, 212, 220, 0.08);
+    inset 0 1px 0 rgba(220, 237, 255, 0.1);
 }
 
-.landing-section h1,
-.landing-section h2,
+.landing-section,
+.supported-devices-section,
+.reviews-section,
+.trust-section,
+.warranty-section,
+.faq-section,
+.contact-section,
+#primitive-wizard-container {
+  border-radius: 36px;
+}
+
+.pr-header,
+.selection-cards,
+.model-search-panel,
+.repair-details-panel,
+.repair-info-panel,
+.appointment-panel,
+.customer-repair-summary,
+.review-panel,
+.success-panel,
+.wizard-live-summary {
+  border-radius: 26px;
+}
+
 .landing-section h3,
 .landing-section h4,
 .landing-section strong,
-#primitive-wizard-container h1,
-#primitive-wizard-container h2,
 #primitive-wizard-container h3,
 #primitive-wizard-container h4,
 #primitive-wizard-container strong {
-  color: #D4D4DC;
+  color: #DCEDFF;
 }
 
 .landing-section p,
 .landing-section span,
+.landing-section li,
+.landing-section label,
+.landing-section small,
+.supported-devices-section p,
+.supported-devices-section span,
+.reviews-section p,
+.reviews-section span,
+.trust-section p,
+.trust-section span,
+.warranty-section p,
+.warranty-section span,
+.faq-section p,
+.faq-section span,
+.contact-section p,
+.contact-section span,
 #primitive-wizard-container p,
 #primitive-wizard-container .step-desc,
 #primitive-wizard-container .helper-text,
 #primitive-wizard-container .field-help {
-  color: #D4D4DC;
+  color: #DCEDFF;
 }
 
 /* Light form controls require dark text */
@@ -16340,7 +16376,7 @@ textarea::placeholder {
   color: rgba(29, 30, 34, 0.64);
 }
 
-/* Selection cards are light with dark content */
+/* Selection cards keep the light palette with glassmorphism */
 .selection-cards .card,
 .pr-options .opt-card,
 .animated-area .opt-card,
@@ -16349,18 +16385,22 @@ textarea::placeholder {
 .series-card-results .opt-card,
 .model-card-results .opt-card,
 .repair-card-results .opt-card {
-  border-color: rgba(29, 30, 34, 0.18);
-  background-color: #D4D4DC;
+  border-color: rgba(220, 237, 255, 0.52);
+  border-radius: 24px;
+  background-color: rgba(212, 212, 220, 0.74);
   background-image:
     linear-gradient(
       145deg,
-      rgba(212, 212, 220, 1),
-      rgba(212, 212, 220, 0.9)
+      rgba(220, 237, 255, 0.78),
+      rgba(212, 212, 220, 0.58)
     );
   color: #1D1E22;
+  backdrop-filter: blur(20px) saturate(165%);
+  -webkit-backdrop-filter: blur(20px) saturate(165%);
   box-shadow:
-    0 14px 30px rgba(29, 30, 34, 0.18),
-    inset 0 1px 0 rgba(212, 212, 220, 0.98);
+    0 18px 38px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(220, 237, 255, 0.86),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.08);
 }
 
 .selection-cards .card *,
@@ -16383,10 +16423,13 @@ textarea::placeholder {
 .series-card-results .opt-card .opt-label,
 .model-card-results .opt-card .opt-label,
 .repair-card-results .opt-card .opt-label {
-  border-color: rgba(29, 30, 34, 0.14);
-  background: rgba(212, 212, 220, 0.9);
+  border-color: rgba(220, 237, 255, 0.44);
+  background: rgba(212, 212, 220, 0.58);
   color: #1D1E22;
-  box-shadow: none;
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.72);
 }
 
 .selection-cards .card.filled,
@@ -16402,60 +16445,81 @@ textarea::placeholder {
 .model-card-results .opt-card.selected,
 .repair-card-results .opt-card.selected,
 .opt-card[aria-pressed="true"] {
-  border-color: rgba(29, 30, 34, 0.72);
-  background: #D4D4DC;
+  border-color: rgba(102, 252, 241, 0.82);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.9),
+      rgba(212, 212, 220, 0.72)
+    );
   color: #1D1E22;
+  backdrop-filter: blur(22px) saturate(175%);
+  -webkit-backdrop-filter: blur(22px) saturate(175%);
   box-shadow:
-    0 0 0 3px rgba(29, 30, 34, 0.14),
-    0 16px 34px rgba(29, 30, 34, 0.2),
-    inset 0 1px 0 rgba(212, 212, 220, 0.98);
+    0 0 0 3px rgba(102, 252, 241, 0.18),
+    0 18px 38px rgba(29, 30, 34, 0.22),
+    inset 0 1px 0 rgba(220, 237, 255, 0.94);
 }
 
-/* Repair Blueprint: keep the grid, use light cards */
+/* Repair Blueprint: cyan surface, preserved grid and light cards */
 #pr-selection-cards.blueprint-selection-module {
-  border-color: rgba(212, 212, 220, 0.18);
-  background-color: #393F4D;
+  border-color: rgba(102, 252, 241, 0.92);
+  border-radius: 36px;
+  background-color: #66FCF1;
   background-image:
     linear-gradient(
-      rgba(212, 212, 220, 0.07) 1px,
+      rgba(29, 30, 34, 0.1) 1px,
       transparent 1px
     ),
     linear-gradient(
       90deg,
-      rgba(212, 212, 220, 0.07) 1px,
+      rgba(29, 30, 34, 0.1) 1px,
       transparent 1px
     ),
     radial-gradient(
       circle at 50% 0%,
-      rgba(212, 212, 220, 0.08),
+      rgba(220, 237, 255, 0.52),
       transparent 48%
     ),
     linear-gradient(
       145deg,
-      #393F4D,
-      rgba(57, 63, 77, 0.92)
+      #66FCF1,
+      rgba(102, 252, 241, 0.84)
     );
+  color: #1D1E22;
+  box-shadow:
+    0 28px 70px rgba(29, 30, 34, 0.34),
+    inset 0 1px 0 rgba(220, 237, 255, 0.82);
 }
 
 #pr-selection-cards.blueprint-selection-module::before {
   background:
     linear-gradient(
       135deg,
-      rgba(212, 212, 220, 0.06),
+      rgba(220, 237, 255, 0.26),
       transparent 28%,
-      rgba(212, 212, 220, 0.025),
+      rgba(29, 30, 34, 0.04),
       transparent 72%
     );
 }
 
 #pr-selection-cards.blueprint-selection-module .blueprint-profile-header {
-  border-color: rgba(212, 212, 220, 0.16);
-  background: rgba(57, 63, 77, 0.88);
+  border-color: rgba(29, 30, 34, 0.16);
+  border-radius: 24px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.56),
+      rgba(212, 212, 220, 0.34)
+    );
+  color: #1D1E22;
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
 }
 
 #pr-selection-cards.blueprint-selection-module .blueprint-profile-kicker,
 #pr-selection-cards.blueprint-selection-module .blueprint-profile-header strong {
-  color: #D4D4DC;
+  color: #1D1E22;
 }
 
 #pr-selection-cards.blueprint-selection-module .pr-progress-card {
@@ -16572,5 +16636,109 @@ textarea::placeholder {
 
   p {
     font-size: 16px;
+  }
+}
+
+/* =========================================================
+   SECTION TYPOGRAPHY, RADII, BLUEPRINT, AND GLASS CARD REFINEMENT
+========================================================= */
+
+/* All paragraph copy stays Raleway Light. */
+section p,
+.landing-section p,
+.supported-devices-section p,
+.reviews-section p,
+.trust-section p,
+.warranty-section p,
+.faq-section p,
+.contact-section p,
+#primitive-wizard-container p,
+.pr-header p,
+.selection-cards p,
+.model-search-panel p,
+.repair-details-panel p,
+.repair-info-panel p,
+.appointment-panel p,
+.customer-repair-summary p,
+.review-panel p,
+.success-panel p,
+.wizard-live-summary p {
+  font-weight: 300 !important;
+}
+
+/* Section copy uses light blue unless a component is explicitly dark. */
+.landing-section,
+.supported-devices-section,
+.reviews-section,
+.trust-section,
+.warranty-section,
+.faq-section,
+.contact-section,
+#primitive-wizard-container,
+.pr-header,
+.model-search-panel,
+.repair-details-panel,
+.repair-info-panel,
+.appointment-panel,
+.customer-repair-summary,
+.review-panel,
+.success-panel,
+.wizard-live-summary {
+  color: #DCEDFF;
+}
+
+/* Previously specified dark components remain dark. */
+h1,
+h2,
+.landing-hero h1,
+.landing-section-header h2,
+.selection-cards .card,
+.selection-cards .card *,
+.pr-options .opt-card,
+.pr-options .opt-card *,
+.animated-area .opt-card,
+.animated-area .opt-card *,
+.device-card-results .opt-card,
+.device-card-results .opt-card *,
+.brand-card-results .opt-card,
+.brand-card-results .opt-card *,
+.series-card-results .opt-card,
+.series-card-results .opt-card *,
+.model-card-results .opt-card,
+.model-card-results .opt-card *,
+.repair-card-results .opt-card,
+.repair-card-results .opt-card *,
+#pr-selection-cards.blueprint-selection-module,
+#pr-selection-cards.blueprint-selection-module * {
+  color: #1D1E22;
+}
+
+@media (max-width: 700px) {
+  .landing-section,
+  .supported-devices-section,
+  .reviews-section,
+  .trust-section,
+  .warranty-section,
+  .faq-section,
+  .contact-section,
+  #primitive-wizard-container,
+  #pr-selection-cards.blueprint-selection-module {
+    border-radius: 28px;
+  }
+
+  .pr-header,
+  .selection-cards,
+  .model-search-panel,
+  .repair-details-panel,
+  .repair-info-panel,
+  .appointment-panel,
+  .customer-repair-summary,
+  .review-panel,
+  .success-panel,
+  .wizard-live-summary,
+  .selection-cards .card,
+  .pr-options .opt-card,
+  .animated-area .opt-card {
+    border-radius: 22px;
   }
 }
