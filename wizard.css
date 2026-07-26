@@ -20257,3 +20257,24 @@ div.opt-label::after,
     transform: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS BOTTOM CTA DARK TEXT V20
+   Use dark text on the pink START REPAIR bottom-bar action
+========================================================= */
+
+.mobile-sticky-booking-primary,
+.mobile-sticky-booking-primary:link,
+.mobile-sticky-booking-primary:visited,
+.mobile-sticky-booking-primary:hover,
+.mobile-sticky-booking-primary:focus,
+.mobile-sticky-booking-primary:focus-visible,
+.mobile-sticky-booking-primary:active {
+  color: #27273D !important;
+  text-shadow: none !important;
+}
+
+.mobile-sticky-booking-primary .mobile-sticky-booking-icon,
+.mobile-sticky-booking-primary svg {
+  color: #27273D !important;
+  fill: currentColor !important;
+}
