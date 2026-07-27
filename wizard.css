@@ -22975,3 +22975,492 @@ button.opt-card:focus-visible {
     transform: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS EXACT STATIC CARD INTERACTION V28
+   Exact #393F4D cards with #FF0054 border-only hover
+========================================================= */
+
+/* ---------------------------------------------------------
+   FIXED GEOMETRY FOR EVERY SELECTION CARD
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card {
+  box-sizing: border-box !important;
+
+  border: 2px solid rgba(220, 237, 255, 0.18) !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  animation: none !important;
+
+  transform: none !important;
+  transform-origin: center !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+
+  transition:
+    border-color 0.18s ease !important;
+}
+
+/* ---------------------------------------------------------
+   HOVER CHANGES THE BORDER ONLY
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card:hover {
+  border: 2px solid #FF0054 !important;
+  border-color: #FF0054 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  animation: none !important;
+
+  transform: none !important;
+  transform-origin: center !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+}
+
+/* ---------------------------------------------------------
+   SELECTED CARDS ALSO REMAIN COMPLETELY STATIONARY
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card.selected {
+  border: 2px solid #66FCF1 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  animation: none !important;
+
+  transform: none !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+}
+
+/* Hover overrides selected cyan with the exact requested pink. */
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card.selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card.selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card.selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card.selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card.selected:hover {
+  border: 2px solid #FF0054 !important;
+  border-color: #FF0054 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  transform: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+}
+
+/* ---------------------------------------------------------
+   REMOVE CARD PSEUDO-ELEMENT EFFECTS
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card::before,
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card::after,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card::before,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card::after,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card::before,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card::after,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card::before,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card::after,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card::before,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card::after {
+  display: none !important;
+  content: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  opacity: 0 !important;
+
+  background: none !important;
+  box-shadow: none !important;
+
+  animation: none !important;
+  transition: none !important;
+
+  transform: none !important;
+}
+
+/* ---------------------------------------------------------
+   REMOVE MOVEMENT FROM ALL CARD CONTENT
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card *,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card *,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card *,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card *,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card * {
+  animation: none !important;
+
+  transform: none !important;
+  transform-origin: center !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+}
+
+/* Hover cannot move, enlarge, zoom, brighten, or lift any child. */
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card:hover *,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card:hover *,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card:hover *,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card:hover *,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card:hover * {
+  animation: none !important;
+  transition: none !important;
+
+  transform: none !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+}
+
+/* Keep image shadows identical before and during hover. */
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card:hover .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card:hover .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card:hover .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card:hover .opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card:hover .opt-thumb-img {
+  filter:
+    drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3)) !important;
+
+  animation: none !important;
+  transition: none !important;
+
+  transform: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+}
+
+/* Keyboard focus uses the same exact pink border. */
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results > button.opt-card:focus-visible,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results > button.opt-card:focus-visible,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results > button.opt-card:focus-visible,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results > button.opt-card:focus-visible,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results > button.opt-card:focus-visible {
+  border: 2px solid #FF0054 !important;
+  border-color: #FF0054 !important;
+
+  outline: 2px solid rgba(255, 0, 84, 0.26) !important;
+  outline-offset: 3px !important;
+
+  background: #393F4D !important;
+
+  transform: none !important;
+  scale: 1 !important;
+}
+
+/* No animation for touch, hover, selection, or reduced-motion users. */
+@media (prefers-reduced-motion: reduce) {
+  #primitive-wizard-container
+  #pr-steps-area
+  .device-card-results > button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .brand-card-results > button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .series-card-results > button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .model-card-results > button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .repair-card-results > button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .device-card-results > button.opt-card *,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .brand-card-results > button.opt-card *,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .series-card-results > button.opt-card *,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .model-card-results > button.opt-card *,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .repair-card-results > button.opt-card * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
