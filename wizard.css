@@ -20357,3 +20357,102 @@ div.opt-label::after,
     padding-left: 6px !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS BOTTOM BAR BUTTON COLOR CORRECTION V22
+   Dark START REPAIR background with light text
+   CALL button retains dark text
+========================================================= */
+
+/* START REPAIR button */
+.mobile-sticky-booking-primary,
+.mobile-sticky-booking-primary:link,
+.mobile-sticky-booking-primary:visited {
+  border-color: rgba(220, 237, 255, 0.18) !important;
+
+  background: #27273D !important;
+  background-color: #27273D !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.1),
+      transparent 42%
+    ) !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    0 14px 30px rgba(29, 30, 34, 0.34),
+    inset 0 1px 0 rgba(220, 237, 255, 0.16),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.26) !important;
+
+  text-shadow: none !important;
+}
+
+.mobile-sticky-booking-primary:hover,
+.mobile-sticky-booking-primary:focus,
+.mobile-sticky-booking-primary:focus-visible {
+  border-color: rgba(102, 252, 241, 0.42) !important;
+
+  background: #303049 !important;
+  background-color: #303049 !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(220, 237, 255, 0.13),
+      transparent 44%
+    ) !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    0 17px 34px rgba(29, 30, 34, 0.4),
+    0 0 0 4px rgba(102, 252, 241, 0.08),
+    inset 0 1px 0 rgba(220, 237, 255, 0.18) !important;
+}
+
+.mobile-sticky-booking-primary:active {
+  background: #202033 !important;
+  background-color: #202033 !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    0 8px 18px rgba(29, 30, 34, 0.32),
+    inset 0 2px 4px rgba(29, 30, 34, 0.34) !important;
+}
+
+/* START REPAIR text and icon remain light. */
+.mobile-sticky-booking-primary *,
+.mobile-sticky-booking-primary .mobile-sticky-booking-icon,
+.mobile-sticky-booking-primary svg {
+  color: #DCEDFF !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  text-shadow: none !important;
+}
+
+/* CALL button keeps dark text and icon on its existing background. */
+.mobile-sticky-booking a[href^="tel:"],
+.mobile-sticky-booking a[href^="tel:"]:link,
+.mobile-sticky-booking a[href^="tel:"]:visited,
+.mobile-sticky-booking a[href^="tel:"]:hover,
+.mobile-sticky-booking a[href^="tel:"]:focus,
+.mobile-sticky-booking a[href^="tel:"]:focus-visible,
+.mobile-sticky-booking a[href^="tel:"]:active,
+.mobile-sticky-booking-call,
+.mobile-sticky-booking-call:hover,
+.mobile-sticky-booking-call:focus-visible,
+.mobile-sticky-booking-call:active {
+  color: #1D1E22 !important;
+  text-shadow: none !important;
+}
+
+.mobile-sticky-booking a[href^="tel:"] *,
+.mobile-sticky-booking a[href^="tel:"] svg,
+.mobile-sticky-booking-call *,
+.mobile-sticky-booking-call svg {
+  color: #1D1E22 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  text-shadow: none !important;
+}
