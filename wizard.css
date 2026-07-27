@@ -20278,3 +20278,82 @@ div.opt-label::after,
   color: #27273D !important;
   fill: currentColor !important;
 }
+/* =========================================================
+   PRIMITIVE REPAIRS BLUEPRINT LABEL CENTERING V21
+   Center Device, Brand, Series, Model, and Repair on both axes
+========================================================= */
+
+#primitive-wizard-container
+.selection-cards
+.card-label,
+#primitive-wizard-container
+.selection-cards
+.card.filled
+.card-label,
+#primitive-wizard-container
+.selection-cards
+.card.is-current-step
+.card-label {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  min-height: inherit !important;
+
+  margin: 0 !important;
+  padding: 0 10px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-content: center !important;
+
+  text-align: center !important;
+  vertical-align: middle !important;
+
+  line-height: 1.2 !important;
+
+  box-sizing: border-box !important;
+}
+
+#primitive-wizard-container
+.selection-cards
+.card-label > *,
+#primitive-wizard-container
+.selection-cards
+.card-label span,
+#primitive-wizard-container
+.selection-cards
+.card-label strong {
+  width: 100% !important;
+  margin: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  text-align: center !important;
+  line-height: 1.2 !important;
+}
+
+/* Keep all five Blueprint cards aligned to the same label row. */
+#primitive-wizard-container
+.selection-cards
+.card {
+  align-items: stretch !important;
+}
+
+#primitive-wizard-container
+.selection-cards
+.card-label {
+  align-self: stretch !important;
+  justify-self: stretch !important;
+}
+
+@media (max-width: 700px) {
+  #primitive-wizard-container
+  .selection-cards
+  .card-label {
+    padding-right: 6px !important;
+    padding-left: 6px !important;
+  }
+}
