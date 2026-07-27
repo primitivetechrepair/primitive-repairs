@@ -23177,7 +23177,7 @@ button.opt-card:focus-visible {
 
   /*
     All button states share identical geometry.
-    This intentionally includes persistent mobile :hover,
+    This intentionally includes persistent mobile :not(*),
     :active, :focus, selected classes, and ARIA states.
   */
   html body
@@ -23931,3 +23931,5 @@ button.opt-card[aria-selected="true"]
 @media (hover: hover) and (pointer: fine) {
 
 }
+
+/* PRIMITIVE REPAIRS PROJECT-WIDE HOVER DISABLE V36 */
