@@ -20456,3 +20456,148 @@ div.opt-label::after,
   stroke: currentColor !important;
   text-shadow: none !important;
 }
+/* =========================================================
+   PRIMITIVE REPAIRS BLUEPRINT ACTUAL HEADING CENTERING V23
+   Center Device, Brand, Series, Model, and Repair on X and Y
+========================================================= */
+
+/*
+ * The visible Blueprint labels are .card-heading elements,
+ * not .card-label elements.
+ */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card
+.card-heading,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.filled
+.card-heading,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-current-step
+.card-heading,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card.is-missing-choice
+.card-heading {
+  width: 100% !important;
+  min-width: 0 !important;
+
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+
+  margin: 0 !important;
+  padding: 0 8px !important;
+
+  display: grid !important;
+  place-items: center !important;
+  align-content: center !important;
+  justify-content: center !important;
+
+  box-sizing: border-box !important;
+
+  text-align: center !important;
+  text-indent: 0 !important;
+  vertical-align: middle !important;
+
+  line-height: 1.15 !important;
+
+  transform: none !important;
+}
+
+/* Center any generated inner text wrapper as well. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card
+.card-heading > *,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card
+.card-heading span,
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card
+.card-heading strong {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  text-align: center !important;
+  line-height: 1.15 !important;
+
+  transform: none !important;
+}
+
+/* Keep all five cards using the same explicit row structure. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card {
+  grid-template-rows:
+    46px
+    minmax(0, 1fr)
+    30px !important;
+
+  align-items: stretch !important;
+}
+
+/* Preserve the existing centered EDIT row. */
+#primitive-wizard-container
+#pr-selection-cards.blueprint-selection-module
+.pr-progress-card
+.card-back {
+  width: 100% !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  max-height: 30px !important;
+
+  margin: 0 !important;
+  padding: 0 4px !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  text-align: center !important;
+  line-height: 1 !important;
+
+  transform: none !important;
+}
+
+@media (max-width: 700px) {
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card
+  .card-heading {
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card {
+    grid-template-rows:
+      42px
+      minmax(0, 1fr)
+      28px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card
+  .card-back {
+    height: 28px !important;
+    min-height: 28px !important;
+    max-height: 28px !important;
+  }
+}
