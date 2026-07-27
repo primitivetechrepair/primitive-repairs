@@ -23855,3 +23855,21 @@ button.opt-card:focus-visible {
     scale: 1 !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS HIDE REPAIR TIME TEXT V30
+   Temporarily hide repair turnaround-time subtext
+========================================================= */
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+.repair-card-results
+> button.opt-card
+.opt-subtext,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+.repair-type-card-results
+> button.opt-card
+.opt-subtext {
+  display: none !important;
+}
