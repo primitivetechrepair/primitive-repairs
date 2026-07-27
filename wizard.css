@@ -21757,3 +21757,873 @@ div.opt-label::after {
     transition: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS DARK PREMIUM SELECTION CORRECTION V26
+   Visible premium redesign with stable hover geometry
+========================================================= */
+
+/* ---------------------------------------------------------
+   ONE CLEAN SELECTION STAGE
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area.animated-area {
+  width: 100% !important;
+  min-width: 0 !important;
+
+  padding: clamp(20px, 3vw, 32px) !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.14) !important;
+  border-radius: 30px !important;
+
+  background-color: #1D1E22 !important;
+  background-image:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.72),
+      rgba(29, 30, 34, 0.97) 46%,
+      #1D1E22
+    ) !important;
+
+  box-shadow:
+    0 28px 70px rgba(12, 14, 18, 0.34),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08) !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area.animated-area::before {
+  display: none !important;
+  content: none !important;
+
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove secondary panel surfaces inside the main stage. */
+#primitive-wizard-container
+#pr-steps-area
+.pr-options,
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-search-panel,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-selection-panel,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-selected-summary {
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+}
+
+/* ---------------------------------------------------------
+   CENTER THE COMPLETE STEP HEADING
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header {
+  width: 100% !important;
+  max-width: 760px !important;
+
+  margin: 0 auto 26px !important;
+  padding: 0 0 22px !important;
+
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+
+  align-items: center !important;
+  justify-items: center !important;
+  align-content: center !important;
+  justify-content: center !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(220, 237, 255, 0.12) !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+
+  text-align: center !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header::before,
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header::after {
+  display: none !important;
+  content: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header > span,
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header > h3,
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header > p {
+  width: 100% !important;
+
+  margin-right: auto !important;
+  margin-left: auto !important;
+
+  justify-self: center !important;
+  align-self: center !important;
+
+  text-align: center !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header > span {
+  width: fit-content !important;
+
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  padding: 7px 12px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 1px solid rgba(102, 252, 241, 0.32) !important;
+  border-radius: 999px !important;
+
+  background: rgba(57, 63, 77, 0.7) !important;
+
+  color: #66FCF1 !important;
+
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.11em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header > h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  color: #DCEDFF !important;
+
+  font-size: clamp(25px, 3.2vw, 36px) !important;
+  font-weight: 750 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1.05 !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.option-section-header > p {
+  max-width: 680px !important;
+
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+
+  color: rgba(220, 237, 255, 0.7) !important;
+
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+}
+
+/* ---------------------------------------------------------
+   PREMIUM CARD GRID
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.device-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.brand-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.series-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.model-card-results,
+
+#primitive-wizard-container
+#pr-steps-area
+.repair-card-results {
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: grid !important;
+  grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr)) !important;
+  grid-auto-rows: 1fr !important;
+
+  gap: 16px !important;
+
+  align-items: stretch !important;
+}
+
+/* ---------------------------------------------------------
+   DARK PREMIUM CARD
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:active,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"],
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"] {
+  position: relative !important;
+  isolation: isolate !important;
+
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  min-height: 238px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: grid !important;
+  grid-template-rows: 158px minmax(80px, auto) !important;
+
+  align-items: stretch !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.17) !important;
+  border-radius: 22px !important;
+
+  background-color: #272B34 !important;
+  background-image:
+    linear-gradient(
+      148deg,
+      rgba(57, 63, 77, 0.88),
+      rgba(39, 43, 52, 0.98) 48%,
+      rgba(29, 30, 34, 0.99)
+    ) !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
+
+  transform: none !important;
+  scale: 1 !important;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.28s ease,
+    background-color 0.25s ease !important;
+}
+
+/* Remove all inherited animated card overlays. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card::before {
+  display: none !important;
+  content: none !important;
+
+  opacity: 0 !important;
+
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Stable bottom accent; no moving perimeter or scale animation. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card::after {
+  content: "" !important;
+
+  position: absolute !important;
+  right: 18px !important;
+  bottom: 0 !important;
+  left: 18px !important;
+  z-index: 4 !important;
+
+  width: auto !important;
+  height: 3px !important;
+
+  display: block !important;
+
+  border: 0 !important;
+  border-radius: 999px 999px 0 0 !important;
+
+  background: #66FCF1 !important;
+
+  opacity: 0 !important;
+
+  animation: none !important;
+  transform: none !important;
+
+  transition: opacity 0.25s ease !important;
+
+  pointer-events: none !important;
+}
+
+/* Integrated image region without another rounded box. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb {
+  width: 100% !important;
+  height: 158px !important;
+  min-height: 158px !important;
+  flex: none !important;
+  flex-basis: 158px !important;
+
+  margin: 0 !important;
+  padding: 22px 20px 10px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  overflow: visible !important;
+
+  border: 0 !important;
+  border-bottom: 1px solid rgba(220, 237, 255, 0.1) !important;
+  border-radius: 0 !important;
+
+  background-color: transparent !important;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(220, 237, 255, 0.045),
+      transparent
+    ) !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+
+  box-shadow: none !important;
+
+  transform: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb::before,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb::after {
+  display: none !important;
+  content: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb-img {
+  width: min(116px, 76%) !important;
+  max-width: 116px !important;
+  height: 100% !important;
+  max-height: 116px !important;
+
+  object-fit: contain !important;
+
+  filter:
+    drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3)) !important;
+
+  animation: none !important;
+  transform: none !important;
+  scale: 1 !important;
+
+  transition: filter 0.25s ease !important;
+}
+
+/* Integrated card information region. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-card-body {
+  min-height: 80px !important;
+
+  margin: 0 !important;
+  padding: 13px 14px 16px !important;
+
+  display: grid !important;
+  align-content: center !important;
+  justify-items: center !important;
+
+  gap: 6px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
+
+  transform: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-label {
+  width: 100% !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow: none !important;
+
+  font-size: 14px !important;
+  font-weight: 750 !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.22 !important;
+  text-align: center !important;
+  text-shadow: none !important;
+
+  transform: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-label::before,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-label::after {
+  display: none !important;
+  content: none !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-subtext {
+  width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: rgba(220, 237, 255, 0.6) !important;
+
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-badge {
+  padding: 5px 8px !important;
+
+  border: 1px solid rgba(102, 252, 241, 0.24) !important;
+  border-radius: 999px !important;
+
+  background: rgba(102, 252, 241, 0.08) !important;
+
+  color: #66FCF1 !important;
+
+  box-shadow: none !important;
+
+  font-size: 9px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.07em !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+/* ---------------------------------------------------------
+   STABLE HOVER — NO GROWTH OR MOVEMENT
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover {
+  border-color: rgba(220, 237, 255, 0.34) !important;
+
+  background-color: #2B303A !important;
+
+  box-shadow:
+    0 18px 36px rgba(12, 14, 18, 0.32),
+    inset 0 1px 0 rgba(220, 237, 255, 0.11),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
+
+  animation: none !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-thumb,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-card-body,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-label {
+  animation: none !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+/* Selected cards remain the exact same physical size. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"],
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"] {
+  border-color: rgba(102, 252, 241, 0.94) !important;
+
+  background-color: #2B303A !important;
+
+  box-shadow:
+    0 0 0 3px rgba(102, 252, 241, 0.11),
+    0 18px 38px rgba(12, 14, 18, 0.34),
+    inset 0 1px 0 rgba(220, 237, 255, 0.11),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
+
+  animation: none !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]::after {
+  opacity: 1 !important;
+
+  animation: none !important;
+  transform: none !important;
+}
+
+/* Prevent older selected and hover image transforms. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]
+.opt-thumb-img {
+  animation: none !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+/* Keyboard focus only; no geometry movement. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus-visible {
+  outline: 3px solid rgba(102, 252, 241, 0.8) !important;
+  outline-offset: 4px !important;
+
+  animation: none !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+/* ---------------------------------------------------------
+   MODEL SEARCH — NO EXTRA RECTANGULAR PANEL
+--------------------------------------------------------- */
+
+#primitive-wizard-container
+#pr-steps-area
+.model-search-panel {
+  max-width: 680px !important;
+
+  margin: 0 auto 22px !important;
+  padding: 0 !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area
+.model-search-row {
+  overflow: hidden !important;
+
+  border: 1px solid rgba(220, 237, 255, 0.18) !important;
+  border-radius: 16px !important;
+
+  background: rgba(29, 30, 34, 0.72) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(220, 237, 255, 0.05) !important;
+}
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 760px) {
+  #primitive-wizard-container
+  #pr-steps-area.animated-area {
+    padding: 16px !important;
+
+    border-radius: 24px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header {
+    margin-bottom: 18px !important;
+    padding-bottom: 17px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header > h3 {
+    font-size: 25px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header > p {
+    font-size: 14px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .device-card-results,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .brand-card-results,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .series-card-results,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .model-card-results,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  .repair-card-results {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 12px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card:hover,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card.is-selected,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card.selected {
+    min-height: 204px !important;
+
+    grid-template-rows: 130px minmax(74px, auto) !important;
+
+    border-radius: 18px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  .opt-thumb {
+    height: 130px !important;
+    min-height: 130px !important;
+    flex-basis: 130px !important;
+
+    padding: 17px 10px 7px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  .opt-thumb-img {
+    width: min(92px, 78%) !important;
+    max-width: 92px !important;
+    max-height: 92px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  .opt-card-body {
+    min-height: 74px !important;
+    padding: 10px 8px 13px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  .opt-label {
+    font-size: 12px !important;
+  }
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  .opt-subtext {
+    font-size: 10px !important;
+  }
+}
+
+/* ---------------------------------------------------------
+   REDUCED MOTION
+--------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card::after,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  .opt-thumb-img {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
