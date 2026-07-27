@@ -317,10 +317,6 @@ body {
   text-rendering: geometricPrecision;
 }
 
-.nav-dropdown-btn:hover {
-  transform: none;
-  filter: none;
-}
 
 .nav-dropdown-menu {
   position: absolute;
@@ -353,7 +349,7 @@ body {
     visibility 0.16s ease;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu,
+
 .nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;
@@ -392,11 +388,6 @@ body {
   margin-top: 0;
 }
 
-.nav-dropdown-menu a:hover,
-.site-nav-links a:hover,
-.nav-dropdown-btn:hover {
-  background: #D4D4DC;
-}
 
 .nav-disabled {
   position: relative;
@@ -425,9 +416,6 @@ body {
   box-shadow: 0 12px 24px rgba(212, 212, 220, 0.2);
 }
 
-.nav-cta:hover {
-  color: #1D1E22 !important;
-}
 
 .mobile-menu-toggle {
   display: none;
@@ -556,7 +544,7 @@ body.mobile-nav-open {
     box-shadow 0.18s ease;
 }
 
-.mobile-nav-close:hover,
+
 .mobile-nav-close:active {
   transform: scale(0.96);
   background: #D4D4DC;
@@ -599,7 +587,7 @@ body.mobile-nav-open {
     box-shadow 0.18s ease;
 }
 
-.mobile-nav-links a:hover,
+
 .mobile-nav-links a:active {
   transform: translateX(-2px);
   border-color: rgba(212, 212, 220, 0.24);
@@ -617,7 +605,7 @@ body.mobile-nav-open {
   box-shadow: 0 14px 28px rgba(212, 212, 220, 0.2);
 }
 
-.mobile-nav-links a:first-child:hover,
+
 .mobile-nav-links a:first-child:active {
   color: #1D1E22;
 }
@@ -1407,10 +1395,6 @@ text-align: center;
     transform 0.22s ease;
 }
 
-.supported-device-card:hover::after {
-  opacity: 0.2;
-  transform: translateY(-4px) scale(1.04);
-}
 
 .supported-device-card[data-device="phone"]::after {
   background-image: url("/images/supported-devices/thumbs/phone.webp");
@@ -1444,20 +1428,6 @@ text-align: center;
   background-image: url("/images/supported-devices/thumbs/electronics.webp");
 }
 
-.supported-device-card:hover {
-  transform: translateY(-4px);
-
-  border-color: rgba(212, 212, 220, 0.32);
-
-  box-shadow:
-    0 18px 38px rgba(212, 212, 220, 0.12),
-    0 0 0 1px rgba(212, 212, 220, 0.12),
-    inset 0 1px 0 rgba(212, 212, 220, 0.9);
-}
-
-.supported-device-card:hover::before {
-  opacity: 1;
-}
 
 .supported-device-card > * {
   position: relative;
@@ -1524,14 +1494,6 @@ text-align: center;
     box-shadow 0.22s ease;
 }
 
-.supported-device-card:hover .supported-device-icon {
-  transform: translateY(-2px) scale(1.04);
-
-  box-shadow:
-    0 18px 34px rgba(212, 212, 220, 0.24),
-    0 0 0 8px rgba(212, 212, 220, 0.08),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 .supported-device-content {
   min-width: 0;
@@ -1691,15 +1653,6 @@ text-align: center;
     color 0.2s ease;
 }
 
-.supported-device-action:hover {
-  transform: translateY(-1px);
-  color: #1D1E22;
-
-  box-shadow:
-    0 16px 32px rgba(212, 212, 220, 0.24),
-    0 0 0 4px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 .supported-device-card-featured {
   border-color: rgba(212, 212, 220, 0.2);
@@ -1786,15 +1739,6 @@ text-align: center;
   box-shadow: none;
 }
 
-.supported-devices-section .supported-device-card:hover {
-  transform: none;
-
-  background:
-    radial-gradient(circle at top, rgba(212, 212, 220, 0.18), transparent 44%),
-    rgba(212, 212, 220, 0.58);
-
-  box-shadow: none;
-}
 
 .supported-devices-section .supported-device-icon {
   width: 64px;
@@ -1937,14 +1881,6 @@ text-align: center;
     0 0 18px rgba(212, 212, 220, 0.055);
 }
 
-#popular-repair-services .supported-device-card:hover {
-  border-color: rgba(212, 212, 220, 0.42);
-
-  box-shadow:
-    inset 0 1px 0 rgba(212, 212, 220, 0.22),
-    0 20px 42px rgba(29, 30, 34, 0.22),
-    0 0 28px rgba(212, 212, 220, 0.14);
-}
 
 #popular-repair-services .supported-device-content h3 {
   color: #D4D4DC;
@@ -1993,23 +1929,6 @@ text-align: center;
     0 0 16px rgba(212, 212, 220, 0.08);
 }
 
-#popular-repair-services .supported-device-action:hover {
-  border-color: rgba(212, 212, 220, 0.42);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(212, 212, 220, 0.26),
-      rgba(212, 212, 220, 0.16)
-    );
-
-  color: #D4D4DC;
-
-  box-shadow:
-    inset 0 1px 0 rgba(212, 212, 220, 0.34),
-    0 14px 28px rgba(29, 30, 34, 0.18),
-    0 0 22px rgba(212, 212, 220, 0.16);
-}
 
 .popular-service-link-panel {
   position: relative;
@@ -2113,20 +2032,6 @@ text-align: center;
     box-shadow 0.2s ease;
 }
 
-.popular-service-link-grid a:hover {
-  transform: translateY(-2px);
-
-  border-color: rgba(212, 212, 220, 0.5);
-
-  background:
-    radial-gradient(circle at top left, rgba(212, 212, 220, 0.22), transparent 44%),
-    linear-gradient(180deg, rgba(212, 212, 220, 0.16), rgba(212, 212, 220, 0.06));
-
-  box-shadow:
-    inset 0 1px 0 rgba(212, 212, 220, 0.18),
-    0 14px 28px rgba(29, 30, 34, 0.18),
-    0 0 18px rgba(212, 212, 220, 0.12);
-}
 
 .supported-device-trust-strip {
   margin-top: 18px;
@@ -2211,15 +2116,6 @@ text-align: center;
     color 0.2s ease;
 }
 
-.supported-device-trust-strip a:hover {
-  transform: translateY(-2px);
-  color: #D4D4DC;
-
-  box-shadow:
-    0 20px 40px rgba(212, 212, 220, 0.28),
-    0 0 0 4px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 /* =========================================================
    CONTACT PAGE - HELP CHECKLIST
@@ -2960,17 +2856,6 @@ text-align: center;
   transition: opacity 0.22s ease;
 }
 
-.process-card:hover {
-  transform: none;
-
-  background:
-    radial-gradient(circle at top, rgba(212, 212, 220, 0.16), transparent 46%),
-    rgba(212, 212, 220, 0.42);
-}
-
-.process-card:hover::before {
-  opacity: 1;
-}
 
 .process-card > * {
   position: relative;
@@ -3116,15 +3001,6 @@ text-align: center;
     color 0.2s ease;
 }
 
-.process-trust-strip a:hover {
-  transform: translateY(-2px);
-  color: #D4D4DC;
-
-  box-shadow:
-    0 20px 40px rgba(212, 212, 220, 0.28),
-    0 0 0 4px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 .trust-section {
   position: relative;
@@ -3233,20 +3109,6 @@ text-align: center;
   transition: opacity 0.22s ease;
 }
 
-.trust-badge:hover {
-  transform: translateY(-3px);
-
-  border-color: rgba(212, 212, 220, 0.28);
-
-  box-shadow:
-    0 16px 32px rgba(212, 212, 220, 0.1),
-    0 0 0 1px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.88);
-}
-
-.trust-badge:hover::before {
-  opacity: 1;
-}
 
 .trust-badge > * {
   position: relative;
@@ -3338,23 +3200,6 @@ text-align: center;
   color: #D4D4DC;
 }
 
-.trust-section .trust-badge:hover {
-  transform: none;
-
-  border-color: rgba(212, 212, 220, 0.18);
-
-  box-shadow:
-    inset 0 1px 0 rgba(212, 212, 220, 0.14),
-    0 14px 28px rgba(29, 30, 34, 0.14);
-}
-
-.trust-section .trust-badge:hover::before {
-  opacity: 0;
-}
-
-.trust-section .trust-badge:hover span {
-  transform: none;
-}
 
 /* =========================================================
    WARRANTY PAGE
@@ -3531,16 +3376,6 @@ text-align: center;
     box-shadow 0.18s ease;
 }
 
-.warranty-options label:hover {
-  transform: translateY(-1px);
-
-  border-color: rgba(212, 212, 220, 0.24);
-  background: rgba(212, 212, 220, 0.9);
-
-  box-shadow:
-    0 10px 22px rgba(212, 212, 220, 0.08),
-    inset 0 1px 0 rgba(212, 212, 220, 0.9);
-}
 
 .warranty-options label:has(input:checked) {
   border-color: rgba(212, 212, 220, 0.42);
@@ -4038,9 +3873,6 @@ backdrop-filter: blur(16px) saturate(170%);
   transition: opacity 0.22s ease;
 }
 
-.review-card-public:hover::before {
-  opacity: 1;
-}
 
 .review-card-public > * {
   position: relative;
@@ -4180,15 +4012,6 @@ backdrop-filter: blur(16px) saturate(170%);
     transform 0.18s ease;
 }
 
-.faq-item:hover {
-  transform: translateY(-1px);
-
-  border-color: rgba(212, 212, 220, 0.24);
-
-  box-shadow:
-    0 12px 26px rgba(212, 212, 220, 0.08),
-    inset 0 1px 0 rgba(212, 212, 220, 0.9);
-}
 
 .faq-item[open] {
   border-color: rgba(212, 212, 220, 0.28);
@@ -4499,25 +4322,6 @@ backdrop-filter: blur(16px) saturate(170%);
     box-shadow 0.18s ease;
 }
 
-.site-footer-links a:hover {
-  transform: translateY(-2px);
-
-  border-color: rgba(212, 212, 220, 0.52);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(29, 30, 34, 0.96),
-      rgba(212, 212, 220, 0.82)
-    );
-
-  color: #D4D4DC;
-
-  box-shadow:
-    inset 0 1px 0 rgba(212, 212, 220, 0.22),
-    0 12px 24px rgba(212, 212, 220, 0.14),
-    0 0 18px rgba(212, 212, 220, 0.18);
-}
 
 .site-footer-social-icon {
   width: 15px;
@@ -4532,9 +4336,6 @@ backdrop-filter: blur(16px) saturate(170%);
   transition: transform 0.18s ease;
 }
 
-.site-footer-social-links a:hover .site-footer-social-icon {
-  transform: scale(1.08);
-}
 
 .site-footer-bottom {
   padding-top: 16px;
@@ -4783,11 +4584,6 @@ backdrop-filter: blur(16px) saturate(170%);
   box-shadow: inset 0 1px 0 rgba(212, 212, 220, 0.05);
 }
 
-.pr-change:hover {
-  background: #D4D4DC;
-  color: #D4D4DC;
-  box-shadow: 0 6px 14px rgba(29, 30, 34, 0.35);
-}
 
 .pr-progress-bar-wrap {
   height: 14px;
@@ -5211,20 +5007,6 @@ backdrop-filter: blur(16px) saturate(170%);
     transform 0.2s ease;
 }
 
-.selection-cards .card-back:hover {
-  background:
-    linear-gradient(
-      135deg,
-      rgba(212, 212, 220, 0.9),
-      rgba(212, 212, 220, 0.82)
-    );
-
-  color: #1D1E22;
-
-  box-shadow:
-    0 -10px 22px rgba(212, 212, 220, 0.18),
-    inset 0 1px 0 rgba(212, 212, 220, 0.32);
-}
 
 .selection-cards .card.filled {
   border-color: rgba(212, 212, 220, 0.46);
@@ -5241,15 +5023,6 @@ backdrop-filter: blur(16px) saturate(170%);
     border-color 0.2s ease;
 }
 
-.selection-cards .card.filled:hover {
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 0 0 1px rgba(212, 212, 220, 0.16),
-    0 16px 34px rgba(212, 212, 220, 0.14),
-    0 0 24px rgba(212, 212, 220, 0.2),
-    inset 0 1px 0 rgba(212, 212, 220, 0.88);
-}
 
 .selection-cards .card:not(.filled) {
   opacity: 0.82;
@@ -5260,10 +5033,6 @@ backdrop-filter: blur(16px) saturate(170%);
     linear-gradient(180deg, rgba(212, 212, 220, 0.82), rgba(212, 212, 220, 0.68));
 }
 
-.selection-cards .card:not(.filled):hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(29, 30, 34, 0.15);
-}
 
 .selection-cards .card:not(.filled) .card-label {
   color: rgba(29, 30, 34, 0.62);
@@ -5765,27 +5534,6 @@ backdrop-filter: blur(16px) saturate(170%);
   z-index: 1;
 }
 
-.opt-card:hover:not(.is-selected) {
-  transform: translateY(-5px);
-
-  border-color: rgba(212, 212, 220, 0.68);
-
-  background:
-    radial-gradient(circle at top right, rgba(212, 212, 220, 0.24), transparent 38%),
-    radial-gradient(circle at bottom left, rgba(212, 212, 220, 0.18), transparent 42%),
-    linear-gradient(
-      180deg,
-      rgba(212, 212, 220, 0.98),
-      rgba(212, 212, 220, 0.9)
-    );
-
-  box-shadow:
-    inset 0 1px 0 rgba(212, 212, 220, 0.96),
-    inset 0 -1px 0 rgba(212, 212, 220, 0.18),
-    0 22px 44px rgba(212, 212, 220, 0.22),
-    0 0 0 2px rgba(212, 212, 220, 0.24),
-    0 0 28px rgba(212, 212, 220, 0.18);
-}
 
 .opt-card.is-selected {
   border: 1px solid rgba(212, 212, 220, 0.92);
@@ -6107,10 +5855,6 @@ backdrop-filter: blur(16px) saturate(170%);
     opacity 0.2s ease;
 }
 
-.model-search-clear:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 22px rgba(29, 30, 34, 0.1);
-}
 
 .model-search-clear:disabled {
   opacity: 0.45;
@@ -6740,18 +6484,6 @@ backdrop-filter: blur(16px) saturate(170%);
     color 0.2s ease;
 }
 
-.repair-details-continue:hover,
-.repair-info-continue:hover,
-.success-start-new:hover {
-  transform: translateY(-2px);
-
-  color: #D4D4DC;
-
-  box-shadow:
-    0 20px 40px rgba(212, 212, 220, 0.3),
-    0 0 0 5px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 .repair-details-continue::after,
 .repair-info-continue::after,
@@ -7260,14 +6992,6 @@ backdrop-filter: blur(16px) saturate(170%);
   line-height: 1.45;
 }
 
-.appointment-service-card:hover:not(.is-selected),
-.appointment-time-slot:hover:not(.is-selected) {
-  transform: translateY(-2px);
-  border-color: rgba(212, 212, 220, 0.66);
-  box-shadow:
-    0 16px 34px rgba(212, 212, 220, 0.2),
-    0 0 0 2px rgba(212, 212, 220, 0.18);
-}
 
 .appointment-date-input {
   width: min(360px, 100%);
@@ -7358,20 +7082,6 @@ backdrop-filter: blur(16px) saturate(170%);
     box-shadow 0.2s ease;
 }
 
-.appointment-time-slot:hover:not(.is-selected) {
-  transform: translateY(-2px);
-
-  border-color: rgba(212, 212, 220, 0.66);
-
-  background:
-    radial-gradient(circle at top, rgba(212, 212, 220, 0.18), transparent 48%),
-    linear-gradient(180deg, rgba(212, 212, 220, 0.98), rgba(212, 212, 220, 0.9));
-
-  box-shadow:
-    0 14px 28px rgba(212, 212, 220, 0.18),
-    0 0 0 2px rgba(212, 212, 220, 0.18),
-    inset 0 1px 0 rgba(212, 212, 220, 0.9);
-}
 
 .appointment-time-slot.is-selected {
   border-color: rgba(212, 212, 220, 0.88);
@@ -7452,16 +7162,6 @@ backdrop-filter: blur(16px) saturate(170%);
     color 0.2s ease;
 }
 
-.appointment-continue:hover {
-  transform: translateY(-2px);
-
-  color: #D4D4DC;
-
-  box-shadow:
-    0 20px 40px rgba(212, 212, 220, 0.3),
-    0 0 0 5px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 /* =========================================================
    11. CUSTOMER FORM / SUMMARY
@@ -7930,19 +7630,6 @@ backdrop-filter: blur(16px) saturate(170%);
     background 0.2s ease;
 }
 
-.repair-policy-toggle:hover {
-  transform: translateY(-1px);
-  border-color: rgba(212, 212, 220, 0.58);
-
-  background:
-    radial-gradient(circle at top left, rgba(212, 212, 220, 0.28), transparent 38%),
-    linear-gradient(135deg, rgba(212, 212, 220, 0.98), rgba(212, 212, 220, 0.9));
-
-  box-shadow:
-    0 14px 28px rgba(212, 212, 220, 0.16),
-    0 0 0 4px rgba(212, 212, 220, 0.12),
-    inset 0 1px 0 rgba(212, 212, 220, 0.92);
-}
 
 .repair-policy-box {
   position: relative;
@@ -8150,30 +7837,6 @@ backdrop-filter: blur(16px) saturate(170%);
   content: " →";
 }
 
-#cf-back:hover {
-  transform: translateY(-2px);
-
-  border-color: rgba(212, 212, 220, 0.26);
-
-  background:
-    linear-gradient(180deg, rgba(212, 212, 220, 0.98), rgba(212, 212, 220, 0.82));
-
-  box-shadow:
-    0 14px 28px rgba(29, 30, 34, 0.1),
-    0 0 0 4px rgba(212, 212, 220, 0.08),
-    inset 0 1px 0 rgba(212, 212, 220, 0.92);
-}
-
-#cf-submit:hover {
-  transform: translateY(-2px);
-
-  color: #D4D4DC;
-
-  box-shadow:
-    0 20px 40px rgba(212, 212, 220, 0.3),
-    0 0 0 5px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.24);
-}
 
 /* ---------- Customer Form Mobile ---------- */
 
@@ -8753,28 +8416,6 @@ backdrop-filter: blur(16px) saturate(170%);
     inset 0 1px 0 rgba(212, 212, 220, 0.12);
 }
 
-.review-back:hover {
-  transform: translateY(-2px);
-
-  border-color: rgba(212, 212, 220, 0.26);
-
-  background:
-    linear-gradient(180deg, rgba(212, 212, 220, 0.98), rgba(212, 212, 220, 0.82));
-
-  box-shadow:
-    0 14px 28px rgba(29, 30, 34, 0.1),
-    0 0 0 4px rgba(212, 212, 220, 0.08),
-    inset 0 1px 0 rgba(212, 212, 220, 0.92);
-}
-
-.review-submit:hover:not(:disabled) {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 20px 40px rgba(212, 212, 220, 0.28),
-    0 0 0 4px rgba(212, 212, 220, 0.1),
-    inset 0 1px 0 rgba(212, 212, 220, 0.22);
-}
 
 .review-attachments-list,
 .success-attachments-list {
@@ -10480,13 +10121,10 @@ body {
     flex: initial;
   }
 
-    #pr-steps-area.animated-area:has(.opt-card) .opt-card:hover,
+
   #pr-steps-area.animated-area:has(.opt-card) .opt-card.is-selected,
-  #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results .opt-card:hover,
   #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results .opt-card.is-selected,
-  .model-card-results .opt-card:hover,
   .model-card-results .opt-card.is-selected,
-  .repair-card-results .opt-card:hover,
   .repair-card-results .opt-card.is-selected {
     transform: none;
   }
@@ -11633,8 +11271,7 @@ body {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover,
-  #pr-selection-cards.blueprint-selection-module .card-back:hover,
+
   #pr-selection-cards.blueprint-selection-module .card-back:active {
     transform: none !important;
     transition: none !important;
@@ -11907,10 +11544,7 @@ body {
 
 /* No movement hover */
 @media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover .ape-cell-art,
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card:hover .card-img {
-    transform: none !important;
-  }
+
 }
 
 @media (min-width: 701px) {
@@ -12244,7 +11878,6 @@ html.service-hours-closed .service-hours-booking-disabled {
 }
 
 .service-hours-disabled,
-.service-hours-disabled:hover,
 .service-hours-disabled:active {
   cursor: not-allowed !important;
   opacity: 0.58 !important;
@@ -12355,8 +11988,7 @@ html.service-hours-closed .service-hours-booking-disabled {
 /* Stop the blueprint theme from recoloring selected images. */
 #pr-selection-cards.blueprint-selection-module .card-img,
 #pr-selection-cards.blueprint-selection-module .pr-progress-card.filled .card-img,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-img,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card:hover .card-img {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step .card-img {
   filter: none !important;
   opacity: 1 !important;
 }
@@ -12554,15 +12186,8 @@ html.service-hours-closed .service-hours-booking-disabled {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover {
-    background:
-      radial-gradient(circle at center, rgba(212, 212, 220, 0.12), transparent 55%),
-      linear-gradient(180deg, rgba(212, 212, 220, 0.07), rgba(212, 212, 220, 0.032)) !important;
-  }
 
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover .card-label {
-    color: rgba(212, 212, 220, 0.98) !important;
-  }
+
 }
 /* =========================================================
    REPAIR BLUEPRINT EMPTY STATE POLISH
@@ -12739,10 +12364,7 @@ html.service-hours-closed .service-hours-booking-disabled {
 
 /* Desktop hover remains solid with no gradient transition. */
 @media (hover: hover) and (pointer: fine) {
-  #pr-selection-cards.blueprint-selection-module .card-back:not(:disabled):hover {
-    background: #D4D4DC !important;
-    color: #D4D4DC !important;
-  }
+
 }
 /* =========================================================
    REPAIR BLUEPRINT MOBILE SOLID ROW EDGE CORRECTION
@@ -12928,17 +12550,6 @@ html.service-hours-closed .service-hours-booking-disabled {
     inset 0 1px 0 rgba(212, 212, 220, 0.9);
 }
 
-.appointment-time-slot.is-after-hours:not(.is-selected):hover {
-  border-color: rgba(212, 212, 220, 0.78);
-
-  background:
-    radial-gradient(circle at top, rgba(212, 212, 220, 0.22), transparent 50%),
-    linear-gradient(180deg, #D4D4DC, rgba(212, 212, 220, 0.96));
-
-  box-shadow:
-    0 14px 28px rgba(212, 212, 220, 0.16),
-    0 0 0 2px rgba(212, 212, 220, 0.14);
-}
 
 .appointment-time-slot.is-after-hours.is-selected > small {
   color: #D4D4DC;
@@ -13475,36 +13086,8 @@ html.service-hours-closed .service-hours-booking-disabled {
 */
 
 @media (hover: hover) and (pointer: fine) {
-  button:hover,
-  button:active,
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
-  input[type="reset"]:hover,
-  a.supported-device-action:hover,
-  a[class*="btn"]:hover,
-  a[class*="button"]:hover,
-  a[class*="cta"]:hover,
-  [role="button"]:hover,
-  [class*="-continue"]:hover,
-  [class*="-submit"]:hover,
-  [class*="-back"]:hover,
-  [class*="-action"]:hover,
-  .supported-device-card:hover,
-  .popular-service-link-grid a:hover,
-  .supported-device-trust-strip a:hover,
-  .process-trust-strip a:hover,
-  .trust-badge:hover,
-  .warranty-options label:hover,
-  .faq-item:hover,
-  .site-footer-links a:hover,
-  .selection-cards .card:hover,
-  .selection-cards .card.filled:hover,
-  .selection-cards .card:not(.filled):hover,
-  .opt-card:hover,
-  .appointment-service-card:hover,
-  .appointment-time-slot:hover,
-  .repair-policy-toggle:hover,
-  .model-search-clear:hover:not(:disabled) {
+
+  button:active {
     transform: none !important;
     translate: none !important;
   }
@@ -14251,7 +13834,7 @@ body.email-offer-open {
     text-decoration-color 150ms ease;
 }
 
-.site-footer-cookie-settings:hover,
+
 .site-footer-cookie-settings:focus-visible {
   color: #D4D4DC;
   text-decoration-color: currentColor;
@@ -14588,11 +14171,9 @@ body.email-offer-open {
   color: #D4D4DC;
 }
 
-.service-area-modal-close:hover,
+
 .service-area-modal-close:focus-visible,
-.service-area-modal-secondary:hover,
 .service-area-modal-secondary:focus-visible,
-.service-area-modal-primary:hover,
 .service-area-modal-primary:focus-visible {
   filter: brightness(1.08);
 }
@@ -14826,86 +14407,11 @@ button.supported-device-action.service-area-trigger:focus-visible {
     Repair Blueprint summary cards:
     Device, Brand, Series, Model, and Repair.
   */
-  #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card.is-clickable-blueprint-card:hover,
 
-  /*
-    Actual selectable wizard cards.
-  */
-  #primitive-wizard-container
-    .device-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .brand-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .series-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .model-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .repair-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .repair-type-card-results
-    > .opt-card:hover {
-    border-color: rgba(212, 212, 220, 0.38) !important;
-
-    animation:
-      repair-blueprint-premium-hover 3.2s
-      ease-in-out
-      infinite !important;
-
-    filter:
-      brightness(1.015)
-      saturate(1.025);
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card.is-clickable-blueprint-card:hover,
 
-  #primitive-wizard-container
-    .device-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .brand-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .series-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .model-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .repair-card-results
-    > .opt-card:hover,
-
-  #primitive-wizard-container
-    .repair-type-card-results
-    > .opt-card:hover {
-    animation: none !important;
-    filter: none !important;
-
-    border-color: rgba(212, 212, 220, 0.38) !important;
-
-    box-shadow:
-      0 14px 30px rgba(29, 30, 34, 0.09),
-      0 0 0 1px rgba(212, 212, 220, 0.32),
-      0 0 20px rgba(212, 212, 220, 0.1),
-      inset 0 1px 0 rgba(212, 212, 220, 0.9) !important;
-  }
 }
 /* =========================================================
    DESKTOP HEADER AND FEE BANNER SPACING
@@ -15196,12 +14702,12 @@ button.supported-device-action.service-area-trigger:focus-visible {
   color: var(--accent);
 }
 
-.protection-upsell-add:hover,
+
 .protection-upsell-add:focus-visible {
   filter: brightness(1.06);
 }
 
-.protection-upsell-skip:hover,
+
 .protection-upsell-skip:focus-visible {
   border-color: rgba(212, 212, 220, 0.34);
   background: #D4D4DC;
@@ -15446,7 +14952,7 @@ button.supported-device-action.service-area-trigger:focus-visible {
   box-shadow: 0 8px 22px rgba(212, 212, 220, 0.16);
 }
 
-.email-offer-close:hover,
+
 .email-offer-close:focus-visible {
   border-color: rgba(212, 212, 220, 0.56);
 
@@ -15688,9 +15194,8 @@ button.supported-device-action.service-area-trigger:focus-visible {
     inset 0 1px 0 rgba(212, 212, 220, 0.18);
 }
 
-.email-offer-submit:hover,
+
 .email-offer-submit:focus-visible,
-.email-offer-success-close:hover,
 .email-offer-success-close:focus-visible {
   background:
     linear-gradient(
@@ -16082,11 +15587,6 @@ body {
   color: #1D1E22;
 }
 
-.site-nav-links a:hover,
-.nav-dropdown-btn:hover {
-  background: rgba(29, 30, 34, 0.08);
-  color: #1D1E22;
-}
 
 .nav-dropdown-menu,
 .mobile-nav-drawer,
@@ -16139,31 +15639,7 @@ body {
   color: #1D1E22 !important;
 }
 
-.landing-primary-btn:hover,
-.supported-device-action:hover,
-.supported-device-trust-strip a:hover,
-.process-trust-strip a:hover,
-.mobile-sticky-booking-bar a:hover,
-.warranty-check-btn:hover,
-.warranty-submit-btn:hover,
-.warranty-success-actions button:hover,
-.warranty-success-actions a:hover,
-.repair-select-continue:hover:not(:disabled),
-.repair-details-continue:hover,
-.repair-info-continue:hover,
-.appointment-continue:hover,
-#cf-submit:hover,
-.review-submit:hover:not(:disabled),
-.success-start-new:hover,
-.email-offer-submit:hover,
-.email-offer-success-close:hover,
-.contact-call-action:hover {
-  background: rgba(102, 252, 241, 0.72);
-  color: #1D1E22;
-}
 
-.nav-cta:hover,
-.mobile-nav-links a:first-child:hover,
 .mobile-nav-links a:first-child:active {
   border-color: rgba(212, 212, 220, 0.72);
   background: #D4D4DC;
@@ -16433,7 +15909,6 @@ textarea::placeholder {
 }
 
 .selection-cards .card.filled,
-.selection-cards .card.filled:hover,
 .selection-cards .card.is-current-step,
 .pr-options .opt-card.selected,
 .pr-options .opt-card.is-selected,
@@ -16548,8 +16023,7 @@ textarea::placeholder {
 }
 
 #pr-selection-cards.blueprint-selection-module .pr-progress-card.filled,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step {
   border-color: rgba(29, 30, 34, 0.72);
   background: #D4D4DC;
   color: #1D1E22;
@@ -16615,12 +16089,6 @@ textarea::placeholder {
     inset 0 1px 0 rgba(212, 212, 220, 0.92);
 }
 
-.site-footer .site-footer-link-group:nth-child(2) .site-footer-links a:hover,
-.site-footer .site-footer-repair-group .site-footer-links a:hover,
-.site-footer-repair-details > summary:hover {
-  background: rgba(212, 212, 220, 0.76);
-  color: #1D1E22;
-}
 
 /* Responsive typography remains exact */
 @media (max-width: 760px) {
@@ -16955,7 +16423,6 @@ select,
 .model-card-results .opt-card,
 .repair-card-results .opt-card,
 .selection-cards .card.filled,
-.selection-cards .card.filled:hover,
 .selection-cards .card.is-current-step,
 .pr-options .opt-card.selected,
 .pr-options .opt-card.is-selected,
@@ -17095,8 +16562,7 @@ select,
 /* Blueprint display cards stay light and never recolor after selection. */
 #pr-selection-cards.blueprint-selection-module .pr-progress-card,
 #pr-selection-cards.blueprint-selection-module .pr-progress-card.filled,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step,
-#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-clickable-blueprint-card:hover {
+#pr-selection-cards.blueprint-selection-module .pr-progress-card.is-current-step {
   border-color: rgba(220, 237, 255, 0.5);
   border-radius: 24px;
   background-color: rgba(212, 212, 220, 0.72);
@@ -17547,10 +17013,7 @@ select,
 .pr-progress-card.is-current-step,
 #primitive-wizard-container
 #pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-missing-choice,
-#primitive-wizard-container
-#pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-clickable-blueprint-card:hover {
+.pr-progress-card.is-missing-choice {
   overflow: hidden;
 
   border: 1px solid rgba(220, 237, 255, 0.16) !important;
@@ -17719,10 +17182,7 @@ select,
 .pr-progress-card.filled .card-back,
 #primitive-wizard-container
 #pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-current-step .card-back,
-#primitive-wizard-container
-#pr-selection-cards.blueprint-selection-module
-.card-back:not(:disabled):hover {
+.pr-progress-card.is-current-step .card-back {
   border-top: 1px solid rgba(102, 252, 241, 0.22) !important;
 
   background:
@@ -17755,15 +17215,7 @@ select,
 
 /* Interaction changes depth only; colors remain fixed. */
 @media (hover: hover) and (pointer: fine) {
-  #primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  .pr-progress-card.is-clickable-blueprint-card:hover {
-    transform: translateY(-3px);
 
-    box-shadow:
-      0 22px 42px rgba(29, 30, 34, 0.42),
-      inset 0 1px 0 rgba(220, 237, 255, 0.08) !important;
-  }
 }
 
 @media (max-width: 700px) {
@@ -18025,12 +17477,6 @@ h1,
 #primitive-wizard-container
 #pr-steps-area
 .opt-card,
-#primitive-wizard-container
-#pr-steps-area
-.opt-card:hover,
-#primitive-wizard-container
-#pr-steps-area
-.opt-card:hover:not(.is-selected),
 #primitive-wizard-container
 #pr-steps-area
 .opt-card.is-selected,
@@ -18355,42 +17801,8 @@ h1,
 
 /* Fine-pointer interaction changes depth only. */
 @media (hover: hover) and (pointer: fine) {
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover:not(.is-selected) {
-    transform: translateY(-4px);
 
-    border-color: rgba(220, 237, 255, 0.72);
 
-    box-shadow:
-      0 24px 48px rgba(29, 30, 34, 0.28),
-      inset 0 1px 0 rgba(220, 237, 255, 0.9),
-      inset 0 -1px 0 rgba(29, 30, 34, 0.07);
-  }
-
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card.is-selected:hover,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card.selected:hover,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card[aria-pressed="true"]:hover,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card[aria-selected="true"]:hover {
-    border-color: rgba(102, 252, 241, 0.94);
-
-    box-shadow:
-      0 0 0 3px rgba(102, 252, 241, 0.18),
-      0 26px 50px rgba(29, 30, 34, 0.3),
-      inset 0 1px 0 rgba(220, 237, 255, 0.9),
-      inset 0 -1px 0 rgba(29, 30, 34, 0.07);
-  }
 }
 
 @media (max-width: 760px) {
@@ -18436,9 +17848,6 @@ h1,
   #primitive-wizard-container
   #pr-steps-area
   .opt-card,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover,
   #primitive-wizard-container
   #pr-steps-area
   .opt-card.is-selected,
@@ -18516,10 +17925,7 @@ h1,
 .pr-progress-card.is-missing-choice,
 #primitive-wizard-container
 #pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-clickable-blueprint-card,
-#primitive-wizard-container
-#pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-clickable-blueprint-card:hover {
+.pr-progress-card.is-clickable-blueprint-card {
   min-width: 0;
   width: 100%;
 
@@ -18565,10 +17971,7 @@ h1,
 .pr-progress-card.filled,
 #primitive-wizard-container
 #pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-current-step,
-#primitive-wizard-container
-#pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-clickable-blueprint-card:hover {
+.pr-progress-card.is-current-step {
   margin: 0 !important;
   padding: 0 !important;
 
@@ -18620,10 +18023,7 @@ h1,
   .pr-progress-card.is-current-step,
   #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
-  .pr-progress-card.is-missing-choice,
-  #primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  .pr-progress-card.is-clickable-blueprint-card:hover {
+  .pr-progress-card.is-missing-choice {
     width: 100%;
 
     margin: 0 !important;
@@ -18725,10 +18125,7 @@ h1,
 .pr-progress-card.filled .card-back,
 #primitive-wizard-container
 #pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-current-step .card-back,
-#primitive-wizard-container
-#pr-selection-cards.blueprint-selection-module
-.card-back:not(:disabled):hover {
+.pr-progress-card.is-current-step .card-back {
   width: 100% !important;
   min-height: 30px !important;
   height: 30px !important;
@@ -19047,12 +18444,6 @@ h1,
 #primitive-wizard-container
 #pr-steps-area
 .opt-card,
-#primitive-wizard-container
-#pr-steps-area
-.opt-card:hover,
-#primitive-wizard-container
-#pr-steps-area
-.opt-card:hover:not(.is-selected),
 #primitive-wizard-container
 #pr-steps-area
 .opt-card.is-selected,
@@ -19379,30 +18770,8 @@ h1,
 }
 
 @media (hover: hover) and (pointer: fine) {
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover:not(.is-selected) {
-    transform: translateY(-2px) !important;
 
-    border-color: rgba(220, 237, 255, 0.72) !important;
 
-    box-shadow:
-      0 22px 44px rgba(29, 30, 34, 0.27),
-      inset 0 1px 0 rgba(220, 237, 255, 0.92),
-      inset 0 -1px 0 rgba(29, 30, 34, 0.07) !important;
-  }
-
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card.is-selected:hover,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card.selected:hover {
-    transform: none !important;
-  }
 }
 
 @media (max-width: 700px) {
@@ -19431,9 +18800,6 @@ h1,
   #primitive-wizard-container
   #pr-steps-area
   .opt-card,
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover,
   #primitive-wizard-container
   #pr-steps-area
   .opt-card.is-selected,
@@ -19498,7 +18864,6 @@ h1,
 
 /* One predictable internal structure for every selection card. */
 #primitive-wizard-container #pr-steps-area .opt-card,
-#primitive-wizard-container #pr-steps-area .opt-card:hover,
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
 #primitive-wizard-container #pr-steps-area .opt-card.selected,
 #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
@@ -19583,7 +18948,6 @@ h1,
 
 @media (max-width: 700px) {
   #primitive-wizard-container #pr-steps-area .opt-card,
-  #primitive-wizard-container #pr-steps-area .opt-card:hover,
   #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
   #primitive-wizard-container #pr-steps-area .opt-card.selected,
   #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
@@ -19662,9 +19026,6 @@ div.opt-label,
 #primitive-wizard-container
 #pr-steps-area
 .opt-card div.opt-label,
-#primitive-wizard-container
-#pr-steps-area
-.opt-card:hover div.opt-label,
 #primitive-wizard-container
 #pr-steps-area
 .opt-card.is-selected div.opt-label,
@@ -19797,7 +19158,7 @@ div.opt-label::after,
   text-shadow: 0 1px 8px rgba(29, 30, 34, 0.25) !important;
 }
 
-.mobile-sticky-booking-primary:hover,
+
 .mobile-sticky-booking-primary:focus-visible {
   border-color: rgba(255, 255, 255, 0.32) !important;
 
@@ -19931,7 +19292,7 @@ div.opt-label::after,
     0 8px 18px rgba(29, 30, 34, 0.28) !important;
 }
 
-.email-offer-close:hover,
+
 .email-offer-close:focus-visible {
   border-color: rgba(102, 252, 241, 0.62) !important;
   background: rgba(57, 63, 77, 0.96) !important;
@@ -20069,13 +19430,10 @@ div.opt-label::after,
     inset 0 1px 0 rgba(220, 237, 255, 0.5) !important;
 }
 
-#primitive-wizard-container .email-offer-submit:hover,
+
 #primitive-wizard-container .email-offer-submit:focus-visible,
-#primitive-wizard-container .email-offer-success-close:hover,
 #primitive-wizard-container .email-offer-success-close:focus-visible,
-.email-offer-submit:hover,
 .email-offer-submit:focus-visible,
-.email-offer-success-close:hover,
 .email-offer-success-close:focus-visible {
   background:
     linear-gradient(
@@ -20265,7 +19623,6 @@ div.opt-label::after,
 .mobile-sticky-booking-primary,
 .mobile-sticky-booking-primary:link,
 .mobile-sticky-booking-primary:visited,
-.mobile-sticky-booking-primary:hover,
 .mobile-sticky-booking-primary:focus,
 .mobile-sticky-booking-primary:focus-visible,
 .mobile-sticky-booking-primary:active {
@@ -20388,7 +19745,7 @@ div.opt-label::after,
   text-shadow: none !important;
 }
 
-.mobile-sticky-booking-primary:hover,
+
 .mobile-sticky-booking-primary:focus,
 .mobile-sticky-booking-primary:focus-visible {
   border-color: rgba(102, 252, 241, 0.42) !important;
@@ -20435,12 +19792,10 @@ div.opt-label::after,
 .mobile-sticky-booking a[href^="tel:"],
 .mobile-sticky-booking a[href^="tel:"]:link,
 .mobile-sticky-booking a[href^="tel:"]:visited,
-.mobile-sticky-booking a[href^="tel:"]:hover,
 .mobile-sticky-booking a[href^="tel:"]:focus,
 .mobile-sticky-booking a[href^="tel:"]:focus-visible,
 .mobile-sticky-booking a[href^="tel:"]:active,
 .mobile-sticky-booking-call,
-.mobile-sticky-booking-call:hover,
 .mobile-sticky-booking-call:focus-visible,
 .mobile-sticky-booking-call:active {
   color: #1D1E22 !important;
@@ -20626,10 +19981,9 @@ a.mobile-sticky-booking-secondary[href^="sms:"] {
     inset 0 1px 0 rgba(220, 237, 255, 0.14) !important;
 }
 
-.mobile-sticky-booking-secondary:hover,
+
 .mobile-sticky-booking-secondary:focus,
 .mobile-sticky-booking-secondary:focus-visible,
-a.mobile-sticky-booking-secondary[href^="sms:"]:hover,
 a.mobile-sticky-booking-secondary[href^="sms:"]:focus-visible {
   border-color: rgba(102, 252, 241, 0.4) !important;
 
@@ -20677,7 +20031,7 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 }
 
-.mobile-sticky-booking-primary:hover,
+
 .mobile-sticky-booking-primary:focus,
 .mobile-sticky-booking-primary:focus-visible {
   border-color: rgba(255, 255, 255, 0.28) !important;
@@ -20713,12 +20067,10 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 .mobile-sticky-booking a[href^="tel:"],
 .mobile-sticky-booking a[href^="tel:"]:link,
 .mobile-sticky-booking a[href^="tel:"]:visited,
-.mobile-sticky-booking a[href^="tel:"]:hover,
 .mobile-sticky-booking a[href^="tel:"]:focus,
 .mobile-sticky-booking a[href^="tel:"]:focus-visible,
 .mobile-sticky-booking a[href^="tel:"]:active,
 .mobile-sticky-booking-call,
-.mobile-sticky-booking-call:hover,
 .mobile-sticky-booking-call:focus-visible,
 .mobile-sticky-booking-call:active {
   color: #1D1E22 !important;
@@ -20971,10 +20323,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container
 #pr-steps-area
 .opt-card,
-
-#primitive-wizard-container
-#pr-steps-area
-.opt-card:hover,
 
 #primitive-wizard-container
 #pr-steps-area
@@ -21357,28 +20705,8 @@ div.opt-label::after {
 
 /* Desktop pointer interaction. */
 @media (hover: hover) and (pointer: fine) {
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover:not(.is-selected):not(.selected) {
-    border-color: rgba(220, 237, 255, 0.88) !important;
 
-    box-shadow:
-      0 24px 48px rgba(29, 30, 34, 0.25),
-      inset 0 1px 0 rgba(220, 237, 255, 0.98),
-      inset 0 -1px 0 rgba(29, 30, 34, 0.07) !important;
 
-    transform: translateY(-5px) !important;
-  }
-
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover:not(.is-selected):not(.selected)
-  .opt-thumb-img {
-    transform: translateY(-3px) scale(1.035) !important;
-
-    filter:
-      drop-shadow(0 16px 17px rgba(29, 30, 34, 0.2)) !important;
-  }
 }
 
 /* ---------------------------------------------------------
@@ -21530,11 +20858,7 @@ div.opt-label::after {
 
 #primitive-wizard-container
 #pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-clickable-blueprint-card,
-
-#primitive-wizard-container
-#pr-selection-cards.blueprint-selection-module
-.pr-progress-card.is-clickable-blueprint-card:hover {
+.pr-progress-card.is-clickable-blueprint-card {
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
@@ -21648,10 +20972,6 @@ div.opt-label::after {
   #primitive-wizard-container
   #pr-steps-area
   .opt-card,
-
-  #primitive-wizard-container
-  #pr-steps-area
-  .opt-card:hover,
 
   #primitive-wizard-container
   #pr-steps-area
@@ -22018,10 +21338,6 @@ button.opt-card,
 
 #primitive-wizard-container
 #pr-steps-area
-button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area
 button.opt-card:focus,
 
 #primitive-wizard-container
@@ -22327,46 +21643,6 @@ button.opt-card
    STABLE HOVER — NO GROWTH OR MOVEMENT
 --------------------------------------------------------- */
 
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover {
-  border-color: rgba(220, 237, 255, 0.34) !important;
-
-  background-color: #2B303A !important;
-
-  box-shadow:
-    0 18px 36px rgba(12, 14, 18, 0.32),
-    inset 0 1px 0 rgba(220, 237, 255, 0.11),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
-
-  animation: none !important;
-  transform: none !important;
-  scale: 1 !important;
-}
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-thumb,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-card-body,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-label {
-  animation: none !important;
-  transform: none !important;
-  scale: 1 !important;
-}
 
 /* Selected cards remain the exact same physical size. */
 #primitive-wizard-container
@@ -22546,10 +21822,6 @@ button.opt-card:focus-visible {
 
   #primitive-wizard-container
   #pr-steps-area
-  button.opt-card:hover,
-
-  #primitive-wizard-container
-  #pr-steps-area
   button.opt-card.is-selected,
 
   #primitive-wizard-container
@@ -22659,14 +21931,6 @@ button.opt-card:active,
 
 #primitive-wizard-container
 #pr-steps-area
-button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover:not(.is-selected),
-
-#primitive-wizard-container
-#pr-steps-area
 button.opt-card.is-selected,
 
 #primitive-wizard-container
@@ -22713,47 +21977,7 @@ button.opt-card {
 }
 
 /* Hover changes only the border color. */
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover,
 
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover:not(.is-selected),
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card.selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card.is-selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card[aria-pressed="true"]:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card[aria-selected="true"]:hover {
-  border-color: #FF0054 !important;
-
-  background: #393F4D !important;
-  background-color: #393F4D !important;
-  background-image: none !important;
-
-  box-shadow:
-    0 14px 30px rgba(12, 14, 18, 0.26),
-    inset 0 1px 0 rgba(220, 237, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-
-  animation: none !important;
-
-  transform: none !important;
-  translate: none !important;
-  rotate: none !important;
-  scale: 1 !important;
-}
 
 /* Preserve selection visibility without resizing or moving the card. */
 #primitive-wizard-container
@@ -22792,28 +22016,7 @@ button.opt-card[aria-selected="true"] {
 }
 
 /* Pink hover border takes precedence on selected cards too. */
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card.is-selected:hover,
 
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card.selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card[aria-pressed="true"]:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card[aria-selected="true"]:hover {
-  border-color: #FF0054 !important;
-
-  box-shadow:
-    0 14px 30px rgba(12, 14, 18, 0.26),
-    inset 0 1px 0 rgba(220, 237, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-}
 
 /* Disable movement on every card child. */
 #primitive-wizard-container
@@ -22856,25 +22059,7 @@ button.opt-card
 }
 
 /* Disable inherited hover and selected child movement. */
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-thumb,
 
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-card-body,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-label,
 
 #primitive-wizard-container
 #pr-steps-area
@@ -22917,10 +22102,6 @@ button.opt-card[aria-selected="true"]
 #primitive-wizard-container
 #pr-steps-area
 button.opt-card::after,
-
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover::after,
 
 #primitive-wizard-container
 #pr-steps-area
@@ -23038,51 +22219,6 @@ button.opt-card:focus-visible {
    HOVER CHANGES THE BORDER ONLY
 --------------------------------------------------------- */
 
-#primitive-wizard-container
-#pr-steps-area
-.device-card-results > button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.brand-card-results > button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.series-card-results > button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.model-card-results > button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.repair-card-results > button.opt-card:hover {
-  border: 2px solid #FF0054 !important;
-  border-color: #FF0054 !important;
-
-  background: #393F4D !important;
-  background-color: #393F4D !important;
-  background-image: none !important;
-
-  box-shadow:
-    0 14px 30px rgba(12, 14, 18, 0.26),
-    inset 0 1px 0 rgba(220, 237, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-
-  filter: none !important;
-
-  animation: none !important;
-
-  transform: none !important;
-  transform-origin: center !important;
-
-  translate: none !important;
-  rotate: none !important;
-  scale: 1 !important;
-  zoom: 1 !important;
-
-  will-change: auto !important;
-}
 
 /* ---------------------------------------------------------
    SELECTED CARDS ALSO REMAIN COMPLETELY STATIONARY
@@ -23151,60 +22287,7 @@ button.opt-card:focus-visible {
 }
 
 /* Hover overrides selected cyan with the exact requested pink. */
-#primitive-wizard-container
-#pr-steps-area
-.device-card-results > button.opt-card.is-selected:hover,
 
-#primitive-wizard-container
-#pr-steps-area
-.brand-card-results > button.opt-card.is-selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.series-card-results > button.opt-card.is-selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.model-card-results > button.opt-card.is-selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.repair-card-results > button.opt-card.is-selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.device-card-results > button.opt-card.selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.brand-card-results > button.opt-card.selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.series-card-results > button.opt-card.selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.model-card-results > button.opt-card.selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area
-.repair-card-results > button.opt-card.selected:hover {
-  border: 2px solid #FF0054 !important;
-  border-color: #FF0054 !important;
-
-  background: #393F4D !important;
-  background-color: #393F4D !important;
-
-  box-shadow:
-    0 14px 30px rgba(12, 14, 18, 0.26),
-    inset 0 1px 0 rgba(220, 237, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-
-  transform: none !important;
-  scale: 1 !important;
-  zoom: 1 !important;
-}
 
 /* ---------------------------------------------------------
    REMOVE CARD PSEUDO-ELEMENT EFFECTS
@@ -23303,37 +22386,7 @@ button.opt-card:focus-visible {
 }
 
 /* Hover cannot move, enlarge, zoom, brighten, or lift any child. */
-#primitive-wizard-container
-#pr-steps-area
-.device-card-results > button.opt-card:hover *,
 
-#primitive-wizard-container
-#pr-steps-area
-.brand-card-results > button.opt-card:hover *,
-
-#primitive-wizard-container
-#pr-steps-area
-.series-card-results > button.opt-card:hover *,
-
-#primitive-wizard-container
-#pr-steps-area
-.model-card-results > button.opt-card:hover *,
-
-#primitive-wizard-container
-#pr-steps-area
-.repair-card-results > button.opt-card:hover * {
-  animation: none !important;
-  transition: none !important;
-
-  transform: none !important;
-
-  translate: none !important;
-  rotate: none !important;
-  scale: 1 !important;
-  zoom: 1 !important;
-
-  will-change: auto !important;
-}
 
 /* Keep image shadows identical before and during hover. */
 #primitive-wizard-container
@@ -23354,27 +22407,7 @@ button.opt-card:focus-visible {
 
 #primitive-wizard-container
 #pr-steps-area
-.repair-card-results > button.opt-card .opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-.device-card-results > button.opt-card:hover .opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-.brand-card-results > button.opt-card:hover .opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-.series-card-results > button.opt-card:hover .opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-.model-card-results > button.opt-card:hover .opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area
-.repair-card-results > button.opt-card:hover .opt-thumb-img {
+.repair-card-results > button.opt-card .opt-thumb-img {
   filter:
     drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3)) !important;
 
@@ -23526,28 +22559,6 @@ button.opt-card:focus-visible {
   .model-card-results,
   .repair-card-results
 )
-> button.opt-card:hover,
-
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card:hover:not(.is-selected):not(.selected),
-
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
 > button.opt-card.is-selected,
 
 #primitive-wizard-container
@@ -23602,72 +22613,7 @@ button.opt-card:focus-visible {
 }
 
 /* Hover changes only the exact border color. */
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card:hover,
 
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card:hover:not(.is-selected):not(.selected),
-
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card.is-selected:hover,
-
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card.selected:hover {
-  border: 2px solid #FF0054 !important;
-  border-color: #FF0054 !important;
-
-  background: #393F4D !important;
-  background-color: #393F4D !important;
-  background-image: none !important;
-
-  box-shadow:
-    0 14px 30px rgba(12, 14, 18, 0.26),
-    inset 0 1px 0 rgba(220, 237, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-
-  filter: none !important;
-
-  animation: none !important;
-  animation-name: none !important;
-
-  transform: none !important;
-  translate: none !important;
-  rotate: none !important;
-  scale: 1 !important;
-  zoom: 1 !important;
-}
 
 /* Selected state remains stationary. */
 #primitive-wizard-container
@@ -23702,30 +22648,7 @@ button.opt-card:focus-visible {
 }
 
 /* Pink border takes precedence while selected cards are hovered. */
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card.is-selected:hover,
 
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card.selected:hover {
-  border: 2px solid #FF0054 !important;
-  border-color: #FF0054 !important;
-}
 
 /* Remove inherited perimeter and animated pseudo-elements. */
 #primitive-wizard-container
@@ -23769,18 +22692,7 @@ button.opt-card:focus-visible {
   .model-card-results,
   .repair-card-results
 )
-> button.opt-card *,
-
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card:hover * {
+> button.opt-card * {
   animation: none !important;
 
   transform: none !important;
@@ -23802,18 +22714,6 @@ button.opt-card:focus-visible {
   .repair-card-results
 )
 > button.opt-card
-.opt-thumb-img,
-
-#primitive-wizard-container
-#pr-steps-area.animated-area
-:is(
-  .device-card-results,
-  .brand-card-results,
-  .series-card-results,
-  .model-card-results,
-  .repair-card-results
-)
-> button.opt-card:hover
 .opt-thumb-img {
   filter:
     drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3)) !important;
@@ -23835,18 +22735,7 @@ button.opt-card:focus-visible {
     .model-card-results,
     .repair-card-results
   )
-  > button.opt-card,
-
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  :is(
-    .device-card-results,
-    .brand-card-results,
-    .series-card-results,
-    .model-card-results,
-    .repair-card-results
-  )
-  > button.opt-card:hover {
+  > button.opt-card {
     height: 204px !important;
     min-height: 204px !important;
     max-height: 204px !important;
@@ -23904,17 +22793,6 @@ button.opt-card:focus-visible {
     .repair-card-results
   )
   > button.opt-card,
-
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  :is(
-    .device-card-results,
-    .brand-card-results,
-    .series-card-results,
-    .model-card-results,
-    .repair-card-results
-  )
-  > button.opt-card:hover,
 
   #primitive-wizard-container
   #pr-steps-area.animated-area
@@ -24105,49 +22983,7 @@ button.opt-card:focus-visible {
   }
 
   /* Hover remains pink without changing selected-card geometry. */
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  :is(
-    .device-card-results,
-    .brand-card-results,
-    .series-card-results,
-    .model-card-results,
-    .repair-card-results
-  )
-  > button.opt-card:hover,
 
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  :is(
-    .device-card-results,
-    .brand-card-results,
-    .series-card-results,
-    .model-card-results,
-    .repair-card-results
-  )
-  > button.opt-card.is-selected:hover,
-
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  :is(
-    .device-card-results,
-    .brand-card-results,
-    .series-card-results,
-    .model-card-results,
-    .repair-card-results
-  )
-  > button.opt-card.selected:hover {
-    border-color: #FF0054 !important;
-
-    box-shadow:
-      0 14px 30px rgba(12, 14, 18, 0.26),
-      inset 0 1px 0 rgba(220, 237, 255, 0.08),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-
-    transform: none !important;
-    translate: none !important;
-    scale: 1 !important;
-  }
 
   /* Lock the image and text rows to the same size after selection. */
   #primitive-wizard-container
@@ -24352,11 +23188,6 @@ button.opt-card:focus-visible {
   html body
   #primitive-wizard-container
   #pr-steps-area.animated-area
-  button.opt-card:hover,
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
   button.opt-card:active,
 
   html body
@@ -24456,10 +23287,7 @@ button.opt-card:focus-visible {
   }
 
   /* Tapping or focusing an unselected card cannot alter its size. */
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  button.opt-card:hover,
+
 
   html body
   #primitive-wizard-container
@@ -24511,16 +23339,6 @@ button.opt-card:focus-visible {
   #primitive-wizard-container
   #pr-steps-area.animated-area
   button.opt-card[aria-selected="true"],
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  button.opt-card.is-selected:hover,
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  button.opt-card.selected:hover,
 
   html body
   #primitive-wizard-container
@@ -24581,16 +23399,6 @@ button.opt-card:focus-visible {
   html body
   #primitive-wizard-container
   #pr-steps-area.animated-area
-  button.opt-card:hover::before,
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  button.opt-card:hover::after,
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
   button.opt-card.is-selected::before,
 
   html body
@@ -24635,11 +23443,6 @@ button.opt-card:focus-visible {
   #primitive-wizard-container
   #pr-steps-area.animated-area
   button.opt-card *,
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
-  button.opt-card:hover *,
 
   html body
   #primitive-wizard-container
@@ -24730,12 +23533,6 @@ button.opt-card:focus-visible {
   html body
   #primitive-wizard-container
   #pr-steps-area.animated-area
-  button.opt-card:hover
-  .opt-thumb-img,
-
-  html body
-  #primitive-wizard-container
-  #pr-steps-area.animated-area
   button.opt-card.is-selected
   .opt-thumb-img,
 
@@ -24768,11 +23565,6 @@ html body
 #primitive-wizard-container
 #pr-steps-area
 button.opt-card,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover,
 
 html body
 #primitive-wizard-container
@@ -24877,16 +23669,6 @@ button.opt-card[aria-selected="true"],
 html body
 #primitive-wizard-container
 #pr-steps-area
-button.opt-card.is-selected:hover,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card.selected:hover,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
 button.opt-card.is-selected:active,
 
 html body
@@ -24938,16 +23720,6 @@ html body
 #primitive-wizard-container
 #pr-steps-area
 button.opt-card::after,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover::before,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover::after,
 
 html body
 #primitive-wizard-container
@@ -25037,18 +23809,6 @@ html body
 #pr-steps-area
 button.opt-card
 .opt-label,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-thumb,
-
-html body
-#primitive-wizard-container
-#pr-steps-area
-button.opt-card:hover
-.opt-thumb-img,
 
 html body
 #primitive-wizard-container
@@ -25169,23 +23929,5 @@ button.opt-card[aria-selected="true"]
  * Desktop hover changes only the border color.
  */
 @media (hover: hover) and (pointer: fine) {
-  html body
-  #primitive-wizard-container
-  #pr-steps-area
-  button.opt-card:hover:not(.is-selected):not(.selected) {
-    border-color: #FF0054 !important;
 
-    box-shadow:
-      0 14px 30px rgba(12, 14, 18, 0.26),
-      inset 0 1px 0 rgba(220, 237, 255, 0.08),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
-
-    filter: none !important;
-
-    animation: none !important;
-
-    transform: none !important;
-    translate: none !important;
-    scale: 1 !important;
-  }
 }

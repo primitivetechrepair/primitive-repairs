@@ -148,11 +148,6 @@
     background 150ms ease;
 }
 
-.primitive-cookie-button:hover {
-  border-color: rgba(102, 252, 241, 0.72);
-  background: rgba(102, 252, 241, 0.1);
-  transform: translateY(-1px);
-}
 
 .primitive-cookie-button-primary {
   border-color: #077bff;
