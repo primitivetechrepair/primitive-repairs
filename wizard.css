@@ -22627,3 +22627,351 @@ button.opt-card:focus-visible {
     transform: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS STATIC CARD HOVER CORRECTION V27
+   Fixed #393F4D surface with pink border-only hover
+========================================================= */
+
+/* Keep every selection card on the same permanent surface color. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:link,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:visited,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus-visible,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:active,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover:not(.is-selected),
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"],
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"] {
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+
+  animation: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+
+  will-change: auto !important;
+}
+
+/* Default card border and depth remain static. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card {
+  border-color: rgba(220, 237, 255, 0.18) !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  transition:
+    border-color 0.22s ease,
+    outline-color 0.22s ease !important;
+}
+
+/* Hover changes only the border color. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover:not(.is-selected),
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]:hover {
+  border-color: #FF0054 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  animation: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+}
+
+/* Preserve selection visibility without resizing or moving the card. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"],
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"] {
+  border-color: #66FCF1 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 0 0 2px rgba(102, 252, 241, 0.11),
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  animation: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+}
+
+/* Pink hover border takes precedence on selected cards too. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]:hover,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]:hover {
+  border-color: #FF0054 !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+}
+
+/* Disable movement on every card child. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-card-body,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-label,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-subtext,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-badge {
+  animation: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+
+  will-change: auto !important;
+}
+
+/* Disable inherited hover and selected child movement. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-thumb,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-card-body,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-label,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected
+.opt-thumb,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected
+.opt-thumb,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]
+.opt-thumb-img {
+  animation: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+}
+
+/* Remove animated lower accent behavior. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]::after,
+
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]::after {
+  animation: none !important;
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+}
+
+/* Maintain accessible keyboard focus without changing geometry. */
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus-visible {
+  outline: 3px solid #FF0054 !important;
+  outline-offset: 3px !important;
+
+  border-color: #FF0054 !important;
+
+  transform: none !important;
+  scale: 1 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card::after,
+
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card
+  * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
