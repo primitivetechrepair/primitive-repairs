@@ -24754,3 +24754,438 @@ button.opt-card:focus-visible {
     zoom: 1 !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS STATE-INDEPENDENT MOBILE CARD RESET V33
+   Directly defeats legacy selected transforms without relying
+   on the temporary .animated-area class or named card grids.
+========================================================= */
+
+/*
+ * Every card state uses the same physical surface and depth.
+ * No dependency on #pr-steps-area.animated-area.
+ */
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:active,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:focus-visible,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"],
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"] {
+  box-sizing: border-box !important;
+
+  margin: 0 !important;
+
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: rgba(220, 237, 255, 0.18) !important;
+
+  outline: none !important;
+  outline-offset: 0 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  animation: none !important;
+  animation-name: none !important;
+
+  transform: none !important;
+  transform-origin: center !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+
+  -webkit-tap-highlight-color: transparent !important;
+  touch-action: manipulation !important;
+
+  transition:
+    border-color 0.18s ease !important;
+}
+
+/*
+ * Selection changes only the border color.
+ * Shadow, size, position, and depth remain unchanged.
+ */
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"],
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"],
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected:hover,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected:hover,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected:active,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected:active,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected:focus,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected:focus {
+  border-color: #66FCF1 !important;
+
+  outline: none !important;
+  outline-offset: 0 !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  animation: none !important;
+  transition:
+    border-color 0.18s ease !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+}
+
+/*
+ * Remove the legacy expanding lower accent and perimeter layers.
+ */
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card::before,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card::after,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover::before,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover::after,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected::before,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected::after,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected::before,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected::after,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]::before,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]::after,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]::before,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]::after {
+  display: none !important;
+  content: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  opacity: 0 !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  background: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+
+  animation: none !important;
+  transition: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+}
+
+/*
+ * Defeat the legacy selected image scale and content lift.
+ */
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-thumb-img,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-card-body,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card
+.opt-label,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-thumb,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card:hover
+.opt-thumb-img,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected
+.opt-thumb,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.is-selected
+.opt-thumb-img,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected
+.opt-thumb,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card.selected
+.opt-thumb-img,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-pressed="true"]
+.opt-thumb-img,
+
+html body
+#primitive-wizard-container
+#pr-steps-area
+button.opt-card[aria-selected="true"]
+.opt-thumb-img {
+  animation: none !important;
+  animation-name: none !important;
+
+  transition: none !important;
+
+  transform: none !important;
+  transform-origin: center !important;
+
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+}
+
+/*
+ * Remove the stage/card entrance enlargement on touch devices.
+ */
+@media (max-width: 1024px), (hover: none), (pointer: coarse) {
+  html body
+  #primitive-wizard-container
+  #pr-steps-area,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  > *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .pr-options,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .device-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .brand-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .series-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .model-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .repair-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  .repair-type-card-results {
+    animation: none !important;
+    animation-name: none !important;
+
+    transition: none !important;
+    transition-property: none !important;
+    transition-duration: 0s !important;
+
+    transform: none !important;
+    translate: none !important;
+    rotate: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
+
+    will-change: auto !important;
+  }
+}
+
+/*
+ * Desktop hover changes only the border color.
+ */
+@media (hover: hover) and (pointer: fine) {
+  html body
+  #primitive-wizard-container
+  #pr-steps-area
+  button.opt-card:hover:not(.is-selected):not(.selected) {
+    border-color: #FF0054 !important;
+
+    box-shadow:
+      0 14px 30px rgba(12, 14, 18, 0.26),
+      inset 0 1px 0 rgba(220, 237, 255, 0.08),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+    filter: none !important;
+
+    animation: none !important;
+
+    transform: none !important;
+    translate: none !important;
+    scale: 1 !important;
+  }
+}
