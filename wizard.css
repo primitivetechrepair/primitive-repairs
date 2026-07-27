@@ -24254,3 +24254,503 @@ button.opt-card:focus-visible {
     transform: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS COMPLETE MOBILE TAP GROWTH RESET V32
+   No mobile card, content, focus, tap, or stage enlargement
+========================================================= */
+
+@media (max-width: 900px), (hover: none) and (pointer: coarse) {
+  /* Stop the newly rendered wizard stage from growing into view. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  > *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .pr-options,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .device-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .brand-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .series-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .model-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .repair-card-results,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  .repair-type-card-results {
+    animation: none !important;
+    animation-name: none !important;
+
+    transition: none !important;
+    transition-property: none !important;
+    transition-duration: 0s !important;
+
+    transform: none !important;
+    translate: none !important;
+    rotate: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
+
+    will-change: auto !important;
+  }
+
+  /* Every possible card grid uses stable independent rows. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .pr-options,
+    .device-card-results,
+    .brand-card-results,
+    .series-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .repair-type-card-results
+  ) {
+    grid-auto-rows: 204px !important;
+
+    align-items: start !important;
+    align-content: start !important;
+  }
+
+  /*
+    All button states share identical geometry.
+    This intentionally includes persistent mobile :hover,
+    :active, :focus, selected classes, and ARIA states.
+  */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:hover,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:active,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:focus,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:focus-visible,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card[aria-pressed="true"],
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card[aria-selected="true"] {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    height: 204px !important;
+    min-height: 204px !important;
+    max-height: 204px !important;
+
+    flex: 0 0 204px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+
+    align-self: start !important;
+
+    grid-template-rows: 130px 74px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 2px solid rgba(220, 237, 255, 0.18) !important;
+    border-radius: 18px !important;
+
+    outline: 0 !important;
+    outline-offset: 0 !important;
+
+    background: #393F4D !important;
+    background-color: #393F4D !important;
+    background-image: none !important;
+
+    box-shadow:
+      0 14px 30px rgba(12, 14, 18, 0.26),
+      inset 0 1px 0 rgba(220, 237, 255, 0.08),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+    filter: none !important;
+
+    opacity: 1 !important;
+
+    animation: none !important;
+    animation-name: none !important;
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+
+    transition: none !important;
+    transition-property: none !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+
+    transform: none !important;
+    transform-origin: center !important;
+
+    translate: none !important;
+    rotate: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
+
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent !important;
+
+    will-change: auto !important;
+  }
+
+  /* Tapping or focusing an unselected card cannot alter its size. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:hover,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:active,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:focus,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:focus-visible {
+    border-color: rgba(220, 237, 255, 0.18) !important;
+
+    outline: 0 !important;
+
+    box-shadow:
+      0 14px 30px rgba(12, 14, 18, 0.26),
+      inset 0 1px 0 rgba(220, 237, 255, 0.08),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+    filter: none !important;
+
+    transform: none !important;
+    translate: none !important;
+    scale: 1 !important;
+  }
+
+  /* Selection changes only the border color. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card[aria-pressed="true"],
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card[aria-selected="true"],
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected:hover,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected:hover,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected:focus,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected:focus,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected:active,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected:active {
+    border: 2px solid #66FCF1 !important;
+    border-color: #66FCF1 !important;
+
+    outline: 0 !important;
+
+    background: #393F4D !important;
+    background-color: #393F4D !important;
+    background-image: none !important;
+
+    box-shadow:
+      0 14px 30px rgba(12, 14, 18, 0.26),
+      inset 0 1px 0 rgba(220, 237, 255, 0.08),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+    filter: none !important;
+
+    animation: none !important;
+    transition: none !important;
+
+    transform: none !important;
+    translate: none !important;
+    rotate: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
+  }
+
+  /* Remove every card perimeter, shine, or selection pseudo-layer. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card::before,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card::after,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:hover::before,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:hover::after,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected::before,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected::after,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected::before,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected::after {
+    display: none !important;
+    content: none !important;
+
+    width: 0 !important;
+    height: 0 !important;
+
+    inset: auto !important;
+
+    opacity: 0 !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+
+    animation: none !important;
+    transition: none !important;
+
+    transform: none !important;
+  }
+
+  /* No internal image, badge, label, or body movement. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:hover *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:active *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:focus *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected *,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected * {
+    animation: none !important;
+    animation-name: none !important;
+
+    transition: none !important;
+    transition-property: none !important;
+    transition-duration: 0s !important;
+
+    transform: none !important;
+    transform-origin: center !important;
+
+    translate: none !important;
+    rotate: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
+
+    will-change: auto !important;
+  }
+
+  /* Lock the thumbnail and body rows across every state. */
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card
+  .opt-thumb {
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    height: 130px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
+
+    flex: 0 0 130px !important;
+
+    margin: 0 !important;
+
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card
+  .opt-card-body {
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    height: 74px !important;
+    min-height: 74px !important;
+    max-height: 74px !important;
+
+    margin: 0 !important;
+
+    overflow: hidden !important;
+
+    transform: none !important;
+    scale: 1 !important;
+  }
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card
+  .opt-thumb-img,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card:hover
+  .opt-thumb-img,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.is-selected
+  .opt-thumb-img,
+
+  html body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  button.opt-card.selected
+  .opt-thumb-img {
+    animation: none !important;
+    transition: none !important;
+
+    transform: none !important;
+    translate: none !important;
+    rotate: none !important;
+    scale: 1 !important;
+    zoom: 1 !important;
+  }
+}
