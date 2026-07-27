@@ -20601,3 +20601,136 @@ div.opt-label::after,
     max-height: 28px !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS EXACT BOTTOM BAR BUTTON COLORS V24
+   TEXT = dark background
+   START REPAIR = pink background
+========================================================= */
+
+/* Far-right TEXT / SMS button. */
+.mobile-sticky-booking-secondary,
+.mobile-sticky-booking-secondary:link,
+.mobile-sticky-booking-secondary:visited,
+a.mobile-sticky-booking-secondary[href^="sms:"] {
+  border-color: rgba(220, 237, 255, 0.18) !important;
+
+  background: #27273D !important;
+  background-color: #27273D !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+  text-shadow: none !important;
+
+  box-shadow:
+    0 12px 26px rgba(29, 30, 34, 0.32),
+    inset 0 1px 0 rgba(220, 237, 255, 0.14) !important;
+}
+
+.mobile-sticky-booking-secondary:hover,
+.mobile-sticky-booking-secondary:focus,
+.mobile-sticky-booking-secondary:focus-visible,
+a.mobile-sticky-booking-secondary[href^="sms:"]:hover,
+a.mobile-sticky-booking-secondary[href^="sms:"]:focus-visible {
+  border-color: rgba(102, 252, 241, 0.4) !important;
+
+  background: #303049 !important;
+  background-color: #303049 !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+}
+
+.mobile-sticky-booking-secondary:active,
+a.mobile-sticky-booking-secondary[href^="sms:"]:active {
+  background: #202033 !important;
+  background-color: #202033 !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+}
+
+.mobile-sticky-booking-secondary *,
+.mobile-sticky-booking-secondary svg,
+a.mobile-sticky-booking-secondary[href^="sms:"] *,
+a.mobile-sticky-booking-secondary[href^="sms:"] svg {
+  color: #DCEDFF !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  text-shadow: none !important;
+}
+
+/* Restore START REPAIR to pink. */
+.mobile-sticky-booking-primary,
+.mobile-sticky-booking-primary:link,
+.mobile-sticky-booking-primary:visited {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+
+  background: #FF0054 !important;
+  background-color: #FF0054 !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+  text-shadow: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(255, 0, 84, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.mobile-sticky-booking-primary:hover,
+.mobile-sticky-booking-primary:focus,
+.mobile-sticky-booking-primary:focus-visible {
+  border-color: rgba(255, 255, 255, 0.28) !important;
+
+  background: #E6004C !important;
+  background-color: #E6004C !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+
+  box-shadow:
+    0 17px 34px rgba(255, 0, 84, 0.3),
+    0 0 0 4px rgba(255, 0, 84, 0.1) !important;
+}
+
+.mobile-sticky-booking-primary:active {
+  background: #CC0043 !important;
+  background-color: #CC0043 !important;
+  background-image: none !important;
+
+  color: #DCEDFF !important;
+}
+
+.mobile-sticky-booking-primary *,
+.mobile-sticky-booking-primary svg {
+  color: #DCEDFF !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  text-shadow: none !important;
+}
+
+/* CALL keeps dark text on its existing background. */
+.mobile-sticky-booking a[href^="tel:"],
+.mobile-sticky-booking a[href^="tel:"]:link,
+.mobile-sticky-booking a[href^="tel:"]:visited,
+.mobile-sticky-booking a[href^="tel:"]:hover,
+.mobile-sticky-booking a[href^="tel:"]:focus,
+.mobile-sticky-booking a[href^="tel:"]:focus-visible,
+.mobile-sticky-booking a[href^="tel:"]:active,
+.mobile-sticky-booking-call,
+.mobile-sticky-booking-call:hover,
+.mobile-sticky-booking-call:focus-visible,
+.mobile-sticky-booking-call:active {
+  color: #1D1E22 !important;
+  text-shadow: none !important;
+}
+
+.mobile-sticky-booking a[href^="tel:"] *,
+.mobile-sticky-booking a[href^="tel:"] svg,
+.mobile-sticky-booking-call *,
+.mobile-sticky-booking-call svg {
+  color: #1D1E22 !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  text-shadow: none !important;
+}
