@@ -23464,3 +23464,394 @@ button.opt-card:focus-visible {
     transform: none !important;
   }
 }
+/* =========================================================
+   PRIMITIVE REPAIRS COMPUTED HOVER WINNER CORRECTION V29
+   Exact computed-style correction from live browser evidence
+========================================================= */
+
+/* Stop equal-height grid rows from resizing all peer cards. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+) {
+  grid-auto-rows: auto !important;
+  align-items: start !important;
+}
+
+/* Permanent geometry and permanent #393F4D card surface. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:focus,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:active,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:hover:not(.is-selected):not(.selected),
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.selected {
+  box-sizing: border-box !important;
+
+  width: 100% !important;
+
+  height: 238px !important;
+  min-height: 238px !important;
+  max-height: 238px !important;
+
+  align-self: start !important;
+
+  border: 2px solid rgba(220, 237, 255, 0.18) !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+
+  animation: none !important;
+  animation-name: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+
+  transition:
+    border-color 0.18s ease !important;
+}
+
+/* Hover changes only the exact border color. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:hover,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:hover:not(.is-selected):not(.selected),
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.selected:hover {
+  border: 2px solid #FF0054 !important;
+  border-color: #FF0054 !important;
+
+  background: #393F4D !important;
+  background-color: #393F4D !important;
+  background-image: none !important;
+
+  box-shadow:
+    0 14px 30px rgba(12, 14, 18, 0.26),
+    inset 0 1px 0 rgba(220, 237, 255, 0.08),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.22) !important;
+
+  filter: none !important;
+
+  animation: none !important;
+  animation-name: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+}
+
+/* Selected state remains stationary. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.is-selected,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.selected {
+  border: 2px solid #66FCF1 !important;
+
+  transform: none !important;
+  translate: none !important;
+  scale: 1 !important;
+
+  filter: none !important;
+  animation: none !important;
+}
+
+/* Pink border takes precedence while selected cards are hovered. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.is-selected:hover,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card.selected:hover {
+  border: 2px solid #FF0054 !important;
+  border-color: #FF0054 !important;
+}
+
+/* Remove inherited perimeter and animated pseudo-elements. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card::before,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card::after {
+  display: none !important;
+  content: none !important;
+
+  animation: none !important;
+  transition: none !important;
+
+  transform: none !important;
+  filter: none !important;
+}
+
+/* No image, text, badge, or internal content movement. */
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card *,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:hover * {
+  animation: none !important;
+
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+  zoom: 1 !important;
+
+  will-change: auto !important;
+}
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card
+.opt-thumb-img,
+
+#primitive-wizard-container
+#pr-steps-area.animated-area
+:is(
+  .device-card-results,
+  .brand-card-results,
+  .series-card-results,
+  .model-card-results,
+  .repair-card-results
+)
+> button.opt-card:hover
+.opt-thumb-img {
+  filter:
+    drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3)) !important;
+
+  animation: none !important;
+  transition: none !important;
+
+  transform: none !important;
+  scale: 1 !important;
+}
+
+@media (max-width: 760px) {
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .device-card-results,
+    .brand-card-results,
+    .series-card-results,
+    .model-card-results,
+    .repair-card-results
+  )
+  > button.opt-card,
+
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .device-card-results,
+    .brand-card-results,
+    .series-card-results,
+    .model-card-results,
+    .repair-card-results
+  )
+  > button.opt-card:hover {
+    height: 204px !important;
+    min-height: 204px !important;
+    max-height: 204px !important;
+
+    transform: none !important;
+    scale: 1 !important;
+  }
+}
