@@ -1,4 +1,4 @@
-/* ! PRIMITIVE REPAIRS GLOBAL INFORMATION PILL SYSTEM V43 */
+/* ! PRIMITIVE REPAIRS GLOBAL INFORMATION PILL SYSTEM V44 */
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap);
 :root {
   --font-display: "Raleway", sans-serif;
@@ -14553,6 +14553,38 @@ html
   }
 }
 /* PRIMITIVE REPAIRS GLOBAL INFORMATION PILL COMPONENT */
+.ui-pill {
+  box-sizing: border-box;
+  width: fit-content;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 28px;
+  padding: 6px 11px;
+  gap: 6px;
+  border: 1px solid var(--pill-border);
+  border-radius: 999px;
+  background: var(--pill-background);
+  color: var(--pill-text);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: var(--pill-shadow);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  filter: none;
+  text-shadow: none;
+  transition: none;
+  animation: none;
+}
+/* PRIMITIVE REPAIRS GLOBAL INFORMATION PILL COMPONENT */
 .ui-pill,
 html body .appointment-deadline-pill,
 html body .appointment-deadline-countdown,
@@ -14592,6 +14624,11 @@ html body .review-stars,
   min-width: 0;
   min-height: 28px;
   padding: 6px 11px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
   gap: 6px;
   border: 1px solid var(--pill-border);
   border-radius: 999px;
