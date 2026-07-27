@@ -1,28 +1,7 @@
-/*! PRIMITIVE REPAIRS CONSOLIDATED CLEAN STYLESHEET V41 */
+/* ! PRIMITIVE REPAIRS CONSERVATIVE CASCADE CLEANUP V42 */
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap);
 :root {
   --font-display: "Raleway", sans-serif;
-  --font-body: "Raleway", sans-serif;
-  --bg: #1d1e22;
-  --card: #393f4d;
-  --muted: #d4d4dc;
-  --accent: #d4d4dc;
-  --slot-fill: #393f4d;
-  --dash: rgba(212, 212, 220, 0.28);
-  --primary-blue: #d4d4dc;
-  --soft-panel: rgba(57, 63, 77, 0.88);
-  --button-gradient: linear-gradient(
-    135deg,
-    #d4d4dc,
-    rgba(212, 212, 220, 0.82)
-  );
-  --site-background: #1d1e22;
-  --section-background: #393f4d;
-  --selection-background: #d4d4dc;
-  --text-dark: #1d1e22;
-  --text-light: #d4d4dc;
-  --section-text: #dcedff;
-  --action-color: #66fcf1;
   --bg: #1d1e22;
   --card: #393f4d;
   --muted: #d4d4dc;
@@ -40,11 +19,6 @@
     #66fcf1,
     rgba(102, 252, 241, 0.82)
   );
-  --glass-canvas: #1d1e22;
-  --glass-surface: #393f4d;
-  --glass-light: #d4d4dc;
-  --glass-copy: #dcedff;
-  --glass-action: #66fcf1;
   --site-header-height: 116px;
 }
 * {
@@ -1857,7 +1831,6 @@ body.mobile-nav-open {
     inset 0 1px 0 rgba(212, 212, 220, 0.86);
 }
 .review-card p {
-  display: grid;
   grid-template-columns: 132px minmax(0, 1fr);
   gap: 10px;
   border-top: 1px solid rgba(29, 30, 34, 0.07);
@@ -1866,18 +1839,11 @@ body.mobile-nav-open {
 .review-card p:first-of-type {
   border-top: none;
 }
-.review-attachments-list {
-  display: grid;
-}
 .review-attachment-item {
   min-width: 0;
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  align-items: center;
 }
 .review-attachment-name {
   min-width: 0;
-  color: var(--accent);
 }
 .review-back,
 .review-submit {
@@ -1890,7 +1856,6 @@ body.mobile-nav-open {
     border-radius: 20px;
   }
   .review-grid {
-    grid-template-columns: 1fr;
     gap: 10px;
   }
   .review-attachment-item {
@@ -3048,7 +3013,6 @@ body.mobile-nav-open {
   text-shadow: 0 1px 0 rgba(212, 212, 220, 0.65);
 }
 .site-footer-link-title::after {
-  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -3138,8 +3102,6 @@ body.mobile-nav-open {
   padding: 0;
   overflow: visible;
   --repair-premium-ink: #1d1e22;
-  --repair-premium-panel: #393f4d;
-  --repair-premium-light: #d4d4dc;
   --repair-premium-copy: #dcedff;
   --repair-premium-accent: #66fcf1;
 }
@@ -3936,10 +3898,8 @@ body.mobile-nav-open {
   #pr-steps-area.animated-area:has(.model-search-panel) .model-search-panel,
   .model-search-panel {
     grid-column: 1/-1;
-    width: 100%;
     max-width: none;
     margin: 0 0 12px;
-    padding: 14px;
   }
   .model-search-row {
     display: grid;
@@ -6189,7 +6149,6 @@ body.mobile-nav-open {
     padding: 14px 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     color: rgba(29, 30, 34, 0.96);
     border: 1px solid rgba(212, 212, 220, 0.22);
     border-radius: 12px;
@@ -7949,7 +7908,6 @@ body.mobile-nav-open {
   filter: brightness(0) saturate(100%) invert(83%) sepia(55%) saturate(540%)
     hue-rotate(124deg) brightness(105%) contrast(103%)
     drop-shadow(0 0 12px rgba(212, 212, 220, 0.18));
-  pointer-events: none;
 }
 #pr-selection-cards.blueprint-selection-module .card-back,
 #pr-selection-cards.blueprint-selection-module .card-heading,
@@ -9273,8 +9231,6 @@ body.email-offer-open {
   text-align: right;
 }
 .email-offer-close {
-  display: grid;
-  place-items: center;
   padding: 0;
   font-size: 24px;
   font-weight: 700;
@@ -9435,9 +9391,6 @@ body.email-offer-open {
   .email-offer-dialog {
     width: 100%;
     max-height: min(90vh, 760px);
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 0;
     border-radius: 20px 20px 0 0;
     transform: translateY(28px);
   }
@@ -10155,7 +10108,6 @@ button.supported-device-action.service-area-trigger:focus-visible {
   }
 }
 .email-offer-dialog {
-  isolation: isolate;
   width: min(100%, 580px);
   background:
     linear-gradient(rgba(212, 212, 220, 0.985), rgba(212, 212, 220, 0.985)),
@@ -10176,7 +10128,6 @@ button.supported-device-action.service-area-trigger:focus-visible {
   position: absolute;
   inset: 10px;
   z-index: 0;
-  pointer-events: none;
 }
 .email-offer-content,
 .email-offer-topbar {
@@ -10384,17 +10335,14 @@ button.supported-device-action.service-area-trigger:focus-visible {
     border-right: 0;
     border-bottom: 0;
     border-left: 0;
-    border-radius: 24px 24px 0 0;
   }
   .email-offer-dialog::before {
     inset: 8px 8px 0;
     border-bottom: 0;
-    border-radius: 17px 17px 0 0;
   }
   .email-offer-topbar {
     min-height: 50px;
     padding: 13px 62px 13px 18px;
-    border-radius: 23px 23px 0 0;
   }
   .email-offer-content {
     padding: 27px 20px calc(24px + env(safe-area-inset-bottom));
@@ -11326,9 +11274,6 @@ textarea {
 #primitive-wizard-container .pr-header::after {
   content: "Repair Request";
   width: fit-content;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   color: var(--repair-premium-ink);
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -11630,7 +11575,6 @@ textarea {
   #primitive-wizard-container #pr-selection-cards.blueprint-selection-module {
     margin-top: 22px;
     padding: 12px;
-    border-radius: 24px;
   }
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
@@ -11682,19 +11626,11 @@ h1 {
 }
 #primitive-wizard-container
   #pr-steps-area.animated-area:has(.option-section-header) {
-  isolation: isolate;
   backdrop-filter: blur(28px) saturate(150%);
   -webkit-backdrop-filter: blur(28px) saturate(150%);
   box-shadow:
     0 26px 66px rgba(29, 30, 34, 0.4),
     inset 0 1px 0 rgba(220, 237, 255, 0.12);
-}
-#primitive-wizard-container
-  #pr-steps-area.animated-area:has(.option-section-header)::before {
-  content: "";
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
 }
 #primitive-wizard-container #pr-steps-area .option-section-header {
   color: #dcedff;
@@ -11893,7 +11829,6 @@ h1 {
   #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
   #primitive-wizard-container #pr-steps-area .opt-card.selected {
     min-height: 204px;
-    border-radius: 20px;
   }
   #primitive-wizard-container #pr-steps-area .opt-thumb {
     width: calc(100% - 14px);
@@ -11984,7 +11919,6 @@ h1 {
     gap: 0 !important;
     column-gap: 0 !important;
     row-gap: 0 !important;
-    border-radius: 18px;
   }
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
@@ -12158,9 +12092,6 @@ h1 {
     max-width: calc(100% - 24px);
     padding: 7px 12px !important;
   }
-  #primitive-wizard-container #pr-selection-cards.blueprint-selection-module {
-    border-radius: 24px !important;
-  }
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
     .blueprint-complete-beam,
@@ -12205,7 +12136,6 @@ h1 {
 }
 #primitive-wizard-container
   #pr-steps-area.animated-area:has(.option-section-header) {
-  isolation: isolate;
   background-image:
     radial-gradient(circle at 8% 0, rgba(102, 252, 241, 0.09), transparent 34%),
     radial-gradient(
@@ -12265,7 +12195,6 @@ h1 {
 #primitive-wizard-container #pr-steps-area .opt-card.selected,
 #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
 #primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
-  isolation: isolate;
   background-image:
     radial-gradient(
       circle at 90% 0,
@@ -12284,11 +12213,7 @@ h1 {
     inset 0 -1px 0 rgba(29, 30, 34, 0.07) !important;
 }
 #primitive-wizard-container #pr-steps-area .opt-card::before {
-  inset: 0 !important;
-  border-radius: inherit !important;
-  clip-path: inset(0 round 24px);
   opacity: 0.76 !important;
-  pointer-events: none;
 }
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected::after,
 #primitive-wizard-container #pr-steps-area .opt-card.selected::after,
@@ -12472,24 +12397,14 @@ h1 {
     animation-duration: 5.8s !important;
   }
 }
-#primitive-wizard-container #pr-steps-area .brand-card-results,
-#primitive-wizard-container #pr-steps-area .device-card-results,
-#primitive-wizard-container #pr-steps-area .model-card-results,
-#primitive-wizard-container #pr-steps-area .repair-card-results,
-#primitive-wizard-container #pr-steps-area .series-card-results {
-  align-items: stretch !important;
-  grid-auto-rows: 1fr !important;
-}
 #primitive-wizard-container #pr-steps-area .opt-card,
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
 #primitive-wizard-container #pr-steps-area .opt-card.selected,
 #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
 #primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
   height: 100% !important;
-  display: grid !important;
   grid-template-rows: 154px minmax(38px, auto) minmax(0, auto) !important;
   align-content: start !important;
-  align-items: stretch !important;
   gap: 6px !important;
 }
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
@@ -12552,7 +12467,6 @@ h1 {
 }
 #primitive-wizard-container #pr-steps-area .option-section-header::after,
 #primitive-wizard-container #pr-steps-area .option-section-header::before {
-  content: none !important;
   border: 0 !important;
   background: 0 0 !important;
   box-shadow: none !important;
@@ -13228,12 +13142,8 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 }
 #primitive-wizard-container #pr-steps-area .option-section-header > span {
   margin: 0 auto 12px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
   box-shadow: inset 0 1px 0 rgba(220, 237, 255, 0.08) !important;
   letter-spacing: 0.1em !important;
-  text-transform: uppercase !important;
 }
 #primitive-wizard-container #pr-steps-area .option-section-header h3 {
   margin: 0 !important;
@@ -13259,11 +13169,8 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area .model-card-results,
 #primitive-wizard-container #pr-steps-area .repair-card-results,
 #primitive-wizard-container #pr-steps-area .series-card-results {
-  display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) !important;
-  grid-auto-rows: 1fr !important;
   gap: 18px !important;
-  align-items: stretch !important;
 }
 #primitive-wizard-container #pr-steps-area .opt-card,
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
@@ -13620,7 +13527,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     border-radius: 24px !important;
   }
   #primitive-wizard-container #pr-steps-area .option-section-header {
-    margin-bottom: 18px !important;
     padding: 0 0 16px !important;
   }
   #primitive-wizard-container #pr-steps-area .option-section-header h3 {
@@ -13628,14 +13534,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   }
   #primitive-wizard-container #pr-steps-area .option-section-header p {
     font-size: 14px !important;
-  }
-  #primitive-wizard-container #pr-steps-area .brand-card-results,
-  #primitive-wizard-container #pr-steps-area .device-card-results,
-  #primitive-wizard-container #pr-steps-area .model-card-results,
-  #primitive-wizard-container #pr-steps-area .repair-card-results,
-  #primitive-wizard-container #pr-steps-area .series-card-results {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px !important;
   }
   #primitive-wizard-container #pr-steps-area .opt-card,
   #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
@@ -13982,7 +13880,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     0 18px 38px rgba(12, 14, 18, 0.34),
     inset 0 1px 0 rgba(220, 237, 255, 0.11),
     inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
-  scale: 1 !important;
   border-color: #66fcf1 !important;
   background: #393f4d !important;
   box-shadow:
@@ -14027,7 +13924,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area button.opt-card:focus-visible {
   outline-offset: 4px !important;
   animation: none !important;
-  scale: 1 !important;
   outline: #ff0054 solid 3px !important;
   outline-offset: 3px !important;
   border-color: #ff0054 !important;
