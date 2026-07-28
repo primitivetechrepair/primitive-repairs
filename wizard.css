@@ -14364,7 +14364,7 @@ html body #primitive-wizard-container > #pr-main {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* PRIMITIVE REPAIRS NINTENDO PREMIUM TEST PAGE V59 */
+/* PRIMITIVE REPAIRS NINTENDO PREMIUM TEST PAGE V60 */
 
 body.nintendo-switch-page {
   --nintendo-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -14401,10 +14401,14 @@ body.nintendo-switch-page main h1,
 body.nintendo-switch-page main h2,
 body.nintendo-switch-page main h3 {
   margin: 0;
-  color: #d4d4dc;
+  color: #D4D4DC;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
 }
 
 body.nintendo-switch-page main h1 {
@@ -14434,7 +14438,11 @@ body.nintendo-switch-page main p {
   line-height: 1.75;
 }
 
-body.nintendo-switch-page .landing-hero,
+body.nintendo-switch-page .landing-hero {
+  width: 100%;
+  margin: 18px 0 var(--nintendo-section-gap);
+}
+
 body.nintendo-switch-page .landing-section {
   width: 100%;
   margin: 0 0 var(--nintendo-section-gap);
@@ -14592,21 +14600,24 @@ body.nintendo-switch-page .hero-proof-list li::before {
 }
 
 body.nintendo-switch-page .landing-section {
+  position: relative;
+  isolation: isolate;
   padding: clamp(38px, 5vw, 76px);
   overflow: hidden;
-  border: 1px solid rgba(212, 212, 220, 0.11);
+  border: 1px solid rgba(212, 212, 220, 0.16);
   border-radius: var(--nintendo-section-radius);
   background:
     linear-gradient(
       145deg,
-      rgba(57, 63, 77, 0.94),
-      rgba(57, 63, 77, 0.78)
+      rgba(57, 63, 77, 0.78),
+      rgba(57, 63, 77, 0.58)
     );
-  backdrop-filter: blur(18px) saturate(112%);
-  -webkit-backdrop-filter: blur(18px) saturate(112%);
+  backdrop-filter: blur(26px) saturate(135%);
+  -webkit-backdrop-filter: blur(26px) saturate(135%);
   box-shadow:
-    0 28px 66px rgba(29, 30, 34, 0.26),
-    inset 0 1px 0 rgba(212, 212, 220, 0.1);
+    0 30px 72px rgba(29, 30, 34, 0.3),
+    inset 0 1px 0 rgba(212, 212, 220, 0.16),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.18);
 }
 
 body.nintendo-switch-page
@@ -14614,8 +14625,8 @@ body.nintendo-switch-page
   background:
     linear-gradient(
       155deg,
-      rgba(57, 63, 77, 0.88),
-      rgba(57, 63, 77, 0.72)
+      rgba(57, 63, 77, 0.72),
+      rgba(57, 63, 77, 0.52)
     );
 }
 
@@ -14623,9 +14634,9 @@ body.nintendo-switch-page .service-bg-section {
   background:
     linear-gradient(
       110deg,
-      rgba(57, 63, 77, 0.98),
-      rgba(57, 63, 77, 0.88) 48%,
-      rgba(57, 63, 77, 0.72)
+      rgba(57, 63, 77, 0.84),
+      rgba(57, 63, 77, 0.68) 48%,
+      rgba(57, 63, 77, 0.54)
     ),
     var(--service-bg-image) center center / cover no-repeat;
 }
@@ -14942,14 +14953,18 @@ body.nintendo-switch-page
     padding-bottom: 28px;
   }
 
-  body.nintendo-switch-page .landing-hero,
+  body.nintendo-switch-page .landing-hero {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+
   body.nintendo-switch-page .landing-section {
     margin-bottom: 16px;
   }
 
   body.nintendo-switch-page .landing-hero-inner {
-    min-height: 620px;
-    padding: 34px 22px;
+    min-height: 590px;
+    padding: 32px 20px;
     border-radius: 24px;
   }
 
@@ -14993,8 +15008,19 @@ body.nintendo-switch-page
   }
 
   body.nintendo-switch-page .landing-section {
-    padding: 30px 20px;
-    border-radius: 24px;
+    padding: 28px 18px;
+    border-radius: 22px;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(57, 63, 77, 0.74),
+        rgba(57, 63, 77, 0.54)
+      );
+    backdrop-filter: blur(20px) saturate(128%);
+    -webkit-backdrop-filter: blur(20px) saturate(128%);
+    box-shadow:
+      0 22px 48px rgba(29, 30, 34, 0.28),
+      inset 0 1px 0 rgba(212, 212, 220, 0.14);
   }
 
   body.nintendo-switch-page .landing-section-header {
@@ -15004,16 +15030,72 @@ body.nintendo-switch-page
   body.nintendo-switch-page .supported-device-grid,
   body.nintendo-switch-page .faq-list {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   body.nintendo-switch-page .supported-device-card {
     min-height: 0;
-    padding: 24px;
-    border-radius: 18px;
+    padding: 20px 18px;
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    grid-template-areas:
+      "index content"
+      "index action";
+    column-gap: 12px;
+    align-items: start;
+    border-radius: 16px;
+  }
+
+  body.nintendo-switch-page .supported-device-card::after {
+    top: 19px;
+    left: 0;
+    width: 2px;
+    height: 42px;
+  }
+
+  body.nintendo-switch-page .supported-device-card:hover {
+    transform: none;
   }
 
   body.nintendo-switch-page .supported-device-icon {
-    margin-bottom: 34px;
+    grid-area: index;
+    margin: 3px 0 0;
+    align-self: start;
+  }
+
+  body.nintendo-switch-page .supported-device-icon::before {
+    font-size: 0.68rem;
+  }
+
+  body.nintendo-switch-page .supported-device-content {
+    grid-area: content;
+    min-width: 0;
+  }
+
+  body.nintendo-switch-page .supported-device-content h3 {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
+
+  body.nintendo-switch-page .supported-device-content p {
+    margin-top: 10px;
+    display: -webkit-box;
+    overflow: hidden;
+    color: #D4D4DC;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  body.nintendo-switch-page .supported-device-action {
+    grid-area: action;
+    margin-top: 0;
+    padding-top: 14px;
+    font-size: 0.68rem;
+    line-height: 1.4;
   }
 
   body.nintendo-switch-page .supported-device-trust-strip {
