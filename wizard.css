@@ -14364,7 +14364,7 @@ html body #primitive-wizard-container > #pr-main {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* PRIMITIVE REPAIRS NINTENDO PREMIUM TEST PAGE V61 */
+/* PRIMITIVE REPAIRS NINTENDO PREMIUM TEST PAGE V62 */
 
 body.nintendo-switch-page {
   --nintendo-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -15035,6 +15035,45 @@ body.nintendo-switch-page
     box-shadow:
       0 22px 48px rgba(29, 30, 34, 0.28),
       inset 0 1px 0 rgba(212, 212, 220, 0.14);
+  }
+
+  body.nintendo-switch-page .service-bg-section {
+    background-color: #393F4D;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(57, 63, 77, 0.2) 0%,
+        rgba(57, 63, 77, 0.38) 28%,
+        rgba(57, 63, 77, 0.78) 52%,
+        rgba(57, 63, 77, 0.92) 70%,
+        rgba(57, 63, 77, 0.97) 100%
+      ),
+      var(--service-bg-image);
+    background-position:
+      center center,
+      center top;
+    background-size:
+      cover,
+      contain;
+    background-repeat:
+      no-repeat,
+      no-repeat;
+  }
+
+  body.nintendo-switch-page .service-bg-section::before {
+    background:
+      radial-gradient(
+        circle at 50% 12%,
+        rgba(102, 252, 241, 0.08),
+        transparent 42%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(29, 30, 34, 0.02) 0%,
+        rgba(29, 30, 34, 0.08) 30%,
+        rgba(29, 30, 34, 0.28) 58%,
+        rgba(29, 30, 34, 0.46) 100%
+      );
   }
 
   body.nintendo-switch-page .landing-section-header {
