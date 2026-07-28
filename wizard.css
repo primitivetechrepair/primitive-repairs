@@ -5625,7 +5625,6 @@ color: #d4d4dc;
     box-shadow:
       0 10px 22px rgba(212, 212, 220, 0.2),
       inset 0 1px 0 rgba(212, 212, 220, 0.18);
-  background: #66fcf1;
 }
   .mobile-sticky-booking-secondary {
     border: 1px solid rgba(29, 30, 34, 0.1);
@@ -11172,13 +11171,13 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.18) !important;
   border-radius: 16px !important;
   box-shadow:
-    0 14px 30px rgba(255, 0, 84, 0.34),
+    0 14px 30px rgba(102, 252, 241, 0.34),
     inset 0 1px 0 rgba(255, 255, 255, 0.28),
     inset 0 -1px 0 rgba(29, 30, 34, 0.18) !important;
 }
 .mobile-sticky-booking-primary:focus-visible {
   border-color: rgba(255, 255, 255, 0.32) !important;
-  background: #e6004c !important;
+  background: #5ce3d9 !important;
   background-image: linear-gradient(
     145deg,
     rgba(255, 255, 255, 0.2),
@@ -11186,14 +11185,14 @@ h1 {
   ) !important;
   color: #fff !important;
   box-shadow:
-    0 17px 34px rgba(255, 0, 84, 0.42),
-    0 0 0 4px rgba(255, 0, 84, 0.16),
+    0 17px 34px rgba(102, 252, 241, 0.42),
+    0 0 0 4px rgba(102, 252, 241, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
   transform: translateY(-1px) !important;
 }
 .mobile-sticky-booking-primary:active {
   box-shadow:
-    0 8px 18px rgba(255, 0, 84, 0.28),
+    0 8px 18px rgba(102, 252, 241, 0.28),
     inset 0 2px 4px rgba(29, 30, 34, 0.2) !important;
   transform: translateY(0) !important;
 }
@@ -11638,24 +11637,24 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 .mobile-sticky-booking-primary:link,
 .mobile-sticky-booking-primary:visited {
   border-color: rgba(255, 255, 255, 0.2) !important;
-  background: #ff0054 !important;
+  background: #66fcf1 !important;
   color: #dcedff !important;
   text-shadow: none !important;
   box-shadow:
-    0 14px 30px rgba(255, 0, 84, 0.25),
+    0 14px 30px rgba(102, 252, 241, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
 }
 .mobile-sticky-booking-primary:focus,
 .mobile-sticky-booking-primary:focus-visible {
   border-color: rgba(255, 255, 255, 0.28) !important;
-  background: #e6004c !important;
+  background: #5ce3d9 !important;
   color: #dcedff !important;
   box-shadow:
-    0 17px 34px rgba(255, 0, 84, 0.3),
-    0 0 0 4px rgba(255, 0, 84, 0.1) !important;
+    0 17px 34px rgba(102, 252, 241, 0.3),
+    0 0 0 4px rgba(102, 252, 241, 0.1) !important;
 }
 .mobile-sticky-booking-primary:active {
-  background: #cc0043 !important;
+  background: #4fd3ca !important;
   color: #dcedff !important;
 }
 .mobile-sticky-booking-primary *,
