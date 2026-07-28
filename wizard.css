@@ -15175,7 +15175,7 @@ body.nintendo-switch-page
   }
 }
 
-/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V02 */
+/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V03 */
 
 body.homepage-premium-page {
   --homepage-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -16219,6 +16219,131 @@ body.homepage-premium-page
   font-weight: 700;
   letter-spacing: 0.055em;
   text-transform: uppercase;
+}
+
+/* PRIMITIVE REPAIRS HOMEPAGE NO-PILL ENFORCEMENT V03 */
+
+/*
+  The header is injected after page load. These homepage-scoped
+  rules override the older global pill system without changing
+  header.js or any other page.
+*/
+
+body.homepage-premium-page .site-nav-links a,
+body.homepage-premium-page .site-nav-links .nav-dropdown-btn,
+body.homepage-premium-page .site-nav-links .nav-disabled {
+  border-radius: 10px !important;
+}
+
+/* Keep the primary navigation CTA as a button, not a capsule. */
+body.homepage-premium-page .site-nav-links .nav-cta {
+  border-radius: 10px !important;
+}
+
+/*
+  Replace the Booking Cutoff pill with the approved
+  restrained accent-line label.
+*/
+body.homepage-premium-page .appointment-deadline-pill {
+  width: fit-content !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 0 0 10px !important;
+  border: 0 !important;
+  border-left: 2px solid #66fcf1 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #66fcf1 !important;
+  box-shadow: none !important;
+}
+
+/* Countdown remains plain information, not another pill. */
+body.homepage-premium-page .appointment-deadline-countdown {
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/*
+  Explicitly neutralize inherited information-pill styling on
+  every visible homepage label and metadata surface.
+*/
+body.homepage-premium-page
+  > .landing-hero
+  .hero-status-pill,
+body.homepage-premium-page
+  > .landing-section
+  .landing-eyebrow,
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-badge,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-badge,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-badge {
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Hero information remains a clean dot-and-text list. */
+body.homepage-premium-page
+  > .landing-hero
+  .hero-service-highlights
+  span {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Repair metadata remains plain text separated by slashes. */
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-tags
+  span,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-tags
+  span,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-tags
+  span {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Trust-strip values and review metadata are not pills. */
+body.homepage-premium-page
+  > .homepage-proof-strip
+  .homepage-proof-item
+  strong,
+body.homepage-premium-page
+  > .homepage-proof-strip
+  .homepage-proof-item
+  span,
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-score-stars,
+body.homepage-premium-page
+  > #customer-reviews
+  .review-author
+  span {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 @media (max-width: 1120px) {
