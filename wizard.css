@@ -12553,6 +12553,8 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   margin-bottom: 16px !important;
 }
 /* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT GRID V45 */
+/* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT GRID V45 */
+/* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT CARD SIZING V47 */
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   > .blueprint-profile-grid {
@@ -12562,8 +12564,10 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     minmax(min(100%, 210px), 1fr)
   ) !important;
   grid-auto-flow: row !important;
+  grid-auto-rows: minmax(158px, auto) !important;
   gap: 12px !important;
   align-items: stretch !important;
+  align-content: start !important;
   justify-items: stretch !important;
 }
 #primitive-wizard-container
@@ -12584,10 +12588,14 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
+  min-height: 158px !important;
+  max-height: none !important;
   margin: 0 !important;
-  flex: 1 1 20% !important;
+  flex: none !important;
+  align-self: stretch !important;
   box-sizing: border-box !important;
+  overflow: hidden !important;
   transform: none !important;
 }
 #primitive-wizard-container
