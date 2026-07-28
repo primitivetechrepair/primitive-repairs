@@ -1082,7 +1082,7 @@ const label = card.querySelector(".card-label");
         }
       };
     } else {
-      label.textContent = "Waiting for choice";
+      label.textContent = "Select";
       button.textContent = "";
       button.disabled = true;
       button.style.display = "flex";
