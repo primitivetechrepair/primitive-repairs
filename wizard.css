@@ -15175,7 +15175,7 @@ body.nintendo-switch-page
   }
 }
 
-/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V03 */
+/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V04 */
 
 body.homepage-premium-page {
   --homepage-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -16221,129 +16221,201 @@ body.homepage-premium-page
   text-transform: uppercase;
 }
 
-/* PRIMITIVE REPAIRS HOMEPAGE NO-PILL ENFORCEMENT V03 */
+/* PRIMITIVE REPAIRS SITEWIDE NO-PILL STANDARD V04 */
 
 /*
-  The header is injected after page load. These homepage-scoped
-  rules override the older global pill system without changing
-  header.js or any other page.
+  Permanent design rule:
+  informational text is never displayed inside a pill or capsule.
+  Actual controls remain rectangular. Circular icons remain circular.
 */
-
-body.homepage-premium-page .site-nav-links a,
-body.homepage-premium-page .site-nav-links .nav-dropdown-btn,
-body.homepage-premium-page .site-nav-links .nav-disabled {
-  border-radius: 10px !important;
-}
-
-/* Keep the primary navigation CTA as a button, not a capsule. */
-body.homepage-premium-page .site-nav-links .nav-cta {
-  border-radius: 10px !important;
-}
 
 /*
-  Replace the Booking Cutoff pill with the approved
-  restrained accent-line label.
+  Remove pill styling from non-interactive pill-class elements.
+  The repair wizard is excluded from these generic selectors.
 */
-body.homepage-premium-page .appointment-deadline-pill {
-  width: fit-content !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 0 0 10px !important;
-  border: 0 !important;
-  border-left: 2px solid #66fcf1 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  color: #66fcf1 !important;
-  box-shadow: none !important;
-}
-
-/* Countdown remains plain information, not another pill. */
-body.homepage-premium-page .appointment-deadline-countdown {
-  min-height: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/*
-  Explicitly neutralize inherited information-pill styling on
-  every visible homepage label and metadata surface.
-*/
-body.homepage-premium-page
-  > .landing-hero
-  .hero-status-pill,
-body.homepage-premium-page
-  > .landing-section
-  .landing-eyebrow,
-body.homepage-premium-page
-  > #repair-services
-  .supported-device-badge,
-body.homepage-premium-page
-  > #popular-repair-services
-  .supported-device-badge,
-body.homepage-premium-page
-  > #miami-mobile-repair
-  .supported-device-badge {
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Hero information remains a clean dot-and-text list. */
-body.homepage-premium-page
-  > .landing-hero
-  .hero-service-highlights
-  span {
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Repair metadata remains plain text separated by slashes. */
-body.homepage-premium-page
-  > #repair-services
-  .supported-device-tags
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
   span,
-body.homepage-premium-page
-  > #popular-repair-services
-  .supported-device-tags
-  span,
-body.homepage-premium-page
-  > #miami-mobile-repair
-  .supported-device-tags
-  span {
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Trust-strip values and review metadata are not pills. */
-body.homepage-premium-page
-  > .homepage-proof-strip
-  .homepage-proof-item
+  div,
+  p,
+  small,
   strong,
-body.homepage-premium-page
-  > .homepage-proof-strip
-  .homepage-proof-item
+  label
+)[class$="-pill"],
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
   span,
-body.homepage-premium-page
-  > #customer-reviews
-  .reviews-score-stars,
-body.homepage-premium-page
-  > #customer-reviews
-  .review-author
-  span {
+  div,
+  p,
+  small,
+  strong,
+  label
+)[class*="-pill "],
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
+  span,
+  div,
+  p,
+  small,
+  strong,
+  label
+)[class~="pill"] {
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-left: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* Known informational elements with legacy non-pill class names. */
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
+  .appointment-deadline-countdown,
+  .hero-status-pill,
+  .page-kicker,
+  .section-kicker,
+  .landing-eyebrow,
+  .supported-device-badge,
+  .warranty-step-pill,
+  .reviews-swipe-hint,
+  .nav-disabled span,
+  .mobile-nav-disabled small
+) {
+  min-height: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-left: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/*
+  Landing eyebrows are plain typography.
+  This overrides both desktop and mobile source rules.
+*/
+.landing-eyebrow {
+  padding: 0 !important;
+  padding-left: 0 !important;
+  border: 0 !important;
+  border-left: 0 !important;
+  border-radius: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Hero trust information remains a clean text list. */
+body > .landing-hero .hero-service-highlights span,
+body > main:not(#pr-main) .hero-service-highlights span,
+body > .landing-section .landing-trust-row span,
+body > main:not(#pr-main) .landing-trust-row span {
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
+  background-image: none !important;
   box-shadow: none !important;
+}
+
+/* Service metadata remains plain text. */
+body > .landing-section .supported-device-tags span,
+body > main:not(#pr-main) .supported-device-tags span {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/*
+  Navigation and other genuine controls remain rectangular,
+  never capsule-shaped.
+*/
+.site-nav-links a,
+.site-nav-links button,
+.site-nav-links .nav-disabled,
+.mobile-nav-links a,
+.mobile-nav-links .mobile-nav-disabled,
+.mobile-sticky-booking-bar a,
+.warranty-options label {
+  border-radius: 10px !important;
+}
+
+/*
+  Interactive elements that still use a legacy pill class remain
+  recognizable controls, but use rectangular corners.
+*/
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
+  a,
+  button
+)[class$="-pill"],
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
+  a,
+  button
+)[class*="-pill "],
+:is(
+  #site-header-root,
+  body > .landing-hero,
+  body > .landing-section,
+  body > main:not(#pr-main),
+  #site-footer-root
+)
+:where(
+  a,
+  button
+)[class~="pill"] {
+  border-radius: 10px !important;
 }
 
 @media (max-width: 1120px) {
