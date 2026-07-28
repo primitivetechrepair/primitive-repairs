@@ -12552,16 +12552,17 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   margin-top: 0 !important;
   margin-bottom: 16px !important;
 }
+/* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT GRID V45 */
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   > .blueprint-profile-grid {
   display: grid !important;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-  grid-auto-columns: minmax(0, 1fr) !important;
-  grid-auto-flow: column !important;
-  gap: 0 !important;
-  column-gap: 0 !important;
-  row-gap: 0 !important;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 210px), 1fr)
+  ) !important;
+  grid-auto-flow: row !important;
+  gap: 12px !important;
   align-items: stretch !important;
   justify-items: stretch !important;
 }
