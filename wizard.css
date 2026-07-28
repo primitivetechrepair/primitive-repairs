@@ -12552,23 +12552,26 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   margin-top: 0 !important;
   margin-bottom: 16px !important;
 }
-/* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT GRID V45 */
-/* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT GRID V45 */
-/* PRIMITIVE REPAIRS RESPONSIVE BLUEPRINT CARD SIZING V47 */
+/* PRIMITIVE REPAIRS RESPONSIVE CARD SYSTEM V50 */
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   > .blueprint-profile-grid {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
   display: grid !important;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 210px), 1fr)
-  ) !important;
-  grid-auto-flow: row !important;
-  grid-auto-rows: minmax(158px, auto) !important;
-  gap: 12px !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  grid-template-rows: auto !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(0, 1fr) !important;
+  grid-auto-rows: auto !important;
+  gap: 0 !important;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
   align-items: stretch !important;
   align-content: start !important;
   justify-items: stretch !important;
+  overflow: hidden !important;
 }
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
@@ -12794,13 +12797,21 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area .repair-card-results,
 #primitive-wizard-container #pr-steps-area .series-card-results {
   width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
-  grid-auto-rows: 1fr !important;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 220px), 1fr)
+  ) !important;
+  grid-auto-flow: row !important;
+  grid-auto-rows: auto !important;
   gap: 16px !important;
   align-items: stretch !important;
+  align-content: start !important;
+  justify-items: stretch !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card,
 #primitive-wizard-container #pr-steps-area button.opt-card.is-selected,
@@ -12815,13 +12826,17 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   isolation: isolate !important;
   width: 100% !important;
   min-width: 0 !important;
-  max-width: none !important;
+  max-width: 100% !important;
+  height: auto !important;
   min-height: 238px !important;
+  max-height: none !important;
   margin: 0 !important;
   padding: 0 !important;
   display: grid !important;
   grid-template-rows: 158px minmax(80px, auto) !important;
   align-items: stretch !important;
+  align-self: stretch !important;
+  justify-self: stretch !important;
   overflow: hidden !important;
   border: 1px solid rgba(220, 237, 255, 0.17) !important;
   border-radius: 22px !important;
@@ -13045,13 +13060,18 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     font-size: 14px !important;
   }
   #primitive-wizard-container #pr-steps-area .brand-card-results,
-  #primitive-wizard-container #pr-steps-area .device-card-results,
-  #primitive-wizard-container #pr-steps-area .model-card-results,
-  #primitive-wizard-container #pr-steps-area .repair-card-results,
-  #primitive-wizard-container #pr-steps-area .series-card-results {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px !important;
-  }
+#primitive-wizard-container #pr-steps-area .device-card-results,
+#primitive-wizard-container #pr-steps-area .model-card-results,
+#primitive-wizard-container #pr-steps-area .repair-card-results,
+#primitive-wizard-container #pr-steps-area .series-card-results {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 220px), 1fr)
+  ) !important;
+  grid-auto-flow: row !important;
+  grid-auto-rows: auto !important;
+  gap: 12px !important;
+}
   #primitive-wizard-container #pr-steps-area button.opt-card,
   #primitive-wizard-container #pr-steps-area button.opt-card.is-selected,
   #primitive-wizard-container #pr-steps-area button.opt-card.selected {
@@ -14674,4 +14694,45 @@ html body .email-offer-eyebrow::before,
 #primitive-wizard-container #pr-steps-area .opt-badge::after {
   content: none;
   display: none;
+}
+/* PRIMITIVE REPAIRS OPTION CARD CONTENT CONTAINMENT V50 */
+#primitive-wizard-container
+  #pr-steps-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card,
+#primitive-wizard-container
+  #pr-steps-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card
+  > * {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+#primitive-wizard-container
+  #pr-steps-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card
+  :is(.opt-label, .opt-subtext) {
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
 }
