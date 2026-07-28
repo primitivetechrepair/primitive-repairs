@@ -13916,7 +13916,7 @@ html body .email-offer-eyebrow::before,
   word-break: normal !important;
 }
 
-/* PRIMITIVE REPAIRS VERIFIED RESPONSIVE CARD SYSTEM V51 */
+/* PRIMITIVE REPAIRS VERIFIED RESPONSIVE CARD SYSTEM V52 */
 
 /* BLUEPRINT: ALWAYS ONE FIVE-CARD HORIZONTAL ROW */
 
@@ -14301,7 +14301,7 @@ html
       .repair-card-results,
       .series-card-results
     ) {
-    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 12px !important;
     column-gap: 12px !important;
     row-gap: 12px !important;
