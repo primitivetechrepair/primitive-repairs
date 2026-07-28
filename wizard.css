@@ -14364,7 +14364,7 @@ html body #primitive-wizard-container > #pr-main {
   background-color: transparent !important;
   background-image: none !important;
 }
-/* PRIMITIVE REPAIRS NINTENDO PREMIUM TEST PAGE V62 */
+/* PRIMITIVE REPAIRS NINTENDO PREMIUM TEST PAGE V63 */
 
 body.nintendo-switch-page {
   --nintendo-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -15054,7 +15054,7 @@ body.nintendo-switch-page
       center top;
     background-size:
       cover,
-      contain;
+      150% auto;
     background-repeat:
       no-repeat,
       no-repeat;
