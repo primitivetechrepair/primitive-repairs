@@ -15174,3 +15174,1461 @@ body.nintendo-switch-page
     transition: none;
   }
 }
+
+/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V01 */
+
+body.homepage-premium-page {
+  --homepage-h1-size: clamp(3.4rem, 7vw, 6.75rem);
+  --homepage-h2-size: clamp(2.2rem, 4vw, 3.75rem);
+  --homepage-h3-size: 1.125rem;
+  --homepage-section-radius: 32px;
+  --homepage-card-radius: 22px;
+  --homepage-section-gap: 26px;
+
+  background:
+    radial-gradient(
+      circle at 14% 6%,
+      rgba(102, 252, 241, 0.08),
+      transparent 30rem
+    ),
+    radial-gradient(
+      circle at 94% 32%,
+      rgba(212, 212, 220, 0.045),
+      transparent 36rem
+    ),
+    #1d1e22;
+}
+
+body.homepage-premium-page > .landing-hero,
+body.homepage-premium-page > .landing-section {
+  width: min(1480px, calc(100% - 32px));
+  font-family: "Manrope", sans-serif;
+}
+
+body.homepage-premium-page > .landing-hero {
+  margin-top: 18px;
+  margin-bottom: var(--homepage-section-gap);
+}
+
+body.homepage-premium-page > .landing-section {
+  margin-bottom: var(--homepage-section-gap);
+}
+
+body.homepage-premium-page > .landing-hero h1,
+body.homepage-premium-page > .landing-section h2,
+body.homepage-premium-page > .landing-section h3 {
+  margin: 0;
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+
+body.homepage-premium-page > .landing-hero .landing-hero-inner {
+  min-height: min(760px, calc(100vh - 190px));
+  padding: clamp(46px, 7vw, 104px);
+  align-items: flex-start;
+  justify-content: flex-end;
+  overflow: hidden;
+  border: 1px solid rgba(212, 212, 220, 0.14);
+  border-radius: 36px;
+  background: #393f4d;
+  box-shadow:
+    0 34px 80px rgba(29, 30, 34, 0.4),
+    inset 0 1px 0 rgba(212, 212, 220, 0.12);
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-hero-inner::before {
+  background-image: url("images/hero-repair-van.webp");
+  background-size: cover;
+  background-position: center 46%;
+  background-repeat: no-repeat;
+  filter:
+    saturate(0.76)
+    contrast(1.08);
+  transform: scale(1.02);
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-hero-inner::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(29, 30, 34, 0.97) 0%,
+      rgba(29, 30, 34, 0.88) 38%,
+      rgba(29, 30, 34, 0.5) 68%,
+      rgba(29, 30, 34, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(29, 30, 34, 0.08),
+      rgba(29, 30, 34, 0.7)
+    );
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .hero-glass-panel {
+  width: min(980px, 100%);
+  padding: 0;
+  align-items: flex-start;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .hero-status-pill {
+  width: fit-content;
+  min-height: 0;
+  margin: 0 0 20px;
+  padding: 0 0 0 16px;
+  display: block;
+  border: 0;
+  border-left: 3px solid #66fcf1;
+  border-radius: 0;
+  background: transparent;
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+body.homepage-premium-page > .landing-hero h1 {
+  max-width: 12ch;
+  font-size: var(--homepage-h1-size);
+  line-height: 0.94;
+  letter-spacing: -0.065em;
+  text-align: left;
+  text-shadow: none;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .hero-glass-panel
+  > p {
+  max-width: 780px;
+  margin: 26px 0 0;
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .hero-service-highlights {
+  width: min(900px, 100%);
+  margin: 38px 0 0;
+  padding: 22px 0 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px 24px;
+  border-top: 1px solid rgba(212, 212, 220, 0.2);
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .hero-service-highlights
+  span {
+  min-width: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.065em;
+  line-height: 1.35;
+  text-align: left;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .hero-service-highlights
+  span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  margin-top: 2px;
+  display: block;
+  border-radius: 50%;
+  background: #66fcf1;
+  -webkit-mask: none;
+  mask: none;
+  filter: none;
+  box-shadow: 0 0 14px rgba(102, 252, 241, 0.55);
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-actions {
+  margin: 34px 0 0;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-primary-btn,
+body.homepage-premium-page
+  > .landing-hero
+  .landing-secondary-btn {
+  min-height: 56px;
+  padding: 0 22px;
+  border-radius: 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-primary-btn {
+  border: 1px solid #66fcf1;
+  background: #66fcf1;
+  color: #1d1e22;
+  box-shadow:
+    0 16px 34px rgba(29, 30, 34, 0.3),
+    inset 0 1px 0 rgba(212, 212, 220, 0.3);
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-secondary-btn {
+  border: 1px solid rgba(212, 212, 220, 0.34);
+  background: rgba(29, 30, 34, 0.5);
+  color: #d4d4dc;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > .landing-hero
+  .landing-primary-btn:hover,
+body.homepage-premium-page
+  > .landing-hero
+  .landing-secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+body.homepage-premium-page
+  > .landing-section:not(.homepage-proof-strip) {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(38px, 5vw, 76px);
+  overflow: hidden;
+  border: 1px solid rgba(212, 212, 220, 0.16);
+  border-radius: var(--homepage-section-radius);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.78),
+      rgba(57, 63, 77, 0.58)
+    );
+  backdrop-filter: blur(26px) saturate(135%);
+  -webkit-backdrop-filter: blur(26px) saturate(135%);
+  box-shadow:
+    0 30px 72px rgba(29, 30, 34, 0.3),
+    inset 0 1px 0 rgba(212, 212, 220, 0.16),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.18);
+}
+
+body.homepage-premium-page
+  > #popular-repair-services {
+  background:
+    linear-gradient(
+      155deg,
+      rgba(57, 63, 77, 0.76),
+      rgba(57, 63, 77, 0.56)
+    );
+}
+
+body.homepage-premium-page
+  > .landing-section
+  .landing-section-header {
+  max-width: none;
+  margin: 0 0 44px;
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1.15fr)
+    minmax(320px, 0.85fr);
+  align-items: end;
+  gap: 22px 64px;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > .landing-section
+  .landing-eyebrow {
+  width: fit-content;
+  margin: 0;
+  padding: 0 0 0 16px;
+  grid-column: 1 / -1;
+  border-left: 3px solid #66fcf1;
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+body.homepage-premium-page
+  > .landing-section
+  .landing-section-header
+  h2 {
+  max-width: 16ch;
+  color: #d4d4dc;
+  font-size: var(--homepage-h2-size);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  text-align: left;
+  text-shadow: none;
+}
+
+body.homepage-premium-page
+  > .landing-section
+  .landing-section-header
+  > p {
+  max-width: 720px;
+  margin: 0;
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.98rem;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > .homepage-proof-strip {
+  padding: 1px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 212, 220, 0.16);
+  border-radius: 24px;
+  background: rgba(57, 63, 77, 0.66);
+  backdrop-filter: blur(20px) saturate(128%);
+  -webkit-backdrop-filter: blur(20px) saturate(128%);
+  box-shadow:
+    0 22px 48px rgba(29, 30, 34, 0.28),
+    inset 0 1px 0 rgba(212, 212, 220, 0.14);
+}
+
+body.homepage-premium-page
+  > .homepage-proof-strip
+  .homepage-proof-item {
+  min-height: 118px;
+  padding: 22px 18px;
+  border: 0;
+  border-right: 1px solid rgba(212, 212, 220, 0.1);
+  background: #1d1e22;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > .homepage-proof-strip
+  .homepage-proof-item:last-child {
+  border-right: 0;
+}
+
+body.homepage-premium-page
+  > .homepage-proof-strip
+  .homepage-proof-item
+  strong {
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.25rem, 3vw, 1.8rem);
+  font-weight: 700;
+}
+
+body.homepage-premium-page
+  > .homepage-proof-strip
+  .homepage-proof-item
+  span {
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .landing-process-grid {
+  margin-top: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .landing-process-grid::before {
+  display: none;
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .process-card {
+  min-height: 250px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  border: 1px solid rgba(212, 212, 220, 0.12);
+  border-radius: var(--homepage-card-radius);
+  background: #1d1e22;
+  color: #d4d4dc;
+  text-align: left;
+  box-shadow:
+    0 18px 36px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(212, 212, 220, 0.06);
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .process-card::before {
+  display: none;
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .process-card
+  span {
+  width: auto;
+  height: auto;
+  margin: 0 0 42px;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .process-card
+  strong {
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: var(--homepage-h3-size);
+  font-weight: 700;
+  line-height: 1.22;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+body.homepage-premium-page
+  > #how-it-works
+  .process-card
+  p {
+  max-width: none;
+  margin: 16px 0 0;
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.65;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-grid,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-grid {
+  counter-reset: homepage-service-card;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 0;
+  align-items: stretch;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-grid {
+  counter-reset: homepage-service-card;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 0;
+  align-items: stretch;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-card,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-card,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-card {
+  counter-increment: homepage-service-card;
+  position: relative;
+  min-width: 0;
+  min-height: 310px;
+  height: 100%;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid rgba(212, 212, 220, 0.12);
+  border-radius: var(--homepage-card-radius);
+  background: #1d1e22;
+  text-align: left;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow:
+    0 18px 36px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(212, 212, 220, 0.06);
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-card::before,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-card::before,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-card::before {
+  display: none;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-card::after,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-card::after,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: auto;
+  bottom: auto;
+  width: 52px;
+  height: 2px;
+  background: #66fcf1;
+  background-image: none;
+  opacity: 1;
+  filter: none;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-icon,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-icon,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-icon {
+  width: auto;
+  height: auto;
+  min-height: 0;
+  margin: 0 0 42px;
+  padding: 0;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-icon::before,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-icon::before,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-icon::before {
+  content: counter(homepage-service-card, decimal-leading-zero);
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-badge,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-badge,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-badge {
+  position: static;
+  width: fit-content;
+  min-height: 0;
+  margin: 0 0 18px;
+  padding: 7px 10px;
+  border: 1px solid rgba(102, 252, 241, 0.32);
+  border-radius: 999px;
+  background: #393f4d;
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-content,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-content,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-content {
+  min-width: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-content
+  h3,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-content
+  h3,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-content
+  h3 {
+  min-height: 0;
+  color: #d4d4dc;
+  font-size: var(--homepage-h3-size);
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-content
+  p,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-content
+  p,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-content
+  p {
+  min-height: 0;
+  margin: 16px 0 0;
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.65;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-tags,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-tags,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-tags {
+  margin-top: 20px;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-tags
+  span,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-tags
+  span,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-tags
+  span {
+  padding: 7px 10px;
+  border: 1px solid rgba(212, 212, 220, 0.12);
+  border-radius: 999px;
+  background: #393f4d;
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-action,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-action {
+  width: fit-content;
+  min-height: auto;
+  margin-top: auto;
+  padding: 26px 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  line-height: 1.4;
+  text-align: left;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-action::after,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-action::after {
+  content: "  ↗";
+}
+
+body.homepage-premium-page
+  > .landing-section
+  :is(
+    .process-trust-strip,
+    .supported-device-trust-strip
+  ) {
+  margin-top: 28px;
+  padding: 30px 32px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+  border: 0;
+  border-radius: 22px;
+  background: #66fcf1;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow:
+    0 20px 44px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(212, 212, 220, 0.34);
+}
+
+body.homepage-premium-page
+  > .landing-section
+  :is(
+    .process-trust-strip,
+    .supported-device-trust-strip
+  )
+  strong {
+  color: #1d1e22;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: var(--homepage-h3-size);
+  font-weight: 700;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+body.homepage-premium-page
+  > .landing-section
+  :is(
+    .process-trust-strip,
+    .supported-device-trust-strip
+  )
+  span {
+  margin-top: 8px;
+  color: #1d1e22;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+body.homepage-premium-page
+  > .landing-section
+  :is(
+    .process-trust-strip,
+    .supported-device-trust-strip
+  )
+  a {
+  min-height: 52px;
+  padding: 0 20px;
+  border: 1px solid #1d1e22;
+  border-radius: 11px;
+  background: #1d1e22;
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .popular-service-link-panel {
+  margin-top: 28px;
+  padding: 28px;
+  gap: 22px;
+  border: 1px solid rgba(212, 212, 220, 0.12);
+  border-radius: 22px;
+  background: #1d1e22;
+  box-shadow:
+    0 18px 36px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(212, 212, 220, 0.06);
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .popular-service-link-panel-header
+  strong {
+  color: #d4d4dc;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .popular-service-link-panel-header
+  span {
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .popular-service-link-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body.homepage-premium-page
+  > #popular-repair-services
+  .popular-service-link-grid
+  a {
+  min-height: 48px;
+  border: 1px solid rgba(212, 212, 220, 0.12);
+  border-radius: 12px;
+  background: #393f4d;
+  color: #d4d4dc;
+  box-shadow: none;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-feature-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 0.82fr)
+    minmax(0, 1.18fr);
+  align-items: start;
+  gap: 28px;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-feature-intro
+  h2 {
+  max-width: 12ch;
+  color: #d4d4dc;
+  font-size: var(--homepage-h2-size);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  text-align: left;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-feature-intro
+  > p {
+  margin-top: 22px;
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-score-card {
+  margin-top: 28px;
+  padding: 24px;
+  border: 0;
+  border-radius: 20px;
+  background: #66fcf1;
+  box-shadow:
+    0 20px 44px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(212, 212, 220, 0.34);
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-score-card
+  :is(
+    .reviews-score-stars,
+    strong,
+    span
+  ) {
+  color: #1d1e22;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .review-card-public {
+  min-width: 0;
+  border: 1px solid rgba(212, 212, 220, 0.12);
+  border-radius: 20px;
+  background: #1d1e22;
+  color: #d4d4dc;
+  box-shadow:
+    0 18px 36px rgba(29, 30, 34, 0.2),
+    inset 0 1px 0 rgba(212, 212, 220, 0.06);
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .review-card-public
+  p {
+  color: #d4d4dc;
+  font-family: "Manrope", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .review-stars,
+body.homepage-premium-page
+  > #customer-reviews
+  .review-author
+  span {
+  color: #66fcf1;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .review-author
+  strong {
+  color: #d4d4dc;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-mini-grid {
+  gap: 12px;
+}
+
+body.homepage-premium-page
+  > #customer-reviews
+  .reviews-swipe-hint {
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1120px) {
+  body.homepage-premium-page
+    > .landing-section
+    .landing-section-header {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 20px;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .hero-service-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.homepage-premium-page
+    > .homepage-proof-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.homepage-premium-page
+    > .homepage-proof-strip
+    .homepage-proof-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  body.homepage-premium-page
+    > .homepage-proof-strip
+    .homepage-proof-item:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(212, 212, 220, 0.1);
+  }
+
+  body.homepage-premium-page
+    > #how-it-works
+    .landing-process-grid,
+  body.homepage-premium-page
+    > #repair-services
+    .supported-device-grid,
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-grid,
+  body.homepage-premium-page
+    > #miami-mobile-repair
+    .supported-device-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.homepage-premium-page
+    > #customer-reviews
+    .reviews-feature-layout {
+    grid-template-columns: 1fr;
+  }
+
+  body.homepage-premium-page
+    > #popular-repair-services
+    .popular-service-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  body.homepage-premium-page
+    > .landing-hero,
+  body.homepage-premium-page
+    > .landing-section {
+    width: calc(100% - 20px);
+  }
+
+  body.homepage-premium-page
+    > .landing-hero {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+
+  body.homepage-premium-page
+    > .landing-section {
+    margin-bottom: 16px;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-hero-inner {
+    min-height: 620px;
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-hero-inner::before {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    filter:
+      saturate(0.92)
+      contrast(1.04)
+      brightness(1.06);
+    transform: none;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-hero-inner::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(29, 30, 34, 0.04) 0%,
+        rgba(29, 30, 34, 0.1) 28%,
+        rgba(29, 30, 34, 0.72) 48%,
+        rgba(29, 30, 34, 0.95) 66%,
+        rgba(29, 30, 34, 0.98) 100%
+      );
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    h1 {
+    max-width: 10ch;
+    font-size: clamp(2.55rem, 13vw, 4.1rem);
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .hero-status-pill {
+    margin-bottom: 16px;
+    padding-left: 12px;
+    font-size: 0.67rem;
+    letter-spacing: 0.13em;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .hero-glass-panel
+    > p {
+    margin-top: 20px;
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-actions {
+    width: 100%;
+    margin-top: 26px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-primary-btn,
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-secondary-btn {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .hero-service-highlights {
+    margin-top: 28px;
+    padding-top: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    .hero-service-highlights
+    span {
+    font-size: 0.64rem;
+  }
+
+  body.homepage-premium-page
+    > .landing-section:not(.homepage-proof-strip) {
+    padding: 28px 18px;
+    border-radius: 22px;
+    background:
+      linear-gradient(
+        145deg,
+        rgba(57, 63, 77, 0.74),
+        rgba(57, 63, 77, 0.54)
+      );
+    backdrop-filter: blur(20px) saturate(128%);
+    -webkit-backdrop-filter: blur(20px) saturate(128%);
+    box-shadow:
+      0 22px 48px rgba(29, 30, 34, 0.28),
+      inset 0 1px 0 rgba(212, 212, 220, 0.14);
+  }
+
+  body.homepage-premium-page
+    > .landing-section
+    .landing-section-header {
+    margin-bottom: 28px;
+    gap: 16px;
+  }
+
+  body.homepage-premium-page
+    > .landing-section
+    .landing-section-header
+    h2,
+  body.homepage-premium-page
+    > #customer-reviews
+    .reviews-feature-intro
+    h2 {
+    max-width: 14ch;
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  body.homepage-premium-page
+    > .landing-section
+    .landing-section-header
+    > p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+
+  body.homepage-premium-page
+    > .landing-section
+    .landing-eyebrow {
+    padding-left: 12px;
+    font-size: 0.67rem;
+    letter-spacing: 0.13em;
+  }
+
+  body.homepage-premium-page
+    > #how-it-works
+    .landing-process-grid,
+  body.homepage-premium-page
+    > #repair-services
+    .supported-device-grid,
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-grid,
+  body.homepage-premium-page
+    > #miami-mobile-repair
+    .supported-device-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  body.homepage-premium-page
+    > #how-it-works
+    .process-card {
+    width: 100%;
+    min-height: 210px;
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
+  body.homepage-premium-page
+    > #how-it-works
+    .process-card
+    span {
+    margin-bottom: 22px;
+  }
+
+  body.homepage-premium-page
+    > #repair-services
+    .supported-device-card,
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-card,
+  body.homepage-premium-page
+    > #miami-mobile-repair
+    .supported-device-card {
+    width: 100%;
+    min-height: 220px;
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-card {
+    min-height: 240px;
+  }
+
+  body.homepage-premium-page
+    > #repair-services
+    .supported-device-card::after,
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-card::after,
+  body.homepage-premium-page
+    > #miami-mobile-repair
+    .supported-device-card::after {
+    left: 20px;
+  }
+
+  body.homepage-premium-page
+    > #repair-services
+    .supported-device-icon,
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-icon,
+  body.homepage-premium-page
+    > #miami-mobile-repair
+    .supported-device-icon {
+    margin-bottom: 18px;
+  }
+
+  body.homepage-premium-page
+    > #repair-services
+    .supported-device-content
+    p,
+  body.homepage-premium-page
+    > #popular-repair-services
+    .supported-device-content
+    p,
+  body.homepage-premium-page
+    > #miami-mobile-repair
+    .supported-device-content
+    p {
+    font-size: 0.86rem;
+    line-height: 1.55;
+  }
+
+  body.homepage-premium-page
+    > .landing-section
+    :is(
+      .process-trust-strip,
+      .supported-device-trust-strip
+    ) {
+    padding: 24px 20px;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 20px;
+    border-radius: 18px;
+  }
+
+  body.homepage-premium-page
+    > .landing-section
+    :is(
+      .process-trust-strip,
+      .supported-device-trust-strip
+    )
+    a {
+    width: 100%;
+  }
+
+  body.homepage-premium-page
+    > #popular-repair-services
+    .popular-service-link-panel {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  body.homepage-premium-page
+    > #popular-repair-services
+    .popular-service-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body.homepage-premium-page
+    > #customer-reviews
+    .reviews-feature-layout {
+    gap: 22px;
+  }
+
+  body.homepage-premium-page
+    > #customer-reviews
+    .reviews-mini-grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scrollbar-width: thin;
+    padding-bottom: 4px;
+  }
+
+  body.homepage-premium-page
+    > #customer-reviews
+    .reviews-mini-grid
+    .review-card-public {
+    flex: 0 0 min(86vw, 320px);
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 420px) {
+  body.homepage-premium-page
+    > .homepage-proof-strip {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.homepage-premium-page
+    > .homepage-proof-strip
+    .homepage-proof-item {
+    border-right: 0;
+    border-bottom: 1px solid rgba(212, 212, 220, 0.1);
+  }
+
+  body.homepage-premium-page
+    > .homepage-proof-strip
+    .homepage-proof-item:last-child {
+    border-bottom: 0;
+  }
+
+  body.homepage-premium-page
+    > #popular-repair-services
+    .popular-service-link-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.homepage-premium-page
+    > .landing-hero
+    h1 {
+    font-size: clamp(2.35rem, 12vw, 3.25rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-primary-btn,
+  body.homepage-premium-page
+    > .landing-hero
+    .landing-secondary-btn,
+  body.homepage-premium-page
+    > .landing-section
+    .supported-device-card,
+  body.homepage-premium-page
+    > #how-it-works
+    .process-card {
+    transition: none;
+  }
+}
