@@ -2965,23 +2965,6 @@ body.mobile-nav-open {
       0 0 48px rgba(102, 252, 241, 0.36);
   }
 }
-#pr-customer-form,
-#pr-form-area,
-#pr-main,
-#pr-selection-cards,
-#pr-steps-area,
-.appointment-panel,
-.customer-repair-summary,
-.model-card-results,
-.model-search-panel,
-.repair-details-panel,
-.repair-info-panel,
-.review-panel,
-.success-panel {
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-}
 .pr-header::after {
   display: none;
   content: none;
@@ -2992,24 +2975,8 @@ body.mobile-nav-open {
 .model-card-results,
 .repair-card-results,
 .series-card-results {
-  width: 100%;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  justify-content: stretch;
-  align-items: stretch;
   margin-top: 12px;
   padding-top: 6px;
-}
-.animated-area .opt-card,
-.brand-card-results .opt-card,
-.device-card-results .opt-card,
-.model-card-results .opt-card,
-.repair-card-results .opt-card,
-.series-card-results .opt-card {
-  width: 100%;
-  max-width: none;
 }
 #pr-steps-area.animated-area:has(.model-search-panel) {
   grid-template-columns: 1fr;
@@ -3024,17 +2991,6 @@ body.mobile-nav-open {
 #pr-steps-area.animated-area:has(.option-section-header) {
   display: block;
   width: 100%;
-}
-#pr-steps-area.animated-area:has(.option-section-header) .brand-card-results,
-#pr-steps-area.animated-area:has(.option-section-header) .device-card-results,
-#pr-steps-area.animated-area:has(.option-section-header) .option-section-header,
-#pr-steps-area.animated-area:has(.option-section-header) .series-card-results {
-  width: 100%;
-}
-.model-card-results .opt-card {
-  width: 100%;
-  min-width: 0;
-  max-width: none;
 }
 .animated-area {
   min-height: 260px;
@@ -3150,13 +3106,6 @@ body.mobile-nav-open {
 .device-card-results,
 .repair-card-results,
 .series-card-results {
-  width: 100%;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  justify-content: stretch;
-  align-items: stretch;
   padding-bottom: 18px;
   background: 0 0;
   box-shadow: none;
@@ -3171,14 +3120,8 @@ body.mobile-nav-open {
 }
 .opt-card {
   position: relative;
-  width: 100%;
-  min-width: 0;
-  max-width: none;
-  min-height: 215px;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  overflow: hidden;
   border: 1px solid rgba(212, 212, 220, 0.26);
   border-radius: 20px;
   background:
@@ -3346,13 +3289,10 @@ body.mobile-nav-open {
   word-break: normal;
 }
 .opt-card-body {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 78px;
-  padding: 8px 6px 12px;
 }
 .opt-subtext {
   width: 100%;
@@ -3458,17 +3398,6 @@ body.mobile-nav-open {
 .model-search-count {
   margin-top: 10px;
 }
-#pr-steps-area.animated-area:has(.model-search-panel) .model-card-results,
-.model-card-results {
-  grid-column: 1/-1;
-  width: 100%;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  justify-content: stretch;
-  align-items: stretch;
-}
 .model-empty-state {
   width: 100%;
   grid-column: 1/-1;
@@ -3501,32 +3430,6 @@ body.mobile-nav-open {
   }
   .model-search-clear {
     width: 100%;
-  }
-  #pr-steps-area.animated-area:has(.model-search-panel) .model-card-results,
-  .model-card-results {
-    grid-column: 1/-1;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-  .model-card-results .opt-card {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-  }
-  .repair-card-results {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-  .repair-card-results .opt-card {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-  }
-  .opt-card-body {
-    min-height: 66px;
-    padding: 7px 5px 9px;
   }
   .opt-label {
     min-height: 42px;
@@ -3584,20 +3487,6 @@ body.mobile-nav-open {
 .repair-selected-summary .repair-none-selected {
   background: var(--soft-panel);
   color: var(--muted);
-}
-.repair-card-results {
-  width: 100%;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  justify-content: stretch;
-  align-items: stretch;
-}
-.repair-card-results .opt-card {
-  width: 100%;
-  min-width: 0;
-  max-width: none;
 }
 .appointment-panel,
 .repair-details-panel,
@@ -6366,21 +6255,6 @@ body.mobile-nav-open {
   #pr-steps-area.animated-area:has(.opt-card):not(:has(.option-section-header)),
   .repair-card-results {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-    padding: 14px 10px 18px;
-    overflow: visible;
-  }
-  #pr-steps-area.animated-area:has(.model-search-panel)
-    .model-card-results
-    .opt-card,
-  #pr-steps-area.animated-area:has(.opt-card) .opt-card,
-  .model-card-results .opt-card,
-  .repair-card-results .opt-card {
-    width: 100%;
-    min-width: 0;
-    max-width: none;
-    flex: initial;
   }
   #pr-steps-area.animated-area:has(.model-search-panel)
     .model-card-results
@@ -6389,15 +6263,6 @@ body.mobile-nav-open {
   .model-card-results .opt-card.is-selected,
   .repair-card-results .opt-card.is-selected {
     transform: none;
-  }
-  #pr-steps-area.animated-area:has(.model-search-panel),
-  #pr-steps-area.animated-area:has(.opt-card),
-  .brand-card-results,
-  .device-card-results,
-  .model-card-results,
-  .repair-card-results,
-  .series-card-results {
-    overflow: visible;
   }
   .brand-card-results .opt-card.is-selected,
   .device-card-results .opt-card.is-selected,
@@ -6650,25 +6515,13 @@ body.mobile-nav-open {
   .model-card-results,
   .repair-card-results,
   .series-card-results {
-    width: 100%;
-    max-width: 100%;
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px;
     padding: 18px 14px 22px;
-    overflow: visible;
   }
   .brand-card-results .opt-card,
   .device-card-results .opt-card,
   .model-card-results .opt-card,
   .repair-card-results .opt-card,
   .series-card-results .opt-card {
-    width: calc(100% - 14px);
-    min-width: 0;
-    max-width: none;
-    min-height: 156px;
-    justify-self: center;
-    flex: initial;
     background:
       radial-gradient(
         circle at top right,
@@ -6692,7 +6545,6 @@ body.mobile-nav-open {
   .series-card-results .opt-thumb {
     height: 86px;
     min-height: 86px;
-    flex: 0 0 86px;
     margin: 7px auto 4px;
   }
   .brand-card-results .opt-thumb-img,
@@ -6700,21 +6552,10 @@ body.mobile-nav-open {
   .model-card-results .opt-thumb-img,
   .repair-card-results .opt-thumb-img,
   .series-card-results .opt-thumb-img {
-    width: auto;
     height: auto;
-    max-width: 76px;
     max-height: 76px;
-    display: block;
     object-fit: contain;
     object-position: center;
-  }
-  .brand-card-results .opt-card-body,
-  .device-card-results .opt-card-body,
-  .model-card-results .opt-card-body,
-  .repair-card-results .opt-card-body,
-  .series-card-results .opt-card-body {
-    min-height: 54px;
-    padding: 6px 5px 8px;
   }
   .brand-card-results .opt-label,
   .device-card-results .opt-label,
@@ -6990,24 +6831,9 @@ body.mobile-nav-open {
   font-weight: 700;
   line-height: 1.25;
 }
-#pr-selection-cards.blueprint-selection-module .blueprint-profile-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0;
-}
 #pr-selection-cards.blueprint-selection-module .pr-progress-card {
   position: relative;
-  min-width: 0;
-  width: auto;
-  min-height: 158px;
-  margin: 0;
-  padding: 0;
   display: grid;
-  grid-template-rows: 30px minmax(68px, 1fr) minmax(34px, auto) 28px;
-  align-items: stretch;
-  justify-items: stretch;
-  overflow: hidden;
   border: 0;
   border-left: 1px solid rgba(212, 212, 220, 0.22);
   box-shadow: inset 1px 0 0 rgba(212, 212, 220, 0.035);
@@ -7031,10 +6857,6 @@ body.mobile-nav-open {
   content: none !important;
 }
 #pr-selection-cards.blueprint-selection-module .card-heading {
-  grid-row: 1;
-  min-height: 30px;
-  width: 100%;
-  padding: 0 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7047,17 +6869,6 @@ body.mobile-nav-open {
   text-transform: uppercase;
 }
 #pr-selection-cards.blueprint-selection-module .card-img {
-  grid-row: 2;
-  align-self: center;
-  justify-self: center;
-  width: 70px;
-  height: 70px;
-  min-width: 70px;
-  min-height: 70px;
-  max-width: 70px;
-  max-height: 70px;
-  margin: 0;
-  padding: 0;
   display: block;
   background-size: contain;
   background-position: center;
@@ -7069,14 +6880,6 @@ body.mobile-nav-open {
   transform: none;
 }
 #pr-selection-cards.blueprint-selection-module .card-label {
-  grid-row: 3;
-  align-self: center;
-  justify-self: center;
-  width: 100%;
-  min-width: 0;
-  max-width: 100%;
-  margin: 0;
-  padding: 0 8px;
   border: 0;
   font-size: 8.75px;
   font-weight: 950;
@@ -7087,18 +6890,10 @@ body.mobile-nav-open {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
   overflow-wrap: anywhere;
   white-space: normal;
 }
 #pr-selection-cards.blueprint-selection-module .card-back {
-  grid-row: 4;
-  width: 100%;
-  min-width: 0;
-  max-width: none;
-  min-height: 28px;
-  margin: 0;
-  padding: 0 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7121,8 +6916,6 @@ body.mobile-nav-open {
 #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice
   .card-label {
-  width: calc(100% - 14px);
-  padding: 6px;
   border-radius: 999px;
   background: rgba(212, 212, 220, 0.035);
   font-size: 7.1px;
@@ -7149,27 +6942,13 @@ body.mobile-nav-open {
     strong {
     font-size: 13px;
   }
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    min-height: 198px;
-    grid-template-rows: 34px minmax(92px, 1fr) minmax(34px, auto) 34px;
-  }
   #pr-selection-cards.blueprint-selection-module .card-heading {
-    min-height: 34px;
     font-size: 9px;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-img {
-    width: 92px;
-    height: 92px;
-    min-width: 92px;
-    min-height: 92px;
-    max-width: 92px;
-    max-height: 92px;
   }
   #pr-selection-cards.blueprint-selection-module .card-label {
     font-size: 9.75px;
   }
   #pr-selection-cards.blueprint-selection-module .card-back {
-    min-height: 34px;
     font-size: 8.25px;
   }
 }
@@ -7187,22 +6966,12 @@ body.mobile-nav-open {
     font-size: 6.7px;
     letter-spacing: 0.085em;
   }
-  #pr-selection-cards.blueprint-selection-module .card-img {
-    width: 56px;
-    height: 56px;
-    min-width: 56px;
-    min-height: 56px;
-    max-width: 56px;
-    max-height: 56px;
-  }
   #pr-selection-cards.blueprint-selection-module .card-back {
     font-size: 6.25px;
   }
   #pr-selection-cards.blueprint-selection-module
     .pr-progress-card.is-missing-choice
     .card-label {
-    width: calc(100% - 8px);
-    padding: 5px 3px;
     font-size: 6.1px;
     letter-spacing: 0.035em;
   }
@@ -7490,18 +7259,7 @@ input.service-hours-disabled {
   position: relative !important;
   z-index: 3 !important;
   display: block !important;
-  width: 92px !important;
-  height: 92px !important;
-  min-width: 92px !important;
-  min-height: 92px !important;
   transform: none !important;
-  width: clamp(58px, 7vw, 96px) !important;
-  height: clamp(58px, 7vw, 96px) !important;
-  min-width: clamp(58px, 7vw, 96px) !important;
-  min-height: clamp(58px, 7vw, 96px) !important;
-  max-width: 96px !important;
-  max-height: 96px !important;
-  margin: 2px auto 0 !important;
   border: 0 !important;
   border-radius: 20px !important;
   background-color: transparent !important;
@@ -7515,10 +7273,6 @@ input.service-hours-disabled {
 #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice
   .card-img {
-  width: clamp(44px, 5.5vw, 72px) !important;
-  height: clamp(44px, 5.5vw, 72px) !important;
-  min-width: clamp(44px, 5.5vw, 72px) !important;
-  min-height: clamp(44px, 5.5vw, 72px) !important;
   box-shadow:
     inset 0 0 0 1px rgba(212, 212, 220, 0.1),
     inset 0 1px 0 rgba(212, 212, 220, 0.045) !important;
@@ -7554,79 +7308,6 @@ input.service-hours-disabled {
 #pr-selection-cards.blueprint-selection-module .selected-card-image-multiple {
   filter: drop-shadow(0 12px 16px rgba(29, 30, 34, 0.28))
     drop-shadow(0 0 10px rgba(212, 212, 220, 0.13)) !important;
-}
-#pr-selection-cards.blueprint-selection-module .card-label {
-  margin-top: 0 !important;
-}
-@media (min-width: 701px) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    grid-template-rows: 34px minmax(96px, 1fr) minmax(34px, auto) 34px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
-    width: 96px !important;
-    height: 96px !important;
-    min-width: 96px !important;
-    min-height: 96px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card.is-missing-choice
-    .card-img {
-    width: 72px !important;
-    height: 72px !important;
-    min-width: 72px !important;
-    min-height: 72px !important;
-  }
-}
-@media (max-width: 700px) {
-  #pr-selection-cards.blueprint-selection-module .blueprint-profile-grid {
-    gap: 0 !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    min-height: 176px !important;
-    padding: 8px 6px !important;
-    row-gap: 7px !important;
-    grid-template-rows: 30px minmax(70px, 1fr) minmax(32px, auto) 32px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
-    width: 70px !important;
-    height: 70px !important;
-    min-width: 70px !important;
-    min-height: 70px !important;
-    max-width: 70px !important;
-    max-height: 70px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card.is-missing-choice
-    .card-img {
-    width: 54px !important;
-    height: 54px !important;
-    min-width: 54px !important;
-    min-height: 54px !important;
-  }
-}
-@media (max-width: 520px) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    min-height: 154px !important;
-    padding: 7px 4px !important;
-    row-gap: 6px !important;
-    grid-template-rows: 28px minmax(54px, 1fr) minmax(30px, auto) 30px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
-    width: 56px !important;
-    height: 56px !important;
-    min-width: 56px !important;
-    min-height: 56px !important;
-    max-width: 56px !important;
-    max-height: 56px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card.is-missing-choice
-    .card-img {
-    width: 44px !important;
-    height: 44px !important;
-    min-width: 44px !important;
-    min-height: 44px !important;
-  }
 }
 #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-clickable-blueprint-card,
@@ -7686,21 +7367,9 @@ input.service-hours-disabled {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
-#pr-selection-cards.blueprint-selection-module .pr-progress-card {
-  row-gap: 7px !important;
-}
 @media (max-width: 700px) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    overflow: hidden !important;
-  }
   #pr-selection-cards.blueprint-selection-module .card-back,
   #pr-selection-cards.blueprint-selection-module .card-heading {
-    justify-self: stretch !important;
-    align-self: stretch !important;
-    width: calc(100% + 12px) !important;
-    max-width: calc(100% + 12px) !important;
-    margin-left: -6px !important;
-    margin-right: -6px !important;
     border-left: 0 !important;
     border-right: 0 !important;
     border-radius: 0 !important;
@@ -7739,29 +7408,11 @@ input.service-hours-disabled {
   background: #d4d4dc !important;
   color: transparent !important;
 }
-@media (max-width: 700px) {
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    margin-top: -8px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-back {
-    margin-bottom: -8px !important;
-  }
-}
 @media (max-width: 520px) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    row-gap: 5px !important;
-  }
   #pr-selection-cards.blueprint-selection-module
     .pr-progress-card.is-missing-choice
     .card-label {
     font-size: 6px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-back,
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    width: calc(100% + 8px) !important;
-    max-width: calc(100% + 8px) !important;
-    margin-left: -4px !important;
-    margin-right: -4px !important;
   }
   #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img,
   #pr-selection-cards.blueprint-selection-module
@@ -7774,47 +7425,6 @@ input.service-hours-disabled {
     .pr-progress-card.is-missing-choice
     .card-img {
     border-radius: 0 !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    margin-top: -7px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-back {
-    margin-bottom: -7px !important;
-  }
-}
-@media (max-width: 380px) {
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card {
-    min-height: 142px !important;
-    padding: 6px 3px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .pr-progress-card .card-img {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
-    min-height: 48px !important;
-    max-width: 48px !important;
-    max-height: 48px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card.is-missing-choice
-    .card-img {
-    width: 38px !important;
-    height: 38px !important;
-    min-width: 38px !important;
-    min-height: 38px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-back,
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    width: calc(100% + 6px) !important;
-    max-width: calc(100% + 6px) !important;
-    margin-left: -3px !important;
-    margin-right: -3px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-heading {
-    margin-top: -6px !important;
-  }
-  #pr-selection-cards.blueprint-selection-module .card-back {
-    margin-bottom: -6px !important;
   }
 }
 .repair-info-actions {
@@ -10571,11 +10181,6 @@ textarea {
 }
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
-  .blueprint-profile-grid {
-  gap: 12px;
-}
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
   .pr-progress-card,
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
@@ -10586,7 +10191,6 @@ textarea {
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice {
-  overflow: hidden;
   background-color: rgba(29, 30, 34, 0.78) !important;
   background-image: linear-gradient(
     155deg,
@@ -10607,8 +10211,6 @@ textarea {
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-current-step {
   transform: translateY(-1px);
-  margin: 0 !important;
-  padding: 0 !important;
   transform: none !important;
 }
 #primitive-wizard-container
@@ -10760,11 +10362,6 @@ textarea {
   }
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
-    .blueprint-profile-grid {
-    gap: 9px !important;
-  }
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
     .pr-progress-card,
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
@@ -10784,11 +10381,6 @@ textarea {
   }
   #primitive-wizard-container #pr-selection-cards.blueprint-selection-module {
     padding: 10px;
-  }
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    .blueprint-profile-grid {
-    gap: 7px !important;
   }
 }
 .landing-hero h1,
@@ -10880,7 +10472,6 @@ h1 {
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
 #primitive-wizard-container #pr-steps-area .opt-card.selected .opt-thumb,
 #primitive-wizard-container #pr-steps-area .opt-thumb {
-  flex-basis: 154px;
   backdrop-filter: blur(16px) saturate(150%);
   -webkit-backdrop-filter: blur(16px) saturate(150%);
   box-shadow:
@@ -10974,18 +10565,6 @@ h1 {
     padding: 18px 14px;
     border-radius: 20px;
   }
-  #primitive-wizard-container #pr-steps-area .brand-card-results,
-  #primitive-wizard-container #pr-steps-area .device-card-results,
-  #primitive-wizard-container #pr-steps-area .model-card-results,
-  #primitive-wizard-container #pr-steps-area .repair-card-results,
-  #primitive-wizard-container #pr-steps-area .series-card-results {
-    gap: 10px;
-  }
-  #primitive-wizard-container #pr-steps-area .opt-card,
-  #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
-  #primitive-wizard-container #pr-steps-area .opt-card.selected {
-    min-height: 204px;
-  }
   #primitive-wizard-container #pr-steps-area .opt-thumb {
     width: calc(100% - 14px);
     height: 132px;
@@ -11000,12 +10579,6 @@ h1 {
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   .blueprint-profile-grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-  gap: 0 !important;
-  column-gap: 0 !important;
-  row-gap: 0 !important;
   box-shadow:
     0 16px 34px rgba(29, 30, 34, 0.24),
     inset 0 1px 0 rgba(220, 237, 255, 0.06);
@@ -11025,7 +10598,6 @@ h1 {
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice {
-  padding: 0 !important;
   border: 0 !important;
   border-left: 1px solid rgba(220, 237, 255, 0.16) !important;
   border-radius: 0 !important;
@@ -11049,32 +10621,12 @@ h1 {
   .pr-progress-card:first-child {
   border-left: 0 !important;
 }
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  .card-back,
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  .card-heading,
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  .card-img,
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  .card-label {
-  max-width: 100%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
 @media (max-width: 700px) {
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
     .blueprint-profile-grid {
     margin: 0 !important;
     padding: 0 !important;
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-    gap: 0 !important;
-    column-gap: 0 !important;
-    row-gap: 0 !important;
   }
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
@@ -11088,9 +10640,6 @@ h1 {
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
     .pr-progress-card.is-missing-choice {
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
     border-radius: 0 !important;
     transform: none !important;
   }
@@ -11101,9 +10650,6 @@ h1 {
     .blueprint-profile-grid {
     margin: 0 !important;
     padding: 0 !important;
-    gap: 0 !important;
-    column-gap: 0 !important;
-    row-gap: 0 !important;
   }
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
@@ -11117,8 +10663,6 @@ h1 {
   #primitive-wizard-container
     #pr-selection-cards.blueprint-selection-module
     .pr-progress-card.is-missing-choice {
-    margin: 0 !important;
-    padding: 0 !important;
     border-radius: 0 !important;
   }
 }
@@ -11147,11 +10691,6 @@ h1 {
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-current-step
   .card-back {
-  width: 100% !important;
-  min-height: 30px !important;
-  height: 30px !important;
-  margin: 0 !important;
-  padding: 0 4px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -11170,7 +10709,6 @@ h1 {
   border-radius: 20px !important;
   background: 0 0 !important;
   box-shadow: none !important;
-  overflow: hidden !important;
 }
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
@@ -11179,7 +10717,6 @@ h1 {
   #pr-selection-cards.blueprint-selection-module
   .blueprint-profile-grid::before {
   content: none !important;
-  display: none !important;
   background: 0 0 !important;
   box-shadow: none !important;
 }
@@ -11214,8 +10751,6 @@ h1 {
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice {
-  margin: 0 !important;
-  padding: 0 !important;
   border-radius: 0 !important;
   transform: none !important;
 }
@@ -11240,12 +10775,6 @@ h1 {
     #pr-selection-cards.blueprint-selection-module
     .blueprint-profile-grid {
     border-radius: 18px !important;
-  }
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    .card-back {
-    min-height: 28px !important;
-    height: 28px !important;
   }
 }
 @property --blueprint-beam-angle {
@@ -11392,7 +10921,6 @@ h1 {
   .opt-card[aria-selected="true"]
   .opt-label,
 #primitive-wizard-container #pr-steps-area .opt-label {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11519,10 +11047,7 @@ h1 {
 #primitive-wizard-container #pr-steps-area .opt-card.selected,
 #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
 #primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
-  height: 100% !important;
-  grid-template-rows: 154px minmax(38px, auto) minmax(0, auto) !important;
   align-content: start !important;
-  gap: 6px !important;
 }
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
 #primitive-wizard-container #pr-steps-area .opt-card.selected .opt-thumb,
@@ -11531,9 +11056,6 @@ h1 {
     inset 0 1px 0 rgba(220, 237, 255, 0.9),
     inset 0 -1px 0 rgba(29, 30, 34, 0.06),
     0 10px 22px rgba(29, 30, 34, 0.1) !important;
-  max-height: 154px !important;
-  flex: none !important;
-  align-self: stretch !important;
 }
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-label,
 #primitive-wizard-container #pr-steps-area .opt-card.selected .opt-label,
@@ -11546,10 +11068,6 @@ h1 {
   .opt-card[aria-selected="true"]
   .opt-label,
 #primitive-wizard-container #pr-steps-area .opt-label {
-  min-width: 0 !important;
-  min-height: 38px !important;
-  margin: 0 !important;
-  padding: 3px 4px !important;
   background: 0 0 !important;
   border: 0 !important;
   box-shadow: none !important;
@@ -11562,9 +11080,6 @@ h1 {
 #primitive-wizard-container #pr-steps-area .opt-subtext {
   color: rgba(29, 30, 34, 0.72) !important;
   text-align: center !important;
-  min-width: 0 !important;
-  margin: 0 !important;
-  padding: 0 4px 3px !important;
   background: 0 0 !important;
   border: 0 !important;
   box-shadow: none !important;
@@ -11602,12 +11117,6 @@ h1 {
 #primitive-wizard-container #pr-steps-area div.opt-label {
   position: relative !important;
   isolation: auto !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  min-height: 38px !important;
-  margin: 0 !important;
-  padding: 3px 4px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -11626,7 +11135,6 @@ h1 {
   font-weight: 800 !important;
   line-height: 1.2 !important;
   text-align: center !important;
-  overflow: visible !important;
   overflow-wrap: anywhere !important;
   word-break: normal !important;
   appearance: none !important;
@@ -11649,23 +11157,6 @@ h1 {
   filter: none !important;
 }
 @media (max-width: 700px) {
-  #primitive-wizard-container #pr-steps-area .opt-card,
-  #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
-  #primitive-wizard-container #pr-steps-area .opt-card.selected,
-  #primitive-wizard-container #pr-steps-area .opt-card[aria-pressed="true"],
-  #primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
-    min-height: 204px !important;
-    grid-template-rows: 132px minmax(36px, auto) minmax(0, auto) !important;
-    padding: 7px !important;
-    gap: 5px !important;
-  }
-  #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
-  #primitive-wizard-container #pr-steps-area .opt-card.selected .opt-thumb,
-  #primitive-wizard-container #pr-steps-area .opt-thumb {
-    height: 132px !important;
-    min-height: 132px !important;
-    max-height: 132px !important;
-  }
   #primitive-wizard-container #pr-steps-area .opt-label {
     min-height: 36px !important;
     padding-inline: 2px !important;
@@ -12068,13 +11559,6 @@ h1 {
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice
   .card-heading {
-  width: 100% !important;
-  min-width: 0 !important;
-  height: 46px !important;
-  min-height: 46px !important;
-  max-height: 46px !important;
-  margin: 0 !important;
-  padding: 0 8px !important;
   display: grid !important;
   place-items: center !important;
   align-content: center !important;
@@ -12101,11 +11585,6 @@ h1 {
   .pr-progress-card
   .card-heading
   strong {
-  width: 100% !important;
-  min-width: 0 !important;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
   display: grid !important;
   place-items: center !important;
   text-align: center !important;
@@ -12114,49 +11593,13 @@ h1 {
 }
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
-  .pr-progress-card {
-  grid-template-rows: 46px minmax(0, 1fr) 30px !important;
-  align-items: stretch !important;
-}
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
   .pr-progress-card
   .card-back {
-  height: 30px !important;
-  min-height: 30px !important;
-  max-height: 30px !important;
-  margin: 0 !important;
-  padding: 0 4px !important;
   display: grid !important;
   place-items: center !important;
   text-align: center !important;
   line-height: 1 !important;
   transform: none !important;
-}
-@media (max-width: 700px) {
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card
-    .card-heading {
-    height: 42px !important;
-    min-height: 42px !important;
-    max-height: 42px !important;
-    padding-right: 5px !important;
-    padding-left: 5px !important;
-  }
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card {
-    grid-template-rows: 42px minmax(0, 1fr) 28px !important;
-  }
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    .pr-progress-card
-    .card-back {
-    height: 28px !important;
-    min-height: 28px !important;
-    max-height: 28px !important;
-  }
 }
 .mobile-sticky-booking-secondary,
 .mobile-sticky-booking-secondary:link,
@@ -12273,14 +11716,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area .model-search-panel {
   width: 100% !important;
 }
-#primitive-wizard-container #pr-steps-area .brand-card-results,
-#primitive-wizard-container #pr-steps-area .device-card-results,
-#primitive-wizard-container #pr-steps-area .model-card-results,
-#primitive-wizard-container #pr-steps-area .repair-card-results,
-#primitive-wizard-container #pr-steps-area .series-card-results {
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)) !important;
-  gap: 18px !important;
-}
 #primitive-wizard-container #pr-steps-area .opt-card,
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
 #primitive-wizard-container #pr-steps-area .opt-card.selected,
@@ -12288,16 +11723,7 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area .opt-card[aria-selected="true"] {
   position: relative !important;
   isolation: isolate !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: none !important;
-  min-height: 226px !important;
-  margin: 0 !important;
-  padding: 0 !important;
   display: grid !important;
-  grid-template-rows: 150px minmax(76px, auto) !important;
-  align-items: stretch !important;
-  overflow: hidden !important;
   border: 1px solid rgba(220, 237, 255, 0.62) !important;
   border-radius: 24px !important;
   background-color: rgba(212, 212, 220, 0.94) !important;
@@ -12365,16 +11791,9 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area .opt-card.is-selected .opt-thumb,
 #primitive-wizard-container #pr-steps-area .opt-card.selected .opt-thumb,
 #primitive-wizard-container #pr-steps-area .opt-thumb {
-  width: 100% !important;
-  height: 150px !important;
-  min-height: 150px !important;
-  flex-basis: 150px !important;
-  margin: 0 !important;
-  padding: 20px 20px 8px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  overflow: visible !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: 0 0 !important;
@@ -12400,9 +11819,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     filter 0.35s !important;
 }
 #primitive-wizard-container #pr-steps-area .opt-card-body {
-  min-height: 76px !important;
-  margin: 0 !important;
-  padding: 10px 14px 16px !important;
   display: grid !important;
   align-content: center !important;
   justify-items: center !important;
@@ -12414,10 +11830,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 }
 #primitive-wizard-container #pr-steps-area .opt-card div.opt-label,
 #primitive-wizard-container #pr-steps-area div.opt-label {
-  width: 100% !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -12528,9 +11940,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   > .wizard-live-summary {
-  width: calc(100% - 32px) !important;
-  min-width: 0 !important;
-  max-width: calc(100% - 32px) !important;
   margin-right: auto !important;
   margin-left: auto !important;
   box-sizing: border-box !important;
@@ -12552,27 +11961,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   margin-top: 0 !important;
   margin-bottom: 16px !important;
 }
-/* PRIMITIVE REPAIRS RESPONSIVE CARD SYSTEM V50 */
-#primitive-wizard-container
-  #pr-selection-cards.blueprint-selection-module
-  > .blueprint-profile-grid {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  display: grid !important;
-  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-  grid-template-rows: auto !important;
-  grid-auto-flow: column !important;
-  grid-auto-columns: minmax(0, 1fr) !important;
-  grid-auto-rows: auto !important;
-  gap: 0 !important;
-  column-gap: 0 !important;
-  row-gap: 0 !important;
-  align-items: stretch !important;
-  align-content: start !important;
-  justify-items: stretch !important;
-  overflow: hidden !important;
-}
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card,
@@ -12588,17 +11976,7 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card.is-missing-choice {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  height: auto !important;
-  min-height: 158px !important;
-  max-height: none !important;
-  margin: 0 !important;
-  flex: none !important;
-  align-self: stretch !important;
   box-sizing: border-box !important;
-  overflow: hidden !important;
   transform: none !important;
 }
 #primitive-wizard-container
@@ -12617,9 +11995,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   #pr-selection-cards.blueprint-selection-module
   .pr-progress-card
   .card-label {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
   box-sizing: border-box !important;
 }
 @media (max-width: 760px) {
@@ -12646,8 +12021,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   #primitive-wizard-container #pr-steps-area .opt-card,
   #primitive-wizard-container #pr-steps-area .opt-card.is-selected,
   #primitive-wizard-container #pr-steps-area .opt-card.selected {
-    min-height: 198px !important;
-    grid-template-rows: 126px minmax(72px, auto) !important;
     border-radius: 20px !important;
   }
   #primitive-wizard-container #pr-steps-area .opt-card::before {
@@ -12664,31 +12037,12 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     max-width: 90px !important;
     max-height: 90px !important;
   }
-  #primitive-wizard-container #pr-steps-area .opt-card-body {
-    min-height: 72px !important;
-    padding: 9px 8px 13px !important;
-  }
   #primitive-wizard-container #pr-steps-area div.opt-label {
     font-size: 12px !important;
     line-height: 1.18 !important;
   }
   #primitive-wizard-container #pr-steps-area .opt-subtext {
     font-size: 10px !important;
-  }
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    > .blueprint-profile-grid,
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    > .pr-progress-bar-wrap,
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    > .pr-progress-row,
-  #primitive-wizard-container
-    #pr-selection-cards.blueprint-selection-module
-    > .wizard-live-summary {
-    width: calc(100% - 16px) !important;
-    max-width: calc(100% - 16px) !important;
   }
 }
 #primitive-wizard-container #pr-steps-area.animated-area {
@@ -12796,22 +12150,8 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
 #primitive-wizard-container #pr-steps-area .model-card-results,
 #primitive-wizard-container #pr-steps-area .repair-card-results,
 #primitive-wizard-container #pr-steps-area .series-card-results {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
-  display: grid !important;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 220px), 1fr)
-  ) !important;
-  grid-auto-flow: row !important;
-  grid-auto-rows: auto !important;
-  gap: 16px !important;
-  align-items: stretch !important;
-  align-content: start !important;
-  justify-items: stretch !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card,
 #primitive-wizard-container #pr-steps-area button.opt-card.is-selected,
@@ -12824,20 +12164,7 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   button.opt-card[aria-selected="true"] {
   position: relative !important;
   isolation: isolate !important;
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  height: auto !important;
-  min-height: 238px !important;
-  max-height: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
   display: grid !important;
-  grid-template-rows: 158px minmax(80px, auto) !important;
-  align-items: stretch !important;
-  align-self: stretch !important;
-  justify-self: stretch !important;
-  overflow: hidden !important;
   border: 1px solid rgba(220, 237, 255, 0.17) !important;
   border-radius: 22px !important;
   background-color: #272b34 !important;
@@ -12884,17 +12211,9 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   pointer-events: none !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card .opt-thumb {
-  width: 100% !important;
-  height: 158px !important;
-  min-height: 158px !important;
-  flex: none !important;
-  flex-basis: 158px !important;
-  margin: 0 !important;
-  padding: 22px 20px 10px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  overflow: visible !important;
   border: 0 !important;
   border-bottom: 1px solid rgba(220, 237, 255, 0.1) !important;
   border-radius: 0 !important;
@@ -12914,19 +12233,12 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   content: none !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card .opt-thumb-img {
-  width: min(116px, 76%) !important;
-  max-width: 116px !important;
-  height: 100% !important;
-  max-height: 116px !important;
   object-fit: contain !important;
   filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.3)) !important;
   scale: 1 !important;
   transition: filter 0.25s !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card .opt-card-body {
-  min-height: 80px !important;
-  margin: 0 !important;
-  padding: 13px 14px 16px !important;
   display: grid !important;
   align-content: center !important;
   justify-items: center !important;
@@ -12937,10 +12249,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   box-shadow: none !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card .opt-label {
-  width: 100% !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -12962,9 +12270,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   content: none !important;
 }
 #primitive-wizard-container #pr-steps-area button.opt-card .opt-subtext {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
   color: rgba(220, 237, 255, 0.6) !important;
   font-size: 11px !important;
   font-weight: 500 !important;
@@ -13059,40 +12364,10 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   #primitive-wizard-container #pr-steps-area .option-section-header > p {
     font-size: 14px !important;
   }
-  #primitive-wizard-container #pr-steps-area .brand-card-results,
-#primitive-wizard-container #pr-steps-area .device-card-results,
-#primitive-wizard-container #pr-steps-area .model-card-results,
-#primitive-wizard-container #pr-steps-area .repair-card-results,
-#primitive-wizard-container #pr-steps-area .series-card-results {
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(min(100%, 220px), 1fr)
-  ) !important;
-  grid-auto-flow: row !important;
-  grid-auto-rows: auto !important;
-  gap: 12px !important;
-}
   #primitive-wizard-container #pr-steps-area button.opt-card,
   #primitive-wizard-container #pr-steps-area button.opt-card.is-selected,
   #primitive-wizard-container #pr-steps-area button.opt-card.selected {
-    min-height: 204px !important;
-    grid-template-rows: 130px minmax(74px, auto) !important;
     border-radius: 18px !important;
-  }
-  #primitive-wizard-container #pr-steps-area button.opt-card .opt-thumb {
-    height: 130px !important;
-    min-height: 130px !important;
-    flex-basis: 130px !important;
-    padding: 17px 10px 7px !important;
-  }
-  #primitive-wizard-container #pr-steps-area button.opt-card .opt-thumb-img {
-    width: min(92px, 78%) !important;
-    max-width: 92px !important;
-    max-height: 92px !important;
-  }
-  #primitive-wizard-container #pr-steps-area button.opt-card .opt-card-body {
-    min-height: 74px !important;
-    padding: 10px 8px 13px !important;
   }
   #primitive-wizard-container #pr-steps-area button.opt-card .opt-label {
     font-size: 12px !important;
@@ -13529,18 +12804,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     .series-card-results,
     .model-card-results,
     .repair-card-results
-  ) {
-  grid-auto-rows: auto !important;
-  align-items: start !important;
-}
-#primitive-wizard-container
-  #pr-steps-area.animated-area
-  :is(
-    .device-card-results,
-    .brand-card-results,
-    .series-card-results,
-    .model-card-results,
-    .repair-card-results
   )
   > button.opt-card,
 #primitive-wizard-container
@@ -13584,11 +12847,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
   )
   > button.opt-card:focus {
   box-sizing: border-box !important;
-  width: 100% !important;
-  height: 238px !important;
-  min-height: 238px !important;
-  max-height: 238px !important;
-  align-self: start !important;
   border: 2px solid rgba(220, 237, 255, 0.18) !important;
   background: #393f4d !important;
   box-shadow:
@@ -13720,24 +12978,9 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
       .repair-card-results
     )
     > button.opt-card {
-    height: 204px !important;
-    min-height: 204px !important;
-    max-height: 204px !important;
     transform: none !important;
     scale: 1 !important;
     border-color: rgba(220, 237, 255, 0.18) !important;
-  }
-  #primitive-wizard-container
-    #pr-steps-area.animated-area
-    :is(
-      .device-card-results,
-      .brand-card-results,
-      .series-card-results,
-      .model-card-results,
-      .repair-card-results
-    ) {
-    grid-auto-rows: 204px !important;
-    align-items: start !important;
   }
   #primitive-wizard-container
     #pr-steps-area.animated-area
@@ -13810,17 +13053,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     )
     > button.opt-card[aria-selected="true"] {
     box-sizing: border-box !important;
-    width: 100% !important;
-    height: 204px !important;
-    min-height: 204px !important;
-    max-height: 204px !important;
-    flex: 0 0 204px !important;
-    flex-grow: 0 !important;
-    flex-shrink: 0 !important;
-    align-self: start !important;
-    grid-template-rows: 130px 74px !important;
-    margin: 0 !important;
-    padding: 0 !important;
     border-width: 2px !important;
     border-style: solid !important;
     background: #393f4d !important;
@@ -13902,10 +13134,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     > button.opt-card
     .opt-thumb {
     box-sizing: border-box !important;
-    height: 130px !important;
-    min-height: 130px !important;
-    max-height: 130px !important;
-    flex: 0 0 130px !important;
     transform: none !important;
     scale: 1 !important;
   }
@@ -13921,10 +13149,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     > button.opt-card
     .opt-card-body {
     box-sizing: border-box !important;
-    height: 74px !important;
-    min-height: 74px !important;
-    max-height: 74px !important;
-    overflow: hidden !important;
     transform: none !important;
     scale: 1 !important;
   }
@@ -14024,22 +13248,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     body
     #primitive-wizard-container
     #pr-steps-area.animated-area
-    :is(
-      .device-card-results,
-      .brand-card-results,
-      .series-card-results,
-      .model-card-results,
-      .repair-card-results,
-      .repair-type-card-results
-    ) {
-    grid-auto-rows: 204px !important;
-    align-items: start !important;
-    align-content: start !important;
-  }
-  html
-    body
-    #primitive-wizard-container
-    #pr-steps-area.animated-area
     button.opt-card,
   html
     body
@@ -14079,19 +13287,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     -webkit-appearance: none !important;
     appearance: none !important;
     box-sizing: border-box !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    height: 204px !important;
-    min-height: 204px !important;
-    max-height: 204px !important;
-    flex: 0 0 204px !important;
-    flex-grow: 0 !important;
-    flex-shrink: 0 !important;
-    align-self: start !important;
-    grid-template-rows: 130px 74px !important;
-    margin: 0 !important;
-    padding: 0 !important;
     border: 2px solid rgba(220, 237, 255, 0.18) !important;
     border-radius: 18px !important;
     outline: 0 !important;
@@ -14289,12 +13484,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     button.opt-card
     .opt-thumb {
     box-sizing: border-box !important;
-    width: 100% !important;
-    height: 130px !important;
-    min-height: 130px !important;
-    max-height: 130px !important;
-    flex: 0 0 130px !important;
-    margin: 0 !important;
     transform: none !important;
     scale: 1 !important;
   }
@@ -14305,12 +13494,6 @@ a.mobile-sticky-booking-secondary[href^="sms:"] svg {
     button.opt-card
     .opt-card-body {
     box-sizing: border-box !important;
-    width: 100% !important;
-    height: 74px !important;
-    min-height: 74px !important;
-    max-height: 74px !important;
-    margin: 0 !important;
-    overflow: hidden !important;
     transform: none !important;
     scale: 1 !important;
   }
@@ -14366,7 +13549,6 @@ html
   #pr-steps-area
   button.opt-card[aria-selected="true"] {
   box-sizing: border-box !important;
-  margin: 0 !important;
   border: 2px solid rgba(220, 237, 255, 0.18) !important;
   outline: 0 !important;
   outline-offset: 0 !important;
@@ -14695,7 +13877,6 @@ html body .email-offer-eyebrow::before,
   content: none;
   display: none;
 }
-/* PRIMITIVE REPAIRS OPTION CARD CONTENT CONTAINMENT V50 */
 #primitive-wizard-container
   #pr-steps-area
   :is(
@@ -14717,8 +13898,6 @@ html body .email-offer-eyebrow::before,
   )
   > button.opt-card
   > * {
-  min-width: 0 !important;
-  max-width: 100% !important;
   box-sizing: border-box !important;
 }
 
@@ -14735,4 +13914,448 @@ html body .email-offer-eyebrow::before,
   :is(.opt-label, .opt-subtext) {
   overflow-wrap: anywhere !important;
   word-break: normal !important;
+}
+
+/* PRIMITIVE REPAIRS VERIFIED RESPONSIVE CARD SYSTEM V51 */
+
+/* BLUEPRINT: ALWAYS ONE FIVE-CARD HORIZONTAL ROW */
+
+html
+  body
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(0, 1fr) !important;
+  grid-auto-rows: minmax(0, 1fr) !important;
+  gap: 0 !important;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+  align-items: stretch !important;
+  align-content: stretch !important;
+  justify-items: stretch !important;
+  justify-content: stretch !important;
+  overflow: hidden !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid
+  > .pr-progress-card {
+  box-sizing: border-box !important;
+  grid-column: auto !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: clamp(124px, 16vw, 198px) !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows:
+    clamp(24px, 3.4vw, 42px)
+    minmax(42px, 1fr)
+    minmax(28px, auto)
+    clamp(24px, 3vw, 30px) !important;
+  grid-auto-flow: row !important;
+  gap: 0 !important;
+  row-gap: 0 !important;
+  align-items: stretch !important;
+  align-self: stretch !important;
+  justify-items: stretch !important;
+  justify-self: stretch !important;
+  overflow: hidden !important;
+  flex: none !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid
+  > .pr-progress-card
+  > .card-heading,
+html
+  body
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid
+  > .pr-progress-card
+  > .card-back {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 2px !important;
+  display: grid !important;
+  place-items: center !important;
+  align-self: stretch !important;
+  justify-self: stretch !important;
+  overflow: hidden !important;
+  font-size: clamp(5.5px, 0.72vw, 9px) !important;
+  letter-spacing: clamp(0.01em, 0.08vw, 0.08em) !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid
+  > .pr-progress-card
+  > .card-img {
+  box-sizing: border-box !important;
+  grid-row: 2 !important;
+  align-self: center !important;
+  justify-self: center !important;
+  width: min(58%, 88px) !important;
+  min-width: 0 !important;
+  max-width: 88px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 1 / 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 0 !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid
+  > .pr-progress-card
+  > .card-label {
+  box-sizing: border-box !important;
+  grid-row: 3 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 3px 3px !important;
+  display: -webkit-box !important;
+  align-self: center !important;
+  justify-self: stretch !important;
+  overflow: hidden !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  color: inherit;
+  font-size: clamp(5.5px, 0.74vw, 9.5px) !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1.08 !important;
+  text-align: center !important;
+  white-space: normal !important;
+  transform: none !important;
+}
+
+/* OPTION GRIDS: WRAP BEFORE TRACKS CAN COLLIDE */
+
+html
+  body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  ) {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 220px), 1fr)
+  ) !important;
+  grid-template-rows: none !important;
+  grid-auto-flow: row !important;
+  grid-auto-columns: auto !important;
+  grid-auto-rows: auto !important;
+  gap: 16px !important;
+  column-gap: 16px !important;
+  row-gap: 16px !important;
+  align-items: stretch !important;
+  align-content: start !important;
+  justify-items: stretch !important;
+  justify-content: stretch !important;
+  overflow: visible !important;
+  flex: none !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card {
+  box-sizing: border-box !important;
+  grid-column: auto !important;
+  grid-row: auto !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 220px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: minmax(130px, 150px) minmax(74px, auto) !important;
+  grid-auto-flow: row !important;
+  gap: 0 !important;
+  align-items: stretch !important;
+  align-self: stretch !important;
+  justify-items: stretch !important;
+  justify-self: stretch !important;
+  overflow: hidden !important;
+  flex: none !important;
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: 1 !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card
+  > .opt-thumb {
+  box-sizing: border-box !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 130px !important;
+  max-height: 150px !important;
+  margin: 0 !important;
+  padding: 14px 12px 8px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  justify-self: stretch !important;
+  overflow: hidden !important;
+  flex: none !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card
+  > .opt-thumb
+  > .opt-thumb-img {
+  box-sizing: border-box !important;
+  width: min(76%, 112px) !important;
+  min-width: 0 !important;
+  max-width: 112px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: 112px !important;
+  aspect-ratio: 1 / 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  align-self: center !important;
+  justify-self: center !important;
+  overflow: hidden !important;
+  flex: none !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card
+  > .opt-card-body {
+  box-sizing: border-box !important;
+  grid-row: 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 74px !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 10px 10px 14px !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-auto-rows: auto !important;
+  align-content: center !important;
+  justify-items: center !important;
+  align-self: stretch !important;
+  justify-self: stretch !important;
+  gap: 5px !important;
+  overflow: hidden !important;
+  flex: none !important;
+  transform: none !important;
+}
+
+html
+  body
+  #primitive-wizard-container
+  #pr-steps-area.animated-area
+  :is(
+    .brand-card-results,
+    .device-card-results,
+    .model-card-results,
+    .repair-card-results,
+    .series-card-results
+  )
+  > button.opt-card
+  :is(.opt-badge, .opt-label, .opt-subtext) {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  white-space: normal !important;
+  text-align: center !important;
+  transform: none !important;
+}
+
+@media (max-width: 520px) {
+  html
+    body
+    #primitive-wizard-container
+    #pr-steps-area.animated-area
+    :is(
+      .brand-card-results,
+      .device-card-results,
+      .model-card-results,
+      .repair-card-results,
+      .series-card-results
+    ) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+    column-gap: 12px !important;
+    row-gap: 12px !important;
+  }
+
+  html
+    body
+    #primitive-wizard-container
+    #pr-steps-area.animated-area
+    :is(
+      .brand-card-results,
+      .device-card-results,
+      .model-card-results,
+      .repair-card-results,
+      .series-card-results
+    )
+    > button.opt-card {
+    min-height: 204px !important;
+    grid-template-rows: 126px minmax(72px, auto) !important;
+  }
+
+  html
+    body
+    #primitive-wizard-container
+    #pr-steps-area.animated-area
+    :is(
+      .brand-card-results,
+      .device-card-results,
+      .model-card-results,
+      .repair-card-results,
+      .series-card-results
+    )
+    > button.opt-card
+    > .opt-thumb {
+    min-height: 126px !important;
+    max-height: 126px !important;
+  }
+
+  html
+    body
+    #primitive-wizard-container
+    #pr-steps-area.animated-area
+    :is(
+      .brand-card-results,
+      .device-card-results,
+      .model-card-results,
+      .repair-card-results,
+      .series-card-results
+    )
+    > button.opt-card
+    > .opt-thumb
+    > .opt-thumb-img {
+    width: min(70%, 88px) !important;
+    max-width: 88px !important;
+    max-height: 88px !important;
+  }
 }
