@@ -14359,3 +14359,9 @@ html
     max-height: 88px !important;
   }
 }
+/* PRIMITIVE REPAIRS TRANSPARENT WIZARD MAIN V53 */
+html body #primitive-wizard-container > #pr-main {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
