@@ -14365,3 +14365,10 @@ html body #primitive-wizard-container > #pr-main {
   background-color: transparent !important;
   background-image: none !important;
 }
+
+/* MOBILE START REPAIR BUTTON */
+.mobile-sticky-booking-primary {
+  background: #66fcf1 !important;
+  background-color: #66fcf1 !important;
+  background-image: none !important;
+}
