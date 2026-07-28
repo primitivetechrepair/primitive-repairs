@@ -15175,7 +15175,7 @@ body.nintendo-switch-page
   }
 }
 
-/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V04 */
+/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V05 */
 
 body.homepage-premium-page {
   --homepage-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -16847,5 +16847,515 @@ body > main:not(#pr-main) .supported-device-tags span {
     > #how-it-works
     .process-card {
     transition: none;
+  }
+}
+
+/* PRIMITIVE REPAIRS HOMEPAGE REPAIR ENTRY AND BLUEPRINT V05 */
+
+/*
+  Visual-only homepage treatment.
+  The wizard grid, DOM order, dynamic areas, forms, and flow logic
+  remain controlled by the existing HTML and JavaScript.
+*/
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header {
+  margin: 0 !important;
+  padding: clamp(38px, 5vw, 72px) !important;
+  border: 1px solid rgba(212, 212, 220, 0.16) !important;
+  border-radius: 32px !important;
+  background-color: rgba(57, 63, 77, 0.72) !important;
+  background-image:
+    radial-gradient(
+      circle at 10% 0,
+      rgba(102, 252, 241, 0.08),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 94% 12%,
+      rgba(212, 212, 220, 0.055),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(57, 63, 77, 0.78),
+      rgba(57, 63, 77, 0.58)
+    ) !important;
+  color: #d4d4dc !important;
+  font-family: "Manrope", sans-serif !important;
+  text-align: center !important;
+  backdrop-filter: blur(26px) saturate(135%) !important;
+  -webkit-backdrop-filter: blur(26px) saturate(135%) !important;
+  box-shadow:
+    0 30px 72px rgba(29, 30, 34, 0.3),
+    inset 0 1px 0 rgba(212, 212, 220, 0.16),
+    inset 0 -1px 0 rgba(29, 30, 34, 0.18) !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header::before {
+  border: 0 !important;
+  background:
+    linear-gradient(
+      118deg,
+      rgba(212, 212, 220, 0.055),
+      transparent 30%,
+      transparent 72%,
+      rgba(102, 252, 241, 0.035)
+    ) !important;
+  box-shadow: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header
+  > h2 {
+  max-width: 920px !important;
+  margin: 0 auto !important;
+  color: #d4d4dc !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: clamp(2.35rem, 5vw, 4.35rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.05em !important;
+  line-height: 0.98 !important;
+  text-align: center !important;
+  text-shadow: none !important;
+  text-transform: uppercase !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header
+  > .pr-header-subtitle {
+  max-width: 760px !important;
+  margin: 20px auto 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #d4d4dc !important;
+  font-family: "Manrope", sans-serif !important;
+  font-size: 0.98rem !important;
+  font-weight: 300 !important;
+  line-height: 1.7 !important;
+  text-align: center !important;
+  box-shadow: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header
+  > .pr-progress-bar-wrap {
+  margin-top: 28px !important;
+  border: 1px solid rgba(212, 212, 220, 0.16) !important;
+  border-radius: 4px !important;
+  background: #1d1e22 !important;
+  box-shadow:
+    inset 0 2px 5px rgba(29, 30, 34, 0.38),
+    inset 0 1px 0 rgba(212, 212, 220, 0.04) !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header
+  > .pr-progress-bar-wrap
+  > #pr-progress-bar {
+  border-radius: 2px !important;
+  background-color: #66fcf1 !important;
+  background-image: none !important;
+  box-shadow: 0 0 12px rgba(102, 252, 241, 0.3) !important;
+}
+
+/* Repair Blueprint major inner section. */
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module {
+  margin-top: 32px !important;
+  padding: 24px !important;
+  border: 1px solid rgba(212, 212, 220, 0.14) !important;
+  border-radius: 24px !important;
+  background-color: #1d1e22 !important;
+  background-image:
+    linear-gradient(
+      rgba(212, 212, 220, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(212, 212, 220, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      145deg,
+      #1d1e22,
+      #27273d
+    ) !important;
+  background-size:
+    28px 28px,
+    28px 28px,
+    auto !important;
+  color: #d4d4dc !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow:
+    0 22px 52px rgba(29, 30, 34, 0.28),
+    inset 0 1px 0 rgba(212, 212, 220, 0.08) !important;
+}
+
+/*
+  Blueprint introduction uses plain typography.
+  No pill, capsule, framed label, or nested glass panel.
+*/
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .blueprint-profile-header {
+  margin: 0 0 22px !important;
+  padding: 0 0 20px !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(212, 212, 220, 0.12) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #d4d4dc !important;
+  text-align: left !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .blueprint-profile-kicker {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #66fcf1 !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  line-height: 1.4 !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .blueprint-profile-header
+  strong {
+  margin-top: 8px !important;
+  color: #d4d4dc !important;
+  font-family: "Manrope", sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 300 !important;
+  line-height: 1.6 !important;
+}
+
+/*
+  Preserve the existing blueprint grid and card dimensions.
+  These rules alter only visual surfaces and states.
+*/
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.filled,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-clickable-blueprint-card,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-current-step,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-missing-choice {
+  border-color: rgba(212, 212, 220, 0.14) !important;
+  border-radius: 20px !important;
+  background-color: #393f4d !important;
+  background-image: none !important;
+  color: #d4d4dc !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow:
+    0 16px 32px rgba(29, 30, 34, 0.24),
+    inset 0 1px 0 rgba(212, 212, 220, 0.06) !important;
+  transform: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.filled,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-clickable-blueprint-card {
+  border-color: rgba(102, 252, 241, 0.3) !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-current-step {
+  border-color: rgba(102, 252, 241, 0.72) !important;
+  box-shadow:
+    0 0 0 2px rgba(102, 252, 241, 0.1),
+    0 18px 36px rgba(29, 30, 34, 0.28),
+    inset 0 1px 0 rgba(212, 212, 220, 0.08) !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card:hover,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.filled:hover,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-current-step:hover {
+  transform: none !important;
+}
+
+/* Card headings remain centered plain typography. */
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .card-heading {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #d4d4dc !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.13em !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+}
+
+/* Selected values and waiting text are never pills. */
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .card-label,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.filled
+  .card-label,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-current-step
+  .card-label,
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-missing-choice
+  .card-label {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: #d4d4dc !important;
+  font-family: "Manrope", sans-serif !important;
+  font-size: 0.7rem !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  text-align: center !important;
+  box-shadow: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .pr-progress-card.is-missing-choice
+  .card-label {
+  color: rgba(212, 212, 220, 0.58) !important;
+}
+
+/* Enabled blueprint edit controls remain solid rectangular buttons. */
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .card-back:not(:disabled) {
+  border-top: 1px solid rgba(212, 212, 220, 0.12) !important;
+  border-radius: 0 !important;
+  background: #27273d !important;
+  color: #dcedff !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 700 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .card-back:disabled {
+  border-top-color: rgba(212, 212, 220, 0.06) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  .card-back:focus-visible {
+  outline: 2px solid #66fcf1 !important;
+  outline-offset: -3px !important;
+}
+
+/*
+  Mobile rules adjust spacing and typography only.
+  The established responsive blueprint grid is not changed.
+*/
+@media (max-width: 700px) {
+  body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header {
+    padding: 28px 16px !important;
+    border-radius: 22px !important;
+    backdrop-filter: blur(20px) saturate(128%) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(128%) !important;
+    box-shadow:
+      0 22px 48px rgba(29, 30, 34, 0.28),
+      inset 0 1px 0 rgba(212, 212, 220, 0.12) !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header
+    > h2 {
+    font-size: clamp(1.95rem, 10vw, 2.8rem) !important;
+    line-height: 1 !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header
+    > .pr-header-subtitle {
+    margin-top: 16px !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header
+    > .pr-progress-bar-wrap {
+    margin-top: 22px !important;
+    border-radius: 3px !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header
+    > .pr-progress-bar-wrap
+    > #pr-progress-bar {
+    border-radius: 1px !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module {
+    margin-top: 24px !important;
+    padding: 12px !important;
+    border-radius: 20px !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .blueprint-profile-header {
+    margin-bottom: 16px !important;
+    padding: 0 0 16px !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .blueprint-profile-kicker {
+    font-size: 0.66rem !important;
+    letter-spacing: 0.13em !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .blueprint-profile-header
+    strong {
+    font-size: 0.84rem !important;
+    line-height: 1.55 !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .pr-progress-card,
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .pr-progress-card.filled,
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .pr-progress-card.is-clickable-blueprint-card,
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .pr-progress-card.is-current-step,
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .pr-progress-card.is-missing-choice {
+    border-radius: 18px !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .card-heading {
+    font-size: 0.62rem !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    .card-label {
+    font-size: 0.66rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header {
+    padding: 24px 12px !important;
+  }
+
+  body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module {
+    padding: 10px !important;
   }
 }
