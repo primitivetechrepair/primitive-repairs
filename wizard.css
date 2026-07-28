@@ -15175,7 +15175,7 @@ body.nintendo-switch-page
   }
 }
 
-/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V01 */
+/* PRIMITIVE REPAIRS HOMEPAGE PREMIUM STRUCTURE V02 */
 
 body.homepage-premium-page {
   --homepage-h1-size: clamp(3.4rem, 7vw, 6.75rem);
@@ -15818,16 +15818,17 @@ body.homepage-premium-page
   width: fit-content;
   min-height: 0;
   margin: 0 0 18px;
-  padding: 7px 10px;
-  border: 1px solid rgba(102, 252, 241, 0.32);
-  border-radius: 999px;
-  background: #393f4d;
+  padding: 0 0 0 11px;
+  border: 0;
+  border-left: 2px solid #66fcf1;
+  border-radius: 0;
+  background: transparent;
   color: #66fcf1;
   font-family: "Space Grotesk", sans-serif;
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.075em;
-  line-height: 1;
+  line-height: 1.35;
   text-transform: uppercase;
   box-shadow: none;
 }
@@ -15901,8 +15902,10 @@ body.homepage-premium-page
   > #miami-mobile-repair
   .supported-device-tags {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 7px;
+  gap: 7px 0;
 }
 
 body.homepage-premium-page
@@ -15917,17 +15920,34 @@ body.homepage-premium-page
   > #miami-mobile-repair
   .supported-device-tags
   span {
-  padding: 7px 10px;
-  border: 1px solid rgba(212, 212, 220, 0.12);
-  border-radius: 999px;
-  background: #393f4d;
-  color: #d4d4dc;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(212, 212, 220, 0.72);
   font-family: "Space Grotesk", sans-serif;
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.055em;
-  line-height: 1;
+  line-height: 1.4;
   text-transform: uppercase;
+}
+
+body.homepage-premium-page
+  > #repair-services
+  .supported-device-tags
+  span:not(:last-child)::after,
+body.homepage-premium-page
+  > #popular-repair-services
+  .supported-device-tags
+  span:not(:last-child)::after,
+body.homepage-premium-page
+  > #miami-mobile-repair
+  .supported-device-tags
+  span:not(:last-child)::after {
+  content: "/";
+  margin: 0 9px;
+  color: rgba(102, 252, 241, 0.58);
 }
 
 body.homepage-premium-page
