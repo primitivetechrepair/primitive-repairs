@@ -134,6 +134,12 @@
   </noscript>
 
   <link
+    rel="preload"
+    as="image"
+    href="/images/service-backgrounds/nintendo-switch-repair.webp"
+    type="image/webp"
+  >
+  <link
     rel="icon"
     href="images/logo.svg"
     type="image/svg+xml"
@@ -141,30 +147,27 @@
 
   <link
     rel="stylesheet"
-    href="wizard.css?v=20260727-nintendo65"
+    href="wizard.css?v=20260729-services02"
   >
 </head>
 
-<body class="nintendo-switch-page">
+<body class="service-detail-page nintendo-switch-page">
   <div id="site-header-root"></div>
 
   <main>
-    <section class="landing-hero nintendo-switch-services-bg">
+    <section class="landing-hero warranty-hero service-visual-hero">
       <div class="landing-hero-inner">
         <div class="hero-glass-panel">
-          <p class="page-kicker">Nintendo Switch Repair Miami</p>
+          <div class="hero-status-pill">Nintendo Switch Repair Miami</div>
 
           <h1>Nintendo Switch Repair in Miami</h1>
 
           <p>
-            Professional repair for Nintendo Switch, Switch OLED, and
-            Switch Lite systems with damaged USB-C charging ports,
-            cracked or black screens, touch problems, dock and TV-output
-            faults, Joy-Con drift or rail issues, game-card and microSD
-            reader failures, weak batteries, overheating, liquid damage,
-            and no-power symptoms. Submit the exact model and symptoms so
-            we can review the appropriate repair and Miami service
-            options.
+            Nintendo Switch repair in Miami for USB-C charging faults,
+            damaged screens, dock-output problems, Joy-Con issues,
+            reader failures, overheating, liquid exposure, and no-power
+            symptoms. Your exact model and condition are reviewed before
+            repair options, pricing, and service details are confirmed.
           </p>
 
           <div class="landing-actions">
@@ -183,19 +186,34 @@
             </a>
           </div>
 
-          <ul class="hero-proof-list">
-<li>&#11088; 4.8 Google Rating</li>
-            <li>&#128737;&#65039; 1-Year Warranty</li>
-            <li>&#127918; Console Diagnostics</li>
-            <li>&#128203; Repair Review First</li>
-          </ul>
+          <div class="landing-trust-row">
+            <span>&#11088; 4.8 Google Rating</span>
+            <span>&#128737;&#65039; 1-Year Warranty</span>
+            <span>&#127918; Console Diagnostics</span>
+            <span>&#128203; Repair Review First</span>
+          </div>
         </div>
+
+        <figure class="service-hero-media" data-service-parallax>
+          <img
+            src="/images/service-backgrounds/nintendo-switch-repair.webp"
+            alt="Nintendo Switch repair workstation with console, Joy-Con controllers, and precision tools"
+            width="1640"
+            height="924"
+            decoding="async"
+            fetchpriority="high"
+          >
+
+          <figcaption class="service-hero-caption">
+            Model-specific Nintendo Switch diagnostics with clear approval before paid repair work begins.
+          </figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="landing-section service-bg-section nintendo-switch-services-bg">
+    <section class="landing-section">
       <div class="landing-section-header">
-        <p class="section-kicker">Nintendo Switch Repair Services</p>
+        <div class="landing-eyebrow">Nintendo Switch Repair Services</div>
 
         <h2>Common Nintendo Switch hardware problems and repairs.</h2>
 
@@ -345,7 +363,7 @@
       class="landing-section"
     >
       <div class="landing-section-header">
-        <p class="section-kicker">Supported Nintendo Switch Models</p>
+        <div class="landing-eyebrow">Supported Nintendo Switch Models</div>
 
         <h2>Repair options for Switch, Switch OLED, and Switch Lite.</h2>
 
@@ -428,7 +446,7 @@
 
     <section class="landing-section">
       <div class="landing-section-header">
-        <p class="section-kicker">Charging and Dock Diagnosis</p>
+        <div class="landing-eyebrow">Charging and Dock Diagnosis</div>
 
         <h2>Separating USB-C, battery, dock, and video-output faults.</h2>
 
@@ -562,7 +580,7 @@
 
     <section class="landing-section">
       <div class="landing-section-header">
-        <p class="section-kicker">Displays, Controllers and Readers</p>
+        <div class="landing-eyebrow">Displays, Controllers and Readers</div>
 
         <h2>Screen, touch, Joy-Con, game-card, and microSD problems.</h2>
 
@@ -663,7 +681,7 @@
 
     <section class="landing-section">
       <div class="landing-section-header">
-        <p class="section-kicker">Power, Cooling and Liquid Damage</p>
+        <div class="landing-eyebrow">Power, Cooling and Liquid Damage</div>
 
         <h2>Battery, fan, overheating, liquid, and startup problems.</h2>
 
@@ -771,7 +789,7 @@
 
     <section class="landing-section">
       <div class="landing-section-header">
-        <p class="section-kicker">Board-Level Repair</p>
+        <div class="landing-eyebrow">Board-Level Repair</div>
 
         <h2>When Nintendo Switch repair requires microsoldering.</h2>
 
@@ -873,7 +891,7 @@
 
     <section class="landing-section">
       <div class="landing-section-header">
-        <p class="section-kicker">Repair Process</p>
+        <div class="landing-eyebrow">Repair Process</div>
 
         <h2>How the Nintendo Switch repair request works.</h2>
 
@@ -945,7 +963,7 @@
 
     <section class="landing-section faq-section">
       <div class="landing-section-header faq-list-header">
-        <p class="section-kicker">Nintendo Switch Repair FAQs</p>
+        <div class="landing-eyebrow">Nintendo Switch Repair FAQs</div>
 
         <h2>Common questions about Nintendo Switch repair in Miami.</h2>
       </div>
@@ -1091,6 +1109,11 @@
 
   <script
     src="/assets/js/serviceHours.js?v=20260719-1"
+    defer
+  ></script>
+
+  <script
+    src="/assets/js/servicePage.js?v=20260729-2"
     defer
   ></script>
 
