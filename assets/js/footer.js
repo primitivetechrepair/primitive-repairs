@@ -189,11 +189,12 @@
 
 
   const repairDetails = footerRoot.querySelector(".site-footer-repair-details");
+  const repairLayoutQuery = window.matchMedia("(min-width: 761px)");
 
   function syncRepairDropdownMode() {
     if (!repairDetails) return;
 
-    if (window.matchMedia("(min-width: 761px)").matches) {
+    if (repairLayoutQuery.matches) {
       repairDetails.setAttribute("open", "");
     } else {
       repairDetails.removeAttribute("open");
@@ -201,5 +202,10 @@
   }
 
   syncRepairDropdownMode();
-  window.addEventListener("resize", syncRepairDropdownMode);
+
+  if (typeof repairLayoutQuery.addEventListener === "function") {
+    repairLayoutQuery.addEventListener("change", syncRepairDropdownMode);
+  } else {
+    repairLayoutQuery.addListener(syncRepairDropdownMode);
+  }
 })();
