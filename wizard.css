@@ -19750,6 +19750,7 @@ html body #site-footer-root .site-footer-brand-copy h3 {
   font-weight: 780;
   letter-spacing: -0.035em;
   line-height: 1.08;
+  text-transform: uppercase;
 }
 
 html body #site-footer-root .site-footer-brand-copy p {
