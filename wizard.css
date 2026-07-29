@@ -19024,3 +19024,94 @@ html body.homepage-premium-page
     animation: none !important;
   }
 }
+
+/* =========================================================
+   FINAL ROUNDED WIZARD + COUPON SURFACES
+========================================================= */
+html body.homepage-premium-page #primitive-wizard-container {
+  overflow: hidden !important;
+  border: 1px solid rgba(220, 237, 255, 0.14) !important;
+  border-radius: 28px !important;
+  background-clip: padding-box !important;
+  box-shadow:
+    0 34px 90px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(220, 237, 255, 0.05) !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header {
+  border-radius: 27px 27px 0 0 !important;
+}
+
+html body .email-offer-dialog {
+  overflow: hidden !important;
+  border-radius: 24px !important;
+}
+
+html body .email-offer-dialog::before {
+  border-radius: 24px 0 0 24px !important;
+}
+
+html body .email-offer-topbar {
+  border-radius: 23px 23px 0 0 !important;
+}
+
+html body .email-offer-close,
+html body .email-offer-close:hover,
+html body .email-offer-close:focus-visible {
+  border-radius: 0 23px 0 14px !important;
+}
+
+html body .email-offer-value-card {
+  border-radius: 16px !important;
+}
+
+html body .email-offer-field input {
+  border-radius: 12px !important;
+}
+
+html body .email-offer-consent input {
+  border-radius: 4px !important;
+}
+
+html body .email-offer-submit,
+html body .email-offer-success-close {
+  border-radius: 12px !important;
+}
+
+@media (max-width: 700px) {
+  html body.homepage-premium-page #primitive-wizard-container {
+    border-radius: 20px !important;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    > .pr-header {
+    border-radius: 19px 19px 0 0 !important;
+  }
+}
+
+@media (max-width: 620px) {
+  html body .email-offer-dialog {
+    border-radius: 20px !important;
+  }
+
+  html body .email-offer-dialog::before {
+    border-radius: 20px 0 0 20px !important;
+  }
+
+  html body .email-offer-topbar {
+    border-radius: 19px 19px 0 0 !important;
+  }
+
+  html body .email-offer-close,
+  html body .email-offer-close:hover,
+  html body .email-offer-close:focus-visible {
+    border-radius: 0 19px 0 12px !important;
+  }
+
+  html body .email-offer-value-card {
+    border-radius: 14px !important;
+  }
+}
