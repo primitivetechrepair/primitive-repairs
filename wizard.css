@@ -20362,3 +20362,972 @@ html body.homepage-premium-page #primitive-wizard-container {
     padding-left: 17px !important;
   }
 }
+
+/* =========================================================
+   PREMIUM HOMEPAGE CONTENT SYSTEM
+   Distinct layouts for process, devices, services, Miami
+   service options, and customer reviews.
+========================================================= */
+
+html body.homepage-premium-page
+  :is(
+    #how-it-works,
+    #repair-services,
+    #popular-repair-services,
+    #miami-mobile-repair,
+    #customer-reviews
+  ) {
+  padding: clamp(42px, 5vw, 76px) !important;
+}
+
+html body.homepage-premium-page .homepage-editorial-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
+  align-items: end;
+  gap: 28px clamp(42px, 6vw, 84px);
+  margin: 0 0 clamp(34px, 4vw, 52px);
+  padding: 0 0 clamp(28px, 3.2vw, 40px);
+  border-bottom: 1px solid rgba(220, 237, 255, 0.13);
+}
+
+html body.homepage-premium-page .homepage-editorial-header > div {
+  min-width: 0;
+}
+
+html body.homepage-premium-page .homepage-editorial-header .landing-eyebrow,
+html body.homepage-premium-page .premium-reviews-intro .landing-eyebrow,
+html body.homepage-premium-page .mobile-service-intro .landing-eyebrow {
+  margin: 0 0 18px;
+  padding: 0 0 0 14px;
+  border-left: 2px solid #66fcf1;
+}
+
+html body.homepage-premium-page .homepage-editorial-header h2,
+html body.homepage-premium-page .premium-reviews-intro h2,
+html body.homepage-premium-page .mobile-service-intro h2 {
+  max-width: 13ch;
+  margin: 0;
+  color: #f0f6ff;
+  font-size: clamp(2.15rem, 4vw, 3.65rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+html body.homepage-premium-page .homepage-editorial-header > p,
+html body.homepage-premium-page .premium-reviews-intro > p,
+html body.homepage-premium-page .mobile-service-intro > p {
+  max-width: 600px;
+  margin: 0;
+  color: rgba(220, 237, 255, 0.68);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.94rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+/* How It Works — structured process ledger. */
+html body.homepage-premium-page #how-it-works {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(102, 252, 241, 0.09), transparent 34%),
+    linear-gradient(145deg, #1a1f28, #242a35) !important;
+}
+
+html body.homepage-premium-page .premium-process-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 0;
+  overflow: hidden;
+  border: 1px solid rgba(220, 237, 255, 0.13);
+  border-radius: 20px;
+  background: rgba(10, 13, 18, 0.28);
+}
+
+html body.homepage-premium-page .premium-process-list {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html body.homepage-premium-page .premium-process-list li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 22px;
+  min-height: 132px;
+  padding: 25px clamp(24px, 3vw, 38px);
+  border-bottom: 1px solid rgba(220, 237, 255, 0.1);
+}
+
+html body.homepage-premium-page .premium-process-list li:last-child {
+  border-bottom: 0;
+}
+
+html body.homepage-premium-page .premium-process-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background: #66fcf1;
+  opacity: 0;
+  transform: scaleY(0.35);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+html body.homepage-premium-page .premium-process-list li:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+html body.homepage-premium-page .premium-process-index {
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+html body.homepage-premium-page .premium-process-list h3 {
+  margin: 0;
+  color: #f0f6ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.04rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .premium-process-list p {
+  max-width: 620px;
+  margin: 8px 0 0;
+  color: rgba(220, 237, 255, 0.61);
+  font-size: 0.84rem;
+  line-height: 1.62;
+}
+
+html body.homepage-premium-page .premium-process-stage {
+  color: rgba(220, 237, 255, 0.42);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .premium-process-assurance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 0;
+  padding: clamp(30px, 4vw, 48px);
+  border-left: 1px solid rgba(220, 237, 255, 0.12);
+  background:
+    linear-gradient(155deg, rgba(102, 252, 241, 0.11), rgba(18, 23, 30, 0.86)),
+    #141921;
+}
+
+html body.homepage-premium-page .premium-process-assurance-label {
+  margin: 0 0 auto;
+  color: #66fcf1;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .premium-process-assurance strong {
+  max-width: 12ch;
+  color: #f4f8ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .premium-process-assurance p {
+  margin: 18px 0 26px;
+  color: rgba(220, 237, 255, 0.62);
+  font-size: 0.83rem;
+  line-height: 1.68;
+}
+
+html body.homepage-premium-page .premium-process-assurance a,
+html body.homepage-premium-page .mobile-service-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 18px;
+  color: #071315;
+  border: 1px solid #76f1e9;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #70eee7, #46d8d2);
+  box-shadow: 0 14px 30px rgba(52, 217, 208, 0.14);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+html body.homepage-premium-page .premium-process-assurance a:hover,
+html body.homepage-premium-page .mobile-service-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(52, 217, 208, 0.2);
+}
+
+/* Supported Devices — one catalog, not another card collection. */
+html body.homepage-premium-page #repair-services {
+  background:
+    radial-gradient(circle at 8% 100%, rgba(102, 252, 241, 0.08), transparent 32%),
+    linear-gradient(142deg, #353c49, #2c323e) !important;
+}
+
+html body.homepage-premium-page .device-catalog-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr 1fr;
+  grid-auto-rows: minmax(148px, auto);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(220, 237, 255, 0.14);
+  border-radius: 22px;
+  background: rgba(220, 237, 255, 0.13);
+  box-shadow:
+    0 24px 52px rgba(10, 13, 18, 0.19),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+html body.homepage-premium-page .device-catalog-item {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: start;
+  gap: 17px;
+  min-width: 0;
+  margin: 0;
+  padding: 25px 26px;
+  border: 0;
+  border-radius: 0;
+  background: #1d222b;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page .device-catalog-featured {
+  grid-row: span 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(30px, 4vw, 48px);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(102, 252, 241, 0.15), transparent 43%),
+    linear-gradient(145deg, #141a22, #232b35);
+}
+
+html body.homepage-premium-page .device-catalog-index {
+  color: #66fcf1;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+}
+
+html body.homepage-premium-page .device-catalog-featured .device-catalog-index {
+  font-size: clamp(2.6rem, 4vw, 4.2rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  opacity: 0.2;
+}
+
+html body.homepage-premium-page .device-catalog-type {
+  display: block;
+  margin: 0 0 13px;
+  color: #66fcf1;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .device-catalog-item h3 {
+  margin: 0;
+  color: #f1f6fd;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .device-catalog-featured h3 {
+  max-width: 9ch;
+  font-size: clamp(2rem, 3.4vw, 3.25rem);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+html body.homepage-premium-page .device-catalog-item p {
+  margin: 9px 0 0;
+  color: rgba(220, 237, 255, 0.57);
+  font-size: 0.79rem;
+  line-height: 1.58;
+}
+
+html body.homepage-premium-page .device-catalog-featured p {
+  max-width: 430px;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+html body.homepage-premium-page .device-catalog-examples {
+  display: block;
+  margin: 24px 0 0;
+  padding: 16px 0 0;
+  color: rgba(220, 237, 255, 0.72);
+  border-top: 1px solid rgba(220, 237, 255, 0.13);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  line-height: 1.55;
+}
+
+html body.homepage-premium-page .device-catalog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 0 2px;
+  color: rgba(220, 237, 255, 0.58);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+html body.homepage-premium-page .device-catalog-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #72e9e2;
+  font-size: 0.69rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Popular Services — fault-based editorial directory. */
+html body.homepage-premium-page #popular-repair-services {
+  background:
+    radial-gradient(circle at 88% 8%, rgba(91, 132, 255, 0.1), transparent 30%),
+    linear-gradient(145deg, #171c24, #242b36) !important;
+}
+
+html body.homepage-premium-page .popular-service-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+  border-top: 1px solid rgba(220, 237, 255, 0.14);
+  border-left: 1px solid rgba(220, 237, 255, 0.14);
+  border-radius: 18px;
+}
+
+html body.homepage-premium-page .popular-service-entry {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  min-height: 230px;
+  padding: 27px 28px;
+  color: inherit;
+  border: 0;
+  border-right: 1px solid rgba(220, 237, 255, 0.14);
+  border-bottom: 1px solid rgba(220, 237, 255, 0.14);
+  border-radius: 0;
+  background: rgba(10, 13, 18, 0.24);
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+html body.homepage-premium-page .popular-service-entry:hover {
+  z-index: 1;
+  background: rgba(102, 252, 241, 0.065);
+}
+
+html body.homepage-premium-page .popular-service-index {
+  color: #66fcf1;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+html body.homepage-premium-page .popular-service-entry h3 {
+  margin: auto 0 0;
+  color: #f0f6ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .popular-service-entry p {
+  max-width: 330px;
+  margin: 10px 0 0;
+  color: rgba(220, 237, 255, 0.56);
+  font-size: 0.78rem;
+  line-height: 1.58;
+}
+
+html body.homepage-premium-page .popular-service-arrow {
+  position: absolute;
+  top: 24px;
+  right: 26px;
+  color: rgba(220, 237, 255, 0.32);
+  font-size: 1.2rem;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+html body.homepage-premium-page .popular-service-entry:hover .popular-service-arrow {
+  color: #66fcf1;
+  transform: translateX(4px);
+}
+
+html body.homepage-premium-page .service-directory-panel {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.72fr) minmax(0, 2fr);
+  gap: clamp(28px, 4vw, 54px);
+  margin-top: clamp(28px, 4vw, 44px);
+  padding: clamp(26px, 3.5vw, 42px);
+  border: 1px solid rgba(102, 252, 241, 0.17);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(102, 252, 241, 0.07), rgba(14, 18, 24, 0.2)),
+    rgba(12, 16, 22, 0.3);
+}
+
+html body.homepage-premium-page .service-directory-heading span,
+html body.homepage-premium-page .service-standards-heading span {
+  display: block;
+  margin: 0 0 12px;
+  color: #66fcf1;
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .service-directory-heading strong,
+html body.homepage-premium-page .service-standards-heading strong {
+  display: block;
+  max-width: 10ch;
+  color: #f0f6ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.85rem);
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .service-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(20px, 3vw, 38px);
+}
+
+html body.homepage-premium-page .service-directory-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 42px;
+  padding: 8px 0;
+  color: rgba(220, 237, 255, 0.68);
+  border-bottom: 1px solid rgba(220, 237, 255, 0.09);
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    padding-left 180ms ease;
+}
+
+html body.homepage-premium-page .service-directory-grid a span {
+  color: rgba(220, 237, 255, 0.3);
+}
+
+html body.homepage-premium-page .service-directory-grid a:hover {
+  padding-left: 4px;
+  color: #71e9e2;
+}
+
+/* Miami Service — service modes paired with operating standards. */
+html body.homepage-premium-page #miami-mobile-repair {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(102, 252, 241, 0.1), transparent 31%),
+    linear-gradient(145deg, #2e3541, #242b35) !important;
+}
+
+html body.homepage-premium-page .mobile-service-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(220, 237, 255, 0.14);
+  border-radius: 22px;
+  background: rgba(220, 237, 255, 0.12);
+}
+
+html body.homepage-premium-page .mobile-service-intro {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(34px, 5vw, 62px);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(102, 252, 241, 0.09), transparent 38%),
+    #1a2029;
+}
+
+html body.homepage-premium-page .mobile-service-intro h2 {
+  max-width: 11ch;
+}
+
+html body.homepage-premium-page .mobile-service-intro > p {
+  margin-top: 25px;
+}
+
+html body.homepage-premium-page .service-mode-list {
+  margin: clamp(30px, 5vw, 52px) 0 30px;
+  border-top: 1px solid rgba(220, 237, 255, 0.13);
+}
+
+html body.homepage-premium-page .service-mode-list > div {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(220, 237, 255, 0.1);
+}
+
+html body.homepage-premium-page .service-mode-list strong {
+  color: #f0f6ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.73rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .service-mode-list span {
+  color: rgba(220, 237, 255, 0.55);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+html body.homepage-premium-page .mobile-service-cta {
+  width: min(100%, 270px);
+  margin-top: auto;
+}
+
+html body.homepage-premium-page .service-standards-panel {
+  min-width: 0;
+  padding: clamp(34px, 5vw, 62px);
+  background:
+    linear-gradient(160deg, rgba(102, 252, 241, 0.045), transparent 36%),
+    #131820;
+}
+
+html body.homepage-premium-page .service-standards-heading {
+  margin-bottom: clamp(30px, 4vw, 44px);
+}
+
+html body.homepage-premium-page .service-standards-panel article {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 18px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(220, 237, 255, 0.11);
+}
+
+html body.homepage-premium-page .service-standards-panel article > span {
+  color: #66fcf1;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+html body.homepage-premium-page .service-standards-panel h3 {
+  margin: 0;
+  color: #f0f6ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page .service-standards-panel p {
+  margin: 10px 0 0;
+  color: rgba(220, 237, 255, 0.57);
+  font-size: 0.78rem;
+  line-height: 1.62;
+}
+
+html body.homepage-premium-page .service-standards-panel a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 13px;
+  color: #6de7e0;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Reviews — editorial social proof instead of another card grid. */
+html body.homepage-premium-page #customer-reviews {
+  background:
+    radial-gradient(circle at 100% 100%, rgba(102, 252, 241, 0.08), transparent 30%),
+    linear-gradient(145deg, #171c24, #272e39) !important;
+}
+
+html body.homepage-premium-page .premium-reviews-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.68fr) minmax(0, 1.32fr);
+  gap: clamp(34px, 5vw, 70px);
+}
+
+html body.homepage-premium-page .premium-reviews-intro {
+  min-width: 0;
+  padding-right: clamp(26px, 4vw, 52px);
+  border-right: 1px solid rgba(220, 237, 255, 0.12);
+}
+
+html body.homepage-premium-page .premium-reviews-intro h2 {
+  max-width: 9ch;
+}
+
+html body.homepage-premium-page .premium-reviews-intro > p {
+  margin-top: 26px;
+}
+
+html body.homepage-premium-page .premium-review-score {
+  margin-top: clamp(44px, 7vw, 84px);
+  padding: 25px 0 0;
+  border-top: 1px solid rgba(220, 237, 255, 0.14);
+}
+
+html body.homepage-premium-page .premium-review-score .reviews-score-stars,
+html body.homepage-premium-page .premium-review-card .review-stars {
+  width: auto;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  color: #66fcf1;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+html body.homepage-premium-page .premium-review-score strong {
+  display: block;
+  margin: 15px 0 3px;
+  color: #f4f8ff;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  font-weight: 650;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+}
+
+html body.homepage-premium-page .premium-review-score > span {
+  color: rgba(220, 237, 255, 0.56);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+html body.homepage-premium-page .premium-review-wall {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+html body.homepage-premium-page .premium-review-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 230px;
+  padding: 25px;
+  border: 1px solid rgba(220, 237, 255, 0.12);
+  border-radius: 17px;
+  background: rgba(8, 11, 16, 0.38);
+  box-shadow: inset 0 1px 0 rgba(220, 237, 255, 0.025);
+}
+
+html body.homepage-premium-page .premium-review-featured {
+  grid-column: 1 / -1;
+  min-height: 265px;
+  padding: clamp(28px, 4vw, 42px);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(102, 252, 241, 0.1), transparent 37%),
+    rgba(8, 11, 16, 0.5);
+}
+
+html body.homepage-premium-page .premium-review-card blockquote {
+  margin: 28px 0 32px;
+  color: rgba(240, 246, 255, 0.84);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.83rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.68;
+}
+
+html body.homepage-premium-page .premium-review-featured blockquote {
+  max-width: 850px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  letter-spacing: -0.02em;
+  line-height: 1.52;
+}
+
+html body.homepage-premium-page .premium-review-card .review-author {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(220, 237, 255, 0.09);
+}
+
+html body.homepage-premium-page .premium-review-card .review-author strong {
+  display: block;
+  color: #f0f6ff;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+html body.homepage-premium-page .premium-review-card .review-author span {
+  display: block;
+  margin-top: 3px;
+  color: #66fcf1;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  :is(
+    .premium-process-assurance a,
+    .device-catalog-footer a,
+    .popular-service-entry,
+    .service-directory-grid a,
+    .mobile-service-cta,
+    .service-standards-panel a
+  ):focus-visible {
+  outline: 2px solid #74eee7;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1020px) {
+  html body.homepage-premium-page .homepage-editorial-header {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  html body.homepage-premium-page .premium-process-layout {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .premium-process-assurance {
+    min-height: 330px;
+    border-top: 1px solid rgba(220, 237, 255, 0.12);
+    border-left: 0;
+  }
+
+  html body.homepage-premium-page .device-catalog-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  html body.homepage-premium-page .device-catalog-featured {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 380px;
+  }
+
+  html body.homepage-premium-page .popular-service-showcase {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  html body.homepage-premium-page .service-directory-panel {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .service-directory-heading strong {
+    max-width: none;
+  }
+
+  html body.homepage-premium-page .mobile-service-layout {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .premium-reviews-layout {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .premium-reviews-intro {
+    padding: 0 0 clamp(30px, 5vw, 46px);
+    border-right: 0;
+    border-bottom: 1px solid rgba(220, 237, 255, 0.12);
+  }
+
+  html body.homepage-premium-page .premium-review-score {
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 720px) {
+  html body.homepage-premium-page
+    :is(
+      #how-it-works,
+      #repair-services,
+      #popular-repair-services,
+      #miami-mobile-repair,
+      #customer-reviews
+    ) {
+    padding: 28px 18px !important;
+  }
+
+  html body.homepage-premium-page .homepage-editorial-header {
+    gap: 22px;
+    margin-bottom: 30px;
+    padding-bottom: 27px;
+  }
+
+  html body.homepage-premium-page .homepage-editorial-header h2,
+  html body.homepage-premium-page .premium-reviews-intro h2,
+  html body.homepage-premium-page .mobile-service-intro h2 {
+    font-size: clamp(2rem, 10.5vw, 2.75rem);
+    line-height: 1;
+  }
+
+  html body.homepage-premium-page .premium-process-list li {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 16px;
+    min-height: 0;
+    padding: 24px 20px;
+  }
+
+  html body.homepage-premium-page .premium-process-stage {
+    grid-column: 2;
+    margin-top: 3px;
+    text-align: left;
+  }
+
+  html body.homepage-premium-page .premium-process-assurance {
+    min-height: 350px;
+    padding: 28px 24px;
+  }
+
+  html body.homepage-premium-page .device-catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .device-catalog-featured {
+    grid-column: auto;
+    min-height: 370px;
+  }
+
+  html body.homepage-premium-page .device-catalog-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  html body.homepage-premium-page .popular-service-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .popular-service-entry {
+    min-height: 205px;
+    padding: 25px 23px;
+  }
+
+  html body.homepage-premium-page .service-directory-panel {
+    padding: 25px 22px;
+  }
+
+  html body.homepage-premium-page .service-directory-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .mobile-service-intro,
+  html body.homepage-premium-page .service-standards-panel {
+    padding: 30px 23px;
+  }
+
+  html body.homepage-premium-page .service-mode-list > div {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  html body.homepage-premium-page .premium-review-wall {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page .premium-review-featured {
+    grid-column: auto;
+  }
+
+  html body.homepage-premium-page .premium-review-card {
+    min-height: 215px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.homepage-premium-page
+    :is(
+      .premium-process-list li::before,
+      .premium-process-assurance a,
+      .device-catalog-footer a,
+      .popular-service-entry,
+      .popular-service-arrow,
+      .service-directory-grid a,
+      .mobile-service-cta
+    ) {
+    transition: none !important;
+  }
+}
