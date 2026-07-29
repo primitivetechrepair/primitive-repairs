@@ -91,11 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       state.brand,
       state.series,
       state.model,
-      state.repair,
-      state.repairDetailsViewed,
-      state.repairInfoViewed,
-      state.appointmentSelected,
-      state.reviewViewed
+      state.repair
     ];
 
     const completed = steps.filter(Boolean).length;
@@ -404,9 +400,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const blueprint = document.getElementById("pr-selection-cards");
     const blueprintGrid = blueprint?.querySelector(".blueprint-profile-grid");
-    const progressRow = document.querySelector(".pr-progress-row");
-    const progressBarWrap = document.querySelector(".pr-progress-bar-wrap");
-
     document
       .querySelectorAll(".wizard-live-summary")
       .forEach((summary) => summary.remove());
@@ -488,16 +481,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (blueprintGrid) {
 
       blueprintGrid.before(summaryCard);
-
-      const progressElements = [
-        progressRow,
-        progressBarWrap
-      ].filter(Boolean);
-
-      if (progressElements.length) {
-        summaryCard.after(...progressElements);
-      }
-
       return;
 
     }
