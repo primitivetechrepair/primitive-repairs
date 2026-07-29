@@ -310,7 +310,8 @@ export function createOptionCard({
       <img
   class="opt-thumb-img"
   src="${safeImage}"
-  alt="${safeLabel}"
+  alt=""
+  aria-hidden="true"
   width="76"
   height="76"
   loading="lazy"
