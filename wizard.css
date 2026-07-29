@@ -18805,9 +18805,12 @@ html body.homepage-premium-page
   #pr-steps-area
   .option-section-header
   > span {
-  display: inline-block !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   width: auto !important;
-  margin: 0 0 16px !important;
+  min-height: 28px !important;
+  margin: 0 auto 12px !important;
   padding: 0 0 0 13px !important;
   border: 0 !important;
   border-left: 2px solid #66fcf1 !important;
@@ -18821,6 +18824,15 @@ html body.homepage-premium-page
   line-height: 1.35 !important;
   text-transform: uppercase !important;
   box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area
+  .option-section-header.brand-option-header
+  > h3 {
+  letter-spacing: -0.02em !important;
+  text-transform: uppercase !important;
 }
 
 html body.homepage-premium-page

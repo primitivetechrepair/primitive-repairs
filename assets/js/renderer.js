@@ -141,7 +141,7 @@ export function renderBrandStep(container, brands, onSelect) {
   const selectedDevice = state.device || "Device";
 
   container.innerHTML = `
-    <div class="option-section-header">
+    <div class="option-section-header brand-option-header">
       <span>Select Brand</span>
       <h3>Choose your ${selectedDevice} brand.</h3>
       <p>Select the brand so we can match your device with the right repair catalog.</p>
