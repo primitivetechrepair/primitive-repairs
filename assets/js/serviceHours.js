@@ -190,7 +190,10 @@
     banner.setAttribute("aria-live", "polite");
 
     banner.innerHTML = `
-      <span class="service-hours-banner-label">After Hours</span>
+      <span class="service-hours-banner-heading">
+        <span class="service-hours-banner-indicator" aria-hidden="true"></span>
+        <span class="service-hours-banner-label">After Hours Service</span>
+      </span>
       <span class="service-hours-banner-message">${AFTER_HOURS_BANNER_TEXT}</span>
     `;
 

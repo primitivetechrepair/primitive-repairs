@@ -87,12 +87,12 @@
         aria-describedby="email-offer-description"
       >
         <div class="email-offer-topbar">
-          <span class="email-offer-kicker">
-            Repair Coupon
+          <span class="email-offer-brandmark">
+            Primitive Tech Repairs
           </span>
 
           <span class="email-offer-reference">
-            Email-Only Offer
+            Private Service Credit
           </span>
         </div>
 
@@ -106,23 +106,23 @@
 
         <div class="email-offer-content">
           <div class="email-offer-eyebrow">
-            Primitive Tech Repairs
+            A welcome credit for your next repair
           </div>
 
           <h2 id="email-offer-title">
-            Claim $10 off your repair.
+            Take $10 off your next repair.
           </h2>
 
           <p
             class="email-offer-description"
             id="email-offer-description"
           >
-            Enter your email to receive a one-time coupon code for a qualifying completed repair.
+            We’ll send a private, one-time savings code directly to your inbox.
           </p>
 
           <div class="email-offer-value-card">
             <div class="email-offer-value-label">
-              Email Repair Coupon
+              Your Service Credit
             </div>
 
             <div class="email-offer-value">
@@ -130,7 +130,7 @@
             </div>
 
             <div class="email-offer-value-note">
-              Minimum $75 repair subtotal
+              Valid on repairs of $75 or more
             </div>
           </div>
 
@@ -198,14 +198,14 @@
               class="email-offer-submit"
               type="submit"
             >
-              Email My $10 Coupon
+              Send My Private Code
             </button>
           </form>
 
           <div class="email-offer-terms">
-            Minimum $75 repair subtotal. One offer per customer
-            and email address. Excludes diagnostic fees,
-            parts-only purchases, accessories, and after-hours fees.
+            One code per customer and email address. Valid on repair subtotals
+            of $75 or more. Excludes diagnostics, parts-only purchases,
+            accessories, and after-hours fees.
           </div>
         </div>
       </section>
@@ -430,7 +430,7 @@
       );
 
       submitButton.disabled = false;
-      submitButton.textContent = "Email My $10 Coupon";
+      submitButton.textContent = "Send My Private Code";
     }
   }
 
