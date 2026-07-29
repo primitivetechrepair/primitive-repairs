@@ -120,8 +120,10 @@ function isAfterHoursTimeSlot(timeSlot) {
   return totalMinutes >= (19 * 60) || totalMinutes < (7 * 60);
 }
 
-function renderTimeSlots(selectedTime) {
-  return TIME_SLOTS.map((slot) => {
+function renderTimeSlots(selectedTime, afterHoursOnly = false) {
+  return TIME_SLOTS
+    .filter((slot) => isAfterHoursTimeSlot(slot) === afterHoursOnly)
+    .map((slot) => {
     const isSelected = selectedTime === slot;
     const isAfterHours = isAfterHoursTimeSlot(slot);
 
@@ -152,12 +154,12 @@ export function renderAppointmentStep(container, onContinue) {
   <section class="appointment-panel">
     <div class="option-section-header appointment-option-header">
       <span>Appointment</span>
-      <h3>Choose your preferred appointment.</h3>
-      <p>Select your service type, preferred date, and time. We will confirm appointment availability by text after submission.</p>
+      <h3>Choose your service and time.</h3>
+      <p>Select a service option, preferred date, and arrival window. Appointment availability is confirmed by text after your request is reviewed.</p>
     </div>
 
     <div class="appointment-section">
-        <h4>Service Type</h4>
+        <h4>01 / Service Type</h4>
 
         <div class="appointment-service-grid">
           ${renderServiceButtons(state.appointment.serviceType)}
@@ -165,7 +167,7 @@ export function renderAppointmentStep(container, onContinue) {
       </div>
 
       <div class="appointment-section">
-  <h4>Preferred Date</h4>
+  <h4>02 / Preferred Date</h4>
 
   <div class="appointment-date-field">
   <input
@@ -189,14 +191,40 @@ export function renderAppointmentStep(container, onContinue) {
 </div>
 
       <div class="appointment-section">
-        <h4>Preferred Time</h4>
+        <h4>03 / Preferred Time</h4>
 
-        <div class="appointment-time-grid">
-          ${renderTimeSlots(state.appointment.time)}
+        <div class="appointment-time-group">
+          <div class="appointment-time-group-header">
+            <strong>Standard Hours</strong>
+            <span>7:00 AM&ndash;6:30 PM ET</span>
+          </div>
+
+          <div class="appointment-time-grid">
+            ${renderTimeSlots(state.appointment.time, false)}
+          </div>
         </div>
 
+        <details
+          class="appointment-after-hours-disclosure"
+          ${isAfterHoursTimeSlot(state.appointment.time) ? "open" : ""}
+        >
+          <summary>
+            <span>
+              <strong>After-Hours Times</strong>
+              <small>7:00 PM&ndash;6:30 AM ET</small>
+            </span>
+            <span class="appointment-after-hours-fee">
+              $35 convenience fee
+            </span>
+          </summary>
+
+          <div class="appointment-time-grid">
+            ${renderTimeSlots(state.appointment.time, true)}
+          </div>
+        </details>
+
         <p class="appointment-after-hours-note">
-          Times marked +$35 are after-hours appointments scheduled from 7:00 PM through 6:30 AM Eastern.
+          Your selected time remains a preference until we confirm availability by text.
         </p>
       </div>
 
@@ -224,6 +252,17 @@ export function renderAppointmentStep(container, onContinue) {
   if (dateInput) {
     dateInput.addEventListener("change", () => {
       state.appointment.date = dateInput.value;
+
+      const dateHelp = container.querySelector(
+        "#appointment-date-help"
+      );
+
+      if (dateHelp) {
+        dateHelp.classList.toggle(
+          "is-selected",
+          Boolean(dateInput.value)
+        );
+      }
     });
   }
 

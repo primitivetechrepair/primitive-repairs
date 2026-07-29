@@ -13,9 +13,9 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260728-4";
+} from "./renderer.js?v=20260729-1";
 
-import { renderAppointmentStep } from "./appointments.js?v=20260724-1";
+import { renderAppointmentStep } from "./appointments.js?v=20260729-1";
 import {
   applyAfterHoursBookingDetails,
   buildLeadPayload,
@@ -1050,10 +1050,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 if (repairPolicyToggle && repairPolicyBox) {
+  repairPolicyToggle.setAttribute("aria-expanded", "false");
+  repairPolicyToggle.setAttribute(
+    "aria-controls",
+    repairPolicyBox.id
+  );
+
   repairPolicyToggle.addEventListener("click", () => {
     const isHidden = repairPolicyBox.hidden;
 
     repairPolicyBox.hidden = !isHidden;
+    repairPolicyToggle.setAttribute(
+      "aria-expanded",
+      `${isHidden}`
+    );
     repairPolicyToggle.textContent = isHidden
       ? "Hide Repair Policy"
       : "View Repair Policy";

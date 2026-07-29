@@ -489,8 +489,8 @@ export function renderSummary(container) {
     <section class="customer-repair-summary">
       <div class="customer-repair-summary-header">
         <span>Repair Summary</span>
-        <h3>Your request so far.</h3>
-        <p class="repair-details-instruction-centered">Confirm the repair details below, then add your contact information.</p>
+        <h3>Your repair plan, in one view.</h3>
+        <p class="repair-details-instruction-centered">Confirm the selected repair and appointment details before adding your contact information.</p>
       </div>
 
       <div class="customer-repair-summary-grid">
@@ -640,7 +640,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
               : primaryRepair.repair
           }
         </h3>
-        <p>Review symptoms, repair timing, and warranty details before scheduling.</p>
+        <p>Review the selected work, expected timing, warranty, and common symptoms before scheduling.</p>
       </div>
 
       <div class="repair-info-hero">
@@ -769,8 +769,8 @@ export function renderProtectionUpsellStep(
   container.innerHTML = `
     <section class="protection-upsell-panel">
       <div class="option-section-header protection-upsell-header">
-        <span>Protect Your Repair</span>
-        <h3>Protect your new screen.</h3>
+        <span>Optional Protection</span>
+        <h3>Protect your repair.</h3>
         <p>
           Add professional screen protection while your device is already
           being serviced.
@@ -825,11 +825,11 @@ export function renderProtectionUpsellStep(
             your device is returned.
           </p>
 
-          <div class="protection-upsell-benefits">
-            <span>Professional alignment</span>
-            <span>Bubble-free installation</span>
-            <span>Ready when your repair is complete</span>
-          </div>
+          <ul class="protection-upsell-benefits">
+            <li>Professional alignment</li>
+            <li>Bubble-free installation</li>
+            <li>Ready when your repair is complete</li>
+          </ul>
         </div>
       </div>
 

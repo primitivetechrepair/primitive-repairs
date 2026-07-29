@@ -22289,3 +22289,2402 @@ html body.service-detail-page
     transition: none !important;
   }
 }
+
+/* ================================================================
+   PREMIUM REPAIR COMPLETION FLOW
+   Repair info through confirmation. No tag or pill presentation.
+   ================================================================ */
+
+html body.homepage-premium-page #primitive-wizard-container {
+  --flow-surface: #11171f;
+  --flow-surface-raised: #161e28;
+  --flow-surface-soft: rgba(255, 255, 255, 0.025);
+  --flow-border: rgba(220, 237, 255, 0.13);
+  --flow-border-strong: rgba(102, 252, 241, 0.35);
+  --flow-ink: #f1f7ff;
+  --flow-muted: #9eafbf;
+  --flow-accent: #66fcf1;
+  --flow-accent-strong: #8dfff7;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area
+  > :is(
+    .repair-info-panel,
+    .protection-upsell-panel,
+    .appointment-panel,
+    .review-panel,
+    .success-panel
+  ) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area
+  > :is(
+    .repair-info-panel,
+    .protection-upsell-panel,
+    .appointment-panel,
+    .review-panel,
+    .success-panel
+  )::before {
+  display: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area
+  > :is(
+    .repair-info-panel,
+    .protection-upsell-panel,
+    .appointment-panel,
+    .review-panel,
+    .success-panel
+  )
+  > * {
+  position: relative;
+  z-index: 1;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area
+  :is(
+    .repair-info-option-header,
+    .protection-upsell-header,
+    .appointment-option-header,
+    .review-option-header,
+    .success-option-header
+  )
+  > span,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .customer-form-intro > span,
+    .customer-repair-summary-header > span,
+    .protection-upsell-kicker,
+    .optional-field-badge,
+    .success-request-confirmation > span,
+    .success-next-steps-header > span
+  ) {
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  padding: 0 0 0 12px;
+  border: 0;
+  border-left: 2px solid var(--flow-accent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--flow-accent);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area
+  :is(
+    .repair-info-option-header,
+    .protection-upsell-header,
+    .appointment-option-header,
+    .review-option-header,
+    .success-option-header
+  )
+  h3,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-customer-form
+  .customer-form-intro
+  h3,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-header
+  h3 {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.9rem, 3.8vw, 3.15rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .option-section-header,
+    .customer-form-intro,
+    .customer-repair-summary-header
+  )
+  p {
+  color: var(--flow-muted);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* Repair information */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  gap: 0;
+  min-height: 330px;
+  overflow: hidden;
+  border: 1px solid var(--flow-border);
+  border-radius: 18px;
+  background: var(--flow-surface);
+  box-shadow:
+    0 24px 55px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-panel.is-single-repair
+  .repair-info-hero {
+  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  gap: 0;
+  min-height: 330px;
+  border: 1px solid var(--flow-border);
+  border-radius: 18px;
+  background: var(--flow-surface);
+  box-shadow:
+    0 24px 55px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-image,
+    .repair-info-panel.is-single-repair .repair-info-image
+  ) {
+  min-height: 330px;
+  border: 0;
+  border-right: 1px solid var(--flow-border);
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(102, 252, 241, 0.08),
+      transparent 42%
+    ),
+    #090e14;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-image::before {
+  inset: clamp(24px, 4vw, 48px);
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.32));
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-content,
+    .repair-info-panel.is-single-repair .repair-info-content
+  ) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(28px, 4.5vw, 54px);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-meta,
+    .repair-info-panel.is-single-repair .repair-info-meta
+  ) {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-meta div,
+    .repair-info-panel.is-single-repair .repair-info-meta div
+  ) {
+  min-width: 0;
+  padding: 22px 0;
+  overflow: visible;
+  border: 0;
+  border-bottom: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-meta div,
+    .repair-info-panel.is-single-repair .repair-info-meta div
+  )::before {
+  display: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-meta strong,
+    .repair-info-panel.is-single-repair .repair-info-meta strong
+  ) {
+  margin: 0;
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.08rem, 1.7vw, 1.32rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-meta span,
+    .repair-info-panel.is-single-repair .repair-info-meta span
+  ) {
+  margin-top: 9px;
+  color: var(--flow-accent);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-detail {
+  margin-top: 11px;
+  color: var(--flow-muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-section {
+  margin-top: 14px;
+  padding: clamp(24px, 3.5vw, 38px);
+  border: 1px solid var(--flow-border);
+  border-radius: 15px;
+  background: var(--flow-surface-soft);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-section
+  h4 {
+  margin: 0 0 22px;
+  padding-left: 12px;
+  border-left: 2px solid var(--flow-accent);
+  color: var(--flow-ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-section
+  ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-section
+  li {
+  position: relative;
+  padding: 0 0 0 17px;
+  color: #b2c1cf;
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-section
+  li::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--flow-accent);
+  content: "";
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-info-actions {
+  margin: 14px 0 0;
+  padding: 0;
+  border: 0;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px 30px;
+  align-items: center;
+  width: 100%;
+  padding: clamp(25px, 4vw, 40px);
+  border: 1px solid var(--flow-border-strong);
+  border-radius: 16px;
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(102, 252, 241, 0.09),
+      transparent 22rem
+    ),
+    #0c151d;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge-copy
+  > span {
+  display: block;
+  margin: 0 0 9px;
+  color: var(--flow-accent);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge-copy
+  h4 {
+  margin: 0;
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge-copy
+  p,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge-note {
+  color: var(--flow-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge-copy
+  p {
+  margin: 9px 0 0;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-booking-bridge-note {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 15px;
+  border-top: 1px solid var(--flow-border);
+}
+
+/* Optional protection */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 42px);
+  align-items: center;
+  padding: clamp(28px, 5vw, 54px);
+  overflow: hidden;
+  border: 1px solid var(--flow-border);
+  border-radius: 18px;
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(102, 252, 241, 0.08),
+      transparent 26rem
+    ),
+    var(--flow-surface);
+  color: var(--flow-ink);
+  box-shadow:
+    0 26px 60px rgba(0, 0, 0, 0.23),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-card::after {
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--flow-accent),
+    transparent 48%
+  );
+  opacity: 0.72;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-icon {
+  display: grid;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  border: 1px solid var(--flow-border-strong);
+  border-radius: 14px;
+  background: rgba(102, 252, 241, 0.035);
+  box-shadow: none;
+  color: var(--flow-accent);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-icon
+  svg {
+  width: 48px;
+  height: 48px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-copy {
+  gap: 17px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-title-row {
+  align-items: start;
+  gap: 24px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-kicker {
+  display: inline-block;
+  margin: 0 0 9px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-copy
+  h4 {
+  margin: 0;
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.45rem, 2.8vw, 2.35rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-copy
+  > p {
+  margin: 0;
+  color: var(--flow-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-price {
+  min-width: 115px;
+  padding-left: 22px;
+  border-left: 1px solid var(--flow-border);
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-price
+  small {
+  margin-top: 5px;
+  color: var(--flow-accent);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.6rem;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 3px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--flow-border);
+  border-left: 1px solid var(--flow-border);
+  list-style: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-benefits
+  li {
+  min-height: 54px;
+  padding: 13px 15px;
+  border-right: 1px solid var(--flow-border);
+  border-bottom: 1px solid var(--flow-border);
+  color: #b5c4d2;
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.7fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.protection-upsell-add, .protection-upsell-skip) {
+  min-height: 52px;
+  padding: 13px 20px;
+  border-radius: 7px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-add {
+  border: 1px solid rgba(102, 252, 241, 0.75);
+  background: var(--flow-accent);
+  box-shadow: 0 16px 32px rgba(31, 204, 195, 0.14);
+  color: #031011;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-skip {
+  border: 1px solid var(--flow-border);
+  background: transparent;
+  color: #dce7f2;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .protection-upsell-note {
+  margin: 15px 0 0;
+  color: var(--flow-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* Appointment */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-section {
+  margin: 0;
+  padding: clamp(27px, 4vw, 40px) 0;
+  border: 0;
+  border-top: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-section
+  > h4 {
+  display: inline-flex;
+  align-items: center;
+  min-height: 0;
+  margin: 0 0 22px;
+  padding: 0 0 0 12px;
+  border: 0;
+  border-left: 2px solid var(--flow-accent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--flow-ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-grid {
+  gap: 11px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card {
+  position: relative;
+  min-height: 126px;
+  padding: 24px 22px;
+  border: 1px solid var(--flow-border);
+  border-radius: 13px;
+  background: var(--flow-surface-soft);
+  box-shadow: none;
+  color: var(--flow-ink);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card::before {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 252, 241, 0.55),
+    transparent 48%
+  );
+  opacity: 0.36;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card.is-selected {
+  border-color: rgba(102, 252, 241, 0.68);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(102, 252, 241, 0.07),
+      rgba(255, 255, 255, 0.015)
+    ),
+    #101820;
+  box-shadow:
+    inset 3px 0 0 var(--flow-accent),
+    0 18px 36px rgba(0, 0, 0, 0.2);
+  color: var(--flow-ink);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card.is-selected::after {
+  top: 16px;
+  right: 17px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--flow-accent);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card
+  strong,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card.is-selected
+  strong {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card
+  span,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-service-card.is-selected
+  span {
+  max-width: 330px;
+  color: var(--flow-muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.58;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-date-field {
+  justify-items: start;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-date-input {
+  width: min(430px, 100%);
+  min-height: 54px;
+  margin: 0;
+  padding: 0 17px;
+  border: 1px solid var(--flow-border);
+  border-radius: 7px;
+  background: #0c1219;
+  box-shadow: none;
+  color: var(--flow-ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-date-help {
+  color: var(--flow-muted);
+  font-size: 0.67rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-group {
+  padding: 22px;
+  border: 1px solid var(--flow-border);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-group-header {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--flow-border);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-group-header
+  strong {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-group-header
+  span {
+  color: var(--flow-accent);
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-grid {
+  grid-template-columns: repeat(auto-fit, minmax(104px, 1fr));
+  gap: 8px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-slot {
+  min-height: 48px;
+  padding: 10px 8px;
+  border: 1px solid var(--flow-border);
+  border-radius: 6px;
+  background: #0c1219;
+  box-shadow: none;
+  color: #dce7f2;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-slot.is-selected {
+  border-color: rgba(102, 252, 241, 0.82);
+  background: rgba(102, 252, 241, 0.1);
+  box-shadow: inset 0 -2px 0 var(--flow-accent);
+  color: var(--flow-accent-strong);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-time-slot
+  small {
+  display: block;
+  margin-top: 4px;
+  color: var(--flow-accent);
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure {
+  margin-top: 11px;
+  overflow: hidden;
+  border: 1px solid var(--flow-border);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.012);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > summary {
+  position: relative;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  padding: 17px 52px 17px 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > summary::-webkit-details-marker {
+  display: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > summary::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: var(--flow-accent);
+  font-size: 1.15rem;
+  line-height: 1;
+  content: "+";
+  transform: translateY(-50%);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure[open]
+  > summary::after {
+  content: "−";
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > summary
+  > span:first-child {
+  display: grid;
+  gap: 3px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > summary
+  strong {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > summary
+  small,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-fee {
+  color: var(--flow-muted);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-fee {
+  color: var(--flow-accent);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-disclosure
+  > .appointment-time-grid {
+  padding: 0 20px 20px;
+  border-top: 1px solid var(--flow-border);
+  padding-top: 20px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-after-hours-note {
+  max-width: none;
+  margin: 13px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--flow-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.55;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-actions {
+  margin-top: 14px;
+  padding-top: 28px;
+  border-top: 1px solid var(--flow-border);
+}
+
+/* Shared completion-flow buttons */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .repair-info-continue,
+    .appointment-continue,
+    .review-submit,
+    .success-start-new
+  ) {
+  min-height: 52px;
+  padding: 13px 22px;
+  border: 1px solid rgba(102, 252, 241, 0.75);
+  border-radius: 7px;
+  background: var(--flow-accent);
+  box-shadow: 0 16px 32px rgba(31, 204, 195, 0.14);
+  color: #031011;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.review-back, #cf-back) {
+  min-height: 52px;
+  padding: 13px 22px;
+  border: 1px solid var(--flow-border);
+  border-radius: 7px;
+  background: transparent;
+  box-shadow: none;
+  color: #dce7f2;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* Contact details and repair summary */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(30px, 5vw, 60px);
+  overflow: hidden;
+  border: 1px solid var(--flow-border);
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      circle at 94% 0,
+      rgba(102, 252, 241, 0.045),
+      transparent 28rem
+    ),
+    linear-gradient(145deg, #1c212a, #12161c);
+  box-shadow:
+    0 26px 65px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-customer-form {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-form-intro {
+  width: min(820px, 100%);
+  margin-bottom: clamp(28px, 4vw, 42px);
+  gap: 11px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary {
+  margin: 0 0 18px;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--flow-border);
+  border-radius: 17px;
+  background: var(--flow-surface);
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #summary-box.selection-summary {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #summary-box.selection-summary::before {
+  display: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-header {
+  max-width: none;
+  margin: 0 0 28px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--flow-border);
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-header
+  > span {
+  display: inline-flex;
+  margin: 0 0 11px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-header
+  h3 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.2vw, 2.5rem);
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-header
+  p {
+  max-width: 700px;
+  margin: 12px 0 0;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-header
+  .repair-details-instruction-centered {
+  width: min(700px, 100%);
+  height: auto;
+  margin: 12px 0 0;
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--flow-border);
+  border-left: 1px solid var(--flow-border);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-item {
+  min-height: 90px;
+  padding: 18px;
+  border: 0;
+  border-right: 1px solid var(--flow-border);
+  border-bottom: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-item
+  span {
+  color: var(--flow-accent);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-item
+  strong {
+  margin-top: 9px;
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-repair-summary-wide {
+  grid-column: span 2;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-field-grid {
+  gap: 14px;
+  margin-top: 14px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .customer-field {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .customer-field > label,
+    #pr-customer-form > label,
+    .repair-detail-card > label
+  ) {
+  display: flex;
+  align-items: center;
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  margin: 0 0 9px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #d6e2ed;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.67rem;
+  font-weight: 750;
+  letter-spacing: 0.075em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .optional-field-badge {
+  display: inline;
+  margin-left: 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #7f91a2;
+  font-size: inherit;
+  letter-spacing: inherit;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .optional-field-badge::before {
+  content: "/ ";
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .customer-field input,
+    .customer-field textarea,
+    .savings-code-input-wrap
+  ) {
+  border-color: var(--flow-border);
+  border-radius: 7px;
+  background: #0d1219;
+  box-shadow: none;
+  color: var(--flow-ink);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-field input, .customer-field textarea):focus {
+  border-color: rgba(102, 252, 241, 0.72);
+  box-shadow: 0 0 0 3px rgba(102, 252, 241, 0.075);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .savings-code-ticket {
+  align-self: stretch;
+  min-width: 68px;
+  border: 0;
+  border-right: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+  color: var(--flow-accent);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.field-help, .small-note) {
+  color: var(--flow-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .small-note {
+  padding: 12px 0 0;
+  border: 0;
+  border-top: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .policy-consent-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  width: 100%;
+  margin: 20px 0 0;
+  padding: 18px;
+  border: 1px solid var(--flow-border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.018);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .policy-consent-row
+  input {
+  width: 19px;
+  height: 19px;
+  margin: 1px 0 0;
+  border-radius: 3px;
+  accent-color: var(--flow-accent);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .policy-consent-row
+  span {
+  color: #becbd7;
+  font-size: 0.8rem;
+  font-weight: 550;
+  line-height: 1.6;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-wrap {
+  margin-top: 12px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 58px;
+  padding: 15px 56px 15px 18px;
+  border: 1px solid var(--flow-border);
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--flow-ink);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: var(--flow-accent);
+  font-size: 1.15rem;
+  line-height: 1;
+  content: "+";
+  transform: translateY(-50%);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-toggle[aria-expanded="true"]::after {
+  content: "−";
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box {
+  margin-top: 9px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--flow-border);
+  border-radius: 12px;
+  background: #0e141b;
+  box-shadow: none;
+  color: var(--flow-muted);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box::before {
+  display: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box
+  h4 {
+  margin: 0 0 10px;
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box
+  p {
+  margin: 0 0 22px;
+  color: var(--flow-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box
+  ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--flow-border);
+  border-left: 1px solid var(--flow-border);
+  color: var(--flow-muted);
+  list-style-position: inside;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box
+  li {
+  margin: 0;
+  padding: 17px 18px;
+  border-right: 1px solid var(--flow-border);
+  border-bottom: 1px solid var(--flow-border);
+  font-size: 0.77rem;
+  line-height: 1.62;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-policy-box
+  strong {
+  color: var(--flow-ink);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-form-reassurance, .review-submit-reassurance) {
+  display: grid;
+  justify-items: start;
+  width: 100%;
+  max-width: none;
+  margin: 20px 0 0;
+  padding: 17px 18px;
+  border: 1px solid var(--flow-border);
+  border-left: 2px solid var(--flow-accent);
+  border-radius: 8px;
+  background: rgba(102, 252, 241, 0.025);
+  box-shadow: none;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-form-reassurance, .review-submit-reassurance)
+  strong {
+  color: var(--flow-ink);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-form-reassurance, .review-submit-reassurance)
+  span {
+  color: var(--flow-muted);
+  font-size: 0.76rem;
+  font-weight: 500;
+}
+
+/* Final review */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 11px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid var(--flow-border);
+  border-radius: 13px;
+  background: var(--flow-surface-soft);
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card::before {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(102, 252, 241, 0.62),
+    transparent 52%
+  );
+  opacity: 0.5;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card
+  > h4 {
+  display: block;
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  margin: 0 0 17px;
+  padding: 0 0 0 11px;
+  border: 0;
+  border-left: 2px solid var(--flow-accent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card
+  p {
+  display: grid;
+  grid-template-columns: minmax(105px, 0.38fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--flow-border);
+  color: #b7c5d2;
+  font-size: 0.79rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card
+  p
+  > strong {
+  color: var(--flow-accent);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-repair-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-repair-item
+  + .review-repair-item {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--flow-border);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card-appointment,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card-appointment.has-after-hours-fee,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-card-addons {
+  border-color: var(--flow-border-strong);
+  background:
+    radial-gradient(
+      circle at 100% 0,
+      rgba(102, 252, 241, 0.055),
+      transparent 22rem
+    ),
+    var(--flow-surface-soft);
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-attachment-item {
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-attachment-icon {
+  color: var(--flow-accent);
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-attachment-name {
+  color: var(--flow-ink);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-attachment-size {
+  color: var(--flow-muted);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-actions {
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 24px;
+  border-top: 1px solid var(--flow-border);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.review-back, .review-submit) {
+  width: min(260px, 100%);
+  border-radius: 7px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .review-submission-status {
+  width: 100%;
+  max-width: none;
+  margin: 14px 0 0;
+  padding: 15px 17px;
+  border: 1px solid var(--flow-border);
+  border-radius: 8px;
+  background: var(--flow-surface);
+  box-shadow: none;
+  text-align: left;
+}
+
+/* Request received */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-hero {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  justify-items: stretch;
+  margin: 0 0 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--flow-border);
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-icon {
+  display: grid;
+  place-items: center;
+  width: 78px;
+  height: 78px;
+  margin: 0;
+  border: 1px solid var(--flow-border-strong);
+  border-radius: 13px;
+  background: rgba(102, 252, 241, 0.06);
+  box-shadow: none;
+  color: var(--flow-accent);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-option-header {
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  text-align: left !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-option-header
+  > span {
+  margin: 0 0 10px !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-option-header
+  h3,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-option-header
+  p {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-message {
+  max-width: 820px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-request-confirmation {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  justify-items: start;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 12px;
+  padding: 22px 24px;
+  border: 1px solid var(--flow-border-strong);
+  border-radius: 12px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(102, 252, 241, 0.05),
+      transparent 55%
+    ),
+    var(--flow-surface);
+  box-shadow: none;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-request-confirmation
+  > span {
+  padding-left: 11px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-request-confirmation
+  > strong {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.05rem, 2.3vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-request-confirmation
+  > small {
+  color: var(--flow-muted);
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 12px;
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-summary-request-layout
+  > div,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-summary-request-layout
+  > div:nth-child(n) {
+  display: block;
+  grid-column: auto;
+  min-width: 0;
+  min-height: 92px;
+  padding: 18px;
+  border: 1px solid var(--flow-border);
+  border-radius: 11px;
+  background: var(--flow-surface-soft);
+  box-shadow: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-summary
+  strong {
+  margin: 0 0 8px;
+  color: var(--flow-accent);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-summary
+  span {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 550;
+  line-height: 1.45;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps {
+  margin-top: 12px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--flow-border);
+  border-radius: 13px;
+  background: var(--flow-surface);
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps-header {
+  justify-items: start;
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--flow-border);
+  text-align: left;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps-header
+  > h4 {
+  color: var(--flow-ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.15rem, 2.2vw, 1.7rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps-grid {
+  gap: 0;
+  border-top: 1px solid var(--flow-border);
+  border-left: 1px solid var(--flow-border);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps-grid
+  > div {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 13px;
+  align-items: start;
+  padding: 20px;
+  border: 0;
+  border-right: 1px solid var(--flow-border);
+  border-bottom: 1px solid var(--flow-border);
+  border-radius: 0;
+  background: transparent;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps-grid
+  strong {
+  display: block;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: transparent;
+  color: var(--flow-accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-next-steps-grid
+  span {
+  color: var(--flow-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.58;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .success-start-new {
+  width: min(320px, 100%);
+  margin: 22px auto 0;
+}
+
+/* Remove remaining pill geometry from this flow. */
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .protection-upsell-kicker,
+    .optional-field-badge,
+    .appointment-section > h4,
+    .review-card > h4,
+    .success-next-steps-header > span,
+    .success-request-confirmation > span
+  ) {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+@media (hover: hover) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(
+      .appointment-service-card,
+      .appointment-time-slot,
+      .repair-policy-toggle,
+      .review-back,
+      #cf-back,
+      .protection-upsell-skip
+    ):hover {
+    border-color: rgba(102, 252, 241, 0.42);
+    background-color: rgba(102, 252, 241, 0.035);
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(
+      .repair-info-continue,
+      .appointment-continue,
+      .review-submit,
+      .success-start-new,
+      .protection-upsell-add
+    ):hover {
+    border-color: #d9fffc;
+    background: var(--flow-accent-strong);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 900px) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .repair-info-section
+    ul {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .repair-policy-box
+    ol {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-steps-area
+    > :is(
+      .repair-info-panel,
+      .protection-upsell-panel,
+      .appointment-panel,
+      .review-panel,
+      .success-panel
+    ) {
+    padding: 0;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-form-area {
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(
+      .repair-info-hero,
+      .repair-info-panel.is-single-repair .repair-info-hero
+    ) {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(
+      .repair-info-image,
+      .repair-info-panel.is-single-repair .repair-info-image
+    ) {
+    min-height: 235px;
+    border-right: 0;
+    border-bottom: 1px solid var(--flow-border);
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(
+      .repair-info-content,
+      .repair-info-panel.is-single-repair .repair-info-content
+    ) {
+    padding: 25px 21px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .repair-info-section {
+    padding: 24px 20px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .repair-booking-bridge {
+    grid-template-columns: 1fr;
+    padding: 25px 21px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .repair-booking-bridge
+    .repair-info-continue {
+    width: 100%;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .protection-upsell-card {
+    grid-template-columns: 1fr;
+    padding: 27px 21px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .protection-upsell-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .protection-upsell-title-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .protection-upsell-price {
+    justify-items: start;
+    min-width: 0;
+    padding: 15px 0 0;
+    border-top: 1px solid var(--flow-border);
+    border-left: 0;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .protection-upsell-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .protection-upsell-actions {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-time-group {
+    padding: 18px 14px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-time-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-after-hours-disclosure
+    > summary {
+    align-items: flex-start;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-after-hours-disclosure
+    > .appointment-time-grid {
+    padding: 17px 14px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary {
+    padding: 23px 18px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-wide {
+    grid-column: auto;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-item {
+    min-height: 0;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .repair-policy-box {
+    padding: 22px 16px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-grid,
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-summary {
+    grid-template-columns: 1fr !important;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-card {
+    padding: 21px 18px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-card
+    p {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(.review-back, .review-submit) {
+    width: 100%;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-hero {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-request-confirmation {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-request-confirmation
+    > span {
+    padding-left: 10px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-next-steps {
+    padding: 23px 17px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 430px) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-time-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-time-group-header,
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-after-hours-disclosure
+    > summary {
+    display: grid;
+    gap: 5px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-after-hours-fee {
+    padding-right: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    :is(
+      .repair-info-continue,
+      .appointment-continue,
+      .review-submit,
+      .success-start-new,
+      .protection-upsell-add,
+      .protection-upsell-skip,
+      .appointment-service-card,
+      .appointment-time-slot
+    ) {
+    transition: none !important;
+  }
+}
