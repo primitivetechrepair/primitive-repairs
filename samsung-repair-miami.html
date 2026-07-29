@@ -52,12 +52,12 @@
 
   <meta
     property="og:image"
-    content="https://www.primitiverepairs.com/images/logo.svg"
+    content="https://www.primitiverepairs.com/assets/img/service-heroes/samsung-repair-miami.webp"
   >
 
   <meta
     name="twitter:card"
-    content="summary"
+    content="summary_large_image"
   >
 
   <meta
@@ -72,7 +72,7 @@
 
   <meta
     name="twitter:image"
-    content="https://www.primitiverepairs.com/images/logo.svg"
+    content="https://www.primitiverepairs.com/assets/img/service-heroes/samsung-repair-miami.webp"
   >
 
   <script type="application/ld+json">
@@ -83,6 +83,7 @@
     "name": "Samsung Galaxy Repair in Miami",
     "serviceType": "Samsung Galaxy Screen, Battery, USB-C and Hardware Repair",
     "url": "https://www.primitiverepairs.com/samsung-repair-miami",
+    "image": "https://www.primitiverepairs.com/assets/img/service-heroes/samsung-repair-miami.webp",
     "description": "Primitive Tech Repairs provides Samsung Galaxy repair services in Miami for supported Galaxy S, Galaxy A, Galaxy Note, Galaxy Z Fold, Galaxy Z Flip, and other Samsung phones with OLED screen damage, battery problems, USB-C charging faults, back-glass damage, camera problems, liquid exposure, and no-power symptoms.",
     "provider": {
       "@type": "LocalBusiness",
@@ -134,6 +135,13 @@
   </noscript>
 
   <link
+    rel="preload"
+    as="image"
+    href="/assets/img/service-heroes/samsung-repair-miami.webp"
+    type="image/webp"
+    media="(min-width: 721px)"
+  >
+  <link
     rel="icon"
     href="images/logo.svg"
     type="image/svg+xml"
@@ -141,15 +149,15 @@
 
   <link
     rel="stylesheet"
-    href="wizard.css?v=20260727-bottom58"
+    href="wizard.css?v=20260728-services01"
   >
 </head>
 
-<body>
+<body class="service-detail-page">
   <div id="site-header-root"></div>
 
   <main>
-    <section class="landing-hero warranty-hero">
+    <section class="landing-hero warranty-hero service-visual-hero">
       <div class="landing-hero-inner">
         <div class="hero-glass-panel">
           <div class="hero-status-pill">
@@ -159,14 +167,7 @@
           <h1>Samsung Galaxy Repair in Miami</h1>
 
           <p>
-            Professional repair for Samsung Galaxy S, Galaxy A, Galaxy
-            Note, Galaxy Z Fold, Galaxy Z Flip, and other supported
-            Samsung phones with cracked OLED displays, touch problems,
-            weak or swollen batteries, USB-C charging faults, back-glass
-            damage, camera problems, liquid exposure, boot loops, and
-            no-power symptoms. Submit the exact model and symptoms so we
-            can review compatible parts and available Miami service
-            options.
+            Samsung Galaxy repair in Miami for OLED screens, batteries, USB-C ports, cameras, back glass, foldable hardware, liquid exposure, and board-level faults. We verify the Galaxy model and repair scope before work begins.
           </p>
 
           <div class="landing-actions">
@@ -192,6 +193,27 @@
             <span>&#128203; Repair Review First</span>
           </div>
         </div>
+        <figure class="service-hero-media" data-service-parallax>
+          <picture>
+            <source
+              media="(max-width: 720px)"
+              srcset="/assets/img/service-heroes/samsung-repair-miami-720.webp"
+            >
+
+            <img
+              src="/assets/img/service-heroes/samsung-repair-miami.webp"
+              alt="Samsung Galaxy phone on a premium electronics repair workbench"
+              width="1120"
+              height="1400"
+              decoding="async"
+              fetchpriority="high"
+            >
+          </picture>
+
+          <figcaption class="service-hero-caption">
+            Samsung Galaxy repair for S, A, Note, Fold, and Flip devices.
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -1449,6 +1471,10 @@
     defer
   ></script>
 
+  <script
+    src="/assets/js/servicePage.js?v=20260728-1"
+    defer
+  ></script>
   <script
     src="/assets/js/emailOfferPopup.js?v=20260726-1"
   ></script>
