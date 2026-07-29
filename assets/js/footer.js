@@ -87,7 +87,18 @@
 
           <div class="site-footer-link-group site-footer-repair-group">
             <details class="site-footer-repair-details">
-              <summary class="site-footer-link-title">Repair Services</summary>
+              <summary class="site-footer-link-title">
+                <span class="site-footer-repair-title">Repair Services</span>
+                <span class="site-footer-repair-toggle" aria-hidden="true">
+                  <span class="site-footer-repair-toggle-prompt">
+                    <span class="site-footer-repair-toggle-closed">View services</span>
+                    <span class="site-footer-repair-toggle-open">Hide services</span>
+                  </span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m7 10 5 5 5-5"></path>
+                  </svg>
+                </span>
+              </summary>
 
               <nav class="site-footer-links" aria-label="Footer repair service links">
                 <a href="/phone-repair-miami">Phone Repair</a>
