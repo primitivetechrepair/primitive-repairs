@@ -12,14 +12,32 @@
     <footer class="site-footer">
       <div class="site-footer-inner">
         <div class="site-footer-top">
-          <a href="/" class="site-footer-logo" aria-label="Primitive Tech Repairs Home">
-            <img src="/images/logo.svg" alt="Primitive Tech Repairs logo">
-          </a>
+          <div class="site-footer-brand">
+            <a href="/" class="site-footer-logo" aria-label="Primitive Tech Repairs Home">
+              <img src="/images/logo.svg" alt="Primitive Tech Repairs logo">
+            </a>
+
+            <div class="site-footer-brand-copy">
+              <span class="site-footer-eyebrow">Miami Device Repair</span>
+              <h3>Expert repair support, built around your device.</h3>
+              <p>Tell us what needs attention. We will review the details and confirm the right service before your repair begins.</p>
+            </div>
+          </div>
+
+          <div class="site-footer-action">
+            <span>Ready when you are</span>
+            <a href="/#primitive-wizard-container">
+              Start Repair Request
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div class="site-footer-link-groups">
           <div class="site-footer-link-group">
-            <h4 class="site-footer-link-title">Socials</h4>
+            <h4 class="site-footer-link-title">Follow Primitive</h4>
 
             <nav class="site-footer-links site-footer-social-links" aria-label="Footer social links">
               <a href="https://www.facebook.com/primitiverepairs.mobileservices" target="_blank" rel="noopener noreferrer">
@@ -102,7 +120,10 @@
 
         <div class="site-footer-bottom">
           <span>&copy; 2026 Primitive Tech Repairs. All rights reserved.</span>
-          <span>Miami mobile device repair service.</span>
+          <span class="site-footer-service-note">
+            <i aria-hidden="true"></i>
+            Miami mobile device repair service.
+          </span>
         </div>
       </div>
     </footer>
