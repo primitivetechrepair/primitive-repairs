@@ -348,6 +348,21 @@ export function renderRepairStep(
 
   container.innerHTML = `
     <div class="repair-select-panel">
+      ${
+        selectedRepairs.length
+          ? `
+            <div class="repair-select-top-action">
+              <button
+                type="button"
+                class="repair-select-continue"
+              >
+                Continue
+              </button>
+            </div>
+          `
+          : ""
+      }
+
       <div class="option-section-header repair-option-header">
         <span>Select Repairs</span>
         <h3>What needs to be fixed?</h3>
@@ -363,14 +378,6 @@ export function renderRepairStep(
       </div>
 
       <div id="repair-card-results" class="repair-card-results"></div>
-
-      <button
-        type="button"
-        class="repair-select-continue"
-        ${selectedRepairs.length ? "" : "disabled"}
-      >
-        Continue
-      </button>
     </div>
   `;
 

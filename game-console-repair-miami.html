@@ -134,6 +134,14 @@
   </noscript>
 
   <link
+    rel="preload"
+    as="image"
+    href="/assets/img/service-heroes/game-console-repair-miami.webp"
+    type="image/webp"
+    media="(min-width: 721px)"
+  >
+
+  <link
     rel="icon"
     href="images/logo.svg"
     type="image/svg+xml"
@@ -141,15 +149,15 @@
 
   <link
     rel="stylesheet"
-    href="wizard.css?v=20260727-bottom58"
+    href="wizard.css?v=20260729-services03"
   >
 </head>
 
-<body>
+<body class="service-detail-page game-console-page">
   <div id="site-header-root"></div>
 
   <main>
-    <section class="landing-hero warranty-hero">
+    <section class="landing-hero warranty-hero service-visual-hero">
       <div class="landing-hero-inner">
         <div class="hero-glass-panel">
           <div class="hero-status-pill">
@@ -159,13 +167,12 @@
           <h1>Game Console Repair in Miami</h1>
 
           <p>
-            Professional repair for PlayStation, Xbox, Nintendo Switch,
-            and other supported gaming devices with damaged HDMI ports,
-            no-signal symptoms, overheating, no power, startup failures,
-            disc-drive problems, USB-C charging issues, damaged screens,
-            or liquid exposure. Submit the exact console model and
-            symptoms so we can review the appropriate repair and service
-            options.
+            Game console repair in Miami for PlayStation, Xbox,
+            Nintendo Switch, and other supported systems with HDMI,
+            no-signal, overheating, no-power, disc-drive, USB-C,
+            display, or liquid-damage symptoms. Your exact console and
+            condition are reviewed before repair options, pricing, and
+            service details are confirmed.
           </p>
 
           <div class="landing-actions">
@@ -191,6 +198,28 @@
             <span>&#128203; Multi-Point Inspection</span>
           </div>
         </div>
+
+        <figure class="service-hero-media" data-service-parallax>
+          <picture>
+            <source
+              media="(max-width: 720px)"
+              srcset="/assets/img/service-heroes/game-console-repair-miami-720.webp"
+            >
+
+            <img
+              src="/assets/img/service-heroes/game-console-repair-miami.webp"
+              alt="Game console repair workstation with an opened PlayStation console, controller, and precision tools"
+              width="1402"
+              height="1122"
+              decoding="async"
+              fetchpriority="high"
+            >
+          </picture>
+
+          <figcaption class="service-hero-caption">
+            Console diagnostics and precision repair with clear approval before paid work begins.
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -1178,6 +1207,11 @@
 
   <script
     src="/assets/js/serviceHours.js?v=20260719-1"
+    defer
+  ></script>
+
+  <script
+    src="/assets/js/servicePage.js?v=20260729-2"
     defer
   ></script>
 

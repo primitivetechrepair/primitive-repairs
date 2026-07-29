@@ -13,7 +13,7 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260729-1";
+} from "./renderer.js?v=20260729-2";
 
 import { renderAppointmentStep } from "./appointments.js?v=20260729-1";
 import {
@@ -665,6 +665,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const exists = state.repairs.some((item) => {
             return item.repair === repair.repair;
           });
+          const shouldRevealContinue =
+            !exists && state.repairs.length === 0;
 
           if (exists) {
             state.repairs = state.repairs.filter((item) => {
@@ -681,7 +683,7 @@ document.addEventListener("DOMContentLoaded", () => {
           state.appointmentSelected = false;
           state.reviewViewed = false;
 
-          renderWizard();
+          renderWizard(shouldRevealContinue);
         },
         () => {
           state.repair = state.repairs[0] || null;
