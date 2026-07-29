@@ -6991,21 +6991,6 @@ color: #1d1e22 !important;
   width: 100% !important;
   text-align: center !important;
 }
-#pr-selection-cards.blueprint-selection-module #card-device {
-  --ape-art-url: url("assets/img/ape-theme/ape-device.webp");
-}
-#pr-selection-cards.blueprint-selection-module #card-brand {
-  --ape-art-url: url("assets/img/ape-theme/ape-brand.webp");
-}
-#pr-selection-cards.blueprint-selection-module #card-series {
-  --ape-art-url: url("assets/img/ape-theme/ape-series.webp");
-}
-#pr-selection-cards.blueprint-selection-module #card-model {
-  --ape-art-url: url("assets/img/ape-theme/ape-model.webp");
-}
-#pr-selection-cards.blueprint-selection-module #card-repair {
-  --ape-art-url: url("assets/img/ape-theme/ape-repair.webp");
-}
 #pr-selection-cards.blueprint-selection-module .ape-cell-art {
   position: absolute;
   inset: 31px 8px 34px;
