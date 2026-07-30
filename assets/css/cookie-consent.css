@@ -446,3 +446,321 @@ span[aria-hidden="true"]::after {
   display: grid;
   pointer-events: auto;
 }
+
+/* =========================================================
+   PREMIUM WHITE-GLOVE PRESENTATION
+========================================================= */
+
+.primitive-cookie-banner {
+  bottom: 18px;
+  width: min(calc(100% - 32px), 1080px);
+  gap: 26px;
+  padding: 25px 27px 25px 30px;
+  color: #f4f8fb;
+  background:
+    radial-gradient(circle at 8% 0%, rgba(102, 252, 241, 0.1), transparent 23rem),
+    linear-gradient(135deg, rgba(19, 27, 35, 0.99), rgba(9, 14, 20, 0.99));
+  border: 1px solid rgba(210, 231, 245, 0.16);
+  border-radius: 22px;
+  box-shadow:
+    0 26px 80px rgba(0, 0, 0, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.055);
+  overflow: hidden;
+}
+
+.primitive-cookie-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, transparent, #66fcf1 24%, #66fcf1 76%, transparent);
+  box-shadow: 0 0 22px rgba(102, 252, 241, 0.5);
+}
+
+.primitive-cookie-eyebrow {
+  width: fit-content;
+  margin-bottom: 9px;
+  padding-left: 11px;
+  color: #66fcf1;
+  border-left: 2px solid #66fcf1;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: 0.69rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.primitive-cookie-banner h2 {
+  margin-bottom: 7px;
+  color: #fff !important;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: clamp(1.17rem, 2vw, 1.48rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.primitive-cookie-banner p {
+  color: #aab8c5;
+  font-size: 0.91rem;
+  font-weight: 450;
+  line-height: 1.65;
+}
+
+.primitive-cookie-policy-links a {
+  color: #bafff9;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-underline-offset: 4px;
+}
+
+.primitive-cookie-button {
+  min-height: 44px;
+  padding: 11px 16px;
+  color: #e9f3f7;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(210, 231, 245, 0.22);
+  border-radius: 8px;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition:
+    transform 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.primitive-cookie-button:hover {
+  color: #fff;
+  background: rgba(102, 252, 241, 0.07);
+  border-color: rgba(102, 252, 241, 0.55);
+  transform: translateY(-1px);
+}
+
+.primitive-cookie-button-primary {
+  color: #061111;
+  background: #66fcf1;
+  border-color: #66fcf1;
+  box-shadow: 0 9px 24px rgba(102, 252, 241, 0.16);
+}
+
+.primitive-cookie-button-primary:hover {
+  color: #061111;
+  background: #a9fff8;
+  border-color: #a9fff8;
+}
+
+.primitive-cookie-button-text {
+  color: #b8c7d1;
+  background: transparent;
+  border-color: transparent;
+}
+
+.primitive-cookie-button:focus-visible,
+.primitive-cookie-modal-close:focus-visible,
+.primitive-cookie-switch input:focus-visible + span[aria-hidden="true"] {
+  outline: 2px solid #66fcf1;
+  outline-offset: 3px;
+}
+
+.primitive-cookie-modal-backdrop {
+  padding: 22px;
+  background: rgba(3, 7, 11, 0.82);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+
+.primitive-cookie-modal {
+  width: min(100%, 720px);
+  max-height: min(88vh, 820px);
+  color: #f4f8fb;
+  background:
+    radial-gradient(circle at 92% -5%, rgba(102, 252, 241, 0.12), transparent 24rem),
+    linear-gradient(155deg, #151e27 0%, #0c1218 100%);
+  border: 1px solid rgba(210, 231, 245, 0.16);
+  border-radius: 26px;
+  box-shadow:
+    0 34px 100px rgba(0, 0, 0, 0.62),
+    inset 0 1px 0 rgba(255, 255, 255, 0.055);
+}
+
+.primitive-cookie-modal-header {
+  position: relative;
+  padding: 29px 32px 25px;
+  background: transparent;
+  border-bottom: 1px solid rgba(210, 231, 245, 0.12);
+}
+
+.primitive-cookie-modal-header::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, transparent, #66fcf1 25%, #66fcf1 75%, transparent);
+  box-shadow: 0 0 22px rgba(102, 252, 241, 0.52);
+}
+
+.primitive-cookie-modal h2 {
+  color: #fff !important;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: clamp(1.55rem, 3vw, 2.12rem);
+  font-weight: 650;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.primitive-cookie-modal-close {
+  width: 42px;
+  height: 42px;
+  color: #dce8ed;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(210, 231, 245, 0.16);
+  border-radius: 8px;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.primitive-cookie-modal-close:hover {
+  color: #071313;
+  background: #66fcf1;
+  border-color: #66fcf1;
+}
+
+.primitive-cookie-category-list {
+  padding: 20px 32px;
+}
+
+.primitive-cookie-category {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(210, 231, 245, 0.12);
+  border-radius: 12px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.primitive-cookie-category h3,
+.primitive-cookie-category label {
+  color: #f5fbfd;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 650;
+}
+
+.primitive-cookie-category p {
+  color: #93a4b2;
+  font-size: 0.86rem;
+  font-weight: 450;
+  line-height: 1.6;
+}
+
+.primitive-cookie-required {
+  padding: 2px 0 2px 10px;
+  color: #66fcf1;
+  background: transparent;
+  border: 0;
+  border-left: 2px solid #66fcf1;
+  border-radius: 0;
+  font-family: "Space Grotesk", "Manrope", system-ui, sans-serif;
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.095em;
+}
+
+.primitive-cookie-switch > span[aria-hidden="true"] {
+  background: #26323d;
+  border: 1px solid rgba(210, 231, 245, 0.24);
+  border-radius: 7px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.32);
+}
+
+.primitive-cookie-switch > span[aria-hidden="true"]::after {
+  border-radius: 4px;
+  background: #d9e4e9;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.42);
+}
+
+.primitive-cookie-switch input:checked + span[aria-hidden="true"] {
+  background: rgba(102, 252, 241, 0.2);
+  border-color: #66fcf1;
+}
+
+.primitive-cookie-switch input:checked + span[aria-hidden="true"]::after {
+  background: #66fcf1;
+}
+
+.primitive-cookie-modal-actions {
+  padding: 0 32px 28px;
+}
+
+@media (max-width: 760px) {
+  .primitive-cookie-banner {
+    bottom: 12px;
+    width: calc(100% - 24px);
+    gap: 18px;
+    padding: 23px 20px 20px 22px;
+    border-radius: 16px;
+  }
+
+  .primitive-cookie-banner-actions,
+  .primitive-cookie-modal-actions {
+    width: 100%;
+  }
+
+  .primitive-cookie-banner-actions .primitive-cookie-button,
+  .primitive-cookie-modal-actions .primitive-cookie-button {
+    width: 100%;
+  }
+
+  .primitive-cookie-banner-actions .primitive-cookie-button-primary,
+  .primitive-cookie-modal-actions .primitive-cookie-button-primary {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .primitive-cookie-modal-backdrop {
+    align-items: end;
+    padding: 10px;
+  }
+
+  .primitive-cookie-modal {
+    max-height: calc(100dvh - 20px);
+    border-radius: 19px;
+  }
+
+  .primitive-cookie-modal-header {
+    padding: 25px 22px 21px;
+  }
+
+  .primitive-cookie-category-list {
+    padding: 16px 18px;
+  }
+
+  .primitive-cookie-category {
+    gap: 14px;
+    padding: 17px 15px;
+    border-radius: 10px;
+  }
+
+  .primitive-cookie-modal-actions {
+    padding: 0 18px 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .primitive-cookie-banner-actions .primitive-cookie-button-primary,
+  .primitive-cookie-modal-actions .primitive-cookie-button-primary {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .primitive-cookie-banner,
+  .primitive-cookie-button,
+  .primitive-cookie-modal-close,
+  .primitive-cookie-switch > span[aria-hidden="true"],
+  .primitive-cookie-switch > span[aria-hidden="true"]::after {
+    transition-duration: 0.01ms !important;
+  }
+}

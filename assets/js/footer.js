@@ -155,7 +155,7 @@
 
     consentStylesheet.href =
 
-      "/assets/css/cookie-consent.css?v=20260723-2";
+      "/assets/css/cookie-consent.css?v=20260729-premium01";
 
     consentStylesheet.dataset.cookieConsentStyles = "true";
 
