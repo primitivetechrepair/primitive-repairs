@@ -26513,6 +26513,8 @@ html.glass-is-scrolling .site-nav::before {
 
 @media (max-width: 900px) {
   .site-nav {
+    justify-content: flex-start;
+    gap: 10px;
     background:
       radial-gradient(
         circle at 18% -120%,
@@ -26529,10 +26531,17 @@ html.glass-is-scrolling .site-nav::before {
   }
 
   .site-nav-socials {
+    order: 2;
+    margin-left: auto;
     grid-template-columns: repeat(3, 28px);
     gap: 5px;
     padding: 3px;
     border-radius: 11px;
+  }
+
+  .mobile-menu-toggle {
+    order: 3;
+    margin: 0;
   }
 
   .mobile-sticky-booking-bar {
