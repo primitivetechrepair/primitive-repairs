@@ -242,4 +242,62 @@
 
   updateAppointmentDeadlineBanner();
   setInterval(updateAppointmentDeadlineBanner, 1000);
+
+  const glassMotionQuery = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  );
+
+  let glassFrame = 0;
+  let glassIdleTimer = 0;
+  let previousScrollY = window.scrollY;
+
+  function updateGlassReflection() {
+    const scrollY = Math.max(0, window.scrollY);
+    const scrollDelta = scrollY - previousScrollY;
+    const reflectionPosition =
+      ((scrollY * 0.18 + (scrollDelta >= 0 ? 12 : -12)) % 150) - 25;
+
+    document.documentElement.style.setProperty(
+      "--glass-reflection-x",
+      `${reflectionPosition.toFixed(2)}%`
+    );
+
+    document.documentElement.style.setProperty(
+      "--glass-reflection-tilt",
+      scrollDelta >= 0 ? "112deg" : "68deg"
+    );
+
+    document.documentElement.classList.toggle(
+      "glass-has-scrolled",
+      scrollY > 12
+    );
+
+    previousScrollY = scrollY;
+    glassFrame = 0;
+  }
+
+  function handleGlassScroll() {
+    if (glassMotionQuery.matches) {
+      document.documentElement.classList.toggle(
+        "glass-has-scrolled",
+        window.scrollY > 12
+      );
+
+      return;
+    }
+
+    document.documentElement.classList.add("glass-is-scrolling");
+
+    window.clearTimeout(glassIdleTimer);
+    glassIdleTimer = window.setTimeout(() => {
+      document.documentElement.classList.remove("glass-is-scrolling");
+    }, 180);
+
+    if (!glassFrame) {
+      glassFrame = window.requestAnimationFrame(updateGlassReflection);
+    }
+  }
+
+  updateGlassReflection();
+  window.addEventListener("scroll", handleGlassScroll, { passive: true });
 })();
