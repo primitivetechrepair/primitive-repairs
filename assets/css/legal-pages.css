@@ -7,7 +7,7 @@
   --legal-accent: #66fcf1;
   margin: 0;
   width: 100%;
-  padding: 0 !important;
+  padding: calc(var(--site-header-height) + 56px) 0 0 !important;
   color: var(--legal-text);
   background:
     radial-gradient(circle at 8% 4%, rgba(70, 144, 168, 0.16), transparent 31rem),
@@ -18,7 +18,7 @@
 .premium-legal-page .legal-page {
   width: min(calc(100% - 36px), 1225px);
   margin: 0 auto;
-  padding: clamp(34px, 5vw, 72px) 0 clamp(68px, 8vw, 110px);
+  padding: clamp(28px, 3vw, 42px) 0 clamp(68px, 8vw, 110px);
 }
 
 .premium-legal-page .legal-hero {
@@ -282,7 +282,7 @@
 @media (max-width: 760px) {
   .premium-legal-page .legal-page {
     width: min(calc(100% - 24px), 1225px);
-    padding-top: 22px;
+    padding-top: 28px;
     padding-bottom: 72px;
   }
 

@@ -49,6 +49,43 @@
         </a>
       </nav>
 
+      <nav class="site-nav-socials" aria-label="Social media">
+        <a
+          href="https://www.facebook.com/primitiverepairs.mobileservices"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Primitive Tech Repairs on Facebook"
+          title="Facebook"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M14.2 8.3V6.7c0-.8.5-1 1-1h1.9V2.4c-.3 0-1.5-.1-2.9-.1-2.9 0-4.9 1.8-4.9 5v1H6v3.7h3.3v9.6h4v-9.6h3.1l.5-3.7h-3.6z"></path>
+          </svg>
+        </a>
+
+        <a
+          href="https://www.instagram.com/primitivetechrepair"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Primitive Tech Repairs on Instagram"
+          title="Instagram"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M7.8 2.5h8.4c2.9 0 5.3 2.4 5.3 5.3v8.4c0 2.9-2.4 5.3-5.3 5.3H7.8c-2.9 0-5.3-2.4-5.3-5.3V7.8c0-2.9 2.4-5.3 5.3-5.3zm0 3.1c-1.2 0-2.2 1-2.2 2.2v8.4c0 1.2 1 2.2 2.2 2.2h8.4c1.2 0 2.2-1 2.2-2.2V7.8c0-1.2-1-2.2-2.2-2.2H7.8zm4.2 2.7a3.7 3.7 0 1 1 0 7.4 3.7 3.7 0 0 1 0-7.4zm0 2.4a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6zm4.1-2.7a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8z"></path>
+          </svg>
+        </a>
+
+        <a
+          href="#"
+          aria-label="Primitive Tech Repairs on TikTok"
+          title="TikTok"
+          data-social-placeholder
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M16.6 2.5c.3 2.4 1.6 3.8 4 4v3.5c-1.5.1-2.8-.3-4-1.1v5.9c0 4.5-4.9 7.3-8.8 4.9-4-2.4-3.3-8.6 1.2-10 .9-.3 1.8-.3 2.8-.1v3.7c-.4-.1-.8-.1-1.2 0-2 .4-2.6 3.1-.9 4.2 1.5 1 3.5-.1 3.5-1.9V2.5h3.4z"></path>
+          </svg>
+        </a>
+      </nav>
+
       <button
         type="button"
         class="mobile-menu-toggle"
@@ -300,4 +337,10 @@
 
   updateGlassReflection();
   window.addEventListener("scroll", handleGlassScroll, { passive: true });
+
+  headerRoot
+    .querySelector("[data-social-placeholder]")
+    ?.addEventListener("click", (event) => {
+      event.preventDefault();
+    });
 })();
