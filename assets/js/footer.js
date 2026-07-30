@@ -115,6 +115,7 @@
                 <a href="/ipad-repair-miami">iPad Repair</a>
                 <a href="/tablet-repair-miami">Tablet Repair</a>
                 <a href="/computer-repair-miami">Computer Repair</a>
+                <a href="/gaming-pc-repair-miami">Gaming PC Services</a>
                 <a href="/game-console-repair-miami">Game Console Repair</a>
                 <a href="/nintendo-switch-repair-miami">Nintendo Switch Repair</a>
                 <a href="/hdmi-port-repair-miami">HDMI Port Repair</a>

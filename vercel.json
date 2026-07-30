@@ -68,6 +68,11 @@
       "permanent": true
     },
     {
+      "source": "/gaming-pc-repair-miami.html",
+      "destination": "/gaming-pc-repair-miami",
+      "permanent": true
+    },
+    {
       "source": "/water-damage-repair-miami.html",
       "destination": "/water-damage-repair-miami",
       "permanent": true
@@ -136,6 +141,10 @@
     {
       "source": "/computer-repair-miami",
       "destination": "/computer-repair-miami.html"
+    },
+    {
+      "source": "/gaming-pc-repair-miami",
+      "destination": "/gaming-pc-repair-miami.html"
     },
     {
       "source": "/water-damage-repair-miami",
