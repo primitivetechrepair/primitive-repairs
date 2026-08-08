@@ -411,16 +411,20 @@
             "OneTouch Idol 2",
             "OneTouch Idol 3",
             "OneTouch Idol 4",
-            "OneTouch Idol 5"
+            "OneTouch Idol 5",
+            "Alcatel Idol 4S"
         ],
         "A Series": [
             "Alcatel A3",
             "Alcatel A5 LED",
-            "Alcatel A7"
+            "Alcatel A7",
+            "Alcatel A30",
+            "Alcatel A50"
         ],
         "U Series": [
             "Alcatel U3",
-            "Alcatel U5"
+            "Alcatel U5",
+            "Alcatel U50"
         ],
         "Pixi Series": [
             "Pixi 3 (3.5)",
@@ -454,6 +458,29 @@
             "Alcatel 1S",
             "Alcatel 1V",
             "Alcatel 1X"
+        ],
+        "7 Series": [
+            "Alcatel 7"
+        ],
+        "Fierce Series": [
+            "OneTouch Fierce XL",
+            "Alcatel Fierce A30",
+            "Alcatel Fierce A50"
+        ],
+        "Named Models": [
+            "Alcatel Apprise",
+            "Alcatel Avalon V",
+            "Alcatel Axel",
+            "Alcatel Cameox",
+            "Alcatel Glimpse",
+            "Alcatel Insight",
+            "Alcatel Lume",
+            "Alcatel Lumos",
+            "Alcatel Onyx",
+            "Alcatel PulseMix",
+            "Alcatel Tetra",
+            "Alcatel Verso",
+            "Alcatel Volta"
         ]
     },
     "ASUS": {
