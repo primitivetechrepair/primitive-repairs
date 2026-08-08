@@ -24937,9 +24937,47 @@ html body.homepage-premium-page
   ) {
   border-color: var(--flow-border);
   border-radius: 7px;
-  background: #0d1219;
+  background: #1d1e22;
   box-shadow: none;
-  color: var(--flow-ink);
+  color: #d4d4dc;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .customer-field input,
+    .customer-field textarea,
+    .savings-code-input-wrap input
+  ) {
+  color: #d4d4dc !important;
+  -webkit-text-fill-color: #d4d4dc !important;
+  caret-color: var(--flow-accent);
+  color-scheme: dark;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(
+    .customer-field input,
+    .customer-field textarea,
+    .savings-code-input-wrap input
+  )::placeholder {
+  color: rgba(212, 212, 220, 0.58) !important;
+  opacity: 1;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-field input, .savings-code-input-wrap input):-webkit-autofill,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-field input, .savings-code-input-wrap input):-webkit-autofill:hover,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  :is(.customer-field input, .savings-code-input-wrap input):-webkit-autofill:focus {
+  -webkit-text-fill-color: #d4d4dc !important;
+  caret-color: var(--flow-accent);
+  box-shadow: 0 0 0 1000px #1d1e22 inset !important;
 }
 
 html body.homepage-premium-page
