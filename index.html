@@ -24,6 +24,8 @@
     content="index,follow,max-image-preview:large"
   >
 
+  <meta name="theme-color" content="#0d1219">
+
   <meta
     property="og:title"
     content="Mobile Phone Repair Miami | Primitive Tech Repairs"
@@ -56,12 +58,19 @@
 
   <meta
     property="og:image"
-    content="https://www.primitiverepairs.com/images/logo.svg"
+    content="https://www.primitiverepairs.com/images/hero-repair-van.webp"
+  >
+
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <meta
+    property="og:image:alt"
+    content="Primitive Tech Repairs mobile repair service in Miami"
   >
 
   <meta
     name="twitter:card"
-    content="summary"
+    content="summary_large_image"
   >
 
   <meta
@@ -76,7 +85,12 @@
 
   <meta
     name="twitter:image"
-    content="https://www.primitiverepairs.com/images/logo.svg"
+    content="https://www.primitiverepairs.com/images/hero-repair-van.webp"
+  >
+
+  <meta
+    name="twitter:image:alt"
+    content="Primitive Tech Repairs mobile repair service in Miami"
   >
 
   <script type="application/ld+json">
@@ -99,7 +113,9 @@
         "name": "Primitive Tech Repairs",
         "url": "https://www.primitiverepairs.com/",
         "logo": "https://www.primitiverepairs.com/images/logo.svg",
-        "image": "https://www.primitiverepairs.com/images/logo.svg",
+        "image": "https://www.primitiverepairs.com/images/hero-repair-van.webp",
+        "telephone": "+1-305-907-4308",
+        "priceRange": "$$",
         "description": "Primitive Tech Repairs provides mobile phone, tablet, computer, game console, wearable, smart-device, and electronics repair services in Miami.",
         "areaServed": {
           "@type": "City",
@@ -136,10 +152,18 @@
   >
 </noscript>
 
-<link rel="modulepreload" href="/assets/js/wizard.js?v=20260729-3">
+<link rel="modulepreload" href="/assets/js/wizard.js?v=20260811-1">
+
+<link
+  rel="preload"
+  as="image"
+  href="/images/hero-repair-van.webp"
+  type="image/webp"
+  fetchpriority="high"
+>
 
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="wizard.css?v=20260729-finalflow04">
+<link rel="stylesheet" href="wizard.css?v=20260811-booking01">
 </head>
 <body class="homepage-premium-page">
 
@@ -153,10 +177,8 @@
       <h1>Mobile Phone &amp; Device Repair in Miami</h1>
 
       <p>
-        Mobile repair service for iPhone, Samsung Galaxy, Google Pixel,
-        tablets, computers, game consoles, smartwatches, smart glasses,
-        and other electronics. Choose your device, describe the issue,
-        and select your preferred appointment details for review.
+        Choose your device, tell us what is wrong, and request a convenient
+        repair time. We will confirm the details with you before service begins.
       </p>
 
       <div class="hero-service-highlights">
@@ -167,8 +189,8 @@
       </div>
 
       <div class="landing-actions">
-        <a href="#primitive-wizard-container" class="landing-primary-btn">
-          Start Repair Request
+        <a href="#pr-main" class="landing-primary-btn">
+          Book a Repair
         </a>
 
         <a href="#popular-repair-services" class="landing-secondary-btn">
@@ -205,19 +227,18 @@
 <div id="primitive-wizard-container">
   <div class="pr-header">
     <div class="pr-header-copy">
-      <span class="pr-header-eyebrow">Miami Repair Concierge</span>
-      <h2>Start Your Device Repair</h2>
+      <span class="pr-header-eyebrow">Repair Appointment</span>
+      <h2>Book Your Repair</h2>
 
       <p class="pr-header-subtitle">
-        Select your device and repair details below. Once submitted, we'll review
-        your request and contact you to confirm service.
+        It takes about two minutes. Choose your device, repair, and preferred time.
       </p>
 
-      <p class="pr-header-meta" aria-label="Repair request benefits">
-        <span>Same-day availability</span>
-        <span>1-year repair warranty</span>
-        <span>Secure request</span>
-      </p>
+      <ol class="pr-booking-overview" aria-label="Three steps to request a repair">
+        <li><span>1</span>Choose your device</li>
+        <li><span>2</span>Select the repair</li>
+        <li><span>3</span>Pick a time</li>
+      </ol>
     </div>
 
     <div class="pr-progress-row" aria-hidden="true"></div>
@@ -236,10 +257,10 @@
   </div>
   <div class="blueprint-profile-header">
     <div>
-      <span class="blueprint-profile-kicker">01 / Repair Blueprint</span>
-      <strong>Build the repair request by completing each field</strong>
+      <span class="blueprint-profile-kicker">Your Selections</span>
+      <strong>Complete the highlighted step below</strong>
     </div>
-    <span class="blueprint-profile-status" aria-hidden="true">5 required selections</span>
+    <span class="blueprint-profile-status" aria-live="polite">Step 1 of 5</span>
   </div>
 
   <div class="blueprint-profile-grid">
@@ -282,7 +303,7 @@
 
   </div>
 
-  <main id="pr-main" aria-label="Repair request wizard">
+  <main id="pr-main" aria-label="Repair appointment form" tabindex="-1">
 
 
 <!-- Steps area dynamically rendered by JS -->
@@ -531,8 +552,8 @@
         Your submission starts a review—not a charge. Pricing and service details
         are confirmed with you first.
       </p>
-      <a href="#primitive-wizard-container">
-        Start Repair Request
+      <a href="#pr-main">
+        Book a Repair
         <span aria-hidden="true">&rarr;</span>
       </a>
     </aside>
@@ -613,7 +634,7 @@
 
   <div class="device-catalog-footer">
     <span>Do not see your device or know which repair to choose?</span>
-    <a href="#primitive-wizard-container">
+    <a href="#pr-main">
       Tell us about it
       <span aria-hidden="true">&rarr;</span>
     </a>
@@ -716,7 +737,7 @@
         <div><strong>Mail-in</strong><span>Instructions provided after request review.</span></div>
       </div>
 
-      <a href="#primitive-wizard-container" class="mobile-service-cta">
+      <a href="#pr-main" class="mobile-service-cta">
         Check service options
         <span aria-hidden="true">&rarr;</span>
       </a>
@@ -839,9 +860,9 @@
   </div>
 </template>
 
-<script type="module" src="/assets/js/wizard.js?v=20260729-3"></script>
-<script src="/assets/js/header.js?v=20260723-2" defer></script>
-<script src="/assets/js/footer.js?v=20260728-2" defer></script>
+<script type="module" src="/assets/js/wizard.js?v=20260811-1"></script>
+<script src="/assets/js/header.js?v=20260811-1" defer></script>
+<script src="/assets/js/footer.js?v=20260811-1" defer></script>
 <script src="/assets/js/mobileNav.js?v=20260614-1" defer></script>
 <script src="/assets/js/serviceHours.js?v=20260719-1" defer></script>
   <script src="/assets/js/emailOfferPopup.js?v=20260726-1"></script>

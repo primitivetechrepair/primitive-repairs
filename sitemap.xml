@@ -3,16 +3,19 @@
 
   <url>
     <loc>https://www.primitiverepairs.com/</loc>
+    <lastmod>2026-08-12</lastmod>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.primitiverepairs.com/warranty</loc>
+    <lastmod>2026-08-12</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.primitiverepairs.com/faq</loc>
+    <lastmod>2026-08-12</lastmod>
     <priority>0.8</priority>
   </url>
 
@@ -139,13 +142,16 @@
 
   <url>
     <loc>https://www.primitiverepairs.com/contact-us</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
 
   <url>
     <loc>https://www.primitiverepairs.com/cookie-policy</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
 
   <url>
     <loc>https://www.primitiverepairs.com/privacy-policy</loc>
+    <lastmod>2026-08-12</lastmod>
   </url>
 </urlset>

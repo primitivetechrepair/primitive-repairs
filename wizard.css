@@ -24994,6 +24994,158 @@ html body.homepage-premium-page
   box-shadow: 0 0 0 1000px #1d1e22 inset !important;
 }
 
+/* Simplified booking flow: concise overview, compact progress, reliable anchors. */
+html body.homepage-premium-page #pr-main {
+  scroll-margin-top: 0;
+  outline: 0;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .pr-booking-overview {
+  width: min(680px, 100%);
+  margin: 22px auto 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 212, 220, 0.13);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  list-style: none;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .pr-booking-overview li {
+  min-height: 54px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: rgba(9, 14, 21, 0.64);
+  color: rgba(241, 247, 255, 0.78);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .pr-booking-overview li span {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border: 1px solid rgba(102, 252, 241, 0.5);
+  border-radius: 50%;
+  color: #66fcf1;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .blueprint-profile-header {
+  min-height: 58px;
+  padding-block: 13px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .blueprint-profile-grid {
+  gap: 8px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  overflow: visible !important;
+  clip-path: none !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.blueprint-selection-module
+  > .blueprint-profile-grid
+  > .pr-progress-card {
+  border-radius: 10px !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .pr-progress-card {
+  min-height: 108px;
+  padding: 12px 10px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .pr-progress-card .card-img {
+  width: 42px;
+  height: 42px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .option-section-header {
+  margin-bottom: 26px;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .option-section-header > p {
+  max-width: 560px;
+}
+
+@media (max-width: 700px) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .pr-booking-overview {
+    grid-template-columns: 1fr;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .pr-booking-overview li {
+    min-height: 43px;
+    justify-content: flex-start;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .blueprint-profile-header {
+    align-items: flex-start;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.blueprint-selection-module
+    > .blueprint-profile-grid {
+    grid-template-columns: repeat(5, minmax(118px, 1fr)) !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    clip-path: none !important;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .pr-progress-card {
+    min-height: 102px;
+    scroll-snap-align: start;
+  }
+}
+
 html body.homepage-premium-page
   #primitive-wizard-container
   :is(.customer-field input, .customer-field textarea):focus {

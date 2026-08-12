@@ -7,7 +7,6 @@ import {
   renderModelStep,
   renderRepairStep,
   renderRepairDetailsStep,
-  renderRepairInfoStep,
   renderProtectionUpsellStep,
   renderSelectionCards,
   renderSuccessStep,
@@ -107,13 +106,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function scrollWizardStepIntoView() {
-    if (!stepsArea) return;
+    const target = document.getElementById("pr-main") || stepsArea;
+
+    if (!target) return;
 
     requestAnimationFrame(() => {
-      stepsArea.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+      const targetTop = window.scrollY + target.getBoundingClientRect().top;
+      const offset = window.matchMedia("(max-width: 760px)").matches
+        ? 162
+        : 178;
+
+      window.scrollTo({
+        top: Math.max(0, targetTop - offset),
+        behavior: "smooth"
       });
+
+      window.setTimeout(() => {
+        target.focus?.({ preventScroll: true });
+      }, 420);
     });
   }
 
@@ -396,97 +406,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function renderLiveRepairSummary() {
-    if (!stepsArea) return;
-
-    const blueprint = document.getElementById("pr-selection-cards");
-    const blueprintGrid = blueprint?.querySelector(".blueprint-profile-grid");
     document
       .querySelectorAll(".wizard-live-summary")
       .forEach((summary) => summary.remove());
-
-    const summaryItems = [
-      {
-        label: "Device",
-        value: state.device
-      },
-      {
-        label: "Brand",
-        value: state.brand
-      },
-      {
-        label: "Series",
-        value: state.series
-      },
-      {
-        label: "Model",
-        value: getSummaryText(state.model)
-      },
-      {
-        label: "Repair",
-        value: getRepairSummaryText()
-      },
-      {
-        label: "Repair Count",
-        value: getRepairCountSummaryText()
-      },
-      {
-        label: "Estimated Time",
-        value: getRepairTimeSummaryText()
-      },
-      {
-        label: "Appointment",
-        value: getAppointmentSummaryText()
-      },
-      {
-        label: "Warranty",
-        value: getWarrantySummaryText()
-      },
-      {
-        label: "Protection",
-        value: getProtectionAddOnSummaryText()
-      },
-      {
-        label: "After-Hours Fee",
-        value: getAfterHoursSummaryText(),
-        tone: "warning"
-      }
-    ].filter((item) => item.value);
-
-    if (!summaryItems.length) return;
-
-    const summaryCard = document.createElement("section");
-    summaryCard.className = "wizard-live-summary";
-    summaryCard.setAttribute("aria-label", "Repair request summary");
-
-    summaryCard.innerHTML = `
-      <div class="wizard-live-summary-header">
-        <span>Repair Request Summary</span>
-        <strong>${summaryItems.length} detail${summaryItems.length === 1 ? "" : "s"} selected</strong>
-      </div>
-
-      <div class="wizard-live-summary-grid">
-        ${summaryItems
-          .map((item) => {
-            return `
-              <div class="wizard-live-summary-item${item.tone ? ` is-${item.tone}` : ""}">
-                <span>${escapeSummaryValue(item.label)}</span>
-                <strong>${escapeSummaryValue(item.value)}</strong>
-              </div>
-            `;
-          })
-          .join("")}
-      </div>
-    `;
-
-    if (blueprintGrid) {
-
-      blueprintGrid.before(summaryCard);
-      return;
-
-    }
-
-
-    stepsArea.prepend(summaryCard);
   }
 
   function renderFilePreviews() {
@@ -712,28 +634,9 @@ document.addEventListener("DOMContentLoaded", () => {
         (details) => {
           state.repairDetails = details;
           state.repairDetailsViewed = true;
-          state.repairInfoViewed = false;
+          state.repairInfoViewed = true;
           state.protectionViewed = false;
           state.addOns = [];
-          renderWizard(true);
-        }
-      );
-
-      renderLiveRepairSummary();
-
-      if (shouldScroll) {
-        scrollWizardStepIntoView();
-      }
-
-      return;
-    }
-
-    if (!state.repairInfoViewed) {
-      renderRepairInfoStep(
-        stepsArea,
-        state.repairs.length ? state.repairs : state.repair,
-        () => {
-          state.repairInfoViewed = true;
           renderWizard(true);
         }
       );

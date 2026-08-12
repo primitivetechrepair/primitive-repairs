@@ -19,7 +19,7 @@
           </button>
 
           <div class="nav-dropdown-menu">
-            <a href="/#primitive-wizard-container">Start Repair Request</a>
+            <a href="/#pr-main">Book a Repair</a>
             <a href="/#how-it-works">How It Works</a>
             <a href="/#repair-services">Supported Devices</a>
             <a href="/phone-repair-miami">Phone Repair</a>
@@ -44,7 +44,7 @@
           <span>Coming Soon</span>
         </a>
 
-        <a href="/#primitive-wizard-container" class="nav-cta">
+        <a href="/#pr-main" class="nav-cta">
           Start Repair Request
         </a>
       </nav>
@@ -134,7 +134,7 @@
       </div>
 
       <nav class="mobile-nav-links" aria-label="Mobile navigation">
-        <a href="/#primitive-wizard-container">Start Repair Request</a>
+        <a href="/#pr-main">Book a Repair</a>
         <a href="/#how-it-works">How It Works</a>
         <a href="/#repair-services">Supported Devices</a>
         <a href="/phone-repair-miami">Phone Repair</a>
@@ -160,12 +160,12 @@
 
       <div class="mobile-nav-footer">
         <span>Need help?</span>
-        <a href="/#primitive-wizard-container">Start a repair request</a>
+        <a href="/#pr-main">Book a repair</a>
       </div>
     </aside>
 
     <div class="mobile-sticky-booking-bar" id="mobile-sticky-booking-bar" aria-label="Quick repair actions">
-      <a href="/#primitive-wizard-container" class="mobile-sticky-booking-primary">
+      <a href="/#pr-main" class="mobile-sticky-booking-primary">
         <svg
           class="mobile-sticky-booking-icon"
           viewBox="0 0 24 24"
@@ -337,6 +337,78 @@
 
   updateGlassReflection();
   window.addEventListener("scroll", handleGlassScroll, { passive: true });
+
+  function focusRepairBooking(event) {
+    const link = event.target.closest(
+      'a[href="#primitive-wizard-container"], a[href="#pr-main"], a[href="/#primitive-wizard-container"], a[href="/#pr-main"]'
+    );
+
+    if (!link) return;
+
+    const isHomePage =
+      window.location.pathname === "/" ||
+      window.location.pathname.endsWith("/index.html");
+
+    if (!isHomePage) return;
+
+    const bookingTarget = document.getElementById("pr-main");
+
+    if (!bookingTarget) return;
+
+    event.preventDefault();
+    window.history.replaceState(null, "", "#pr-main");
+    const scrollToRepairBooking = (behavior = "smooth") => {
+      const targetTop =
+        window.scrollY + bookingTarget.getBoundingClientRect().top;
+      const offset = window.matchMedia("(max-width: 760px)").matches
+        ? 162
+        : 178;
+
+      window.scrollTo({
+        top: Math.max(0, targetTop - offset),
+        behavior
+      });
+    };
+
+    scrollToRepairBooking();
+
+    window.setTimeout(() => {
+      bookingTarget.focus({ preventScroll: true });
+    }, 420);
+  }
+
+  document.addEventListener("click", focusRepairBooking);
+
+  if (
+    window.location.hash === "#primitive-wizard-container" ||
+    window.location.hash === "#pr-main"
+  ) {
+    const revealRepairBooking = () => {
+      const bookingTarget = document.getElementById("pr-main");
+
+      if (!bookingTarget) return;
+
+      window.history.replaceState(null, "", "#pr-main");
+      const targetTop =
+        window.scrollY + bookingTarget.getBoundingClientRect().top;
+      const offset = window.matchMedia("(max-width: 760px)").matches
+        ? 162
+        : 178;
+
+      window.scrollTo({
+        top: Math.max(0, targetTop - offset),
+        behavior: "auto"
+      });
+      bookingTarget.focus({ preventScroll: true });
+    };
+
+    window.requestAnimationFrame(revealRepairBooking);
+    window.addEventListener("load", revealRepairBooking, { once: true });
+
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(revealRepairBooking);
+    }
+  }
 
   headerRoot
     .querySelector("[data-social-placeholder]")

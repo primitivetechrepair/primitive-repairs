@@ -116,9 +116,9 @@ export function renderDeviceStep(container, devices, onSelect) {
 
   container.innerHTML = `
     <div class="option-section-header">
-      <span>Select Device</span>
-      <h3>Choose your device type.</h3>
-      <p>Select the type of device you need repaired so we can show the correct brands and repair options.</p>
+      <span>Step 1 of 5</span>
+      <h3>What needs repair?</h3>
+      <p>Choose a device type.</p>
     </div>
 
     <div id="device-card-results" class="device-card-results"></div>
@@ -142,9 +142,9 @@ export function renderBrandStep(container, brands, onSelect) {
 
   container.innerHTML = `
     <div class="option-section-header brand-option-header">
-      <span>Select Brand</span>
-      <h3>Choose your ${selectedDevice} brand.</h3>
-      <p>Select the brand so we can match your device with the right repair catalog.</p>
+      <span>Step 2 of 5</span>
+      <h3>Choose the brand.</h3>
+      <p>Select the brand.</p>
     </div>
 
     <div id="brand-card-results" class="brand-card-results"></div>
@@ -169,9 +169,9 @@ export function renderSeriesStep(container, seriesList, onSelect) {
 
   container.innerHTML = `
     <div class="option-section-header">
-      <span>Select Series</span>
-      <h3>Choose your ${selectedBrand} series.</h3>
-      <p>Select the device series so we can narrow down the exact model.</p>
+      <span>Step 3 of 5</span>
+      <h3>Choose the series.</h3>
+      <p>Select the closest product family.</p>
     </div>
 
     <div id="series-card-results" class="series-card-results"></div>
@@ -196,9 +196,9 @@ export function renderModelStep(container, models, onSelect) {
 
   container.innerHTML = `
     <div class="option-section-header model-option-header">
-      <span>Select Model</span>
-      <h3>Choose your ${selectedBrand} model.</h3>
-      <p>Search or select the exact model so we can match the right repair options.</p>
+      <span>Step 4 of 5</span>
+      <h3>Choose the model.</h3>
+      <p>Search or select your exact ${selectedBrand} model.</p>
     </div>
 
     <div class="model-search-panel">
@@ -356,7 +356,7 @@ export function renderRepairStep(
                 type="button"
                 class="repair-select-continue"
               >
-                Continue
+                Continue to Details
               </button>
             </div>
           `
@@ -364,9 +364,9 @@ export function renderRepairStep(
       }
 
       <div class="option-section-header repair-option-header">
-        <span>Select Repairs</span>
-        <h3>What needs to be fixed?</h3>
-        <p>Choose one or more repairs needed for your device.</p>
+        <span>Step 5 of 5</span>
+        <h3>What is wrong?</h3>
+        <p>Select one or more repairs. Not sure? Choose Diagnostic.</p>
       </div>
 
       <div class="repair-selected-summary">
@@ -566,9 +566,9 @@ export function renderRepairDetailsStep(container, selectedRepairs = [], repairD
   container.innerHTML = `
     <section class="repair-details-panel">
       <div class="option-section-header repair-details-option-header">
-        <span>Repair Details</span>
-        <h3>Add issue details.</h3>
-        <p>Add anything that helps us understand the problem before your appointment.</p>
+        <span>Optional Details</span>
+        <h3>Anything we should know?</h3>
+        <p>Add a short note, or continue without one.</p>
       </div>
 
       <div class="repair-details-list">
@@ -596,7 +596,7 @@ export function renderRepairDetailsStep(container, selectedRepairs = [], repairD
 
       <div class="repair-details-actions">
         <button type="button" class="repair-details-continue">
-          Continue to Repair Info
+          Continue to Appointment
         </button>
       </div>
     </section>
@@ -932,10 +932,19 @@ export function renderSelectionCards(onChange) {
   const progressPercent = Math.round((completeStepCount / steps.length) * 100);
   const progressBar = document.getElementById("pr-progress-bar");
   const selectionCards = document.getElementById("pr-selection-cards");
+  const selectionStatus = selectionCards?.querySelector(
+    ".blueprint-profile-status"
+  );
 
   if (selectionCards) {
     selectionCards.dataset.completedSteps = `${completeStepCount}`;
     selectionCards.dataset.totalSteps = `${steps.length}`;
+  }
+
+  if (selectionStatus) {
+    selectionStatus.textContent = completeStepCount === steps.length
+      ? "Device details complete"
+      : `Step ${completeStepCount + 1} of ${steps.length}`;
   }
 
   if (progressBar) {

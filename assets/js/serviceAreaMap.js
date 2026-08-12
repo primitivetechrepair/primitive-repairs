@@ -117,7 +117,7 @@
             </button>
 
             <a
-              href="/#primitive-wizard-container"
+              href="/#pr-main"
               class="service-area-modal-primary"
             >
               Start Repair Request

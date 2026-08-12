@@ -154,8 +154,8 @@ export function renderAppointmentStep(container, onContinue) {
   <section class="appointment-panel">
     <div class="option-section-header appointment-option-header">
       <span>Appointment</span>
-      <h3>Choose your service and time.</h3>
-      <p>Select a service option, preferred date, and arrival window. Appointment availability is confirmed by text after your request is reviewed.</p>
+      <h3>When should we help?</h3>
+      <p>Choose a service option, date, and preferred time. We will confirm availability by text.</p>
     </div>
 
     <div class="appointment-section">

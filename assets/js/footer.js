@@ -26,8 +26,8 @@
 
           <div class="site-footer-action">
             <span>Ready when you are</span>
-            <a href="/#primitive-wizard-container">
-              Start Repair Request
+            <a href="/#pr-main">
+              Book a Repair
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h14M13 6l6 6-6 6"></path>
               </svg>
@@ -67,7 +67,7 @@
             <h4 class="site-footer-link-title">Information</h4>
 
             <nav class="site-footer-links" aria-label="Footer information links">
-  <a href="/#primitive-wizard-container">Start Repair Request</a>
+  <a href="/#pr-main">Book a Repair</a>
   <a href="/#how-it-works">How It Works</a>
   <a href="/#repair-services">Supported Devices</a>
   <a href="/warranty">Warranty Support</a>
