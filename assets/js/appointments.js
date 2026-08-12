@@ -169,13 +169,14 @@ export function renderAppointmentStep(container, onContinue) {
       <div class="appointment-section">
   <h4>02 / Preferred Date</h4>
 
-  <div class="appointment-date-field">
+  <div class="appointment-date-field ${state.appointment.date ? "has-date" : "is-empty"}">
   <input
     type="date"
     class="appointment-date-input"
     id="appointment-date"
     min="${getMinDateValue()}"
     value="${state.appointment.date || ""}"
+    placeholder="Select a date"
     required
     aria-label="Preferred date"
     aria-describedby="appointment-date-help"
@@ -252,6 +253,13 @@ export function renderAppointmentStep(container, onContinue) {
   if (dateInput) {
     dateInput.addEventListener("change", () => {
       state.appointment.date = dateInput.value;
+
+      const dateField = dateInput.closest(".appointment-date-field");
+
+      if (dateField) {
+        dateField.classList.toggle("is-empty", !dateInput.value);
+        dateField.classList.toggle("has-date", Boolean(dateInput.value));
+      }
 
       const dateHelp = container.querySelector(
         "#appointment-date-help"

@@ -24416,6 +24416,24 @@ html body.homepage-premium-page
   text-align: left;
 }
 
+@media (max-width: 760px) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-date-field.is-empty::before {
+    content: "Select a date";
+    left: 18px;
+    top: 27px;
+    transform: none;
+    color: #d4d4dc;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 650;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: none;
+  }
+}
+
 html body.homepage-premium-page
   #primitive-wizard-container
   .appointment-time-group {
