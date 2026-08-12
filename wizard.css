@@ -24376,8 +24376,15 @@ html body.homepage-premium-page
 
 html body.homepage-premium-page
   #primitive-wizard-container
-  .appointment-date-input {
+  .appointment-date-control {
+  position: relative;
   width: min(430px, 100%);
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-date-input {
+  width: 100%;
   min-height: 54px;
   margin: 0;
   padding: 0 17px;
@@ -24391,6 +24398,12 @@ html body.homepage-premium-page
   font-weight: 700;
   text-align: left;
   color-scheme: dark;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-date-placeholder {
+  display: none;
 }
 
 html body.homepage-premium-page
@@ -24419,8 +24432,15 @@ html body.homepage-premium-page
 @media (max-width: 760px) {
   html body.homepage-premium-page
     #primitive-wizard-container
+    .appointment-date-control {
+    width: 100%;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
     .appointment-date-input {
-    min-height: 64px;
+    height: 68px;
+    min-height: 68px;
     padding: 0 18px;
   }
 
@@ -24433,14 +24453,20 @@ html body.homepage-premium-page
 
   html body.homepage-premium-page
     #primitive-wizard-container
-    .appointment-date-field.is-empty::before {
-    content: "Select a date";
-    left: 18px;
-    top: 0;
-    height: 64px;
+    .appointment-date-field::before {
+    content: none;
+    display: none;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-date-field.is-empty
+    .appointment-date-placeholder {
+    position: absolute;
+    inset: 0 54px 0 18px;
+    z-index: 2;
     display: flex;
     align-items: center;
-    transform: none;
     color: #d4d4dc;
     font-family: "Manrope", sans-serif;
     font-size: 0.8rem;
@@ -24448,6 +24474,14 @@ html body.homepage-premium-page
     letter-spacing: 0.01em;
     text-align: left;
     text-transform: none;
+    pointer-events: none;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-date-field.has-date
+    .appointment-date-placeholder {
+    display: none;
   }
 }
 

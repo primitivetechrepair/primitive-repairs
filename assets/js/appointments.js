@@ -170,17 +170,19 @@ export function renderAppointmentStep(container, onContinue) {
   <h4>02 / Preferred Date</h4>
 
   <div class="appointment-date-field ${state.appointment.date ? "has-date" : "is-empty"}">
-  <input
-    type="date"
-    class="appointment-date-input"
-    id="appointment-date"
-    min="${getMinDateValue()}"
-    value="${state.appointment.date || ""}"
-    placeholder="Select a date"
-    required
-    aria-label="Preferred date"
-    aria-describedby="appointment-date-help"
-  >
+  <div class="appointment-date-control">
+    <input
+      type="date"
+      class="appointment-date-input"
+      id="appointment-date"
+      min="${getMinDateValue()}"
+      value="${state.appointment.date || ""}"
+      required
+      aria-label="Preferred date"
+      aria-describedby="appointment-date-help"
+    >
+    <span class="appointment-date-placeholder" aria-hidden="true">Select a date</span>
+  </div>
 
   <div
     id="appointment-date-help"
