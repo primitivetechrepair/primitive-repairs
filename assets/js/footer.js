@@ -54,12 +54,12 @@
                 <span>Instagram</span>
               </a>
 
-              <a href="#" aria-label="TikTok">
+              <span class="site-footer-social-placeholder" aria-label="TikTok profile coming soon">
                 <svg class="site-footer-social-icon" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M16.6 2.5c.3 2.4 1.6 3.8 4 4v3.5c-1.5.1-2.8-.3-4-1.1v5.9c0 4.5-4.9 7.3-8.8 4.9-4-2.4-3.3-8.6 1.2-10 .9-.3 1.8-.3 2.8-.1v3.7c-.4-.1-.8-.1-1.2 0-2 .4-2.6 3.1-.9 4.2 1.5 1 3.5-.1 3.5-1.9V2.5h3.4z"></path>
                 </svg>
-                <span>TikTok</span>
-              </a>
+                <span>TikTok <small>Coming Soon</small></span>
+              </span>
             </nav>
           </div>
 

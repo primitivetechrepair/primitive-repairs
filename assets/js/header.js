@@ -29,20 +29,20 @@
           </div>
         </div>
 
-        <a href="#" class="nav-disabled" aria-disabled="true">
+        <span class="nav-disabled" aria-disabled="true">
           Accessories
           <span>Coming Soon</span>
-        </a>
+        </span>
 
-        <a href="#" class="nav-disabled" aria-disabled="true">
+        <span class="nav-disabled" aria-disabled="true">
           Buy a Device
           <span>Coming Soon</span>
-        </a>
+        </span>
 
-        <a href="#" class="nav-disabled" aria-disabled="true">
+        <span class="nav-disabled" aria-disabled="true">
           Tech News
           <span>Coming Soon</span>
-        </a>
+        </span>
 
         <a href="/#pr-main" class="nav-cta">
           Start Repair Request
@@ -74,16 +74,16 @@
           </svg>
         </a>
 
-        <a
-          href="#"
-          aria-label="Primitive Tech Repairs on TikTok"
-          title="TikTok"
-          data-social-placeholder
+        <span
+          class="site-nav-social-placeholder"
+          aria-label="Primitive Tech Repairs TikTok profile coming soon"
+          title="TikTok coming soon"
+          role="img"
         >
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M16.6 2.5c.3 2.4 1.6 3.8 4 4v3.5c-1.5.1-2.8-.3-4-1.1v5.9c0 4.5-4.9 7.3-8.8 4.9-4-2.4-3.3-8.6 1.2-10 .9-.3 1.8-.3 2.8-.1v3.7c-.4-.1-.8-.1-1.2 0-2 .4-2.6 3.1-.9 4.2 1.5 1 3.5-.1 3.5-1.9V2.5h3.4z"></path>
           </svg>
-        </a>
+        </span>
       </nav>
 
       <button
@@ -409,10 +409,4 @@
       document.fonts.ready.then(revealRepairBooking);
     }
   }
-
-  headerRoot
-    .querySelector("[data-social-placeholder]")
-    ?.addEventListener("click", (event) => {
-      event.preventDefault();
-    });
 })();

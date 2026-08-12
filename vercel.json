@@ -8,159 +8,29 @@
       "permanent": true
     },
     {
-      "source": "/warranty.html",
-      "destination": "/warranty",
-      "permanent": true
-    },
-    {
-      "source": "/faq.html",
-      "destination": "/faq",
-      "permanent": true
-    },
-    {
-      "source": "/iphone-repair-miami.html",
-      "destination": "/iphone-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/samsung-repair-miami.html",
-      "destination": "/samsung-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/screen-repair-miami.html",
-      "destination": "/screen-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/battery-replacement-miami.html",
-      "destination": "/battery-replacement-miami",
-      "permanent": true
-    },
-    {
-      "source": "/charging-port-repair-miami.html",
-      "destination": "/charging-port-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/back-glass-repair-miami.html",
-      "destination": "/back-glass-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/camera-repair-miami.html",
-      "destination": "/camera-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/ipad-repair-miami.html",
-      "destination": "/ipad-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/game-console-repair-miami.html",
-      "destination": "/game-console-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/computer-repair-miami.html",
-      "destination": "/computer-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/gaming-pc-repair-miami.html",
-      "destination": "/gaming-pc-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/water-damage-repair-miami.html",
-      "destination": "/water-damage-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/tablet-repair-miami.html",
-      "destination": "/tablet-repair-miami",
-      "permanent": true
-    },
-    {
-      "source": "/privacy-policy.html",
-      "destination": "/privacy-policy",
-      "permanent": true
-    },
-    {
-      "source": "/cookie-policy.html",
-      "destination": "/cookie-policy",
+      "source": "/:page.html",
+      "destination": "/:page",
       "permanent": true
     }
   ],
-  "rewrites": [
+  "headers": [
     {
-      "source": "/warranty",
-      "destination": "/warranty.html"
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     },
     {
-      "source": "/faq",
-      "destination": "/faq.html"
-    },
-    {
-      "source": "/iphone-repair-miami",
-      "destination": "/iphone-repair-miami.html"
-    },
-    {
-      "source": "/samsung-repair-miami",
-      "destination": "/samsung-repair-miami.html"
-    },
-    {
-      "source": "/screen-repair-miami",
-      "destination": "/screen-repair-miami.html"
-    },
-    {
-      "source": "/battery-replacement-miami",
-      "destination": "/battery-replacement-miami.html"
-    },
-    {
-      "source": "/charging-port-repair-miami",
-      "destination": "/charging-port-repair-miami.html"
-    },
-    {
-      "source": "/back-glass-repair-miami",
-      "destination": "/back-glass-repair-miami.html"
-    },
-    {
-      "source": "/camera-repair-miami",
-      "destination": "/camera-repair-miami.html"
-    },
-    {
-      "source": "/ipad-repair-miami",
-      "destination": "/ipad-repair-miami.html"
-    },
-    {
-      "source": "/game-console-repair-miami",
-      "destination": "/game-console-repair-miami.html"
-    },
-    {
-      "source": "/computer-repair-miami",
-      "destination": "/computer-repair-miami.html"
-    },
-    {
-      "source": "/gaming-pc-repair-miami",
-      "destination": "/gaming-pc-repair-miami.html"
-    },
-    {
-      "source": "/water-damage-repair-miami",
-      "destination": "/water-damage-repair-miami.html"
-    },
-    {
-      "source": "/tablet-repair-miami",
-      "destination": "/tablet-repair-miami.html"
-    },
-    {
-      "source": "/privacy-policy",
-      "destination": "/privacy-policy.html"
-    },
-    {
-      "source": "/cookie-policy",
-      "destination": "/cookie-policy.html"
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        }
+      ]
     }
   ]
 }

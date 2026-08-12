@@ -19982,7 +19982,8 @@ html body #site-footer-root .site-footer-social-links {
   gap: 10px;
 }
 
-html body #site-footer-root .site-footer-social-links a {
+html body #site-footer-root .site-footer-social-links a,
+html body #site-footer-root .site-footer-social-placeholder {
   width: 100%;
   min-height: 48px;
   margin: 0;
@@ -19993,6 +19994,21 @@ html body #site-footer-root .site-footer-social-links a {
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
+}
+
+html body #site-footer-root .site-footer-social-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.72;
+}
+
+html body #site-footer-root .site-footer-social-placeholder small {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 html body #site-footer-root .site-footer-social-links a:hover {
@@ -26706,7 +26722,8 @@ html.glass-is-scrolling .site-nav::before {
   opacity: 0.5;
 }
 
-.site-nav-socials a {
+.site-nav-socials a,
+.site-nav-socials .site-nav-social-placeholder {
   position: relative;
   z-index: 1;
   width: 32px;
@@ -26736,6 +26753,11 @@ html.glass-is-scrolling .site-nav::before {
     border-color 180ms ease,
     background-color 180ms ease,
     box-shadow 180ms ease;
+}
+
+.site-nav-socials .site-nav-social-placeholder {
+  cursor: default;
+  opacity: 0.58;
 }
 
 .site-nav-socials a:hover {
