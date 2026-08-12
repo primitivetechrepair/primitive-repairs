@@ -79,6 +79,20 @@ function getMinDateValue() {
   return now.toISOString().split("T")[0];
 }
 
+function formatAppointmentDate(dateValue) {
+  if (!dateValue) return "";
+
+  const [year, month, day] = dateValue.split("-").map(Number);
+
+  if (!year || !month || !day) return dateValue;
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "2-digit",
+    day: "2-digit",
+    year: "numeric"
+  }).format(new Date(year, month - 1, day));
+}
+
 function renderServiceButtons(selectedServiceType) {
   return SERVICE_TYPES.map((service) => {
     const isSelected = selectedServiceType === service.id;
@@ -182,6 +196,7 @@ export function renderAppointmentStep(container, onContinue) {
       aria-describedby="appointment-date-help"
     >
     <span class="appointment-date-placeholder" aria-hidden="true">Select a date</span>
+    <span class="appointment-date-value" aria-hidden="true">${formatAppointmentDate(state.appointment.date)}</span>
   </div>
 
   <div
@@ -261,6 +276,12 @@ export function renderAppointmentStep(container, onContinue) {
       if (dateField) {
         dateField.classList.toggle("is-empty", !dateInput.value);
         dateField.classList.toggle("has-date", Boolean(dateInput.value));
+
+        const dateValue = dateField.querySelector(".appointment-date-value");
+
+        if (dateValue) {
+          dateValue.textContent = formatAppointmentDate(dateInput.value);
+        }
       }
 
       const dateHelp = container.querySelector(

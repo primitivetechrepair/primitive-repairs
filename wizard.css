@@ -24402,7 +24402,10 @@ html body.homepage-premium-page
 
 html body.homepage-premium-page
   #primitive-wizard-container
-  .appointment-date-placeholder {
+  .appointment-date-placeholder,
+html body.homepage-premium-page
+  #primitive-wizard-container
+  .appointment-date-value {
   display: none;
 }
 
@@ -24446,7 +24449,6 @@ html body.homepage-premium-page
 
   html body.homepage-premium-page
     #primitive-wizard-container
-    .appointment-date-field.is-empty
     .appointment-date-input::-webkit-datetime-edit {
     color: transparent;
   }
@@ -24482,6 +24484,26 @@ html body.homepage-premium-page
     .appointment-date-field.has-date
     .appointment-date-placeholder {
     display: none;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-date-field.has-date
+    .appointment-date-value {
+    position: absolute;
+    inset: 0 54px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4d4dc;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-align: center;
+    pointer-events: none;
   }
 }
 
