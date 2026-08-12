@@ -24419,10 +24419,27 @@ html body.homepage-premium-page
 @media (max-width: 760px) {
   html body.homepage-premium-page
     #primitive-wizard-container
+    .appointment-date-input {
+    min-height: 64px;
+    padding: 0 18px;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .appointment-date-field.is-empty
+    .appointment-date-input::-webkit-datetime-edit {
+    color: transparent;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
     .appointment-date-field.is-empty::before {
     content: "Select a date";
     left: 18px;
-    top: 27px;
+    top: 0;
+    height: 64px;
+    display: flex;
+    align-items: center;
     transform: none;
     color: #d4d4dc;
     font-family: "Manrope", sans-serif;
