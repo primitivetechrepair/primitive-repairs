@@ -87,8 +87,8 @@ function formatAppointmentDate(dateValue) {
   if (!year || !month || !day) return dateValue;
 
   return new Intl.DateTimeFormat("en-US", {
-    month: "2-digit",
-    day: "2-digit",
+    month: "short",
+    day: "numeric",
     year: "numeric"
   }).format(new Date(year, month - 1, day));
 }
