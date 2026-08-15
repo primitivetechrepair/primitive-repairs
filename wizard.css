@@ -18870,8 +18870,7 @@ html body.homepage-premium-page
   margin: 0 !important;
   padding: 0 !important;
   display: grid !important;
-  grid-template-columns:
-    repeat(auto-fit, minmax(min(190px, 100%), 1fr)) !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
   align-items: stretch !important;
   gap: clamp(14px, 2vw, 20px) !important;
   border: 0 !important;
@@ -19206,7 +19205,7 @@ html body.homepage-premium-page
   #pr-steps-area
   .repair-select-top-action {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: min(760px, 100%);
   margin: 0 auto 20px;
 }
@@ -19217,7 +19216,22 @@ html body.homepage-premium-page
   .repair-select-top-action
   .repair-select-continue {
   width: min(300px, 100%);
-  margin: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 701px) and (max-width: 980px) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-steps-area
+    :is(
+      .device-card-results,
+      .brand-card-results,
+      .series-card-results,
+      .model-card-results,
+      .repair-card-results
+    ) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
 }
 
 html body.homepage-premium-page
@@ -19325,7 +19339,7 @@ html body.homepage-premium-page
       .model-card-results,
       .repair-card-results
     ) {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
@@ -19982,8 +19996,7 @@ html body #site-footer-root .site-footer-social-links {
   gap: 10px;
 }
 
-html body #site-footer-root .site-footer-social-links a,
-html body #site-footer-root .site-footer-social-placeholder {
+html body #site-footer-root .site-footer-social-links a {
   width: 100%;
   min-height: 48px;
   margin: 0;
@@ -19994,21 +20007,6 @@ html body #site-footer-root .site-footer-social-placeholder {
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
-}
-
-html body #site-footer-root .site-footer-social-placeholder {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  opacity: 0.72;
-}
-
-html body #site-footer-root .site-footer-social-placeholder small {
-  display: block;
-  margin-top: 2px;
-  font-size: 0.58rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
 }
 
 html body #site-footer-root .site-footer-social-links a:hover {
@@ -25200,6 +25198,12 @@ html body.homepage-premium-page
 
 html body.homepage-premium-page
   #primitive-wizard-container
+  .blueprint-scroll-cue {
+  display: none !important;
+}
+
+html body.homepage-premium-page
+  #primitive-wizard-container
   #pr-selection-cards.blueprint-selection-module
   > .blueprint-profile-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
@@ -25280,6 +25284,62 @@ html body.homepage-premium-page
     .pr-progress-card {
     min-height: 102px;
     scroll-snap-align: start;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .blueprint-scroll-cue {
+    width: 100%;
+    margin: 11px 0 0;
+    padding: 0 2px;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    color: rgba(220, 237, 255, 0.66);
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .blueprint-scroll-cue::before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(102, 252, 241, 0.72));
+  }
+
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .blueprint-scroll-cue-arrow {
+    color: #66fcf1;
+    font-size: 1rem;
+    line-height: 1;
+    animation: blueprint-scroll-cue 1.8s ease-in-out infinite;
+  }
+}
+
+@keyframes blueprint-scroll-cue {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.homepage-premium-page
+    #primitive-wizard-container
+    .blueprint-scroll-cue-arrow {
+    animation: none !important;
   }
 }
 
@@ -26722,8 +26782,7 @@ html.glass-is-scrolling .site-nav::before {
   opacity: 0.5;
 }
 
-.site-nav-socials a,
-.site-nav-socials .site-nav-social-placeholder {
+.site-nav-socials a {
   position: relative;
   z-index: 1;
   width: 32px;
@@ -26753,11 +26812,6 @@ html.glass-is-scrolling .site-nav::before {
     border-color 180ms ease,
     background-color 180ms ease,
     box-shadow 180ms ease;
-}
-
-.site-nav-socials .site-nav-social-placeholder {
-  cursor: default;
-  opacity: 0.58;
 }
 
 .site-nav-socials a:hover {
