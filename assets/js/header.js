@@ -23,6 +23,7 @@
             <a href="/#how-it-works">How It Works</a>
             <a href="/#repair-services">Supported Devices</a>
             <a href="/phone-repair-miami">Phone Repair</a>
+            <a href="/iphone-screen-repair-miami">iPhone Screen Repair</a>
             <a href="/warranty">Warranty Support</a>
             <a href="/faq">FAQs</a>
             <a href="/contact-us">Contact Us</a>
@@ -138,6 +139,7 @@
         <a href="/#how-it-works">How It Works</a>
         <a href="/#repair-services">Supported Devices</a>
         <a href="/phone-repair-miami">Phone Repair</a>
+        <a href="/iphone-screen-repair-miami">iPhone Screen Repair</a>
         <a href="/warranty">Warranty Support</a>
         <a href="/faq">FAQs</a>
         <a href="/contact-us">Contact Us</a>
