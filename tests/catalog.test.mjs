@@ -170,6 +170,7 @@ test("ETag 200 to 304 lifecycle reuses a schema-aware cached response", async ()
   assert.equal(calls[0].url, ENDPOINT);
   assert.equal(new URL(calls[0].url).search, "");
   assert.equal(calls[0].options.headers.Authorization, `Bearer ${CREDENTIAL}`);
+  assert.equal(Object.hasOwn(calls[0].options, "cache"), false);
   assert.equal(calls[1].options.headers["If-None-Match"], ETAG);
   assert.equal(storage.keys().every((key) => !key.includes(CREDENTIAL)), true);
 });
