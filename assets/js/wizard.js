@@ -1,5 +1,5 @@
-import { state, resetStep, resetAllState } from "./state.js?v=20260724-2";
-import { loadCatalog } from "./catalog.js?v=20260724-2";
+import { state, resetStep, resetAllState } from "./state.js?v=20260831-1";
+import { createCatalogProvider } from "./catalogProviders.js?v=20260831-1";
 import {
   renderDeviceStep,
   renderBrandStep,
@@ -7,61 +7,48 @@ import {
   renderModelStep,
   renderRepairStep,
   renderRepairDetailsStep,
+  renderRepairInfoStep,
   renderProtectionUpsellStep,
   renderSelectionCards,
+  renderCatalogLoading,
+  renderCatalogError,
+  renderCatalogEmptyState,
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260729-2";
+} from "./renderer.js?v=20260831-1";
 
-import { renderAppointmentStep } from "./appointments.js?v=20260812-4";
+import { renderAppointmentStep } from "./appointments.js?v=20260831-1";
 import {
   applyAfterHoursBookingDetails,
   buildLeadPayload,
   validateLeadPayload
-} from "./leadSubmission.js?v=20260726-2";
+} from "./leadSubmission.js?v=20260831-1";
 import { mapWizardPayloadToLead } from "./leadMapper.js?v=20260726-2";
 import { submitWizardLead } from "./leadSubmitter.js";
 
-const devices = [
-  "Phone",
-  "Tablet",
-  "Computer",
-  "Console",
-  "Smartwatch",
-  "Mods",
-  "Other"
-];
+let catalogProvider = null;
+let catalogProviderPromise = null;
+let catalogRenderSequence = 0;
 
-const brandsByDevice = {
-  Phone: [
-    "Apple",
-    "Samsung",
-    "Google",
-    "Motorola",
-    "Alcatel",
-    "ASUS",
-    "BlackBerry",
-    "Huawei",
-    "HTC",
-    "LG",
-    "Nokia",
-    "Nothing",
-    "Oppo",
-    "Realme",
-    "Sony",
-    "Xiaomi",
-    "ZTE"
-  ],
-  Tablet: ["Apple", "Samsung", "Microsoft", "Lenovo", "Amazon"],
-  Computer: ["Apple", "Dell", "HP", "Lenovo", "ASUS", "Acer", "Microsoft"],
-  Console: ["Sony", "Microsoft", "Nintendo"],
-  Smartwatch: ["Apple", "Samsung", "Garmin"],
-  Mods: ["Phones", "Consoles", "Wearables", "Meta Glasses", "Other"],
-  Other: ["Generic"]
-};
+async function getCatalogProvider() {
+  if (!catalogProviderPromise) {
+    catalogProviderPromise = createCatalogProvider().then((provider) => {
+      catalogProvider = provider;
+      state.catalogProvider = provider.kind;
+      return provider;
+    });
+  }
 
-let activeCatalog = [];
+  return catalogProviderPromise;
+}
+
+function resetCatalogProvider() {
+  catalogProvider = null;
+  catalogProviderPromise = null;
+  state.catalogProvider = null;
+  resetAllState();
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const stepsArea = document.getElementById("pr-steps-area");
@@ -485,6 +472,8 @@ document.addEventListener("DOMContentLoaded", () => {
   async function renderWizard(shouldScroll = false) {
     if (!stepsArea) return;
 
+    const renderSequence = ++catalogRenderSequence;
+
     stepsArea.innerHTML = "";
     stepsArea.style.display = "";
 
@@ -502,10 +491,55 @@ document.addEventListener("DOMContentLoaded", () => {
       renderWizard(true);
     });
 
+    let provider;
+
+    try {
+      if (!catalogProvider) {
+        renderCatalogLoading(stepsArea);
+      }
+
+      provider = await getCatalogProvider();
+
+      if (renderSequence !== catalogRenderSequence) return;
+      stepsArea.innerHTML = "";
+    } catch {
+      if (renderSequence !== catalogRenderSequence) return;
+
+      renderCatalogError(stepsArea, () => {
+        resetCatalogProvider();
+        renderWizard(true);
+      });
+      return;
+    }
+
+    async function catalogOptions(loader) {
+      try {
+        const options = await loader();
+        if (renderSequence !== catalogRenderSequence) return null;
+        return Array.isArray(options) ? options : [];
+      } catch {
+        if (renderSequence === catalogRenderSequence) {
+          renderCatalogError(stepsArea, () => {
+            resetCatalogProvider();
+            renderWizard(true);
+          });
+        }
+        return null;
+      }
+    }
+
     if (!state.device) {
+      const devices = await catalogOptions(() => provider.getDevices());
+      if (!devices) return;
+      if (!devices.length) {
+        renderCatalogEmptyState(stepsArea);
+        return;
+      }
+
       renderDeviceStep(stepsArea, devices, (device) => {
-        state.device = device;
         resetStep("device");
+        state.device = device.label;
+        state.catalogSelection.deviceId = device.id;
         renderWizard(true);
       });
 
@@ -517,14 +551,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!state.brand) {
-      const brands = brandsByDevice[state.device] || [];
+      const brands = await catalogOptions(() => {
+        return provider.getBrands(state.catalogSelection.deviceId);
+      });
+      if (!brands) return;
+      if (!brands.length) {
+        renderCatalogEmptyState(stepsArea, "No brands are available for this device yet.");
+        return;
+      }
 
       renderBrandStep(stepsArea, brands, async (brand) => {
-        state.brand = brand;
         resetStep("brand");
-
-        activeCatalog = await loadCatalog(state.device, state.brand);
-
+        state.brand = brand.label;
+        state.catalogSelection.brandId = brand.id;
         renderWizard(true);
       });
 
@@ -538,13 +577,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!state.series) {
-      const seriesList = [
-        ...new Set(activeCatalog.map((item) => item.series))
-      ];
+      const seriesList = await catalogOptions(() => {
+        return provider.getSeries(
+          state.catalogSelection.deviceId,
+          state.catalogSelection.brandId
+        );
+      });
+      if (!seriesList) return;
+      if (!seriesList.length) {
+        renderCatalogEmptyState(stepsArea, "No series are available for this brand yet.");
+        return;
+      }
 
       renderSeriesStep(stepsArea, seriesList, (series) => {
-        state.series = series;
         resetStep("series");
+        state.series = series.label;
+        state.catalogSelection.seriesId = series.id;
         renderWizard(true);
       });
 
@@ -557,13 +605,23 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     if (!state.model) {
-      const models = activeCatalog.filter((item) => {
-        return item.series === state.series;
+      const models = await catalogOptions(() => {
+        return provider.getModels(
+          state.catalogSelection.deviceId,
+          state.catalogSelection.brandId,
+          state.catalogSelection.seriesId
+        );
       });
+      if (!models) return;
+      if (!models.length) {
+        renderCatalogEmptyState(stepsArea, "No models are available for this series yet.");
+        return;
+      }
 
       renderModelStep(stepsArea, models, (model) => {
-        state.model = model;
         resetStep("model");
+        state.model = model;
+        state.catalogSelection.modelId = model.id;
         renderWizard(true);
       });
 
@@ -579,24 +637,31 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!state.repair) {
       const repairs = state.model?.repairs || [];
 
+      if (!repairs.length) {
+        renderCatalogEmptyState(stepsArea, "No repair options are available for this model yet.");
+        return;
+      }
+
       renderRepairStep(
         stepsArea,
         repairs,
         state.repairs,
         (repair) => {
           const exists = state.repairs.some((item) => {
-            return item.repair === repair.repair;
+            return item.id === repair.id;
           });
           const shouldRevealContinue =
             !exists && state.repairs.length === 0;
 
           if (exists) {
             state.repairs = state.repairs.filter((item) => {
-              return item.repair !== repair.repair;
+              return item.id !== repair.id;
             });
           } else {
             state.repairs = [...state.repairs, repair];
           }
+
+          state.catalogSelection.repairIds = state.repairs.map((item) => item.id);
 
           state.repairDetailsViewed = false;
           state.repairInfoViewed = false;
@@ -609,6 +674,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         () => {
           state.repair = state.repairs[0] || null;
+          state.catalogSelection.repairIds = state.repairs.map((item) => item.id);
           state.repairDetailsViewed = false;
           state.repairInfoViewed = false;
           state.protectionViewed = false;
@@ -634,9 +700,28 @@ document.addEventListener("DOMContentLoaded", () => {
         (details) => {
           state.repairDetails = details;
           state.repairDetailsViewed = true;
-          state.repairInfoViewed = true;
+          state.repairInfoViewed = false;
           state.protectionViewed = false;
           state.addOns = [];
+          renderWizard(true);
+        }
+      );
+
+      renderLiveRepairSummary();
+
+      if (shouldScroll) {
+        scrollWizardStepIntoView();
+      }
+
+      return;
+    }
+
+    if (!state.repairInfoViewed) {
+      renderRepairInfoStep(
+        stepsArea,
+        state.repairs.length ? state.repairs : [state.repair].filter(Boolean),
+        () => {
+          state.repairInfoViewed = true;
           renderWizard(true);
         }
       );
@@ -720,6 +805,7 @@ document.addEventListener("DOMContentLoaded", () => {
       state.repairDetails = {};
       state.repairDetailsViewed = false;
       state.repairInfoViewed = false;
+      state.catalogSelection.repairIds = [];
       state.protectionViewed = false;
       state.addOns = [];
       state.appointmentSelected = false;

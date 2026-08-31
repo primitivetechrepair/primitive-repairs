@@ -28,6 +28,83 @@
     0 6px 16px rgba(29, 30, 34, 0.24), inset 0 1px 0 rgba(220, 237, 255, 0.12);
 }
 
+/* Phase 6C.3 catalog loading and failure states. */
+.catalog-status-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 180px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  background: rgba(13, 16, 22, 0.82);
+  color: #f5f7fb;
+}
+
+.catalog-status-panel > div:last-child,
+.catalog-status-panel > div:first-child:not(.catalog-status-indicator) {
+  flex: 1;
+}
+
+.catalog-status-panel span {
+  display: block;
+  margin-bottom: 8px;
+  color: #aeb7c7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.catalog-status-panel h3,
+.catalog-status-panel p {
+  margin: 0;
+}
+
+.catalog-status-panel p {
+  margin-top: 10px;
+  color: #c8cfda;
+}
+
+.catalog-status-indicator {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: catalog-status-spin 0.85s linear infinite;
+}
+
+.catalog-retry-button {
+  min-height: 46px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--button-gradient);
+  color: #111318;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@keyframes catalog-status-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 680px) {
+  .catalog-status-panel {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .catalog-retry-button {
+    width: 100%;
+  }
+}
+
 /* =========================================================
    PREMIUM REPAIR CONCIERGE — JULY 2026
    Flat architectural surfaces, no decorative pill labels.

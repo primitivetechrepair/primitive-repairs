@@ -27,7 +27,23 @@ export const state = {
   },
 
   catalogCache: {},
+  catalogProvider: null,
+  catalogSelection: {
+    deviceId: null,
+    brandId: null,
+    seriesId: null,
+    modelId: null,
+    repairIds: []
+  },
   searchTerm: ""
+};
+
+const CATALOG_RESET_MAP = {
+  device: ["deviceId", "brandId", "seriesId", "modelId", "repairIds"],
+  brand: ["brandId", "seriesId", "modelId", "repairIds"],
+  series: ["seriesId", "modelId", "repairIds"],
+  model: ["modelId", "repairIds"],
+  repair: ["repairIds"]
 };
 
 const RESET_MAP = {
@@ -114,11 +130,13 @@ function resetStateKey(key) {
 export function resetStep(step) {
   const keys = RESET_MAP[step];
 
-  if (!Array.isArray(keys)) {
-    return;
+  if (Array.isArray(keys)) {
+    keys.forEach(resetStateKey);
   }
 
-  keys.forEach(resetStateKey);
+  (CATALOG_RESET_MAP[step] || []).forEach((key) => {
+    state.catalogSelection[key] = key === "repairIds" ? [] : null;
+  });
 }
 
 export function resetAllState() {
@@ -147,6 +165,14 @@ export function resetAllState() {
     pickupRequired: false,
     mailIn: false,
     onsite: false
+  };
+
+  state.catalogSelection = {
+    deviceId: null,
+    brandId: null,
+    seriesId: null,
+    modelId: null,
+    repairIds: []
   };
 
   state.searchTerm = "";
