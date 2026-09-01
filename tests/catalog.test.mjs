@@ -405,7 +405,7 @@ test("repair reset clears stable repair IDs before a new selection", () => {
   assert.deepEqual(state.catalogSelection.repairIds, []);
 });
 
-test("6C.3 does not integrate BenchLayer public intake or replace website submission", async () => {
+test("6C.3 catalog integration remains isolated from the 6C.4 intake adapter", async () => {
   const files = [
     "assets/js/catalogAdapter.js",
     "assets/js/catalogClient.js",
@@ -419,6 +419,7 @@ test("6C.3 does not integrate BenchLayer public intake or replace website submis
 
   assert.equal(sources.some((source) => source.includes("/api/public/intake")), false);
   assert.match(submitter, /fetch\("\/api\/submit-repair"/);
+  assert.match(submitter, /mapRepairFlowToPublicIntake/);
   for (const serviceType of ["meet-up", "pickup", "onsite", "mail-in"]) {
     assert.equal(appointments.includes(`id: "${serviceType}"`), true);
   }

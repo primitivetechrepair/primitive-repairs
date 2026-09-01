@@ -25,7 +25,12 @@ import {
   validateLeadPayload
 } from "./leadSubmission.js?v=20260831-1";
 import { mapWizardPayloadToLead } from "./leadMapper.js?v=20260726-2";
-import { submitWizardLead } from "./leadSubmitter.js";
+import {
+  configureSubmissionProvider,
+  resetWizardSubmission,
+  submissionErrorPresentation,
+  submitWizardLead
+} from "./leadSubmitter.js?v=20260901-1";
 
 let catalogProvider = null;
 let catalogProviderPromise = null;
@@ -58,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const backBtn = document.getElementById("cf-back");
   const fileInput = document.getElementById("cf-files");
   const filePreviews = document.getElementById("cf-previews");
+  const attachmentNote = document.getElementById("cf-files-note");
   const repairPolicyToggle = document.getElementById("toggle-repair-policy");
   const repairPolicyBox = document.getElementById("repair-policy-box");
 
@@ -66,6 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const repairCooldownMs = 60000;
   const repairCooldownKey = "primitiveRepairRequestLastSubmit";
   let repairSubmitLocked = false;
+
+  configureSubmissionProvider({ fileInput, filePreviews, attachmentNote }).catch(() => {
+    // Submission itself remains fail-closed if runtime configuration is unavailable.
+  });
 
   function updateProgress() {
     const progressBar = document.getElementById("pr-progress-bar");
@@ -985,7 +995,10 @@ document.addEventListener("DOMContentLoaded", () => {
           try {
             applyAfterHoursBookingDetails(leadPayload);
             mappedLead = mapWizardPayloadToLead(leadPayload);
-            submitResult = await submitWizardLead(mappedLead);
+            submitResult = await submitWizardLead({
+              wizardPayload: leadPayload,
+              legacyLead: mappedLead
+            });
 
             if (!submitResult?.success) {
               throw new Error(
@@ -996,16 +1009,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             localStorage.setItem(repairCooldownKey, String(now));
           } catch (err) {
-            console.error("Wizard lead submit failed:", err);
+            console.warn("Wizard lead submit failed:", err?.code || "submission_failed");
 
             repairSubmitLocked = false;
             resetReviewSubmitButton();
 
-            showSubmissionStatus(
-              "error",
-              "Request not submitted",
-              "Your request could not be submitted. Please check your connection and try again. You may also contact us directly if the problem continues."
-            );
+            const presentation = submissionErrorPresentation(err);
+            showSubmissionStatus("error", presentation.title, presentation.message);
 
             return;
           }
@@ -1019,7 +1029,17 @@ document.addEventListener("DOMContentLoaded", () => {
           repairSubmitLocked = false;
           resetReviewSubmitButton();
 
-          renderSuccessStep(stepsArea, leadPayload, () => {
+          const confirmationPayload = {
+            ...leadPayload,
+            requestId: submitResult.confirmationReference || submitResult.leadID,
+            status: submitResult.mode === "benchlayer" ? "Received" : leadPayload.status
+          };
+
+          renderSuccessStep(stepsArea, confirmationPayload, () => {
+            if (submitResult.mode === "benchlayer") {
+              resetWizardSubmission();
+              localStorage.removeItem(repairCooldownKey);
+            }
             resetAllState();
             state.protectionViewed = false;
             state.addOns = [];
