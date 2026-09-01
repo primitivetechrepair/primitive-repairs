@@ -210,10 +210,6 @@ export class PublicCatalogClient {
       Authorization: `Bearer ${this.credential}`
     };
 
-    if (cacheRecord?.etag) {
-      headers["If-None-Match"] = cacheRecord.etag;
-    }
-
     let response;
 
     try {
@@ -222,6 +218,7 @@ export class PublicCatalogClient {
         headers,
         mode: "cors",
         credentials: "omit",
+        cache: "no-cache",
         referrerPolicy: "no-referrer"
       });
     } catch {

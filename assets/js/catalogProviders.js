@@ -6,7 +6,7 @@ import {
 import {
   fetchCatalogRuntimeConfig,
   PublicCatalogClient
-} from "./catalogClient.js?v=20260901-3";
+} from "./catalogClient.js?v=20260901-4";
 
 const LEGACY_DEVICES = [
   "Phone",

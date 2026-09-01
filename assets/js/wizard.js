@@ -1,5 +1,5 @@
 import { state, resetStep, resetAllState } from "./state.js?v=20260831-1";
-import { createCatalogProvider } from "./catalogProviders.js?v=20260901-3";
+import { createCatalogProvider } from "./catalogProviders.js?v=20260901-4";
 import {
   renderDeviceStep,
   renderBrandStep,
@@ -502,10 +502,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (renderSequence !== catalogRenderSequence) return;
       stepsArea.innerHTML = "";
-    } catch (error) {
+    } catch {
       if (renderSequence !== catalogRenderSequence) return;
-
-      console.warn("repair_catalog_unavailable", error?.code || "unknown");
 
       renderCatalogError(stepsArea, () => {
         resetCatalogProvider();

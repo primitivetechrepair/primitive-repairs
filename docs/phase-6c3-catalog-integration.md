@@ -53,10 +53,12 @@ contract supplies them.
 
 The client keeps schema-aware catalog responses and ETags in `sessionStorage`
 for at most 24 hours. Cache keys contain an explicit deployment scope and a hash
-of the endpoint, not the credential. A normal response revalidates with
-`If-None-Match`; `304` reuses the validated cached body. Network, authorization,
-schema, and malformed-response failures fail closed and show a customer-safe
-retry state. There is no stale-on-error fallback.
+of the endpoint, not the credential. Browser HTTP revalidation uses
+`cache: no-cache`, allowing Chromium to send `If-None-Match` from its private
+cache and merge a `304` with the previously CORS-approved response. Fetch
+implementations that surface `304` directly reuse the validated session-cached
+body. Network, authorization, schema, and malformed-response failures fail
+closed and show a customer-safe retry state. There is no stale-on-error fallback.
 
 ## Images and legacy rollback
 
