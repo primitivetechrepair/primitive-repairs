@@ -8,6 +8,11 @@ function normalizePathValue(value) {
 }
 
 function normalizeImageFileName(value) {
+  const rawValue = String(value || "").trim().toLowerCase();
+
+  if (rawValue === "pop 4+") {
+    return "pop4plus";
+  }
   const normalized = normalizePathValue(value);
 
   const imageNameOverrides = {
