@@ -10,7 +10,34 @@ function escapeHtml(value) {
 }
 
 function getSafeImage(image) {
-  return String(image || DEFAULT_CARD_IMAGE).trim() || DEFAULT_CARD_IMAGE;
+  const candidate = String(image || "").trim();
+
+  if (!candidate || /[\u0000-\u001f\u007f'"<>]/u.test(candidate)) {
+    return DEFAULT_CARD_IMAGE;
+  }
+
+  if (/^\/[a-z0-9/_().-]+$/i.test(candidate)) {
+    return candidate;
+  }
+
+  try {
+    const url = new URL(candidate);
+
+    if (
+      url.protocol === "https:" &&
+      !url.username &&
+      !url.password &&
+      !url.search &&
+      !url.hash &&
+      url.pathname.startsWith("/storage/v1/object/public/intake-card-images/")
+    ) {
+      return url.toString();
+    }
+  } catch {
+    // Fall through to the local default image.
+  }
+
+  return DEFAULT_CARD_IMAGE;
 }
 
 function normalizeImageFileName(value) {

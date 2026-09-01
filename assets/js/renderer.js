@@ -1,11 +1,17 @@
-import { state, resetStep } from "./state.js?v=20260724-2";
+import { state, resetStep } from "./state.js?v=20260831-1";
 import {
   renderCardGrid,
   getDeviceImage,
   getBrandImage,
   getRepairImage,
   getResolvedRepairImage
-} from "./cardRenderer.js";
+} from "./cardRenderer.js?v=20260831-1";
+
+function optionLabel(option) {
+  return typeof option === "string"
+    ? option
+    : String(option?.label || option?.name || "").trim();
+}
 
 function formatDisplayDate(dateValue) {
   if (!dateValue) return "Not selected";
@@ -127,8 +133,8 @@ export function renderDeviceStep(container, devices, onSelect) {
   const results = container.querySelector("#device-card-results");
 
   const cards = devices.map((device) => ({
-    label: device,
-    image: getDeviceImage(device),
+    label: optionLabel(device),
+    image: device?.image || getDeviceImage(optionLabel(device)),
     onClick: () => onSelect(device)
   }));
 
@@ -153,8 +159,8 @@ export function renderBrandStep(container, brands, onSelect) {
   const results = container.querySelector("#brand-card-results");
 
   const cards = brands.map((brand) => ({
-    label: brand,
-    image: getBrandImage(state.device, brand),
+    label: optionLabel(brand),
+    image: brand?.image || getBrandImage(state.device, optionLabel(brand)),
     badge: selectedDevice,
     onClick: () => onSelect(brand)
   }));
@@ -180,13 +186,64 @@ export function renderSeriesStep(container, seriesList, onSelect) {
   const results = container.querySelector("#series-card-results");
 
   const cards = seriesList.map((series) => ({
-    label: series,
-    image: getSeriesCardImage(selectedBrand, series),
+    label: optionLabel(series),
+    image: series?.image || getSeriesCardImage(selectedBrand, optionLabel(series)),
     badge: "Series",
     onClick: () => onSelect(series)
   }));
 
   renderCardGrid(results, cards);
+}
+
+export function renderCatalogLoading(container) {
+  if (!container) return;
+
+  container.innerHTML = `
+    <section class="catalog-status-panel" role="status" aria-live="polite">
+      <div class="catalog-status-indicator" aria-hidden="true"></div>
+      <div>
+        <span>Repair Catalog</span>
+        <h3>Loading repair options...</h3>
+        <p>This should only take a moment.</p>
+      </div>
+    </section>
+  `;
+}
+
+export function renderCatalogError(container, onRetry) {
+  if (!container) return;
+
+  container.innerHTML = `
+    <section class="catalog-status-panel is-error" role="alert">
+      <div>
+        <span>Repair Catalog</span>
+        <h3>Repair options are temporarily unavailable.</h3>
+        <p>Please check your connection and try again. You can also contact us directly if the problem continues.</p>
+      </div>
+      <button type="button" class="catalog-retry-button">Try Again</button>
+    </section>
+  `;
+
+  container.querySelector(".catalog-retry-button")?.addEventListener("click", () => {
+    if (typeof onRetry === "function") onRetry();
+  });
+}
+
+export function renderCatalogEmptyState(
+  container,
+  message = "No repair options are available right now. Please contact us for help with your device."
+) {
+  if (!container) return;
+
+  container.innerHTML = `
+    <section class="catalog-status-panel is-empty" role="status">
+      <div>
+        <span>Repair Catalog</span>
+        <h3>We can still help.</h3>
+        <p>${escapeSummaryHtml(message)}</p>
+      </div>
+    </section>
+  `;
 }
 
 export function renderModelStep(container, models, onSelect) {
@@ -198,7 +255,7 @@ export function renderModelStep(container, models, onSelect) {
     <div class="option-section-header model-option-header">
       <span>Step 4 of 5</span>
       <h3>Choose the model.</h3>
-      <p>Search or select your exact ${selectedBrand} model.</p>
+      <p>Search or select your exact ${escapeSummaryHtml(selectedBrand)} model.</p>
     </div>
 
     <div class="model-search-panel">
@@ -344,7 +401,9 @@ export function renderRepairStep(
 ) {
   if (!container) return;
 
-  const selectedNames = selectedRepairs.map((repair) => repair.repair);
+  const selectedIds = new Set(selectedRepairs.map((repair) => {
+    return repair.id || repair.repair;
+  }));
 
   container.innerHTML = `
     <div class="repair-select-panel">
@@ -372,7 +431,9 @@ export function renderRepairStep(
       <div class="repair-selected-summary">
         ${
           selectedRepairs.length
-            ? selectedRepairs.map((repair) => `<span>${repair.repair}</span>`).join("")
+            ? selectedRepairs
+                .map((repair) => `<span>${escapeSummaryHtml(repair.repair)}</span>`)
+                .join("")
             : `<span class="repair-none-selected">No repairs selected yet</span>`
         }
       </div>
@@ -386,7 +447,7 @@ export function renderRepairStep(
 
   if (results) {
     const cards = repairs.map((repair) => {
-      const isSelected = selectedNames.includes(repair.repair);
+      const isSelected = selectedIds.has(repair.id || repair.repair);
 
       return {
         label: repair.repair,
@@ -580,13 +641,13 @@ export function renderRepairDetailsStep(container, selectedRepairs = [], repairD
 
                 return `
                   <div class="repair-detail-card">
-                    <label for="repair-detail-${index}">${repairName}</label>
+                    <label for="repair-detail-${index}">${escapeSummaryHtml(repairName)}</label>
                     <textarea
                       id="repair-detail-${index}"
                       class="repair-detail-input"
-                      data-repair-name="${repairName}"
+                      data-repair-name="${escapeSummaryHtml(repairName)}"
                       placeholder="Example: screen is cracked but touch still works..."
-                    >${savedValue}</textarea>
+                    >${escapeSummaryHtml(savedValue)}</textarea>
                   </div>
                 `;
               }).join("")
@@ -644,7 +705,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
           ${
             repairList.length > 1
               ? `${repairList.length} selected repairs.`
-              : primaryRepair.repair
+              : escapeSummaryHtml(primaryRepair.repair)
           }
         </h3>
         <p>Review the selected work, expected timing, warranty, and common symptoms before scheduling.</p>
@@ -653,7 +714,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       <div class="repair-info-hero">
         <div
           class="repair-info-image"
-          style="--repair-info-image: url('${getResolvedRepairImage(primaryRepair)}')"
+          style="--repair-info-image: url('${escapeSummaryHtml(getResolvedRepairImage(primaryRepair))}')"
         ></div>
 
         <div class="repair-info-content">
@@ -665,11 +726,11 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
 
     return `
       <div>
-        <strong>${repairName}</strong>
-        <span>${repair.time || "Contact for estimate"} · ${repair.warranty || "Warranty details after inspection"}</span>
+        <strong>${escapeSummaryHtml(repairName)}</strong>
+        <span>${escapeSummaryHtml(repair.time || "Contact for estimate")} · ${escapeSummaryHtml(repair.warranty || "Warranty details after inspection")}</span>
         ${
           details
-            ? `<em class="repair-info-detail">Details: ${details}</em>`
+            ? `<em class="repair-info-detail">Details: ${escapeSummaryHtml(details)}</em>`
             : `<em class="repair-info-detail is-empty">No extra details provided</em>`
         }
       </div>
@@ -684,7 +745,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
 
         ${
           allSymptoms.length
-            ? `<ul>${allSymptoms.map((item) => `<li>${item}</li>`).join("")}</ul>`
+            ? `<ul>${allSymptoms.map((item) => `<li>${escapeSummaryHtml(item)}</li>`).join("")}</ul>`
             : `<p>Symptoms will vary depending on the device condition. We will confirm the issue after inspection.</p>`
         }
       </div>
@@ -1081,6 +1142,7 @@ const label = card.querySelector(".card-label");
         if (step.key === "repair") {
           state.repair = null;
           state.repairs = [];
+          resetStep("repair");
           state.repairDetails = {};
           state.repairDetailsViewed = false;
           state.repairInfoViewed = false;
