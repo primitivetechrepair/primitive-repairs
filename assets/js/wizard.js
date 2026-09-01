@@ -502,8 +502,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (renderSequence !== catalogRenderSequence) return;
       stepsArea.innerHTML = "";
-    } catch {
+    } catch (error) {
       if (renderSequence !== catalogRenderSequence) return;
+
+      console.warn("repair_catalog_unavailable", error?.code || "unknown");
 
       renderCatalogError(stepsArea, () => {
         resetCatalogProvider();
