@@ -175,6 +175,26 @@ test("ETag 200 to 304 lifecycle reuses a schema-aware cached response", async ()
   assert.equal(storage.keys().every((key) => !key.includes(CREDENTIAL)), true);
 });
 
+test("native-style fetch implementations are not invoked with the client as receiver", async () => {
+  function receiverSensitiveFetch() {
+    assert.equal(this, undefined);
+    return Promise.resolve(new Response(JSON.stringify(responseFixture()), {
+      status: 200,
+      headers: { "content-type": "application/json", etag: ETAG }
+    }));
+  }
+
+  const client = new PublicCatalogClient({
+    endpoint: ENDPOINT,
+    credential: CREDENTIAL,
+    cacheScope: "receiver-safe",
+    fetchImpl: receiverSensitiveFetch,
+    storage: memoryStorage()
+  });
+
+  assert.equal((await client.load()).schemaVersion, 1);
+});
+
 test("a repeated cacheless 304 fails safely after one unconditional retry", async () => {
   let callCount = 0;
   const client = new PublicCatalogClient({

@@ -149,7 +149,7 @@ export class PublicCatalogClient {
     this.endpoint = validateEndpoint(endpoint);
     this.credential = validateCredential(credential);
     this.cacheScope = validateScope(cacheScope);
-    this.fetchImpl = fetchImpl;
+    this.fetchImpl = (...args) => fetchImpl(...args);
     this.storage = storage;
     this.now = now;
     this.cacheKey = `${CACHE_PREFIX}:${this.cacheScope}:${endpointHash(this.endpoint)}`;
