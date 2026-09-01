@@ -222,7 +222,6 @@ export class PublicCatalogClient {
         headers,
         mode: "cors",
         credentials: "omit",
-        redirect: "error",
         referrerPolicy: "no-referrer"
       });
     } catch {
