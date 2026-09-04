@@ -3,6 +3,7 @@ const MAX_LABEL_LENGTH = 160;
 const MAX_ITEMS_PER_LEVEL = 250;
 const MAX_TOTAL_NODES = 20000;
 const CONTROL_CHARACTERS = /[\u0000-\u001f\u007f]/u;
+const PUBLIC_ID_PATTERN = /^[a-z][a-z0-9_-]{5,119}$/;
 const PUBLIC_IMAGE_PATH = "/storage/v1/object/public/intake-card-images/";
 const UUID_PATTERN = /(?:^|[^0-9a-f])[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}(?:$|[^0-9a-f])/i;
 
@@ -125,6 +126,12 @@ export function createStableOptionId(level, path) {
   return `${slug(level)}-${slug(path[path.length - 1])}-${fnv1a(canonicalPath)}`;
 }
 
+function publicId(value, level, path) {
+  if (value == null || value === "") return createStableOptionId(level, path);
+  if (typeof value !== "string" || !PUBLIC_ID_PATTERN.test(value)) invalid();
+  return value;
+}
+
 function normalizeImageFileName(value) {
   const normalized = slug(value);
   const overrides = {
@@ -225,7 +232,7 @@ export function adaptPublicCatalogV1(payload) {
             ];
 
             return {
-              id: createStableOptionId("repair", repairPath),
+              id: publicId(repair.id, "repair", repairPath),
               label: repairLabel,
               repair: repairLabel,
               image: safePublicImageUrl(repair.imageUrl),
@@ -238,7 +245,7 @@ export function adaptPublicCatalogV1(payload) {
           const modelPath = [deviceLabel, brandLabel, seriesLabel, modelLabel];
 
           return {
-            id: createStableOptionId("model", modelPath),
+            id: publicId(model.id, "model", modelPath),
             label: modelLabel,
             model: modelLabel,
             series: seriesLabel,
@@ -251,7 +258,7 @@ export function adaptPublicCatalogV1(payload) {
         const seriesPath = [deviceLabel, brandLabel, seriesLabel];
 
         return {
-          id: createStableOptionId("series", seriesPath),
+          id: publicId(seriesNode.id, "series", seriesPath),
           label: seriesLabel,
           image: safePublicImageUrl(seriesNode.imageUrl),
           models
@@ -261,7 +268,7 @@ export function adaptPublicCatalogV1(payload) {
       const brandPath = [deviceLabel, brandLabel];
 
       return {
-        id: createStableOptionId("brand", brandPath),
+        id: publicId(brand.id, "brand", brandPath),
         label: brandLabel,
         image: safePublicImageUrl(brand.imageUrl),
         series
@@ -269,7 +276,7 @@ export function adaptPublicCatalogV1(payload) {
     });
 
     return {
-      id: createStableOptionId("device", [deviceLabel]),
+      id: publicId(device.id, "device", [deviceLabel]),
       label: deviceLabel,
       image: safePublicImageUrl(device.imageUrl),
       brands

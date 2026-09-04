@@ -91,6 +91,27 @@ test("Public Catalog V1 adapter maps the complete hierarchy and stable IDs", asy
   assert.equal(model.image, "/images/models/apple/iphone16.webp");
 });
 
+test("server-issued IDs survive label changes while legacy responses retain deterministic fallbacks", () => {
+  const first = responseFixture();
+  first.catalogVersion = 4;
+  first.devices[0].id = "dev_1234567890abcdef";
+  first.devices[0].brands[0].id = "brd_1234567890abcdef";
+  first.devices[0].brands[0].series[0].id = "ser_1234567890abcdef";
+  first.devices[0].brands[0].series[0].models[0].id = "mdl_1234567890abcdef";
+  first.devices[0].brands[0].series[0].models[0].repairs[0].id = "rep_1234567890abcdef";
+  const original = adaptPublicCatalogV1(first);
+
+  const renamed = structuredClone(first);
+  renamed.devices[0].brands[0].series[0].models[0].name = "iPhone 16 (2026)";
+  const updated = adaptPublicCatalogV1(renamed);
+  assert.equal(original.devices[0].brands[0].series[0].models[0].id, "mdl_1234567890abcdef");
+  assert.equal(updated.devices[0].brands[0].series[0].models[0].id, "mdl_1234567890abcdef");
+
+  const invalidId = structuredClone(first);
+  invalidId.devices[0].id = "<script>";
+  assert.throws(() => adaptPublicCatalogV1(invalidId), CatalogAdapterError);
+});
+
 test("adapter rejects unsupported, malformed, empty, duplicate, and prototype-like data", () => {
   for (const payload of [
     responseFixture({ schemaVersion: 2 }),
