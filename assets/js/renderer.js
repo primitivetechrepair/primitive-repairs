@@ -135,6 +135,7 @@ export function renderDeviceStep(container, devices, onSelect) {
   const cards = devices.map((device) => ({
     label: optionLabel(device),
     image: device?.image || getDeviceImage(optionLabel(device)),
+    catalogOrder: device?.catalogOrder,
     onClick: () => onSelect(device)
   }));
 
@@ -162,6 +163,7 @@ export function renderBrandStep(container, brands, onSelect) {
     label: optionLabel(brand),
     image: brand?.image || getBrandImage(state.device, optionLabel(brand)),
     badge: selectedDevice,
+    catalogOrder: brand?.catalogOrder,
     onClick: () => onSelect(brand)
   }));
 
@@ -189,6 +191,7 @@ export function renderSeriesStep(container, seriesList, onSelect) {
     label: optionLabel(series),
     image: series?.image || getSeriesCardImage(selectedBrand, optionLabel(series)),
     badge: "Series",
+    catalogOrder: series?.catalogOrder,
     onClick: () => onSelect(series)
   }));
 
@@ -330,15 +333,6 @@ const filteredModels = models
     const displayName = String(getModelDisplayLabel(model) || "").toLowerCase();
 
     return modelName.includes(normalizedSearch) || displayName.includes(normalizedSearch);
-  })
-  .sort((a, b) => {
-    const bothRegularIpads =
-      String(a.series || "") === "iPad Series" &&
-      String(b.series || "") === "iPad Series";
-
-    if (!bothRegularIpads) return 0;
-
-    return getRegularIpadNumber(a.model) - getRegularIpadNumber(b.model);
   });
 
     if (count) {
@@ -366,6 +360,7 @@ const filteredModels = models
   label: getModelDisplayLabel(model),
   image: model.image,
   badge: model.series,
+  catalogOrder: model.catalogOrder,
   onClick: () => onSelect({
     ...model,
     model: getModelDisplayLabel(model)
@@ -455,6 +450,7 @@ export function renderRepairStep(
         subtext: repair.time || "",
         badge: isSelected ? "Selected" : repair.warranty || "",
         className: isSelected ? "is-selected" : "",
+        catalogOrder: repair.catalogOrder,
         onClick: () => {
           if (typeof onChange === "function") {
             onChange(repair);

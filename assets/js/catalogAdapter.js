@@ -189,35 +189,35 @@ export function adaptPublicCatalogV1(payload) {
   };
 
   const deviceNames = new Set();
-  const devices = safeList(source.devices).map((rawDevice) => {
+  const devices = safeList(source.devices).map((rawDevice, deviceOrder) => {
     const device = plainRecord(rawDevice);
     const deviceLabel = safeLabel(device.name);
     uniqueSibling(deviceNames, deviceLabel);
     countNode();
 
     const brandNames = new Set();
-    const brands = safeList(device.brands).map((rawBrand) => {
+    const brands = safeList(device.brands).map((rawBrand, brandOrder) => {
       const brand = plainRecord(rawBrand);
       const brandLabel = safeLabel(brand.name);
       uniqueSibling(brandNames, brandLabel);
       countNode();
 
       const seriesNames = new Set();
-      const series = safeList(brand.series).map((rawSeries) => {
+      const series = safeList(brand.series).map((rawSeries, seriesOrder) => {
         const seriesNode = plainRecord(rawSeries);
         const seriesLabel = safeLabel(seriesNode.name);
         uniqueSibling(seriesNames, seriesLabel);
         countNode();
 
         const modelNames = new Set();
-        const models = safeList(seriesNode.models).map((rawModel) => {
+        const models = safeList(seriesNode.models).map((rawModel, modelOrder) => {
           const model = plainRecord(rawModel);
           const modelLabel = safeLabel(model.name);
           uniqueSibling(modelNames, modelLabel);
           countNode();
 
           const repairNames = new Set();
-          const repairs = safeList(model.repairs).map((rawRepair) => {
+          const repairs = safeList(model.repairs).map((rawRepair, repairOrder) => {
             const repair = plainRecord(rawRepair);
             const repairLabel = safeLabel(repair.name);
             uniqueSibling(repairNames, repairLabel);
@@ -238,7 +238,8 @@ export function adaptPublicCatalogV1(payload) {
               image: safePublicImageUrl(repair.imageUrl),
               time: safeOptionalLabel(repair.repairTime ?? repair.repair_time),
               warranty: safeOptionalLabel(repair.warranty),
-              symptoms: []
+              symptoms: [],
+              catalogOrder: repairOrder
             };
           });
 
@@ -251,7 +252,8 @@ export function adaptPublicCatalogV1(payload) {
             series: seriesLabel,
             image: resolveLocalModelImage(deviceLabel, brandLabel, modelLabel),
             publicImageUrl: safePublicImageUrl(model.imageUrl),
-            repairs
+            repairs,
+            catalogOrder: modelOrder
           };
         });
 
@@ -261,7 +263,8 @@ export function adaptPublicCatalogV1(payload) {
           id: publicId(seriesNode.id, "series", seriesPath),
           label: seriesLabel,
           image: safePublicImageUrl(seriesNode.imageUrl),
-          models
+          models,
+          catalogOrder: seriesOrder
         };
       });
 
@@ -271,7 +274,8 @@ export function adaptPublicCatalogV1(payload) {
         id: publicId(brand.id, "brand", brandPath),
         label: brandLabel,
         image: safePublicImageUrl(brand.imageUrl),
-        series
+        series,
+        catalogOrder: brandOrder
       };
     });
 
@@ -279,7 +283,8 @@ export function adaptPublicCatalogV1(payload) {
       id: publicId(device.id, "device", [deviceLabel]),
       label: deviceLabel,
       image: safePublicImageUrl(device.imageUrl),
-      brands
+      brands,
+      catalogOrder: deviceOrder
     };
   });
 
