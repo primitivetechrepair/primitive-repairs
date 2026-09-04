@@ -404,7 +404,13 @@ export function renderCardGrid(container, items = []) {
     items.some((item) => String(item?.label || "") === "Consoles") &&
     items.some((item) => String(item?.label || "") === "Wearables");
 
-  const displayItems = isDeviceGrid
+  const hasCatalogOrder = items.length > 0 && items.every((item) => {
+    return Number.isInteger(item?.catalogOrder) && item.catalogOrder >= 0;
+  });
+
+  const displayItems = hasCatalogOrder
+    ? [...items].sort((a, b) => a.catalogOrder - b.catalogOrder)
+    : isDeviceGrid
     ? items
     : isPhoneBrandGrid
       ? [...items].sort((a, b) => {

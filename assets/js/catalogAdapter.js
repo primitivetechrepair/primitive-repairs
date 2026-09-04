@@ -3,6 +3,7 @@ const MAX_LABEL_LENGTH = 160;
 const MAX_ITEMS_PER_LEVEL = 250;
 const MAX_TOTAL_NODES = 20000;
 const CONTROL_CHARACTERS = /[\u0000-\u001f\u007f]/u;
+const PUBLIC_ID_PATTERN = /^[a-z][a-z0-9_-]{5,119}$/;
 const PUBLIC_IMAGE_PATH = "/storage/v1/object/public/intake-card-images/";
 const UUID_PATTERN = /(?:^|[^0-9a-f])[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}(?:$|[^0-9a-f])/i;
 
@@ -125,6 +126,12 @@ export function createStableOptionId(level, path) {
   return `${slug(level)}-${slug(path[path.length - 1])}-${fnv1a(canonicalPath)}`;
 }
 
+function publicId(value, level, path) {
+  if (value == null || value === "") return createStableOptionId(level, path);
+  if (typeof value !== "string" || !PUBLIC_ID_PATTERN.test(value)) invalid();
+  return value;
+}
+
 function normalizeImageFileName(value) {
   const normalized = slug(value);
   const overrides = {
@@ -182,35 +189,35 @@ export function adaptPublicCatalogV1(payload) {
   };
 
   const deviceNames = new Set();
-  const devices = safeList(source.devices).map((rawDevice) => {
+  const devices = safeList(source.devices).map((rawDevice, deviceOrder) => {
     const device = plainRecord(rawDevice);
     const deviceLabel = safeLabel(device.name);
     uniqueSibling(deviceNames, deviceLabel);
     countNode();
 
     const brandNames = new Set();
-    const brands = safeList(device.brands).map((rawBrand) => {
+    const brands = safeList(device.brands).map((rawBrand, brandOrder) => {
       const brand = plainRecord(rawBrand);
       const brandLabel = safeLabel(brand.name);
       uniqueSibling(brandNames, brandLabel);
       countNode();
 
       const seriesNames = new Set();
-      const series = safeList(brand.series).map((rawSeries) => {
+      const series = safeList(brand.series).map((rawSeries, seriesOrder) => {
         const seriesNode = plainRecord(rawSeries);
         const seriesLabel = safeLabel(seriesNode.name);
         uniqueSibling(seriesNames, seriesLabel);
         countNode();
 
         const modelNames = new Set();
-        const models = safeList(seriesNode.models).map((rawModel) => {
+        const models = safeList(seriesNode.models).map((rawModel, modelOrder) => {
           const model = plainRecord(rawModel);
           const modelLabel = safeLabel(model.name);
           uniqueSibling(modelNames, modelLabel);
           countNode();
 
           const repairNames = new Set();
-          const repairs = safeList(model.repairs).map((rawRepair) => {
+          const repairs = safeList(model.repairs).map((rawRepair, repairOrder) => {
             const repair = plainRecord(rawRepair);
             const repairLabel = safeLabel(repair.name);
             uniqueSibling(repairNames, repairLabel);
@@ -225,54 +232,59 @@ export function adaptPublicCatalogV1(payload) {
             ];
 
             return {
-              id: createStableOptionId("repair", repairPath),
+              id: publicId(repair.id, "repair", repairPath),
               label: repairLabel,
               repair: repairLabel,
               image: safePublicImageUrl(repair.imageUrl),
               time: safeOptionalLabel(repair.repairTime ?? repair.repair_time),
               warranty: safeOptionalLabel(repair.warranty),
-              symptoms: []
+              symptoms: [],
+              catalogOrder: repairOrder
             };
           });
 
           const modelPath = [deviceLabel, brandLabel, seriesLabel, modelLabel];
 
           return {
-            id: createStableOptionId("model", modelPath),
+            id: publicId(model.id, "model", modelPath),
             label: modelLabel,
             model: modelLabel,
             series: seriesLabel,
             image: resolveLocalModelImage(deviceLabel, brandLabel, modelLabel),
             publicImageUrl: safePublicImageUrl(model.imageUrl),
-            repairs
+            repairs,
+            catalogOrder: modelOrder
           };
         });
 
         const seriesPath = [deviceLabel, brandLabel, seriesLabel];
 
         return {
-          id: createStableOptionId("series", seriesPath),
+          id: publicId(seriesNode.id, "series", seriesPath),
           label: seriesLabel,
           image: safePublicImageUrl(seriesNode.imageUrl),
-          models
+          models,
+          catalogOrder: seriesOrder
         };
       });
 
       const brandPath = [deviceLabel, brandLabel];
 
       return {
-        id: createStableOptionId("brand", brandPath),
+        id: publicId(brand.id, "brand", brandPath),
         label: brandLabel,
         image: safePublicImageUrl(brand.imageUrl),
-        series
+        series,
+        catalogOrder: brandOrder
       };
     });
 
     return {
-      id: createStableOptionId("device", [deviceLabel]),
+      id: publicId(device.id, "device", [deviceLabel]),
       label: deviceLabel,
       image: safePublicImageUrl(device.imageUrl),
-      brands
+      brands,
+      catalogOrder: deviceOrder
     };
   });
 

@@ -15,7 +15,7 @@ import {
   BenchLayerCatalogProvider,
   LegacyCatalogProvider
 } from "../assets/js/catalogProviders.js";
-import { createOptionCard } from "../assets/js/cardRenderer.js";
+import { createOptionCard, renderCardGrid } from "../assets/js/cardRenderer.js";
 import { resetAllState, resetStep, state } from "../assets/js/state.js";
 import { readCatalogConfig } from "../api/catalog-config.js";
 import catalogConfigHandler from "../api/catalog-config.js";
@@ -89,6 +89,62 @@ test("Public Catalog V1 adapter maps the complete hierarchy and stable IDs", asy
   assert.match(device.id, /^device-/);
   assert.match(model.id, /^model-/);
   assert.equal(model.image, "/images/models/apple/iphone16.webp");
+});
+
+test("BenchLayer catalog arrays retain canonical order in Repair Flow card grids", () => {
+  const source = responseFixture();
+  source.devices[0].brands[0].series[0].models = [
+    { name: "Zeta Model", repairs: [] },
+    { name: "Alpha Model", repairs: [] }
+  ];
+  const models = adaptPublicCatalogV1(source).devices[0].brands[0].series[0].models;
+  const appended = [];
+  const previousDocument = globalThis.document;
+  globalThis.document = {
+    createElement() {
+      return {
+        setAttribute(name, value) { this[name] = value; },
+        addEventListener() {},
+        className: "",
+        innerHTML: ""
+      };
+    }
+  };
+
+  try {
+    renderCardGrid({
+      innerHTML: "",
+      appendChild(card) { appended.push(card["aria-label"]); }
+    }, models.map((model) => ({
+      label: model.label,
+      catalogOrder: model.catalogOrder
+    })));
+  } finally {
+    globalThis.document = previousDocument;
+  }
+
+  assert.deepEqual(appended, ["Zeta Model", "Alpha Model"]);
+});
+
+test("server-issued IDs survive label changes while legacy responses retain deterministic fallbacks", () => {
+  const first = responseFixture();
+  first.catalogVersion = 4;
+  first.devices[0].id = "dev_1234567890abcdef";
+  first.devices[0].brands[0].id = "brd_1234567890abcdef";
+  first.devices[0].brands[0].series[0].id = "ser_1234567890abcdef";
+  first.devices[0].brands[0].series[0].models[0].id = "mdl_1234567890abcdef";
+  first.devices[0].brands[0].series[0].models[0].repairs[0].id = "rep_1234567890abcdef";
+  const original = adaptPublicCatalogV1(first);
+
+  const renamed = structuredClone(first);
+  renamed.devices[0].brands[0].series[0].models[0].name = "iPhone 16 (2026)";
+  const updated = adaptPublicCatalogV1(renamed);
+  assert.equal(original.devices[0].brands[0].series[0].models[0].id, "mdl_1234567890abcdef");
+  assert.equal(updated.devices[0].brands[0].series[0].models[0].id, "mdl_1234567890abcdef");
+
+  const invalidId = structuredClone(first);
+  invalidId.devices[0].id = "<script>";
+  assert.throws(() => adaptPublicCatalogV1(invalidId), CatalogAdapterError);
 });
 
 test("adapter rejects unsupported, malformed, empty, duplicate, and prototype-like data", () => {
