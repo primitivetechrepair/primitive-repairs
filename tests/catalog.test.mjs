@@ -188,7 +188,7 @@ test("catalog labels are escaped before card HTML insertion", () => {
     assert.equal(card.innerHTML.includes("<script>"), false);
     assert.equal(card.innerHTML.includes("<img src=x"), false);
     assert.match(card.innerHTML, /&lt;img/);
-    assert.match(card.innerHTML, /\/images\/repairs\/default\.webp/);
+    assert.match(card.innerHTML, /\/images\/repairs\/diagnostic-not-sure\.png/);
   } finally {
     globalThis.document = previousDocument;
   }
@@ -478,5 +478,152 @@ test("6C.3 catalog integration remains isolated from the 6C.4 intake adapter", a
   assert.match(submitter, /mapRepairFlowToPublicIntake/);
   for (const serviceType of ["meet-up", "pickup", "onsite", "mail-in"]) {
     assert.equal(appointments.includes(`id: "${serviceType}"`), true);
+  }
+});
+
+// CATALOG IMAGE COMPATIBILITY REGRESSION COVERAGE
+
+test("trusted organization-scoped catalog images are accepted and untrusted hosts fail closed", () => {
+  const organizationId = "af53eab2-0499-47da-9e5a-68c0997a47fd";
+  const trustedUrl =
+    "https://gorjynnsbmdifnkzxame.supabase.co/storage/v1/object/public/intake-card-images/" +
+    organizationId +
+    "/models/iphone16.webp";
+
+  const trusted = responseFixture();
+  trusted.devices[0].brands[0].series[0].models[0].imageUrl = trustedUrl;
+
+  const trustedModel =
+    adaptPublicCatalogV1(trusted)
+      .devices[0]
+      .brands[0]
+      .series[0]
+      .models[0];
+
+  assert.equal(trustedModel.publicImageUrl, trustedUrl);
+  assert.equal(trustedModel.image, trustedUrl);
+
+  const untrusted = responseFixture();
+  untrusted.devices[0].brands[0].series[0].models[0].imageUrl =
+    trustedUrl.replace(
+      "gorjynnsbmdifnkzxame.supabase.co",
+      "images.example.com"
+    );
+
+  const untrustedModel =
+    adaptPublicCatalogV1(untrusted)
+      .devices[0]
+      .brands[0]
+      .series[0]
+      .models[0];
+
+  assert.equal(untrustedModel.publicImageUrl, null);
+  assert.equal(
+    untrustedModel.image,
+    "/images/models/apple/iphone16.webp"
+  );
+});
+
+test("adapter removes empty catalog branches before Repair Flow rendering", () => {
+  const source = responseFixture();
+
+  source.devices.push({
+    name: "Empty Device",
+    brands: []
+  });
+
+  source.devices[0].brands.push({
+    name: "Empty Brand",
+    series: []
+  });
+
+  source.devices[0].brands[0].series.push({
+    name: "Empty Series",
+    models: []
+  });
+
+  const catalog = adaptPublicCatalogV1(source);
+
+  assert.deepEqual(
+    catalog.devices.map((device) => device.label),
+    ["Phone"]
+  );
+
+  assert.deepEqual(
+    catalog.devices[0].brands.map((brand) => brand.label),
+    ["Apple"]
+  );
+
+  assert.deepEqual(
+    catalog.devices[0].brands[0].series.map((series) => series.label),
+    ["iPhone 16 Series"]
+  );
+});
+
+test("non-phone models do not invent local model image paths", () => {
+  const source = responseFixture({
+    devices: [
+      {
+        name: "Computer / Laptop",
+        brands: [
+          {
+            name: "Dell",
+            series: [
+              {
+                name: "XPS Series",
+                models: [
+                  {
+                    name: "XPS 13",
+                    repairs: []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  });
+
+  const model =
+    adaptPublicCatalogV1(source)
+      .devices[0]
+      .brands[0]
+      .series[0]
+      .models[0];
+
+  assert.equal(model.image, null);
+  assert.equal(model.publicImageUrl, null);
+});
+
+test("option cards reject lookalike public-storage URLs on untrusted hosts", () => {
+  const previousDocument = globalThis.document;
+
+  globalThis.document = {
+    createElement() {
+      return {
+        setAttribute() {},
+        addEventListener() {},
+        className: "",
+        innerHTML: ""
+      };
+    }
+  };
+
+  try {
+    const card = createOptionCard({
+      label: "Image Test",
+      image:
+        "https://images.example.com/storage/v1/object/public/intake-card-images/" +
+        "af53eab2-0499-47da-9e5a-68c0997a47fd/test.webp"
+    });
+
+    assert.equal(card.innerHTML.includes("images.example.com"), false);
+    assert.match(
+      card.innerHTML,
+      /\/images\/repairs\/diagnostic-not-sure\.png/
+    );
+  } finally {
+    globalThis.document = previousDocument;
   }
 });

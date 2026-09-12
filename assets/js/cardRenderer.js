@@ -1,4 +1,7 @@
-const DEFAULT_CARD_IMAGE = "/images/repairs/default.webp";
+const DEFAULT_CARD_IMAGE = "/images/repairs/diagnostic-not-sure.png";
+const PUBLIC_IMAGE_HOSTS = new Set([
+  "gorjynnsbmdifnkzxame.supabase.co"
+]);
 
 function escapeHtml(value) {
   return String(value || "")
@@ -25,6 +28,7 @@ function getSafeImage(image) {
 
     if (
       url.protocol === "https:" &&
+      PUBLIC_IMAGE_HOSTS.has(url.hostname) &&
       !url.username &&
       !url.password &&
       !url.search &&
@@ -80,16 +84,37 @@ export function getBrandImage(device, brand) {
   }
 
   const brandFolderMap = {
-  tablet: "tablets",
-  computer: "computers",
-  console: "consoles",
-  smartwatch: "smartwatches",
-  mods: "mods",
-  other: "other"
-};
+    tablet: "tablets",
+    computer: "computers",
+    "computer-laptop": "computers",
+    pc: "computers",
+    laptop: "computers",
+    console: "consoles",
+    "game-console": "consoles",
+    smartwatch: "smartwatches",
+    wearable: "smartwatches",
+    "smartwatch-wearable": "smartwatches",
+    mods: "mods",
+    other: "other"
+  };
 
 if (normalizedDevice === "phone" || normalizedDevice === "cell-phone") {
   return getPhoneBrandImage(brand);
+}
+
+if (normalizedDevice === "smart-glasses") {
+  if (normalizedBrand === "meta" || normalizedBrand === "ray-ban") {
+    return "/images/brands/mods/meta-glasses.png";
+  }
+
+  return "/images/supported-devices/thumbs/meta-glasses.webp";
+}
+
+if (
+  normalizedDevice === "audio-device" ||
+  normalizedDevice === "other-electronics"
+) {
+  return "/images/supported-devices/thumbs/electronics.webp";
 }
 
 const folder = brandFolderMap[normalizedDevice];
@@ -122,18 +147,37 @@ return `/images/brands/${folder}/${normalizedBrand}.png`;
 }
 
 export function getDeviceImage(label) {
+  const normalizedLabel = String(label || "");
+
+  const explicitImageMap = {
+    "Smart Glasses": "/images/supported-devices/thumbs/meta-glasses.webp",
+    "Audio Device": "/images/supported-devices/thumbs/electronics.webp",
+    "Other Electronics": "/images/supported-devices/thumbs/electronics.webp"
+  };
+
+  if (explicitImageMap[normalizedLabel]) {
+    return explicitImageMap[normalizedLabel];
+  }
+
   const deviceImageMap = {
     "Cell Phone": "phone",
     Phone: "phone",
     Tablet: "tablet",
+    "Computer / Laptop": "computer",
     Computer: "computer",
+    PC: "computer",
+    Laptop: "computer",
+    "Game Console": "console",
     Console: "console",
+    "Smartwatch / Wearable": "smartwatch",
     Smartwatch: "smartwatch",
+    Wearable: "smartwatch",
     Mods: "mods",
-    Other: "other"
+    Other: "other",
+    iPod: "phone"
   };
 
-  const imageName = deviceImageMap[String(label || "")];
+  const imageName = deviceImageMap[normalizedLabel];
 
   if (!imageName) {
     return DEFAULT_CARD_IMAGE;
@@ -369,15 +413,25 @@ export function renderCardGrid(container, items = []) {
   container.innerHTML = "";
 
   const deviceOrder = [
-  "Cell Phone",
-  "Phone",
-  "Tablet",
-  "Computer",
-  "Console",
-  "Smartwatch",
-  "Mods",
-  "Other"
-];
+    "Phone",
+    "Tablet",
+    "Computer / Laptop",
+    "Game Console",
+    "Smartwatch / Wearable",
+    "Smart Glasses",
+    "Audio Device",
+    "Other Electronics",
+    "Cell Phone",
+    "Computer",
+    "PC",
+    "Laptop",
+    "Console",
+    "Smartwatch",
+    "Wearable",
+    "Mods",
+    "Other",
+    "iPod"
+  ];
 
   const isDeviceGrid =
     items.length &&

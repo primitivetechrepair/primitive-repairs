@@ -2,7 +2,7 @@ import { loadCatalog as loadLegacyCatalog } from "./catalog.js?v=20260831-1";
 import {
   adaptPublicCatalogV1,
   createStableOptionId
-} from "./catalogAdapter.js?v=20260831-1";
+} from "./catalogAdapter.js?v=20260912-1";
 import {
   fetchCatalogRuntimeConfig,
   PublicCatalogClient

@@ -5,7 +5,7 @@ import {
   getBrandImage,
   getRepairImage,
   getResolvedRepairImage
-} from "./cardRenderer.js?v=20260831-1";
+} from "./cardRenderer.js?v=20260912-1";
 
 function optionLabel(option) {
   return typeof option === "string"
@@ -74,9 +74,22 @@ function normalizeSeriesImageName(value) {
 
 function getSeriesCardImage(brand, series) {
   const selectedBrand = String(brand || "").trim();
+  const selectedDevice = String(state.device || "").trim();
   const seriesImageName = normalizeSeriesImageName(series);
 
-  if (selectedBrand === "Apple") {
+  if (selectedDevice === "Tablet" && selectedBrand === "Apple") {
+    return "/images/series/apple/ipad.webp";
+  }
+
+  if (selectedDevice === "Smart Glasses") {
+    if (selectedBrand === "Meta" || selectedBrand === "Ray-Ban") {
+      return "/images/series/meta-glasses/raybanmeta.png";
+    }
+
+    return "/images/supported-devices/thumbs/meta-glasses.webp";
+  }
+
+  if (selectedDevice === "Phone" && selectedBrand === "Apple") {
     if (series === "iPhone SE Series") {
       return "/images/models/apple/iphonese3.webp";
     }
@@ -104,17 +117,25 @@ function getSeriesCardImage(brand, series) {
     return `/images/series/apple/${appleImageName}.webp`;
   }
 
-  if (selectedBrand === "Motorola" && series === "Moto G Series") {
+  if (
+    selectedDevice === "Phone" &&
+    selectedBrand === "Motorola" &&
+    series === "Moto G Series"
+  ) {
     return "/images/models/motorola/motogmax5g.webp";
   }
 
-  const brandFolder = selectedBrand
-    .toLowerCase()
-    .replace(/\s+/g, "-")
-    .replace(/[()]/g, "")
-    .replace(/[^a-z0-9-]/g, "");
+  if (selectedDevice === "Phone") {
+    const brandFolder = selectedBrand
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[()]/g, "")
+      .replace(/[^a-z0-9-]/g, "");
 
-  return `/images/series/${brandFolder}/${seriesImageName}.png`;
+    return `/images/series/${brandFolder}/${seriesImageName}.png`;
+  }
+
+  return getBrandImage(selectedDevice, selectedBrand);
 }
 
 export function renderDeviceStep(container, devices, onSelect) {
@@ -358,7 +379,10 @@ const filteredModels = models
 
     const cards = filteredModels.map((model) => ({
   label: getModelDisplayLabel(model),
-  image: model.image,
+  image:
+    model.image ||
+    getBrandImage(state.device, selectedBrand) ||
+    getDeviceImage(state.device),
   badge: model.series,
   catalogOrder: model.catalogOrder,
   onClick: () => onSelect({

@@ -5,7 +5,9 @@ const MAX_TOTAL_NODES = 20000;
 const CONTROL_CHARACTERS = /[\u0000-\u001f\u007f]/u;
 const PUBLIC_ID_PATTERN = /^[a-z][a-z0-9_-]{5,119}$/;
 const PUBLIC_IMAGE_PATH = "/storage/v1/object/public/intake-card-images/";
-const UUID_PATTERN = /(?:^|[^0-9a-f])[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}(?:$|[^0-9a-f])/i;
+const PUBLIC_IMAGE_HOSTS = new Set([
+  "gorjynnsbmdifnkzxame.supabase.co"
+]);
 
 export class CatalogAdapterError extends Error {
   constructor(code = "catalog_invalid") {
@@ -72,6 +74,7 @@ function safePublicImageUrl(value) {
 
     if (
       url.protocol !== "https:" ||
+      !PUBLIC_IMAGE_HOSTS.has(url.hostname) ||
       url.username ||
       url.password ||
       url.search ||
@@ -85,8 +88,7 @@ function safePublicImageUrl(value) {
     if (
       !publicPath ||
       publicPath.includes("\\") ||
-      publicPath.split("/").some((part) => !part || part === "." || part === "..") ||
-      UUID_PATTERN.test(publicPath)
+      publicPath.split("/").some((part) => !part || part === "." || part === "..")
     ) {
       return null;
     }
@@ -155,7 +157,7 @@ export function resolveLocalModelImage(deviceLabel, brandLabel, modelLabel) {
     return `/images/models/${slug(brandLabel)}/${normalizeImageFileName(modelLabel)}.webp`;
   }
 
-  return `/images/models/${slug(modelLabel)}.webp`;
+  return null;
 }
 
 function uniqueSibling(seen, label) {
@@ -244,14 +246,17 @@ export function adaptPublicCatalogV1(payload) {
           });
 
           const modelPath = [deviceLabel, brandLabel, seriesLabel, modelLabel];
+          const publicImageUrl = safePublicImageUrl(model.imageUrl);
 
           return {
             id: publicId(model.id, "model", modelPath),
             label: modelLabel,
             model: modelLabel,
             series: seriesLabel,
-            image: resolveLocalModelImage(deviceLabel, brandLabel, modelLabel),
-            publicImageUrl: safePublicImageUrl(model.imageUrl),
+            image:
+              publicImageUrl ||
+              resolveLocalModelImage(deviceLabel, brandLabel, modelLabel),
+            publicImageUrl,
             repairs,
             catalogOrder: modelOrder
           };
@@ -266,7 +271,7 @@ export function adaptPublicCatalogV1(payload) {
           models,
           catalogOrder: seriesOrder
         };
-      });
+      }).filter((seriesNode) => seriesNode.models.length > 0);
 
       const brandPath = [deviceLabel, brandLabel];
 
@@ -277,7 +282,7 @@ export function adaptPublicCatalogV1(payload) {
         series,
         catalogOrder: brandOrder
       };
-    });
+    }).filter((brand) => brand.series.length > 0);
 
     return {
       id: publicId(device.id, "device", [deviceLabel]),
@@ -286,7 +291,7 @@ export function adaptPublicCatalogV1(payload) {
       brands,
       catalogOrder: deviceOrder
     };
-  });
+  }).filter((device) => device.brands.length > 0);
 
   if (!devices.length) invalid("catalog_empty");
 
