@@ -3,9 +3,9 @@ import {
   renderCardGrid,
   getDeviceImage,
   getBrandImage,
-  getRepairImage,
-  getResolvedRepairImage
-} from "./cardRenderer.js?v=20260912-2";
+  getResolvedRepairImage,
+  getSelectionCardImageSources
+} from "./cardRenderer.js?v=20260913-1";
 
 function optionLabel(option) {
   return typeof option === "string"
@@ -126,6 +126,43 @@ function getSeriesCardImage(brand, series) {
   }
 
   return getBrandImage(selectedDevice, selectedBrand);
+}
+
+const selectionCardImageRequests = new WeakMap();
+
+function setSelectionCardBackground(image, sources) {
+  const request = {};
+  selectionCardImageRequests.set(image, request);
+
+  if (!sources.length) {
+    image.style.backgroundImage = "none";
+    return;
+  }
+
+  const fallbackImage = sources[sources.length - 1];
+  image.style.backgroundImage = `url('${fallbackImage}')`;
+
+  const loadSource = (index) => {
+    if (index >= sources.length - 1) return;
+
+    const loader = new Image();
+
+    loader.onload = () => {
+      if (selectionCardImageRequests.get(image) === request) {
+        image.style.backgroundImage = `url('${sources[index]}')`;
+      }
+    };
+
+    loader.onerror = () => {
+      if (selectionCardImageRequests.get(image) === request) {
+        loadSource(index + 1);
+      }
+    };
+
+    loader.src = sources[index];
+  };
+
+  loadSource(0);
 }
 
 export function renderDeviceStep(container, devices, onSelect) {
@@ -1118,40 +1155,40 @@ const label = card.querySelector(".card-label");
       card.classList.add("filled");
       card.classList.remove("is-missing-choice");
 
-      if (step.key === "device") {
-        image.style.backgroundImage = `url('${getDeviceImage(state.device)}')`;
-      }
-
-      if (step.key === "brand") {
-        image.style.backgroundImage = `url('${getBrandImage(state.device, state.brand)}')`;
-      }
-
-      if (step.key === "series") {
-  image.style.backgroundImage = `url('${getSeriesCardImage(state.brand, state.series)}')`;
-}
-
-      if (step.key === "model") {
-        image.style.backgroundImage = `url('${state.model?.image || "/images/models/default.webp"}')`;
-      }
+      let primarySelectedRepair = null;
 
       if (step.key === "repair") {
-  const selectedRepairs = Array.isArray(state.repairs) && state.repairs.length
-    ? state.repairs
-    : state.repair
-      ? [state.repair]
-      : [];
+        const selectedRepairs = Array.isArray(state.repairs) && state.repairs.length
+          ? state.repairs
+          : state.repair
+            ? [state.repair]
+            : [];
 
-  const primaryRepair = selectedRepairs[0];
+        primarySelectedRepair = selectedRepairs[0] || null;
 
-  image.style.backgroundImage = primaryRepair
-    ? `url('${getResolvedRepairImage(primaryRepair)}')`
-    : "none";
+        image.classList.toggle(
+          "selected-card-image-multiple",
+          selectedRepairs.length > 1
+        );
+      }
 
-  image.classList.toggle(
-    "selected-card-image-multiple",
-    selectedRepairs.length > 1
-  );
-}
+      setSelectionCardBackground(
+        image,
+        getSelectionCardImageSources({
+          stepKey: step.key,
+          device: state.device,
+          brand: state.brand,
+          model:
+            state.model?.model ||
+            state.model?.label ||
+            state.model,
+          repair: primarySelectedRepair,
+          seriesImage:
+            step.key === "series"
+              ? getSeriesCardImage(state.brand, state.series)
+              : null
+        })
+      );
 
       button.onclick = (event) => {
         event.stopPropagation();

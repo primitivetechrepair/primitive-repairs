@@ -15,7 +15,12 @@ import {
   BenchLayerCatalogProvider,
   LegacyCatalogProvider
 } from "../assets/js/catalogProviders.js";
-import { createOptionCard, renderCardGrid } from "../assets/js/cardRenderer.js";
+import {
+  createOptionCard,
+  getLocalModelImage,
+  getSelectionCardImageSources,
+  renderCardGrid
+} from "../assets/js/cardRenderer.js";
 import { resetAllState, resetStep, state } from "../assets/js/state.js";
 import { readCatalogConfig } from "../api/catalog-config.js";
 import catalogConfigHandler from "../api/catalog-config.js";
@@ -672,4 +677,88 @@ test("option cards reject lookalike public-storage URLs on untrusted hosts", () 
   } finally {
     globalThis.document = previousDocument;
   }
+});
+
+test("local selection model images never depend on managed catalog URLs", () => {
+  assert.equal(
+    getLocalModelImage("Phone", "Apple", "iPhone 16 Pro Max"),
+    "/images/models/apple/iphone16promax.webp"
+  );
+  assert.equal(
+    getLocalModelImage("Tablet", "Apple", "iPad 10"),
+    "/images/models/ipads/ipad10.webp"
+  );
+  assert.equal(
+    getLocalModelImage("Phone", "Google", "Pixel 9 Pro XL"),
+    null
+  );
+});
+
+test("selection summary cards use Primitive Repairs images only", () => {
+  const managedImage =
+    "https://gorjynnsbmdifnkzxame.supabase.co/storage/v1/object/public/" +
+    "intake-card-images/af53eab2-0499-47da-9e5a-68c0997a47fd/" +
+    "models/iphone16promax.webp";
+
+  resetAllState();
+  const repair = {
+    repair: "Diagnostic / Not Sure",
+    image: managedImage
+  };
+
+  const modelSources = getSelectionCardImageSources({
+    stepKey: "model",
+    device: "Phone",
+    brand: "Apple",
+    model: "iPhone 16 Pro Max"
+  });
+  const repairSources = getSelectionCardImageSources({
+    stepKey: "repair",
+    device: "Phone",
+    brand: "Apple",
+    repair
+  });
+  const googleModelSources = getSelectionCardImageSources({
+    stepKey: "model",
+    device: "Phone",
+    brand: "Google",
+    model: "Pixel 9 Pro XL"
+  });
+
+  assert.deepEqual(modelSources, [
+    "/images/models/apple/iphone16promax.webp",
+    "/images/brands/apple.webp",
+    "/images/devices/thumbs/phone.webp"
+  ]);
+  assert.deepEqual(repairSources, [
+    "/images/repairs/diagnostic-not-sure.png"
+  ]);
+  assert.deepEqual(googleModelSources, [
+    "/images/brands/google.png",
+    "/images/devices/thumbs/phone.webp"
+  ]);
+  assert.equal(modelSources.includes(managedImage), false);
+  assert.equal(repairSources.includes(managedImage), false);
+});
+
+test("selection card renderer never reads managed catalog image fields", async () => {
+  const rendererSource = await readFile(
+    new URL("../assets/js/renderer.js", import.meta.url),
+    "utf8"
+  );
+  const selectionStart = rendererSource.indexOf(
+    "export function renderSelectionCards"
+  );
+  const selectionEnd = rendererSource.indexOf(
+    "export function renderSuccessStep",
+    selectionStart
+  );
+  const selectionSource = rendererSource.slice(selectionStart, selectionEnd);
+
+  assert.ok(selectionStart >= 0);
+  assert.ok(selectionEnd > selectionStart);
+  assert.match(selectionSource, /getSelectionCardImageSources/);
+  assert.doesNotMatch(selectionSource, /state\.model\?\.image/);
+  assert.doesNotMatch(selectionSource, /getResolvedRepairImage/);
+  assert.doesNotMatch(selectionSource, /publicImageUrl/);
 });

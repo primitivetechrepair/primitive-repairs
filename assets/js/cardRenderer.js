@@ -53,6 +53,22 @@ function normalizeImageFileName(value) {
     .replace(/[^a-z0-9-]/g, "");
 }
 
+function normalizeModelImageFileName(value) {
+  const normalized = normalizeImageFileName(value);
+  const overrides = {
+    "iphone-original": "iphone",
+    "iphone-se": "iphonese",
+    "iphone-se-1st-gen": "iphonese",
+    "iphone-se-1st-generation": "iphonese",
+    "iphone-se-2nd-gen": "iphonese2",
+    "iphone-se-2nd-generation": "iphonese2",
+    "iphone-se-3rd-gen": "iphonese3",
+    "iphone-se-3rd-generation": "iphonese3"
+  };
+
+  return overrides[normalized] || normalized.replace(/-/g, "");
+}
+
 function getPhoneBrandImage(label) {
   const imageName = normalizeImageFileName(label);
   const explicitImageMap = {
@@ -161,6 +177,91 @@ export function getDeviceImage(label) {
   }
 
   return `/images/devices/thumbs/${imageName}.webp`;
+}
+
+export function getLocalModelImage(device, brand, model) {
+  const normalizedDevice = normalizeImageFileName(device);
+  const normalizedBrand = normalizeImageFileName(brand);
+  const normalizedModel = normalizeModelImageFileName(model);
+  const localPhoneModelBrands = new Set([
+    "alcatel",
+    "apple",
+    "motorola",
+    "samsung"
+  ]);
+
+  if (
+    (normalizedDevice === "phone" || normalizedDevice === "cell-phone") &&
+    localPhoneModelBrands.has(normalizedBrand) &&
+    normalizedModel
+  ) {
+    return `/images/models/${normalizedBrand}/${normalizedModel}.webp`;
+  }
+
+  if (normalizedDevice === "tablet" && normalizedBrand === "apple") {
+    const regularIpadMatch = String(model || "")
+      .trim()
+      .match(/^iPad\s+(\d{1,2})$/i);
+
+    if (regularIpadMatch) {
+      const ipadNumber = Number(regularIpadMatch[1]);
+
+      if (ipadNumber >= 1 && ipadNumber <= 11) {
+        return `/images/models/ipads/ipad${ipadNumber}.webp`;
+      }
+    }
+  }
+
+  return null;
+}
+
+function uniqueImageSources(...sources) {
+  return [...new Set(
+    sources
+      .flat()
+      .map((source) => String(source || "").trim())
+      .filter(Boolean)
+  )];
+}
+
+export function getSelectionCardImageSources({
+  stepKey,
+  device,
+  brand,
+  model,
+  repair,
+  seriesImage
+}) {
+  const deviceImage = getDeviceImage(device);
+  const brandImage = getBrandImage(device, brand);
+
+  if (stepKey === "device") {
+    return uniqueImageSources(deviceImage);
+  }
+
+  if (stepKey === "brand") {
+    return uniqueImageSources(brandImage, deviceImage);
+  }
+
+  if (stepKey === "series") {
+    return uniqueImageSources(seriesImage, brandImage, deviceImage);
+  }
+
+  if (stepKey === "model") {
+    return uniqueImageSources(
+      getLocalModelImage(device, brand, model),
+      brandImage,
+      deviceImage
+    );
+  }
+
+  if (stepKey === "repair") {
+    return repair
+      ? uniqueImageSources(getRepairImage(repair))
+      : [];
+  }
+
+  return [];
 }
 
 function getRepairLabelValue(repair) {
