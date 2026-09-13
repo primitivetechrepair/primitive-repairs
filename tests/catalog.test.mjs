@@ -524,7 +524,7 @@ test("trusted organization-scoped catalog images are accepted and untrusted host
   );
 });
 
-test("adapter removes empty catalog branches before Repair Flow rendering", () => {
+test("adapter preserves active brand and series branches even before models are populated", () => {
   const source = responseFixture();
 
   source.devices.push({
@@ -551,13 +551,16 @@ test("adapter removes empty catalog branches before Repair Flow rendering", () =
 
   assert.deepEqual(
     catalog.devices[0].brands.map((brand) => brand.label),
-    ["Apple"]
+    ["Apple", "Empty Brand"]
   );
 
   assert.deepEqual(
     catalog.devices[0].brands[0].series.map((series) => series.label),
-    ["iPhone 16 Series"]
+    ["iPhone 16 Series", "Empty Series"]
   );
+
+  assert.equal(catalog.devices[0].brands[1].series.length, 0);
+  assert.equal(catalog.devices[0].brands[0].series[1].models.length, 0);
 });
 
 test("non-phone models do not invent local model image paths", () => {
@@ -594,6 +597,49 @@ test("non-phone models do not invent local model image paths", () => {
 
   assert.equal(model.image, null);
   assert.equal(model.publicImageUrl, null);
+});
+
+test("phone model fallback paths are only invented for local model asset brands", () => {
+  const source = responseFixture();
+  source.devices[0].brands[0].name = "Google";
+  source.devices[0].brands[0].series[0].models[0].name = "Pixel 10";
+
+  const model =
+    adaptPublicCatalogV1(source)
+      .devices[0]
+      .brands[0]
+      .series[0]
+      .models[0];
+
+  assert.equal(model.image, null);
+  assert.equal(model.publicImageUrl, null);
+});
+
+test("option cards use a validated parent fallback image when the primary image fails", () => {
+  const previousDocument = globalThis.document;
+
+  globalThis.document = {
+    createElement() {
+      return {
+        setAttribute() {},
+        addEventListener() {},
+        className: "",
+        innerHTML: ""
+      };
+    }
+  };
+
+  try {
+    const card = createOptionCard({
+      label: "Fallback Test",
+      image: "/images/models/apple/not-a-real-model.webp",
+      fallbackImage: "/images/brands/apple.webp"
+    });
+
+    assert.match(card.innerHTML, /this\.src='\/images\/brands\/apple\.webp'/);
+  } finally {
+    globalThis.document = previousDocument;
+  }
 });
 
 test("option cards reject lookalike public-storage URLs on untrusted hosts", () => {

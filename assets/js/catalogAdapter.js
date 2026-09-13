@@ -152,9 +152,19 @@ function normalizeImageFileName(value) {
 
 export function resolveLocalModelImage(deviceLabel, brandLabel, modelLabel) {
   const device = slug(deviceLabel);
+  const brand = slug(brandLabel);
+  const localPhoneModelBrands = new Set([
+    "alcatel",
+    "apple",
+    "motorola",
+    "samsung"
+  ]);
 
-  if (device === "phone" || device === "cell-phone") {
-    return `/images/models/${slug(brandLabel)}/${normalizeImageFileName(modelLabel)}.webp`;
+  if (
+    (device === "phone" || device === "cell-phone") &&
+    localPhoneModelBrands.has(brand)
+  ) {
+    return `/images/models/${brand}/${normalizeImageFileName(modelLabel)}.webp`;
   }
 
   return null;
@@ -271,7 +281,7 @@ export function adaptPublicCatalogV1(payload) {
           models,
           catalogOrder: seriesOrder
         };
-      }).filter((seriesNode) => seriesNode.models.length > 0);
+      });
 
       const brandPath = [deviceLabel, brandLabel];
 
@@ -282,7 +292,7 @@ export function adaptPublicCatalogV1(payload) {
         series,
         catalogOrder: brandOrder
       };
-    }).filter((brand) => brand.series.length > 0);
+    });
 
     return {
       id: publicId(device.id, "device", [deviceLabel]),

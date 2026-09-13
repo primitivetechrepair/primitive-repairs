@@ -55,24 +55,37 @@ function normalizeImageFileName(value) {
 
 function getPhoneBrandImage(label) {
   const imageName = normalizeImageFileName(label);
+  const explicitImageMap = {
+    apple: "/images/brands/apple.webp",
+    samsung: "/images/brands/samsung.webp",
+    motorola: "/images/brands/motorola.webp"
+  };
+  const localPngBrands = new Set([
+    "alcatel",
+    "asus",
+    "blackberry",
+    "google",
+    "htc",
+    "huawei",
+    "lg",
+    "nokia",
+    "nothing",
+    "oppo",
+    "realme",
+    "sony",
+    "xiaomi",
+    "zte"
+  ]);
 
-  if (!imageName) {
-    return DEFAULT_CARD_IMAGE;
+  if (explicitImageMap[imageName]) {
+    return explicitImageMap[imageName];
   }
 
-  if (imageName === "apple") {
-    return "/images/brands/apple.webp";
+  if (localPngBrands.has(imageName)) {
+    return `/images/brands/${imageName}.png`;
   }
 
-  if (imageName === "samsung") {
-    return "/images/brands/samsung.webp";
-  }
-
-  if (imageName === "motorola") {
-    return "/images/brands/motorola.webp";
-  }
-
-  return `/images/brands/${imageName}.png`;
+  return getDeviceImage("Phone");
 }
 
 export function getBrandImage(device, brand) {
@@ -80,70 +93,34 @@ export function getBrandImage(device, brand) {
   const normalizedBrand = normalizeImageFileName(brand);
 
   if (!normalizedDevice || !normalizedBrand) {
-    return DEFAULT_CARD_IMAGE;
+    return getDeviceImage(device);
   }
 
-  const brandFolderMap = {
-    tablet: "tablets",
-    computer: "computers",
-    "computer-laptop": "computers",
-    pc: "computers",
-    laptop: "computers",
-    console: "consoles",
-    "game-console": "consoles",
-    smartwatch: "smartwatches",
-    wearable: "smartwatches",
-    "smartwatch-wearable": "smartwatches",
-    mods: "mods",
-    other: "other"
-  };
-
-if (normalizedDevice === "phone" || normalizedDevice === "cell-phone") {
-  return getPhoneBrandImage(brand);
-}
-
-if (normalizedDevice === "smart-glasses") {
-  if (normalizedBrand === "meta" || normalizedBrand === "ray-ban") {
-    return "/images/brands/mods/meta-glasses.png";
+  if (normalizedDevice === "phone" || normalizedDevice === "cell-phone") {
+    return getPhoneBrandImage(brand);
   }
 
-  return "/images/supported-devices/thumbs/meta-glasses.webp";
-}
+  if (normalizedDevice === "smart-glasses") {
+    if (normalizedBrand === "meta" || normalizedBrand === "ray-ban") {
+      return "/images/brands/mods/meta-glasses.png";
+    }
 
-if (
-  normalizedDevice === "audio-device" ||
-  normalizedDevice === "other-electronics"
-) {
-  return "/images/supported-devices/thumbs/electronics.webp";
-}
+    return getDeviceImage(device);
+  }
 
-const folder = brandFolderMap[normalizedDevice];
+  if (normalizedDevice === "tablet") {
+    const tabletBrandImageMap = {
+      apple: "/images/brands/tablets/apple.webp",
+      amazon: "/images/brands/tablets/firemax11.webp",
+      lenovo: "/images/brands/tablets/ideatabpro2.webp",
+      microsoft: "/images/brands/tablets/surfacepro11.webp",
+      samsung: "/images/brands/tablets/galaxytabs11ultra.webp"
+    };
 
-if (!folder) {
-  return DEFAULT_CARD_IMAGE;
-}
+    return tabletBrandImageMap[normalizedBrand] || getDeviceImage(device);
+  }
 
-if (normalizedDevice === "tablet" && normalizedBrand === "apple") {
-  return "/images/brands/tablets/apple.webp";
-}
-
-if (normalizedDevice === "tablet" && normalizedBrand === "amazon") {
-  return "/images/brands/tablets/firemax11.webp";
-}
-
-if (normalizedDevice === "tablet" && normalizedBrand === "lenovo") {
-  return "/images/brands/tablets/ideatabpro2.webp";
-}
-
-if (normalizedDevice === "tablet" && normalizedBrand === "microsoft") {
-  return "/images/brands/tablets/surfacepro11.webp";
-}
-
-if (normalizedDevice === "tablet" && normalizedBrand === "samsung") {
-  return "/images/brands/tablets/galaxytabs11ultra.webp";
-}
-
-return `/images/brands/${folder}/${normalizedBrand}.png`;
+  return getDeviceImage(device);
 }
 
 export function getDeviceImage(label) {
@@ -361,6 +338,7 @@ function sortByNaturalLabel(a, b) {
 export function createOptionCard({
   label,
   image,
+  fallbackImage = DEFAULT_CARD_IMAGE,
   subtext = "",
   badge = "",
   className = "",
@@ -375,6 +353,7 @@ export function createOptionCard({
   const safeSubtext = escapeHtml(subtext);
   const safeBadge = escapeHtml(badge);
   const safeImage = escapeHtml(getSafeImage(image));
+  const safeFallbackImage = escapeHtml(getSafeImage(fallbackImage));
 
   card.innerHTML = `
     <div class="opt-thumb">
@@ -387,7 +366,7 @@ export function createOptionCard({
   height="76"
   loading="lazy"
   decoding="async"
-  onerror="this.onerror=null; this.src='${DEFAULT_CARD_IMAGE}';"
+  onerror="this.onerror=null; this.src='${safeFallbackImage}';"
 >
     </div>
 

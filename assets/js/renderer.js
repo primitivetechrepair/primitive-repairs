@@ -5,7 +5,7 @@ import {
   getBrandImage,
   getRepairImage,
   getResolvedRepairImage
-} from "./cardRenderer.js?v=20260912-1";
+} from "./cardRenderer.js?v=20260912-2";
 
 function optionLabel(option) {
   return typeof option === "string"
@@ -125,16 +125,6 @@ function getSeriesCardImage(brand, series) {
     return "/images/models/motorola/motogmax5g.webp";
   }
 
-  if (selectedDevice === "Phone") {
-    const brandFolder = selectedBrand
-      .toLowerCase()
-      .replace(/\s+/g, "-")
-      .replace(/[()]/g, "")
-      .replace(/[^a-z0-9-]/g, "");
-
-    return `/images/series/${brandFolder}/${seriesImageName}.png`;
-  }
-
   return getBrandImage(selectedDevice, selectedBrand);
 }
 
@@ -183,6 +173,7 @@ export function renderBrandStep(container, brands, onSelect) {
   const cards = brands.map((brand) => ({
     label: optionLabel(brand),
     image: brand?.image || getBrandImage(state.device, optionLabel(brand)),
+    fallbackImage: getDeviceImage(state.device),
     badge: selectedDevice,
     catalogOrder: brand?.catalogOrder,
     onClick: () => onSelect(brand)
@@ -211,6 +202,9 @@ export function renderSeriesStep(container, seriesList, onSelect) {
   const cards = seriesList.map((series) => ({
     label: optionLabel(series),
     image: series?.image || getSeriesCardImage(selectedBrand, optionLabel(series)),
+    fallbackImage:
+      getBrandImage(state.device, selectedBrand) ||
+      getDeviceImage(state.device),
     badge: "Series",
     catalogOrder: series?.catalogOrder,
     onClick: () => onSelect(series)
@@ -381,6 +375,9 @@ const filteredModels = models
   label: getModelDisplayLabel(model),
   image:
     model.image ||
+    getBrandImage(state.device, selectedBrand) ||
+    getDeviceImage(state.device),
+  fallbackImage:
     getBrandImage(state.device, selectedBrand) ||
     getDeviceImage(state.device),
   badge: model.series,
