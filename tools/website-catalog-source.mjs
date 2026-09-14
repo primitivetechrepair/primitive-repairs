@@ -2,6 +2,11 @@ import { readFile } from "node:fs/promises";
 
 const SOURCE_URL = new URL("../catalog/website-catalog.v4.json", import.meta.url);
 const ENTITY_COLLECTIONS = ["devices", "brands", "series", "models", "repairs"];
+const RETIRED_PLACEHOLDER_SERIES = new Set([
+  "iphone 16 model",
+  "iphone 17",
+  "iphone 2 series"
+]);
 const clone = (value) => globalThis.structuredClone
   ? structuredClone(value)
   : JSON.parse(JSON.stringify(value));
@@ -13,6 +18,12 @@ function assertSourceShape(catalog) {
   for (const collection of [...ENTITY_COLLECTIONS, "modelRepairs"]) {
     if (!Array.isArray(catalog[collection])) {
       throw new Error(`The website catalog source is missing ${collection}.`);
+    }
+  }
+  for (const series of catalog.series) {
+    const label = String(series?.label ?? "").trim().toLowerCase();
+    if (series?.active !== false && RETIRED_PLACEHOLDER_SERIES.has(label)) {
+      throw new Error(`The retired placeholder series must remain inactive: ${series.id}.`);
     }
   }
 }

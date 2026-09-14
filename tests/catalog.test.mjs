@@ -907,6 +907,17 @@ test("the source-controlled website catalog is complete, bounded, and presentati
     assert.equal(modelIds.has(relationship.modelId), true, relationship.modelId);
     assert.equal(repairIds.has(relationship.repairId), true, relationship.repairId);
   }
+
+  const retiredPlaceholderLabels = new Set([
+    "iphone 16 model",
+    "iphone 17",
+    "iphone 2 series"
+  ]);
+  const retiredPlaceholders = catalog.series.filter((entry) =>
+    retiredPlaceholderLabels.has(String(entry.label).trim().toLowerCase())
+  );
+  assert.equal(retiredPlaceholders.length, 1410);
+  assert.equal(retiredPlaceholders.every((entry) => entry.active === false), true);
 });
 
 test("website catalog automation can only stage the exact authenticated BenchLayer endpoint", async () => {
