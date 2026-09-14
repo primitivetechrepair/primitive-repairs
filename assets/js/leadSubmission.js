@@ -1,4 +1,7 @@
 import { state } from "./state.js?v=20260831-1";
+import {
+  getSelectionCardImageSources
+} from "./cardRenderer.js?v=20260913-2";
 
 function generateRequestId() {
   const now = new Date();
@@ -112,6 +115,17 @@ export function buildLeadPayload(form) {
     warranty: null,
     symptoms: []
   };
+  const selectedModelLabel =
+    state.model?.model ||
+    state.model?.label ||
+    state.model ||
+    "";
+  const [websiteDeviceImage = null] = getSelectionCardImageSources({
+    stepKey: "model",
+    device: state.device,
+    brand: state.brand,
+    model: selectedModelLabel
+  });
   const payload = {
     requestId: generateRequestId(),
 
@@ -147,9 +161,9 @@ export function buildLeadPayload(form) {
       type: state.device,
       brand: state.brand,
       series: state.series,
-      model: state.model?.model || state.model,
+      model: selectedModelLabel,
       modelId: state.model?.id || null,
-      image: state.model?.image || null
+      image: websiteDeviceImage
     },
 
     repairs: normalizedRepairs,

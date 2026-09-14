@@ -24,6 +24,7 @@ import {
 import { resetAllState, resetStep, state } from "../assets/js/state.js";
 import { readCatalogConfig } from "../api/catalog-config.js";
 import catalogConfigHandler from "../api/catalog-config.js";
+import { buildWebsiteCatalog } from "../tools/website-catalog-source.mjs";
 
 const ENDPOINT = "https://benchlayer-preview.example/api/public/catalog";
 const CREDENTIAL = "public-preview-credential-1234567890";
@@ -679,6 +680,35 @@ test("option cards reject lookalike public-storage URLs on untrusted hosts", () 
   }
 });
 
+test("website cards reject managed image URLs even when the storage host is trusted", () => {
+  const previousDocument = globalThis.document;
+  globalThis.document = {
+    createElement() {
+      return {
+        setAttribute() {},
+        addEventListener() {},
+        className: "",
+        innerHTML: ""
+      };
+    }
+  };
+
+  try {
+    const managedImage =
+      "https://gorjynnsbmdifnkzxame.supabase.co/storage/v1/object/public/" +
+      "intake-card-images/af53eab2-0499-47da-9e5a-68c0997a47fd/test.webp";
+    const card = createOptionCard({
+      label: "Website-owned image",
+      image: managedImage
+    });
+
+    assert.equal(card.innerHTML.includes("supabase.co"), false);
+    assert.match(card.innerHTML, /\/images\/repairs\/diagnostic-not-sure\.png/);
+  } finally {
+    globalThis.document = previousDocument;
+  }
+});
+
 test("local selection model images never depend on managed catalog URLs", () => {
   assert.equal(
     getLocalModelImage("Phone", "Apple", "iPhone 16 Pro Max"),
@@ -757,8 +787,141 @@ test("selection card renderer never reads managed catalog image fields", async (
 
   assert.ok(selectionStart >= 0);
   assert.ok(selectionEnd > selectionStart);
-  assert.match(selectionSource, /getSelectionCardImageSources/);
+  assert.match(selectionSource, /getSelectionSummaryVisual/);
   assert.doesNotMatch(selectionSource, /state\.model\?\.image/);
   assert.doesNotMatch(selectionSource, /getResolvedRepairImage/);
+  assert.doesNotMatch(selectionSource, /image\.style/);
   assert.doesNotMatch(selectionSource, /publicImageUrl/);
+});
+
+test("all website option cards ignore managed catalog image fields", async () => {
+  const rendererSource = await readFile(
+    new URL("../assets/js/renderer.js", import.meta.url),
+    "utf8"
+  );
+  const optionStart = rendererSource.indexOf(
+    "export function renderDeviceStep"
+  );
+  const optionEnd = rendererSource.indexOf(
+    "function escapeSummaryHtml",
+    optionStart
+  );
+  const optionSource = rendererSource.slice(optionStart, optionEnd);
+
+  assert.ok(optionStart >= 0);
+  assert.ok(optionEnd > optionStart);
+  assert.doesNotMatch(optionSource, /device\?\.image/);
+  assert.doesNotMatch(optionSource, /brand\?\.image/);
+  assert.doesNotMatch(optionSource, /series\?\.image/);
+  assert.doesNotMatch(optionSource, /model\.image/);
+  assert.doesNotMatch(optionSource, /getResolvedRepairImage/);
+  assert.match(optionSource, /getDeviceImage/);
+  assert.match(optionSource, /getBrandImage/);
+  assert.match(optionSource, /getSelectionCardImageSources/);
+  assert.match(optionSource, /getRepairImage/);
+});
+
+test("sticky SaaS summary uses one desktop rail and an accessible mobile sheet", async () => {
+  const indexSource = await readFile(
+    new URL("../index.html", import.meta.url),
+    "utf8"
+  );
+  const summaryStart = indexSource.indexOf('id="pr-selection-cards"');
+  const summaryEnd = indexSource.indexOf("</aside>", summaryStart);
+  const summarySource = indexSource.slice(summaryStart, summaryEnd);
+
+  assert.ok(summaryStart > indexSource.indexOf("</main>"));
+  assert.ok(summaryEnd > summaryStart);
+  assert.match(summarySource, /class="pr-summary-mobile-trigger"/);
+  assert.match(summarySource, /aria-controls="pr-summary-sheet"/);
+  assert.match(summarySource, /id="pr-summary-sheet"/);
+  assert.match(summarySource, /aria-hidden="true"[\s\S]*inert/);
+  assert.match(summarySource, /class="pr-summary-backdrop"/);
+  assert.match(summarySource, /class="pr-summary-mobile-continue"/);
+  assert.equal(
+    (summarySource.match(/id="card-(device|brand|series|model|repair)"/g) || []).length,
+    5
+  );
+});
+
+test("sticky summary remains website-presented across desktop and mobile", async () => {
+  const [rendererSource, cssSource] = await Promise.all([
+    readFile(new URL("../assets/js/renderer.js", import.meta.url), "utf8"),
+    readFile(new URL("../wizard.css", import.meta.url), "utf8")
+  ]);
+  const visualStart = rendererSource.indexOf(
+    "function getSelectionSummaryVisual"
+  );
+  const visualEnd = rendererSource.indexOf(
+    "function setSelectionSummaryOpen",
+    visualStart
+  );
+  const visualSource = rendererSource.slice(visualStart, visualEnd);
+
+  assert.ok(visualStart >= 0);
+  assert.ok(visualEnd > visualStart);
+  assert.match(visualSource, /getSelectionCardImageSources/);
+  assert.doesNotMatch(visualSource, /publicImageUrl/);
+  assert.doesNotMatch(visualSource, /state\.model\?\.image/);
+  assert.match(rendererSource, /surface\.setAttribute\("aria-modal", "true"\)/);
+  assert.match(rendererSource, /surface\.toggleAttribute\("inert", !isOpen\)/);
+  assert.match(
+    cssSource,
+    /@media \(min-width: 961px\)[\s\S]*position: sticky !important/
+  );
+  assert.match(
+    cssSource,
+    /@media \(max-width: 960px\)[\s\S]*\.pr-summary-mobile-trigger[\s\S]*\.pr-summary-surface/
+  );
+});
+
+test("the source-controlled website catalog is complete, bounded, and presentation-free", async () => {
+  const catalog = await buildWebsiteCatalog();
+  assert.equal(catalog.version, 4);
+  assert.equal(Number.isInteger(catalog.revision), true);
+  assert.equal(Number.isFinite(new Date(catalog.updatedAt).getTime()), true);
+  for (const collection of [
+    "devices",
+    "brands",
+    "series",
+    "models",
+    "repairs",
+    "modelRepairs"
+  ]) {
+    assert.equal(Array.isArray(catalog[collection]), true, collection);
+  }
+  assert.equal(new TextEncoder().encode(JSON.stringify(catalog)).length < 2 * 1024 * 1024, true);
+  assert.equal(JSON.stringify(catalog).includes("imageUrl"), false);
+
+  const ids = new Set();
+  for (const collection of ["devices", "brands", "series", "models", "repairs"]) {
+    for (const entry of catalog[collection]) {
+      assert.match(entry.id, /^[a-z][a-z0-9_-]{5,119}$/);
+      assert.equal(ids.has(entry.id), false, entry.id);
+      ids.add(entry.id);
+    }
+  }
+  const modelIds = new Set(catalog.models.map((entry) => entry.id));
+  const repairIds = new Set(catalog.repairs.map((entry) => entry.id));
+  for (const relationship of catalog.modelRepairs) {
+    assert.equal(modelIds.has(relationship.modelId), true, relationship.modelId);
+    assert.equal(repairIds.has(relationship.repairId), true, relationship.repairId);
+  }
+});
+
+test("website catalog automation can only stage the exact authenticated BenchLayer endpoint", async () => {
+  const [clientSource, packageSource, workflowSource] = await Promise.all([
+    readFile(new URL("../tools/sync-website-catalog.mjs", import.meta.url), "utf8"),
+    readFile(new URL("../package.json", import.meta.url), "utf8"),
+    readFile(new URL("../.github/workflows/catalog-sync.yml", import.meta.url), "utf8")
+  ]);
+  assert.match(clientSource, /url\.protocol !== "https:"/);
+  assert.match(clientSource, /url\.pathname !== "\/api\/public\/catalog-sync"/);
+  assert.match(clientSource, /authorization: `Bearer \$\{credential\}`/);
+  assert.match(clientSource, /"idempotency-key": `repairlab-\$\{payloadHash\.slice\(0, 48\)\}`/);
+  assert.doesNotMatch(clientSource, /searchParams\.set|console\.log\([^)]*credential/);
+  assert.match(packageSource, /"catalog:sync": "node tools\/sync-website-catalog\.mjs"/);
+  assert.match(workflowSource, /branches: \[main\]/);
+  assert.match(workflowSource, /BENCHLAYER_WEBSITE_CATALOG_SYNC_TOKEN: \$\{\{ secrets\.BENCHLAYER_WEBSITE_CATALOG_SYNC_TOKEN \}\}/);
+  assert.doesNotMatch(workflowSource, /pull_request:/);
 });

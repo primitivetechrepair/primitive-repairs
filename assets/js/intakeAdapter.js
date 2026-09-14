@@ -110,8 +110,7 @@ export function mapRepairFlowToPublicIntake(wizardPayload, { submissionId } = {}
       brand: clean(device.brand, { max: 120 }),
       series: clean(device.series, { max: 120 }),
       model: clean(device.model, { required: true, max: 160 }),
-      modelId: clean(device.modelId, { max: 160 }),
-      image: clean(device.image, { max: 500 })
+      modelId: clean(device.modelId, { max: 160 })
     },
     repairs,
     repair: { ...repairs[0] },

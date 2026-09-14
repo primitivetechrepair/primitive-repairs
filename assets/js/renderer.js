@@ -3,9 +3,9 @@ import {
   renderCardGrid,
   getDeviceImage,
   getBrandImage,
-  getResolvedRepairImage,
+  getRepairImage,
   getSelectionCardImageSources
-} from "./cardRenderer.js?v=20260913-1";
+} from "./cardRenderer.js?v=20260913-2";
 
 function optionLabel(option) {
   return typeof option === "string"
@@ -129,6 +129,7 @@ function getSeriesCardImage(brand, series) {
 }
 
 const selectionCardImageRequests = new WeakMap();
+const initializedSelectionSummaryPanels = new WeakSet();
 
 function setSelectionCardBackground(image, sources) {
   const request = {};
@@ -165,6 +166,347 @@ function setSelectionCardBackground(image, sources) {
   loadSource(0);
 }
 
+function selectionSummaryValue(value) {
+  if (!value) return "";
+
+  if (typeof value === "string") {
+    return value;
+  }
+
+  return String(
+    value.model ||
+    value.label ||
+    value.name ||
+    value.repair ||
+    ""
+  ).trim();
+}
+
+function getSelectionSummaryStage() {
+  if (!state.device) {
+    return {
+      title: "Choose your device",
+      action: "Continue to device options"
+    };
+  }
+
+  if (!state.brand) {
+    return {
+      title: "Choose a brand",
+      action: "Continue to brand options"
+    };
+  }
+
+  if (!state.series) {
+    return {
+      title: "Choose a series",
+      action: "Continue to series options"
+    };
+  }
+
+  if (!state.model) {
+    return {
+      title: "Choose a model",
+      action: "Continue to model options"
+    };
+  }
+
+  if (!state.repair) {
+    return {
+      title: "Choose a repair",
+      action: "Continue to repair options"
+    };
+  }
+
+  if (!state.repairDetailsViewed) {
+    return {
+      title: "Describe the issue",
+      action: "Continue to repair details"
+    };
+  }
+
+  if (!state.repairInfoViewed) {
+    return {
+      title: "Review service details",
+      action: "Continue to service details"
+    };
+  }
+
+  if (state.device === "Phone" && !state.protectionViewed) {
+    return {
+      title: "Choose device protection",
+      action: "Continue to protection options"
+    };
+  }
+
+  if (!state.appointmentSelected) {
+    return {
+      title: "Choose an appointment",
+      action: "Continue to appointment options"
+    };
+  }
+
+  if (state.reviewViewed) {
+    return {
+      title: "Review and submit",
+      action: "Continue reviewing"
+    };
+  }
+
+  return {
+    title: "Add your contact details",
+    action: "Continue to contact details"
+  };
+}
+
+function getSelectionSummaryVisual() {
+  const model = selectionSummaryValue(state.model);
+  const primaryRepair = Array.isArray(state.repairs) && state.repairs.length
+    ? state.repairs[0]
+    : state.repair;
+
+  if (model) {
+    return {
+      label: model,
+      sources: getSelectionCardImageSources({
+        stepKey: "model",
+        device: state.device,
+        brand: state.brand,
+        model
+      })
+    };
+  }
+
+  if (state.series) {
+    return {
+      label: selectionSummaryValue(state.series),
+      sources: getSelectionCardImageSources({
+        stepKey: "series",
+        device: state.device,
+        brand: state.brand,
+        seriesImage: getSeriesCardImage(state.brand, state.series)
+      })
+    };
+  }
+
+  if (state.brand) {
+    return {
+      label: selectionSummaryValue(state.brand),
+      sources: getSelectionCardImageSources({
+        stepKey: "brand",
+        device: state.device,
+        brand: state.brand
+      })
+    };
+  }
+
+  if (state.device) {
+    return {
+      label: selectionSummaryValue(state.device),
+      sources: getSelectionCardImageSources({
+        stepKey: "device",
+        device: state.device
+      })
+    };
+  }
+
+  return {
+    label: primaryRepair
+      ? selectionSummaryValue(primaryRepair)
+      : "Start with your device",
+    sources: getSelectionCardImageSources({
+      stepKey: "device",
+      device: "Other Electronics"
+    })
+  };
+}
+
+function setSelectionSummaryOpen(
+  selectionCards,
+  requestedOpen,
+  { restoreFocus = true } = {}
+) {
+  if (!selectionCards) return;
+
+  const trigger = selectionCards.querySelector(
+    ".pr-summary-mobile-trigger"
+  );
+  const surface = selectionCards.querySelector(
+    ".pr-summary-surface"
+  );
+  const isMobile = typeof window.matchMedia === "function"
+    ? window.matchMedia("(max-width: 960px)").matches
+    : false;
+  const isOpen = Boolean(requestedOpen && isMobile);
+  const hadFocusInSurface = Boolean(
+    surface?.contains(document.activeElement)
+  );
+
+  selectionCards.dataset.mobileOpen = `${isOpen}`;
+  trigger?.setAttribute("aria-expanded", `${isOpen}`);
+
+  if (surface) {
+    if (isMobile) {
+      surface.setAttribute("role", "dialog");
+      surface.setAttribute("aria-modal", "true");
+      surface.setAttribute("aria-hidden", `${!isOpen}`);
+      surface.toggleAttribute("inert", !isOpen);
+    } else {
+      surface.setAttribute("role", "region");
+      surface.removeAttribute("aria-modal");
+      surface.removeAttribute("aria-hidden");
+      surface.removeAttribute("inert");
+    }
+  }
+
+  document.body?.classList.toggle("pr-summary-sheet-open", isOpen);
+
+  if (isOpen) {
+    const closeButton = selectionCards.querySelector(".pr-summary-close");
+    window.requestAnimationFrame(() => closeButton?.focus());
+    return;
+  }
+
+  if (
+    restoreFocus &&
+    trigger &&
+    hadFocusInSurface
+  ) {
+    trigger.focus();
+  }
+}
+
+function continueFromSelectionSummary(selectionCards) {
+  setSelectionSummaryOpen(selectionCards, false, {
+    restoreFocus: false
+  });
+
+  const target = document.getElementById("pr-main");
+
+  window.requestAnimationFrame(() => {
+    target?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    target?.focus?.({ preventScroll: true });
+  });
+}
+
+function initializeSelectionSummaryPanel(selectionCards) {
+  if (!selectionCards) return;
+
+  const trigger = selectionCards.querySelector(
+    ".pr-summary-mobile-trigger"
+  );
+  const closeButton = selectionCards.querySelector(
+    ".pr-summary-close"
+  );
+  const backdrop = selectionCards.querySelector(
+    ".pr-summary-backdrop"
+  );
+  const continueButton = selectionCards.querySelector(
+    ".pr-summary-mobile-continue"
+  );
+
+  trigger.onclick = () => {
+    setSelectionSummaryOpen(selectionCards, true);
+  };
+  closeButton.onclick = () => {
+    setSelectionSummaryOpen(selectionCards, false);
+  };
+  backdrop.onclick = () => {
+    setSelectionSummaryOpen(selectionCards, false);
+  };
+  continueButton.onclick = () => {
+    continueFromSelectionSummary(selectionCards);
+  };
+
+  if (!initializedSelectionSummaryPanels.has(selectionCards)) {
+    initializedSelectionSummaryPanels.add(selectionCards);
+
+    selectionCards.addEventListener("keydown", (event) => {
+      if (selectionCards.dataset.mobileOpen !== "true") return;
+
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setSelectionSummaryOpen(selectionCards, false);
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+
+      const surface = selectionCards.querySelector(
+        ".pr-summary-surface"
+      );
+      const focusable = Array.from(
+        surface?.querySelectorAll(
+          "button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled])"
+        ) || []
+      ).filter((element) => !element.hasAttribute("inert"));
+
+      if (!focusable.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    if (typeof window.matchMedia === "function") {
+      const summaryMedia = window.matchMedia("(max-width: 960px)");
+      summaryMedia.addEventListener?.("change", () => {
+        setSelectionSummaryOpen(selectionCards, false, {
+          restoreFocus: false
+        });
+      });
+    }
+
+    const wizardContainer = selectionCards.closest(
+      "#primitive-wizard-container"
+    );
+
+    if (wizardContainer && typeof IntersectionObserver === "function") {
+      const observer = new IntersectionObserver((entries) => {
+        const isVisible = entries.some((entry) => entry.isIntersecting);
+
+        selectionCards.classList.toggle(
+          "is-mobile-visible",
+          isVisible
+        );
+        document.body?.classList.toggle(
+          "is-repair-summary-active",
+          isVisible
+        );
+
+        if (!isVisible) {
+          setSelectionSummaryOpen(selectionCards, false, {
+            restoreFocus: false
+          });
+        }
+      }, {
+        rootMargin: "-12% 0px -12% 0px",
+        threshold: 0
+      });
+
+      observer.observe(wizardContainer);
+    } else {
+      selectionCards.classList.add("is-mobile-visible");
+    }
+  }
+
+  setSelectionSummaryOpen(
+    selectionCards,
+    selectionCards.dataset.mobileOpen === "true",
+    { restoreFocus: false }
+  );
+}
+
 export function renderDeviceStep(container, devices, onSelect) {
   if (!container) return;
 
@@ -182,7 +524,7 @@ export function renderDeviceStep(container, devices, onSelect) {
 
   const cards = devices.map((device) => ({
     label: optionLabel(device),
-    image: device?.image || getDeviceImage(optionLabel(device)),
+    image: getDeviceImage(optionLabel(device)),
     catalogOrder: device?.catalogOrder,
     onClick: () => onSelect(device)
   }));
@@ -209,7 +551,7 @@ export function renderBrandStep(container, brands, onSelect) {
 
   const cards = brands.map((brand) => ({
     label: optionLabel(brand),
-    image: brand?.image || getBrandImage(state.device, optionLabel(brand)),
+    image: getBrandImage(state.device, optionLabel(brand)),
     fallbackImage: getDeviceImage(state.device),
     badge: selectedDevice,
     catalogOrder: brand?.catalogOrder,
@@ -238,7 +580,7 @@ export function renderSeriesStep(container, seriesList, onSelect) {
 
   const cards = seriesList.map((series) => ({
     label: optionLabel(series),
-    image: series?.image || getSeriesCardImage(selectedBrand, optionLabel(series)),
+    image: getSeriesCardImage(selectedBrand, optionLabel(series)),
     fallbackImage:
       getBrandImage(state.device, selectedBrand) ||
       getDeviceImage(state.device),
@@ -408,22 +750,30 @@ const filteredModels = models
       return;
     }
 
-    const cards = filteredModels.map((model) => ({
-  label: getModelDisplayLabel(model),
-  image:
-    model.image ||
-    getBrandImage(state.device, selectedBrand) ||
-    getDeviceImage(state.device),
-  fallbackImage:
-    getBrandImage(state.device, selectedBrand) ||
-    getDeviceImage(state.device),
-  badge: model.series,
-  catalogOrder: model.catalogOrder,
-  onClick: () => onSelect({
-    ...model,
-    model: getModelDisplayLabel(model)
-  })
-}));
+    const cards = filteredModels.map((model) => {
+      const displayLabel = getModelDisplayLabel(model);
+      const imageSources = getSelectionCardImageSources({
+        stepKey: "model",
+        device: state.device,
+        brand: selectedBrand,
+        model: displayLabel
+      });
+
+      return {
+        label: displayLabel,
+        image: imageSources[0] || getDeviceImage(state.device),
+        fallbackImage:
+          imageSources[1] ||
+          imageSources[0] ||
+          getDeviceImage(state.device),
+        badge: model.series,
+        catalogOrder: model.catalogOrder,
+        onClick: () => onSelect({
+          ...model,
+          model: displayLabel
+        })
+      };
+    });
 
     renderCardGrid(results, cards);
   }
@@ -504,7 +854,7 @@ export function renderRepairStep(
 
       return {
         label: repair.repair,
-        image: getResolvedRepairImage(repair),
+        image: getRepairImage(repair),
         subtext: repair.time || "",
         badge: isSelected ? "Selected" : repair.warranty || "",
         className: isSelected ? "is-selected" : "",
@@ -768,7 +1118,7 @@ export function renderRepairInfoStep(container, repairData, onContinue) {
       <div class="repair-info-hero">
         <div
           class="repair-info-image"
-          style="--repair-info-image: url('${escapeSummaryHtml(getResolvedRepairImage(primaryRepair))}')"
+          style="--repair-info-image: url('${escapeSummaryHtml(getRepairImage(primaryRepair))}')"
         ></div>
 
         <div class="repair-info-content">
@@ -1050,32 +1400,78 @@ export function renderSelectionCards(onChange) {
   const selectionStatus = selectionCards?.querySelector(
     ".blueprint-profile-status"
   );
+  const summaryStage = getSelectionSummaryStage();
+  const summaryVisual = getSelectionSummaryVisual();
 
   if (selectionCards) {
     selectionCards.dataset.completedSteps = `${completeStepCount}`;
     selectionCards.dataset.totalSteps = `${steps.length}`;
+    selectionCards.dataset.summaryStage = summaryStage.title;
+    initializeSelectionSummaryPanel(selectionCards);
+
+    const stageTitle = selectionCards.querySelector(
+      "#pr-summary-stage-title"
+    );
+    const mobileTitle = selectionCards.querySelector(
+      "#pr-summary-mobile-title"
+    );
+    const mobileStage = selectionCards.querySelector(
+      "#pr-summary-mobile-stage"
+    );
+    const mobileProgress = selectionCards.querySelector(
+      ".pr-summary-mobile-progress"
+    );
+    const visualLabel = selectionCards.querySelector(
+      "#pr-summary-visual-label"
+    );
+    const summaryImage = selectionCards.querySelector(
+      "#pr-summary-image"
+    );
+    const mobileImage = selectionCards.querySelector(
+      ".pr-summary-mobile-thumb"
+    );
+    const continueButton = selectionCards.querySelector(
+      ".pr-summary-mobile-continue"
+    );
+
+    if (stageTitle) stageTitle.textContent = summaryStage.title;
+    if (mobileTitle) mobileTitle.textContent = summaryVisual.label;
+    if (mobileStage) mobileStage.textContent = summaryStage.title;
+    if (mobileProgress) {
+      mobileProgress.textContent = `${completeStepCount}/${steps.length}`;
+    }
+    if (visualLabel) visualLabel.textContent = summaryVisual.label;
+    if (continueButton) continueButton.textContent = summaryStage.action;
+
+    if (summaryImage) {
+      setSelectionCardBackground(summaryImage, summaryVisual.sources);
+    }
+    if (mobileImage) {
+      setSelectionCardBackground(mobileImage, summaryVisual.sources);
+    }
   }
 
   if (selectionStatus) {
     selectionStatus.textContent = completeStepCount === steps.length
-      ? "Device details complete"
+      ? `${steps.length} of ${steps.length} selected`
       : `Step ${completeStepCount + 1} of ${steps.length}`;
   }
 
   if (progressBar) {
     progressBar.style.width = `${progressPercent}%`;
+    progressBar.setAttribute("role", "progressbar");
+    progressBar.setAttribute("aria-label", "Repair selection progress");
+    progressBar.setAttribute("aria-valuemin", "0");
+    progressBar.setAttribute("aria-valuemax", "100");
     progressBar.setAttribute("aria-valuenow", `${progressPercent}`);
     progressBar.classList.toggle("full", completeStepCount === steps.length);
   }
   if (selectionCards) {
-    const existingProtectionStatus =
-      selectionCards.querySelector(
-        ".blueprint-protection-status"
-      );
+    const protectionSlot = selectionCards.querySelector(
+      ".pr-summary-add-on-slot"
+    );
 
-    if (existingProtectionStatus) {
-      existingProtectionStatus.remove();
-    }
+    protectionSlot?.replaceChildren();
 
     const selectedProtection = Array.isArray(state.addOns)
       ? state.addOns[0]
@@ -1106,11 +1502,11 @@ export function renderSelectionCards(onChange) {
           ? `${protectionLabel} — $${protectionPrice.toFixed(0)} installed`
           : protectionLabel;
 
-      selectionCards.appendChild(protectionStatus);
+      protectionSlot?.appendChild(protectionStatus);
     }
   }
 
-steps.forEach((step) => {
+  steps.forEach((step) => {
     const card = document.getElementById(`card-${step.key}`);
 
     if (!card) return;
@@ -1141,57 +1537,26 @@ steps.forEach((step) => {
     } else {
       card.classList.add("is-upcoming-step");
     }
-const label = card.querySelector(".card-label");
+    const label = card.querySelector(".card-label");
     const button = card.querySelector(".card-back");
-    const image = card.querySelector(".card-img");
 
-    if (!label || !button || !image) return;
+    if (!label || !button) return;
 
     if (step.value) {
       label.textContent = step.value;
       button.textContent = "EDIT";
       button.disabled = false;
       button.style.display = "flex";
+      button.setAttribute("aria-label", `Edit ${step.label}`);
       card.classList.add("filled");
       card.classList.remove("is-missing-choice");
 
-      let primarySelectedRepair = null;
-
-      if (step.key === "repair") {
-        const selectedRepairs = Array.isArray(state.repairs) && state.repairs.length
-          ? state.repairs
-          : state.repair
-            ? [state.repair]
-            : [];
-
-        primarySelectedRepair = selectedRepairs[0] || null;
-
-        image.classList.toggle(
-          "selected-card-image-multiple",
-          selectedRepairs.length > 1
-        );
-      }
-
-      setSelectionCardBackground(
-        image,
-        getSelectionCardImageSources({
-          stepKey: step.key,
-          device: state.device,
-          brand: state.brand,
-          model:
-            state.model?.model ||
-            state.model?.label ||
-            state.model,
-          repair: primarySelectedRepair,
-          seriesImage:
-            step.key === "series"
-              ? getSeriesCardImage(state.brand, state.series)
-              : null
-        })
-      );
-
       button.onclick = (event) => {
         event.stopPropagation();
+
+        setSelectionSummaryOpen(selectionCards, false, {
+          restoreFocus: false
+        });
 
         if (step.key === "repair") {
           state.repair = null;
@@ -1218,8 +1583,8 @@ const label = card.querySelector(".card-label");
       button.textContent = "";
       button.disabled = true;
       button.style.display = "flex";
+      button.removeAttribute("aria-label");
       card.classList.add("is-missing-choice");
-      image.style.backgroundImage = "none";
       card.classList.remove("filled");
       button.onclick = null;
     }

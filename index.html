@@ -152,7 +152,7 @@
   >
 </noscript>
 
-<link rel="modulepreload" href="/assets/js/wizard.js?v=20260913-1">
+<link rel="modulepreload" href="/assets/js/wizard.js?v=20260913-3">
 
 <link
   rel="preload"
@@ -163,7 +163,7 @@
 >
 
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
-<link rel="stylesheet" href="wizard.css?v=20260831-catalog01">
+<link rel="stylesheet" href="wizard.css?v=20260913-sticky01">
 </head>
 <body class="homepage-premium-page">
 
@@ -243,68 +243,9 @@
 
     <div class="pr-progress-row" aria-hidden="true"></div>
 
-    <div class="pr-progress-bar-wrap" aria-hidden="true">
+    <div class="pr-progress-bar-wrap">
       <div id="pr-progress-bar"></div>
     </div>
-
-  <!-- Top Selection Cards -->
-<section id="pr-selection-cards" class="pr-header-selection-cards blueprint-selection-module" aria-label="Repair blueprint selection">
-  <div class="blueprint-complete-beam" aria-hidden="true">
-    <span class="beam beam-top"></span>
-    <span class="beam beam-right"></span>
-    <span class="beam beam-bottom"></span>
-    <span class="beam beam-left"></span>
-  </div>
-  <div class="blueprint-profile-header">
-    <div>
-      <span class="blueprint-profile-kicker">Your Selections</span>
-      <strong>Complete the highlighted step below</strong>
-    </div>
-    <span class="blueprint-profile-status" aria-live="polite">Step 1 of 5</span>
-  </div>
-
-  <div class="blueprint-profile-grid">
-    <div class="pr-progress-card" id="card-device">
-      <div class="card-heading">Device</div>
-      <div class="card-img"></div>
-      <div class="card-label">Select</div>
-      <button class="card-back" data-step="device" style="display:flex;" disabled></button>
-    </div>
-
-    <div class="pr-progress-card" id="card-brand">
-      <div class="card-heading">Brand</div>
-      <div class="card-img"></div>
-      <div class="card-label">Select</div>
-      <button class="card-back" data-step="brand" style="display:flex;" disabled></button>
-    </div>
-
-    <div class="pr-progress-card" id="card-series">
-      <div class="card-heading">Series</div>
-      <div class="card-img"></div>
-      <div class="card-label">Select</div>
-      <button class="card-back" data-step="series" style="display:flex;" disabled></button>
-    </div>
-
-    <div class="pr-progress-card" id="card-model">
-      <div class="card-heading">Model</div>
-      <div class="card-img"></div>
-      <div class="card-label">Select</div>
-      <button class="card-back" data-step="model" style="display:flex;" disabled></button>
-    </div>
-
-    <div class="pr-progress-card" id="card-repair">
-      <div class="card-heading">Repair</div>
-      <div class="card-img"></div>
-      <div class="card-label">Select</div>
-      <button class="card-back" data-step="repair" style="display:flex;" disabled></button>
-    </div>
-  </div>
-
-  <p class="blueprint-scroll-cue">
-    <span>Swipe to view all selections</span>
-    <span class="blueprint-scroll-cue-arrow" aria-hidden="true">&rarr;</span>
-  </p>
-</section>
 
   </div>
 
@@ -508,6 +449,121 @@
   </section>
 
 </main>
+
+<aside
+  id="pr-selection-cards"
+  class="pr-header-selection-cards blueprint-selection-module pr-saas-summary"
+  aria-label="Your repair summary"
+  data-mobile-open="false"
+>
+  <button
+    type="button"
+    class="pr-summary-mobile-trigger"
+    aria-expanded="false"
+    aria-controls="pr-summary-sheet"
+  >
+    <span class="pr-summary-mobile-thumb" aria-hidden="true"></span>
+    <span class="pr-summary-mobile-copy">
+      <small>Current repair</small>
+      <strong id="pr-summary-mobile-title">Start with your device</strong>
+      <span id="pr-summary-mobile-stage">Choose your device</span>
+    </span>
+    <span class="pr-summary-mobile-progress" aria-hidden="true">0/5</span>
+    <svg class="pr-summary-mobile-chevron" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m6.75 14.25 5.25-5.25 5.25 5.25" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <button
+    type="button"
+    class="pr-summary-backdrop"
+    aria-label="Close repair summary"
+    tabindex="-1"
+  ></button>
+
+  <div
+    id="pr-summary-sheet"
+    class="pr-summary-surface"
+    role="region"
+    aria-label="Your repair summary"
+    aria-hidden="true"
+    inert
+  >
+    <div class="blueprint-complete-beam" aria-hidden="true">
+      <span class="beam beam-top"></span>
+      <span class="beam beam-right"></span>
+      <span class="beam beam-bottom"></span>
+      <span class="beam beam-left"></span>
+    </div>
+
+    <div class="blueprint-profile-header">
+      <div>
+        <span class="blueprint-profile-kicker">Your Repair</span>
+        <strong id="pr-summary-stage-title">Choose your device</strong>
+      </div>
+      <span class="blueprint-profile-status" aria-live="polite">Step 1 of 5</span>
+      <button type="button" class="pr-summary-close" aria-label="Close repair summary">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m7 7 10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="pr-summary-visual" aria-hidden="true">
+      <div id="pr-summary-image" class="pr-summary-image"></div>
+      <span id="pr-summary-visual-label">Start with your device</span>
+    </div>
+
+    <div class="blueprint-profile-grid" role="list" aria-label="Repair selections">
+      <div class="pr-progress-card" id="card-device" role="listitem">
+        <span class="pr-summary-row-state" aria-hidden="true"></span>
+        <div class="card-heading">Device</div>
+        <div class="card-label">Select</div>
+        <button type="button" class="card-back" data-step="device" disabled></button>
+      </div>
+
+      <div class="pr-progress-card" id="card-brand" role="listitem">
+        <span class="pr-summary-row-state" aria-hidden="true"></span>
+        <div class="card-heading">Brand</div>
+        <div class="card-label">Select</div>
+        <button type="button" class="card-back" data-step="brand" disabled></button>
+      </div>
+
+      <div class="pr-progress-card" id="card-series" role="listitem">
+        <span class="pr-summary-row-state" aria-hidden="true"></span>
+        <div class="card-heading">Series</div>
+        <div class="card-label">Select</div>
+        <button type="button" class="card-back" data-step="series" disabled></button>
+      </div>
+
+      <div class="pr-progress-card" id="card-model" role="listitem">
+        <span class="pr-summary-row-state" aria-hidden="true"></span>
+        <div class="card-heading">Model</div>
+        <div class="card-label">Select</div>
+        <button type="button" class="card-back" data-step="model" disabled></button>
+      </div>
+
+      <div class="pr-progress-card" id="card-repair" role="listitem">
+        <span class="pr-summary-row-state" aria-hidden="true"></span>
+        <div class="card-heading">Repair</div>
+        <div class="card-label">Select</div>
+        <button type="button" class="card-back" data-step="repair" disabled></button>
+      </div>
+    </div>
+
+    <div class="pr-summary-add-on-slot" aria-live="polite"></div>
+
+    <div class="pr-summary-footer">
+      <p>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8.5 10V7.5a3.5 3.5 0 0 1 7 0V10m-9 0h11v9h-11z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Your request is reviewed before any paid repair begins.</span>
+      </p>
+      <button type="button" class="pr-summary-mobile-continue">Continue selecting</button>
+    </div>
+  </div>
+</aside>
 </div>
 
 <section id="how-it-works" class="landing-section how-it-works-section premium-process-section">
@@ -866,7 +922,7 @@
   </div>
 </template>
 
-<script type="module" src="/assets/js/wizard.js?v=20260913-1"></script>
+<script type="module" src="/assets/js/wizard.js?v=20260913-3"></script>
 <script src="/assets/js/header.js?v=20260830-iphonescreen01" defer></script>
 <script src="/assets/js/footer.js?v=20260830-iphonescreen01" defer></script>
 <script src="/assets/js/mobileNav.js?v=20260614-1" defer></script>

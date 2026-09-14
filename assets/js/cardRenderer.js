@@ -1,7 +1,4 @@
 const DEFAULT_CARD_IMAGE = "/images/repairs/diagnostic-not-sure.png";
-const PUBLIC_IMAGE_HOSTS = new Set([
-  "gorjynnsbmdifnkzxame.supabase.co"
-]);
 
 function escapeHtml(value) {
   return String(value || "")
@@ -19,26 +16,12 @@ function getSafeImage(image) {
     return DEFAULT_CARD_IMAGE;
   }
 
-  if (/^\/[a-z0-9/_().-]+$/i.test(candidate)) {
+  if (
+    /^\/images\/[a-z0-9/_().-]+$/i.test(candidate) &&
+    !candidate.split("/").some((segment) => segment === "." || segment === "..") &&
+    !candidate.includes("//")
+  ) {
     return candidate;
-  }
-
-  try {
-    const url = new URL(candidate);
-
-    if (
-      url.protocol === "https:" &&
-      PUBLIC_IMAGE_HOSTS.has(url.hostname) &&
-      !url.username &&
-      !url.password &&
-      !url.search &&
-      !url.hash &&
-      url.pathname.startsWith("/storage/v1/object/public/intake-card-images/")
-    ) {
-      return url.toString();
-    }
-  } catch {
-    // Fall through to the local default image.
   }
 
   return DEFAULT_CARD_IMAGE;
@@ -371,29 +354,6 @@ export function getRepairImage(repair) {
   }
 
   return DEFAULT_CARD_IMAGE;
-}
-
-export function getResolvedRepairImage(repair) {
-  const mappedImage = getRepairImage(repair);
-
-  if (mappedImage && mappedImage !== DEFAULT_CARD_IMAGE) {
-    return mappedImage;
-  }
-
-  const explicitImage =
-    typeof repair === "object" && repair
-      ? String(repair.image || "").trim()
-      : "";
-
-  if (
-    explicitImage &&
-    !explicitImage.includes("/images/repairs/default.webp") &&
-    !explicitImage.endsWith(".webp")
-  ) {
-    return explicitImage;
-  }
-
-  return mappedImage || DEFAULT_CARD_IMAGE;
 }
 
 function getIphoneSeriesRank(label) {

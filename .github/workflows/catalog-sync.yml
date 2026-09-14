@@ -1,0 +1,33 @@
+name: Stage website catalog in BenchLayer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "catalog/website-catalog.v4.json"
+      - "tools/website-catalog-source.mjs"
+      - "tools/sync-website-catalog.mjs"
+      - ".github/workflows/catalog-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: repairlab-website-catalog-sync
+  cancel-in-progress: true
+
+jobs:
+  validate-and-stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm test
+      - run: npm run catalog:sync
+        env:
+          BENCHLAYER_WEBSITE_CATALOG_SYNC_URL: ${{ secrets.BENCHLAYER_WEBSITE_CATALOG_SYNC_URL }}
+          BENCHLAYER_WEBSITE_CATALOG_SYNC_TOKEN: ${{ secrets.BENCHLAYER_WEBSITE_CATALOG_SYNC_TOKEN }}

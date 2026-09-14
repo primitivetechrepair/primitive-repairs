@@ -145,6 +145,7 @@ test("pure mapper emits only Public Intake V1 fields and stable catalog model ID
   assert.equal(payload.requestId, "11111111-1111-4111-8111-111111111111");
   assert.equal(payload.customer.email, "preview@example.com");
   assert.equal(payload.device.modelId, "model-iphone-16-stable");
+  assert.equal(Object.hasOwn(payload.device, "image"), false);
   assert.equal(payload.repairs[0].name, "Screen Repair");
   assert.equal(payload.appointment.serviceType, "meet-up");
   assert.deepEqual(payload.attachments, []);
@@ -154,7 +155,8 @@ test("pure mapper emits only Public Intake V1 fields and stable catalog model ID
     "organization_id", "location_id", "lead_id", "assigned_to",
     "assigned_by", "payment_method", "payment_status", "repair_cost",
     "labor_amount", "inventory", "connection_id", "technician",
-    "convenienceFee", "stockQuantityAtSelection", "available"
+    "convenienceFee", "stockQuantityAtSelection", "available",
+    "/images/models/apple/iphone16.webp"
   ]) assert.equal(output.includes(forbidden), false, forbidden);
   assert.equal(Object.hasOwn(payload, "status"), false);
   assert.equal(Object.hasOwn(payload, "source"), false);
@@ -171,6 +173,26 @@ test("service modes retain the frozen website-to-Lead mapping", () => {
     "meet-up": "mobile"
   });
   assert.equal(mappedFixture().appointment.serviceType, "meet-up");
+});
+
+test("website presentation images never cross the BenchLayer intake boundary", async () => {
+  const leadSubmissionSource = await readFile(
+    new URL("../assets/js/leadSubmission.js", import.meta.url),
+    "utf8"
+  );
+
+  assert.match(leadSubmissionSource, /getSelectionCardImageSources/);
+  assert.doesNotMatch(leadSubmissionSource, /state\.model\?\.image/);
+
+  const payload = mappedFixture({
+    device: {
+      image:
+        "https://gorjynnsbmdifnkzxame.supabase.co/storage/v1/object/" +
+        "public/intake-card-images/test.webp"
+    }
+  });
+
+  assert.equal(Object.hasOwn(payload.device, "image"), false);
 });
 
 test("address semantics are preserved and attachment submission fails closed", () => {
