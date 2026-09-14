@@ -4929,6 +4929,14 @@
       "active": true,
       "metadata": {},
       "parentId": "ser_3bdc5409161547b0bb6ce4f1d91deec2"
+    },
+    {
+      "id": "mdl_20ed0860dd3143fbac1c6371c7721c46",
+      "label": "S20 Ultra",
+      "order": 7,
+      "active": true,
+      "metadata": {},
+      "parentId": "series-galaxy-s-18oaiop"
     }
   ],
   "series": [
