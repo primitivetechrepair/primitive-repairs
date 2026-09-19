@@ -1,0 +1,596 @@
+
+/*
+ * Primitive Tech Repairs
+ * Phase 13: Customer Contact Details
+ *
+ * Desktop and mobile.
+ *
+ * Existing form fields, validation, repair summary,
+ * appointment state, and submission logic remain unchanged.
+ */
+
+/* =========================================================
+   CUSTOMER FORM AREA
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-form-area {
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    padding: clamp(24px, 3vw, 44px) !important;
+
+    border: 1px solid #e0e6ef !important;
+    border-radius: 18px !important;
+
+    background: #f9fbfe !important;
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/* Remove the legacy inner form background. */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form {
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/* =========================================================
+   REPAIR SUMMARY
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-repair-summary {
+
+    margin: 0 0 24px !important;
+
+    padding: clamp(22px, 3vw, 34px) !important;
+
+    border: 1px solid #dce3ed !important;
+    border-radius: 14px !important;
+
+    background: #fff !important;
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/* Summary header */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-header {
+
+    margin: 0 0 24px !important;
+
+    padding: 0 0 22px !important;
+
+    border-bottom: 1px solid #e3e9f1 !important;
+
+    background: transparent !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-header > span {
+
+    color: #0c9fa5 !important;
+
+    font: 800 .75rem/1.4 "Manrope", sans-serif !important;
+
+    letter-spacing: .09em !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-header h3 {
+
+    margin: 10px 0 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(1.7rem, 3vw, 2.5rem) !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.15 !important;
+
+    letter-spacing: -.045em !important;
+
+    text-align: left !important;
+
+    text-transform: none !important;
+
+    text-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-header p {
+
+    color: #596578 !important;
+
+    font: 400 .9rem/1.6 "Manrope", sans-serif !important;
+
+    text-align: left !important;
+}
+
+/* Summary grid */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-grid {
+
+    display: grid !important;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+    border-top: 1px solid #e3e9f1 !important;
+
+    border-left: 1px solid #e3e9f1 !important;
+
+    background: #fff !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-item {
+
+    min-width: 0 !important;
+
+    padding: 18px !important;
+
+    border: 0 !important;
+
+    border-right: 1px solid #e3e9f1 !important;
+
+    border-bottom: 1px solid #e3e9f1 !important;
+
+    background: #fff !important;
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-item span {
+
+    color: #0c9fa5 !important;
+
+    font-size: .65rem !important;
+
+    font-weight: 800 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.customer-repair-summary-item strong {
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: .95rem !important;
+
+    font-weight: 650 !important;
+
+    line-height: 1.4 !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+/* =========================================================
+   CUSTOMER INFORMATION FIELDS
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field-grid {
+
+    gap: 16px !important;
+
+    margin-top: 24px !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field {
+
+    min-width: 0 !important;
+
+    background: transparent !important;
+
+    border: 0 !important;
+
+    box-shadow: none !important;
+}
+
+/* Labels */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field > label {
+
+    margin: 0 0 8px !important;
+
+    padding: 0 !important;
+
+    color: #536578 !important;
+
+    font: 750 .72rem/1.5 "Manrope", sans-serif !important;
+
+    letter-spacing: .035em !important;
+
+    text-align: left !important;
+}
+
+/* Inputs and textarea */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field
+:is(input:not([type="checkbox"]), textarea) {
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    min-height: 50px !important;
+
+    padding: 13px 15px !important;
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 10px !important;
+
+    background: #fff !important;
+
+    background-image: none !important;
+
+    color: #1b2430 !important;
+
+    -webkit-text-fill-color: #1b2430 !important;
+
+    caret-color: #0c9fa5 !important;
+
+    color-scheme: light !important;
+
+    box-shadow: none !important;
+}
+
+/* Placeholders */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field
+:is(input, textarea)::placeholder {
+
+    color: #8491a3 !important;
+
+    -webkit-text-fill-color: #8491a3 !important;
+
+    opacity: 1 !important;
+}
+
+/* Focus */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field
+:is(input, textarea):focus {
+
+    border-color: #20bcb7 !important;
+
+    background: #fff !important;
+
+    box-shadow: 0 0 0 3px rgba(32, 188, 183, .12) !important;
+}
+
+/* Browser autofill */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.customer-field input:-webkit-autofill {
+
+    -webkit-text-fill-color: #1b2430 !important;
+
+    box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
+/* Promotional code */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.savings-code-field {
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 12px !important;
+
+    background: #fff !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.savings-code-input-wrap {
+
+    border: 1px solid #dce3ed !important;
+
+    background: #fff !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.savings-code-ticket {
+
+    color: #0c9fa5 !important;
+
+    border-right-color: #e3e9f1 !important;
+}
+
+/* Helper text */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+:is(.field-help, .small-note) {
+
+    color: #657386 !important;
+
+    font-size: .76rem !important;
+
+    line-height: 1.5 !important;
+}
+
+/* =========================================================
+   REPAIR POLICY AND CONSENT
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.policy-consent-row {
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 12px !important;
+
+    background: #fff !important;
+
+    color: #283343 !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.policy-consent-row::before {
+
+    content: none !important;
+
+    display: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+:is(.repair-policy-box, .customer-form-reassurance) {
+
+    border-color: #dce3ed !important;
+
+    background: #fff !important;
+
+    background-image: none !important;
+
+    color: #283343 !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.repair-policy-box
+:is(h4, strong) {
+
+    color: #1b2430 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+.repair-policy-box
+:is(p, li) {
+
+    color: #596578 !important;
+}
+
+/* =========================================================
+   FORM ACTIONS
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+#cf-submit {
+
+    min-height: 52px !important;
+
+    border: 0 !important;
+
+    border-radius: 10px !important;
+
+    background: #19252d !important;
+
+    background-image: none !important;
+
+    color: #fff !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-customer-form
+#cf-back {
+
+    min-height: 52px !important;
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 10px !important;
+
+    background: #fff !important;
+
+    background-image: none !important;
+
+    color: #1b2430 !important;
+
+    box-shadow: none !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 960px) {
+
+    /*
+     * An old mobile rule forces animated-area to display:block
+     * even when JavaScript has hidden it.
+     *
+     * Hide it correctly when the customer form is active.
+     * This removes the large empty section.
+     */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    > #pr-main
+    > #pr-steps-area.animated-area[style*="display: none"] {
+
+        display: none !important;
+
+        min-height: 0 !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        border: 0 !important;
+
+        background: transparent !important;
+
+        box-shadow: none !important;
+    }
+
+    /* Compact customer form */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-form-area {
+
+        padding: 20px 14px !important;
+
+        border-radius: 17px !important;
+    }
+
+    /* Repair summary */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary {
+
+        padding: 20px 16px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-grid {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-wide {
+
+        grid-column: auto !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .customer-repair-summary-item {
+
+        min-height: 0 !important;
+
+        padding: 15px !important;
+    }
+
+    /* Customer fields */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-customer-form
+    .customer-field-grid {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 16px !important;
+    }
+
+    /* Avoid old bottom-bar clearance */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container:has(
+        > #pr-main > #pr-form-area[style*="display: block"]
+    ) > #pr-main {
+
+        padding-bottom: 24px !important;
+    }
+
+}
