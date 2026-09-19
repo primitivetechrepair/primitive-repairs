@@ -1,0 +1,522 @@
+/* Booking reference layout: model selection + repair summary.
+   Loaded after wizard.css; no catalog, pricing, submission or navigation changes. */
+html body.homepage-premium-page #primitive-wizard-container {
+  --pr-ref-ink: #151c29;
+  --pr-ref-muted: #687589;
+  --pr-ref-border: #dce3ee;
+  --pr-ref-teal: #20c3bf;
+}
+
+/* This first pass changes the model-selection step, not the entire homepage. */
+html body.homepage-premium-page #primitive-wizard-container:has(.model-option-header) {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fbfcfe !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container:has(.model-option-header) > .pr-header {
+  display: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container:has(.model-option-header) > #pr-main {
+  margin: 0 0 36px 0 !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area:has(.model-option-header) {
+  padding: clamp(20px, 3vw, 44px) clamp(16px, 3vw, 44px) 48px !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #fbfcfe !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header {
+  width: 100% !important;
+  margin: 0 0 25px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  text-align: left !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header > span {
+  min-height: 0 !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: #119ea3 !important;
+  font-size: 0.81rem !important;
+  font-weight: 800 !important;
+  letter-spacing: .075em !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header h3 {
+  color: var(--pr-ref-ink) !important;
+  font-family: "Space Grotesk", sans-serif !important;
+  font-size: clamp(2rem, 3.3vw, 3.5rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -.05em !important;
+  line-height: 1.07 !important;
+  text-transform: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header p {
+  width: 100% !important;
+  margin: 11px 0 0 !important;
+  color: var(--pr-ref-muted) !important;
+  font-size: clamp(.95rem, 1.5vw, 1.15rem) !important;
+  line-height: 1.45 !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-panel {
+  width: 100% !important;
+  margin: 0 0 19px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-panel > label,
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-count {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-row {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 51px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 1px solid var(--pr-ref-border) !important;
+  border-radius: 10px !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-input {
+  width: 100% !important;
+  min-height: 51px !important;
+  padding: 12px 60px 12px 46px !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  outline-offset: 3px !important;
+  background: transparent !important;
+  color: var(--pr-ref-ink) !important;
+  font-size: 1rem !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-row::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  left: 18px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #708095;
+  border-radius: 50%;
+  pointer-events: none;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-row::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 31px;
+  width: 8px;
+  border-top: 2px solid #708095;
+  transform: rotate(48deg);
+  pointer-events: none;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-clear {
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  min-height: 34px !important;
+  padding: 5px 10px !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: #eef5f6 !important;
+  color: #147f86 !important;
+  font-size: .77rem !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-clear:disabled {
+  display: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results {
+  width: 100% !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card {
+  min-height: 132px !important;
+  grid-template-columns: 92px minmax(0, 1fr) !important;
+  grid-template-rows: 1fr !important;
+  align-items: center !important;
+  padding: 12px 44px 12px 14px !important;
+  border: 1px solid var(--pr-ref-border) !important;
+  border-radius: 11px !important;
+  background: #fff !important;
+  color: var(--pr-ref-ink) !important;
+  box-shadow: 0 8px 22px rgba(27, 43, 65, .025) !important;
+  transform: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card::after {
+  content: "" !important;
+  display: block !important;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 21px;
+  height: 21px;
+  border: 1.5px solid #9dacbf;
+  border-radius: 50%;
+  background: #fff;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card:is(.selected, .is-selected, [aria-pressed="true"]) {
+  border-color: var(--pr-ref-teal) !important;
+  background: #f2ffff !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card:is(.selected, .is-selected, [aria-pressed="true"])::after {
+  border-color: var(--pr-ref-teal);
+  background: var(--pr-ref-teal);
+  box-shadow: inset 0 0 0 4px #fff;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card > .opt-thumb {
+  width: 78px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: 108px !important;
+  max-height: 108px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card .opt-thumb-img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 108px !important;
+  max-height: 108px !important;
+  filter: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card > .opt-card-body {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  justify-items: start !important;
+  gap: 6px !important;
+  background: transparent !important;
+  text-align: left !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-badge {
+  color: #667589 !important;
+  font-size: .68rem !important;
+  font-weight: 750 !important;
+  letter-spacing: .08em !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-label {
+  color: var(--pr-ref-ink) !important;
+  font-size: clamp(.94rem, 1.4vw, 1.15rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.26 !important;
+}
+@media (hover: hover) {
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card:hover {
+    border-color: var(--pr-ref-teal) !important;
+    background: #f7ffff !important;
+    box-shadow: 0 10px 24px rgba(12, 94, 105, .09) !important;
+    transform: translateY(-2px) !important;
+  }
+}
+
+/* Same live summary and step values; only the presentation changes. */
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-surface {
+  border: 1px solid #e1e7ef !important;
+  border-radius: 17px !important;
+  background: #fff !important;
+  box-shadow: 0 18px 48px rgba(33, 48, 69, .105) !important;
+  color: var(--pr-ref-ink) !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .blueprint-profile-header {
+  padding: 22px 23px 8px !important;
+  border: 0 !important;
+  background: #fff !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .blueprint-profile-kicker {
+  color: var(--pr-ref-ink) !important;
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -.045em !important;
+  text-transform: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary #pr-summary-stage-title,
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .blueprint-profile-status {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-visual {
+  min-height: 175px !important;
+  margin: 0 18px !important;
+  padding: 0 10px 4px !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-image {
+  width: 150px !important;
+  height: 160px !important;
+  filter: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary #pr-summary-visual-label {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-reference-progress {
+  height: 8px;
+  margin: 8px 23px 0;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #e4e8ef;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-reference-progress-fill {
+  display: block;
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: #2dccc6;
+  transition: width .2s ease;
+}
+#pr-selection-cards[data-completed-steps="1"] .pr-reference-progress-fill { width: 20% !important; }
+#pr-selection-cards[data-completed-steps="2"] .pr-reference-progress-fill { width: 40% !important; }
+#pr-selection-cards[data-completed-steps="3"] .pr-reference-progress-fill { width: 60% !important; }
+#pr-selection-cards[data-completed-steps="4"] .pr-reference-progress-fill { width: 80% !important; }
+#pr-selection-cards[data-completed-steps="5"] .pr-reference-progress-fill { width: 100% !important; }
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-reference-progress-text {
+  margin: 5px 23px 10px;
+  color: var(--pr-ref-muted);
+  font-size: .78rem;
+}
+#pr-selection-cards .pr-reference-progress-text::before {
+  content: "0 of 5 complete";
+}
+#pr-selection-cards[data-completed-steps="1"] .pr-reference-progress-text::before { content: "1 of 5 complete"; }
+#pr-selection-cards[data-completed-steps="2"] .pr-reference-progress-text::before { content: "2 of 5 complete"; }
+#pr-selection-cards[data-completed-steps="3"] .pr-reference-progress-text::before { content: "3 of 5 complete"; }
+#pr-selection-cards[data-completed-steps="4"] .pr-reference-progress-text::before { content: "4 of 5 complete"; }
+#pr-selection-cards[data-completed-steps="5"] .pr-reference-progress-text::before { content: "5 of 5 complete"; }
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .blueprint-profile-grid {
+  padding: 5px 19px 5px !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-progress-card {
+  min-height: 44px !important;
+  padding: 7px 4px !important;
+  grid-template-columns: 26px minmax(52px, .68fr) minmax(0, 1.32fr) auto !important;
+  gap: 9px !important;
+  border-bottom: 1px solid #e3e9f0 !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-progress-card.is-current-step {
+  margin: 0 !important;
+  padding: 7px 4px !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-row-state {
+  width: 22px !important;
+  height: 22px !important;
+  border-color: #a2afc0 !important;
+  background: #fff !important;
+  color: #8693a5 !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-progress-card.is-complete-step .pr-summary-row-state {
+  border-color: #26bfbb !important;
+  background: #26bfbb !important;
+  color: #fff !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-progress-card.is-current-step .pr-summary-row-state {
+  border-color: #96a3b5 !important;
+  background: #fff !important;
+  color: #96a3b5 !important;
+  box-shadow: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .card-heading {
+  color: var(--pr-ref-ink) !important;
+  font-size: .73rem !important;
+  font-weight: 650 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .card-label {
+  color: var(--pr-ref-ink) !important;
+  font-family: "Manrope", sans-serif !important;
+  font-size: .72rem !important;
+  font-weight: 650 !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-progress-card.is-upcoming-step .card-label {
+  color: var(--pr-ref-muted) !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .card-back {
+  width: 36px !important;
+  min-width: 36px !important;
+  height: 27px !important;
+  min-height: 27px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: #079ca4 !important;
+  font-size: .66rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  text-decoration: underline;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-footer {
+  padding: 15px 22px 19px !important;
+  border: 0 !important;
+  background: #fff !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-footer p {
+  order: 2;
+  margin: 12px 0 0 !important;
+  color: var(--pr-ref-muted) !important;
+  font-size: .67rem !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-footer svg {
+  color: #233345 !important;
+}
+html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-mobile-continue {
+  order: 1;
+  width: 100%;
+  min-height: 47px;
+  padding: 11px 14px;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  border-radius: 9px !important;
+  background: #202b31 !important;
+  color: #fff !important;
+  font-size: .81rem !important;
+  font-weight: 750 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  cursor: pointer;
+}
+@media (min-width: 961px) {
+  html body.homepage-premium-page #primitive-wizard-container {
+    grid-template-columns: minmax(0, 1fr) clamp(330px, 28vw, 420px) !important;
+    gap: 0 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container > #pr-selection-cards.pr-saas-summary {
+    margin: 0 22px 25px 0 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-surface {
+    max-height: calc(100vh - var(--site-header-height, 76px) - 32px) !important;
+  }
+}
+@media (max-width: 960px) {
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area:has(.model-option-header) {
+    padding: 24px 20px 100px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header h3 {
+    font-size: clamp(1.9rem, 7vw, 2.7rem) !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 9px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card {
+    min-height: 104px !important;
+    grid-template-columns: 76px minmax(0, 1fr) !important;
+    padding: 10px 42px 10px 14px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card > .opt-thumb,
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card .opt-thumb-img {
+    width: 60px !important;
+    height: 84px !important;
+    max-height: 84px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-surface {
+    max-height: min(72svh, 670px) !important;
+    border-radius: 22px 22px 0 0 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .blueprint-profile-header {
+    padding: 28px 20px 11px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-visual {
+    display: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-close {
+    border: 0 !important;
+    background: transparent !important;
+    color: var(--pr-ref-ink) !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .blueprint-profile-grid {
+    padding: 5px 20px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-progress-card {
+    min-height: 44px !important;
+    grid-template-columns: 26px minmax(55px, .67fr) minmax(0, 1.33fr) auto !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-footer {
+    padding-bottom: calc(14px + env(safe-area-inset-bottom)) !important;
+  }
+  .pr-summary-mobile-trigger {
+    right: 0 !important;
+    bottom: env(safe-area-inset-bottom) !important;
+    left: 0 !important;
+    width: min(680px, 100%) !important;
+    min-height: 66px !important;
+    border: 1px solid #e0e7ef !important;
+    border-bottom: 0 !important;
+    border-radius: 13px 13px 0 0 !important;
+    background: #fff !important;
+    color: #14202b !important;
+    box-shadow: 0 -8px 28px rgba(25, 46, 63, .09) !important;
+  }
+  .pr-summary-mobile-thumb {
+    border: 0 !important;
+    background-color: transparent !important;
+  }
+  .pr-summary-mobile-copy small { display: none !important; }
+  .pr-summary-mobile-copy strong { color: #14202b !important; font-size: .8rem !important; }
+  .pr-summary-mobile-copy > span { color: #697b8f !important; }
+  .pr-summary-mobile-progress {
+    min-width: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #009ba2 !important;
+    font-size: .73rem !important;
+  }
+  .pr-summary-mobile-chevron { color: #009ba2 !important; }
+  html body.homepage-premium-page #primitive-wizard-container #pr-selection-cards.pr-saas-summary .pr-summary-surface::before {
+    content: "";
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    display: block;
+    width: 46px;
+    height: 5px;
+    margin: 10px auto 0;
+    border-radius: 9px;
+    background: #cbd4df;
+  }
+}
+@media (max-width: 380px) {
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area:has(.model-option-header) {
+    padding-inline: 13px !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-label {
+    font-size: .91rem !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #pr-selection-cards .pr-reference-progress-fill { transition: none !important; }
+}
