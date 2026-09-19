@@ -1,0 +1,228 @@
+/* Primitive Tech Repairs: Phase 3 desktop repair-summary presentation.
+   Applies ONLY while the model-selection step is visible at >= 961px.
+   Original wizard.css, existing renderers, catalog and mobile sheet are unchanged. */
+#pr-selection-cards.pr-saas-summary > .pr-summary-surface > :is(.pr-ref-progress-track, .pr-ref-progress-copy) {
+  display: none !important;
+}
+@media (min-width: 961px) {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-surface {
+    border: 1px solid #e0e7f0 !important;
+    border-radius: 17px !important;
+    background: #fff !important;
+    background-image: none !important;
+    color: #1b2430 !important;
+    box-shadow: 0 16px 45px rgba(23, 40, 62, .12) !important;
+    scrollbar-color: #c8d3df transparent !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .blueprint-profile-header {
+    min-height: 0 !important;
+    text-align: left !important;
+    padding: 22px 22px 7px !important;
+    display: block !important;
+    border: 0 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .blueprint-profile-kicker {
+    margin: 0 !important;
+    text-align: left !important;
+    color: #1b2430 !important;
+    font-family: "Space Grotesk", "Manrope", sans-serif !important;
+    font-size: clamp(1.35rem, 2vw, 1.65rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -.045em !important;
+    text-transform: none !important;
+  }
+  /* Keep the dynamic current step accessible; remove only its redundant visual title. */
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary :is(#pr-summary-stage-title, .blueprint-profile-status) {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-visual {
+    min-height: 174px !important;
+    margin: 2px 18px 0 !important;
+    padding: 8px 12px 0 !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: 1fr !important;
+    place-items: center !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-image {
+    width: min(160px, 88%) !important;
+    height: 160px !important;
+    max-height: 160px !important;
+    background-size: contain !important;
+    filter: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary #pr-summary-visual-label {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-ref-progress-track {
+    display: block !important;
+    height: 8px !important;
+    margin: 7px 22px 0 !important;
+    overflow: hidden !important;
+    border-radius: 99px !important;
+    background: #e1e7ef !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-ref-progress-fill {
+    display: block !important;
+    width: 0;
+    height: 100%;
+    border-radius: inherit;
+    background: #25c6c1;
+    transition: width .2s ease;
+  }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="1"] .pr-ref-progress-fill { width: 20% !important; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="2"] .pr-ref-progress-fill { width: 40% !important; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="3"] .pr-ref-progress-fill { width: 60% !important; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="4"] .pr-ref-progress-fill { width: 80% !important; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="5"] .pr-ref-progress-fill { width: 100% !important; }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-ref-progress-copy {
+    display: block !important;
+    margin: 5px 22px 12px !important;
+    color: #657386 !important;
+    font-size: .76rem !important;
+    line-height: 1.4 !important;
+  }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="0"] .pr-ref-progress-copy::before { content: "0 of 5 complete"; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="1"] .pr-ref-progress-copy::before { content: "1 of 5 complete"; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="2"] .pr-ref-progress-copy::before { content: "2 of 5 complete"; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="3"] .pr-ref-progress-copy::before { content: "3 of 5 complete"; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="4"] .pr-ref-progress-copy::before { content: "4 of 5 complete"; }
+  #pr-selection-cards.pr-saas-summary[data-completed-steps="5"] .pr-ref-progress-copy::before { content: "5 of 5 complete"; }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid {
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 19px 5px !important;
+    display: grid !important;
+    grid-template-columns: minmax(0,1fr) !important;
+    gap: 0 !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    clip-path: none !important;
+    box-shadow: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card {
+    min-height: 48px !important;
+    margin: 0 !important;
+    padding: 9px 2px !important;
+    display: grid !important;
+    grid-template-columns: 25px minmax(47px, .65fr) minmax(0, 1.35fr) 36px !important;
+    align-items: center !important;
+    gap: 8px !important;
+    border: 0 !important;
+    border-bottom: 1px solid #e3e9f1 !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    background-image: none !important;
+    color: #1b2430 !important;
+    box-shadow: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card:last-child {
+    border-bottom: 0 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card.is-current-step {
+    margin: 0 !important;
+    padding: 9px 2px !important;
+    border-radius: 0 !important;
+    border-bottom-color: #e3e9f1 !important;
+    background: #f4fdfd !important;
+    box-shadow: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-row-state {
+    width: 23px !important;
+    height: 23px !important;
+    border: 1.5px solid #aab8c7 !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    color: #8391a3 !important;
+    box-shadow: none !important;
+    font-size: .68rem !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-progress-card.is-complete-step .pr-summary-row-state {
+    border-color: #24c1bd !important;
+    background: #24c1bd !important;
+    color: #fff !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .card-heading {
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #283343 !important;
+    font-family: "Manrope", sans-serif !important;
+    font-size: .70rem !important;
+    font-weight: 650 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .card-label {
+    min-height: 0 !important;
+    padding: 0 !important;
+    color: #1b2430 !important;
+    font-family: "Manrope", sans-serif !important;
+    font-size: .71rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0 !important;
+    line-height: 1.4 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-progress-card.is-upcoming-step .card-label {
+    color: #8793a3 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .card-back {
+    width: 36px !important;
+    min-width: 36px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 3px !important;
+    background: transparent !important;
+    color: #109da0 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+    font-size: .65rem !important;
+    font-weight: 750 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-footer {
+    padding: 12px 19px 17px !important;
+    border-top: 1px solid #e3e9f1 !important;
+    background: #fff !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-footer p {
+    color: #667487 !important;
+    font-size: .69rem !important;
+    line-height: 1.45 !important;
+  }
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > .model-option-header) #pr-selection-cards.pr-saas-summary .pr-summary-footer svg {
+    color: #1b2430 !important;
+  }
+}
