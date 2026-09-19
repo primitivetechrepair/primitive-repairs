@@ -132,3 +132,67 @@ html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr
   }
 
 }
+
+/* PHASE 12A: AFTER-HOURS BANNER CORNERS */
+
+/*
+ * The After Hours Service banner is dynamically inserted
+ * as the first child of .pr-header.
+ *
+ * Match the banner's upper corners to the booking shell.
+ * Preserve the existing banner content, layout and behavior.
+ */
+
+@media (min-width: 961px) {
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > .pr-header > .service-hours-banner
+  ) {
+    border-radius: 26px 26px 0 0 !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header:has(> .service-hours-banner) {
+    border-radius: 26px 26px 0 0 !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header
+  > .service-hours-banner {
+    border-radius: 26px 26px 0 0 !important;
+    overflow: hidden !important;
+    background-clip: padding-box !important;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 960px) {
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > .pr-header > .service-hours-banner
+  ) {
+    border-radius: 18px 18px 0 0 !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header:has(> .service-hours-banner) {
+    border-radius: 18px 18px 0 0 !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > .pr-header
+  > .service-hours-banner {
+    border-radius: 18px 18px 0 0 !important;
+    overflow: hidden !important;
+    background-clip: padding-box !important;
+  }
+
+}
