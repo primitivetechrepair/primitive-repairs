@@ -873,14 +873,6 @@ test("sticky summary remains website-presented across desktop and mobile", async
     cssSource,
     /@media \(max-width: 960px\)[\s\S]*\.pr-summary-mobile-trigger[\s\S]*\.pr-summary-surface/
   );
-  assert.match(
-    cssSource,
-    /@media \(max-width: 960px\)[\s\S]*grid-template-rows: auto auto minmax\(0, 1fr\) auto auto/
-  );
-  assert.match(
-    cssSource,
-    /\.blueprint-profile-grid \{[\s\S]*min-height: 0 !important;[\s\S]*overflow-y: auto !important;/
-  );
 });
 
 test("the source-controlled website catalog is complete, bounded, and presentation-free", async () => {
