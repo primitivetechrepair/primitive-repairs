@@ -88,22 +88,47 @@ html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr
     line-height: 1.45 !important;
   }
 }
-/* Phase 7B: verified desktop shell and rail alignment.
-   Match real DOM: .pr-header and #pr-selection-cards are direct grid children. */
-@media (min-width: 961px) {
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) {
-    border-radius: 26px !important;
-    overflow: visible !important; /* Keep the desktop summary sticky. */
-    background-color: #f6f9fd !important;
-  }
 
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header {
-    border-radius: 25px 25px 0 0 !important;
+/* PHASE 7C: SINGLE BOOKING SURFACE AND DESKTOP ALIGNMENT */
+
+@media (min-width: 961px) {
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) {
+    border: 0 !important;
+    border-radius: 26px !important;
+    overflow: visible !important;
     background: #f6f9fd !important;
+    background-clip: border-box !important;
     box-shadow: none !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > #pr-selection-cards.pr-saas-summary {
-    margin: 22px 24px 24px 0 !important; /* Override legacy margin: 0 ... !important. */
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header {
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header::before,
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > #pr-main {
+    margin: 22px 0 24px 24px !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > #pr-main > #pr-steps-area.animated-area {
+    margin-top: 0 !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > #pr-selection-cards.pr-saas-summary {
+    margin: 22px 24px 24px 0 !important;
+  }
+
 }
