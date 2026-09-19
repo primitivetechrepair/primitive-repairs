@@ -1,0 +1,269 @@
+
+/*
+ * Primitive Tech Repairs
+ * Phase 9: Mobile Optional Details
+ *
+ * Only applies while the Optional Details screen is active.
+ * Desktop, original wizard.css, and booking logic remain untouched.
+ */
+
+@media (max-width: 960px) {
+
+  /* LIGHT BOOKING SHELL */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) {
+    background: #f6f9fd !important;
+    background-image: none !important;
+    border-color: #e4eaf2 !important;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+  }
+
+  /* COMPACT HEADER */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) > .pr-header {
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 17px 17px 0 0 !important;
+    background: #f6f9fd !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) > .pr-header::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) .pr-header-copy {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 19px 16px 12px !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) .pr-header h2 {
+    margin: 0 !important;
+    color: #1b2430 !important;
+    font-size: clamp(1.55rem, 6vw, 1.95rem) !important;
+    font-weight: 750 !important;
+    line-height: 1.15 !important;
+    letter-spacing: -.045em !important;
+    text-align: left !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) .pr-header-subtitle {
+    margin: 7px 0 0 !important;
+    color: #59687a !important;
+    font-size: .83rem !important;
+    font-weight: 400 !important;
+    line-height: 1.45 !important;
+    text-align: left !important;
+  }
+
+  /* REMOVE REDUNDANT PROGRESS */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) .pr-header .pr-booking-overview,
+
+  html body.homepage-premium-page
+  #primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area.animated-area > .repair-details-panel
+  ) .pr-header .pr-progress-bar-wrap {
+    display: none !important;
+  }
+
+  /* OPTIONAL DETAILS PANEL */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area.animated-area > .repair-details-panel {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 22px 16px !important;
+    border: 1px solid #dce3ed !important;
+    border-radius: 17px !important;
+    background: #f9fbff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-panel::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  /* SECTION HEADING */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-panel > .repair-details-option-header {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 22px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-option-header > span {
+    color: #0c9fa5 !important;
+    font-size: .72rem !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-option-header h3 {
+    margin: 10px 0 !important;
+    color: #1b2430 !important;
+    font-family: "Manrope", sans-serif !important;
+    font-size: clamp(1.65rem, 7vw, 2.1rem) !important;
+    font-weight: 800 !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.045em !important;
+    text-align: left !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-option-header p {
+    margin: 0 !important;
+    color: #657386 !important;
+    font-size: .9rem !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+  }
+
+  /* REPAIR NOTE CARD */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-list {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-detail-card {
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 16px !important;
+    border: 1px solid #dce3ed !important;
+    border-radius: 12px !important;
+    background: #fff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-detail-card::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-detail-card > label {
+    color: #536578 !important;
+  }
+
+  /* TEXTAREA */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-detail-input {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: 126px !important;
+    padding: 14px !important;
+    border: 1px solid #dce3ed !important;
+    border-radius: 10px !important;
+    background: #f9fbff !important;
+    background-image: none !important;
+    color: #1b2430 !important;
+    font: 500 1rem/1.5 "Manrope", sans-serif !important;
+    box-shadow: none !important;
+    resize: vertical !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-detail-input::placeholder {
+    color: #8491a3 !important;
+    opacity: 1 !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-detail-input:focus {
+    outline: 2px solid #25c6c1 !important;
+    outline-offset: 2px !important;
+    border-color: #25c6c1 !important;
+    background: #fff !important;
+  }
+
+  /* CONTINUE BUTTON */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-actions {
+    margin-top: 20px !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .repair-details-continue {
+    width: 100% !important;
+    min-height: 52px !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: #19252d !important;
+    background-image: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+  }
+
+}
