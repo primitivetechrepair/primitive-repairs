@@ -1,0 +1,128 @@
+/*
+ * Primitive Tech Repairs
+ * Mobile repair summary: top placement
+ *
+ * Desktop layout and summary JavaScript remain unchanged.
+ */
+
+@media (max-width: 960px) {
+
+  /*
+   * The wizard's legacy backdrop filter creates a containing
+   * block for fixed children. Disable it so the expandable
+   * sheet remains correctly attached to the viewport.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  /*
+   * Place the existing repair summary in normal document flow.
+   * It now appears below the booking header.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > #pr-selection-cards.pr-saas-summary {
+
+    position: relative !important;
+
+    inset: auto !important;
+
+    z-index: 10050 !important;
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    max-height: none !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    pointer-events: none !important;
+  }
+
+  /*
+   * Current Repair bar.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.pr-saas-summary
+  .pr-summary-mobile-trigger {
+
+    position: relative !important;
+
+    inset: auto !important;
+
+    width: calc(100% - 24px) !important;
+
+    max-width: 680px !important;
+
+    min-height: 70px !important;
+
+    margin: 0 auto 12px !important;
+  }
+
+  /*
+   * Preserve the existing visibility state controlled
+   * by the booking application.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.pr-saas-summary.is-mobile-visible
+  .pr-summary-mobile-trigger {
+
+    pointer-events: auto !important;
+  }
+
+  /*
+   * The expanded repair summary must still cover
+   * the viewport, even though its trigger moved.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.pr-saas-summary
+  .pr-summary-backdrop {
+
+    position: fixed !important;
+
+    inset: 0 !important;
+
+    width: 100vw !important;
+
+    height: 100dvh !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-selection-cards.pr-saas-summary
+  .pr-summary-surface {
+
+    position: fixed !important;
+
+    inset: auto 0 0 !important;
+  }
+
+  /*
+   * Remove the old bottom clearance that was reserved
+   * for the floating Current Repair bar.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > #pr-main {
+
+    padding-bottom: 22px !important;
+  }
+
+}

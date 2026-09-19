@@ -830,7 +830,8 @@ test("sticky SaaS summary uses one desktop rail and an accessible mobile sheet",
   const summaryEnd = indexSource.indexOf("</aside>", summaryStart);
   const summarySource = indexSource.slice(summaryStart, summaryEnd);
 
-  assert.ok(summaryStart > indexSource.indexOf("</main>"));
+  assert.ok(summaryStart > indexSource.indexOf('<div id="primitive-wizard-container">'));
+  assert.ok(summaryEnd < indexSource.indexOf('<main id="pr-main"'));
   assert.ok(summaryEnd > summaryStart);
   assert.match(summarySource, /class="pr-summary-mobile-trigger"/);
   assert.match(summarySource, /aria-controls="pr-summary-sheet"/);
