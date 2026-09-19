@@ -179,6 +179,7 @@
 <link rel="stylesheet" href="/assets/css/booking-protection.css?v=20260919-p11">
 <link rel="stylesheet" href="/assets/css/booking-appointment.css?v=20260919-p12">
 <link rel="stylesheet" href="/assets/css/booking-contact.css?v=20260919-p13">
+<link rel="stylesheet" href="/assets/css/booking-contact-premium.css?v=20260919-p14">
 </head>
 <body class="homepage-premium-page">
 
@@ -397,6 +398,11 @@
   <div id="summary-box" class="selection-summary"></div>
 
     <div class="customer-field-grid">
+<div class="contact-group-heading">
+        <span class="contact-group-number">01 / CONTACT</span>
+        <h3>Contact details</h3>
+        <p>How can we reach you to confirm your repair?</p>
+      </div>
       <label class="form-honeypot" aria-hidden="true">
         Website
         <input
@@ -421,6 +427,11 @@
           <input name="email" id="cf-email" type="email" required autocomplete="email" placeholder="you@example.com">
         </div>
 
+<div class="contact-group-heading">
+          <span class="contact-group-number">02 / SERVICE</span>
+          <h3>Service details</h3>
+          <p>Help us confirm the location for your selected service.</p>
+        </div>
         <div class="customer-field">
           <label for="cf-zip">ZIP Code *</label>
           <input name="zip" id="cf-zip" autocomplete="postal-code" placeholder="ZIP code for meet-up, pickup, or onsite service">
@@ -440,6 +451,11 @@
           <input name="apt" id="cf-apt" autocomplete="address-line2">
         </div>
 
+<div class="contact-group-heading">
+          <span class="contact-group-number">03 / OPTIONAL</span>
+          <h3>Additional information</h3>
+          <p>Anything that could help us prepare for your repair.</p>
+        </div>
         <div
           class="customer-field customer-field-full customer-field-optional savings-code-field"
         >
@@ -501,7 +517,13 @@
         </div>
       </div>
 
-      <label class="policy-consent-row">
+      <div class="contact-group-heading contact-group-final">
+  <span class="contact-group-number">04 / FINAL CHECK</span>
+  <h3>Review &amp; consent</h3>
+  <p>Confirm the details before sending your request.</p>
+</div>
+
+<label class="policy-consent-row">
   <input id="cf-consent" type="checkbox" required>
   <span>
     I agree to the repair request policy and consent to be contacted about my repair.
