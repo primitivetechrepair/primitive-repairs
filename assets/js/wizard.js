@@ -926,6 +926,7 @@ document.addEventListener("DOMContentLoaded", () => {
           updateProgress();
 
           stepsArea.innerHTML = "";
+          stepsArea.style.display = "none";
 
           if (formArea) {
             formArea.style.display = "block";
