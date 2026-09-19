@@ -107,10 +107,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!target) return;
 
+    const isMobile = window.matchMedia("(max-width: 960px)").matches;
+
+    /*
+     * The mobile repair summary now appears before the selection panel.
+     * Scroll to the summary instead of scrolling past it.
+     */
+
+    const mobileSummary = isMobile
+      ? document.querySelector(
+          "#pr-selection-cards.is-mobile-visible .pr-summary-mobile-trigger"
+        )
+      : null;
+
+    const scrollTarget = mobileSummary || target;
+
     requestAnimationFrame(() => {
-      const targetTop = window.scrollY + target.getBoundingClientRect().top;
-      const offset = window.matchMedia("(max-width: 760px)").matches
-        ? 162
+      const targetTop =
+        window.scrollY + scrollTarget.getBoundingClientRect().top;
+
+      /*
+       * Preserve the existing desktop scroll behavior.
+       * On mobile, clear the fixed navigation and booking cutoff banner.
+       */
+
+      const mobileBaseOffset =
+        window.matchMedia("(max-width: 760px)").matches
+          ? 162
+          : 178;
+
+      const bannerBottom =
+        document.querySelector(".appointment-deadline-banner")
+          ?.getBoundingClientRect().bottom ?? 0;
+
+      const navigationBottom =
+        document.querySelector(".site-nav")
+          ?.getBoundingClientRect().bottom ?? 0;
+
+      const offset = isMobile
+        ? Math.max(
+            mobileBaseOffset,
+            bannerBottom,
+            navigationBottom
+          ) + 12
         : 178;
 
       window.scrollTo({

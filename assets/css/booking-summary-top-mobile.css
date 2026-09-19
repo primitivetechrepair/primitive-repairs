@@ -126,3 +126,52 @@
   }
 
 }
+
+/* Phase 8B: mobile summary and cutoff clearance */
+
+@media (max-width: 960px) {
+
+  /*
+   * The browser already reserves space for the fixed navigation
+   * and booking cutoff banner through html scroll-padding-top.
+   *
+   * Reserve additional space for the Current Repair bar now
+   * positioned above the selection panel.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > #pr-main,
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-steps-area {
+
+    scroll-margin-top: 100px !important;
+  }
+
+  /*
+   * When closed, the summary must not paint over
+   * the fixed booking cutoff banner.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > #pr-selection-cards.pr-saas-summary:not([data-mobile-open="true"]) {
+
+    z-index: auto !important;
+  }
+
+  /*
+   * Restore the higher stacking level only while
+   * the customer has opened the summary sheet.
+   */
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  > #pr-selection-cards.pr-saas-summary[data-mobile-open="true"] {
+
+    z-index: 10050 !important;
+  }
+
+}
