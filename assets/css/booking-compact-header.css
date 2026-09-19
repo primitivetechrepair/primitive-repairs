@@ -3,7 +3,7 @@
    The sidebar/sheet owns visible 0â€“5 progress; preserve the original
    progress elements in the DOM for existing JS and later booking stages. */
 
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header {
   min-height: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -18,12 +18,12 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
   text-align: left !important;
 }
 
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header::before {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header::before {
   content: none !important;
   display: none !important;
 }
 
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header > .pr-header-copy {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header > .pr-header-copy {
   box-sizing: border-box !important;
   width: 100% !important;
   max-width: none !important;
@@ -33,14 +33,14 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
   text-align: left !important;
 }
 
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-eyebrow {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-eyebrow {
   margin: 0 0 9px !important;
   font-size: .68rem !important;
   letter-spacing: .12em !important;
   line-height: 1.35 !important;
 }
 
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy h2 {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy h2 {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
@@ -52,7 +52,7 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
   text-transform: none !important;
 }
 
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy .pr-header-subtitle {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy .pr-header-subtitle {
   width: 100% !important;
   max-width: none !important;
   margin: 7px 0 0 !important;
@@ -65,25 +65,25 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
 
 /* The sidebar and mobile sheet already show true 0â€“5 progress.
    The three-part guide and second progress bar repeat that information. */
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-booking-overview,
-html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header > .pr-progress-bar-wrap {
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-booking-overview,
+html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header > .pr-progress-bar-wrap {
   display: none !important;
 }
 
 @media (max-width: 960px) {
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header {
     border-radius: 17px 17px 0 0 !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header > .pr-header-copy {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header > .pr-header-copy {
     padding: 19px 16px 8px !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy h2 {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy h2 {
     font-size: clamp(1.55rem, 6vw, 1.95rem) !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy .pr-header-subtitle {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header .pr-header-copy .pr-header-subtitle {
     font-size: .83rem !important;
     line-height: 1.45 !important;
   }
@@ -93,7 +93,7 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
 
 @media (min-width: 961px) {
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) {
     border: 0 !important;
     border-radius: 26px !important;
     overflow: visible !important;
@@ -102,7 +102,7 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
     box-shadow: none !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header {
     border: 0 !important;
     border-radius: 0 !important;
     overflow: visible !important;
@@ -113,21 +113,21 @@ html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main >
     -webkit-backdrop-filter: none !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header::before,
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header::after {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header::before,
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > .pr-header::after {
     content: none !important;
     display: none !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > #pr-main {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > #pr-main {
     margin: 22px 0 24px 24px !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > #pr-main > #pr-steps-area.animated-area {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > #pr-main > #pr-steps-area.animated-area {
     margin-top: 0 !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > #pr-selection-cards.pr-saas-summary {
+  html body.homepage-premium-page #primitive-wizard-container:is(:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel, .repair-details-panel, .repair-info-panel, .protection-upsell-panel, .appointment-panel, .review-panel, .success-panel)), :has(> #pr-main > #pr-form-area[style*="display: block"])) > #pr-selection-cards.pr-saas-summary {
     margin: 22px 24px 24px 0 !important;
   }
 

@@ -1823,6 +1823,38 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
     </section>
   `;
 
+
+  // Keep the repair summary consistent after successful submission.
+  const confirmationSummary = document.getElementById(
+    "pr-selection-cards"
+  );
+
+  if (confirmationSummary) {
+    const desktopStage = confirmationSummary.querySelector(
+      "#pr-summary-stage-title"
+    );
+
+    const mobileStage = confirmationSummary.querySelector(
+      "#pr-summary-mobile-stage"
+    );
+
+    const desktopStatus = confirmationSummary.querySelector(
+      ".blueprint-profile-status"
+    );
+
+    if (desktopStage) {
+      desktopStage.textContent = "Request received";
+    }
+
+    if (mobileStage) {
+      mobileStage.textContent = "Request received";
+    }
+
+    if (desktopStatus) {
+      desktopStatus.textContent = "Received";
+    }
+  }
+
   const startBtn = container.querySelector(".success-start-new");
 
   if (startBtn) {

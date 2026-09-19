@@ -1,0 +1,814 @@
+
+/*
+ * Primitive Tech Repairs
+ * Phase 16: Request Received
+ *
+ * Desktop and mobile.
+ *
+ * This stylesheet applies only to the successful
+ * repair request confirmation screen.
+ */
+
+/* =========================================
+   MAIN CONFIRMATION SURFACE
+========================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+> #pr-main
+> #pr-steps-area.animated-area:has(> .success-panel) {
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    margin-top: 0 !important;
+
+    padding: clamp(24px, 3vw, 44px) !important;
+
+    border: 1px solid #e0e6ef !important;
+
+    border-radius: 18px !important;
+
+    background: #f9fbfe !important;
+
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/* Remove the original dark inner panel. */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area.animated-area
+> .success-panel {
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    border-radius: 0 !important;
+
+    background: transparent !important;
+
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/* =========================================
+   SUCCESS HEADING
+========================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-hero {
+
+    display: grid !important;
+
+    grid-template-columns: 70px minmax(0, 1fr) !important;
+
+    gap: 22px !important;
+
+    align-items: center !important;
+
+    margin: 0 0 24px !important;
+
+    padding: 0 0 26px !important;
+
+    border-bottom: 1px solid #e3e9f1 !important;
+
+    background: transparent !important;
+}
+
+/* Checkmark */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-icon {
+
+    display: grid !important;
+
+    place-items: center !important;
+
+    width: 68px !important;
+
+    height: 68px !important;
+
+    margin: 0 !important;
+
+    border: 1px solid #b5e8e5 !important;
+
+    border-radius: 16px !important;
+
+    background: #eafbf9 !important;
+
+    color: #0c9fa5 !important;
+
+    font-size: 2rem !important;
+
+    font-weight: 700 !important;
+
+    box-shadow: none !important;
+}
+
+/* Heading container */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-option-header {
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+
+    text-align: left !important;
+}
+
+/* Eyebrow */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-option-header > span {
+
+    display: block !important;
+
+    margin: 0 0 10px !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+
+    color: #0c9fa5 !important;
+
+    font: 800 .73rem/1.4 "Manrope", sans-serif !important;
+
+    letter-spacing: .1em !important;
+
+    text-align: left !important;
+}
+
+/* Main success title */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-option-header h3 {
+
+    margin: 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(1.8rem, 3vw, 2.65rem) !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.15 !important;
+
+    letter-spacing: -.045em !important;
+
+    text-align: left !important;
+
+    text-transform: none !important;
+
+    text-shadow: none !important;
+}
+
+/* Confirmation message */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-message {
+
+    max-width: 760px !important;
+
+    margin: 12px 0 0 !important;
+
+    color: #596578 !important;
+
+    font: 400 .9rem/1.65 "Manrope", sans-serif !important;
+
+    text-align: left !important;
+}
+
+/* =========================================
+   REQUEST ID
+========================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-request-confirmation {
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) auto !important;
+
+    gap: 8px 16px !important;
+
+    width: 100% !important;
+
+    max-width: none !important;
+
+    margin: 0 0 20px !important;
+
+    padding: 22px 24px !important;
+
+    border: 1px solid #b5e8e5 !important;
+
+    border-radius: 14px !important;
+
+    background: #effbf9 !important;
+
+    background-image: none !important;
+
+    box-shadow: none !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-request-confirmation > span {
+
+    grid-column: 1 / -1 !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+
+    color: #0c9fa5 !important;
+
+    font-size: .7rem !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: .08em !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-request-confirmation > strong {
+
+    grid-column: 1 / -1 !important;
+
+    min-width: 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(1.05rem, 2.3vw, 1.55rem) !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: -.025em !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-request-confirmation > small {
+
+    grid-column: 1 / -1 !important;
+
+    color: #596578 !important;
+
+    font-size: .8rem !important;
+}
+
+/* =========================================
+   CONFIRMATION DETAILS
+========================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-summary {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 12px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    text-align: left !important;
+}
+
+/*
+ * The request ID is already displayed prominently above.
+ * Preserve the original markup, but hide the duplicate tile.
+ */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-summary-request-layout > div:first-child {
+
+    display: none !important;
+}
+
+/* Detail cards */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-summary-request-layout > div:nth-child(n) {
+
+    box-sizing: border-box !important;
+
+    min-width: 0 !important;
+
+    min-height: 76px !important;
+
+    padding: 16px 18px !important;
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 12px !important;
+
+    background: #fff !important;
+
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-summary-request-layout > div:first-child {
+
+    display: none !important;
+}
+
+/* Detail labels */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-summary-request-layout > div > strong {
+
+    display: block !important;
+
+    margin: 0 0 8px !important;
+
+    color: #0c9fa5 !important;
+
+    font-size: .65rem !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: .055em !important;
+
+    text-transform: uppercase !important;
+}
+
+/* Detail values */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-summary-request-layout > div > span {
+
+    display: block !important;
+
+    min-width: 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .86rem !important;
+
+    font-weight: 650 !important;
+
+    line-height: 1.5 !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+/* =========================================
+   WHAT HAPPENS NEXT
+========================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps {
+
+    margin: 24px 0 0 !important;
+
+    padding: clamp(20px, 3vw, 30px) !important;
+
+    border: 1px solid #b5e8e5 !important;
+
+    border-radius: 14px !important;
+
+    background: #f0fbfa !important;
+
+    background-image: none !important;
+
+    box-shadow: none !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-header {
+
+    margin: 0 0 20px !important;
+
+    padding: 0 0 18px !important;
+
+    border-bottom: 1px solid #cdebe9 !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-header > span {
+
+    color: #0c9fa5 !important;
+
+    font-size: .7rem !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: .08em !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-header h4 {
+
+    margin: 8px 0 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(1.2rem, 2vw, 1.5rem) !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.3 !important;
+}
+
+/* Next-step grid */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 12px !important;
+
+    border: 0 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-grid > div {
+
+    display: grid !important;
+
+    grid-template-columns: 30px minmax(0, 1fr) !important;
+
+    gap: 12px !important;
+
+    align-items: start !important;
+
+    min-width: 0 !important;
+
+    padding: 16px !important;
+
+    border: 1px solid #d1eae8 !important;
+
+    border-radius: 10px !important;
+
+    background: #fff !important;
+}
+
+/* Step number */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-grid strong {
+
+    display: grid !important;
+
+    place-items: center !important;
+
+    width: 28px !important;
+
+    height: 28px !important;
+
+    border-radius: 50% !important;
+
+    background: #e4f8f6 !important;
+
+    color: #087f83 !important;
+
+    font-size: .8rem !important;
+
+    font-weight: 800 !important;
+}
+
+/* Step description */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps-grid span {
+
+    color: #344255 !important;
+
+    font-size: .8rem !important;
+
+    line-height: 1.55 !important;
+}
+
+/* =========================================
+   START NEW REQUEST
+========================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-start-new {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: min(340px, 100%) !important;
+
+    min-height: 54px !important;
+
+    margin: 24px 0 0 !important;
+
+    padding: 14px 20px !important;
+
+    border: 1px solid #19252d !important;
+
+    border-radius: 10px !important;
+
+    background: #19252d !important;
+
+    background-image: none !important;
+
+    color: #fff !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .85rem !important;
+
+    font-weight: 800 !important;
+
+    text-transform: none !important;
+
+    box-shadow: none !important;
+}
+
+/* =========================================
+   SUBMITTED REPAIR SUMMARY
+========================================= */
+
+/*
+ * A submitted repair request is now read-only.
+ * Hide the previous selection-step Edit buttons.
+ */
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(.success-panel)
+#pr-selection-cards .card-back {
+
+    display: none !important;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    > #pr-main
+    > #pr-steps-area.animated-area:has(> .success-panel) {
+
+        padding: 20px 14px !important;
+
+        border-radius: 17px !important;
+    }
+
+    /* Stack the success icon and heading. */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-hero {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 16px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-icon {
+
+        width: 58px !important;
+
+        height: 58px !important;
+
+        font-size: 1.7rem !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-option-header h3 {
+
+        font-size: clamp(1.65rem, 6vw, 2rem) !important;
+    }
+
+    /* Full-width reference card. */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-request-confirmation {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        padding: 18px !important;
+    }
+
+    /* One-column confirmation details. */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    /*
+     * Compact information rows instead of
+     * oversized mobile information tiles.
+     */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div:nth-child(n) {
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, .38fr)
+            minmax(0, .62fr) !important;
+
+        gap: 12px !important;
+
+        align-items: center !important;
+
+        min-height: 0 !important;
+
+        padding: 15px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div:first-child {
+
+        display: none !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div > strong {
+
+        margin: 0 !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div > span {
+
+        text-align: right !important;
+    }
+
+    /* Stack next steps. */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-next-steps-grid {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-start-new {
+
+        width: 100% !important;
+    }
+
+}
+
+/* Narrow phones */
+
+@media (max-width: 380px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div:nth-child(n) {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 5px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div:first-child {
+
+        display: none !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-summary-request-layout > div > span {
+
+        text-align: left !important;
+    }
+
+}
