@@ -1,0 +1,90 @@
+/* Phase 7: compact booking title, one continuous selection surface.
+   Applies only to the five device / repair selection screens.
+   The sidebar/sheet owns visible 0â€“5 progress; preserve the original
+   progress elements in the DOM for existing JS and later booking stages. */
+
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header {
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: #f6f9fd !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  text-align: left !important;
+}
+
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header::before {
+  content: none !important;
+  display: none !important;
+}
+
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header > .pr-header-copy {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 25px 25px 9px !important;
+  text-align: left !important;
+}
+
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header .pr-header-eyebrow {
+  margin: 0 0 9px !important;
+  font-size: .68rem !important;
+  letter-spacing: .12em !important;
+  line-height: 1.35 !important;
+}
+
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header .pr-header-copy h2 {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  font-size: clamp(1.65rem, 2.8vw, 2.45rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -.045em !important;
+  line-height: 1.12 !important;
+  text-align: left !important;
+  text-transform: none !important;
+}
+
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header .pr-header-copy .pr-header-subtitle {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 7px 0 0 !important;
+  color: #59687a !important;
+  font-size: .88rem !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  text-align: left !important;
+}
+
+/* The sidebar and mobile sheet already show true 0â€“5 progress.
+   The three-part guide and second progress bar repeat that information. */
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header .pr-booking-overview,
+html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header > .pr-progress-bar-wrap {
+  display: none !important;
+}
+
+@media (max-width: 960px) {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header {
+    border-radius: 17px 17px 0 0 !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header > .pr-header-copy {
+    padding: 19px 16px 8px !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header .pr-header-copy h2 {
+    font-size: clamp(1.55rem, 6vw, 1.95rem) !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area > :is(#device-card-results, #brand-card-results, #series-card-results, .model-option-header, .repair-select-panel)) > .pr-header .pr-header-copy .pr-header-subtitle {
+    font-size: .83rem !important;
+    line-height: 1.45 !important;
+  }
+}
