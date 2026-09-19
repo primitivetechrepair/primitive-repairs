@@ -1,0 +1,279 @@
+/* Primitive Tech Repairs: desktop model-selection design, phase 1.
+   The original wizard.css stays intact. No mobile, homepage, summary, or flow changes. */
+@media (min-width: 961px) {
+  html body.homepage-premium-page #primitive-wizard-container:has(#pr-steps-area > .model-option-header) {
+    background: #f8fafc !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area:has(> .model-option-header) {
+    min-height: 480px !important;
+    padding: clamp(24px, 3vw, 44px) !important;
+    overflow: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #f8fafc !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    color: #17202c !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 24px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header > span {
+    display: block !important;
+    width: auto !important;
+    min-height: 0 !important;
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #0c9fa5 !important;
+    font-family: "Manrope", sans-serif !important;
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.09em !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header h3 {
+    margin: 0 !important;
+    color: #151c29 !important;
+    font-family: "Space Grotesk", sans-serif !important;
+    font-size: clamp(2.2rem, 3.2vw, 3.45rem) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.052em !important;
+    line-height: 1.08 !important;
+    text-transform: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-option-header p {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 10px 0 0 !important;
+    color: #586577 !important;
+    font-family: "Manrope", sans-serif !important;
+    font-size: clamp(0.95rem, 1.25vw, 1.12rem) !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-panel {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 20px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-panel > label,
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-count {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-row {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 54px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 1px solid #dce3ed !important;
+    border-radius: 10px !important;
+    background: #fff !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-input {
+    width: 100% !important;
+    min-height: 54px !important;
+    margin: 0 !important;
+    padding: 13px 76px 13px 20px !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: transparent !important;
+    color: #151c29 !important;
+    font-family: "Manrope", sans-serif !important;
+    font-size: 1rem !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-input::placeholder {
+    color: #8190a1 !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-input:focus-visible {
+    outline: 2px solid #17bbb8 !important;
+    outline-offset: 2px !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-clear {
+    position: absolute !important;
+    top: 9px !important;
+    right: 9px !important;
+    min-height: 36px !important;
+    padding: 0 11px !important;
+    border: 0 !important;
+    border-radius: 7px !important;
+    background: #e9f7f7 !important;
+    color: #147f85 !important;
+    font-size: 0.75rem !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-search-clear:disabled {
+    display: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results {
+    display: grid !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    background: transparent !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 82px minmax(0, 1fr) !important;
+    grid-template-rows: auto !important;
+    align-items: center !important;
+    gap: 16px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 140px !important;
+    margin: 0 !important;
+    padding: 14px 42px 14px 16px !important;
+    border: 1px solid #dce3ed !important;
+    border-radius: 12px !important;
+    background: #fff !important;
+    background-image: none !important;
+    color: #151c29 !important;
+    box-shadow: 0 8px 25px rgba(25, 40, 65, 0.035) !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card::after {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    top: 18px !important;
+    right: 18px !important;
+    width: 19px !important;
+    height: 19px !important;
+    border: 1.5px solid #9aaabd !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card:is(.selected, .is-selected, [aria-pressed="true"]) {
+    border-color: #17bbb8 !important;
+    background: #f1ffff !important;
+    box-shadow: 0 0 0 1px #17bbb8 !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card:is(.selected, .is-selected, [aria-pressed="true"])::after {
+    border-color: #17bbb8 !important;
+    background: #17bbb8 !important;
+    box-shadow: inset 0 0 0 4px #fff !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card > .opt-thumb {
+    display: grid !important;
+    place-items: center !important;
+    width: 82px !important;
+    min-width: 0 !important;
+    height: 110px !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-thumb-img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 110px !important;
+    max-height: 110px !important;
+    object-fit: contain !important;
+    filter: none !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-card-body {
+    display: grid !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 6px !important;
+    justify-items: start !important;
+    background: transparent !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-badge {
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    color: #68778b !important;
+    font-size: 0.69rem !important;
+    font-weight: 750 !important;
+    letter-spacing: 0.07em !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results .opt-label {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    color: #151c29 !important;
+    font-family: "Space Grotesk", sans-serif !important;
+    font-size: clamp(0.96rem, 1.3vw, 1.14rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.28 !important;
+    text-align: left !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results > button.opt-card:focus-visible {
+    border-color: #17bbb8 !important;
+    background: #f1ffff !important;
+    outline: 2px solid #17bbb8 !important;
+    outline-offset: 3px !important;
+  }
+
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-empty-state {
+    color: #586577 !important;
+    background: #fff !important;
+    border: 1px solid #dce3ed !important;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1240px) {
+  html body.homepage-premium-page #primitive-wizard-container #pr-steps-area .model-card-results {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
