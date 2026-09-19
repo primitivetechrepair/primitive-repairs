@@ -5,7 +5,7 @@
   display: none !important;
 }
 @media (min-width: 961px) {
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-surface {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-surface {
     border: 1px solid #e0e7f0 !important;
     border-radius: 17px !important;
     background: #fff !important;
@@ -15,7 +15,7 @@
     scrollbar-color: #c8d3df transparent !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .blueprint-profile-header {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .blueprint-profile-header {
     min-height: 0 !important;
     text-align: left !important;
     padding: 22px 22px 7px !important;
@@ -24,7 +24,7 @@
     background: #fff !important;
     box-shadow: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .blueprint-profile-kicker {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .blueprint-profile-kicker {
     margin: 0 !important;
     text-align: left !important;
     color: #1b2430 !important;
@@ -36,7 +36,7 @@
     text-transform: none !important;
   }
   /* Keep the dynamic current step accessible; remove only its redundant visual title. */
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary :is(#pr-summary-stage-title, .blueprint-profile-status) {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary :is(#pr-summary-stage-title, .blueprint-profile-status) {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -48,7 +48,7 @@
     border: 0 !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-visual {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-visual {
     min-height: 174px !important;
     margin: 2px 18px 0 !important;
     padding: 8px 12px 0 !important;
@@ -62,14 +62,14 @@
     background-image: none !important;
     box-shadow: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-image {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-image {
     width: min(160px, 88%) !important;
     height: 160px !important;
     max-height: 160px !important;
     background-size: contain !important;
     filter: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary #pr-summary-visual-label {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary #pr-summary-visual-label {
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -79,7 +79,7 @@
     white-space: nowrap !important;
   }
 
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-ref-progress-track {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-ref-progress-track {
     display: block !important;
     height: 8px !important;
     margin: 7px 22px 0 !important;
@@ -87,7 +87,7 @@
     border-radius: 99px !important;
     background: #e1e7ef !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-ref-progress-fill {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-ref-progress-fill {
     display: block !important;
     width: 0;
     height: 100%;
@@ -100,7 +100,7 @@
   #pr-selection-cards.pr-saas-summary[data-completed-steps="3"] .pr-ref-progress-fill { width: 60% !important; }
   #pr-selection-cards.pr-saas-summary[data-completed-steps="4"] .pr-ref-progress-fill { width: 80% !important; }
   #pr-selection-cards.pr-saas-summary[data-completed-steps="5"] .pr-ref-progress-fill { width: 100% !important; }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-ref-progress-copy {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-ref-progress-copy {
     display: block !important;
     margin: 5px 22px 12px !important;
     color: #657386 !important;
@@ -114,7 +114,7 @@
   #pr-selection-cards.pr-saas-summary[data-completed-steps="4"] .pr-ref-progress-copy::before { content: "4 of 5 complete"; }
   #pr-selection-cards.pr-saas-summary[data-completed-steps="5"] .pr-ref-progress-copy::before { content: "5 of 5 complete"; }
 
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid {
     width: auto !important;
     margin: 0 !important;
     padding: 0 19px 5px !important;
@@ -128,7 +128,7 @@
     clip-path: none !important;
     box-shadow: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card {
     min-height: 48px !important;
     margin: 0 !important;
     padding: 9px 2px !important;
@@ -144,10 +144,10 @@
     color: #1b2430 !important;
     box-shadow: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card:last-child {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card:last-child {
     border-bottom: 0 !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card.is-current-step {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .blueprint-profile-grid > .pr-progress-card.is-current-step {
     margin: 0 !important;
     padding: 9px 2px !important;
     border-radius: 0 !important;
@@ -155,7 +155,7 @@
     background: #f4fdfd !important;
     box-shadow: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-row-state {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-row-state {
     width: 23px !important;
     height: 23px !important;
     border: 1.5px solid #aab8c7 !important;
@@ -165,12 +165,12 @@
     box-shadow: none !important;
     font-size: .68rem !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-progress-card.is-complete-step .pr-summary-row-state {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-progress-card.is-complete-step .pr-summary-row-state {
     border-color: #24c1bd !important;
     background: #24c1bd !important;
     color: #fff !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .card-heading {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .card-heading {
     padding: 0 !important;
     border: 0 !important;
     background: transparent !important;
@@ -181,7 +181,7 @@
     letter-spacing: 0 !important;
     text-transform: none !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .card-label {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .card-label {
     min-height: 0 !important;
     padding: 0 !important;
     color: #1b2430 !important;
@@ -194,10 +194,10 @@
     white-space: normal !important;
     overflow-wrap: anywhere !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-progress-card.is-upcoming-step .card-label {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-progress-card.is-upcoming-step .card-label {
     color: #8793a3 !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .card-back {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .card-back {
     width: 36px !important;
     min-width: 36px !important;
     height: 32px !important;
@@ -212,17 +212,17 @@
     font-size: .65rem !important;
     font-weight: 750 !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-footer {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-footer {
     padding: 12px 19px 17px !important;
     border-top: 1px solid #e3e9f1 !important;
     background: #fff !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-footer p {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-footer p {
     color: #667487 !important;
     font-size: .69rem !important;
     line-height: 1.45 !important;
   }
-  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results)) #pr-selection-cards.pr-saas-summary .pr-summary-footer svg {
+  html body.homepage-premium-page #primitive-wizard-container:has(> #pr-main > #pr-steps-area.animated-area :is(#device-card-results, #brand-card-results, #series-card-results, #model-card-results, #repair-card-results, .repair-details-panel)) #pr-selection-cards.pr-saas-summary .pr-summary-footer svg {
     color: #1b2430 !important;
   }
 }
