@@ -197,3 +197,69 @@ html body.homepage-premium-page
     }
 
 }
+
+/*
+ * PHASE 25: APPOINTMENT READY ANIMATION
+ *
+ * Mobile only.
+ * Two subtle pulses, then stops.
+ */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-flow-actions-mobile:not([hidden])
+    .pr-flow-next.pr-appointment-ready {
+
+        animation:
+            prAppointmentReadyPulse
+            1.15s
+            ease-in-out
+            2 !important;
+
+        transform-origin: center center !important;
+
+    }
+
+}
+
+@keyframes prAppointmentReadyPulse {
+
+    0%, 100% {
+
+        transform: scale(1);
+
+        box-shadow:
+            0 0 0 0 rgba(37, 198, 193, 0);
+
+    }
+
+    45% {
+
+        transform: scale(1.015);
+
+        box-shadow:
+            0 0 0 5px rgba(37, 198, 193, .13),
+            0 8px 24px rgba(37, 198, 193, .16);
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .pr-flow-next.pr-appointment-ready {
+
+        animation: none !important;
+
+        transform: none !important;
+
+        box-shadow: none !important;
+
+    }
+
+}

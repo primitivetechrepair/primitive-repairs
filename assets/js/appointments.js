@@ -161,6 +161,162 @@ function syncAppointmentFlags(serviceType) {
   state.appointment.mailIn = serviceType === "mail-in";
 }
 
+
+/*
+ * PHASE 25: GUIDED MOBILE APPOINTMENT
+ *
+ * Service -> Date -> Time -> Continue
+ */
+
+let appointmentScrollSequence = 0;
+
+function scrollToNextAppointmentTarget(container, destination) {
+
+  if (!window.matchMedia("(max-width: 960px)").matches) {
+    return;
+  }
+
+  const sequence = ++appointmentScrollSequence;
+
+  const actionButton = document.querySelector(
+    "#pr-selection-cards " +
+    ".pr-flow-actions-mobile .pr-flow-next"
+  );
+
+  actionButton?.classList.remove(
+    "pr-appointment-ready"
+  );
+
+  window.requestAnimationFrame(() => {
+
+    window.requestAnimationFrame(() => {
+
+      if (sequence !== appointmentScrollSequence) {
+        return;
+      }
+
+      if (!container.querySelector(".appointment-panel")) {
+        return;
+      }
+
+      const selectors = {
+
+        service: "#pr-appointment-service-section",
+
+        date: "#pr-appointment-date-section",
+
+        time: "#pr-appointment-time-section",
+
+        continue:
+          "#pr-selection-cards " +
+          ".pr-flow-actions-mobile:not([hidden]) " +
+          ".pr-flow-next"
+
+      };
+
+      const target = document.querySelector(
+        selectors[destination]
+      );
+
+      if (!target || !target.getClientRects().length) {
+        return;
+      }
+
+      const navigationBottom =
+        document.querySelector(".site-nav")
+          ?.getBoundingClientRect().bottom ?? 0;
+
+      const bannerBottom =
+        document.querySelector(
+          ".appointment-deadline-banner"
+        )?.getBoundingClientRect().bottom ?? 0;
+
+      const baseOffset = window.matchMedia(
+        "(max-width: 760px)"
+      ).matches ? 162 : 178;
+
+      const offset = Math.max(
+        baseOffset,
+        navigationBottom,
+        bannerBottom
+      ) + 16;
+
+      const targetTop =
+        window.scrollY +
+        target.getBoundingClientRect().top;
+
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      window.scrollTo({
+
+        top: Math.max(
+          0,
+          targetTop - offset
+        ),
+
+        behavior: reducedMotion
+          ? "auto"
+          : "smooth"
+
+      });
+
+      /*
+       * Draw attention to the progression button
+       * after the final appointment selection.
+       */
+
+      if (destination !== "continue" || reducedMotion) {
+        return;
+      }
+
+      window.setTimeout(() => {
+
+        if (sequence !== appointmentScrollSequence) {
+          return;
+        }
+
+        if (!container.querySelector(".appointment-panel")) {
+          return;
+        }
+
+        const complete = Boolean(
+          state.appointment.serviceType &&
+          state.appointment.date &&
+          state.appointment.time
+        );
+
+        if (!complete || !target.isConnected) {
+          return;
+        }
+
+        const rect = target.getBoundingClientRect();
+
+        if (
+          rect.bottom <= 0 ||
+          rect.top >= window.innerHeight
+        ) {
+          return;
+        }
+
+        target.classList.remove(
+          "pr-appointment-ready"
+        );
+
+        void target.offsetWidth;
+
+        target.classList.add(
+          "pr-appointment-ready"
+        );
+
+      }, 650);
+
+    });
+
+  });
+
+}
 export function renderAppointmentStep(container, onContinue) {
   if (!container) return;
 
@@ -172,7 +328,7 @@ export function renderAppointmentStep(container, onContinue) {
       <p>Choose a service option, date, and preferred time. We will confirm availability by text.</p>
     </div>
 
-    <div class="appointment-section">
+    <div class="appointment-section" id="pr-appointment-service-section">
         <h4>01 / Service Type</h4>
 
         <div class="appointment-service-grid">
@@ -180,7 +336,7 @@ export function renderAppointmentStep(container, onContinue) {
         </div>
       </div>
 
-      <div class="appointment-section">
+      <div class="appointment-section" id="pr-appointment-date-section">
   <h4>02 / Preferred Date</h4>
 
   <div class="appointment-date-field ${state.appointment.date ? "has-date" : "is-empty"}">
@@ -208,7 +364,7 @@ export function renderAppointmentStep(container, onContinue) {
 </div>
 </div>
 
-      <div class="appointment-section">
+      <div class="appointment-section" id="pr-appointment-time-section">
         <h4>03 / Preferred Time</h4>
 
         <div class="appointment-time-group">
@@ -262,6 +418,11 @@ export function renderAppointmentStep(container, onContinue) {
       syncAppointmentFlags(serviceType);
 
       renderAppointmentStep(container, onContinue);
+
+      scrollToNextAppointmentTarget(
+        container,
+        "date"
+      );
     });
   });
 
@@ -294,6 +455,15 @@ export function renderAppointmentStep(container, onContinue) {
           Boolean(dateInput.value)
         );
       }
+
+      if (state.appointment.date) {
+
+        scrollToNextAppointmentTarget(
+          container,
+          "time"
+        );
+
+      }
     });
   }
 
@@ -304,88 +474,30 @@ export function renderAppointmentStep(container, onContinue) {
       renderAppointmentStep(container, onContinue);
 
       /*
-       * PHASE 24: MOBILE APPOINTMENT PROGRESSION SCROLL
-       *
-       * Once the appointment is complete, return the
-       * customer to Continue to Contact Details.
-       *
-       * Desktop remains unchanged.
+       * Guide the customer to the next required
+       * field or back to the progression button.
        */
 
-      const isMobile = window.matchMedia(
-        "(max-width: 960px)"
-      ).matches;
+      if (!state.appointment.serviceType) {
 
-      const appointmentComplete = Boolean(
-        state.appointment.serviceType &&
-        state.appointment.date &&
-        state.appointment.time
-      );
+        scrollToNextAppointmentTarget(
+          container,
+          "service"
+        );
 
-      if (isMobile && appointmentComplete) {
+      } else if (!state.appointment.date) {
 
-        window.requestAnimationFrame(() => {
+        scrollToNextAppointmentTarget(
+          container,
+          "date"
+        );
 
-          window.requestAnimationFrame(() => {
+      } else {
 
-            const button = document.querySelector(
-              "#pr-selection-cards " +
-              ".pr-flow-actions-mobile:not([hidden]) " +
-              ".pr-flow-next"
-            );
-
-            if (!button || !button.getClientRects().length) {
-              return;
-            }
-
-            const buttonTop =
-              window.scrollY +
-              button.getBoundingClientRect().top;
-
-            /*
-             * Account for the fixed mobile navigation
-             * and booking cutoff banner.
-             */
-
-            const navigationBottom =
-              document.querySelector(".site-nav")
-                ?.getBoundingClientRect().bottom ?? 0;
-
-            const bannerBottom =
-              document.querySelector(
-                ".appointment-deadline-banner"
-              )?.getBoundingClientRect().bottom ?? 0;
-
-            const baseOffset = window.matchMedia(
-              "(max-width: 760px)"
-            ).matches ? 162 : 178;
-
-            const offset = Math.max(
-              baseOffset,
-              navigationBottom,
-              bannerBottom
-            ) + 12;
-
-            const reducedMotion = window.matchMedia(
-              "(prefers-reduced-motion: reduce)"
-            ).matches;
-
-            window.scrollTo({
-
-              top: Math.max(
-                0,
-                buttonTop - offset
-              ),
-
-              behavior: reducedMotion
-                ? "auto"
-                : "smooth"
-
-            });
-
-          });
-
-        });
+        scrollToNextAppointmentTarget(
+          container,
+          "continue"
+        );
 
       }
     });
