@@ -980,3 +980,612 @@ html body.homepage-premium-page
     }
 
 }
+
+/*
+ * PHASE 18: PREMIUM CONFIRMATION EXPERIENCE
+ *
+ * Confirmation-only presentation.
+ * Existing request submission logic is unchanged.
+ */
+
+/* =========================================================
+   CONFIRMATION PAGE LAYOUT
+========================================================= */
+
+/*
+ * After successful submission, the booking wizard is
+ * complete. Remove its redundant title and progress UI.
+ *
+ * Preserve the dynamically inserted service-hours banner.
+ */
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(
+  > #pr-main > #pr-steps-area.animated-area > .success-panel
+)
+> .pr-header
+> :is(
+  .pr-header-copy,
+  .pr-progress-row,
+  .pr-progress-bar-wrap
+) {
+
+    display: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(
+  > #pr-main > #pr-steps-area.animated-area > .success-panel
+)
+> .pr-header {
+
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/* No empty header when the after-hours banner is absent. */
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(
+  > #pr-main > #pr-steps-area.animated-area > .success-panel
+)
+> .pr-header:not(:has(> .service-hours-banner)) {
+
+    display: none !important;
+}
+
+/* Remove the completed wizard's redundant sidebar. */
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(
+  > #pr-main > #pr-steps-area.animated-area > .success-panel
+)
+> #pr-selection-cards.pr-saas-summary {
+
+    display: none !important;
+}
+
+/* Give the confirmation page the full available width. */
+
+@media (min-width: 961px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container#primitive-wizard-container:has(
+      > #pr-main > #pr-steps-area.animated-area > .success-panel
+    ) {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        grid-template-rows: auto auto !important;
+
+        gap: 0 !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container#primitive-wizard-container:has(
+      > #pr-main > #pr-steps-area.animated-area > .success-panel
+    )
+    > #pr-main {
+
+        grid-column: 1 / -1 !important;
+
+        grid-row: 2 !important;
+
+        width: min(100%, 1050px) !important;
+        max-width: 1050px !important;
+
+        margin: 24px auto 30px !important;
+
+        padding: 0 16px !important;
+    }
+
+}
+
+/* =========================================================
+   CONFIRMATION HERO
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-hero {
+
+    grid-template-columns: 64px minmax(0, 1fr) !important;
+
+    gap: 24px !important;
+
+    align-items: center !important;
+
+    padding-bottom: 26px !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-icon {
+
+    width: 62px !important;
+    height: 62px !important;
+
+    border-radius: 16px !important;
+}
+
+/* =========================================================
+   WHAT HAPPENS NEXT
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-next-steps {
+
+    margin: 20px 0 30px !important;
+
+    padding: 24px !important;
+
+    border-radius: 14px !important;
+}
+
+/* =========================================================
+   REQUEST DETAILS HEADING
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-heading {
+
+    margin: 30px 0 18px !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-heading > span {
+
+    display: block !important;
+
+    margin-bottom: 8px !important;
+
+    color: #0c9fa5 !important;
+
+    font: 800 .7rem/1.4 "Manrope", sans-serif !important;
+
+    letter-spacing: .1em !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-heading h4 {
+
+    margin: 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(1.4rem, 2.4vw, 1.8rem) !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.2 !important;
+
+    letter-spacing: -.035em !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-heading p {
+
+    margin: 8px 0 0 !important;
+
+    color: #657386 !important;
+
+    font-size: .85rem !important;
+
+    line-height: 1.5 !important;
+}
+
+/* =========================================================
+   THREE INFORMATION CARDS
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-grid {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 16px !important;
+
+    align-items: stretch !important;
+}
+
+/* Device and repair receives the first full-width row. */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-device {
+
+    grid-column: 1 / -1 !important;
+}
+
+/* Uniform cards */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-card {
+
+    box-sizing: border-box !important;
+
+    min-width: 0 !important;
+
+    padding: clamp(20px, 2.5vw, 28px) !important;
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 14px !important;
+
+    background: #fff !important;
+
+    box-shadow:
+        0 5px 20px rgba(23, 40, 62, .035) !important;
+}
+
+/* Card headers */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-card-heading {
+
+    margin: 0 0 18px !important;
+
+    padding: 0 0 18px !important;
+
+    border-bottom: 1px solid #e5ebf2 !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-card-heading span {
+
+    display: block !important;
+
+    margin-bottom: 8px !important;
+
+    color: #0c9fa5 !important;
+
+    font: 800 .67rem/1.4 "Manrope", sans-serif !important;
+
+    letter-spacing: .08em !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-card-heading h4 {
+
+    margin: 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: 1.2rem !important;
+
+    font-weight: 700 !important;
+
+    letter-spacing: -.025em !important;
+
+    line-height: 1.3 !important;
+}
+
+/* =========================================================
+   INFORMATION ROWS
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-rows {
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) !important;
+
+    gap: 0 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-rows > div {
+
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(110px, .38fr)
+        minmax(0, .62fr) !important;
+
+    gap: 16px !important;
+
+    align-items: start !important;
+
+    min-width: 0 !important;
+
+    padding: 13px 0 !important;
+
+    border-bottom: 1px solid #edf1f6 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-rows > div:last-child {
+
+    border-bottom: 0 !important;
+}
+
+/* Labels */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-rows > div > strong {
+
+    color: #0c9fa5 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .68rem !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: .045em !important;
+
+    line-height: 1.5 !important;
+
+    text-transform: uppercase !important;
+}
+
+/* Values */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-rows > div > span {
+
+    min-width: 0 !important;
+
+    color: #344255 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .85rem !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.5 !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+/* =========================================================
+   APPOINTMENT STATUS
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-status {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 9px !important;
+
+    width: fit-content !important;
+
+    max-width: 100% !important;
+
+    margin-bottom: 12px !important;
+
+    padding: 10px 13px !important;
+
+    border: 1px solid #bfe9e7 !important;
+
+    border-radius: 9px !important;
+
+    background: #f0fbfa !important;
+
+    color: #087f83 !important;
+
+    font-size: .76rem !important;
+
+    font-weight: 800 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-status-dot {
+
+    display: block !important;
+
+    flex: 0 0 7px !important;
+
+    width: 7px !important;
+    height: 7px !important;
+
+    border-radius: 50% !important;
+
+    background: #0c9fa5 !important;
+}
+
+/* =========================================================
+   ADDITIONAL INFORMATION
+========================================================= */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-extra {
+
+    margin-top: 18px !important;
+
+    padding: 0 20px !important;
+
+    border: 1px solid #dce3ed !important;
+
+    border-radius: 12px !important;
+
+    background: #fff !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-extra > summary {
+
+    padding: 18px 0 !important;
+
+    color: #344255 !important;
+
+    font-size: .83rem !important;
+
+    font-weight: 750 !important;
+
+    cursor: pointer !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.success-panel
+.success-receipt-extra[open]
+> .success-receipt-rows {
+
+    padding-bottom: 12px !important;
+
+    border-top: 1px solid #edf1f6 !important;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container:has(
+      > #pr-main > #pr-steps-area.animated-area > .success-panel
+    )
+    > #pr-main {
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin: 0 auto !important;
+
+        padding: 12px 12px 24px !important;
+        padding-bottom: 24px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-hero {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 14px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-receipt-grid {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 12px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-receipt-device {
+
+        grid-column: 1 !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-receipt-card {
+
+        padding: 18px 16px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-receipt-rows > div {
+
+        grid-template-columns:
+            minmax(0, .38fr)
+            minmax(0, .62fr) !important;
+
+        gap: 12px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-next-steps {
+
+        margin: 16px 0 24px !important;
+
+        padding: 20px 16px !important;
+    }
+
+}
+
+/* Narrow phones */
+
+@media (max-width: 380px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .success-panel
+    .success-receipt-rows > div {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 5px !important;
+    }
+
+}

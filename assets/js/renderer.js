@@ -1748,51 +1748,6 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
         <small>Save this number for reference.</small>
       </div>
 
-      <div class="success-summary success-summary-request-layout">
-        ${renderSuccessItem("Request ID", requestId, "Pending")}
-        ${renderSuccessItem("Status", status, "New")}
-        ${renderSuccessItem("Appointment Status", "Pending confirmation")}
-        ${renderSuccessItem("Device", device.type, "Not selected")}
-        ${renderSuccessItem("Brand", device.brand, "Not selected")}
-        ${renderSuccessItem("Series", device.series, "Not selected")}
-        ${renderSuccessItem("Model", device.model, "Not selected")}
-        ${renderSuccessItem("Selected Repairs", repairList, "Repair request")}        ${selectedAddOns.length
-          ? renderSuccessItem(
-              "Protection Add-On",
-              protectionAddOnSummary
-            )
-          : ""}
-        ${renderSuccessItem("Repair Count", selectedRepairs.length ? `${selectedRepairs.length}` : "0")}
-        ${renderSuccessItem("Service Type", serviceType, "Not selected")}
-        ${renderSuccessItem("Preferred Date", preferredDate, "Not selected")}
-        ${renderSuccessItem("Preferred Time", preferredTime, "Not selected")}
-        ${hasAfterHoursFee
-          ? renderSuccessItem("Convenience Fee", convenienceFeeLabel)
-          : ""}
-        ${promotionCode
-          ? renderSuccessItem(
-              "Promotion Code",
-              promotionCode
-            )
-          : ""}
-        ${promotionCode
-          ? renderSuccessItem(
-              "Offer Type",
-              promotionOfferType
-            )
-          : ""}
-        ${promotionCode
-          ? renderSuccessItem(
-              "Promotion Status",
-              promotionStatus
-            )
-          : ""}
-        ${renderSuccessItem("Customer", customerName, "Customer")}
-        ${renderSuccessItem("Contact", contactLine, "Not provided")}
-        ${renderSuccessItem("Location", customer.serviceLocation, "Not provided")}
-        ${renderSuccessItem("Attachments", `${attachments.length}`)}
-      </div>
-
       <div class="success-next-steps">
         <div class="success-next-steps-header">
           <span>What Happens Next</span>
@@ -1816,6 +1771,124 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
           </div>
         </div>
       </div>
+
+
+      <div class="success-receipt-heading">
+        <span>YOUR REQUEST</span>
+        <h4>Request details</h4>
+        <p>Here is a summary of the information you submitted.</p>
+      </div>
+
+      <div class="success-receipt-grid" aria-label="Submitted repair request details">
+
+        <section class="success-receipt-card success-receipt-device">
+
+          <div class="success-receipt-card-heading">
+            <span>01 / DEVICE & REPAIR</span>
+            <h4>Your repair</h4>
+          </div>
+
+          <div class="success-receipt-rows">
+
+            ${renderSuccessItem("Device", device.type, "Not selected")}
+            ${renderSuccessItem("Brand", device.brand, "Not selected")}
+            ${renderSuccessItem("Series", device.series, "Not selected")}
+            ${renderSuccessItem("Model", device.model, "Not selected")}
+            ${renderSuccessItem("Selected repairs", repairList, "Repair request")}
+            ${renderSuccessItem("Repair count", selectedRepairs.length ? `${selectedRepairs.length}` : "0")}
+
+            ${selectedAddOns.length
+              ? renderSuccessItem(
+                  "Protection add-on",
+                  protectionAddOnSummary
+                )
+              : ""}
+
+          </div>
+
+        </section>
+
+        <section class="success-receipt-card success-receipt-appointment">
+
+          <div class="success-receipt-card-heading">
+            <span>02 / APPOINTMENT</span>
+            <h4>Your appointment request</h4>
+          </div>
+
+          <div class="success-receipt-status">
+            <span class="success-receipt-status-dot" aria-hidden="true"></span>
+            Pending confirmation
+          </div>
+
+          <div class="success-receipt-rows">
+
+            ${renderSuccessItem("Service type", serviceType, "Not selected")}
+            ${renderSuccessItem("Preferred date", preferredDate, "Not selected")}
+            ${renderSuccessItem("Preferred time", preferredTime, "Not selected")}
+
+            ${hasAfterHoursFee
+              ? renderSuccessItem(
+                  "Convenience fee",
+                  convenienceFeeLabel
+                )
+              : ""}
+
+          </div>
+
+        </section>
+
+        <section class="success-receipt-card success-receipt-customer">
+
+          <div class="success-receipt-card-heading">
+            <span>03 / CUSTOMER</span>
+            <h4>Your contact information</h4>
+          </div>
+
+          <div class="success-receipt-rows">
+
+            ${renderSuccessItem("Name", customerName, "Customer")}
+            ${renderSuccessItem("Phone", customer.phone, "Not provided")}
+            ${renderSuccessItem("Email", customer.email, "Not provided")}
+            ${renderSuccessItem("Service location", customer.serviceLocation, "Not provided")}
+
+            ${customer.apt
+              ? renderSuccessItem("Apt / Suite", customer.apt)
+              : ""}
+
+            ${customer.zip
+              ? renderSuccessItem("ZIP code", customer.zip)
+              : ""}
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <details class="success-receipt-extra">
+
+        <summary>Additional request information</summary>
+
+        <div class="success-receipt-rows">
+
+          ${renderSuccessItem("Request status", status, "Received")}
+          ${renderSuccessItem("Attachments", `${attachments.length}`)}
+
+          ${promotionCode
+            ? renderSuccessItem("Promotion code", promotionCode)
+            : ""}
+
+          ${promotionCode
+            ? renderSuccessItem("Offer type", promotionOfferType)
+            : ""}
+
+          ${promotionCode
+            ? renderSuccessItem("Promotion status", promotionStatus)
+            : ""}
+
+        </div>
+
+      </details>
 
       <button type="button" class="success-start-new">
         Start New Request
