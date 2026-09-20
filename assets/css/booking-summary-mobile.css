@@ -274,3 +274,80 @@
   #pr-selection-cards.pr-saas-summary[data-completed-steps="4"] .pr-ref-progress-copy::before { content: "4 of 5 complete"; }
   #pr-selection-cards.pr-saas-summary[data-completed-steps="5"] .pr-ref-progress-copy::before { content: "5 of 5 complete"; }
 }
+
+/*
+ * PHASE 20: PREMIUM PHONE FLOAT
+ *
+ * Subtle device animation inside the mobile
+ * repair summary sheet.
+ */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary[data-mobile-open="true"]
+    #pr-summary-image {
+
+        transform-origin: center center;
+
+        animation:
+            prPhoneModalEnterP20 500ms ease-out both,
+            prPhoneModalFloatP20 6s ease-in-out 500ms infinite;
+
+    }
+
+}
+
+/* Fade in when the summary opens. */
+
+@keyframes prPhoneModalEnterP20 {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* Slow premium floating motion. */
+
+@keyframes prPhoneModalFloatP20 {
+
+    0%, 100% {
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-4px)
+            scale(1.01);
+
+    }
+
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    #pr-summary-image {
+
+        animation: none !important;
+
+        transform: none !important;
+
+    }
+
+}
