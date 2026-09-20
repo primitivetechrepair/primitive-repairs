@@ -59,6 +59,71 @@ function resetCatalogProvider() {
 document.addEventListener("DOMContentLoaded", () => {
   const stepsArea = document.getElementById("pr-steps-area");
   const formArea = document.getElementById("pr-form-area");
+
+  /*
+   * PHASE 19: FIRST-PAINT HANDOFF
+   *
+   * Keep the initial booking placeholder visible
+   * until real wizard content has been rendered.
+   *
+   * Do not release merely because DOMContentLoaded
+   * fired or the catalog fetch started.
+   */
+
+  const bookingShell = document.getElementById(
+    "primitive-wizard-container"
+  );
+
+  if (
+    bookingShell?.hasAttribute("data-pr-booting") &&
+    stepsArea
+  ) {
+
+    let bootWatchdog;
+
+    const bootObserver = new MutationObserver(() => {
+
+      const wizardReady = stepsArea.querySelector(
+        ":scope > :is(" +
+          "#device-card-results," +
+          ".catalog-status-panel.is-error," +
+          ".catalog-status-panel.is-empty" +
+        ")"
+      );
+
+      if (!wizardReady) return;
+
+      window.clearTimeout(bootWatchdog);
+
+      bootObserver.disconnect();
+
+      bookingShell.removeAttribute(
+        "data-pr-booting"
+      );
+
+    });
+
+    bootObserver.observe(stepsArea, {
+      childList: true
+    });
+
+    /*
+     * Fail-safe:
+     * Never leave the booking interface hidden
+     * indefinitely if initialization stalls.
+     */
+
+    bootWatchdog = window.setTimeout(() => {
+
+      bootObserver.disconnect();
+
+      bookingShell.removeAttribute(
+        "data-pr-booting"
+      );
+
+    }, 15000);
+
+  }
   const summaryBox = document.getElementById("summary-box");
   const customerForm = document.getElementById("pr-customer-form");
   const backBtn = document.getElementById("cf-back");

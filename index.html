@@ -152,7 +152,7 @@
   >
 </noscript>
 
-<link rel="modulepreload" href="/assets/js/wizard.js?v=20260919-p18">
+<link rel="modulepreload" href="/assets/js/wizard.js?v=20260919-p19">
 
 <link
   rel="preload"
@@ -182,6 +182,123 @@
 <link rel="stylesheet" href="/assets/css/booking-contact-premium.css?v=20260919-p14">
 <link rel="stylesheet" href="/assets/css/booking-final-review.css?v=20260919-p15c">
 <link rel="stylesheet" href="/assets/css/booking-confirmation.css?v=20260919-p18">
+
+<style id="pr-booking-first-paint">
+
+/*
+ * PHASE 19: BOOKING FIRST PAINT
+ *
+ * Prevent legacy booking styling from appearing
+ * before the JavaScript-rendered wizard is ready.
+ *
+ * This styling is intentionally included directly
+ * in the document head to avoid another network
+ * request before the initial paint.
+ */
+
+html body.homepage-premium-page
+#primitive-wizard-container[data-pr-booting] {
+
+    display: block !important;
+
+    box-sizing: border-box !important;
+
+    width: min(1416px, calc(100% - 32px)) !important;
+
+    min-height: 260px !important;
+
+    margin: 0 auto 22px !important;
+
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    border: 1px solid #e0e6ef !important;
+
+    border-radius: 20px !important;
+
+    background: #f6f9fd !important;
+
+    background-image: none !important;
+
+    box-shadow: none !important;
+}
+
+/*
+ * Keep the legacy header and uninitialized
+ * summary out of the initial visual render.
+ */
+
+html body.homepage-premium-page
+#primitive-wizard-container[data-pr-booting]
+> * {
+
+    display: none !important;
+}
+
+/* Lightweight initial loading state */
+
+html body.homepage-premium-page
+#primitive-wizard-container[data-pr-booting]::before {
+
+    content: "Preparing your repair booking...";
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+
+    width: 100% !important;
+
+    min-height: 260px !important;
+
+    padding: 30px !important;
+
+    background: #f6f9fd !important;
+
+    color: #59687a !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .9rem !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.5 !important;
+
+    text-align: center !important;
+}
+
+/* Mobile */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container[data-pr-booting] {
+
+        width: 100% !important;
+
+        min-height: 220px !important;
+
+        border-radius: 18px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container[data-pr-booting]::before {
+
+        min-height: 220px !important;
+
+        padding: 24px !important;
+
+        font-size: .85rem !important;
+    }
+
+}
+
+</style>
 </head>
 <body class="homepage-premium-page">
 
@@ -242,7 +359,7 @@
 </section>
 
 <!-- Visual Repair Wizard -->
-<div id="primitive-wizard-container">
+<div id="primitive-wizard-container" data-pr-booting="true">
   <div class="pr-header">
     <div class="pr-header-copy">
       <span class="pr-header-eyebrow">Repair Appointment</span>
@@ -966,7 +1083,7 @@
   </div>
 </template>
 
-<script type="module" src="/assets/js/wizard.js?v=20260919-p18"></script>
+<script type="module" src="/assets/js/wizard.js?v=20260919-p19"></script>
 <script src="/assets/js/header.js?v=20260830-iphonescreen01" defer></script>
 <script src="/assets/js/footer.js?v=20260830-iphonescreen01" defer></script>
 <script src="/assets/js/mobileNav.js?v=20260614-1" defer></script>
