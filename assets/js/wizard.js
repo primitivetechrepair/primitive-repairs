@@ -1,4 +1,5 @@
 import { initBookingProgression } from "./bookingProgression.js?v=20260920-p23";
+import { initMobileContactGuide } from "./contactGuide.js?v=20260920-p26";
 import { state, resetStep, resetAllState } from "./state.js?v=20260831-1";
 import { createCatalogProvider } from "./catalogProviders.js?v=20260912-2";
 import {
@@ -128,6 +129,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   const summaryBox = document.getElementById("summary-box");
   const customerForm = document.getElementById("pr-customer-form");
+
+  if (customerForm) {
+    initMobileContactGuide(customerForm);
+  }
   const backBtn = document.getElementById("cf-back");
   const fileInput = document.getElementById("cf-files");
   const filePreviews = document.getElementById("cf-previews");
@@ -286,12 +291,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (addressInput) {
+      addressInput.required = requiresLocation;
       addressInput.placeholder =
         placeholders[serviceType]?.address ||
         "Enter the location related to your selected service option";
     }
 
     if (zipInput) {
+      zipInput.required = requiresLocation;
       zipInput.placeholder =
         placeholders[serviceType]?.zip ||
         "Enter ZIP code";

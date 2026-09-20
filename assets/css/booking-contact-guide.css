@@ -1,0 +1,95 @@
+/*
+ * Primitive Tech Repairs
+ * Phase 26: Guided Mobile Contact
+ */
+
+@media (min-width: 961px) {
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  .pr-mobile-contact-action {
+    display: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area
+  .pr-mobile-contact-action {
+
+    grid-column: 1 / -1 !important;
+
+    display: grid !important;
+    gap: 8px !important;
+
+    margin: 2px 0 10px !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area
+  .pr-mobile-contact-action button {
+
+    width: 100% !important;
+    min-height: 50px !important;
+
+    padding: 12px 18px !important;
+
+    border: 0 !important;
+    border-radius: 10px !important;
+
+    background: #1b2830 !important;
+    color: #fff !important;
+
+    font: 800 .82rem/1.35 "Manrope", sans-serif !important;
+
+    cursor: pointer !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area
+  .pr-mobile-contact-action button:focus-visible {
+
+    outline: 3px solid #25c6c1 !important;
+    outline-offset: 3px !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area
+  .pr-mobile-action-note {
+
+    margin: 0 !important;
+
+    color: #657386 !important;
+
+    font: 500 .7rem/1.5 "Manrope", sans-serif !important;
+
+    text-align: center !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area
+  .customer-field input[aria-invalid="true"] {
+
+    border-color: #c74646 !important;
+
+    box-shadow:
+      0 0 0 3px rgba(199,70,70,.1) !important;
+  }
+
+  html body.homepage-premium-page
+  #primitive-wizard-container
+  #pr-form-area
+  .pr-contact-field-error {
+
+    margin: 8px 0 0 !important;
+
+    color: #ad3434 !important;
+
+    font: 650 .73rem/1.45 "Manrope", sans-serif !important;
+  }
+}
