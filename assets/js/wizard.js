@@ -1057,6 +1057,78 @@ document.addEventListener("DOMContentLoaded", () => {
             const presentation = submissionErrorPresentation(err);
             showSubmissionStatus("error", presentation.title, presentation.message);
 
+            /*
+             * A changed payload cannot reuse an earlier
+             * submission identity.
+             *
+             * Offer an explicit new-request recovery path.
+             * Never reset automatically after an ambiguous
+             * submission, network failure, or refresh.
+             */
+
+            const requiresNewRequest = new Set([
+              "submission_payload_changed",
+              "submission_conflict_unresolved",
+              "idempotency_conflict"
+            ]).has(err?.code);
+
+            if (requiresNewRequest && submissionStatus) {
+
+              const newRequestButton =
+                document.createElement("button");
+
+              newRequestButton.type = "button";
+
+              newRequestButton.className =
+                "review-start-new-request";
+
+              newRequestButton.textContent =
+                "Start a New Request";
+
+              newRequestButton.addEventListener("click", () => {
+
+                const confirmed = window.confirm(
+                  "Start a completely new repair request?\n\n" +
+                  "First verify whether your previous request " +
+                  "was received. Starting another request could " +
+                  "create a duplicate if the previous attempt succeeded.\n\n" +
+                  "Your current booking selections and contact " +
+                  "information will be cleared."
+                );
+
+                if (!confirmed) return;
+
+                /*
+                 * Explicitly discard the previous submission
+                 * identity only after customer confirmation.
+                 */
+
+                resetWizardSubmission();
+
+                customerForm.reset();
+
+                if (filePreviews) {
+                  filePreviews.replaceChildren();
+                }
+
+                resetAllState();
+
+                if (formArea) {
+                  formArea.style.display = "none";
+                }
+
+                stepsArea.style.display = "";
+
+                renderWizard(true);
+
+              });
+
+              submissionStatus.appendChild(
+                newRequestButton
+              );
+
+            }
+
             return;
           }
 

@@ -1160,3 +1160,62 @@ html body.homepage-premium-page
     }
 
 }
+
+/* Explicit recovery for a changed submission identity */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-start-new-request {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: 100% !important;
+
+    min-height: 50px !important;
+
+    margin-top: 16px !important;
+
+    padding: 12px 20px !important;
+
+    border: 1px solid #25c6c1 !important;
+
+    border-radius: 10px !important;
+
+    background: #f0fbfa !important;
+
+    color: #087f83 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .85rem !important;
+
+    font-weight: 800 !important;
+
+    cursor: pointer !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-start-new-request:hover {
+
+    background: #dff7f4 !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-start-new-request:focus-visible {
+
+    outline: 3px solid #25c6c1 !important;
+
+    outline-offset: 3px !important;
+
+}
