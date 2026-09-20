@@ -74,9 +74,22 @@ const TIME_SLOTS = [
   "6:30 AM"
 ];
 
-function getMinDateValue() {
-  const now = new Date();
-  return now.toISOString().split("T")[0];
+/*
+ * Phase 28: Use the customer's local calendar date.
+ *
+ * UTC conversion could incorrectly advance the minimum
+ * date during the evening in Eastern Time.
+ */
+export function getMinDateValue(now = new Date()) {
+  const year = now.getFullYear();
+  const month = String(
+    now.getMonth() + 1
+  ).padStart(2, "0");
+  const day = String(
+    now.getDate()
+  ).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
 }
 
 function formatAppointmentDate(dateValue) {
@@ -110,7 +123,7 @@ function renderServiceButtons(selectedServiceType) {
   }).join("");
 }
 
-function isAfterHoursTimeSlot(timeSlot) {
+export function isAfterHoursTimeSlot(timeSlot) {
   const match = String(timeSlot || "")
     .trim()
     .match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);

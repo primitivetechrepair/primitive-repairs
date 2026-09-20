@@ -20,7 +20,7 @@ import {
   renderSummary
 } from "./renderer.js?v=20260920-p27";
 
-import { renderAppointmentStep } from "./appointments.js?v=20260920-p25";
+import { renderAppointmentStep } from "./appointments.js?v=20260920-p28";
 import {
   applyAfterHoursBookingDetails,
   buildLeadPayload,
@@ -927,26 +927,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (backBtn) {
     backBtn.addEventListener("click", () => {
-      state.repair = null;
-      state.repairs = [];
-      state.repairDetails = {};
-      state.repairDetailsViewed = false;
-      state.repairInfoViewed = false;
-      state.catalogSelection.repairIds = [];
-      state.protectionViewed = false;
-      state.addOns = [];
+      /*
+       * Phase 28: Back to Appointment.
+       *
+       * Preserve selected repairs, repair information,
+       * protection, appointment preferences, and the
+       * customer's completed contact form.
+       *
+       * Only reopen the appointment stage.
+       */
       state.appointmentSelected = false;
       state.reviewViewed = false;
-
-      state.appointment = {
-        date: null,
-        time: null,
-        serviceType: null,
-        technician: null,
-        pickupRequired: false,
-        mailIn: false,
-        onsite: false
-      };
 
       if (formArea) {
         formArea.style.display = "none";
