@@ -351,3 +351,65 @@
     }
 
 }
+
+/*
+ * PHASE 22: MOBILE THUMBNAIL IMAGE FIT
+ *
+ * Prevent device images from touching or appearing
+ * cropped against the edges of the Current Repair
+ * thumbnail.
+ *
+ * Only affects the collapsed mobile summary trigger.
+ */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-summary-mobile-trigger
+    > .pr-summary-mobile-thumb {
+
+        box-sizing: border-box !important;
+
+        width: 100% !important;
+        max-width: 50px !important;
+        min-width: 0 !important;
+
+        height: 50px !important;
+        min-height: 50px !important;
+
+        padding: 6px !important;
+
+        flex-shrink: 0 !important;
+
+        align-self: center !important;
+        justify-self: center !important;
+
+        background-origin: content-box !important;
+
+        background-size: contain !important;
+
+        background-position: center center !important;
+
+        background-repeat: no-repeat !important;
+
+    }
+
+}
+
+/* Smaller mobile screens */
+
+@media (max-width: 350px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-summary-mobile-trigger
+    > .pr-summary-mobile-thumb {
+
+        padding: 5px !important;
+
+    }
+
+}
