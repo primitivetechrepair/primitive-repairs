@@ -302,6 +302,92 @@ export function renderAppointmentStep(container, onContinue) {
       state.appointment.time = btn.dataset.timeSlot;
 
       renderAppointmentStep(container, onContinue);
+
+      /*
+       * PHASE 24: MOBILE APPOINTMENT PROGRESSION SCROLL
+       *
+       * Once the appointment is complete, return the
+       * customer to Continue to Contact Details.
+       *
+       * Desktop remains unchanged.
+       */
+
+      const isMobile = window.matchMedia(
+        "(max-width: 960px)"
+      ).matches;
+
+      const appointmentComplete = Boolean(
+        state.appointment.serviceType &&
+        state.appointment.date &&
+        state.appointment.time
+      );
+
+      if (isMobile && appointmentComplete) {
+
+        window.requestAnimationFrame(() => {
+
+          window.requestAnimationFrame(() => {
+
+            const button = document.querySelector(
+              "#pr-selection-cards " +
+              ".pr-flow-actions-mobile:not([hidden]) " +
+              ".pr-flow-next"
+            );
+
+            if (!button || !button.getClientRects().length) {
+              return;
+            }
+
+            const buttonTop =
+              window.scrollY +
+              button.getBoundingClientRect().top;
+
+            /*
+             * Account for the fixed mobile navigation
+             * and booking cutoff banner.
+             */
+
+            const navigationBottom =
+              document.querySelector(".site-nav")
+                ?.getBoundingClientRect().bottom ?? 0;
+
+            const bannerBottom =
+              document.querySelector(
+                ".appointment-deadline-banner"
+              )?.getBoundingClientRect().bottom ?? 0;
+
+            const baseOffset = window.matchMedia(
+              "(max-width: 760px)"
+            ).matches ? 162 : 178;
+
+            const offset = Math.max(
+              baseOffset,
+              navigationBottom,
+              bannerBottom
+            ) + 12;
+
+            const reducedMotion = window.matchMedia(
+              "(prefers-reduced-motion: reduce)"
+            ).matches;
+
+            window.scrollTo({
+
+              top: Math.max(
+                0,
+                buttonTop - offset
+              ),
+
+              behavior: reducedMotion
+                ? "auto"
+                : "smooth"
+
+            });
+
+          });
+
+        });
+
+      }
     });
   });
 

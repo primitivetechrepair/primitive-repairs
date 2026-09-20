@@ -19,7 +19,7 @@ import {
   renderSummary
 } from "./renderer.js?v=20260920-p23";
 
-import { renderAppointmentStep } from "./appointments.js?v=20260831-1";
+import { renderAppointmentStep } from "./appointments.js?v=20260920-p24";
 import {
   applyAfterHoursBookingDetails,
   buildLeadPayload,
