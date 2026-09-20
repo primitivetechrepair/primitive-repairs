@@ -226,3 +226,86 @@
     color: #1b2430 !important;
   }
 }
+
+/*
+ * PHASE 21: PREMIUM DESKTOP PHONE FLOAT
+ *
+ * Matches the mobile repair summary animation.
+ * Desktop only.
+ */
+
+@media (min-width: 961px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-summary-surface
+    #pr-summary-image {
+
+        transform-origin: center center;
+
+        animation:
+            prPhoneDesktopEnterP21 500ms ease-out both,
+            prPhoneDesktopFloatP21 6s ease-in-out 500ms infinite;
+
+    }
+
+}
+
+/* Smooth entrance */
+
+@keyframes prPhoneDesktopEnterP21 {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+/* Premium floating animation */
+
+@keyframes prPhoneDesktopFloatP21 {
+
+    0%, 100% {
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-4px)
+            scale(1.01);
+
+    }
+
+}
+
+/* Accessibility */
+
+@media (min-width: 961px) and (prefers-reduced-motion: reduce) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-summary-surface
+    #pr-summary-image {
+
+        animation: none !important;
+
+        transform: none !important;
+
+    }
+
+}
