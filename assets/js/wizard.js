@@ -1,3 +1,4 @@
+import { initBookingProgression } from "./bookingProgression.js?v=20260920-p23";
 import { state, resetStep, resetAllState } from "./state.js?v=20260831-1";
 import { createCatalogProvider } from "./catalogProviders.js?v=20260912-2";
 import {
@@ -16,7 +17,7 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260919-p18";
+} from "./renderer.js?v=20260920-p23";
 
 import { renderAppointmentStep } from "./appointments.js?v=20260831-1";
 import {
@@ -59,6 +60,7 @@ function resetCatalogProvider() {
 document.addEventListener("DOMContentLoaded", () => {
   const stepsArea = document.getElementById("pr-steps-area");
   const formArea = document.getElementById("pr-form-area");
+  initBookingProgression({ stepsArea, formArea });
 
   /*
    * PHASE 19: FIRST-PAINT HANDOFF

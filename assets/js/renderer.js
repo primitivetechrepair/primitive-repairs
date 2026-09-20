@@ -1746,6 +1746,11 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
         <span>Request ID</span>
         <strong>${escapeSuccessHtml(requestId)}</strong>
         <small>Save this number for reference.</small>
+        <button
+          type="button"
+          class="success-copy-request-id"
+          aria-label="Copy repair request ID"
+        >Copy ID</button>
       </div>
 
       <div class="success-next-steps">
@@ -1934,6 +1939,45 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
     });
   }
 
+  const copyRequestButton = container.querySelector(
+    ".success-copy-request-id"
+  );
+
+  if (copyRequestButton) {
+
+    copyRequestButton.addEventListener(
+      "click",
+      async () => {
+
+        try {
+
+          if (!navigator.clipboard?.writeText) {
+            throw new Error("Clipboard unavailable");
+          }
+
+          await navigator.clipboard.writeText(requestId);
+
+          copyRequestButton.textContent = "Copied!";
+
+        } catch {
+
+          copyRequestButton.textContent =
+            "Copy unavailable";
+
+        }
+
+        window.setTimeout(() => {
+
+          if (copyRequestButton.isConnected) {
+            copyRequestButton.textContent = "Copy ID";
+          }
+
+        }, 2200);
+
+      }
+    );
+
+  }
   const startBtn = container.querySelector(".success-start-new");
 
   if (startBtn) {

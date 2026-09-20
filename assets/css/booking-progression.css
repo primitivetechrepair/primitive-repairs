@@ -1,0 +1,199 @@
+/*
+ * Primitive Tech Repairs
+ * Phase 23: responsive booking progression
+ */
+
+/* Preserve original event handlers without duplicate CTAs. */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area
+[data-pr-action-source="true"] {
+
+    display: none !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-selection-cards.pr-saas-summary
+.pr-flow-actions[hidden] {
+
+    display: none !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-selection-cards.pr-saas-summary
+.pr-flow-next {
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+
+    min-height: 50px !important;
+
+    padding: 12px 18px !important;
+
+    border: 0 !important;
+
+    border-radius: 10px !important;
+
+    background: #1b2830 !important;
+
+    color: #fff !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .81rem !important;
+
+    font-weight: 800 !important;
+
+    line-height: 1.3 !important;
+
+    text-align: center !important;
+
+    cursor: pointer !important;
+
+    transition:
+        background 180ms ease,
+        transform 180ms ease !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.pr-flow-next:hover {
+
+    background: #283944 !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.pr-flow-next:focus-visible {
+
+    outline: 3px solid #25c6c1 !important;
+
+    outline-offset: 3px !important;
+
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.pr-flow-next:disabled {
+
+    opacity: .55 !important;
+
+    cursor: not-allowed !important;
+
+}
+
+/* Desktop */
+
+@media (min-width: 961px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-flow-actions-mobile {
+
+        display: none !important;
+
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-flow-actions-desktop:not([hidden]) {
+
+        display: block !important;
+
+        margin-top: auto !important;
+
+        padding: 16px 18px 20px !important;
+
+        border-top: 1px solid #e3e9f1 !important;
+
+        background: #fff !important;
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    .pr-flow-actions-desktop {
+
+        display: none !important;
+
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    > .pr-flow-actions-mobile:not([hidden]) {
+
+        position: relative !important;
+
+        inset: auto !important;
+
+        display: block !important;
+
+        box-sizing: border-box !important;
+
+        width: calc(100% - 24px) !important;
+
+        max-width: 680px !important;
+
+        margin: 0 auto 12px !important;
+
+        padding: 0 !important;
+
+        pointer-events: auto !important;
+
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary
+    > .pr-flow-actions-mobile
+    .pr-flow-next {
+
+        min-height: 48px !important;
+
+        border-radius: 11px !important;
+
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-selection-cards.pr-saas-summary:not(.is-mobile-visible)
+    > .pr-flow-actions-mobile {
+
+        display: none !important;
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .pr-flow-next {
+
+        transition: none !important;
+
+    }
+
+}
