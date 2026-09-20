@@ -1,0 +1,336 @@
+/*
+ * Primitive Tech Repairs
+ * Phase 27: Final Review & Submission Polish
+ *
+ * Presentation only.
+ * Existing submission and recovery logic remain intact.
+ */
+
+/* =====================================================
+   MOBILE REVIEW SHORTCUT
+===================================================== */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-jump-to-actions {
+
+    display: none !important;
+}
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-panel
+    .review-jump-to-actions {
+
+        display: flex !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+
+        min-height: 48px !important;
+
+        margin: 0 0 20px !important;
+
+        padding: 12px 18px !important;
+
+        border: 1px solid #bfe9e7 !important;
+        border-radius: 10px !important;
+
+        background: #f0fbfa !important;
+
+        color: #087f83 !important;
+
+        font-family: "Manrope", sans-serif !important;
+        font-size: .8rem !important;
+        font-weight: 800 !important;
+
+        cursor: pointer !important;
+    }
+
+    /*
+     * Give the primary action visual priority
+     * without moving or duplicating its handler.
+     */
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-panel
+    .review-actions
+    .review-submit {
+
+        order: -1 !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-panel
+    .review-actions
+    .review-back {
+
+        order: 1 !important;
+    }
+
+}
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-jump-to-actions:focus-visible {
+
+    outline: 3px solid #25c6c1 !important;
+
+    outline-offset: 3px !important;
+}
+
+/* =====================================================
+   SUBMISSION STATUS
+===================================================== */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status[hidden] {
+
+    display: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status:not([hidden]) {
+
+    display: grid !important;
+
+    grid-template-columns: minmax(0, 1fr) !important;
+
+    gap: 7px !important;
+
+    margin: 18px 0 0 !important;
+
+    padding: 18px 20px !important;
+
+    border: 1px solid #bfe9e7 !important;
+    border-radius: 12px !important;
+
+    background: #f0fbfa !important;
+
+    color: #344255 !important;
+
+    scroll-margin-top: 190px !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status strong {
+
+    display: block !important;
+
+    color: #087f83 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .86rem !important;
+
+    font-weight: 800 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status span {
+
+    display: block !important;
+
+    color: #344255 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .8rem !important;
+
+    line-height: 1.55 !important;
+}
+
+/* Loading */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status.is-loading {
+
+    border-color: #bfe9e7 !important;
+
+    background: #f0fbfa !important;
+}
+
+/* Error */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status.is-error {
+
+    border-color: #e9bcbc !important;
+
+    background: #fff4f4 !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status.is-error strong {
+
+    color: #a63434 !important;
+}
+
+/* Warning */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status.is-warning {
+
+    border-color: #eed7a2 !important;
+
+    background: #fff9eb !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submission-status.is-warning strong {
+
+    color: #87601b !important;
+}
+
+/* =====================================================
+   SUBMIT BUTTON SPINNER
+===================================================== */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submit.is-submitting {
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 11px !important;
+
+    opacity: 1 !important;
+
+    cursor: wait !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-submit.is-submitting::before {
+
+    content: "" !important;
+
+    display: block !important;
+
+    box-sizing: border-box !important;
+
+    width: 17px !important;
+    height: 17px !important;
+
+    flex: 0 0 17px !important;
+
+    border: 2px solid rgba(255,255,255,.28) !important;
+    border-top-color: #fff !important;
+
+    border-radius: 50% !important;
+
+    animation:
+        prReviewSpinnerP27
+        .8s
+        linear
+        infinite !important;
+}
+
+@keyframes prReviewSpinnerP27 {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* Back button is unavailable during active submission. */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+.review-panel
+.review-back:disabled {
+
+    opacity: .5 !important;
+
+    cursor: wait !important;
+}
+
+/* =====================================================
+   CONFIRMATION ENTRANCE
+===================================================== */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area
+> .success-panel {
+
+    animation:
+        prConfirmationEnterP27
+        300ms
+        ease-out
+        both;
+}
+
+@keyframes prConfirmationEnterP27 {
+
+    from {
+        opacity: 0;
+        transform: translateY(7px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    .review-panel
+    .review-submit.is-submitting::before {
+
+        animation: none !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-steps-area
+    > .success-panel {
+
+        animation: none !important;
+    }
+
+}

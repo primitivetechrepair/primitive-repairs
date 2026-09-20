@@ -2181,6 +2181,10 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
         <p>Confirm the details below before submitting. Nothing is charged or authorized by submitting this request.</p>
       </div>
 
+      <button type="button" class="review-jump-to-actions">
+        Jump to Submit &#8595;
+      </button>
+
       <div class="review-grid">
         <div class="review-card review-card-request">
           <h4>Request Overview</h4>
@@ -2272,12 +2276,63 @@ export function renderReviewStep(container, leadPayload, { onBack, onSubmit }) {
         hidden
       ></div>
 
-      <div class="review-actions">
+      <div class="review-actions" id="pr-review-actions">
         <button type="button" class="review-back">Back to Contact Details</button>
         <button type="button" class="review-submit">Submit Repair Request</button>
       </div>
     </section>
   `;
+
+  const jumpBtn = container.querySelector(
+    ".review-jump-to-actions"
+  );
+
+  if (jumpBtn) {
+    jumpBtn.addEventListener("click", () => {
+
+      if (!window.matchMedia("(max-width: 960px)").matches) {
+        return;
+      }
+
+      const actions = container.querySelector(
+        "#pr-review-actions"
+      );
+
+      if (!actions) return;
+
+      const navigationBottom =
+        document.querySelector(".site-nav")
+          ?.getBoundingClientRect().bottom ?? 0;
+
+      const bannerBottom =
+        document.querySelector(".appointment-deadline-banner")
+          ?.getBoundingClientRect().bottom ?? 0;
+
+      const baseOffset = window.matchMedia(
+        "(max-width: 760px)"
+      ).matches ? 162 : 178;
+
+      const offset = Math.max(
+        baseOffset,
+        navigationBottom,
+        bannerBottom
+      ) + 16;
+
+      const targetTop =
+        window.scrollY +
+        actions.getBoundingClientRect().top;
+
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      window.scrollTo({
+        top: Math.max(0, targetTop - offset),
+        behavior: reducedMotion ? "auto" : "smooth"
+      });
+
+    });
+  }
 
   const backBtn = container.querySelector(".review-back");
   const submitBtn = container.querySelector(".review-submit");

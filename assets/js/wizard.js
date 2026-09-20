@@ -18,7 +18,7 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260920-p23";
+} from "./renderer.js?v=20260920-p27";
 
 import { renderAppointmentStep } from "./appointments.js?v=20260920-p25";
 import {
@@ -1022,6 +1022,9 @@ document.addEventListener("DOMContentLoaded", () => {
           const submissionStatus =
             stepsArea?.querySelector(".review-submission-status");
 
+          const reviewBackButton =
+            stepsArea?.querySelector(".review-back");
+
           function clearSubmissionStatus() {
             if (!submissionStatus) return;
 
@@ -1056,10 +1059,25 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           function resetReviewSubmitButton() {
+
+            if (reviewBackButton) {
+              reviewBackButton.disabled = false;
+            }
+
             if (!reviewSubmitButton) return;
 
             reviewSubmitButton.disabled = false;
-            reviewSubmitButton.textContent = "Submit Repair Request";
+
+            reviewSubmitButton.classList.remove(
+              "is-submitting"
+            );
+
+            reviewSubmitButton.removeAttribute(
+              "aria-busy"
+            );
+
+            reviewSubmitButton.textContent =
+              "Submit Repair Request";
           }
 
           clearSubmissionStatus();
@@ -1102,10 +1120,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
           repairSubmitLocked = true;
 
-          if (reviewSubmitButton) {
-            reviewSubmitButton.disabled = true;
-            reviewSubmitButton.textContent = "Submitting...";
+          if (reviewBackButton) {
+            reviewBackButton.disabled = true;
           }
+
+          if (reviewSubmitButton) {
+
+            reviewSubmitButton.disabled = true;
+
+            reviewSubmitButton.classList.add(
+              "is-submitting"
+            );
+
+            reviewSubmitButton.setAttribute(
+              "aria-busy",
+              "true"
+            );
+
+            reviewSubmitButton.textContent =
+              "Submitting...";
+          }
+
+          showSubmissionStatus(
+            "loading",
+            "Sending your repair request",
+            "Please keep this page open. We will show your confirmation once your request is received."
+          );
 
           let mappedLead;
           let submitResult;
