@@ -4,7 +4,7 @@ import {
   IntakeClientError,
   PublicIntakeClient
 } from "./intakeClient.js?v=20260901-1";
-import { SubmissionStateStore } from "./submissionState.js?v=20260901-1";
+import { SubmissionStateStore } from "./submissionState.js?v=20260919-p17";
 
 const FORCE_SUBMIT_FAILURE = false;
 const RECAPTCHA_SITE_KEY = "6Lcv8hAtAAAAAGIK3yYGXxQXmic7isOxGx5odnYV";
@@ -156,6 +156,9 @@ export async function submitWizardLead({ wizardPayload, legacyLead }) {
   };
 }
 
+export function beginFreshWizardRequest() {
+  return getSubmissionStateStore().clearSucceeded();
+}
 export function resetWizardSubmission() {
   getSubmissionStateStore().clear();
 }

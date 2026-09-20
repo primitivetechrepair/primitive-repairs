@@ -26,11 +26,12 @@ import {
 } from "./leadSubmission.js?v=20260913-1";
 import { mapWizardPayloadToLead } from "./leadMapper.js?v=20260726-2";
 import {
+  beginFreshWizardRequest,
   configureSubmissionProvider,
   resetWizardSubmission,
   submissionErrorPresentation,
   submitWizardLead
-} from "./leadSubmitter.js?v=20260913-1";
+} from "./leadSubmitter.js?v=20260919-p17";
 
 let catalogProvider = null;
 let catalogProviderPromise = null;
@@ -586,6 +587,9 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       renderDeviceStep(stepsArea, devices, (device) => {
+        // A new booking must not reuse a previous
+        // successfully submitted request identity.
+        beginFreshWizardRequest();
         resetStep("device");
         state.device = device.label;
         state.catalogSelection.deviceId = device.id;

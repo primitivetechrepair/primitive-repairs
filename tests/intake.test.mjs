@@ -416,3 +416,85 @@ test("source contains no bearer persistence and no Lead write outside public int
   assert.match(output, /\/api\/public\/intake/);
   assert.doesNotMatch(output, /[?&](?:token|credential|authorization)=/i);
 });
+
+test("fresh wizard selection clears only a previous successful submission", async () => {
+  const stateStore = store();
+
+  const first = await stateStore.prepare(
+    mappedFixture()
+  );
+
+  stateStore.markSucceeded(CONFIRMATION);
+
+  assert.equal(
+    stateStore.read()?.state,
+    "succeeded"
+  );
+
+  // Starting a genuinely new booking clears
+  // the previous completed submission.
+  assert.equal(
+    stateStore.clearSucceeded(),
+    true
+  );
+
+  assert.equal(
+    stateStore.read(),
+    null
+  );
+
+  const fresh = await stateStore.prepare(
+    mappedFixture({ notes: "A separate repair request." })
+  );
+
+  assert.notEqual(
+    fresh.submissionId,
+    first.submissionId
+  );
+
+  assert.notEqual(
+    fresh.idempotencyKey,
+    first.idempotencyKey
+  );
+
+  // An interrupted submission must retain
+  // its identity for safe retry.
+  const interrupted = store();
+
+  await interrupted.prepare(
+    mappedFixture()
+  );
+
+  interrupted.markAmbiguous();
+
+  assert.equal(
+    interrupted.clearSucceeded(),
+    false
+  );
+
+  assert.equal(
+    interrupted.read()?.state,
+    "ambiguous"
+  );
+
+  await assert.rejects(
+    interrupted.prepare(
+      mappedFixture({ notes: "Changed after failure." })
+    ),
+    (error) =>
+      error instanceof SubmissionStateError &&
+      error.code === "submission_payload_changed"
+  );
+
+  // Ensure the wizard actually invokes the lifecycle fix
+  // when a new device is selected.
+  const wizardSource = await readFile(
+    new URL("../assets/js/wizard.js", import.meta.url),
+    "utf8"
+  );
+
+  assert.match(
+    wizardSource,
+    /renderDeviceStep\(stepsArea, devices, \(device\) => \{\s*\/\/[^\n]*\n\s*\/\/[^\n]*\n\s*beginFreshWizardRequest\(\);/
+  );
+});

@@ -107,6 +107,21 @@ export class SubmissionStateStore {
     });
   }
 
+  clearSucceeded() {
+    const current = this.read();
+
+    // Only a confirmed successful request can be
+    // replaced automatically when starting a new booking.
+    //
+    // Never discard an ambiguous, submitting,
+    // retryable, or conflicting request.
+    if (current?.state !== "succeeded") {
+      return false;
+    }
+
+    this.clear();
+    return true;
+  }
   identity() {
     return this.read() || this.createIdentity();
   }
