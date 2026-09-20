@@ -1853,6 +1853,12 @@ export function renderSuccessStep(container, leadPayload, onStartNew) {
     if (desktopStatus) {
       desktopStatus.textContent = "Received";
     }
+
+    // Submitted requests must not remain editable.
+    confirmationSummary.querySelectorAll(".card-back").forEach((button) => {
+      button.disabled = true;
+      button.style.display = "none";
+    });
   }
 
   const startBtn = container.querySelector(".success-start-new");

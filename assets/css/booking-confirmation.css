@@ -812,3 +812,171 @@ html body.homepage-premium-page
     }
 
 }
+
+/* PHASE 16B: CONFIRMATION CORRECTIONS */
+
+/*
+ * Override the original dark-theme option-section-header
+ * selectors using the actual #pr-steps-area hierarchy.
+ */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area.animated-area
+> .success-panel
+.option-section-header.success-option-header {
+
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    background: transparent !important;
+
+    text-align: left !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area.animated-area
+> .success-panel
+.option-section-header.success-option-header h3 {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    color: #1b2430 !important;
+
+    font-family: "Space Grotesk", sans-serif !important;
+
+    font-size: clamp(1.8rem, 3vw, 2.65rem) !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.15 !important;
+
+    letter-spacing: -.045em !important;
+
+    text-align: left !important;
+
+    text-transform: none !important;
+
+    text-shadow: none !important;
+}
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area.animated-area
+> .success-panel
+.option-section-header.success-option-header
+p.success-message {
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 760px !important;
+
+    margin: 12px 0 0 !important;
+
+    color: #596578 !important;
+
+    font-family: "Manrope", sans-serif !important;
+
+    font-size: .9rem !important;
+
+    font-weight: 400 !important;
+
+    line-height: 1.65 !important;
+
+    text-align: left !important;
+}
+
+/* Remove the original oversized heading spacing. */
+
+html body.homepage-premium-page
+#primitive-wizard-container
+#pr-steps-area.animated-area
+> .success-panel
+.success-hero {
+
+    min-height: 0 !important;
+
+    margin: 0 0 24px !important;
+
+    padding: 0 0 26px !important;
+}
+
+/* Submitted requests are read-only. */
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area > .success-panel
+)
+#pr-selection-cards.pr-saas-summary
+.blueprint-profile-grid
+> .pr-progress-card
+> .card-back {
+
+    display: none !important;
+}
+
+/* Display the final confirmation stage in the sidebar. */
+
+html body.homepage-premium-page
+#primitive-wizard-container:has(
+    > #pr-main > #pr-steps-area > .success-panel
+)
+#pr-selection-cards.pr-saas-summary
+#pr-summary-stage-title {
+
+    position: static !important;
+
+    display: block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 7px 0 0 !important;
+
+    overflow: visible !important;
+
+    clip-path: none !important;
+
+    white-space: normal !important;
+
+    color: #1b2430 !important;
+
+    font-size: .9rem !important;
+}
+
+/* Mobile */
+
+@media (max-width: 960px) {
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-steps-area.animated-area
+    > .success-panel
+    .success-hero {
+
+        gap: 16px !important;
+    }
+
+    html body.homepage-premium-page
+    #primitive-wizard-container
+    #pr-steps-area.animated-area
+    > .success-panel
+    .success-option-header h3 {
+
+        font-size: clamp(1.65rem, 6vw, 2rem) !important;
+    }
+
+}

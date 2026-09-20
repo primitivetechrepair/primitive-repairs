@@ -16,7 +16,7 @@ import {
   renderSuccessStep,
   renderReviewStep,
   renderSummary
-} from "./renderer.js?v=20260919-p16";
+} from "./renderer.js?v=20260919-p16b";
 
 import { renderAppointmentStep } from "./appointments.js?v=20260831-1";
 import {
