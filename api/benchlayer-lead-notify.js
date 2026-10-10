@@ -1,3 +1,4 @@
+// BenchLayer server-to-server lead notification relay.
 import crypto from "node:crypto";
 
 const clean = (value, max = 500) => String(value ?? "").trim().slice(0, max);
