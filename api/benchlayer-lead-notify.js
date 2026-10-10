@@ -85,7 +85,7 @@ export default async function handler(req, res) {
 
           <div style="padding:16px;border:1px solid #393F4D;border-radius:12px;background:#1D1E22">
             <div style="font-size:19px;font-weight:700">${escapeHtml(customerName)}</div>
-            ${phone ? `<div style="margin-top:6px"><a href="tel:${escapeHtml(phone.replace(/[^\\d+]/g, ""))}" style="color:#66FCF1;text-decoration:none">${escapeHtml(phone)}</a></div>` : ""}
+            ${phone ? `<div style="margin-top:6px"><a href="tel:${escapeHtml(phone.replace(/[^\d+]/g, ""))}" style="color:#66FCF1;text-decoration:none">${escapeHtml(phone)}</a></div>` : ""}
             ${email ? `<div style="margin-top:4px"><a href="mailto:${escapeHtml(email)}" style="color:#66FCF1;text-decoration:none">${escapeHtml(email)}</a></div>` : ""}
           </div>
 
