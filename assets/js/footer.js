@@ -142,6 +142,12 @@
     </footer>
   `;
 
+  const isHomePage = document.body.classList.contains("homepage-premium-page");
+  if (isHomePage) {
+    footerRoot.querySelector(".site-footer-brand-copy").innerHTML = '<span class="site-footer-eyebrow">Miami mobile device repair</span><h3>Questions? Talk to us.</h3><p><a href="tel:+13059074308">Call 305.907.4308</a> &middot; <a href="sms:+13059074308">Text us</a><br>Calls: 7 AM–7 PM ET. Request online anytime.<br><a href="/#miami-mobile-repair">Check service options and coverage</a></p>';
+    footerRoot.querySelector('a[aria-label="TikTok"]')?.remove();
+  }
+
   const existingConsentStyles = document.querySelector(
 
     "link[data-cookie-consent-styles]"
@@ -196,7 +202,7 @@
   function syncRepairDropdownMode() {
     if (!repairDetails) return;
 
-    if (repairLayoutQuery.matches) {
+    if (repairLayoutQuery.matches && !isHomePage) {
       repairDetails.setAttribute("open", "");
     } else {
       repairDetails.removeAttribute("open");

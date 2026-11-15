@@ -257,11 +257,11 @@
     lastFocusedElement?.focus?.();
   }
 
-  function openOffer() {
+  function openOffer({ manual = false } = {}) {
     const overlay =
       document.getElementById("email-offer-overlay");
 
-    if (!overlay || isOpen || shouldSuppressOffer()) {
+    if (!overlay || isOpen || (!manual && shouldSuppressOffer())) {
       return;
     }
 
@@ -499,9 +499,10 @@
   }
 
   function initEmailOfferPopup() {
+    const manualOnly = document.body.classList.contains("homepage-premium-page");
     if (
       document.getElementById("email-offer-overlay") ||
-      shouldSuppressOffer()
+      (!manualOnly && shouldSuppressOffer())
     ) {
       return;
     }
@@ -511,9 +512,12 @@
     document.body.appendChild(overlay);
     wireOfferEvents(overlay);
 
-    window.setTimeout(() => {
-      openOffer();
-    }, DISPLAY_DELAY_MS);
+    document.querySelectorAll("[data-open-email-offer]").forEach(button => {
+      button.addEventListener("click", () => openOffer({ manual: true }));
+    });
+    if (!manualOnly) {
+      window.setTimeout(() => { openOffer(); }, DISPLAY_DELAY_MS);
+    }
   }
 
   if (document.readyState === "loading") {

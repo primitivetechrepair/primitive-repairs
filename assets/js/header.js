@@ -191,6 +191,14 @@
     </div>
   `;
 
+  if (document.body.classList.contains("homepage-premium-page")) {
+    headerRoot.querySelectorAll(".nav-disabled, .mobile-nav-disabled, [data-social-placeholder]").forEach(node => node.remove());
+    const contact = document.createElement("a");
+    contact.href = "/contact-us";
+    contact.textContent = "Contact & service area";
+    headerRoot.querySelector(".site-nav-links .nav-cta").before(contact);
+  }
+
   headerRoot
     .querySelector("[data-social-placeholder]")
     ?.addEventListener("click", (event) => {
