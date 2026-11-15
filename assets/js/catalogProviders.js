@@ -1,4 +1,5 @@
 import { loadCatalog as loadLegacyCatalog } from "./catalog.js?v=20260831-1";
+import { isBrandAllowedForDevice } from "./categoryBrands.js?v=20261115-1";
 import {
   adaptPublicCatalogV1,
   createStableOptionId
@@ -70,7 +71,10 @@ export class BenchLayerCatalogProvider {
   }
 
   async getBrands(deviceId) {
-    return findById(this.catalog.devices, deviceId)?.brands || [];
+    const device = findById(this.catalog.devices, deviceId);
+    return (device?.brands || []).filter((brand) =>
+      isBrandAllowedForDevice(device.label, brand.label)
+    );
   }
 
   async getSeries(deviceId, brandId) {
@@ -104,7 +108,9 @@ export class LegacyCatalogProvider {
     const device = findById(this.devices, deviceId);
     if (!device) return [];
 
-    return (LEGACY_BRANDS[device.label] || []).map((label) => {
+    return (LEGACY_BRANDS[device.label] || []).filter((label) =>
+      isBrandAllowedForDevice(device.label, label)
+    ).map((label) => {
       return option("brand", [device.label], label);
     });
   }

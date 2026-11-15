@@ -116,7 +116,7 @@
       "id": "brand-dji-1kkyzwv",
       "label": "DJI",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-phone-1x3q2wh"
     },
@@ -132,7 +132,7 @@
       "id": "brand-gopro-7lb3hj",
       "label": "GoPro",
       "order": 16,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-phone-1x3q2wh"
     },
@@ -172,7 +172,7 @@
       "id": "brand-insta360-1l9en10",
       "label": "Insta360",
       "order": 21,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-phone-1x3q2wh"
     },
@@ -372,7 +372,7 @@
       "id": "brand-boost-v7nuap",
       "label": "Boost",
       "order": 9,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -380,7 +380,7 @@
       "id": "brand-cat-mjnqty",
       "label": "CAT",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -396,7 +396,7 @@
       "id": "brand-cricket-uyatj9",
       "label": "Cricket",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -404,7 +404,7 @@
       "id": "brand-dji-10gzmwz",
       "label": "DJI",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -412,7 +412,7 @@
       "id": "brand-essential-93ry86",
       "label": "Essential",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -420,7 +420,7 @@
       "id": "brand-gopro-30k1vv",
       "label": "GoPro",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -460,7 +460,7 @@
       "id": "brand-insta360-ef4d3k",
       "label": "Insta360",
       "order": 20,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -468,7 +468,7 @@
       "id": "brand-kyocera-vzvibu",
       "label": "Kyocera",
       "order": 21,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -492,7 +492,7 @@
       "id": "brand-nothing-1jc4oqj",
       "label": "Nothing",
       "order": 24,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -524,7 +524,7 @@
       "id": "brand-revvl-1q3am0h",
       "label": "Revvl",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -548,7 +548,7 @@
       "id": "brand-t-phone-1amiax2",
       "label": "T Phone",
       "order": 31,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-tablet-txywub"
     },
@@ -644,7 +644,7 @@
       "id": "brand-alcatel-r9bjcc",
       "label": "Alcatel",
       "order": 7,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -652,7 +652,7 @@
       "id": "brand-at-t-1li0jxt",
       "label": "AT&T",
       "order": 8,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -660,7 +660,7 @@
       "id": "brand-blackberry-1igf5uj",
       "label": "BlackBerry",
       "order": 9,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -668,7 +668,7 @@
       "id": "brand-blu-1l3r0y7",
       "label": "Blu",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -676,7 +676,7 @@
       "id": "brand-boost-ldlx4l",
       "label": "Boost",
       "order": 11,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -684,7 +684,7 @@
       "id": "brand-cat-llb4iy",
       "label": "CAT",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -692,7 +692,7 @@
       "id": "brand-coolpad-ahaiec",
       "label": "Coolpad",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -700,7 +700,7 @@
       "id": "brand-cricket-wi2o2p",
       "label": "Cricket",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -708,7 +708,7 @@
       "id": "brand-dji-1utaqlz",
       "label": "DJI",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -716,7 +716,7 @@
       "id": "brand-essential-19jp5y2",
       "label": "Essential",
       "order": 16,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -724,7 +724,7 @@
       "id": "brand-gopro-qyvl2n",
       "label": "GoPro",
       "order": 17,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -740,7 +740,7 @@
       "id": "brand-htc-cv5xrv",
       "label": "HTC",
       "order": 19,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -764,7 +764,7 @@
       "id": "brand-insta360-l7pvv0",
       "label": "Insta360",
       "order": 22,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -772,7 +772,7 @@
       "id": "brand-kyocera-13v9e2u",
       "label": "Kyocera",
       "order": 23,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -780,7 +780,7 @@
       "id": "brand-nexus-f72c9t",
       "label": "Nexus",
       "order": 24,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -796,7 +796,7 @@
       "id": "brand-nothing-zzwy8v",
       "label": "Nothing",
       "order": 26,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -812,7 +812,7 @@
       "id": "brand-oukitel-drcpvb",
       "label": "Oukitel",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -828,7 +828,7 @@
       "id": "brand-revvl-qlgf2l",
       "label": "Revvl",
       "order": 30,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -852,7 +852,7 @@
       "id": "brand-t-phone-14kngf6",
       "label": "T Phone",
       "order": 33,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -860,7 +860,7 @@
       "id": "brand-vivo-1qafqaw",
       "label": "Vivo",
       "order": 34,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -876,7 +876,7 @@
       "id": "brand-zebra-1xu0lqu",
       "label": "Zebra",
       "order": 36,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -884,7 +884,7 @@
       "id": "brand-zte-1vv8kkf",
       "label": "ZTE",
       "order": 37,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-computer-laptop-gcyt0p"
     },
@@ -924,7 +924,7 @@
       "id": "brand-alcatel-1cx5fht",
       "label": "Alcatel",
       "order": 4,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -932,7 +932,7 @@
       "id": "brand-at-t-1k9lkji",
       "label": "AT&T",
       "order": 5,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -940,7 +940,7 @@
       "id": "brand-blackberry-1dy6sls",
       "label": "BlackBerry",
       "order": 6,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -948,7 +948,7 @@
       "id": "brand-blu-uao3ge",
       "label": "Blu",
       "order": 7,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -956,7 +956,7 @@
       "id": "brand-boost-1uce9q0",
       "label": "Boost",
       "order": 8,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -964,7 +964,7 @@
       "id": "brand-cat-1u0ur2r",
       "label": "CAT",
       "order": 9,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -972,7 +972,7 @@
       "id": "brand-coolpad-1nhsjbp",
       "label": "Coolpad",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -980,7 +980,7 @@
       "id": "brand-cricket-1w2v404",
       "label": "Cricket",
       "order": 11,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -988,7 +988,7 @@
       "id": "brand-dji-mu7gjm",
       "label": "DJI",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -996,7 +996,7 @@
       "id": "brand-essential-ynj4x3",
       "label": "Essential",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1004,7 +1004,7 @@
       "id": "brand-gopro-198pwxa",
       "label": "GoPro",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1012,7 +1012,7 @@
       "id": "brand-honor-1f2f0dn",
       "label": "Honor",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1020,7 +1020,7 @@
       "id": "brand-htc-3n8f8a",
       "label": "HTC",
       "order": 16,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1028,7 +1028,7 @@
       "id": "brand-huawei-3vbcb8",
       "label": "Huawei",
       "order": 17,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1036,7 +1036,7 @@
       "id": "brand-infinix-9096hu",
       "label": "Infinix",
       "order": 18,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1044,7 +1044,7 @@
       "id": "brand-insta360-xikbqb",
       "label": "Insta360",
       "order": 19,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1052,7 +1052,7 @@
       "id": "brand-kyocera-1qjr8pj",
       "label": "Kyocera",
       "order": 20,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1060,7 +1060,7 @@
       "id": "brand-nexus-1pyxj5g",
       "label": "Nexus",
       "order": 21,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1068,7 +1068,7 @@
       "id": "brand-nokia-106ujlt",
       "label": "Nokia",
       "order": 22,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1076,7 +1076,7 @@
       "id": "brand-nothing-14onx7q",
       "label": "Nothing",
       "order": 23,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1092,7 +1092,7 @@
       "id": "brand-oukitel-a5syue",
       "label": "Oukitel",
       "order": 25,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1100,7 +1100,7 @@
       "id": "brand-realme-hpqxrv",
       "label": "Realme",
       "order": 26,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1108,7 +1108,7 @@
       "id": "brand-revvl-enkno",
       "label": "Revvl",
       "order": 27,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1116,7 +1116,7 @@
       "id": "brand-tcl-ygm9pk",
       "label": "TCL",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1124,7 +1124,7 @@
       "id": "brand-tecno-cpluzg",
       "label": "Tecno",
       "order": 29,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1132,7 +1132,7 @@
       "id": "brand-t-phone-kdxvxz",
       "label": "T Phone",
       "order": 30,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1140,7 +1140,7 @@
       "id": "brand-vivo-1c8pq2j",
       "label": "Vivo",
       "order": 31,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1148,7 +1148,7 @@
       "id": "brand-xiaomi-165j3uo",
       "label": "Xiaomi",
       "order": 32,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1156,7 +1156,7 @@
       "id": "brand-zebra-9jh9mj",
       "label": "Zebra",
       "order": 33,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1164,7 +1164,7 @@
       "id": "brand-zte-68zr4e",
       "label": "ZTE",
       "order": 34,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-game-console-167do48"
     },
@@ -1220,7 +1220,7 @@
       "id": "brand-at-t-s0rmwh",
       "label": "AT&T",
       "order": 6,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1228,7 +1228,7 @@
       "id": "brand-blackberry-1l57vdn",
       "label": "BlackBerry",
       "order": 7,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1236,7 +1236,7 @@
       "id": "brand-blu-1bjgt73",
       "label": "Blu",
       "order": 8,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1244,7 +1244,7 @@
       "id": "brand-boost-26csad",
       "label": "Boost",
       "order": 9,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1252,7 +1252,7 @@
       "id": "brand-cat-c0yp62",
       "label": "CAT",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1260,7 +1260,7 @@
       "id": "brand-coolpad-1kj27l0",
       "label": "Coolpad",
       "order": 11,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1268,7 +1268,7 @@
       "id": "brand-cricket-xya2e9",
       "label": "Cricket",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1276,7 +1276,7 @@
       "id": "brand-dji-1kk76gn",
       "label": "DJI",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1284,7 +1284,7 @@
       "id": "brand-essential-le29ay",
       "label": "Essential",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1292,7 +1292,7 @@
       "id": "brand-gopro-1tu2v1r",
       "label": "GoPro",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1308,7 +1308,7 @@
       "id": "brand-htc-2m4l8b",
       "label": "HTC",
       "order": 17,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1332,7 +1332,7 @@
       "id": "brand-insta360-qzdtfw",
       "label": "Insta360",
       "order": 20,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1340,7 +1340,7 @@
       "id": "brand-kyocera-evz8w6",
       "label": "Kyocera",
       "order": 21,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1348,7 +1348,7 @@
       "id": "brand-nexus-1b1ht5t",
       "label": "Nexus",
       "order": 22,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1396,7 +1396,7 @@
       "id": "brand-revvl-djwct",
       "label": "Revvl",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1420,7 +1420,7 @@
       "id": "brand-t-phone-u3fqn6",
       "label": "T Phone",
       "order": 31,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1444,7 +1444,7 @@
       "id": "brand-zebra-unc0nq",
       "label": "Zebra",
       "order": 34,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smartwatch-wearable-1smkqp9"
     },
@@ -1484,7 +1484,7 @@
       "id": "brand-alcatel-18yerzv",
       "label": "Alcatel",
       "order": 3,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1492,7 +1492,7 @@
       "id": "brand-at-t-1vvzb9o",
       "label": "AT&T",
       "order": 4,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1500,7 +1500,7 @@
       "id": "brand-blackberry-klv1ne",
       "label": "BlackBerry",
       "order": 5,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1508,7 +1508,7 @@
       "id": "brand-blu-12k1uw8",
       "label": "Blu",
       "order": 6,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1516,7 +1516,7 @@
       "id": "brand-boost-1q47rnq",
       "label": "Boost",
       "order": 7,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1524,7 +1524,7 @@
       "id": "brand-cat-59cqhx",
       "label": "CAT",
       "order": 8,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1532,7 +1532,7 @@
       "id": "brand-coolpad-u7uz7j",
       "label": "Coolpad",
       "order": 9,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1540,7 +1540,7 @@
       "id": "brand-cricket-1sm5d9e",
       "label": "Cricket",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1548,7 +1548,7 @@
       "id": "brand-dji-a340po",
       "label": "DJI",
       "order": 11,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1556,7 +1556,7 @@
       "id": "brand-essential-16snno9",
       "label": "Essential",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1564,7 +1564,7 @@
       "id": "brand-gopro-1u1yx7g",
       "label": "GoPro",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1572,7 +1572,7 @@
       "id": "brand-honor-9phh1d",
       "label": "Honor",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1580,7 +1580,7 @@
       "id": "brand-htc-1qz9rck",
       "label": "HTC",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1596,7 +1596,7 @@
       "id": "brand-infinix-1xwyzzw",
       "label": "Infinix",
       "order": 17,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1604,7 +1604,7 @@
       "id": "brand-insta360-7pjmgd",
       "label": "Insta360",
       "order": 18,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1612,7 +1612,7 @@
       "id": "brand-kyocera-howupx",
       "label": "Kyocera",
       "order": 19,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1620,7 +1620,7 @@
       "id": "brand-nexus-tum7sq",
       "label": "Nexus",
       "order": 20,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1628,7 +1628,7 @@
       "id": "brand-nokia-182zcz",
       "label": "Nokia",
       "order": 21,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1636,7 +1636,7 @@
       "id": "brand-nothing-1fb5hes",
       "label": "Nothing",
       "order": 22,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1652,7 +1652,7 @@
       "id": "brand-oukitel-bfe310",
       "label": "Oukitel",
       "order": 24,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1660,7 +1660,7 @@
       "id": "brand-realme-f3a2y1",
       "label": "Realme",
       "order": 25,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1668,7 +1668,7 @@
       "id": "brand-revvl-1ds1e4m",
       "label": "Revvl",
       "order": 26,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1684,7 +1684,7 @@
       "id": "brand-tecno-k1pj9a",
       "label": "Tecno",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1692,7 +1692,7 @@
       "id": "brand-t-phone-j574i5",
       "label": "T Phone",
       "order": 29,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1700,7 +1700,7 @@
       "id": "brand-vivo-a2pti1",
       "label": "Vivo",
       "order": 30,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1716,7 +1716,7 @@
       "id": "brand-zebra-12td7ul",
       "label": "Zebra",
       "order": 32,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1724,7 +1724,7 @@
       "id": "brand-zte-1m5llwo",
       "label": "ZTE",
       "order": 33,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-smart-glasses-ngiht8"
     },
@@ -1772,7 +1772,7 @@
       "id": "brand-alcatel-er5x3s",
       "label": "Alcatel",
       "order": 5,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1780,7 +1780,7 @@
       "id": "brand-at-t-11jeu0d",
       "label": "AT&T",
       "order": 6,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1788,7 +1788,7 @@
       "id": "brand-blackberry-vhauin",
       "label": "BlackBerry",
       "order": 7,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1796,7 +1796,7 @@
       "id": "brand-blu-1ajc457",
       "label": "Blu",
       "order": 8,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1804,7 +1804,7 @@
       "id": "brand-boost-1ptn87t",
       "label": "Boost",
       "order": 9,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1812,7 +1812,7 @@
       "id": "brand-cat-6k8xf2",
       "label": "CAT",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1820,7 +1820,7 @@
       "id": "brand-coolpad-sfs3o0",
       "label": "Coolpad",
       "order": 11,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1828,7 +1828,7 @@
       "id": "brand-cricket-myw1el",
       "label": "Cricket",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1836,7 +1836,7 @@
       "id": "brand-dji-g08b7f",
       "label": "DJI",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1844,7 +1844,7 @@
       "id": "brand-essential-gwccge",
       "label": "Essential",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1852,7 +1852,7 @@
       "id": "brand-gopro-1vpk0yr",
       "label": "GoPro",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1892,7 +1892,7 @@
       "id": "brand-insta360-bklmyg",
       "label": "Insta360",
       "order": 20,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1900,7 +1900,7 @@
       "id": "brand-kyocera-1a6sb1u",
       "label": "Kyocera",
       "order": 21,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1908,7 +1908,7 @@
       "id": "brand-nexus-d6l4xh",
       "label": "Nexus",
       "order": 22,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1940,7 +1940,7 @@
       "id": "brand-oukitel-gsnk17",
       "label": "Oukitel",
       "order": 26,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1956,7 +1956,7 @@
       "id": "brand-revvl-cpewzd",
       "label": "Revvl",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -1980,7 +1980,7 @@
       "id": "brand-t-phone-fv6a9a",
       "label": "T Phone",
       "order": 31,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -2004,7 +2004,7 @@
       "id": "brand-zebra-1h083be",
       "label": "Zebra",
       "order": 34,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-audio-device-idmqhn"
     },
@@ -2028,7 +2028,7 @@
       "id": "brand-alcatel-m4om1v",
       "label": "Alcatel",
       "order": 1,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2036,7 +2036,7 @@
       "id": "brand-at-t-11zr6dg",
       "label": "AT&T",
       "order": 2,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2044,7 +2044,7 @@
       "id": "brand-blackberry-d0d9ya",
       "label": "BlackBerry",
       "order": 3,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2052,7 +2052,7 @@
       "id": "brand-blu-138ci5c",
       "label": "Blu",
       "order": 4,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2060,7 +2060,7 @@
       "id": "brand-boost-1n1rmku",
       "label": "Boost",
       "order": 5,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2068,7 +2068,7 @@
       "id": "brand-cat-eutj59",
       "label": "CAT",
       "order": 6,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2076,7 +2076,7 @@
       "id": "brand-coolpad-1ou5krb",
       "label": "Coolpad",
       "order": 7,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2084,7 +2084,7 @@
       "id": "brand-cricket-1eeh2ei",
       "label": "Cricket",
       "order": 8,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2100,7 +2100,7 @@
       "id": "brand-essential-1gewzld",
       "label": "Essential",
       "order": 10,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2116,7 +2116,7 @@
       "id": "brand-honor-7y05wp",
       "label": "Honor",
       "order": 12,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2124,7 +2124,7 @@
       "id": "brand-htc-1w57v4c",
       "label": "HTC",
       "order": 13,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2132,7 +2132,7 @@
       "id": "brand-huawei-uwik2i",
       "label": "Huawei",
       "order": 14,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2140,7 +2140,7 @@
       "id": "brand-infinix-1iq8otg",
       "label": "Infinix",
       "order": 15,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2156,7 +2156,7 @@
       "id": "brand-kyocera-14ashp",
       "label": "Kyocera",
       "order": 17,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2164,7 +2164,7 @@
       "id": "brand-nexus-drslwi",
       "label": "Nexus",
       "order": 18,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2172,7 +2172,7 @@
       "id": "brand-nokia-6hb9pn",
       "label": "Nokia",
       "order": 19,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2180,7 +2180,7 @@
       "id": "brand-nothing-1nx60n0",
       "label": "Nothing",
       "order": 20,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2196,7 +2196,7 @@
       "id": "brand-oukitel-16rerj0",
       "label": "Oukitel",
       "order": 22,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2204,7 +2204,7 @@
       "id": "brand-realme-14vtse9",
       "label": "Realme",
       "order": 23,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2212,7 +2212,7 @@
       "id": "brand-revvl-14l37em",
       "label": "Revvl",
       "order": 24,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2220,7 +2220,7 @@
       "id": "brand-tcl-scsszm",
       "label": "TCL",
       "order": 25,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2228,7 +2228,7 @@
       "id": "brand-tecno-130idye",
       "label": "Tecno",
       "order": 26,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2236,7 +2236,7 @@
       "id": "brand-t-phone-bve5l1",
       "label": "T Phone",
       "order": 27,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2244,7 +2244,7 @@
       "id": "brand-vivo-1pq91ht",
       "label": "Vivo",
       "order": 28,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2252,7 +2252,7 @@
       "id": "brand-xiaomi-1irpf2e",
       "label": "Xiaomi",
       "order": 29,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2260,7 +2260,7 @@
       "id": "brand-zebra-14wpn85",
       "label": "Zebra",
       "order": 30,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -2268,7 +2268,7 @@
       "id": "brand-zte-jjot4w",
       "label": "ZTE",
       "order": 31,
-      "active": true,
+      "active": false,
       "metadata": {},
       "parentId": "device-other-electronics-1xaxc5g"
     },
@@ -24854,8 +24854,8 @@
     }
   ],
   "version": 4,
-  "revision": 16,
-  "updatedAt": "2026-09-14T19:42:41.826Z",
+  "revision": 17,
+  "updatedAt": "2026-11-15T14:18:14.872Z",
   "modelRepairs": [
     {
       "order": 0,

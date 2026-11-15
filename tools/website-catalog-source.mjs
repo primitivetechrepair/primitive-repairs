@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { isBrandAllowedForDevice } from "../assets/js/categoryBrands.js";
 
 const SOURCE_URL = new URL("../catalog/website-catalog.v4.json", import.meta.url);
 const ENTITY_COLLECTIONS = ["devices", "brands", "series", "models", "repairs"];
@@ -24,6 +25,13 @@ function assertSourceShape(catalog) {
     const label = String(series?.label ?? "").trim().toLowerCase();
     if (series?.active !== false && RETIRED_PLACEHOLDER_SERIES.has(label)) {
       throw new Error(`The retired placeholder series must remain inactive: ${series.id}.`);
+    }
+  }
+  const devices = new Map(catalog.devices.map((device) => [device.id, device]));
+  for (const brand of catalog.brands) {
+    const device = devices.get(brand.parentId);
+    if (device?.active && brand.active && !isBrandAllowedForDevice(device.label, brand.label)) {
+      throw new Error(`Brand is not eligible for its device category: ${device.label} / ${brand.label}.`);
     }
   }
 }

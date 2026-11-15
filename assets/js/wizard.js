@@ -1,7 +1,7 @@
 import { initBookingProgression } from "./bookingProgression.js?v=20260920-p23";
 import { initMobileContactGuide } from "./contactGuide.js?v=20260920-p26";
 import { state, resetStep, resetAllState } from "./state.js?v=20260831-1";
-import { createCatalogProvider } from "./catalogProviders.js?v=20260912-2";
+import { createCatalogProvider } from "./catalogProviders.js?v=20261115-1";
 import {
   renderDeviceStep,
   renderBrandStep,
